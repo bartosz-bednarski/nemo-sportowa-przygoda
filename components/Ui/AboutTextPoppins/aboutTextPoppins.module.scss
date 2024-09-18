@@ -1,0 +1,16 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/fonts.scss";
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Poppins-400";
+  &__title {
+    font-family: "Poppins-700";
+    font-size: 2rem;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+    color: $mediumBlue;
+  }
+}
