@@ -1,19 +1,21 @@
 import React from "react";
 import styles from "./aboutTextPoppins.module.scss";
-const AboutTextPoppins: React.FC = () => {
+import { customColors } from "@/types/UI/colors";
+import { COLORS } from "@/utils/UI/colors";
+const AboutTextPoppins: React.FC<{
+  titleColor: customColors;
+  title: string;
+  description: string;
+}> = ({ titleColor, title, description }) => {
   return (
     <div className={styles.box}>
-      <span className={styles["box__title"]}>
-        Lorem ipsum dolor sit amet consectetur
+      <span
+        className={styles["box__title"]}
+        style={{ color: COLORS[titleColor] }}
+      >
+        {title}
       </span>
-      <p>
-        Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt
-        sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus
-        odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium
-        consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus
-        odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium
-        consequat eu eu eu.
-      </p>
+      <p>{description}</p>
     </div>
   );
 };

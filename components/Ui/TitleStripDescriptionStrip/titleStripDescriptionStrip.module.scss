@@ -1,0 +1,11 @@
+.titleStripDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  gap: 3rem;
+  p {
+    text-align: center;
+  }
+}
