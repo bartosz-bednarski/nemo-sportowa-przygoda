@@ -3,7 +3,7 @@ import styles from "./strip.module.scss";
 import { customColors } from "@/types/UI/colors";
 import { COLORS } from "@/utils/UI/colors";
 
-const Strip: React.FC<{
+const StripH3: React.FC<{
   scale: number;
   stripBgColor: customColors;
   stripTextColor: customColors;
@@ -24,8 +24,8 @@ const Strip: React.FC<{
           fill={COLORS[stripBgColor]}
         />
       </svg>
-      <h2 style={{ color: COLORS[stripTextColor] }}>{title}</h2>
+      <h3 style={{ color: COLORS[stripTextColor] }}>{title}</h3>
     </span>
   );
 };
-export default Strip;
+export default StripH3;
