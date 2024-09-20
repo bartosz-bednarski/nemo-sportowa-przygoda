@@ -1,0 +1,100 @@
+@import "../../../../styles/colors.scss";
+@keyframes show {
+  from {
+    background-size: 0% 100%;
+  }
+  to {
+    background-size: 112% 100%;
+  }
+}
+@keyframes hide {
+  from {
+    background-size: 112% 100%;
+  }
+  to {
+    background-size: 0% 100%;
+    display: none;
+  }
+}
+.navigation-hide {
+  animation-name: hide !important;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  overflow: hidden;
+}
+.navigation {
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  //   background-color: $mediumBlue;
+  background-image: url("/assets/ui/nav-background.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  animation-name: show;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  overflow: hidden;
+  &__top-box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__bottom-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    &__20 {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      height: 80%;
+    }
+    &__80 {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 100%;
+      &__nav {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding: 0.3rem;
+        font-weight: 600;
+        transition: background-color 1s;
+        &__location {
+          margin-left: 1rem;
+          color: #669ad7;
+        }
+        &:hover {
+          color: $mediumBlue;
+          background-color: white;
+          cursor: pointer;
+        }
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+          padding: 1rem 0;
+
+          border-bottom: 3px solid #669ad7;
+        }
+      }
+    }
+  }
+}
