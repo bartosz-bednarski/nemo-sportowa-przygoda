@@ -5,6 +5,7 @@ import BackgroundText from "@/components/Ui/BackgroundText/BackgroundText";
 import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
 import InstructorBubble from "@/components/Globals/InstructorBubble/InstructorBubble";
 import MainButton from "@/components/Ui/Buttons/MainButton";
+import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 const TrainersSection: React.FC = () => {
   return (
     <section className={styles.trainers}>
@@ -35,6 +36,7 @@ const TrainersSection: React.FC = () => {
           bgColor="white"
         />
       </div>
+      <Scrap2 color="mediumBlue" position="bottom" />
     </section>
   );
 };
