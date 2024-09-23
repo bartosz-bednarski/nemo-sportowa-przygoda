@@ -3,9 +3,11 @@ import styles from "../page.module.scss";
 import React from "react";
 import VideosSection from "@/components/Globals/VideosSection";
 import { NAUKA_PLYWANIA } from "@/utils/NaukaPlywania/naukaPlywania";
+import Bubbles from "@/components/Ui/Bubbles/Bubbles";
+import ScrapFooter from "@/components/Ui/Scrap/ScrapFooter";
 const NaukaPlywaniaPage: React.FC = () => {
   return (
-    <main className={styles.main}>
+    <main className={styles.main} style={{ paddingBottom: "3rem" }}>
       <VideosSection
         scrapColor="lightBlue"
         col1={{
@@ -48,6 +50,7 @@ const NaukaPlywaniaPage: React.FC = () => {
         pools={NAUKA_PLYWANIA.niemowlaki.pools}
         backgroundColor={NAUKA_PLYWANIA.niemowlaki.backgroundColor}
       />
+      <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
       <NaukaPlywania
         about={NAUKA_PLYWANIA.dzieci.about}
         instructors={NAUKA_PLYWANIA.dzieci.instructors}
@@ -55,6 +58,7 @@ const NaukaPlywaniaPage: React.FC = () => {
         backgroundColor={NAUKA_PLYWANIA.dzieci.backgroundColor}
         groups={NAUKA_PLYWANIA.dzieci.groups}
       />
+      <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <NaukaPlywania
         about={NAUKA_PLYWANIA.dorosli.about}
         instructors={NAUKA_PLYWANIA.dorosli.instructors}
@@ -62,6 +66,7 @@ const NaukaPlywaniaPage: React.FC = () => {
         backgroundColor={NAUKA_PLYWANIA.dorosli.backgroundColor}
         groups={NAUKA_PLYWANIA.dorosli.groups}
       />
+      <ScrapFooter color="darkBlue" />
     </main>
   );
 };
