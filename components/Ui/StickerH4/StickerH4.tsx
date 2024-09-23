@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import styles from "./stickerH2.module.scss";
-import StripH2 from "../StripH2/StripH2";
+import styles from "./stickerH4.module.scss";
 import { stickerH2Type } from "@/types/UI/stickerStripStrap";
-const StickerH2: React.FC<stickerH2Type> = ({
+import StripH4 from "../StripH4/StripH4";
+const StickerH4: React.FC<stickerH2Type> = ({
   stripBgColor,
   stripTextColor,
   scale,
@@ -13,8 +13,8 @@ const StickerH2: React.FC<stickerH2Type> = ({
 }) => {
   return (
     <div className={styles.box} style={{ paddingBottom: `${paddingBottom}%` }}>
-      <h2 className={styles["box__title"]}>{title}</h2>
-      <StripH2
+      <h4 className={styles["box__title"]}>{title}</h4>
+      <StripH4
         scale={scale}
         stripTextColor={stripTextColor}
         stripBgColor={stripBgColor}
@@ -23,4 +23,4 @@ const StickerH2: React.FC<stickerH2Type> = ({
     </div>
   );
 };
-export default StickerH2;
+export default StickerH4;

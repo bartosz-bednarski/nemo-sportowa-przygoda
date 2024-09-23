@@ -1,11 +1,8 @@
 "use client";
-import { customColors } from "@/types/UI/colors";
+import { scrap2Type } from "@/types/UI/stickerStripStrap";
 import { COLORS } from "@/utils/UI/colors";
 import React from "react";
-const Scrap2: React.FC<{ position: "top" | "bottom"; color: customColors }> = ({
-  position,
-  color,
-}) => {
+const Scrap2: React.FC<scrap2Type> = ({ position, color }) => {
   return (
     <svg
       width="1922"

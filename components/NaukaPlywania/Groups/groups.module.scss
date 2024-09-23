@@ -1,0 +1,16 @@
+.groups {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  &__row-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 3rem;
+  }
+}

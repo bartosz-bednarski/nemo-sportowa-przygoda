@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
 import styles from "./strip.module.scss";
-import { customColors } from "@/types/UI/colors";
 import { COLORS } from "@/utils/UI/colors";
+import { stripH2Type } from "@/types/UI/stickerStripStrap";
 
-const StripH2: React.FC<{
-  scale: number;
-  stripBgColor: customColors;
-  stripTextColor: customColors;
-  title: string;
-}> = ({ scale, stripBgColor, stripTextColor, title }) => {
+const StripH2: React.FC<stripH2Type> = ({
+  scale,
+  stripBgColor,
+  stripTextColor,
+  title,
+}) => {
   return (
     <span className={styles.box}>
       <svg
