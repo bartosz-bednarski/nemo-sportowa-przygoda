@@ -1,17 +1,18 @@
 "use client";
 import React from "react";
-import styles from "./stripParagraph.module.scss";
+import styles from "./strip.module.scss";
 import { COLORS } from "@/utils/UI/colors";
-import { stripParagraphType } from "@/types/UI/stickerStripStrap";
+import { stripH3Type } from "@/types/UI/stickerStripStrap";
 
-const StripParagraph: React.FC<stripParagraphType> = ({
+const StripH4: React.FC<stripH3Type> = ({
   scale,
   stripBgColor,
   stripTextColor,
   title,
+  marginBottom,
 }) => {
   return (
-    <span className={styles.box}>
+    <span className={styles.box} style={{ marginBottom: marginBottom }}>
       <svg
         width="400"
         height="151"
@@ -25,8 +26,8 @@ const StripParagraph: React.FC<stripParagraphType> = ({
           fill={COLORS[stripBgColor]}
         />
       </svg>
-      <p style={{ color: COLORS[stripTextColor] }}>{title}</p>
+      <h4 style={{ color: COLORS[stripTextColor] }}>{title}</h4>
     </span>
   );
 };
-export default StripParagraph;
+export default StripH4;

@@ -4,31 +4,32 @@ import styles from "./about.module.scss";
 import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
 import AboutTextPoppins from "@/components/Ui/AboutTextPoppins/AboutTextPoppins";
 import Image from "next/image";
+import { aboutType } from "@/types/NaukaPlywania/naukaPlywania";
 
-const About: React.FC = () => {
+const About: React.FC<aboutType> = ({ stickerH2, aboutTextPoppins, image }) => {
   return (
     <div className={styles.about}>
       <div className={styles["about__text-box"]}>
         <StickerH2
-          title="NAUKA PŁYWANIA"
-          titleStrip="NIEMOWLAKI"
-          scale={1.2}
-          stripTextColor="lightBlue"
-          stripBgColor="white"
-          paddingBottom={10}
+          title={stickerH2.title}
+          titleStrip={stickerH2.titleStrip}
+          scale={stickerH2.scale}
+          stripTextColor={stickerH2.stripTextColor}
+          stripBgColor={stickerH2.stripBgColor}
+          paddingBottom={stickerH2.paddingBottom}
         />
         <AboutTextPoppins
-          titleColor="lightBlue"
-          title="Dzieci  od  3  miesiąca  do  3 lat  z  rodzicami"
-          description="Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu."
+          titleColor={aboutTextPoppins.titleColor}
+          title={aboutTextPoppins.title}
+          description={aboutTextPoppins.description}
         />
       </div>
       <div className={styles["about__image-box"]}>
         <Image
           objectFit="cover"
           objectPosition="left"
-          src="/assets/swimming/background-img-scrap-1.png"
-          alt="nauka pływania niemowlaki"
+          src={`/assets/swimming/${image.src}`}
+          alt={image.alt}
           fill={true}
         />
       </div>

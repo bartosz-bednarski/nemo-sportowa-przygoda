@@ -8,11 +8,13 @@ const MainButton: React.FC<{
   bgColor: customColors;
   textColor: customColors;
   title: string;
-}> = ({ bgColor, textColor, title }) => {
+  onClick: () => void;
+}> = ({ bgColor, textColor, title, onClick }) => {
   return (
     <button
       className={styles.mainButton}
       style={{ background: COLORS[bgColor], color: COLORS[textColor] }}
+      onClick={onClick}
     >
       <span>{title}</span>{" "}
       <svg

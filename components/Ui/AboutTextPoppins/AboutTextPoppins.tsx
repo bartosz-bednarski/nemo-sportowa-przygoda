@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import styles from "./aboutTextPoppins.module.scss";
-import { customColors } from "@/types/UI/colors";
 import { COLORS } from "@/utils/UI/colors";
-const AboutTextPoppins: React.FC<{
-  titleColor: customColors;
-  title: string;
-  description: string;
-}> = ({ titleColor, title, description }) => {
+import { aboutTextPoppinsType } from "@/types/UI/aboutTextPoppins";
+const AboutTextPoppins: React.FC<aboutTextPoppinsType> = ({
+  titleColor,
+  title,
+  description,
+}) => {
   return (
     <div className={styles.box}>
       <span

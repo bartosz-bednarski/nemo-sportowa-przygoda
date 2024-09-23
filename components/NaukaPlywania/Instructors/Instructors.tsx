@@ -4,22 +4,31 @@ import styles from "./instructors.module.scss";
 import StripH3 from "@/components/Ui/StripH3/StripH3";
 import InstructorBubble from "@/components/Globals/InstructorBubble/InstructorBubble";
 import BackgroundText from "@/components/Ui/BackgroundText/BackgroundText";
+import { instructorsType } from "@/types/NaukaPlywania/naukaPlywania";
 
-const Instructors: React.FC = () => {
+const Instructors: React.FC<instructorsType> = ({
+  backgroundText,
+  stripH3,
+  instructors,
+}) => {
   return (
     <div className={styles.instructors}>
-      <BackgroundText title="INSTRUKTORZY" />
+      <BackgroundText title={backgroundText} />
       <StripH3
-        title="Z KIM BĘDZIECIE PŁYWAĆ?"
-        scale={1.9}
-        stripBgColor="white"
-        stripTextColor="lightBlue"
-        marginBottom="4rem"
+        title={stripH3.title}
+        scale={stripH3.scale}
+        stripBgColor={stripH3.stripBgColor}
+        stripTextColor={stripH3.stripTextColor}
+        marginBottom={stripH3.marginBottom}
       />
       <div className={styles["instructors__row-box"]}>
-        <InstructorBubble instructorName="WIKTORIA FRYCZEK" scale={0.7} />
-        <InstructorBubble instructorName="WIKTORIA FRYCZEK" scale={0.7} />
-        <InstructorBubble instructorName="WIKTORIA FRYCZEK" scale={0.7} />
+        {instructors.map((instructor) => (
+          <InstructorBubble
+            key={instructor.instructorName}
+            instructorName={instructor.instructorName}
+            scale={instructor.scale}
+          />
+        ))}
       </div>
     </div>
   );

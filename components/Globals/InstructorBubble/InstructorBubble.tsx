@@ -2,11 +2,12 @@
 import React from "react";
 import styles from "./instructorBubble.module.scss";
 import Image from "next/image";
+import { instructorBubbleType } from "@/types/Globals/globals";
 
-const InstructorBubble: React.FC<{
-  scale: number;
-  instructorName?: string;
-}> = ({ scale, instructorName }) => {
+const InstructorBubble: React.FC<instructorBubbleType> = ({
+  scale,
+  instructorName,
+}) => {
   return (
     <div className={styles.insctructorBubble} style={{ scale: scale }}>
       <div className={styles["insctructorBubble__image"]}>

@@ -6,8 +6,10 @@ import TitleStripDescription from "@/components/Ui/TitleStripDescription/TitleSt
 import StripH3 from "@/components/Ui/StripH3/StripH3";
 import SwimmingPoolCover from "@/components/Ui/SwimmingPoolCover/SwimmingPoolCover";
 import MainButton from "@/components/Ui/Buttons/MainButton";
+import { useRouter } from "next/navigation";
 
 const SwimmingOffert: React.FC = () => {
+  const router = useRouter();
   return (
     <div className={styles["swimming__offert"]}>
       <Image
@@ -65,6 +67,7 @@ const SwimmingOffert: React.FC = () => {
           title="Dowiedz się więcej"
           bgColor="mediumBlue"
           textColor="white"
+          onClick={() => router.push("/naukaplywania")}
         />
       </div>
     </div>
