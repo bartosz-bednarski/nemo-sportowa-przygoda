@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./strip.module.scss";
 import { customColors } from "@/types/UI/colors";
@@ -8,9 +9,10 @@ const StripH3: React.FC<{
   stripBgColor: customColors;
   stripTextColor: customColors;
   title: string;
-}> = ({ scale, stripBgColor, stripTextColor, title }) => {
+  marginBottom?: string;
+}> = ({ scale, stripBgColor, stripTextColor, title, marginBottom }) => {
   return (
-    <span className={styles.box}>
+    <span className={styles.box} style={{ marginBottom: marginBottom }}>
       <svg
         width="400"
         height="151"

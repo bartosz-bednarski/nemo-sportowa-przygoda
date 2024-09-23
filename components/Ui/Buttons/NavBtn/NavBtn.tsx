@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "../buttons.module.scss";
 import { COLORS } from "@/utils/UI/colors";
@@ -22,20 +23,20 @@ const NavBtn: React.FC<{
           fill="none"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M3.85156 9.01758C3.85156 8.24093 4.48116 7.61133 5.25781 7.61133H24.9453C25.722 7.61133 26.3516 8.24093 26.3516 9.01758C26.3516 9.79423 25.722 10.4238 24.9453 10.4238H5.25781C4.48116 10.4238 3.85156 9.79423 3.85156 9.01758Z"
             fill="white"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M3.85156 15.1113C3.85156 14.3347 4.48116 13.7051 5.25781 13.7051H24.9453C25.722 13.7051 26.3516 14.3347 26.3516 15.1113C26.3516 15.888 25.722 16.5176 24.9453 16.5176H5.25781C4.48116 16.5176 3.85156 15.888 3.85156 15.1113Z"
             fill="white"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M3.85156 21.2051C3.85156 20.4284 4.48116 19.7988 5.25781 19.7988H24.9453C25.722 19.7988 26.3516 20.4284 26.3516 21.2051C26.3516 21.9817 25.722 22.6113 24.9453 22.6113H5.25781C4.48116 22.6113 3.85156 21.9817 3.85156 21.2051Z"
             fill="white"
           />

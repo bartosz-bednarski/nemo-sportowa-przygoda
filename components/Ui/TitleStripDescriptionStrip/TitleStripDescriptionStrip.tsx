@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./titleStripDescriptionStrip.module.scss";
 import StripH3 from "../StripH3/StripH3";

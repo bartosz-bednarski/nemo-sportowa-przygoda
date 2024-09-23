@@ -7,6 +7,8 @@ import Navigation from "../Navigation/Navigation";
 
 const NavBar: React.FC = () => {
   const [showNavigation, setShowNavigation] = useState(false);
+  const [firstLoad, setFirstLoad] = useState(true);
+
   return (
     <>
       <nav className={styles.navBar}>
@@ -27,6 +29,8 @@ const NavBar: React.FC = () => {
       <Navigation
         showNavigation={showNavigation}
         hideNavigation={() => setShowNavigation(false)}
+        firstLoad={firstLoad}
+        setFirstLoad={() => setFirstLoad(false)}
       />
     </>
   );

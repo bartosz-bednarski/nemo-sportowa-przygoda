@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./stickerH2.module.scss";
 import StripH2 from "../StripH2/StripH2";

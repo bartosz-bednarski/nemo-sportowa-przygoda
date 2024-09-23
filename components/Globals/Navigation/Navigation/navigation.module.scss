@@ -16,6 +16,22 @@
     display: none;
   }
 }
+@keyframes showContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hideContent {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .navigation-hide {
   animation-name: hide !important;
   animation-duration: 1s;
@@ -23,11 +39,16 @@
   animation-direction: alternate;
   overflow: hidden;
 }
+.navigation-hideContent {
+  animation-name: hideContent !important;
+  animation-duration: 0.2s !important;
+  animation-delay: 0s !important;
+}
 .navigation {
+  opacity: 0;
   z-index: 20;
   width: 100%;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   box-sizing: border-box;
   justify-content: space-between;
@@ -53,23 +74,51 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    animation-name: showContent;
+    animation-delay: 0.8s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
   }
   &__bottom-box {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100vh;
+    animation-name: showContent;
+    animation-delay: 0.8s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
     &__20 {
       display: flex;
       flex-direction: column;
       width: 20%;
-      height: 80%;
+      height: 100%;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap: 0.3rem;
+      &__contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        align-items: flex-end;
+        font-weight: 600;
+        font-size: 0.8rem;
+        &__icon {
+          padding: 10px;
+          border-radius: 20px;
+          border: 1px solid white;
+        }
+      }
     }
     &__80 {
       display: flex;
       flex-direction: column;
       width: 80%;
       height: 100%;
+
       &__nav {
         font-size: 1.5rem;
         text-transform: uppercase;
@@ -93,6 +142,13 @@
           padding: 1rem 0;
 
           border-bottom: 3px solid #669ad7;
+          a,
+          a:visited,
+          a:hover,
+          a:active {
+            color: inherit;
+            text-decoration: none;
+          }
         }
       }
     }
