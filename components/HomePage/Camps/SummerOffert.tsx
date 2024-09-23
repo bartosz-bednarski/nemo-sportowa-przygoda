@@ -48,6 +48,7 @@ const SummerOffert: React.FC = () => {
           title="Dowiedz się więcej"
           textColor="white"
           bgColor="basicGreen"
+          onClick={() => console.log("IMPLEMENT NAV HERE")}
         />
       </div>
     </div>

@@ -35,6 +35,7 @@ const TrainersSection: React.FC = () => {
           title="Nasz zespół"
           textColor="basicOrange"
           bgColor="white"
+          onClick={() => console.log("IMPLEMENT NAV HERE")}
         />
       </div>
       <Scrap2 color="mediumBlue" position="bottom" />
