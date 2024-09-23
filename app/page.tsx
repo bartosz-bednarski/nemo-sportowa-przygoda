@@ -1,5 +1,5 @@
 import VideosSection from "@/components/Globals/VideosSection";
-import styles from "./homePage.module.scss";
+import styles from "./page.module.scss";
 import SwimmingSection from "@/components/HomePage/Swimming/SwimmingSection";
 import CampsSection from "@/components/HomePage/Camps/CampsSection";
 import TrainersSection from "@/components/HomePage/Trainers/TrainersSection";

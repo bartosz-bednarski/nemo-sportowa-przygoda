@@ -1,9 +1,10 @@
+"use client";
 import React from "react";
 import styles from "../buttons.module.scss";
 
-const XBtn: React.FC = () => {
+const XBtn: React.FC<{ onClick: () => void }> = ({ onClick }) => {
   return (
-    <button className={styles.xBtn}>
+    <button className={styles.xBtn} onClick={() => onClick()}>
       <svg
         width="41"
         height="41"

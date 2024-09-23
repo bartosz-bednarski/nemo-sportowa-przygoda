@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./stripParagraph.module.scss";
 import { customColors } from "@/types/UI/colors";

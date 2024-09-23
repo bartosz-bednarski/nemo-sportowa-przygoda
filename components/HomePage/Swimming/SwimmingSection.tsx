@@ -1,3 +1,4 @@
+"use client";
 import "react";
 import styles from "./swimmingSection.module.scss";
 import StickerH2 from "../../Ui/StickerH2/StickerH2";

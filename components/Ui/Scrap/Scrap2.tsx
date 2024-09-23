@@ -1,3 +1,4 @@
+"use client";
 import { customColors } from "@/types/UI/colors";
 import { COLORS } from "@/utils/UI/colors";
 import React from "react";

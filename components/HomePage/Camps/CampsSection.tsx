@@ -1,3 +1,4 @@
+"use client";
 import "react";
 import styles from "./campsSection.module.scss";
 import BackgroundText from "@/components/Ui/BackgroundText/BackgroundText";

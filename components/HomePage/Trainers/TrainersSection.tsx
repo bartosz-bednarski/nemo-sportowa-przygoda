@@ -1,3 +1,4 @@
+"use client";
 import "react";
 import styles from "./trainersSection.module.scss";
 import AboutTextPoppins from "@/components/Ui/AboutTextPoppins/AboutTextPoppins";

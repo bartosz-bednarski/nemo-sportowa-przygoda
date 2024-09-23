@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./backgroundText.module.scss";
 const BackgroundText: React.FC<{ title: string }> = ({ title }) => {
