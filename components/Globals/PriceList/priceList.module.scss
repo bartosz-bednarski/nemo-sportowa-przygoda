@@ -1,0 +1,9 @@
+.priceList {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem 4rem;
+  justify-content: center;
+  gap: 4rem;
+}

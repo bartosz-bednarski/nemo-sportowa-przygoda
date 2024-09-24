@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import styles from "./naukaPlywania.module.scss";
-import About from "./About/About";
 import Instructors from "./Instructors/Instructors";
 import Pools from "./Pools/Pools";
 import { naukaPlywaniaType } from "@/types/NaukaPlywania/naukaPlywania";
 import { COLORS } from "@/utils/UI/colors";
 import Groups from "./Groups/Groups";
+import NaukaPlywaniaAbout from "../Globals/NaukaPlywaniaAbout/NaukaPlywaniaAbout";
 
 const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
   about,
@@ -20,7 +20,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
       className={styles.naukaPlywania}
       style={{ background: COLORS[backgroundColor] }}
     >
-      <About
+      <NaukaPlywaniaAbout
         stickerH2={about.stickerH2}
         aboutTextPoppins={about.aboutTextPoppins}
         image={about.image}

@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import styles from "./stickerH4.module.scss";
-import { stickerH2Type } from "@/types/UI/stickerStripStrap";
+import { stickerH4Type } from "@/types/UI/stickerStripStrap";
 import StripH4 from "../StripH4/StripH4";
-const StickerH4: React.FC<stickerH2Type> = ({
+const StickerH4: React.FC<stickerH4Type> = ({
   stripBgColor,
   stripTextColor,
   scale,

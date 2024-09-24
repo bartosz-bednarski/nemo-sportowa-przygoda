@@ -3,16 +3,23 @@ import React from "react";
 import styles from "./instructorBubble.module.scss";
 import Image from "next/image";
 import { instructorBubbleType } from "@/types/Globals/globals";
+import Link from "next/link";
 
 const InstructorBubble: React.FC<instructorBubbleType> = ({
   scale,
   instructorName,
+  img1,
+  href,
 }) => {
   return (
-    <div className={styles.insctructorBubble} style={{ scale: scale }}>
+    <Link
+      href={href}
+      className={styles.insctructorBubble}
+      style={{ scale: scale }}
+    >
       <div className={styles["insctructorBubble__image"]}>
         <Image
-          src="/assets/instructors/instructor-1.png"
+          src={`/assets/instructors/${img1}`}
           fill={true}
           alt="instructor"
         />
@@ -20,7 +27,7 @@ const InstructorBubble: React.FC<instructorBubbleType> = ({
       <span className={styles["insctructorBubble__title"]}>
         {instructorName}
       </span>
-    </div>
+    </Link>
   );
 };
 export default InstructorBubble;

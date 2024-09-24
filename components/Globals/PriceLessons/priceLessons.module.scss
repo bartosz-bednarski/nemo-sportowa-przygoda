@@ -1,0 +1,24 @@
+@import "../../../styles/colors.scss";
+.priceLessons {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: fit-content;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  &__content-box {
+    width: 100%;
+    font-weight: 600;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7rem;
+    align-items: center;
+    border-bottom: 2px solid white;
+    &__orange {
+      color: $basicOrange;
+    }
+  }
+}
