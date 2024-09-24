@@ -27,6 +27,9 @@ const Instructors: React.FC<instructorsType> = ({
             key={instructor.instructorName}
             instructorName={instructor.instructorName}
             scale={instructor.scale}
+            img1={instructor.img1}
+            img2={instructor.img2}
+            href={instructor.href}
           />
         ))}
       </div>

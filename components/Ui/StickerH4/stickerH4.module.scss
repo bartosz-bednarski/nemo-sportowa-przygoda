@@ -1,5 +1,4 @@
 .box {
-  gap: 1.5rem;
   box-sizing: border-box;
   padding-left: 20px;
   width: fit-content;
@@ -17,25 +16,28 @@
     text-align: left;
   }
 }
-@media only screen and (max-width: 1600px) {
-  .box h4 {
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (max-width: 1250px) {
-  .box {
-    h4 {
-      font-size: 1.2rem;
-    }
-  }
-}
-@media only screen and (max-width: 850px) {
-  .box {
-    h4 {
-      font-size: 1.1rem;
-    }
-  }
-}
+// @media only screen and (max-width: 1600px) {
+//   .box h4 {
+//     font-size: 1.5rem;
+//   }
+//   .box__title {
+//     font-size: 1.5rem;
+//   }
+// }
+// @media only screen and (max-width: 1250px) {
+//   .box {
+//     h4 {
+//       font-size: 1.5rem;
+//     }
+//   }
+// }
+// @media only screen and (max-width: 850px) {
+//   .box {
+//     h4 {
+//       font-size: 1.5rem;
+//     }
+//   }
+// }
 @media only screen and (max-width: 700px) {
   .box {
     width: 100%;

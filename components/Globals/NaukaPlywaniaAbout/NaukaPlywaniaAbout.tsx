@@ -1,12 +1,16 @@
 "use client";
 import React from "react";
-import styles from "./about.module.scss";
+import styles from "./naukaPlywaniaAbout.module.scss";
 import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
 import AboutTextPoppins from "@/components/Ui/AboutTextPoppins/AboutTextPoppins";
 import Image from "next/image";
 import { aboutType } from "@/types/NaukaPlywania/naukaPlywania";
 
-const About: React.FC<aboutType> = ({ stickerH2, aboutTextPoppins, image }) => {
+const NaukaPlywaniaAbout: React.FC<aboutType> = ({
+  stickerH2,
+  aboutTextPoppins,
+  image,
+}) => {
   return (
     <div className={styles.about}>
       <div className={styles["about__text-box"]}>
@@ -37,4 +41,4 @@ const About: React.FC<aboutType> = ({ stickerH2, aboutTextPoppins, image }) => {
   );
 };
 
-export default About;
+export default NaukaPlywaniaAbout;

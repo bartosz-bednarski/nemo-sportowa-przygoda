@@ -27,10 +27,34 @@ const TrainersSection: React.FC = () => {
         />
       </div>
       <div className={styles["trainers__trainers-gallery"]}>
-        <InstructorBubble scale={1} />
-        <InstructorBubble scale={0.6} />
-        <InstructorBubble scale={0.8} />
-        <InstructorBubble scale={0.9} />
+        <InstructorBubble
+          scale={1}
+          img1="instructor-1.png"
+          img2="instructor-1.png"
+          instructorName=""
+          href="/"
+        />
+        <InstructorBubble
+          scale={0.6}
+          img1="instructor-1.png"
+          img2="instructor-1.png"
+          instructorName=""
+          href="/"
+        />
+        <InstructorBubble
+          scale={0.8}
+          img1="instructor-1.png"
+          img2="instructor-1.png"
+          instructorName=""
+          href="/"
+        />
+        <InstructorBubble
+          scale={0.9}
+          img1="instructor-1.png"
+          img2="instructor-1.png"
+          instructorName=""
+          href="/"
+        />
         <LinkButton
           title="Nasz zespół"
           textColor="basicOrange"

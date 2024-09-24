@@ -62,9 +62,27 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
         marginBottom: "4rem",
       },
       instructors: [
-        { instructorName: "WIKTORIA FRYCZEK", scale: 0.7 },
-        { instructorName: "WIKTORIA FRYCZ", scale: 0.7 },
-        { instructorName: "WIKTORIA FRYCZE", scale: 0.7 },
+        {
+          instructorName: "WIKTORIA FRYCZEK",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+        {
+          instructorName: "WIKTORIA FRYCZ",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+        {
+          instructorName: "WIKTORIA FRYCZE",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
       ],
     },
     pools: {
@@ -111,9 +129,27 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
         marginBottom: "4rem",
       },
       instructors: [
-        { instructorName: "WIKTORIA FRYCZEK", scale: 0.7 },
-        { instructorName: "WIKTORIA FRYCZ", scale: 0.7 },
-        { instructorName: "WIKTORIA FRYCZE", scale: 0.7 },
+        {
+          instructorName: "WIKTORIA FRYCZEK",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+        {
+          instructorName: "WIKTORIA FRYCZ",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+        {
+          instructorName: "WIKTORIA FRYCZE",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
       ],
     },
     pools: {
@@ -236,9 +272,27 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
         marginBottom: "4rem",
       },
       instructors: [
-        { instructorName: "WIKTORIA FRYCZEK", scale: 0.7 },
-        { instructorName: "WIKTORIA FRYCZ", scale: 0.7 },
-        { instructorName: "WIKTORIA FRYCZE", scale: 0.7 },
+        {
+          instructorName: "WIKTORIA FRYCZEK",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+        {
+          instructorName: "WIKTORIA FRYCZ",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+        {
+          instructorName: "WIKTORIA FRYCZE",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
       ],
     },
     pools: {
