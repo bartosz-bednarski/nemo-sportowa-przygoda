@@ -8,3 +8,8 @@
     text-align: center;
   }
 }
+@media only screen and (max-width: 500px) {
+  .titleStripDescription {
+    width: 300px;
+  }
+}

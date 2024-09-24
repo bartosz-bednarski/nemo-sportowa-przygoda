@@ -17,8 +17,13 @@
     font-size: 5rem;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
   .text {
     font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .text {
+    display: none;
   }
 }

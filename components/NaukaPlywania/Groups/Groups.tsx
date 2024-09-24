@@ -1,18 +1,18 @@
 "use client";
 import React from "react";
 import styles from "./groups.module.scss";
-import StripH3 from "@/components/Ui/StripH3/StripH3";
 import { groupsType } from "@/types/NaukaPlywania/naukaPlywania";
 import GroupLvl from "@/components/Globals/GroupLvl/GroupLvl";
+import StripH2 from "@/components/Ui/StripH2/StripH2";
 
-const Groups: React.FC<groupsType> = ({ stripH3, groups }) => {
+const Groups: React.FC<groupsType> = ({ stripH2, groups }) => {
   return (
     <div className={styles.groups}>
-      <StripH3
-        title={stripH3.title}
-        stripBgColor={stripH3.stripBgColor}
-        stripTextColor={stripH3.stripTextColor}
-        scale={stripH3.scale}
+      <StripH2
+        title={stripH2.title}
+        stripBgColor={stripH2.stripBgColor}
+        stripTextColor={stripH2.stripTextColor}
+        scale={stripH2.scale}
       />
       <div className={styles["groups__row-box"]}>
         {groups.map((group) => (

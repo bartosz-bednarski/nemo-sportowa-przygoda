@@ -5,7 +5,7 @@ import AboutTextPoppins from "@/components/Ui/AboutTextPoppins/AboutTextPoppins"
 import BackgroundText from "@/components/Ui/BackgroundText/BackgroundText";
 import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
 import InstructorBubble from "@/components/Globals/InstructorBubble/InstructorBubble";
-import MainButton from "@/components/Ui/Buttons/MainButton";
+import LinkButton from "@/components/Ui/Buttons/LinkButton";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 const TrainersSection: React.FC = () => {
   return (
@@ -31,11 +31,11 @@ const TrainersSection: React.FC = () => {
         <InstructorBubble scale={0.6} />
         <InstructorBubble scale={0.8} />
         <InstructorBubble scale={0.9} />
-        <MainButton
+        <LinkButton
           title="Nasz zespół"
           textColor="basicOrange"
           bgColor="white"
-          onClick={() => console.log("IMPLEMENT NAV HERE")}
+          href="/"
         />
       </div>
       <Scrap2 color="mediumBlue" position="bottom" />

@@ -53,10 +53,10 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       },
     },
     instructors: {
-      backgroundText: "INSTRUKTORZY",
+      backgroundText: "KADRA",
       stripH3: {
-        title: "Z KIM BĘDZIECIE PŁYWAĆ?",
-        scale: 1.9,
+        title: "INSTRUKTORZY",
+        scale: 1.2,
         stripBgColor: "white",
         stripTextColor: "lightBlue",
         marginBottom: "4rem",
@@ -102,10 +102,10 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       },
     },
     instructors: {
-      backgroundText: "INSTRUKTORZY",
+      backgroundText: "KADRA",
       stripH3: {
-        title: "Z KIM BĘDZIECIE PŁYWAĆ?",
-        scale: 1.9,
+        title: "INSTRUKTORZY",
+        scale: 1.2,
         stripBgColor: "white",
         stripTextColor: "mediumBlue",
         marginBottom: "4rem",
@@ -131,12 +131,11 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       ],
     },
     groups: {
-      stripH3: {
+      stripH2: {
         title: "GRUPY",
         scale: 1.2,
         stripBgColor: "white",
         stripTextColor: "mediumBlue",
-        marginBottom: "",
       },
       groups: [
         {
@@ -228,10 +227,10 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       },
     },
     instructors: {
-      backgroundText: "INSTRUKTORZY",
+      backgroundText: "KADRA",
       stripH3: {
-        title: "Z KIM BĘDZIECIE PŁYWAĆ?",
-        scale: 1.9,
+        title: "INSTRUKTORZY",
+        scale: 1.2,
         stripBgColor: "white",
         stripTextColor: "darkBlue",
         marginBottom: "4rem",
@@ -258,12 +257,11 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       ],
     },
     groups: {
-      stripH3: {
+      stripH2: {
         title: "GRUPY",
         scale: 1.2,
         stripBgColor: "white",
         stripTextColor: "darkBlue",
-        marginBottom: "",
       },
       groups: [
         {

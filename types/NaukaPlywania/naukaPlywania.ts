@@ -1,7 +1,11 @@
 import { groupLvlType, instructorBubbleType } from "../Globals/globals";
 import { aboutTextPoppinsType } from "../UI/aboutTextPoppins";
 import { customColors } from "../UI/colors";
-import { stickerH2Type, stripH3Type } from "../UI/stickerStripStrap";
+import {
+  stickerH2Type,
+  stripH2Type,
+  stripH3Type,
+} from "../UI/stickerStripStrap";
 import { swimmingPoolCoverType } from "../UI/swimmingPoolCover";
 export type naukaPlywaniaType = {
   about: aboutType;
@@ -28,6 +32,6 @@ export type poolsType = {
   swimmingPools: swimmingPoolCoverType[];
 };
 export type groupsType = {
-  stripH3: stripH3Type;
+  stripH2: stripH2Type;
   groups: groupLvlType[];
 };

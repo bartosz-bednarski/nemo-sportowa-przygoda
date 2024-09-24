@@ -31,3 +31,8 @@
     align-items: center;
   }
 }
+@media only screen and (max-width: 800px) {
+  .navBar__logo {
+    display: none;
+  }
+}

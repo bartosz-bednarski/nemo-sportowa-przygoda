@@ -4,3 +4,13 @@
   flex-direction: column;
   box-sizing: border-box;
 }
+@media only screen and (max-width: 1000px) {
+  .groupLvl {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .groupLvl {
+    width: 100%;
+  }
+}

@@ -29,10 +29,24 @@
     }
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 700px) {
   .box {
-    h2 {
-      font-size: 1.22rem;
-    }
+    width: 100%;
+    padding: 0;
   }
 }
+@media only screen and (max-width: 500px) {
+  .box h2 {
+    font-size: 1.5rem;
+  }
+  .box__title {
+    font-size: 1.5rem;
+  }
+}
+// @media only screen and (max-width: 850px) {
+//   .box {
+//     h2 {
+//       font-size: 1.22rem;
+//     }
+//   }
+// }

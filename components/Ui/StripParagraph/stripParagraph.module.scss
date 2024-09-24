@@ -22,3 +22,11 @@
     font-size: 0.9rem;
   }
 }
+@media only screen and (max-width: 650px) {
+  .box {
+    max-width: 300px;
+  }
+  .box svg {
+    display: none;
+  }
+}

@@ -14,3 +14,20 @@
     color: $mediumBlue;
   }
 }
+@media only screen and (max-width: 1000px) {
+  .box__title {
+    font-size: 1.5rem;
+  }
+  .box p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .box {
+    text-align: center;
+  }
+  .box__title {
+    font-size: 1.2rem;
+    font-family: "Poppins-400";
+  }
+}

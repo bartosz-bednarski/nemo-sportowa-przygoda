@@ -21,6 +21,7 @@ export type stripH2Type = {
   stripBgColor: customColors;
   stripTextColor: customColors;
   title: string;
+  paddingBottom?: number;
 };
 
 export type stripH3Type = {

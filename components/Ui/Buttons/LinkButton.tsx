@@ -3,18 +3,19 @@ import React from "react";
 import styles from "./buttons.module.scss";
 import { customColors } from "@/types/UI/colors";
 import { COLORS } from "@/utils/UI/colors";
+import Link from "next/link";
 
-const MainButton: React.FC<{
+const LinkButton: React.FC<{
   bgColor: customColors;
   textColor: customColors;
   title: string;
-  onClick: () => void;
-}> = ({ bgColor, textColor, title, onClick }) => {
+  href: string;
+}> = ({ bgColor, textColor, title, href }) => {
   return (
-    <button
-      className={styles.mainButton}
+    <Link
+      className={styles.linkButton}
       style={{ background: COLORS[bgColor], color: COLORS[textColor] }}
-      onClick={onClick}
+      href={href}
     >
       <span>{title}</span>{" "}
       <svg
@@ -31,7 +32,7 @@ const MainButton: React.FC<{
           fill={COLORS[textColor]}
         />
       </svg>
-    </button>
+    </Link>
   );
 };
-export default MainButton;
+export default LinkButton;
