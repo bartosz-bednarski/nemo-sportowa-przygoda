@@ -9,3 +9,9 @@
     text-align: center;
   }
 }
+@media only screen and (max-width: 600px) {
+  .titleStripDescription {
+    width: 350px;
+    gap: 1rem;
+  }
+}

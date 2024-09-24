@@ -42,3 +42,12 @@
     }
   }
 }
+@media only screen and (max-width: 600px) {
+  .trainers__about-container {
+    gap: 3rem;
+    padding: 2rem;
+  }
+  .trainers__trainers-gallery {
+    padding: 2rem;
+  }
+}

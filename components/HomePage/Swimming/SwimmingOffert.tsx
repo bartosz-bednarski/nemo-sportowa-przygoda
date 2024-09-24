@@ -5,11 +5,9 @@ import Image from "next/image";
 import TitleStripDescription from "@/components/Ui/TitleStripDescription/TitleStripDescription";
 import StripH3 from "@/components/Ui/StripH3/StripH3";
 import SwimmingPoolCover from "@/components/Ui/SwimmingPoolCover/SwimmingPoolCover";
-import MainButton from "@/components/Ui/Buttons/MainButton";
-import { useRouter } from "next/navigation";
+import LinkButton from "@/components/Ui/Buttons/LinkButton";
 
 const SwimmingOffert: React.FC = () => {
-  const router = useRouter();
   return (
     <div className={styles["swimming__offert"]}>
       <Image
@@ -63,11 +61,11 @@ const SwimmingOffert: React.FC = () => {
           <SwimmingPoolCover image="gorlice.webp" title="BASEN GORLICE" />
           <SwimmingPoolCover image="eisenberga.jpg" title="BASEN EISENBERGA" />
         </div>
-        <MainButton
+        <LinkButton
           title="Dowiedz się więcej"
           bgColor="mediumBlue"
           textColor="white"
-          onClick={() => router.push("/naukaplywania")}
+          href="/naukaplywania"
         />
       </div>
     </div>

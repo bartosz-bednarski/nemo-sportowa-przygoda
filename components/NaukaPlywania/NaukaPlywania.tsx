@@ -36,7 +36,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
         swimmingPools={pools.swimmingPools}
       />
       {groups !== undefined && (
-        <Groups stripH3={groups.stripH3} groups={groups.groups} />
+        <Groups stripH2={groups.stripH2} groups={groups.groups} />
       )}
     </div>
   );

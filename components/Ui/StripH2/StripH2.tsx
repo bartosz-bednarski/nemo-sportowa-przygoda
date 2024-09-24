@@ -25,7 +25,14 @@ const StripH2: React.FC<stripH2Type> = ({
           fill={COLORS[stripBgColor]}
         />
       </svg>
-      <h2 style={{ color: COLORS[stripTextColor] }}>{title}</h2>
+      <h2
+        style={{
+          color: COLORS[stripTextColor],
+          background: COLORS[stripBgColor],
+        }}
+      >
+        {title}
+      </h2>
     </span>
   );
 };

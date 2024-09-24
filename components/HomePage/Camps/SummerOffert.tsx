@@ -4,7 +4,7 @@ import styles from "./campsSection.module.scss";
 import Image from "next/image";
 import StripH3 from "@/components/Ui/StripH3/StripH3";
 import TitleStripDescriptionStrip from "@/components/Ui/TitleStripDescriptionStrip/TitleStripDescriptionStrip";
-import MainButton from "@/components/Ui/Buttons/MainButton";
+import LinkButton from "@/components/Ui/Buttons/LinkButton";
 
 const SummerOffert: React.FC = () => {
   return (
@@ -44,11 +44,11 @@ const SummerOffert: React.FC = () => {
             descriptionStripTextColor="white"
           />
         </div>
-        <MainButton
+        <LinkButton
           title="Dowiedz się więcej"
           textColor="white"
           bgColor="basicGreen"
-          onClick={() => console.log("IMPLEMENT NAV HERE")}
+          href="/"
         />
       </div>
     </div>

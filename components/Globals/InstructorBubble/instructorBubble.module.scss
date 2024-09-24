@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
   &__image {
     position: relative;
     z-index: 3;
@@ -20,5 +22,17 @@
     text-align: center;
     font-weight: 600;
     font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .insctructorBubble__image {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .insctructorBubble__image {
+    width: 150px;
+    height: 150px;
   }
 }
