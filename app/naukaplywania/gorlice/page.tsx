@@ -5,6 +5,11 @@ import NaukaPlywaniaBasen from "@/components/NaukaPlywaniaBasen/NaukaPlywaniaBas
 import { NAUKA_PLYWANIA_GORLICE } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaGorlice";
 import LessonType from "@/components/Globals/LessonType/LessonType";
 import { RODZAJE_LEKCJI } from "@/utils/NaukaPlywaniaBasen/rodzajeLekcji";
+import PoolNecessaryItems from "@/components/Globals/PoolNecessaryItems/PoolNecessaryItems";
+import Bubbles from "@/components/Ui/Bubbles/Bubbles";
+import PoolTutorial from "@/components/Globals/PoolTutorial/PoolTutorial";
+import PoolInformations from "@/components/Globals/PoolInformations/PoolInformations";
+import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 const NaukaPlywaniaGorlice: React.FC = () => {
   return (
     <div className={styles.main}>
@@ -54,6 +59,12 @@ const NaukaPlywaniaGorlice: React.FC = () => {
         lessonType={RODZAJE_LEKCJI.indywidualne}
       />
       <LessonType bgColor="lightBlue" lessonType={RODZAJE_LEKCJI.grupowe} />
+      <PoolNecessaryItems color="lightBlue" />
+      <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
+      <PoolTutorial color="mediumBlue" />
+      <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
+      <PoolInformations color="darkBlue" />
+      <Scrap2 position="bottom" color="mediumBlue" />
     </div>
   );
 };

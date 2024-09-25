@@ -31,3 +31,8 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 600px) {
+  .lessonType__content {
+    padding: 2rem;
+  }
+}
