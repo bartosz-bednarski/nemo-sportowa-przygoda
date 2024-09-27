@@ -4,6 +4,7 @@ import VideosSection from "@/components/Globals/VideosSection";
 import NaukaPlywaniaBasen from "@/components/NaukaPlywaniaBasen/NaukaPlywaniaBasen";
 import {
   BASEN_GORLICE_INFORMATIONS,
+  BASEN_GORLICE_TUTORIAL,
   NAUKA_PLYWANIA_GORLICE,
 } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaGorlice";
 import LessonType from "@/components/Globals/LessonType/LessonType";
@@ -62,20 +63,17 @@ const NaukaPlywaniaGorlice: React.FC = () => {
         }}
       />
       <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_GORLICE.niemowlaki.about}
-        backgroundColor={NAUKA_PLYWANIA_GORLICE.niemowlaki.backgroundColor}
-        instructors={NAUKA_PLYWANIA_GORLICE.niemowlaki.instructors}
-        groups={NAUKA_PLYWANIA_GORLICE.niemowlaki.groups}
-        priceList={NAUKA_PLYWANIA_GORLICE.niemowlaki.priceList}
+        about={NAUKA_PLYWANIA_GORLICE.zRodzicami.about}
+        backgroundColor={NAUKA_PLYWANIA_GORLICE.zRodzicami.backgroundColor}
+        instructors={NAUKA_PLYWANIA_GORLICE.zRodzicami.instructors}
+        groups={NAUKA_PLYWANIA_GORLICE.zRodzicami.groups}
+        priceList={NAUKA_PLYWANIA_GORLICE.zRodzicami.priceList}
       />
-      <LessonType
-        bgColor="lightBlue"
-        lessonType={RODZAJE_LEKCJI.indywidualne}
-      />
+
       <LessonType bgColor="lightBlue" lessonType={RODZAJE_LEKCJI.grupowe} />
       <PoolNecessaryItems color="lightBlue" />
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-      <PoolTutorial color="mediumBlue" />
+      <PoolTutorial poolTutorial={BASEN_GORLICE_TUTORIAL} />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_GORLICE_INFORMATIONS} />
       <Scrap2 position="bottom" color="mediumBlue" />

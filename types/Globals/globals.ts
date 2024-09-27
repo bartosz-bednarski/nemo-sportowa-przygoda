@@ -5,6 +5,7 @@ import {
   stickerH1Type,
   stickerH2Type,
   stickerH4Type,
+  stripH4Type,
 } from "../UI/stickerStripStrap";
 
 export type instructorBubbleType = {
@@ -51,11 +52,11 @@ export type groupLvlType = {
 export type priceLessonsType = {
   stickerH4: stickerH4Type;
   oneLesson: {
-    price: number;
+    price: string;
     time: number;
   };
   tenLessons: {
-    price: number;
+    price: string;
     time: string;
   };
   button: signInButtonType;
@@ -69,4 +70,12 @@ export type lessonType = {
   img: string;
   stickerH4: stickerH4Type;
   aboutTextPoppins: aboutTextPoppinsType;
+};
+
+export type poolTutorialType = {
+  header: boolean;
+  stripH4?: stripH4Type;
+  color: customColors;
+  firstRule: string;
+  rules: string[];
 };

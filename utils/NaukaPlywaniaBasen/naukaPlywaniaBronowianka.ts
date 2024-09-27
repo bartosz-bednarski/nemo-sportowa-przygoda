@@ -8,7 +8,7 @@ import { customColors } from "@/types/UI/colors";
 import { GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS } from "../Grupy/grupyPoziomZaawansowania";
 
 type naukaPlywaniaBasen = {
-  dzieci: {
+  zRodzicami: {
     backgroundColor: customColors;
     about: aboutType;
     instructors: instructorsRowBoxType;
@@ -31,7 +31,7 @@ type naukaPlywaniaBasen = {
   // };
 };
 
-export const CENNIK_DZIECI_BRONOWIANKA: priceListType = [
+export const CENNIK_Z_RODZICAMI_BRONOWIANKA: priceListType = [
   {
     stickerH4: {
       title: "LEKCJE",
@@ -42,11 +42,11 @@ export const CENNIK_DZIECI_BRONOWIANKA: priceListType = [
       paddingBottom: 0,
     },
     oneLesson: {
-      price: 45,
+      price: "45",
       time: 45,
     },
     tenLessons: {
-      price: 45,
+      price: "45",
       time: "10 x 45",
     },
     button: {
@@ -58,12 +58,12 @@ export const CENNIK_DZIECI_BRONOWIANKA: priceListType = [
   },
 ];
 export const NAUKA_PLYWANIA_BRONOWIANKA: naukaPlywaniaBasen = {
-  dzieci: {
+  zRodzicami: {
     backgroundColor: "lightBlue",
     about: {
       stickerH2: {
         title: "NAUKA PŁYWANIA",
-        titleStrip: "DZIECI",
+        titleStrip: "Z RODZICAMI",
         scale: 1.2,
         stripTextColor: "lightBlue",
         stripBgColor: "white",
@@ -80,7 +80,7 @@ export const NAUKA_PLYWANIA_BRONOWIANKA: naukaPlywaniaBasen = {
         alt: "nauka pływania niemowlaki",
       },
     },
-    priceList: CENNIK_DZIECI_BRONOWIANKA,
+    priceList: CENNIK_Z_RODZICAMI_BRONOWIANKA,
     instructors: {
       bgColor: "lightBlue",
       instructors: [

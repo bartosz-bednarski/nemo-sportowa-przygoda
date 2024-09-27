@@ -1,4 +1,8 @@
-import { instructorsRowBoxType, priceListType } from "@/types/Globals/globals";
+import {
+  instructorsRowBoxType,
+  poolTutorialType,
+  priceListType,
+} from "@/types/Globals/globals";
 import {
   aboutType,
   groupsType,
@@ -8,7 +12,7 @@ import { customColors } from "@/types/UI/colors";
 import { GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS } from "../Grupy/grupyPoziomZaawansowania";
 
 type naukaPlywaniaBasen = {
-  niemowlaki: {
+  zRodzicami: {
     backgroundColor: customColors;
     about: aboutType;
     instructors: instructorsRowBoxType;
@@ -31,7 +35,7 @@ type naukaPlywaniaBasen = {
   // };
 };
 
-export const CENNIK_NIEMOWLAKI_GORLICE: priceListType = [
+export const CENNIK_Z_RODZICAMI_GORLICE: priceListType = [
   {
     stickerH4: {
       title: "LEKCJE",
@@ -42,35 +46,11 @@ export const CENNIK_NIEMOWLAKI_GORLICE: priceListType = [
       paddingBottom: 0,
     },
     oneLesson: {
-      price: 45,
-      time: 45,
+      price: "40 zł (z rodzicem)",
+      time: 30,
     },
     tenLessons: {
-      price: 45,
-      time: "10 x 45",
-    },
-    button: {
-      title: "Zapisz się na zajęcia",
-      textColor: "lightBlue",
-      bgColor: "white",
-      href: "/",
-    },
-  },
-  {
-    stickerH4: {
-      title: "LEKCJE",
-      titleStrip: "INDYWIDUALNE",
-      scale: 1.2,
-      stripTextColor: "lightBlue",
-      stripBgColor: "basicOrange",
-      paddingBottom: 0,
-    },
-    oneLesson: {
-      price: 45,
-      time: 45,
-    },
-    tenLessons: {
-      price: 45,
+      price: "400 zł (z rodzicem)",
       time: "10 x 45",
     },
     button: {
@@ -82,12 +62,12 @@ export const CENNIK_NIEMOWLAKI_GORLICE: priceListType = [
   },
 ];
 export const NAUKA_PLYWANIA_GORLICE: naukaPlywaniaBasen = {
-  niemowlaki: {
+  zRodzicami: {
     backgroundColor: "lightBlue",
     about: {
       stickerH2: {
         title: "NAUKA PŁYWANIA",
-        titleStrip: "NIEMOWLAKI",
+        titleStrip: "Z RODZICAMI",
         scale: 1.2,
         stripTextColor: "lightBlue",
         stripBgColor: "white",
@@ -95,16 +75,16 @@ export const NAUKA_PLYWANIA_GORLICE: naukaPlywaniaBasen = {
       },
       aboutTextPoppins: {
         titleColor: "lightBlue",
-        title: "Dzieci  od  3  miesiąca  do  3 lat  z  rodzicami",
+        title: "Dzieci  od  3  miesiąca  do  6 lat  z  rodzicami",
         description:
           "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
       },
       image: {
         src: "background-img-scrap-1.png",
-        alt: "nauka pływania niemowlaki",
+        alt: "nauka pływania z rodzicami",
       },
     },
-    priceList: CENNIK_NIEMOWLAKI_GORLICE,
+    priceList: CENNIK_Z_RODZICAMI_GORLICE,
     instructors: {
       bgColor: "lightBlue",
       instructors: [
@@ -190,4 +170,20 @@ export const BASEN_GORLICE_INFORMATIONS: poolInformationsType = {
       title: "SZATNIA RODZINNA",
     },
   },
+};
+
+export const BASEN_GORLICE_TUTORIAL: poolTutorialType = {
+  header: false,
+  color: "mediumBlue",
+  firstRule: "Zostaw odzież wierzchnią w szatni obok kasy biletowej.",
+  rules: [
+    "Kup bilet dla siebie (dziecko do 3 lat ma darmowe wejście)",
+    "Poproś o klucz do dolnej szatni.",
+    "Przebierz siebie i dziecko.",
+    "Załóż dziecku wodoodporną pieluchę.",
+    "Owiń dziecko ręcznikiem.",
+    "Zabierz czepek dla siebie.",
+    "Udaj się na dolny basen.",
+    "Życzymy udanej zabawy!",
+  ],
 };
