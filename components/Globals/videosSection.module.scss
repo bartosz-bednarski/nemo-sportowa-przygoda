@@ -20,6 +20,12 @@
     &__sticker-box {
       display: flex;
     }
+    &__oneSticker-box {
+      position: absolute;
+      z-index: 3;
+      left: 20%;
+      top: 30%;
+    }
     &__opacity-cover {
       z-index: 2;
       background-color: rgba(0, 0, 0, 0.1);

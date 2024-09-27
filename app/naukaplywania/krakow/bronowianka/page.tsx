@@ -1,11 +1,7 @@
 import React from "react";
-import styles from "../../page.module.scss";
+import styles from "../../../page.module.scss";
 import VideosSection from "@/components/Globals/VideosSection";
 import NaukaPlywaniaBasen from "@/components/NaukaPlywaniaBasen/NaukaPlywaniaBasen";
-import {
-  BASEN_KORZENNA_INFORMATIONS,
-  NAUKA_PLYWANIA_KORZENNA,
-} from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaKorzenna";
 import Bubbles from "@/components/Ui/Bubbles/Bubbles";
 import LessonType from "@/components/Globals/LessonType/LessonType";
 import { RODZAJE_LEKCJI } from "@/utils/NaukaPlywaniaBasen/rodzajeLekcji";
@@ -13,7 +9,12 @@ import PoolNecessaryItems from "@/components/Globals/PoolNecessaryItems/PoolNece
 import PoolTutorial from "@/components/Globals/PoolTutorial/PoolTutorial";
 import PoolInformations from "@/components/Globals/PoolInformations/PoolInformations";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
-const NaukaPlywaniaKorzenna: React.FC = () => {
+
+import {
+  BASEN_BRONOWIANKA_INFORMATIONS,
+  NAUKA_PLYWANIA_BRONOWIANKA,
+} from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaBronowianka";
+const NaukaPlywaniaBronowianka: React.FC = () => {
   return (
     <div className={styles.main}>
       <VideosSection
@@ -21,7 +22,7 @@ const NaukaPlywaniaKorzenna: React.FC = () => {
         oneStickerContent={{
           title: "NAUKA ",
           title2: "PŁYWANIA",
-          titleStrip: "KORZENNA",
+          titleStrip: "BRONOWIANKA",
           stripBgColor: "mediumBlue",
           stripTextColor: "white",
           scale: 1.15,
@@ -62,33 +63,22 @@ const NaukaPlywaniaKorzenna: React.FC = () => {
         }}
       />
       <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_KORZENNA.dzieci.about}
-        backgroundColor={NAUKA_PLYWANIA_KORZENNA.dzieci.backgroundColor}
-        instructors={NAUKA_PLYWANIA_KORZENNA.dzieci.instructors}
-        groups={NAUKA_PLYWANIA_KORZENNA.dzieci.groups}
-        priceList={NAUKA_PLYWANIA_KORZENNA.dzieci.priceList}
+        about={NAUKA_PLYWANIA_BRONOWIANKA.dzieci.about}
+        backgroundColor={NAUKA_PLYWANIA_BRONOWIANKA.dzieci.backgroundColor}
+        instructors={NAUKA_PLYWANIA_BRONOWIANKA.dzieci.instructors}
+        groups={NAUKA_PLYWANIA_BRONOWIANKA.dzieci.groups}
+        priceList={NAUKA_PLYWANIA_BRONOWIANKA.dzieci.priceList}
       />
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_KORZENNA.dorosli.about}
-        backgroundColor={NAUKA_PLYWANIA_KORZENNA.dorosli.backgroundColor}
-        instructors={NAUKA_PLYWANIA_KORZENNA.dorosli.instructors}
-        groups={NAUKA_PLYWANIA_KORZENNA.dorosli.groups}
-        priceList={NAUKA_PLYWANIA_KORZENNA.dorosli.priceList}
-      />
+      <LessonType bgColor="mediumBlue" lessonType={RODZAJE_LEKCJI.grupowe} />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.grupowe} />
-      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.indywidualne} />
-      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.dwuosobowe} />
-      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.trzyosobowe} />
-      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolTutorial color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <PoolInformations poolInformation={BASEN_KORZENNA_INFORMATIONS} />
+      <PoolInformations poolInformation={BASEN_BRONOWIANKA_INFORMATIONS} />
       <Scrap2 position="bottom" color="mediumBlue" />
     </div>
   );
 };
-export default NaukaPlywaniaKorzenna;
+export default NaukaPlywaniaBronowianka;

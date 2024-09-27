@@ -25,6 +25,7 @@ const Pools: React.FC<poolsType> = ({
           <SwimmingPoolCover
             title={pool.title}
             image={pool.image}
+            url={pool.url}
             key={pool.image}
           />
         ))}

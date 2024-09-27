@@ -37,7 +37,7 @@ const LessonType: React.FC<lessonTypeComponent> = ({ bgColor, lessonType }) => {
           description={lessonType.aboutTextPoppins.description}
         />
       </div>
-      <Scrap2 position="bottom" color="lightBlue" />
+      <Scrap2 position="bottom" color={bgColor} />
     </div>
   );
 };

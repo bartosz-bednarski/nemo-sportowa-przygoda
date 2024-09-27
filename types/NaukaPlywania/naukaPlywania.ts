@@ -35,3 +35,36 @@ export type groupsType = {
   stripH2: stripH2Type;
   groups: groupLvlType[];
 };
+export type poolInformationsType = {
+  color: customColors;
+  title: string;
+  imageSrc: string;
+  stickerH2: stickerH2Type;
+  mapSrc: string;
+  icons: {
+    pool1?: {
+      exists: boolean;
+      title: string;
+    };
+    pool2?: {
+      exists: boolean;
+      title: string;
+    };
+    stand?: {
+      exists: boolean;
+      title: string;
+    };
+    cloakroomWomen?: {
+      exists: boolean;
+      title: "SZATNIA DAMSKA";
+    };
+    cloakroomMen?: {
+      exists: boolean;
+      title: "SZATNIA MĘSKA";
+    };
+    cloakroomFamily?: {
+      exists: boolean;
+      title: "SZATNIA RODZINNA";
+    };
+  };
+};

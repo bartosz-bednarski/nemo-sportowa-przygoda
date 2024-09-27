@@ -57,9 +57,26 @@ const SwimmingOffert: React.FC = () => {
           scale={1.5}
         />
         <div className={styles["swimming__offert__content__swimming-pools"]}>
-          <SwimmingPoolCover image="korzenna.jpg" title="BASEN KORZENNA" />
-          <SwimmingPoolCover image="gorlice.webp" title="BASEN GORLICE" />
-          <SwimmingPoolCover image="eisenberga.jpg" title="BASEN EISENBERGA" />
+          <SwimmingPoolCover
+            image="korzenna.jpg"
+            title="BASEN KORZENNA"
+            url="/naukaplywania/korzenna"
+          />
+          <SwimmingPoolCover
+            image="gorlice.webp"
+            title="BASEN GORLICE"
+            url="/naukaplywania/gorlice"
+          />
+          <SwimmingPoolCover
+            image="eisenberga.jpg"
+            title="BASEN EISENBERGA"
+            url="/naukaplywania/krakow/eisenberga"
+          />
+          <SwimmingPoolCover
+            image="bronowianka.jpg"
+            title="BASEN BRONOWIANKA"
+            url="/naukaplywania/krakow/bronowianka"
+          />
         </div>
         <LinkButton
           title="Dowiedz się więcej"

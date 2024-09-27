@@ -5,8 +5,8 @@ import Instructors from "./Instructors/Instructors";
 import Pools from "./Pools/Pools";
 import { naukaPlywaniaType } from "@/types/NaukaPlywania/naukaPlywania";
 import { COLORS } from "@/utils/UI/colors";
-import Groups from "./Groups/Groups";
 import NaukaPlywaniaAbout from "../Globals/NaukaPlywaniaAbout/NaukaPlywaniaAbout";
+import Groups from "../Globals/Groups/Groups";
 
 const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
   about,

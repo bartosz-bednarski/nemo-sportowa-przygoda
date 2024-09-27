@@ -15,13 +15,14 @@ const Groups: React.FC<groupsType> = ({ stripH2, groups }) => {
         scale={stripH2.scale}
       />
       <div className={styles["groups__row-box"]}>
-        {groups.map((group) => (
-          <GroupLvl
-            key={group.stickerH4.titleStrip}
-            stickerH4={group.stickerH4}
-            aboutTextPoppins={group.aboutTextPoppins}
-          />
-        ))}
+        {groups.length > 0 &&
+          groups.map((group, index) => (
+            <GroupLvl
+              key={index}
+              stickerH4={group.stickerH4}
+              aboutTextPoppins={group.aboutTextPoppins}
+            />
+          ))}
       </div>
     </div>
   );

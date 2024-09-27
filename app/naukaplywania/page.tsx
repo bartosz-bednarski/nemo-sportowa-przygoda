@@ -9,6 +9,7 @@ const NaukaPlywaniaPage: React.FC = () => {
   return (
     <main className={styles.main} style={{ paddingBottom: "3rem" }}>
       <VideosSection
+        oneSticker={false}
         scrapColor="lightBlue"
         col1={{
           image: { src: "image 80.png", alt: "nauka pływania niemowlaki" },
@@ -49,6 +50,7 @@ const NaukaPlywaniaPage: React.FC = () => {
         instructors={NAUKA_PLYWANIA.niemowlaki.instructors}
         pools={NAUKA_PLYWANIA.niemowlaki.pools}
         backgroundColor={NAUKA_PLYWANIA.niemowlaki.backgroundColor}
+        groups={NAUKA_PLYWANIA.niemowlaki.groups}
       />
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
       <NaukaPlywania
