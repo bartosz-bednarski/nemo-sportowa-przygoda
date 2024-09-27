@@ -1,68 +1,82 @@
 @import "../../../styles/colors.scss";
 .poolTutorial {
-  position: relative;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 2rem 4rem;
+  position: relative;
   align-items: center;
-  gap: 1rem;
-  justify-content: center;
-  &__circle {
-    box-sizing: border-box;
+  &__row-box {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     align-items: center;
+    gap: 1rem;
     justify-content: center;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    background-color: $basicOrange;
-    border: 2px solid white;
-    border-radius: 50%;
-    color: white;
-    padding: 1rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-    &:nth-of-type(2n) {
-      background-color: white;
-      border: 2px solid $basicOrange;
-      color: $basicOrange;
+    &__circle {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 200px;
+      height: 200px;
+      background-color: $basicOrange;
+      border: 2px solid white;
+      border-radius: 50%;
+      color: white;
+      padding: 1rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      &:nth-of-type(2n) {
+        background-color: white;
+        border: 2px solid $basicOrange;
+        color: $basicOrange;
+      }
     }
-  }
-  &__arrow {
-    width: 100px;
-    height: 100px;
+    &__arrow {
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 @media only screen and (max-width: 1400px) {
   .poolTutorial {
-    &__circle {
-      width: 160px;
-      height: 160px;
-      font-size: 0.62rem;
-    }
-    &__arrow {
-      width: 50px;
-      height: 50px;
+    &__row-box {
+      &__circle {
+        width: 160px;
+        height: 160px;
+        font-size: 0.62rem;
+      }
+      &__arrow {
+        width: 50px;
+        height: 50px;
+      }
     }
   }
 }
 @media only screen and (max-width: 1100px) {
   .poolTutorial {
-    justify-content: flex-start;
+    &__row-box {
+      justify-content: flex-start;
+    }
   }
 }
 @media only screen and (max-width: 700px) {
   .poolTutorial {
-    flex-direction: column;
     padding: 1rem;
-    &__circle {
-      width: 200px;
-      height: 200px;
-      font-size: 0.8rem;
-    }
-    &__arrow {
-      transform: rotate(90deg);
+    &__row-box {
+      flex-direction: column;
+
+      &__circle {
+        width: 200px;
+        height: 200px;
+        font-size: 0.8rem;
+      }
+      &__arrow {
+        transform: rotate(90deg);
+      }
     }
   }
 }

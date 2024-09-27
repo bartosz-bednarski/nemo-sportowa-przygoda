@@ -25,14 +25,14 @@ const PriceLessons: React.FC<priceLessonsType> = ({
         <span className={styles["priceLessons__content-box__orange"]}>
           1 LEKCJA
         </span>
-        <span>{oneLesson.price} zł</span>
+        <span>{oneLesson.price} </span>
         <span>{oneLesson.time} min</span>
       </div>
       <div className={styles["priceLessons__content-box"]}>
         <span className={styles["priceLessons__content-box__orange"]}>
           10 LEKCJI
         </span>
-        <span>{tenLessons.price} zł</span>
+        <span>{tenLessons.price} </span>
         <span>{tenLessons.time} min</span>
       </div>
       <SingInButton

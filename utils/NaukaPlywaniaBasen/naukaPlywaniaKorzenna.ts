@@ -1,4 +1,8 @@
-import { instructorsRowBoxType, priceListType } from "@/types/Globals/globals";
+import {
+  instructorsRowBoxType,
+  poolTutorialType,
+  priceListType,
+} from "@/types/Globals/globals";
 import {
   aboutType,
   groupsType,
@@ -8,7 +12,7 @@ import { customColors } from "@/types/UI/colors";
 import { GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS } from "../Grupy/grupyPoziomZaawansowania";
 
 type naukaPlywaniaBasen = {
-  dzieci: {
+  dzieciMlodziez: {
     backgroundColor: customColors;
     about: aboutType;
     instructors: instructorsRowBoxType;
@@ -24,7 +28,7 @@ type naukaPlywaniaBasen = {
   };
 };
 
-const CENNIK_DZIECI_KORZENNA: priceListType = [
+const CENNIK_DZIECI_MLODZIEZ_KORZENNA: priceListType = [
   {
     stickerH4: {
       title: "LEKCJE",
@@ -35,11 +39,11 @@ const CENNIK_DZIECI_KORZENNA: priceListType = [
       paddingBottom: 0,
     },
     oneLesson: {
-      price: 45,
+      price: "30 zł + bilet 14 zł",
       time: 45,
     },
     tenLessons: {
-      price: 45,
+      price: "300 zł + cena za bilety",
       time: "10 x 45",
     },
     button: {
@@ -59,11 +63,11 @@ const CENNIK_DZIECI_KORZENNA: priceListType = [
       paddingBottom: 0,
     },
     oneLesson: {
-      price: 45,
+      price: "70 zł + bilet 14 zł",
       time: 45,
     },
     tenLessons: {
-      price: 45,
+      price: "700 zł + cena za bilety",
       time: "10 x 45",
     },
     button: {
@@ -83,11 +87,11 @@ const CENNIK_DZIECI_KORZENNA: priceListType = [
       paddingBottom: 0,
     },
     oneLesson: {
-      price: 45,
+      price: "50 zł + bilety 2x14 zł",
       time: 45,
     },
     tenLessons: {
-      price: 45,
+      price: "500 zł + cena za bilety",
       time: "10 x 45",
     },
     button: {
@@ -107,11 +111,11 @@ const CENNIK_DZIECI_KORZENNA: priceListType = [
       paddingBottom: 0,
     },
     oneLesson: {
-      price: 45,
+      price: "40 zł + bilety 3x14 zł",
       time: 45,
     },
     tenLessons: {
-      price: 45,
+      price: "400 zł + cena za bilety",
       time: "10 x 45",
     },
     button: {
@@ -133,11 +137,11 @@ const CENNIK_DOROSLI_KORZENNA: priceListType = [
       paddingBottom: 0,
     },
     oneLesson: {
-      price: 45,
+      price: "30 zł + bilet 14 zł",
       time: 45,
     },
     tenLessons: {
-      price: 45,
+      price: "300 zł + cena za bilety",
       time: "10 x 45",
     },
     button: {
@@ -157,11 +161,11 @@ const CENNIK_DOROSLI_KORZENNA: priceListType = [
       paddingBottom: 0,
     },
     oneLesson: {
-      price: 45,
+      price: "70 zł + bilet 14 zł",
       time: 45,
     },
     tenLessons: {
-      price: 45,
+      price: "700 zł + cena za bilety",
       time: "10 x 45",
     },
     button: {
@@ -181,11 +185,11 @@ const CENNIK_DOROSLI_KORZENNA: priceListType = [
       paddingBottom: 0,
     },
     oneLesson: {
-      price: 45,
+      price: "50 zł + bilety 2x14 zł",
       time: 45,
     },
     tenLessons: {
-      price: 45,
+      price: "500 zł + cena za bilety",
       time: "10 x 45",
     },
     button: {
@@ -205,11 +209,11 @@ const CENNIK_DOROSLI_KORZENNA: priceListType = [
       paddingBottom: 0,
     },
     oneLesson: {
-      price: 45,
+      price: "40 zł + bilety 3x14 zł",
       time: 45,
     },
     tenLessons: {
-      price: 45,
+      price: "400 zł + cena za bilety",
       time: "10 x 45",
     },
     button: {
@@ -221,20 +225,20 @@ const CENNIK_DOROSLI_KORZENNA: priceListType = [
   },
 ];
 export const NAUKA_PLYWANIA_KORZENNA: naukaPlywaniaBasen = {
-  dzieci: {
+  dzieciMlodziez: {
     backgroundColor: "lightBlue",
     about: {
       stickerH2: {
         title: "NAUKA PŁYWANIA",
         titleStrip: "DZIECI I MŁODZIEŻ",
-        scale: 1.2,
+        scale: 1.4,
         stripTextColor: "lightBlue",
         stripBgColor: "white",
         paddingBottom: 10,
       },
       aboutTextPoppins: {
         titleColor: "lightBlue",
-        title: "Dzieci  i młodzież do 18 lat",
+        title: "Dzieci i młodzież do 18 lat",
         description:
           "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
       },
@@ -243,7 +247,7 @@ export const NAUKA_PLYWANIA_KORZENNA: naukaPlywaniaBasen = {
         alt: "nauka pływania dzieci",
       },
     },
-    priceList: CENNIK_DZIECI_KORZENNA,
+    priceList: CENNIK_DZIECI_MLODZIEZ_KORZENNA,
     instructors: {
       bgColor: "lightBlue",
       instructors: [
@@ -273,7 +277,7 @@ export const NAUKA_PLYWANIA_KORZENNA: naukaPlywaniaBasen = {
     groups: {
       stripH2: {
         title: "GRUPY",
-        scale: 1.2,
+        scale: 1.6,
         stripBgColor: "white",
         stripTextColor: "darkBlue",
       },
@@ -281,6 +285,7 @@ export const NAUKA_PLYWANIA_KORZENNA: naukaPlywaniaBasen = {
         GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.poczatkujacaDzieci,
         GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.kontynuacjaDzieci,
         GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.srednioZaawansowana,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.zaawansowana,
       ],
     },
   },
@@ -291,12 +296,12 @@ export const NAUKA_PLYWANIA_KORZENNA: naukaPlywaniaBasen = {
         title: "NAUKA PŁYWANIA",
         titleStrip: "DOROŚLI",
         scale: 1.2,
-        stripTextColor: "lightBlue",
+        stripTextColor: "mediumBlue",
         stripBgColor: "white",
         paddingBottom: 10,
       },
       aboutTextPoppins: {
-        titleColor: "lightBlue",
+        titleColor: "mediumBlue",
         title: "Dorośli",
         description:
           "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
@@ -388,4 +393,20 @@ export const BASEN_KORZENNA_INFORMATIONS: poolInformationsType = {
       title: "SZATNIA RODZINNA",
     },
   },
+};
+
+export const BASEN_KORZENNA_TUTORIAL: poolTutorialType = {
+  header: false,
+  color: "darkBlue",
+  firstRule:
+    'Kup bilet dla dziecka na lekcję pływania "Nemo Sportowa Przygoda".',
+  rules: [
+    "Dziecko otrzymuje 90 minut na zegarku – 45 minut lekcji oraz 45 minut pod opieką osoby dorosłej.",
+    "Rodzic otrzymuje niebieski zegarek na 15 minut, aby pomóc dziecku się przebrać.",
+    "Odzież wierzchnią zostaw w szafkach przed szatnią.",
+    "Dziecko w szatni powinno być ubrane w strój kąpielowy, czepek, okulary i klapki.",
+    "Po wyjściu z szatni dziecko przejmuje instruktor na 45-minutową lekcję.",
+    "Po zakończeniu zajęć rodzic prosi w kasie biletowej o zegarek na 15 minut, aby pomóc dziecku w szatni.",
+    "Dodatkowe 45 minut dziecko może wykorzystać pod opieką osoby dorosłej.",
+  ],
 };

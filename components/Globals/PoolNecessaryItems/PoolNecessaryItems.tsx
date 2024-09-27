@@ -48,6 +48,28 @@ const PoolNecessaryItems: React.FC<{ color: customColors }> = ({ color }) => {
             CZEPEK I OKULARY
           </span>
         </div>
+
+        <div className={styles["poolNecessaryItems__row-box__item"]}>
+          <svg
+            width="101"
+            height="101"
+            viewBox="0 0 101 101"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className={styles["poolNecessaryItems__row-box__item__svg"]}
+          >
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M35.1016 0.796875H41.8631C42.0436 12.116 44.4797 15.8082 50.8788 16.8965C57.278 15.8082 59.7141 12.116 59.8946 0.796875H66.6561C66.7294 6.41673 66.8141 9.5814 67.7834 15.4476C68.689 17.6845 68.9859 18.9234 68.9104 21.0825C73.4824 30.1552 74.8199 34.7826 70.5203 40.5632C67.8883 48.6197 68.2306 53.3922 70.5203 62.1368C72.1258 64.616 72.7945 66.4157 73.0963 70.3477C61.9927 75.3407 57.1098 80.3618 55.2256 100.615H50.879H50.8786H46.5321C44.6479 80.3618 39.765 75.3407 28.6614 70.3477C28.9632 66.4157 29.6319 64.616 31.2374 62.1368C33.5271 53.3922 33.8693 48.6197 31.2374 40.5632C26.9378 34.7826 28.2753 30.1552 32.8473 21.0825C32.7717 18.9234 33.0686 17.6845 33.9743 15.4476C34.9436 9.5814 35.0283 6.41673 35.1016 0.796875Z"
+              fill="#FF914C"
+            />
+          </svg>
+
+          <span className={styles["poolNecessaryItems__row-box__item__title"]}>
+            STRÓJ KĄPIELOWY
+          </span>
+        </div>
         <div className={styles["poolNecessaryItems__row-box__item"]}>
           <svg
             width="101"
@@ -81,27 +103,6 @@ const PoolNecessaryItems: React.FC<{ color: customColors }> = ({ color }) => {
 
           <span className={styles["poolNecessaryItems__row-box__item__title"]}>
             KLAPKI
-          </span>
-        </div>
-        <div className={styles["poolNecessaryItems__row-box__item"]}>
-          <svg
-            width="101"
-            height="101"
-            viewBox="0 0 101 101"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className={styles["poolNecessaryItems__row-box__item__svg"]}
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M35.1016 0.796875H41.8631C42.0436 12.116 44.4797 15.8082 50.8788 16.8965C57.278 15.8082 59.7141 12.116 59.8946 0.796875H66.6561C66.7294 6.41673 66.8141 9.5814 67.7834 15.4476C68.689 17.6845 68.9859 18.9234 68.9104 21.0825C73.4824 30.1552 74.8199 34.7826 70.5203 40.5632C67.8883 48.6197 68.2306 53.3922 70.5203 62.1368C72.1258 64.616 72.7945 66.4157 73.0963 70.3477C61.9927 75.3407 57.1098 80.3618 55.2256 100.615H50.879H50.8786H46.5321C44.6479 80.3618 39.765 75.3407 28.6614 70.3477C28.9632 66.4157 29.6319 64.616 31.2374 62.1368C33.5271 53.3922 33.8693 48.6197 31.2374 40.5632C26.9378 34.7826 28.2753 30.1552 32.8473 21.0825C32.7717 18.9234 33.0686 17.6845 33.9743 15.4476C34.9436 9.5814 35.0283 6.41673 35.1016 0.796875Z"
-              fill="#FF914C"
-            />
-          </svg>
-
-          <span className={styles["poolNecessaryItems__row-box__item__title"]}>
-            STRÓJ KĄPIELOWY
           </span>
         </div>
         <div className={styles["poolNecessaryItems__row-box__item"]}>

@@ -11,6 +11,8 @@ import PoolInformations from "@/components/Globals/PoolInformations/PoolInformat
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 import {
   BASEN_EISENBERGA_INFORMATIONS,
+  BASEN_EISENBERGA_TUTORIAL_DZIECI_MLODZIEZ,
+  BASEN_EISENBERGA_TUTORIAL_Z_RODZICAMI,
   NAUKA_PLYWANIA_EISENBERGA,
 } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaEisenberga";
 const NaukaPlywaniaEisenberga: React.FC = () => {
@@ -62,19 +64,21 @@ const NaukaPlywaniaEisenberga: React.FC = () => {
         }}
       />
       <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_EISENBERGA.dzieci.about}
-        backgroundColor={NAUKA_PLYWANIA_EISENBERGA.dzieci.backgroundColor}
-        instructors={NAUKA_PLYWANIA_EISENBERGA.dzieci.instructors}
-        groups={NAUKA_PLYWANIA_EISENBERGA.dzieci.groups}
-        priceList={NAUKA_PLYWANIA_EISENBERGA.dzieci.priceList}
+        about={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.about}
+        backgroundColor={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.backgroundColor}
+        instructors={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.instructors}
+        groups={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.groups}
+        priceList={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.priceList}
       />
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
       <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_EISENBERGA.mlodziez.about}
-        backgroundColor={NAUKA_PLYWANIA_EISENBERGA.mlodziez.backgroundColor}
-        instructors={NAUKA_PLYWANIA_EISENBERGA.mlodziez.instructors}
-        groups={NAUKA_PLYWANIA_EISENBERGA.mlodziez.groups}
-        priceList={NAUKA_PLYWANIA_EISENBERGA.mlodziez.priceList}
+        about={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.about}
+        backgroundColor={
+          NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.backgroundColor
+        }
+        instructors={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.instructors}
+        groups={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.groups}
+        priceList={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.priceList}
       />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <NaukaPlywaniaBasen
@@ -92,7 +96,9 @@ const NaukaPlywaniaEisenberga: React.FC = () => {
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <PoolTutorial color="darkBlue" />
+      <PoolTutorial poolTutorial={BASEN_EISENBERGA_TUTORIAL_Z_RODZICAMI} />
+      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
+      <PoolTutorial poolTutorial={BASEN_EISENBERGA_TUTORIAL_DZIECI_MLODZIEZ} />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_EISENBERGA_INFORMATIONS} />
       <Scrap2 position="bottom" color="mediumBlue" />

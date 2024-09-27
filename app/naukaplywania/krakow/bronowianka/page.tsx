@@ -14,6 +14,7 @@ import {
   BASEN_BRONOWIANKA_INFORMATIONS,
   NAUKA_PLYWANIA_BRONOWIANKA,
 } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaBronowianka";
+import { BASEN_KORZENNA_TUTORIAL } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaKorzenna";
 const NaukaPlywaniaBronowianka: React.FC = () => {
   return (
     <div className={styles.main}>
@@ -63,18 +64,19 @@ const NaukaPlywaniaBronowianka: React.FC = () => {
         }}
       />
       <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_BRONOWIANKA.dzieci.about}
-        backgroundColor={NAUKA_PLYWANIA_BRONOWIANKA.dzieci.backgroundColor}
-        instructors={NAUKA_PLYWANIA_BRONOWIANKA.dzieci.instructors}
-        groups={NAUKA_PLYWANIA_BRONOWIANKA.dzieci.groups}
-        priceList={NAUKA_PLYWANIA_BRONOWIANKA.dzieci.priceList}
+        about={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.about}
+        backgroundColor={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.backgroundColor}
+        instructors={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.instructors}
+        groups={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.groups}
+        priceList={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.priceList}
       />
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
       <LessonType bgColor="mediumBlue" lessonType={RODZAJE_LEKCJI.grupowe} />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <PoolTutorial color="darkBlue" />
+      {/* TU TRZEBA WSTAWIĆ PORADNIK DO BRONOWIANKI TEN JEST Z KORZENNEJ */}
+      <PoolTutorial poolTutorial={BASEN_KORZENNA_TUTORIAL} />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_BRONOWIANKA_INFORMATIONS} />
       <Scrap2 position="bottom" color="mediumBlue" />
