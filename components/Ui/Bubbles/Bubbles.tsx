@@ -12,7 +12,7 @@ const Bubbles: React.FC<{
     <div
       className={styles.bubbles}
       style={{
-        background: `linear-gradient(180deg,${COLORS[colorTop]} 0%, ${COLORS[colorBottom]} 100%);`,
+        background: `linear-gradient(180deg,${COLORS[colorTop]} 0%, ${COLORS[colorBottom]} 100%)`,
       }}
     >
       <svg
@@ -30,14 +30,14 @@ const Bubbles: React.FC<{
             height="59"
             rx="29.5"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="484.742"
             cy="271.934"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-2">
@@ -48,14 +48,14 @@ const Bubbles: React.FC<{
             height="59"
             rx="29.5"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="1493"
             cy="124.434"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-3">
@@ -66,14 +66,14 @@ const Bubbles: React.FC<{
             height="59"
             rx="29.5"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="1516"
             cy="255.934"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-4">
@@ -84,14 +84,14 @@ const Bubbles: React.FC<{
             height="59"
             rx="29.5"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="1261.5"
             cy="121.434"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-5">
@@ -102,14 +102,14 @@ const Bubbles: React.FC<{
             height="72"
             rx="36"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="366.872"
             cy="250.305"
             r="5.87152"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-6">
@@ -120,14 +120,14 @@ const Bubbles: React.FC<{
             height="76"
             rx="38"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="655"
             cy="317.434"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-7">
@@ -138,14 +138,14 @@ const Bubbles: React.FC<{
             height="76"
             rx="38"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="839.875"
             cy="263.434"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-8">
@@ -156,14 +156,14 @@ const Bubbles: React.FC<{
             height="49"
             rx="24.5"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="1599.25"
             cy="208.684"
             r="6.25"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-9">
@@ -174,14 +174,14 @@ const Bubbles: React.FC<{
             height="76"
             rx="38"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="423.742"
             cy="128.934"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-10">
@@ -192,14 +192,14 @@ const Bubbles: React.FC<{
             height="76"
             rx="38"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="807"
             cy="154.934"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-11">
@@ -210,14 +210,14 @@ const Bubbles: React.FC<{
             height="76"
             rx="38"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="985.5"
             cy="128.934"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-12">
@@ -228,14 +228,14 @@ const Bubbles: React.FC<{
             height="76"
             rx="38"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="1213"
             cy="309.434"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-13">
@@ -246,14 +246,14 @@ const Bubbles: React.FC<{
             height="76"
             rx="38"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="985.5"
             cy="271.934"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-14">
@@ -264,14 +264,14 @@ const Bubbles: React.FC<{
             height="76"
             rx="38"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="1092"
             cy="76.9336"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-15">
@@ -282,14 +282,14 @@ const Bubbles: React.FC<{
             height="76"
             rx="38"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="576"
             cy="167.934"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-16">
@@ -300,14 +300,14 @@ const Bubbles: React.FC<{
             height="76"
             rx="38"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="1650.25"
             cy="316.934"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-17">
@@ -318,14 +318,14 @@ const Bubbles: React.FC<{
             height="76"
             rx="38"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="1327"
             cy="228.434"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-18">
@@ -336,14 +336,14 @@ const Bubbles: React.FC<{
             height="58"
             rx="29"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="189.211"
             cy="115.644"
             r="6.21069"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
         <g id="bubble-19">
@@ -354,14 +354,14 @@ const Bubbles: React.FC<{
             height="59"
             rx="29.5"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="193"
             cy="287.434"
             r="10"
             fill="white"
-            fill-opacity="0.62"
+            fillOpacity="0.62"
           />
         </g>
       </svg>

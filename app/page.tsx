@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <VideosSection
+        oneSticker={false}
         scrapColor="mediumBlue"
         col1={{
           image: { src: "image 80.png", alt: "nauka pływania" },

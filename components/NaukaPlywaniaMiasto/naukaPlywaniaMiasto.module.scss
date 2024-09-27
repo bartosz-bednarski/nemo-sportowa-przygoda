@@ -1,0 +1,16 @@
+.naukaPlywaniaMiasto {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  &__swimming-pools {
+    padding-top: 4rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+  }
+}

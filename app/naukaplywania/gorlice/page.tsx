@@ -2,7 +2,10 @@ import React from "react";
 import styles from "../../page.module.scss";
 import VideosSection from "@/components/Globals/VideosSection";
 import NaukaPlywaniaBasen from "@/components/NaukaPlywaniaBasen/NaukaPlywaniaBasen";
-import { NAUKA_PLYWANIA_GORLICE } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaGorlice";
+import {
+  BASEN_GORLICE_INFORMATIONS,
+  NAUKA_PLYWANIA_GORLICE,
+} from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaGorlice";
 import LessonType from "@/components/Globals/LessonType/LessonType";
 import { RODZAJE_LEKCJI } from "@/utils/NaukaPlywaniaBasen/rodzajeLekcji";
 import PoolNecessaryItems from "@/components/Globals/PoolNecessaryItems/PoolNecessaryItems";
@@ -14,6 +17,15 @@ const NaukaPlywaniaGorlice: React.FC = () => {
   return (
     <div className={styles.main}>
       <VideosSection
+        oneSticker={true}
+        oneStickerContent={{
+          title: "NAUKA ",
+          title2: "PŁYWANIA",
+          titleStrip: "GORLICE",
+          stripBgColor: "mediumBlue",
+          stripTextColor: "white",
+          scale: 1.15,
+        }}
         scrapColor="lightBlue"
         col1={{
           image: { src: "image 80.png", alt: "nauka pływania niemowlaki" },
@@ -53,6 +65,8 @@ const NaukaPlywaniaGorlice: React.FC = () => {
         about={NAUKA_PLYWANIA_GORLICE.niemowlaki.about}
         backgroundColor={NAUKA_PLYWANIA_GORLICE.niemowlaki.backgroundColor}
         instructors={NAUKA_PLYWANIA_GORLICE.niemowlaki.instructors}
+        groups={NAUKA_PLYWANIA_GORLICE.niemowlaki.groups}
+        priceList={NAUKA_PLYWANIA_GORLICE.niemowlaki.priceList}
       />
       <LessonType
         bgColor="lightBlue"
@@ -63,7 +77,7 @@ const NaukaPlywaniaGorlice: React.FC = () => {
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
       <PoolTutorial color="mediumBlue" />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-      <PoolInformations color="darkBlue" />
+      <PoolInformations poolInformation={BASEN_GORLICE_INFORMATIONS} />
       <Scrap2 position="bottom" color="mediumBlue" />
     </div>
   );

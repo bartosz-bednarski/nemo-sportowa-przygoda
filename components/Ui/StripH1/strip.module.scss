@@ -1,0 +1,47 @@
+.box {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  h1 {
+    position: relative;
+    font-size: 3.2rem;
+    font-weight: 800;
+    z-index: 4;
+    text-align: center;
+  }
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .box h1 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .box h1 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .box {
+    width: 100%;
+    h1 {
+      font-size: 1.5rem;
+      padding: 0.5rem 2rem 0.5rem 0.5rem;
+    }
+    svg {
+      display: none;
+    }
+  }
+}
+// @media only screen and (max-width: 850px) {
+//   .box h2 {
+//     font-size: 1rem;
+//   }
+// }

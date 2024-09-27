@@ -1,7 +1,11 @@
 import { aboutTextPoppinsType } from "../UI/aboutTextPoppins";
 import { signInButtonType } from "../UI/buttons";
 import { customColors } from "../UI/colors";
-import { stickerH2Type, stickerH4Type } from "../UI/stickerStripStrap";
+import {
+  stickerH1Type,
+  stickerH2Type,
+  stickerH4Type,
+} from "../UI/stickerStripStrap";
 
 export type instructorBubbleType = {
   instructorName?: string;
@@ -21,22 +25,24 @@ export type VideosSectionType = {
       src: string;
       alt: string;
     };
-    stickerH2: stickerH2Type;
+    stickerH2?: stickerH2Type;
   };
   col2: {
     image: {
       src: string;
       alt: string;
     };
-    stickerH2: stickerH2Type;
+    stickerH2?: stickerH2Type;
   };
   col3: {
     image: {
       src: string;
       alt: string;
     };
-    stickerH2: stickerH2Type;
+    stickerH2?: stickerH2Type;
   };
+  oneSticker: boolean;
+  oneStickerContent?: stickerH1Type;
 };
 export type groupLvlType = {
   stickerH4: stickerH4Type;
