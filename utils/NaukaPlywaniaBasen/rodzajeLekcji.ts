@@ -18,7 +18,7 @@ export const RODZAJE_LEKCJI: rodzajeLekcji = {
       paddingBottom: 0,
     },
     aboutTextPoppins: {
-      title: "Lekcje indywidualne",
+      title: "",
       titleColor: "basicOrange",
       description:
         "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
@@ -35,7 +35,7 @@ export const RODZAJE_LEKCJI: rodzajeLekcji = {
       paddingBottom: 0,
     },
     aboutTextPoppins: {
-      title: "Lekcje dwuosobowe",
+      title: "",
       titleColor: "mediumBlue",
       description:
         "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
@@ -52,7 +52,7 @@ export const RODZAJE_LEKCJI: rodzajeLekcji = {
       paddingBottom: 0,
     },
     aboutTextPoppins: {
-      title: "Lekcje trzyosobowe",
+      title: "",
       titleColor: "mediumBlue",
       description:
         "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
@@ -69,7 +69,7 @@ export const RODZAJE_LEKCJI: rodzajeLekcji = {
       paddingBottom: 0,
     },
     aboutTextPoppins: {
-      title: "Lekcje grupowe",
+      title: "",
       titleColor: "basicOrange",
       description:
         "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",

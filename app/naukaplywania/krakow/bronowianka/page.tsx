@@ -26,7 +26,7 @@ const NaukaPlywaniaBronowianka: React.FC = () => {
           titleStrip: "BRONOWIANKA",
           stripBgColor: "mediumBlue",
           stripTextColor: "white",
-          scale: 1.15,
+          scale: 1.3,
         }}
         scrapColor="lightBlue"
         col1={{
@@ -79,7 +79,7 @@ const NaukaPlywaniaBronowianka: React.FC = () => {
       <PoolTutorial poolTutorial={BASEN_KORZENNA_TUTORIAL} />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_BRONOWIANKA_INFORMATIONS} />
-      <Scrap2 position="bottom" color="mediumBlue" />
+      <Scrap2 position="bottom" color="darkBlue" />
     </div>
   );
 };

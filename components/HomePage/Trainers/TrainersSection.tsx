@@ -62,7 +62,7 @@ const TrainersSection: React.FC = () => {
           href="/"
         />
       </div>
-      <Scrap2 color="mediumBlue" position="bottom" />
+      <Scrap2 color="darkBlue" position="bottom" />
     </section>
   );
 };

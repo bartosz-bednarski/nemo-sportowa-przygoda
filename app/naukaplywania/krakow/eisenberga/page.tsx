@@ -111,7 +111,7 @@ const NaukaPlywaniaEisenberga: React.FC = () => {
       <PoolTutorial poolTutorial={BASEN_EISENBERGA_TUTORIAL_DZIECI_MLODZIEZ} />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_EISENBERGA_INFORMATIONS} />
-      <Scrap2 position="bottom" color="mediumBlue" />
+      <Scrap2 position="bottom" color="darkBlue" />
     </div>
   );
 };

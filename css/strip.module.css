@@ -1,0 +1,64 @@
+.box {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.box h3 {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 800;
+  z-index: 4;
+  text-align: center;
+}
+.box__mainScrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.box__scrap-left {
+  display: none;
+  position: absolute;
+  left: -19px;
+  height: 100%;
+  top: 0;
+}
+.box__scrap-right {
+  display: none;
+  position: absolute;
+  right: -19px;
+  height: 100%;
+  top: 0;
+}
+
+@media only screen and (max-width: 1600px) {
+  .box h3 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .box h3 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .box {
+    width: 90%;
+  }
+  .box h3 {
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0;
+  }
+  .box__mainScrap {
+    display: none;
+  }
+  .box__scrap-left {
+    display: block;
+  }
+  .box__scrap-right {
+    display: block;
+  }
+}/*# sourceMappingURL=strip.module.css.map */

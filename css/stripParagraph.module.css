@@ -1,0 +1,34 @@
+.box {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.box p {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  z-index: 4;
+}
+.box svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1600px) {
+  .box p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .box {
+    max-width: 300px;
+  }
+  .box svg {
+    display: none;
+  }
+}/*# sourceMappingURL=stripParagraph.module.css.map */

@@ -4,32 +4,58 @@
   justify-content: center;
   h4 {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 800;
     z-index: 4;
     text-align: center;
   }
-  svg {
+  &__mainScrap {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
   }
+  &__scrap-left {
+    display: none;
+    position: absolute;
+    left: -19px;
+    height: 100%;
+    top: 0;
+  }
+  &__scrap-right {
+    display: none;
+    position: absolute;
+    right: -19px;
+    height: 100%;
+    top: 0;
+  }
 }
 @media only screen and (max-width: 1600px) {
   .box h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .box {
     width: 100%;
     h4 {
+      margin: 0;
       padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     }
-    svg {
+    &__mainScrap {
       display: none;
     }
+    &__scrap-left {
+      display: block;
+    }
+    &__scrap-right {
+      display: block;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .box h4 {
+    font-size: 1rem;
   }
 }

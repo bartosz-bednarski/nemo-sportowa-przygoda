@@ -1,0 +1,75 @@
+.poolInformations {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 4rem 8rem 4rem;
+  gap: 2rem;
+}
+.poolInformations__row-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  z-index: 1;
+}
+.poolInformations__row-box__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.poolInformations__row-box__list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  max-height: 80px;
+}
+.poolInformations__row-box__list__item__svg {
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border: 2px solid #ff914c;
+  border-radius: 10px;
+}
+.poolInformations__row-box__list__item__text {
+  width: 350px;
+  font-weight: 600;
+}
+.poolInformations__row-box__map {
+  width: 800px;
+  height: 450px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .poolInformations__row-box {
+    flex-direction: column;
+  }
+  .poolInformations__row-box__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .poolInformations__row-box__list__item {
+    width: 100%;
+  }
+  .poolInformations__row-box__list__item__svg {
+    width: 60px;
+    height: 60px;
+  }
+  .poolInformations__row-box__list__item__text {
+    width: 80%;
+    font-size: 0.8rem;
+    max-height: 80px;
+  }
+  .poolInformations__row-box__map {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .poolInformations {
+    padding: 4rem 2rem;
+  }
+}/*# sourceMappingURL=poolInformations.module.css.map */

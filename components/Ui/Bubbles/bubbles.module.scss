@@ -85,3 +85,13 @@
     }
   }
 }
+@media only screen and (max-width: 700px) {
+  .bubbles svg {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .bubbles svg {
+    height: 150px;
+  }
+}
