@@ -8,12 +8,12 @@ import {
   NAUKA_PLYWANIA_KORZENNA,
 } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaKorzenna";
 import Bubbles from "@/components/Ui/Bubbles/Bubbles";
-import LessonType from "@/components/Globals/LessonType/LessonType";
 import { RODZAJE_LEKCJI } from "@/utils/NaukaPlywaniaBasen/rodzajeLekcji";
 import PoolNecessaryItems from "@/components/Globals/PoolNecessaryItems/PoolNecessaryItems";
 import PoolTutorial from "@/components/Globals/PoolTutorial/PoolTutorial";
 import PoolInformations from "@/components/Globals/PoolInformations/PoolInformations";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
+import LessonTypeWrapBox from "@/components/Globals/LessonTypeWrapBox/LessonTypeWrapBox";
 const NaukaPlywaniaKorzenna: React.FC = () => {
   return (
     <div className={styles.main}>
@@ -78,10 +78,20 @@ const NaukaPlywaniaKorzenna: React.FC = () => {
         priceList={NAUKA_PLYWANIA_KORZENNA.dorosli.priceList}
       />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.grupowe} />
+      <LessonTypeWrapBox
+        bgImage="grupowe.png"
+        bgColor="darkBlue"
+        lessonTypes={[
+          RODZAJE_LEKCJI.grupowe,
+          RODZAJE_LEKCJI.indywidualne,
+          RODZAJE_LEKCJI.dwuosobowe,
+          RODZAJE_LEKCJI.trzyosobowe,
+        ]}
+      />
+      {/* <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.grupowe} />
       <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.indywidualne} />
       <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.dwuosobowe} />
-      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.trzyosobowe} />
+      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.trzyosobowe} /> */}
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />

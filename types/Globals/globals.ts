@@ -79,3 +79,8 @@ export type poolTutorialType = {
   firstRule: string;
   rules: string[];
 };
+export type lessonTypeWrapBoxType = {
+  bgImage: string;
+  bgColor: customColors;
+  lessonTypes: lessonType[];
+};

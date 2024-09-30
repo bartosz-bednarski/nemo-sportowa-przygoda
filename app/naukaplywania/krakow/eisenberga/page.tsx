@@ -3,7 +3,6 @@ import styles from "../../../page.module.scss";
 import VideosSection from "@/components/Globals/VideosSection";
 import NaukaPlywaniaBasen from "@/components/NaukaPlywaniaBasen/NaukaPlywaniaBasen";
 import Bubbles from "@/components/Ui/Bubbles/Bubbles";
-import LessonType from "@/components/Globals/LessonType/LessonType";
 import { RODZAJE_LEKCJI } from "@/utils/NaukaPlywaniaBasen/rodzajeLekcji";
 import PoolNecessaryItems from "@/components/Globals/PoolNecessaryItems/PoolNecessaryItems";
 import PoolTutorial from "@/components/Globals/PoolTutorial/PoolTutorial";
@@ -15,6 +14,7 @@ import {
   BASEN_EISENBERGA_TUTORIAL_Z_RODZICAMI,
   NAUKA_PLYWANIA_EISENBERGA,
 } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaEisenberga";
+import LessonTypeWrapBox from "@/components/Globals/LessonTypeWrapBox/LessonTypeWrapBox";
 const NaukaPlywaniaEisenberga: React.FC = () => {
   return (
     <div className={styles.main}>
@@ -89,10 +89,20 @@ const NaukaPlywaniaEisenberga: React.FC = () => {
         priceList={NAUKA_PLYWANIA_EISENBERGA.dorosli.priceList}
       />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.grupowe} />
+      <LessonTypeWrapBox
+        bgColor="darkBlue"
+        bgImage="grupowe.png"
+        lessonTypes={[
+          RODZAJE_LEKCJI.grupowe,
+          RODZAJE_LEKCJI.indywidualne,
+          RODZAJE_LEKCJI.dwuosobowe,
+          RODZAJE_LEKCJI.trzyosobowe,
+        ]}
+      />
+      {/* <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.grupowe} />
       <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.indywidualne} />
       <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.dwuosobowe} />
-      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.trzyosobowe} />
+      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.trzyosobowe} /> */}
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
