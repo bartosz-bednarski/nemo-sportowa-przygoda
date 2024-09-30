@@ -2,9 +2,10 @@ import React from "react";
 import styles from "../../page.module.scss";
 import VideosSection from "@/components/Globals/VideosSection";
 import NaukaPlywaniaMiasto from "@/components/NaukaPlywaniaMiasto/NaukaPlywaniaMiasto";
+import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 const NaukaPlywaniaKrakow: React.FC = () => {
   return (
-    <div className={styles.main} style={{ paddingBottom: "3rem" }}>
+    <div className={styles.main} style={{ paddingBottom: "0rem" }}>
       <VideosSection
         oneSticker={true}
         scrapColor="lightBlue"
@@ -51,6 +52,7 @@ const NaukaPlywaniaKrakow: React.FC = () => {
         }}
       />
       <NaukaPlywaniaMiasto />
+      <Scrap2 position="bottom" color="darkBlue" />
     </div>
   );
 };

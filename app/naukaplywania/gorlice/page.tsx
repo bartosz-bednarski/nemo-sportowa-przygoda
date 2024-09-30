@@ -76,7 +76,7 @@ const NaukaPlywaniaGorlice: React.FC = () => {
       <PoolTutorial poolTutorial={BASEN_GORLICE_TUTORIAL} />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_GORLICE_INFORMATIONS} />
-      <Scrap2 position="bottom" color="mediumBlue" />
+      <Scrap2 position="bottom" color="darkBlue" />
     </div>
   );
 };

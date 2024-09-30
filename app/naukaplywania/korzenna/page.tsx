@@ -98,7 +98,7 @@ const NaukaPlywaniaKorzenna: React.FC = () => {
       <PoolTutorial poolTutorial={BASEN_KORZENNA_TUTORIAL} />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_KORZENNA_INFORMATIONS} />
-      <Scrap2 position="bottom" color="mediumBlue" />
+      <Scrap2 position="bottom" color="darkBlue" />
     </div>
   );
 };

@@ -10,12 +10,26 @@
     z-index: 4;
     text-align: center;
   }
-  svg {
+  &__mainScrap {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+  }
+  &__scrap-left {
+    display: none;
+    position: absolute;
+    left: -19px;
+    height: 100%;
+    top: 0;
+  }
+  &__scrap-right {
+    display: none;
+    position: absolute;
+    right: -19px;
+    height: 100%;
+    top: 0;
   }
 }
 @media only screen and (max-width: 1600px) {
@@ -28,14 +42,21 @@
     font-size: 1rem;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .box {
-    width: 100%;
+    width: 90%;
     h3 {
       padding: 1rem 1rem 1rem 1rem;
+      margin: 0;
     }
-    svg {
+    &__mainScrap {
       display: none;
+    }
+    &__scrap-left {
+      display: block;
+    }
+    &__scrap-right {
+      display: block;
     }
   }
 }

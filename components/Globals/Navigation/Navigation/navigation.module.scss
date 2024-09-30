@@ -69,6 +69,7 @@
   &__top-box {
     box-sizing: border-box;
     width: 100%;
+    height: 10vh;
     padding: 1rem 3rem;
     display: flex;
     flex-direction: row;
@@ -84,7 +85,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     animation-name: showContent;
     animation-delay: 0.8s;
     animation-duration: 1s;
@@ -94,7 +95,7 @@
       display: flex;
       flex-direction: column;
       width: 20%;
-      height: 100%;
+      height: 80vh;
       justify-content: flex-end;
       align-items: flex-end;
       gap: 0.3rem;
@@ -116,7 +117,7 @@
     &__80 {
       display: flex;
       flex-direction: column;
-      width: 80%;
+      width: 60%;
       height: 100%;
 
       &__nav {
@@ -149,6 +150,81 @@
             color: inherit;
             text-decoration: none;
           }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1500px) {
+  // .navigation__bottom-box__20 {
+  //   width: 10%;
+  // }
+  .navigation__bottom-box__20:nth-of-type(1) {
+    width: 10%;
+  }
+  .navigation__bottom-box__20:nth-of-type(3) {
+    width: 30%;
+  }
+  .navigation__bottom-box__80 {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  // .navigation__bottom-box__20 {
+  //   width: 10%;
+  // }
+  .navigation__bottom-box {
+    justify-content: center;
+    &__20 {
+      display: none;
+    }
+    &__80 {
+      align-items: center;
+      width: 80%;
+      &__nav {
+        font-size: 1.2rem;
+      }
+      ul {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navigation__top-box {
+    justify-content: flex-end;
+    padding-right: 0;
+    img {
+      display: none !important;
+    }
+  }
+  .navigation__bottom-box {
+    &__80 {
+      width: 100%;
+      &__nav {
+        font-size: 1.2rem;
+      }
+      ul {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  // .navigation__bottom-box__20 {
+  //   width: 10%;
+  // }
+  .navigation__bottom-box {
+    &__80 {
+      &__nav {
+        font-size: 0.7rem;
+        &__location {
+          margin-left: 0.5rem;
+        }
+      }
+      ul {
+        li {
+          padding: 0.5rem 0;
         }
       }
     }

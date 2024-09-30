@@ -1,0 +1,38 @@
+.box {
+  box-sizing: border-box;
+  padding-left: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 50%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+.box__title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+  .box {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+  }
+  .box__title {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .box__title {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=stickerH4.module.css.map */

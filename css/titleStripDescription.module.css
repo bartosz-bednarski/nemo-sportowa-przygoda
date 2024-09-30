@@ -1,0 +1,16 @@
+.titleStripDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+.titleStripDescription p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .titleStripDescription {
+    width: 300px;
+  }
+}/*# sourceMappingURL=titleStripDescription.module.css.map */

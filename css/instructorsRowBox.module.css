@@ -1,0 +1,16 @@
+.instructorsRowBox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 2rem 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .instructorsRowBox {
+    padding: 2rem;
+  }
+}/*# sourceMappingURL=instructorsRowBox.module.css.map */

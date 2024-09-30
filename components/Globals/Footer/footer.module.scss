@@ -1,3 +1,4 @@
+@import "../../../styles/colors.scss";
 .footer {
   position: relative;
   width: 100%;
@@ -7,6 +8,7 @@
   box-sizing: border-box;
   justify-content: space-between;
   padding: 4rem;
+  background-color: $darkBlue;
   &__logo {
     display: flex;
     flex-direction: row;
@@ -50,5 +52,9 @@
   .footer__navigation:nth-child(2) {
     flex-direction: column;
     gap: 1rem;
+    li {
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
   }
 }

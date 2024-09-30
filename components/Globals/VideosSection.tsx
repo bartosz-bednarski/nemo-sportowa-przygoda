@@ -2,9 +2,9 @@ import "react";
 import styles from "./videosSection.module.scss";
 import Image from "next/image";
 import StickerH2 from "../Ui/StickerH2/StickerH2";
-import Scrap from "../Ui/Scrap/Scrap";
 import { VideosSectionType } from "@/types/Globals/globals";
 import StickerH1 from "../Ui/StickerH1/StickerH1";
+import Scrap2 from "../Ui/Scrap/Scrap2";
 const VideosSection: React.FC<VideosSectionType> = ({
   scrapColor,
   col1,
@@ -30,7 +30,7 @@ const VideosSection: React.FC<VideosSectionType> = ({
         </span>
       )}
 
-      <Scrap position="bottom" color={scrapColor} />
+      <Scrap2 position="bottom" color={scrapColor} />
       <div className={styles["container__image-box"]}>
         <div className={styles["container__image-box__opacity-cover"]}></div>
         <Image

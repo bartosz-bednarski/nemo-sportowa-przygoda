@@ -8,7 +8,7 @@
   z-index: 3;
   &__title {
     font-family: "Poppins-700";
-    font-size: 2rem;
+    font-size: 1.4rem;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 1px;
@@ -23,12 +23,24 @@
     font-size: 1rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .box {
     text-align: center;
   }
   .box__title {
     font-size: 1.2rem;
+    font-family: "Poppins-400";
+  }
+}
+@media only screen and (max-width: 500px) {
+  .box {
+    text-align: center;
+    p {
+      line-height: 1.2rem;
+    }
+  }
+  .box__title {
+    font-size: 1.1rem;
     font-family: "Poppins-400";
   }
 }
