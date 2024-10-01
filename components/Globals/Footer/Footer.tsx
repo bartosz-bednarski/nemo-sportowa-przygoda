@@ -2,12 +2,13 @@
 import React from "react";
 import styles from "./footer.module.scss";
 import Image from "next/image";
+import LogoMain from "../Logo/LogoMain";
 
 const Footer: React.FC = () => {
   return (
     <div className={styles.footer}>
       <div className={styles["footer__logo"]}>
-        <Image src="/assets/logo/logo.png" width={60} height={60} alt="logo" />
+        <LogoMain height="100px" width="auto" />
         <span>COPYRIGHT © Nemo Sportowa Przygoda</span>
       </div>
       <ul className={styles["footer__navigation"]}>

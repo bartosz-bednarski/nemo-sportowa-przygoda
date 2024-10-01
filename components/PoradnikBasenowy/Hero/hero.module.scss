@@ -1,0 +1,84 @@
+@import "../../../styles/colors.scss";
+.hero {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: $lightBlue;
+  height: 100vh;
+  padding: 10vh 4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  &__list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    padding: 3.2rem 1rem;
+    border: 5px solid white;
+    border-radius: 15px;
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      text-align: center;
+      width: 100%;
+      padding: 1rem 1rem;
+      height: 4.2rem;
+      border-bottom: 5px solid $blueStrokeOpacity;
+    }
+  }
+  &__row-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: none;
+  }
+  &__logo {
+    width: 35%;
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .hero__list {
+    width: 70%;
+  }
+  .hero__logo {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .hero__list {
+    border-width: 3px;
+    width: 70%;
+    &__item {
+      font-size: 1.5rem;
+      border-width: 3px;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .hero {
+    padding: 5vh 2rem;
+  }
+  .hero__list {
+    width: 100%;
+  }
+  .hero__logo {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero__list {
+    border-width: 2px;
+    width: 100%;
+    &__item {
+      border-width: 2px;
+    }
+  }
+  .hero__logo {
+    width: 70%;
+  }
+}
