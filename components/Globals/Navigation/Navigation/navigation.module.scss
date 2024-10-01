@@ -194,7 +194,7 @@
   .navigation__top-box {
     justify-content: flex-end;
     padding-right: 0;
-    img {
+    &__logo {
       display: none !important;
     }
   }

@@ -4,6 +4,7 @@ import styles from "./navigation.module.scss";
 import Image from "next/image";
 import XBtn from "@/components/Ui/Buttons/XBtn/XBtn";
 import Link from "next/link";
+import LogoMain from "../../Logo/LogoMain";
 
 const Navigation: React.FC<{
   showNavigation: boolean;
@@ -30,7 +31,10 @@ const Navigation: React.FC<{
           !showNavigation && styles["navigation-hideContent"]
         }`}
       >
-        <Image src="/assets/logo/logo.png" width={50} height={50} alt="logo" />
+        <span className={styles["navigation__top-box__logo"]}>
+          <LogoMain height="100px" width="auto" />
+        </span>
+
         <XBtn onClick={hideNavigation} />
       </div>
       <div
@@ -131,6 +135,16 @@ const Navigation: React.FC<{
                 {" "}
                 galeria
               </span>
+            </li>
+            <li>
+              <Link
+                href="/naukaplywania/poradnikbasenowy"
+                onClick={hideNavigation}
+              >
+                <span className={styles["navigation__bottom-box__80__nav"]}>
+                  Poradnik basenowy
+                </span>
+              </Link>
             </li>
           </ul>
         </div>
