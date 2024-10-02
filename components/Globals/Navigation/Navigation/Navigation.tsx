@@ -124,11 +124,11 @@ const Navigation: React.FC<{
               </span>
             </li>
             <li>
-              {" "}
-              <span className={styles["navigation__bottom-box__80__nav"]}>
-                {" "}
-                nasz zespół
-              </span>
+              <Link href="/naszzespol" onClick={hideNavigation}>
+                <span className={styles["navigation__bottom-box__80__nav"]}>
+                  nasz zespół
+                </span>
+              </Link>
             </li>
             <li>
               <span className={styles["navigation__bottom-box__80__nav"]}>

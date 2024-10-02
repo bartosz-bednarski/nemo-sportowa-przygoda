@@ -1,0 +1,59 @@
+import React from "react";
+import styles from "../page.module.scss";
+import VideosSection from "@/components/Globals/VideosSection";
+import InstructorsList from "@/components/NaszZespol/InstructorsList/InstructorsList";
+
+const NaszZespolPage: React.FC = () => {
+  return (
+    <main className={styles.main}>
+      <VideosSection
+        oneSticker={true}
+        scrapColor="basicOrange"
+        oneStickerContent={{
+          title: "POZNAJ ",
+          title2: "NASZ",
+          titleStrip: "ZESPÓŁ",
+          stripBgColor: "mediumBlue",
+          stripTextColor: "white",
+          scale: 1.15,
+        }}
+        col1={{
+          image: { src: "image 80.png", alt: "nauka pływania niemowlaki" },
+          stickerH2: {
+            title: "MAŁE",
+            titleStrip: "BOMBELKI",
+            stripBgColor: "lightBlue",
+            stripTextColor: "white",
+            scale: 1.15,
+          },
+        }}
+        col2={{
+          image: {
+            src: "image 81.png",
+            alt: "nauka pływania dzieci i mlodzież",
+          },
+          stickerH2: {
+            title: "ŚREDNIE",
+            titleStrip: "BOMBELKI",
+            stripBgColor: "mediumBlue",
+            stripTextColor: "white",
+            scale: 1.15,
+          },
+        }}
+        col3={{
+          image: { src: "image 82.png", alt: "nauka pływania dorośli" },
+          stickerH2: {
+            title: "DUŻE",
+            titleStrip: "BOMBELKI",
+            stripBgColor: "darkBlue",
+            stripTextColor: "white",
+            scale: 1.15,
+          },
+        }}
+      />
+      <InstructorsList />
+    </main>
+  );
+};
+
+export default NaszZespolPage;
