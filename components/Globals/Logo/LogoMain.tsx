@@ -15,7 +15,7 @@ const LogoMain: React.FC<{ width: string; height: string }> = ({
       style={{ width: width, height: height }}
       id="logo-main"
     >
-      <g clip-path="url(#clip0_1215_3023)">
+      <g clipPath="url(#clip0_1215_3023)">
         <mask
           id="mask0_1215_3023"
           maskUnits="userSpaceOnUse"
