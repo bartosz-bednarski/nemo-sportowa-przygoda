@@ -131,10 +131,11 @@ const Navigation: React.FC<{
               </Link>
             </li>
             <li>
-              <span className={styles["navigation__bottom-box__80__nav"]}>
-                {" "}
-                galeria
-              </span>
+              <Link href="/galeria" onClick={hideNavigation}>
+                <span className={styles["navigation__bottom-box__80__nav"]}>
+                  galeria
+                </span>
+              </Link>
             </li>
             <li>
               <Link

@@ -59,7 +59,7 @@ const TrainersSection: React.FC = () => {
           title="Nasz zespół"
           textColor="basicOrange"
           bgColor="white"
-          href="/"
+          href="/naszzespol"
         />
       </div>
       <Scrap2 color="darkBlue" position="bottom" />

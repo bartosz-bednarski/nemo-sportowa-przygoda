@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./swimmingSection.module.scss";
 import Image from "next/image";
 import TitleStripDescription from "@/components/Ui/TitleStripDescription/TitleStripDescription";
-import StripH3 from "@/components/Ui/StripH3/StripH3";
+
 import SwimmingPoolCover from "@/components/Ui/SwimmingPoolCover/SwimmingPoolCover";
 import LinkButton from "@/components/Ui/Buttons/LinkButton";
 
@@ -50,12 +50,12 @@ const SwimmingOffert: React.FC = () => {
             Nunc vestibulum orci tincidunt sed tristique nullam."
           />
         </div>
-        <StripH3
+        {/* <StripH3
           title="NASZE LOKALIZACJE"
           stripBgColor="white"
           stripTextColor="mediumBlue"
           scale={1.5}
-        />
+        /> */}
         <div className={styles["swimming__offert__content__swimming-pools"]}>
           <SwimmingPoolCover
             image="korzenna.jpg"
