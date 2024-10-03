@@ -15,7 +15,7 @@ const NaszZespolPage: React.FC = () => {
           titleStrip: "ZESPÓŁ",
           stripBgColor: "mediumBlue",
           stripTextColor: "white",
-          scale: 1.15,
+          scale: 1.9,
         }}
         col1={{
           image: { src: "image 80.png", alt: "nauka pływania niemowlaki" },

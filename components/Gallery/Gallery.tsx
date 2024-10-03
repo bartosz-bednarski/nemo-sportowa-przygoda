@@ -23,7 +23,7 @@ const Gallery: React.FC<{
           objectFit="cover"
         />
         <div className={styles["gallery__hero__title"]}>
-          <h1>GALERIA</h1>
+          <h1 className={styles["gallery__hero__title__header"]}>GALERIA</h1>
           <span className={styles["gallery__hero__title__strip"]}>
             {" "}
             <StripH1
