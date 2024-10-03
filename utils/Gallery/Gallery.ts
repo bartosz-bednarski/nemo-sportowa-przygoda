@@ -8,7 +8,14 @@ export const GALLERY_MAIN: galleryMainType = [
     stripColor: "darkBlue",
     stripTextColor: "white",
     href: "naukaplywaniazrodzicami",
-    images: { landscapes: [], portraits: [] },
+    images: {
+      landscapes: [
+        ["01", "02"],
+        ["03", "04"],
+        ["05", ""],
+      ],
+      portraits: ["01", "02", "03", "04", "05"],
+    },
   },
   {
     type: "PLYWANIE",
@@ -30,7 +37,7 @@ export const GALLERY_MAIN: galleryMainType = [
   },
   {
     type: "LATO",
-    title: "OBOZ LETNI",
+    title: "OBÓZ LETNI",
     coverImage: "obozy-letnie.png",
     stripColor: "basicGreen",
     stripTextColor: "white",

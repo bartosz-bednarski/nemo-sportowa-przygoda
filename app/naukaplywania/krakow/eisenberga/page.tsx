@@ -26,7 +26,7 @@ const NaukaPlywaniaEisenberga: React.FC = () => {
           titleStrip: "EISENBERGA",
           stripBgColor: "mediumBlue",
           stripTextColor: "white",
-          scale: 1.15,
+          scale: 2.1,
         }}
         scrapColor="lightBlue"
         col1={{

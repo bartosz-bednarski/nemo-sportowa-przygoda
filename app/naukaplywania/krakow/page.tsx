@@ -15,7 +15,7 @@ const NaukaPlywaniaKrakow: React.FC = () => {
           titleStrip: "KRAKÓW",
           stripBgColor: "mediumBlue",
           stripTextColor: "white",
-          scale: 1.15,
+          scale: 1.5,
         }}
         col1={{
           image: { src: "image 80.png", alt: "nauka pływania niemowlaki" },

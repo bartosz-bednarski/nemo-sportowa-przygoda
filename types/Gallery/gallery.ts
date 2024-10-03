@@ -8,8 +8,8 @@ export type galleryItemType = {
   stripColor: customColors;
   stripTextColor: customColors;
   images: {
-    landscapes: [];
-    portraits: [];
+    landscapes: string[][];
+    portraits: string[];
   };
 };
 export type galleryType = "LATO" | "ZIMA" | "PLYWANIE";

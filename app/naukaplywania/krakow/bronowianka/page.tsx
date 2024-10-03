@@ -26,7 +26,7 @@ const NaukaPlywaniaBronowianka: React.FC = () => {
           titleStrip: "BRONOWIANKA",
           stripBgColor: "mediumBlue",
           stripTextColor: "white",
-          scale: 1.3,
+          scale: 2.5,
         }}
         scrapColor="lightBlue"
         col1={{
