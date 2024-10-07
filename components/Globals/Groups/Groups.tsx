@@ -21,6 +21,7 @@ const Groups: React.FC<groupsType> = ({ stripH2, groups }) => {
               key={index}
               stickerH4={group.stickerH4}
               aboutTextPoppins={group.aboutTextPoppins}
+              skills={group.skills}
             />
           ))}
       </div>

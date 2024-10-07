@@ -8,14 +8,14 @@ import { customColors } from "@/types/UI/colors";
 import { GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS } from "../Grupy/grupyPoziomZaawansowania";
 
 type naukaPlywania = {
-  niemowlaki: {
+  zRodzicami: {
     backgroundColor: customColors;
     about: aboutType;
     instructors: instructorsType;
     pools: poolsType;
     groups: groupsType;
   };
-  dzieci: {
+  dzieciMlodziez: {
     backgroundColor: customColors;
     about: aboutType;
     instructors: instructorsType;
@@ -31,12 +31,12 @@ type naukaPlywania = {
   };
 };
 export const NAUKA_PLYWANIA: naukaPlywania = {
-  niemowlaki: {
+  zRodzicami: {
     backgroundColor: "lightBlue",
     about: {
       stickerH2: {
         title: "NAUKA PŁYWANIA",
-        titleStrip: "NIEMOWLAKI",
+        titleStrip: "Z RODZICAMI",
         scale: 1.2,
         stripTextColor: "lightBlue",
         stripBgColor: "white",
@@ -44,9 +44,9 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       },
       aboutTextPoppins: {
         titleColor: "lightBlue",
-        title: "Dzieci  od  3  miesiąca  do  3 lat  z  rodzicami",
+        title: "Zajęcia od 3 miesiąca życia razem z rodzicem. BABY SWIM",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
+          "Nasze zajęcia są przeznaczone dla dzieci od 3. miesiąca życia, które uczestniczą w nich razem z rodzicem. To doskonała okazja, aby wspólnie odkrywać radość z zabawy w wodzie, wspierać rozwój malucha oraz wzmacniać więzi emocjonalne. Zajęcia pomagają oswoić dzieci z wodą w przyjaznej atmosferze, poprzez naukę przez zabawę, co wpływa pozytywnie zarówno na rozwój fizyczny, jak i psychiczny najmłodszych. U nas rodzice nie muszą umieć pływać – cała kadra instruktorska pomoże Wam bezpiecznie przejść przez każde ćwiczenie.",
       },
       image: {
         src: "background-img-scrap-1.png",
@@ -130,7 +130,7 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       ],
     },
   },
-  dzieci: {
+  dzieciMlodziez: {
     backgroundColor: "mediumBlue",
     about: {
       stickerH2: {

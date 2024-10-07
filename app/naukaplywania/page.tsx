@@ -46,19 +46,19 @@ const NaukaPlywaniaPage: React.FC = () => {
         }}
       />
       <NaukaPlywania
-        about={NAUKA_PLYWANIA.niemowlaki.about}
-        instructors={NAUKA_PLYWANIA.niemowlaki.instructors}
-        pools={NAUKA_PLYWANIA.niemowlaki.pools}
-        backgroundColor={NAUKA_PLYWANIA.niemowlaki.backgroundColor}
-        groups={NAUKA_PLYWANIA.niemowlaki.groups}
+        about={NAUKA_PLYWANIA.zRodzicami.about}
+        instructors={NAUKA_PLYWANIA.zRodzicami.instructors}
+        pools={NAUKA_PLYWANIA.zRodzicami.pools}
+        backgroundColor={NAUKA_PLYWANIA.zRodzicami.backgroundColor}
+        groups={NAUKA_PLYWANIA.zRodzicami.groups}
       />
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
       <NaukaPlywania
-        about={NAUKA_PLYWANIA.dzieci.about}
-        instructors={NAUKA_PLYWANIA.dzieci.instructors}
-        pools={NAUKA_PLYWANIA.dzieci.pools}
-        backgroundColor={NAUKA_PLYWANIA.dzieci.backgroundColor}
-        groups={NAUKA_PLYWANIA.dzieci.groups}
+        about={NAUKA_PLYWANIA.dzieciMlodziez.about}
+        instructors={NAUKA_PLYWANIA.dzieciMlodziez.instructors}
+        pools={NAUKA_PLYWANIA.dzieciMlodziez.pools}
+        backgroundColor={NAUKA_PLYWANIA.dzieciMlodziez.backgroundColor}
+        groups={NAUKA_PLYWANIA.dzieciMlodziez.groups}
       />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <NaukaPlywania
