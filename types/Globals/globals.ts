@@ -48,6 +48,7 @@ export type VideosSectionType = {
 export type groupLvlType = {
   stickerH4: stickerH4Type;
   aboutTextPoppins: aboutTextPoppinsType;
+  skills: string[];
 };
 export type priceLessonsType = {
   stickerH4: stickerH4Type;
