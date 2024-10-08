@@ -1,5 +1,54 @@
+@import "../../styles/fonts.scss";
 .naukaPlywania {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  &__row-box {
+    box-sizing: border-box;
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    &__column-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 25%;
+      ul {
+        list-style-type: "\2B50";
+        // margin: 0 0 0 20px;
+        margin-top: 0;
+        padding: 0;
+        transition: all 0.5s;
+        li {
+          font-weight: 500;
+          font-size: 1rem;
+          font-family: "poppins-400";
+          margin: 0.5rem 0;
+          padding: 0;
+          line-height: 1.4rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .naukaPlywania__row-box {
+    gap: 3rem;
+    &__column-box {
+      width: 45%;
+    }
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .naukaPlywania__row-box {
+    gap: 1rem;
+    &__column-box {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  }
 }

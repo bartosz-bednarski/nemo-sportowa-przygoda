@@ -9,7 +9,6 @@ import {
 import { swimmingPoolCoverType } from "../UI/swimmingPoolCover";
 export type naukaPlywaniaType = {
   about: aboutType;
-  instructors: instructorsType;
   pools: poolsType;
   groups?: groupsType;
   backgroundColor: customColors;
@@ -18,6 +17,7 @@ export type aboutType = {
   stickerH2: stickerH2Type;
   aboutTextPoppins: aboutTextPoppinsType;
   image: { src: string; alt: string };
+  button?: { title: string; href: string };
 };
 
 export type instructorsType = {

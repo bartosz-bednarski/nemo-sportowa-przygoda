@@ -10,6 +10,7 @@ import {
 } from "@/types/NaukaPlywania/naukaPlywania";
 import { customColors } from "@/types/UI/colors";
 import { GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS } from "../Grupy/grupyPoziomZaawansowania";
+import { NAUKA_PLYWANIA } from "../NaukaPlywania/naukaPlywania";
 
 type naukaPlywaniaBasen = {
   zRodzicami: {
@@ -75,13 +76,17 @@ export const NAUKA_PLYWANIA_GORLICE: naukaPlywaniaBasen = {
       },
       aboutTextPoppins: {
         titleColor: "lightBlue",
-        title: "Dzieci  od  3  miesiąca  do  6 lat  z  rodzicami",
+        title: NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.title,
         description:
-          "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
+          NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.description,
       },
       image: {
         src: "background-img-scrap-1.png",
         alt: "nauka pływania z rodzicami",
+      },
+      button: {
+        title: "Dowiedz się więcej",
+        href: "/naukaplywania#tips",
       },
     },
     priceList: CENNIK_Z_RODZICAMI_GORLICE,
