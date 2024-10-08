@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../page.module.scss";
 import VideosSection from "@/components/Globals/VideosSection";
 import InstructorsList from "@/components/NaszZespol/InstructorsList/InstructorsList";
+import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 
 const NaszZespolPage: React.FC = () => {
   return (
@@ -52,6 +53,7 @@ const NaszZespolPage: React.FC = () => {
         }}
       />
       <InstructorsList />
+      <Scrap2 position="bottom" color="darkBlue" />
     </main>
   );
 };

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styles from "./navBar.module.scss";
 import NavBtn from "@/components/Ui/Buttons/NavBtn/NavBtn";
 import Navigation from "../Navigation/Navigation";
-import LogoMain from "../../Logo/LogoMain";
+import LogoMainWhite from "../../Logo/LogoMainWhite";
 
 const NavBar: React.FC = () => {
   const [showNavigation, setShowNavigation] = useState(false);
@@ -19,7 +19,7 @@ const NavBar: React.FC = () => {
             height={50}
             alt="logo"
           /> */}
-          <LogoMain width="auto" height="100px" />
+          <LogoMainWhite width="auto" height="100px" />
         </div>
         <div className={styles["navBar__btns"]}>
           <NavBtn type="menu" onClick={() => setShowNavigation(true)} />

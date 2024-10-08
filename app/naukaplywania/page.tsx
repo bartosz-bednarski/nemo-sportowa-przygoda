@@ -4,10 +4,9 @@ import React from "react";
 import VideosSection from "@/components/Globals/VideosSection";
 import { NAUKA_PLYWANIA } from "@/utils/NaukaPlywania/naukaPlywania";
 import Bubbles from "@/components/Ui/Bubbles/Bubbles";
-import ScrapFooter from "@/components/Ui/Scrap/ScrapFooter";
 const NaukaPlywaniaPage: React.FC = () => {
   return (
-    <main className={styles.main} style={{ paddingBottom: "3rem" }}>
+    <main className={styles.main}>
       <VideosSection
         oneSticker={false}
         scrapColor="lightBlue"
@@ -65,7 +64,6 @@ const NaukaPlywaniaPage: React.FC = () => {
         backgroundColor={NAUKA_PLYWANIA.dorosli.backgroundColor}
         groups={NAUKA_PLYWANIA.dorosli.groups}
       />
-      <ScrapFooter color="darkBlue" />
     </main>
   );
 };

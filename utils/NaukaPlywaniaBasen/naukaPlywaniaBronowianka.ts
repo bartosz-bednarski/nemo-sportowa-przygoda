@@ -170,5 +170,9 @@ export const BASEN_BRONOWIANKA_INFORMATIONS: poolInformationsType = {
       exists: true,
       title: "SZATNIA RODZINNA",
     },
+    parking: {
+      exists: true,
+      title: "PARKING PRZED OBIEKTEM",
+    },
   },
 };

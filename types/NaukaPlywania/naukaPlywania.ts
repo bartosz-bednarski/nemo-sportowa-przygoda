@@ -66,5 +66,9 @@ export type poolInformationsType = {
       exists: boolean;
       title: "SZATNIA RODZINNA";
     };
+    parking?: {
+      exists: boolean;
+      title: string;
+    };
   };
 };

@@ -22,13 +22,19 @@
         align-items: center;
         gap: 1rem;
         max-height: 80px;
+
         &__svg {
           box-sizing: border-box;
+          display: flex;
           width: 80px;
           height: 80px;
           padding: 10px;
           border: 2px solid $basicOrange;
           border-radius: 10px;
+          font-size: 2rem;
+          color: $basicOrange;
+          justify-content: center;
+          align-items: center;
         }
         &__text {
           width: 350px;

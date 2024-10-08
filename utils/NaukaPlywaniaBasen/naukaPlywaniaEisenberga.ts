@@ -425,11 +425,11 @@ export const BASEN_EISENBERGA_INFORMATIONS: poolInformationsType = {
   icons: {
     pool1: {
       exists: true,
-      title: "BASEN SPORTOWY 25 X 12,5M, GŁĘBOKOŚĆ 1,35-1,90M",
+      title: "BASEN SPORTOWY 25 X 16M, GŁĘBOKOŚĆ 1,30-1,80M",
     },
     pool2: {
       exists: true,
-      title: "BASEN REKREACYJNY 12,5 X 7M, GŁĘBOKOŚĆ 0,00-1,20M",
+      title: "BASEN REKREACYJNY 16 X 5M, GŁĘBOKOŚĆ 0,80-1,20M",
     },
     stand: {
       exists: true,
@@ -446,6 +446,10 @@ export const BASEN_EISENBERGA_INFORMATIONS: poolInformationsType = {
     cloakroomFamily: {
       exists: true,
       title: "SZATNIA RODZINNA",
+    },
+    parking: {
+      exists: true,
+      title: "DARMOWY ZA SZLABANEM",
     },
   },
 };

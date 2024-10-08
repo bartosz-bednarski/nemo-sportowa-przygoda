@@ -49,6 +49,9 @@
     height: 338px;
     border-radius: 15px;
     img {
+      object-fit: cover;
+      width: 600px;
+      height: 338px;
       border-radius: 15px;
     }
   }
@@ -59,6 +62,9 @@
 
     border-radius: 15px;
     img {
+      object-fit: cover;
+      width: 600px;
+      height: 692px;
       border-radius: 15px;
     }
   }
@@ -74,10 +80,18 @@
   .galleryPhotos__landscape {
     width: 460px;
     height: 278px;
+    img {
+      width: 460px;
+      height: 278px;
+    }
   }
   .galleryPhotos__portrait {
     width: 460px;
     height: 520px;
+    img {
+      width: 460px;
+      height: 520px;
+    }
   }
 }
 @media only screen and (max-width: 500px) {
@@ -92,9 +106,17 @@
   .galleryPhotos__landscape {
     width: 300px;
     height: 198px;
+    img {
+      width: 300px;
+      height: 198px;
+    }
   }
   .galleryPhotos__portrait {
     width: 300px;
     height: 360px;
+    img {
+      width: 300px;
+      height: 360px;
+    }
   }
 }
