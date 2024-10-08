@@ -370,11 +370,11 @@ export const BASEN_KORZENNA_INFORMATIONS: poolInformationsType = {
   icons: {
     pool1: {
       exists: true,
-      title: "BASEN SPORTOWY 25 X 12,5M, GŁĘBOKOŚĆ 1,35-1,90M",
+      title: "BASEN WIELOFUNKCYJNY 24,98 X 9,50M, GŁĘBOKOŚĆ 1,20-1,80M",
     },
     pool2: {
-      exists: true,
-      title: "BASEN REKREACYJNY 12,5 X 7M, GŁĘBOKOŚĆ 0,00-1,20M",
+      exists: false,
+      title: "",
     },
     stand: {
       exists: true,
@@ -391,6 +391,10 @@ export const BASEN_KORZENNA_INFORMATIONS: poolInformationsType = {
     cloakroomFamily: {
       exists: true,
       title: "SZATNIA RODZINNA",
+    },
+    parking: {
+      exists: true,
+      title: "ZA DARMO PRZED OBIEKTEM",
     },
   },
 };

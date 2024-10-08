@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./galleryPhotos.module.scss";
 import { galleryItemType } from "@/types/Gallery/gallery";
 import Image from "next/image";
-import LogoMain from "@/components/Globals/Logo/LogoMain";
+import LogoMainBlack from "@/components/Globals/Logo/LogoMainBlack";
 import { COLORS } from "@/utils/UI/colors";
 
 const GalleryPhotos: React.FC<{ data: galleryItemType }> = ({ data }) => {
@@ -22,7 +22,7 @@ const GalleryPhotos: React.FC<{ data: galleryItemType }> = ({ data }) => {
           >
             {data.title}
           </h1>
-          <LogoMain width="80%" height="auto" />
+          <LogoMainBlack width="80%" height="auto" />
         </div>
         {data.images.landscapes.map((landscape, index) => (
           <div
@@ -32,9 +32,11 @@ const GalleryPhotos: React.FC<{ data: galleryItemType }> = ({ data }) => {
             {landscape[0] !== "" && (
               <span className={styles["galleryPhotos__landscape"]}>
                 <Image
-                  src={`/gallery/${data.href}/landscapes/${landscape[0]}.jpeg`}
-                  alt={`${data.href}${index}`}
-                  fill={true}
+                  src={`/gallery/${data.href}/landscapes/${landscape[0]}.webp`}
+                  alt={`${data.href}-landscape-${index}`}
+                  title={`${data.href}-landscape-${index}`}
+                  width={660}
+                  height={338}
                   objectFit="cover"
                   loading="eager"
                 />
@@ -43,9 +45,11 @@ const GalleryPhotos: React.FC<{ data: galleryItemType }> = ({ data }) => {
             {landscape[1] !== "" && (
               <span className={styles["galleryPhotos__landscape"]}>
                 <Image
-                  src={`/gallery/${data.href}/landscapes/${landscape[1]}.jpeg`}
-                  alt={`${data.href}${index}`}
-                  fill={true}
+                  src={`/gallery/${data.href}/landscapes/${landscape[1]}.webp`}
+                  alt={`${data.href}-landscape-${index}`}
+                  title={`${data.href}-landscape-${index}`}
+                  width={660}
+                  height={338}
                   objectFit="cover"
                   loading="eager"
                 />
@@ -60,9 +64,11 @@ const GalleryPhotos: React.FC<{ data: galleryItemType }> = ({ data }) => {
           >
             {portrait !== "" && (
               <Image
-                src={`/gallery/${data.href}/portraits/${portrait}.jpeg`}
-                alt={`${data.href}${index}`}
-                fill={true}
+                src={`/gallery/${data.href}/portraits/${portrait}.webp`}
+                alt={`${data.href}-portrait-${index}`}
+                title={`${data.href}-portrait-${index}`}
+                width={600}
+                height={692}
                 objectFit="cover"
                 loading="lazy"
               />

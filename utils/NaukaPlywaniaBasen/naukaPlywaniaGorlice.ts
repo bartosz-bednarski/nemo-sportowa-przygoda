@@ -152,7 +152,7 @@ export const BASEN_GORLICE_INFORMATIONS: poolInformationsType = {
   icons: {
     pool1: {
       exists: true,
-      title: "BASEN SPORTOWY 25 X 12,5M, GŁĘBOKOŚĆ 1,35-1,90M",
+      title: "BASEN SPORTOWY 25 X 12,5M, GŁĘBOKOŚĆ 1,35-1,80M",
     },
     pool2: {
       exists: true,
@@ -173,6 +173,10 @@ export const BASEN_GORLICE_INFORMATIONS: poolInformationsType = {
     cloakroomFamily: {
       exists: true,
       title: "SZATNIA RODZINNA",
+    },
+    parking: {
+      exists: true,
+      title: "PARKING PŁATNY STREFA",
     },
   },
 };

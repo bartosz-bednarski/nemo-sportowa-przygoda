@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-const LogoMain: React.FC<{ width: string; height: string }> = ({
+const LogoMainBlack: React.FC<{ width: string; height: string }> = ({
   width,
   height,
 }) => {
@@ -13,7 +13,7 @@ const LogoMain: React.FC<{ width: string; height: string }> = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       style={{ width: width, height: height }}
-      id="logo-main"
+      id="logo-main-black"
     >
       <g clipPath="url(#clip0_1215_3023)">
         <mask
@@ -261,4 +261,4 @@ const LogoMain: React.FC<{ width: string; height: string }> = ({
     </svg>
   );
 };
-export default LogoMain;
+export default LogoMainBlack;

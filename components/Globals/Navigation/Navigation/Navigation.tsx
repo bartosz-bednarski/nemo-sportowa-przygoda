@@ -4,7 +4,7 @@ import styles from "./navigation.module.scss";
 import Image from "next/image";
 import XBtn from "@/components/Ui/Buttons/XBtn/XBtn";
 import Link from "next/link";
-import LogoMain from "../../Logo/LogoMain";
+import LogoMainWhite from "../../Logo/LogoMainWhite";
 
 const Navigation: React.FC<{
   showNavigation: boolean;
@@ -32,7 +32,7 @@ const Navigation: React.FC<{
         }`}
       >
         <span className={styles["navigation__top-box__logo"]}>
-          <LogoMain height="100px" width="auto" />
+          <LogoMainWhite height="100px" width="auto" />
         </span>
 
         <XBtn onClick={hideNavigation} />

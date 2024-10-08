@@ -202,6 +202,22 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
               </span>
             </div>
           )}
+          {poolInformation.icons.parking?.exists && (
+            <div className={styles["poolInformations__row-box__list__item"]}>
+              <span
+                className={styles["poolInformations__row-box__list__item__svg"]}
+              >
+                P
+              </span>
+              <span
+                className={
+                  styles["poolInformations__row-box__list__item__text"]
+                }
+              >
+                {poolInformation.icons.parking.title}
+              </span>
+            </div>
+          )}
         </div>
         <iframe
           src={poolInformation.mapSrc}
