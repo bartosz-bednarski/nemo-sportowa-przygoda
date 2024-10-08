@@ -3,7 +3,7 @@ import { groupLvlType } from "@/types/Globals/globals";
 export const GRUPY_POZIOM_ZAAWANSOWANIA = {
   poczatkujacaDzieci: {
     title: "Grupa początkująca RACZKI",
-    age: "3-6 lat",
+    age: "RACZKI 3-6 lat",
     description:
       "W tej grupie dzieci są zazwyczaj na pierwszym etapie oswajania się z wodą. Program koncentruje się na budowaniu zaufania do wody oraz rozwijaniu podstawowych umiejętności pływackich.",
     skills: [
@@ -17,7 +17,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA = {
   },
   kontynuacjaDzieci: {
     title: "Kontynuacja nauki KRABY",
-    age: "7-9 lat",
+    age: "KRABY 7-9 lat",
     description:
       "Dzieci w tej grupie posiadają podstawowe umiejętności pływackie i zaczynają rozwijać technikę. Celem jest zwiększenie samodzielności w wodzie oraz poprawa koordynacji ruchowej.",
     skills: [
@@ -30,7 +30,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA = {
   },
   srednioZaawansowana: {
     title: "Grupa średniozaawansowana MEDUZY",
-    age: "9-13 lat",
+    age: "MEDUZY 9-13 lat",
     description:
       "W tej grupie dzieci mają już opanowane podstawowe umiejętności pływackie i pracują nad doskonaleniem techniki w różnych stylach. Zwiększa się nacisk na wytrzymałość, szybkość i dokładność.",
     skills: [
@@ -44,7 +44,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA = {
   },
   zaawansowana: {
     title: "Młodzież zaawansowana NEMO",
-    age: "14-18 lat",
+    age: "NEMO 14-18 lat",
     description:
       "Dzieci i młodzież w tej grupie są już na etapie doskonalenia technik wszystkich stylów pływackich. Treningi są bardziej wymagające, a celem jest przygotowanie do zawodów i rozwój wytrzymałości.",
     skills: [

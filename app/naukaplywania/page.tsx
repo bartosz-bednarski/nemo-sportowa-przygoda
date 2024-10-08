@@ -47,7 +47,6 @@ const NaukaPlywaniaPage: React.FC = () => {
       />
       <NaukaPlywania
         about={NAUKA_PLYWANIA.zRodzicami.about}
-        instructors={NAUKA_PLYWANIA.zRodzicami.instructors}
         pools={NAUKA_PLYWANIA.zRodzicami.pools}
         backgroundColor={NAUKA_PLYWANIA.zRodzicami.backgroundColor}
         groups={NAUKA_PLYWANIA.zRodzicami.groups}
@@ -55,7 +54,6 @@ const NaukaPlywaniaPage: React.FC = () => {
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
       <NaukaPlywania
         about={NAUKA_PLYWANIA.dzieciMlodziez.about}
-        instructors={NAUKA_PLYWANIA.dzieciMlodziez.instructors}
         pools={NAUKA_PLYWANIA.dzieciMlodziez.pools}
         backgroundColor={NAUKA_PLYWANIA.dzieciMlodziez.backgroundColor}
         groups={NAUKA_PLYWANIA.dzieciMlodziez.groups}
@@ -63,7 +61,6 @@ const NaukaPlywaniaPage: React.FC = () => {
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <NaukaPlywania
         about={NAUKA_PLYWANIA.dorosli.about}
-        instructors={NAUKA_PLYWANIA.dorosli.instructors}
         pools={NAUKA_PLYWANIA.dorosli.pools}
         backgroundColor={NAUKA_PLYWANIA.dorosli.backgroundColor}
         groups={NAUKA_PLYWANIA.dorosli.groups}

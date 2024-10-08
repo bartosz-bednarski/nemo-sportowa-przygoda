@@ -5,11 +5,13 @@ import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
 import AboutTextPoppins from "@/components/Ui/AboutTextPoppins/AboutTextPoppins";
 import Image from "next/image";
 import { aboutType } from "@/types/NaukaPlywania/naukaPlywania";
+import LinkButton from "@/components/Ui/Buttons/LinkButton";
 
 const NaukaPlywaniaAbout: React.FC<aboutType> = ({
   stickerH2,
   aboutTextPoppins,
   image,
+  button,
 }) => {
   return (
     <div className={styles.about}>
@@ -27,6 +29,16 @@ const NaukaPlywaniaAbout: React.FC<aboutType> = ({
           title={aboutTextPoppins.title}
           description={aboutTextPoppins.description}
         />
+        {button !== undefined && (
+          <span style={{ width: "fit-content" }}>
+            <LinkButton
+              title={button.title}
+              href={button.href}
+              bgColor={stickerH2.stripBgColor}
+              textColor={stickerH2.stripTextColor}
+            />
+          </span>
+        )}
       </div>
       <div className={styles["about__image-box"]}>
         <Image

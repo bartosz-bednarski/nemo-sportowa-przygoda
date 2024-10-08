@@ -6,7 +6,6 @@ import { aboutType, groupsType } from "@/types/NaukaPlywania/naukaPlywania";
 import { customColors } from "@/types/UI/colors";
 import { COLORS } from "@/utils/UI/colors";
 import PriceList from "../Globals/PriceList/PriceList";
-import InstructorsRowBox from "../Globals/InstructorsRowBox/InstructorsRowBox";
 import { instructorsRowBoxType, priceListType } from "@/types/Globals/globals";
 import Groups from "../Globals/Groups/Groups";
 
@@ -16,7 +15,7 @@ const NaukaPlywaniaBasen: React.FC<{
   instructors: instructorsRowBoxType;
   groups: groupsType;
   priceList?: priceListType;
-}> = ({ about, backgroundColor, instructors, groups, priceList }) => {
+}> = ({ about, backgroundColor, groups, priceList }) => {
   return (
     <div
       className={styles.naukaPlywaniaBasen}
@@ -26,13 +25,10 @@ const NaukaPlywaniaBasen: React.FC<{
         stickerH2={about.stickerH2}
         aboutTextPoppins={about.aboutTextPoppins}
         image={about.image}
+        button={about.button}
       />
       {priceList !== undefined && <PriceList priceList={priceList} />}
 
-      <InstructorsRowBox
-        instructors={instructors.instructors}
-        bgColor={instructors.bgColor}
-      />
       <Groups stripH2={groups.stripH2} groups={groups.groups} />
     </div>
   );
