@@ -4,19 +4,19 @@ export const GALLERY_MAIN: galleryMainType = [
   {
     type: "PLYWANIE",
     title: "NAUKA PŁYWANIA Z RODZICAMI",
-    coverImage: "nauka-plywania-z-rodzicami.png",
+    coverImage: "nauka-plywania-z-rodzicami.webp",
     stripColor: "darkBlue",
     stripTextColor: "white",
     href: "naukaplywaniazrodzicami",
     images: {
-      landscapes: [],
-      portraits: [],
+      landscapes: [["01", ""]],
+      portraits: ["01", "02", "03", "04", "05"],
     },
   },
   {
     type: "PLYWANIE",
     title: "NAUKA PŁYWANIA DZIECI I MŁODZIEŻ",
-    coverImage: "nauka-plywania-dzieci-i-mlodziez.png",
+    coverImage: "nauka-plywania-dzieci-i-mlodziez.webp",
     stripColor: "darkBlue",
     stripTextColor: "white",
     href: "naukaplywaniadzieciimlodziez",
