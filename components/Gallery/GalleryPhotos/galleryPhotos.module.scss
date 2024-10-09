@@ -1,6 +1,7 @@
 @import "../../../styles/colors.scss";
 @import "../../../styles/fonts.scss";
 .galleryPhotos {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -48,6 +49,9 @@
     width: 600px;
     height: 338px;
     border-radius: 15px;
+    &:hover {
+      cursor: pointer;
+    }
     img {
       object-fit: cover;
       width: 600px;
@@ -61,6 +65,9 @@
     height: 692px;
 
     border-radius: 15px;
+    &:hover {
+      cursor: pointer;
+    }
     img {
       object-fit: cover;
       width: 600px;
@@ -68,7 +75,120 @@
       border-radius: 15px;
     }
   }
+  &__selected-photo-overlay {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.719);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    &__x-btn {
+      position: absolute;
+      top: -49px;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: "poppins-600";
+      font-size: 1.2rem;
+      color: white;
+      background-color: $basicOrange;
+      border: 0;
+      padding: 0.2rem 0.5rem 0.2rem 7rem;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      transition: all 0.5s;
+      svg {
+        path {
+          fill: white;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        color: $basicOrange;
+        background-color: white;
+        svg {
+          path {
+            fill: $basicOrange;
+          }
+        }
+      }
+    }
+    &__button {
+      background-color: transparent;
+      border: 0;
+      svg {
+        width: 100px;
+        height: auto;
+        path {
+          fill: $basicOrange;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        svg {
+          path {
+            fill: white;
+          }
+        }
+      }
+    }
+    &__landscape {
+      position: relative;
+      width: 1200px;
+      height: 676px;
+      border-radius: 15px;
+      border-top-right-radius: 0px;
+      img {
+        object-fit: cover;
+        width: 1200px;
+        height: 676px;
+        border-radius: 15px;
+        border-top-right-radius: 0px;
+      }
+    }
+    &__portrait {
+      position: relative;
+      width: 680px;
+      height: 800px;
+      border-radius: 15px;
+      border-top-right-radius: 0px;
+      img {
+        object-fit: cover;
+        width: 680px;
+        height: 800px;
+        border-radius: 15px;
+        border-top-right-radius: 0px;
+      }
+    }
+  }
 }
+@media only screen and (max-width: 1450px) {
+  .galleryPhotos__selected-photo-overlay__landscape {
+    width: 80%;
+    max-height: 80vh;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .galleryPhotos__selected-photo-overlay {
+    display: none;
+  }
+  .galleryPhotos__row-container {
+    pointer-events: none;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .galleryPhotos__row-container__custom-portrait {
     width: 460px;
