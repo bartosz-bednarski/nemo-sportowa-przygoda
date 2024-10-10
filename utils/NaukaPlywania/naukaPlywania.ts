@@ -49,7 +49,7 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
           "Nasze zajęcia są przeznaczone dla dzieci od 3. miesiąca życia, które uczestniczą w nich razem z rodzicem. To doskonała okazja, aby wspólnie odkrywać radość z zabawy w wodzie, wspierać rozwój malucha oraz wzmacniać więzi emocjonalne. Zajęcia pomagają oswoić dzieci z wodą w przyjaznej atmosferze, poprzez naukę przez zabawę, co wpływa pozytywnie zarówno na rozwój fizyczny, jak i psychiczny najmłodszych. U nas rodzice nie muszą umieć pływać – cała kadra instruktorska pomoże Wam bezpiecznie przejść przez każde ćwiczenie.",
       },
       image: {
-        src: "background-img-scrap-1.png",
+        src: "lessonsTypes/zRodzicami.webp",
         alt: "nauka pływania niemowlaki",
       },
     },
@@ -148,8 +148,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
           "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
       },
       image: {
-        src: "background-img-scrap-1.png",
-        alt: "nauka pływania niemowlaki",
+        src: "lessonsTypes/dzieciMlodziez2.webp",
+        alt: "nauka pływania dzieci i mlodziez",
       },
     },
     instructors: {

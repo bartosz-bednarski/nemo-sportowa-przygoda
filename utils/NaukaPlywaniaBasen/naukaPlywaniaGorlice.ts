@@ -81,7 +81,7 @@ export const NAUKA_PLYWANIA_GORLICE: naukaPlywaniaBasen = {
           NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.description,
       },
       image: {
-        src: "background-img-scrap-1.png",
+        src: "lessonsTypes/zRodzicami.webp",
         alt: "nauka pływania z rodzicami",
       },
       button: {

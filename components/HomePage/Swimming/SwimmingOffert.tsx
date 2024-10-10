@@ -11,7 +11,7 @@ const SwimmingOffert: React.FC = () => {
   return (
     <div className={styles["swimming__offert"]}>
       <Image
-        src="/assets/swimming/background-img-1.png"
+        src="/assets/swimming/background-img-1.webp"
         fill={true}
         alt="nauka pływania"
         style={{ objectFit: "cover", objectPosition: "top" }}
