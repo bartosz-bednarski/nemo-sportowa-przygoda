@@ -228,8 +228,8 @@ export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
           NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.description,
       },
       image: {
-        src: "background-img-scrap-1.png",
-        alt: "nauka pływania dzieci",
+        src: "lessonsTypes/zRodzicami.webp",
+        alt: "nauka pływania z rodzicami",
       },
       button: {
         title: "Dowiedz się więcej",
@@ -298,8 +298,8 @@ export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
           "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
       },
       image: {
-        src: "background-img-scrap-1.png",
-        alt: "nauka pływania dzieci",
+        src: "lessonsTypes/dzieciMlodziez2.webp",
+        alt: "nauka pływania dzieci i mlodziez",
       },
     },
     priceList: CENNIK_DZIECI_MLODZIEZ_EISENBERGA,

@@ -22,21 +22,21 @@ export type instructorsRowBoxType = {
 export type VideosSectionType = {
   scrapColor: customColors;
   col1: {
-    image: {
+    video: {
       src: string;
       alt: string;
     };
     stickerH2?: stickerH2Type;
   };
   col2: {
-    image: {
+    video: {
       src: string;
       alt: string;
     };
     stickerH2?: stickerH2Type;
   };
   col3: {
-    image: {
+    video: {
       src: string;
       alt: string;
     };
