@@ -17,7 +17,7 @@ const Gallery: React.FC<{
     <div className={styles.gallery}>
       <div className={styles["gallery__hero"]}>
         <Image
-          src="/gallery/hero.png"
+          src="/gallery/hero.webp"
           fill={true}
           alt="gallery-hero"
           objectFit="cover"
