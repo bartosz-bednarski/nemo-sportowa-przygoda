@@ -29,7 +29,7 @@ const NaukaPlywaniaGorlice: React.FC = () => {
         }}
         scrapColor="lightBlue"
         col1={{
-          video: { src: "pool-mix-1.mov", alt: "nauka pływania niemowlaki" },
+          video: { src: "toddler-mix-1.mov", alt: "nauka pływania niemowlaki" },
           stickerH2: {
             title: "MAŁE",
             titleStrip: "BOMBELKI",
@@ -40,7 +40,7 @@ const NaukaPlywaniaGorlice: React.FC = () => {
         }}
         col2={{
           video: {
-            src: "pool-mix-4.mov",
+            src: "toddler-mix-2.mov",
             alt: "nauka pływania dzieci i mlodzież",
           },
           stickerH2: {
@@ -52,7 +52,7 @@ const NaukaPlywaniaGorlice: React.FC = () => {
           },
         }}
         col3={{
-          video: { src: "pool-mix-5.mov", alt: "nauka pływania dorośli" },
+          video: { src: "toddler-mix-3.mov", alt: "nauka pływania dorośli" },
           stickerH2: {
             title: "DUŻE",
             titleStrip: "BOMBELKI",
