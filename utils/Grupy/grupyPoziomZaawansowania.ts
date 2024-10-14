@@ -106,42 +106,42 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI = {
     title: "3-7 miesięcy z rodzicami",
     age: "3-7 miesięcy",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. ",
+      "Zajęcia dla grupy 3-7 miesięcy koncentrują się na oswajaniu dzieci z wodą, ucząc leżenia na plecach i brzuchu oraz delikatnych zanurzeń pod nadzorem instruktora. Zabawy z pływającymi zabawkami pomagają w oswojeniu się z wodą nad głową. ",
     skills: [],
   },
   siedemMiesiecy: {
     title: "7-12 miesięcy z rodzicami",
     age: "7-12 miesięcy",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. ",
+      "Dla dzieci 8-12 miesięcy celem jest rozwijanie koordynacji oraz nauka prostych ruchów, takich jak kopanie nogami. Krótkie nurkowania i zanurzenia pomagają dzieciom nabrać pewności, a zabawki motywują je do aktywności w wodzie.",
     skills: [],
   },
   dwanascieMiesiecy: {
     title: "12-24 miesięcy z rodzicami",
     age: "12-24 miesięcy",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. ",
+      "W grupie 12-24 miesiące dzieci uczą się samodzielnych zanurzeń oraz podstawowych ruchów pływackich, takich jak machanie rękami i kopanie nogami. Zabawy z zabawkami wspomagają ćwiczenia nurkowania oraz koordynację ruchową.",
     skills: [],
   },
   dwaLata: {
     title: "2-4 lata z rodzicami",
     age: "2-4 lata",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. ",
+      "Dla dzieci 2-4 lata zajęcia skupiają się na samodzielnym utrzymywaniu się na wodzie oraz bardziej świadomych zanurzeniach i wstrzymywaniu oddechu. Zabawki wyławiane spod wody uczą nurkowania i zwiększają pewność siebie.",
     skills: [],
   },
   czteryLata: {
     title: "4-6 lat z rodzicami",
     age: "4-6 lat",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. ",
+      "W grupie 4-6 lat dzieci doskonalą style pływackie, takie jak grzbiet i pływanie na brzuchu. Ćwiczą dłuższe zanurzenia i wyławianie przedmiotów z dna basenu, co rozwija ich umiejętności nurkowania oraz koordynację ruchów.",
     skills: [],
   },
   czteryLataBez: {
     title: "4-6 lat bez rodziców",
     age: "4-6 lat",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. ",
+      "W grupie 4-6 lat dzieci doskonalą style pływackie, takie jak grzbiet i pływanie na brzuchu. Ćwiczą dłuższe zanurzenia i wyławianie przedmiotów z dna basenu, co rozwija ich umiejętności nurkowania oraz koordynację ruchów.",
     skills: [],
   },
 };
