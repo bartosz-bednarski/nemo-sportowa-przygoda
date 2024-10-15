@@ -98,30 +98,34 @@ const Navigation: React.FC<{
               </Link>
             </li>
             <li>
-              <span className={styles["navigation__bottom-box__80__nav"]}>
-                {" "}
-                obozy & półkolonie
-                <span
-                  className={
-                    styles["navigation__bottom-box__80__nav__location"]
-                  }
-                >
-                  LATO
+              <Link href="/ofertaletnia" onClick={hideNavigation}>
+                <span className={styles["navigation__bottom-box__80__nav"]}>
+                  {" "}
+                  obozy & półkolonie
+                  <span
+                    className={
+                      styles["navigation__bottom-box__80__nav__location"]
+                    }
+                  >
+                    LATO
+                  </span>
                 </span>
-              </span>
+              </Link>
             </li>
             <li>
-              <span className={styles["navigation__bottom-box__80__nav"]}>
-                {" "}
-                obozy & półkolonie
-                <span
-                  className={
-                    styles["navigation__bottom-box__80__nav__location"]
-                  }
-                >
-                  ZIMA
+              <Link href="/ofertazimowa" onClick={hideNavigation}>
+                <span className={styles["navigation__bottom-box__80__nav"]}>
+                  {" "}
+                  obozy & półkolonie
+                  <span
+                    className={
+                      styles["navigation__bottom-box__80__nav__location"]
+                    }
+                  >
+                    ZIMA
+                  </span>
                 </span>
-              </span>
+              </Link>
             </li>
             <li>
               <Link href="/naszzespol" onClick={hideNavigation}>
