@@ -1,3 +1,4 @@
+import { campsCoversType } from "../SummerWinter/Camps";
 import { aboutTextPoppinsType } from "../UI/aboutTextPoppins";
 import { signInButtonType } from "../UI/buttons";
 import { customColors } from "../UI/colors";
@@ -84,4 +85,20 @@ export type lessonTypeWrapBoxType = {
   bgImage: string;
   bgColor: customColors;
   lessonTypes: lessonType[];
+};
+export type aboutCampsComponentType = {
+  stickerH2: stickerH2Type;
+  aboutLeft: string;
+  right: boolean;
+  aboutRight1?: string;
+  aboutRight2?: string;
+  theme: "summer" | "winter";
+  imgRight: string;
+  imgLeft?: string;
+};
+export type signInCampsComponentType = {
+  activeCampsCoversList?: campsCoversType;
+  waitingTitle?: string;
+  waiting: boolean;
+  theme: "summer" | "winter";
 };

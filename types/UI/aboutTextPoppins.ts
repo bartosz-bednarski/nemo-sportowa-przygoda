@@ -4,4 +4,5 @@ export type aboutTextPoppinsType = {
   titleColor: customColors;
   title: string;
   description: string;
+  descriptionColor?: customColors;
 };

@@ -16,6 +16,7 @@ export type stickerH2Type = {
   title: string;
   titleStrip: string;
   paddingBottom?: number;
+  titleColor?: customColors;
 };
 export type stickerH4Type = {
   stripTextColor: customColors;

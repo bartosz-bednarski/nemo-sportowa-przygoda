@@ -7,6 +7,7 @@ const AboutTextPoppins: React.FC<aboutTextPoppinsType> = ({
   titleColor,
   title,
   description,
+  descriptionColor,
 }) => {
   return (
     <div className={styles.box}>
@@ -16,7 +17,14 @@ const AboutTextPoppins: React.FC<aboutTextPoppinsType> = ({
       >
         {title}
       </span>
-      <p>{description}</p>
+      <p
+        style={{
+          color:
+            COLORS[descriptionColor !== undefined ? descriptionColor : "white"],
+        }}
+      >
+        {description}
+      </p>
     </div>
   );
 };
