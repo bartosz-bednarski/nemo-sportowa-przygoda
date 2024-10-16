@@ -40,13 +40,15 @@ const Gallery: React.FC<{
         {GALLERY_MAIN.map((item) => (
           <Link href={`/galeria/${item.href}`} key={item.title}>
             <div className={styles["gallery__row-box__item"]}>
-              <span className={styles["gallery__row-box__item__image-box"]}>
-                <Image
-                  src={`/gallery/Covers/${item.coverImage}`}
-                  fill={true}
-                  alt={item.title}
-                />
-              </span>
+              <Image
+                className={styles["gallery__row-box__item__image-box"]}
+                src={`/gallery/Covers/${item.coverImage}`}
+                width={500}
+                height={350}
+                alt={item.title}
+                loading="eager"
+              />
+
               <span
                 className={styles["gallery__row-box__item__title"]}
                 style={{ background: COLORS[item.stripColor] }}

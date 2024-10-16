@@ -191,39 +191,75 @@ const PointSection2: React.FC = () => {
             <span
               className={styles["pointSection__row-box__text__text-box__title"]}
             >
-              JAKIE SĄ TERMINY PŁATNOŚCI?
+              CENNIK{" "}
             </span>
-            Dzieci od 3 lat, dzieci, młodzież.Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
-            Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci
-            tincidunt sed tristique nullam. Dzieci od 3 lat, dzieci,
-            młodzież.Lorem ipsum dolor sit amet consectetur. Nunc vestibulum
-            orci tincidunt sed tristique nullam. Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
+            Cennik zajęć w Nemo Sportowa Przygoda może się różnić w zależności
+            od lokalizacji i rodzaju zajęć. Dlatego zalecamy sprawdzenie
+            aktualnych cen bezpośrednio dla wybranej lokalizacji na stronie
+            internetowej szkoły lub kontaktując się z wybranym ośrodkiem. Ceny
+            mogą się różnić także w zależności od pory roku czy dostępnych
+            promocji.
           </span>
           <span className={styles["pointSection__row-box__text__text-box"]}>
             <span
               className={styles["pointSection__row-box__text__text-box__title"]}
             >
-              CZY MOŻNA OPŁACIĆ KURS W RATACH?
+              JAK DOKONAĆ PŁATNOŚCI?
             </span>
-            Dzieci od 3 lat, dzieci, młodzież.Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
-            Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci
-            tincidunt sed tristique nullam.
+            <ul>
+              <li>
+                <b>Płatność przez aplikacje Active Now w panelu klienta</b>
+              </li>
+              <li>
+                <b>Przelew bankowy:</b> W przypadku wyboru metody płatności
+                przelewem bankowym, przelewu dokonuje się na następujący numer
+                rachunku bankowego:
+                <br />
+                <b>53 1140 2004 0000 3202 8407 3123</b>
+                <br />W tytule przelewu należy wpisać: oznaczenie basenu, imię i
+                nazwisko Uczestnika Kursu.
+                <br />
+                <b>Przykład: tytuł przelewu: KS Bronowianka, Jan Kowalski</b>
+              </li>
+              <li>
+                <b>Płatność gotówką z góry:</b> Płatności można dokonać gotówką
+                bezpośrednio u Organizatora – Wiktorii Fryczek lub u instruktora
+                za zgodą organizatora.
+              </li>
+            </ul>
           </span>{" "}
           <span className={styles["pointSection__row-box__text__text-box"]}>
             <span
               className={styles["pointSection__row-box__text__text-box__title"]}
             >
-              CZY MUSZĘ PŁACIĆ ZA BILET?
+              OPŁATY ZA KURSY GRUPOWE
             </span>
-            Dzieci od 3 lat, dzieci, młodzież.Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
-            Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci
-            tincidunt sed tristique nullam. Dzieci od 3 lat, dzieci,
-            młodzież.Lorem ipsum dolor sit amet consectetur. Nunc vestibulum
-            orci tincidunt sed tristique nullam.
+            Powinny zostać opłacone z góry za dany semestr w terminie 14 dni od
+            daty pierwszych zajęć cyklu Kursu. Jedynie w szczególnie
+            uzasadnionych przypadkach Organizator może wyrazić zgodę na
+            rozłożenie płatności na raty.
+          </span>
+          <span className={styles["pointSection__row-box__text__text-box"]}>
+            <span
+              className={styles["pointSection__row-box__text__text-box__title"]}
+            >
+              OPŁATY ZA KURSY INDYWIDUALNE
+            </span>
+            Powinny zostać opłacone z góry za dany miesiąc, w terminie do 10
+            dnia danego miesiąca.
+          </span>
+          <span className={styles["pointSection__row-box__text__text-box"]}>
+            <span
+              className={styles["pointSection__row-box__text__text-box__title"]}
+            >
+              PŁATNOŚCI RATALNE
+            </span>
+            W celu uzgodnienia płatności ratalnych prosimy o kontakt pod numerem
+            telefonu 519 625 894 lub mailowo na adres szkolaplywanianemo1
+            <br />
+            @gmail.com.
+            <br />
+            Chętnie odpowiemy na wszystkie pytania!
           </span>
         </div>
       </div>

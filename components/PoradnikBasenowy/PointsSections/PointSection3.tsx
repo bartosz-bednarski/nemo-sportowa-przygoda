@@ -5,9 +5,7 @@ import styles from "./pointSection.module.scss";
 const PointSection3: React.FC = () => {
   return (
     <div className={styles.pointSection} id="3">
-      <span className={styles["pointSection__title"]}>
-        3. ORGANIZACJA ZAJĘĆ
-      </span>
+      <span className={styles["pointSection__title"]}>3. ODRABIANIE ZAJĘĆ</span>
       <div className={styles["pointSection__row-box"]}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -856,37 +854,92 @@ const PointSection3: React.FC = () => {
             <span
               className={styles["pointSection__row-box__text__text-box__title"]}
             >
-              ODRABIANIE ZAJĘĆ
+              ZGŁASZANIE NIEOBECNOŚCI
             </span>
-            Dzieci od 3 lat, dzieci, młodzież.Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
-            Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci
-            tincidunt sed tristique nullam. Dzieci od 3 lat, dzieci,
-            młodzież.Lorem ipsum dolor sit amet consectetur. Nunc vestibulum
-            orci tincidunt sed tristique nullam. Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
+            Zgłaszanie nieobecności odbywa się za pomocą aplikacji ACTIVE NOW.
+            Uczestnicy Kursu mają możliwość odrobienia zajęć w innym terminie,
+            pod warunkiem spełnienia warunków opisanych w punkcie 3.2.
           </span>
           <span className={styles["pointSection__row-box__text__text-box"]}>
             <span
               className={styles["pointSection__row-box__text__text-box__title"]}
             >
-              ILE OSÓB LICZY GRUPA NA ZAJĘCIACH?
+              WARUNKI ZGŁASZANIA NIEOBECNOŚCI
             </span>
-            Dzieci od 3 lat, dzieci, młodzież.Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
-            Lorem ipsum dolor sit amet consectetur.
+            <ul>
+              <li>
+                <b>Kurs Grupowy: </b>Zgłoszenie nieobecności najpóźniej 8 godzin
+                przed rozpoczęciem zajęć.
+              </li>
+              <li>
+                <b>Zajęcia Indywidualne oraz dwuosobowe: </b>Zgłoszenie
+                nieobecności najpóźniej 12 godzin przed rozpoczęciem zajęć.
+              </li>
+            </ul>
           </span>{" "}
           <span className={styles["pointSection__row-box__text__text-box"]}>
             <span
               className={styles["pointSection__row-box__text__text-box__title"]}
             >
-              CZY MOŻNA WEJŚĆ Z DZIECKIEM DO SZATNI?
+              FORMA ODRABIANIA ZAJĘĆ
             </span>
-            Dzieci od 3 lat, dzieci, młodzież.Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
-            Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci
-            tincidunt sed tristique nullam.
-          </span>{" "}
+
+            <ul>
+              <li style={{ listStyleType: "none" }}>
+                {" "}
+                <b>
+                  Zajęcia należy odrobić w takiej samej formie, w jakiej
+                  odbywały się pierwotne zajęcia:
+                </b>
+              </li>
+              <li>Zajęcia grupowe - odrabiane w formie grupowej.</li>
+              <li>Zajęcia indywidualne - odrabiane indywidualnie.</li>
+              <li>Zajęcia dwuosobowe - odrabiane w formie dwuosobowej.</li>
+            </ul>
+          </span>
+          <span className={styles["pointSection__row-box__text__text-box"]}>
+            <span
+              className={styles["pointSection__row-box__text__text-box__title"]}
+            >
+              REZERWACJA TERMINU ODRABIANIA
+            </span>
+            Odrabianie odbywa się poprzez zapisanie się na wybraną godzinę zajęć
+            w aplikacji ACTIVE NOW, w ramach dostępnych miejsc. Bardzo ważne
+            jest upewnianie dostępnego terminu oraz lokalizacji na jakim basenie
+            odbywają się zajęcia.
+            <br />
+            <br />
+            Jeżeli jest brak wolnych terminów, możliwe jest ustalenie innego
+            terminu z Organizatorem, kontaktując się pod numerem: <br />
+            +48 519 625 894.
+            <br />
+            <br />
+            Brak możliwości zwrotu opłaty: W przypadku nieobecności na
+            zajęciach, opłata za zajęcia nie podlega zwrotowi.
+          </span>
+          <span className={styles["pointSection__row-box__text__text-box"]}>
+            <span
+              className={styles["pointSection__row-box__text__text-box__title"]}
+            >
+              ODRABIANIE KURSY GRUPOWE
+            </span>
+            Zbyt późne zgłoszenie nieobecności generuje straty finansowe dla
+            Organizatora. Miejsce zajęte przez nieobecnego uczestnika mogłoby
+            zostać udostępnione innej osobie, która zgłosiła chęć odrobienia
+            swoich nieobecnych zajęć w terminie.
+          </span>
+          <span className={styles["pointSection__row-box__text__text-box"]}>
+            <span
+              className={styles["pointSection__row-box__text__text-box__title"]}
+            >
+              ODRABIANIE KURSY INDYWIDUALNE
+            </span>
+            W przypadku kursów indywidualnych i dwuosobowych opóźnione
+            zgłoszenie nieobecności utrudnia organizację zajęć i uniemożliwia
+            zapełnienie luki w grafiku. W efekcie Organizator ponosi straty
+            finansowe, traci czas oraz napotyka trudności w bieżącym zarządzaniu
+            zajęciami.
+          </span>
         </div>
       </div>
     </div>

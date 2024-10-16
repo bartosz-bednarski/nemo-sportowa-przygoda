@@ -11,55 +11,82 @@ const List: React.FC = () => {
           <Link href="#1">1. ZAPISY NA ZAJĘCIA</Link>
         </li>
         <li>
-          <Link href="#1">1.1. CO TO JEST ACTIVE NOW?</Link>
+          <Link href="#1">1.1. Wybór rodzaju zajęć</Link>
         </li>
         <li>
-          <Link href="#1">1.2. NOWY KLIENT</Link>
+          <Link href="#1">1.2. Rezerwacja miejsca</Link>
         </li>
         <li>
-          <Link href="#1">1.3. KLIENT KONTYNUUJĄCY NAUKĘ</Link>
+          <Link href="#1">1.3. Potwierdzenie rezerwacji</Link>
         </li>
         <li>
-          <Link href="#1">1.4. W JAKICH TERMINACH ODBYWAJĄ SIĘ ZAJĘCIA?</Link>
+          <Link href="#1">1.4. Pierwsza lekcja próbna</Link>
+        </li>
+        <li>
+          <Link href="#1">1.5. Opłata za kurs</Link>
         </li>
         <li className={styles["list__header"]}>
           <Link href="#2">2. CENNIK I OPŁATY</Link>
         </li>
         <li>
-          <Link href="#2">2.1. CZY MUSZĘ PŁACIĆ ZA BILET WSTĘPU NA BASEN?</Link>
+          <Link href="#2">2.1. CENNIK</Link>
         </li>
         <li>
-          <Link href="#2">2.2. JAKIE SĄ TERMINY PŁATNOŚCI?</Link>
+          <Link href="#2">2.2. JAK DOKONAĆ PŁATNOŚCI?</Link>
         </li>
         <li>
-          <Link href="#2">2.3. CZY MOŻNA OPŁACIĆ KURS W RATACH</Link>
+          <Link href="#2">2.3. OPŁATY ZA KURSY GRUPOWE</Link>
+        </li>
+        <li>
+          <Link href="#2">2.4. OPŁATY ZA KURSY INDYWIDUALNE</Link>
+        </li>
+        <li>
+          <Link href="#2">2.5. PŁATNOŚCI RATALNE</Link>
         </li>
         <li className={styles["list__header"]}>
-          <Link href="#3">3. ORGANIZACJA ZAJĘĆ</Link>
+          <Link href="#3">3. ODRABIANIE ZAJĘĆ</Link>
         </li>
         <li>
-          <Link href="#3">3.1. ODRABIANIE ZAJĘĆ</Link>
+          <Link href="#3">3.1. ZGŁASZANIE NIEOBECNOŚCI</Link>
         </li>
         <li>
-          <Link href="#3">3.2. ILE OSÓB LICZY GRUPA NA ZAJĘCIACH?</Link>
+          <Link href="#3">3.2. WARUNKI ZGŁASZANIA NIEOBECNOŚCI</Link>
         </li>
         <li>
-          <Link href="#3">3.3. CZY MOŻNA WEJŚĆ Z DZIECKIEM DO SZATNI?</Link>
+          <Link href="#3">3.3. FORMA ODRABIANIA ZAJĘĆ</Link>
+        </li>
+        <li>
+          <Link href="#3">3.4. REZERWACJA TERMINU ODRABIANIA</Link>
+        </li>
+        <li>
+          <Link href="#3">3.5. ODRABIANIE KURSY GRUPOWE</Link>
+        </li>
+        <li>
+          <Link href="#3">3.6. ODRABIANIE KURSY INDYWIDUALNE I DWUOSOBOWE</Link>
         </li>
         <li className={styles["list__header"]}>
-          <Link href="#4">4. CO ZABRAĆ NA BASEN?</Link>
+          <Link href="#4">4. ZA CO ODPOWIADA INSTRUKTOR?</Link>
+        </li>
+        <li>
+          <Link href="#4">4.1 ODPOWIEDZIALNOŚĆ INSTRUKTORA</Link>
+        </li>
+        <li>
+          <Link href="#4">4.2 OBOWIĄZKI UCZESTNIKÓW KURSU</Link>
+        </li>
+        <li>
+          <Link href="#4">4.3 ZGŁASZANIE ZDARZEŃ</Link>
         </li>
         <li className={styles["list__header"]}>
-          <Link href="#5">5. ZASADY NA BASENIE </Link>
+          <Link href="#5">5. CO ZABRAĆ NA BASEN? </Link>
+        </li>
+        <li className={styles["list__header"]}>
+          <Link href="#6">6. ZGODA NA PUBLIKACJĘ WIZERUNKU</Link>
         </li>
         <li>
-          <Link href="#5">5.1. PIELUCHY DLA NIEMOWLAKÓW</Link>
+          <Link href="#6">6.1. ZGODA NA PUBLIKACJĘ</Link>
         </li>
         <li>
-          <Link href="#5">5.2. PRZEKAZANIE DZIECKA POD OPIEKĘ INSTRUKTORA</Link>
-        </li>
-        <li>
-          <Link href="#5">5.3. SPÓŹNIENIA NA ZAJĘCIA</Link>
+          <Link href="#6">6.2. BRAK ZGODY NA PUBLIKACJĘ</Link>
         </li>
       </ul>
     </div>

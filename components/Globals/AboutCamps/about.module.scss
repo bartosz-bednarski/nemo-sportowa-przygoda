@@ -5,6 +5,7 @@
   box-sizing: border-box;
   padding: 4rem 0rem;
   gap: 2rem;
+
   &__row-box-left {
     display: flex;
     flex-direction: row;
@@ -23,6 +24,7 @@
       }
     }
     &__picture {
+      z-index: 2;
       width: 50%;
       height: 100%;
       object-fit: cover;

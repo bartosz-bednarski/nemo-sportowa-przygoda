@@ -1,0 +1,54 @@
+@import "../../styles/colors.scss";
+.collabWinter-container {
+  margin-top: 191px;
+  height: 400px;
+  position: relative;
+  background-color: white;
+  &__bg-svg {
+    object-fit: cover;
+    height: 212%;
+    z-index: 1;
+    position: absolute;
+    top: -231px;
+    left: 0;
+    width: 100%;
+  }
+  &__row-box {
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 4rem;
+    justify-content: center;
+    gap: 2rem;
+    &__nemo {
+      height: 300px;
+      width: auto;
+    }
+    &__boom {
+      height: 250px;
+      width: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .collabWinter-container {
+    &__row-box {
+      padding: 0 2rem;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 0rem;
+      &__nemo {
+        width: 300px;
+        height: auto;
+      }
+      &__boom {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+}

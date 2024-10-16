@@ -30,6 +30,7 @@
       border-bottom: 2px solid $blueStrokeOpacity;
       padding: 0.5rem 0rem 0.3rem 2rem;
       transition: background-color 1s;
+      text-transform: uppercase;
       &:hover {
         cursor: pointer;
         background-color: white;

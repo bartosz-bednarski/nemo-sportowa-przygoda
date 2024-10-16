@@ -21,8 +21,13 @@ const CampsSection: React.FC = () => {
         />
         <AboutTextPoppins
           titleColor="basicOrange"
-          title="Lorem ipsum dolor sit amet consectetur"
-          description="Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu."
+          title=""
+          description="Nasze półkolonie to idealna okazja, by dzieci aktywnie i kreatywnie spędziły
+czas w gronie rówieśników. Program obejmuje różnorodne zajęcia sportowe,
+gry i zabawy, które rozwijają umiejętności fizyczne i społeczne. Uczestnicy
+mają szansę odkryć nowe pasje, poznać ciekawe dyscypliny sportowe oraz
+bliżej zapoznać się z lokalną kulturą i przyrodą. Zapewniamy opiekę
+doświadczonych instruktorów, którzy dbają o bezpieczeństwo i dobrą zabawę."
         />
       </div>
       <SummerOffert />
