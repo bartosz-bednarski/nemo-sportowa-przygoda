@@ -194,49 +194,61 @@ const PointSection1: React.FC = () => {
             <span
               className={styles["pointSection__row-box__text__text-box__title"]}
             >
-              CO TO JEST ACTIVENOW?
+              WYBÓR RODZAJU ZAJĘĆ
             </span>
-            Dzieci od 3 lat, dzieci, młodzież.Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
-            Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci
-            tincidunt sed tristique nullam. Dzieci od 3 lat, dzieci,
-            młodzież.Lorem ipsum dolor sit amet consectetur. Nunc vestibulum
-            orci tincidunt sed tristique nullam. Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
+            Szkoła oferuje kursy grupowe oraz zajęcia indywidualne i grupowe w
+            różnych kategoriach wiekowych (niemowlaki, dzieci, młodzież,
+            dorośli). Wybierz odpowiednią opcję w zależności od swoich potrzeb.
           </span>
           <span className={styles["pointSection__row-box__text__text-box"]}>
             <span
               className={styles["pointSection__row-box__text__text-box__title"]}
             >
-              NOWY KLIENT
+              REZERWACJA MIEJSCA
             </span>
-            Dzieci od 3 lat, dzieci, młodzież.Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
-            Lorem ipsum dolor sit amet consectetur.
+
+            <ul>
+              <li style={{ listStyleType: "none" }}>
+                <b>
+                  Zarezerwuj miejsce na wybrane zajęcia poprzez jeden z
+                  poniższych kanałów:
+                </b>
+              </li>
+              <li>Formularz ACTIVE NOW - szkolaplywanianemo1</li>
+              <li>Strona internetowa</li>
+              <li>Facebook: Szkoła Pływania NEMO</li>
+              <li>Instagram: szkola.plywania.nemo</li>
+              <li>Telefonicznie: Zadzwoń pod numer +48 519 625 894</li>
+            </ul>
           </span>{" "}
           <span className={styles["pointSection__row-box__text__text-box"]}>
             <span
               className={styles["pointSection__row-box__text__text-box__title"]}
             >
-              KLIENT KONTYNUUJĄCY NAUKĘ
+              POTWIERDZENIE REZERWACJI
             </span>
-            Dzieci od 3 lat, dzieci, młodzież.Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
-            Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci
-            tincidunt sed tristique nullam.
+            Po wypełnieniu formularza zgłoszeniowego, Organizator wyśle
+            potwierdzenie rezerwacji na podany adres e-mail w ciągu 3 dni.
           </span>{" "}
           <span className={styles["pointSection__row-box__text__text-box"]}>
             <span
               className={styles["pointSection__row-box__text__text-box__title"]}
             >
-              TERMINY ZAJĘĆ
+              PIERWSZA LEKCJA PRÓBNA
             </span>
-            Dzieci od 3 lat, dzieci, młodzież.Lorem ipsum dolor sit amet
-            consectetur. Nunc vestibulum orci tincidunt sed tristique nullam.
-            Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci
-            tincidunt sed tristique nullam. Dzieci od 3 lat, dzieci,
-            młodzież.Lorem ipsum dolor sit amet consectetur. Nunc vestibulum
-            orci tincidunt sed tristique nullam.
+            Nowi klienci mogą skorzystać z lekcji próbnej. Po jej odbyciu
+            zdecydujesz, czy chcesz kontynuować kurs. W przypadku kontynuacji,
+            opłata za pierwszą lekcję zostanie wliczona w cenę kursu.
+          </span>
+          <span className={styles["pointSection__row-box__text__text-box"]}>
+            <span
+              className={styles["pointSection__row-box__text__text-box__title"]}
+            >
+              OPŁATA ZA KURS
+            </span>
+            Po potwierdzeniu chęci udziału, należy uiścić opłatę zgodnie z
+            obowiązującym cennikiem, dostępnym na stronie
+            www.nemosportowaprzygoda.pl.
           </span>
         </div>
       </div>

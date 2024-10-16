@@ -14,13 +14,19 @@ const SignInCamps: React.FC<signInCampsComponentType> = ({
   activeCampsCoversList,
 }) => {
   return (
-    <div className={styles.signInCamps}>
+    <div
+      className={styles.signInCamps}
+      style={{
+        background: COLORS[theme === "summer" ? "basicGreen" : "white"],
+      }}
+    >
       <div className={styles["signInCamps__header-box"]}>
         <StickerH2
           title="AKTUALNE"
           titleStrip="ZAPISY"
           stripBgColor={theme === "summer" ? "white" : "darkBlue"}
           stripTextColor={theme === "summer" ? "basicGreen" : "white"}
+          titleColor={theme === "summer" ? "white" : "darkBlue"}
           scale={1.6}
           paddingBottom={0}
         />
@@ -1056,8 +1062,13 @@ const SignInCamps: React.FC<signInCampsComponentType> = ({
       </div>
       <div className={styles["signInCamps__row-box"]}>
         {waiting && (
-          <span className={styles["signInCamps__row-box__waiting"]}>
-            {waitingTitle && "STARTUJEMY JUŻ WIOSNĄ"}
+          <span
+            className={styles["signInCamps__row-box__waiting"]}
+            style={{
+              color: COLORS[theme === "summer" ? "white" : "winterIce"],
+            }}
+          >
+            {waitingTitle && waitingTitle}
           </span>
         )}
         {!waiting &&

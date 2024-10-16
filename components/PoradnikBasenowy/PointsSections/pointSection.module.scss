@@ -40,6 +40,12 @@
         width: fit-content;
         border-radius: 10px;
         height: fit-content;
+        ul {
+          margin: 0;
+        }
+        li {
+          margin: 0.3rem 0;
+        }
         &__title {
           position: absolute;
           display: block;

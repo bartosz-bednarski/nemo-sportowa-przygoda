@@ -24,38 +24,31 @@ const SwimmingOffert: React.FC = () => {
             stripTextColor="white"
             stripBgColor="mediumBlue"
             scale={1.2}
-            description=" Dzieci od 3 miesiąca życia do 3 lat razem z rodzicami.Lorem
-            ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt
-            sed tristique nullam. Lorem ipsum dolor sit amet consectetur.
-            Nunc vestibulum orci tincidunt sed tristique nullam."
+            description=" Maluchy oswajają się z wodą poprzez zabawy z opiekunami. Ćwiczą
+podstawowe ruchy, które wspierają rozwój motoryczny i wzmacniają więź z rodzicem."
           />
           <TitleStripDescription
             title="DZIECI I MŁODZIEŻ"
             stripTextColor="white"
             stripBgColor="mediumBlue"
             scale={1.3}
-            description=" Dzieci od 3 miesiąca życia do 3 lat razem z rodzicami.Lorem
-            ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt
-            sed tristique nullam. Lorem ipsum dolor sit amet consectetur.
-            Nunc vestibulum orci tincidunt sed tristique nullam."
+            description="Dzieci uczą się podstaw pływania w formie zabawy. Poprawiają technikę i
+koordynację, zdobywając kolejne umiejętności, w kraulu oraz grzbiecie. Młodzież uczy się pływać czterema stylami (styl dowolny, grzbietowy, klasyczny,
+motylkowy) oraz technik nawrotów. Zajęcia pomagają doskonalić technikę, poprawiać
+wytrzymałość i przygotowują do ewentualnych startów w zawodach pływackich."
           />
           <TitleStripDescription
             title="DOROŚLI"
             stripTextColor="white"
             stripBgColor="mediumBlue"
             scale={2}
-            description=" Dzieci od 3 miesiąca życia do 3 lat razem z rodzicami.Lorem
-            ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt
-            sed tristique nullam. Lorem ipsum dolor sit amet consectetur.
-            Nunc vestibulum orci tincidunt sed tristique nullam."
+            description="Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę
+pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają
+zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się
+prawidłowej techniki pod okiem doświadczonych instruktorów."
           />
         </div>
-        {/* <StripH3
-          title="NASZE LOKALIZACJE"
-          stripBgColor="white"
-          stripTextColor="mediumBlue"
-          scale={1.5}
-        /> */}
+
         <div className={styles["swimming__offert__content__swimming-pools"]}>
           <SwimmingPoolCover
             image="korzenna.jpg"

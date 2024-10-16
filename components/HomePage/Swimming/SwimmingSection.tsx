@@ -20,8 +20,11 @@ const SwimmingSection: React.FC = () => {
           paddingBottom={0}
         />
         <AboutTextPoppins
-          title="Lorem ipsum dolor sit amet consectetur"
-          description="Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu."
+          title="Zacznij swoją przygodę z pływaniem!"
+          description="Nauka pływania to doskonały sposób na wzmocnienie kondycji, poprawę zdrowia i
+pokonanie lęku przed wodą. Oferujemy zajęcia dla dzieci, młodzieży i dorosłych na
+różnych poziomach zaawansowania. Nasi doświadczeni instruktorzy zadbają o Twoje
+bezpieczeństwo i indywidualne postępy. Zapisz się już dziś i odkryj radość z pływania!"
           titleColor="mediumBlue"
         />
       </div>

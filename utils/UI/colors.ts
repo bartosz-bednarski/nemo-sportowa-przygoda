@@ -6,4 +6,5 @@ export const COLORS = {
   basicBrown: "#764c24",
   basicGreen: "#25924f",
   white: "white",
+  winterIce: "rgba(15, 72, 183, 0.27)",
 };

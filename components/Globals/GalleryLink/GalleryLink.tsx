@@ -9,13 +9,14 @@ import { COLORS } from "@/utils/UI/colors";
 const GalleryLink: React.FC<{
   href: string;
   img: string;
-  color: customColors;
-}> = ({ href, img, color }) => {
+  bgColor: customColors;
+  textColor: customColors;
+}> = ({ href, img, bgColor, textColor }) => {
   return (
     <Link
       href={href}
       className={styles.galleryLink}
-      style={{ background: COLORS[color] }}
+      style={{ background: COLORS[bgColor] }}
     >
       <Image
         className={styles["galleryLink__image"]}
@@ -24,7 +25,10 @@ const GalleryLink: React.FC<{
         height={300}
         alt="galeria"
       />
-      <span className={styles["galleryLink__text"]}>
+      <span
+        className={styles["galleryLink__text"]}
+        style={{ color: COLORS[textColor] }}
+      >
         SPRAWDŹ NASZĄ
         <br /> GALERIĘ
       </span>

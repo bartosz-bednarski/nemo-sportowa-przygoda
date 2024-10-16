@@ -5,4 +5,5 @@ export type customColors =
   | "basicOrange"
   | "basicBrown"
   | "basicGreen"
-  | "white";
+  | "white"
+  | "winterIce";

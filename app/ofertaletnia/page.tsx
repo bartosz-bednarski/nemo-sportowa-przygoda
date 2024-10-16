@@ -68,8 +68,8 @@ const OfertaLetniaPage = () => {
         aboutRight1="Dzieci spędzają czas na świeżym powietrzu, uczestniczą w różnorodnych aktywnościach dostosowanych do ich wieku, a także odkrywają nowe zainteresowania. Podczas półkolonii organizowana jest również tematyczna wycieczka, która nawiązuje do przewodniego motywu całego turnusu. To doskonała okazja, by poprzez zabawę i aktywne zwiedzanie zgłębić ciekawe zagadnienia. Może to być np. wizyta w muzeum, parku przyrody lub wycieczka edukacyjna w terenie."
         aboutRight2="Codziennie dzieci mają również zapewnione zdrowe i pożywne posiłki, które dodają im energii do kolejnych aktywności. Półkolonie to idealna okazja do spędzenia wakacji w sposób pełen przygód, zabawy i rozwoju, pod opieką doświadczonych wychowawców."
         theme="summer"
-        imgRight="summer-bg-1.png"
-        imgLeft="summer-bg-2.png"
+        imgRight="summer-bg-1.webp"
+        imgLeft="summer-bg-2.webp"
       />
       <SignInCamps
         theme="summer"
@@ -88,7 +88,7 @@ const OfertaLetniaPage = () => {
         right={false}
         aboutLeft="Nasze obozy organizowane są we współpracy z zaprzyjaźnioną firmą Bom4Sport, która specjalizuje się w aktywnym wypoczynku dla dzieci i młodzieży. Oferujemy zarówno letnie obozy rowerowe, jak i zimowe obozy narciarskie oraz snowboardowe. Każdy program jest starannie przygotowany, aby uczestnicy nie tylko rozwijali swoje umiejętności sportowe, ale także spędzili czas w przyjaznej atmosferze, pełnej przygód i dobrej zabawy. Pod okiem doświadczonych instruktorów dzieci mają szansę na bezpieczną naukę oraz doskonalenie swoich umiejętności na rowerze, nartach lub snowboardzie."
         theme="summer"
-        imgRight="summer-bg-3.png"
+        imgRight="summer-bg-3.webp"
       />
       <CollabSummer />
       <SignInCamps
@@ -98,8 +98,9 @@ const OfertaLetniaPage = () => {
       />
       <GalleryLink
         href="/galeria"
-        img="/assets/summer/gallery.png"
-        color="basicGreen"
+        img="/gallery/galleryLinks/summer.webp"
+        bgColor="basicGreen"
+        textColor="white"
       />
       <Scrap2 position="bottom" color="darkBlue" />
     </main>

@@ -10,7 +10,7 @@ const SummerOffert: React.FC = () => {
   return (
     <div className={styles["camps__offert"]}>
       <Image
-        src="/assets/camps/background-img-1.png"
+        src="/assets/camps/background-img-1.webp"
         fill={true}
         alt="nauka pływania"
         style={{ objectFit: "cover", objectPosition: "top" }}
@@ -28,7 +28,11 @@ const SummerOffert: React.FC = () => {
             titleScale={1.2}
             titleStripBgColor="white"
             titleStripTextColor="basicGreen"
-            description="Dzieci od 3 miesiąca życia do 3 lat razem z rodzicami.Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam."
+            description="Zachęcamy dzieci do aktywnego trybu życia i nauki spędzania
+czasu w ruchu! Podczas półkolonii będą miały okazję poznać wiele ciekawych
+sportów i aktywności, a także odkrywać lokalną kulturę poprzez zabawy i wycieczki.
+To doskonała okazja do rozwoju fizycznego i zdobycia nowych, wartościowych
+doświadczeń."
             descriptionScale={1.2}
             descriptionStripBgColor="basicGreen"
             descriptionStripTextColor="white"
@@ -38,7 +42,11 @@ const SummerOffert: React.FC = () => {
             titleScale={2}
             titleStripBgColor="white"
             titleStripTextColor="basicGreen"
-            description="Dzieci od 3 miesiąca życia do 3 lat razem z rodzicami.Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam."
+            description="Nasze obozy mają na celu pokazanie, jak ważne i przyjemne może
+być pływanie oraz jak wspaniale można spędzić czas, korzystając z jeziora.
+Dodatkowo, uczestnicy odkryją radość z jazdy na rowerze, pokonując
+kilkunastokilometrowe trasy, co pozwoli im poczuć satysfakcję z aktywnego
+spędzania czasu na świeżym powietrzu."
             descriptionScale={1.2}
             descriptionStripBgColor="basicGreen"
             descriptionStripTextColor="white"
@@ -48,7 +56,7 @@ const SummerOffert: React.FC = () => {
           title="Dowiedz się więcej"
           textColor="white"
           bgColor="basicGreen"
-          href="/"
+          href="/ofertaletnia"
         />
       </div>
     </div>
