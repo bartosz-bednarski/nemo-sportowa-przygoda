@@ -21,7 +21,7 @@ const OfertaLetniaPage = () => {
           scale: 2,
         }}
         col1={{
-          video: { src: "summer-mix-1.mov", alt: "nauka pływania niemowlaki" },
+          video: { src: "summer-mix-1.mp4", alt: "nauka pływania niemowlaki" },
           stickerH2: {
             title: "MAŁE",
             titleStrip: "BOMBELKI",
@@ -32,7 +32,7 @@ const OfertaLetniaPage = () => {
         }}
         col2={{
           video: {
-            src: "summer-mix-2.mov",
+            src: "summer-mix-2.mp4",
             alt: "nauka pływania dzieci i mlodzież",
           },
           stickerH2: {
@@ -44,7 +44,7 @@ const OfertaLetniaPage = () => {
           },
         }}
         col3={{
-          video: { src: "summer-mix-3.mov", alt: "nauka pływania dorośli" },
+          video: { src: "summer-mix-3.mp4", alt: "nauka pływania dorośli" },
           stickerH2: {
             title: "DUŻE",
             titleStrip: "BOMBELKI",
