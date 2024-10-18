@@ -22,7 +22,7 @@ export default function Home() {
         }}
         col2={{
           video: {
-            src: "pool-mix-2.mp4",
+            src: "winter-mix-1.mp4",
             alt: "obozy i półkolonie",
           },
           stickerH2: {
@@ -34,7 +34,7 @@ export default function Home() {
           },
         }}
         col3={{
-          video: { src: "pool-mix-3.mp4", alt: "oferty specjalne" },
+          video: { src: "summer-mix-1.mp4", alt: "oferty specjalne" },
           stickerH2: {
             title: "OFERTY",
             titleStrip: "SPECJALNE",

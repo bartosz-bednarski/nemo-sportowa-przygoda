@@ -7,6 +7,9 @@ export type galleryItemType = {
   coverImage: string;
   stripColor: customColors;
   stripTextColor: customColors;
+  collab: boolean;
+  collabLogo: string;
+  collabHref: string;
   images: {
     landscapes: string[][];
     portraits: string[];

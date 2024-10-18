@@ -8,6 +8,9 @@ export const GALLERY_MAIN: galleryMainType = [
     stripColor: "darkBlue",
     stripTextColor: "white",
     href: "naukaplywaniazrodzicami",
+    collab: false,
+    collabLogo: "",
+    collabHref: "",
     images: {
       landscapes: [["01", ""]],
       portraits: ["01", "02", "03", "04", "05"],
@@ -20,6 +23,9 @@ export const GALLERY_MAIN: galleryMainType = [
     stripColor: "darkBlue",
     stripTextColor: "white",
     href: "naukaplywaniadzieciimlodziez",
+    collab: false,
+    collabLogo: "",
+    collabHref: "",
     images: {
       landscapes: [
         ["01", "02"],
@@ -54,15 +60,15 @@ export const GALLERY_MAIN: galleryMainType = [
       ],
     },
   },
-  {
-    type: "PLYWANIE",
-    title: "NAUKA PŁYWANIA DOROŚLI",
-    coverImage: "nauka-plywania-dorosli.png",
-    stripColor: "darkBlue",
-    stripTextColor: "white",
-    href: "naukaplywaniadorosli",
-    images: { landscapes: [], portraits: [] },
-  },
+  // {
+  //   type: "PLYWANIE",
+  //   title: "NAUKA PŁYWANIA DOROŚLI",
+  //   coverImage: "nauka-plywania-dorosli.png",
+  //   stripColor: "darkBlue",
+  //   stripTextColor: "white",
+  //   href: "naukaplywaniadorosli",
+  //   images: { landscapes: [], portraits: [] },
+  // },
   {
     type: "ZIMA",
     title: "WYJAZD NA NARTY 2024",
@@ -70,6 +76,9 @@ export const GALLERY_MAIN: galleryMainType = [
     stripColor: "white",
     stripTextColor: "darkBlue",
     href: "wyjazdnanarty2024",
+    collab: true,
+    collabLogo: "bom4sports-logo-black.webp",
+    collabHref: "https://www.bom4sports.pl/",
     images: {
       landscapes: [["01", "02"]],
       portraits: [
@@ -98,6 +107,9 @@ export const GALLERY_MAIN: galleryMainType = [
     stripColor: "basicGreen",
     stripTextColor: "white",
     href: "bobowskaprzygoda",
+    collab: false,
+    collabLogo: "",
+    collabHref: "",
     images: {
       landscapes: [
         ["01", "02"],
@@ -149,6 +161,9 @@ export const GALLERY_MAIN: galleryMainType = [
     stripColor: "basicGreen",
     stripTextColor: "white",
     href: "bobowskaprzygoda2",
+    collab: false,
+    collabLogo: "",
+    collabHref: "",
     images: {
       landscapes: [
         ["01", "02"],
@@ -197,6 +212,9 @@ export const GALLERY_MAIN: galleryMainType = [
     stripColor: "basicGreen",
     stripTextColor: "white",
     href: "kreatywnelaboratorium",
+    collab: false,
+    collabLogo: "",
+    collabHref: "",
     images: {
       landscapes: [
         ["01", "02"],
@@ -242,6 +260,9 @@ export const GALLERY_MAIN: galleryMainType = [
     stripColor: "basicGreen",
     stripTextColor: "white",
     href: "wakacyjnafrajda",
+    collab: false,
+    collabLogo: "",
+    collabHref: "",
     images: {
       landscapes: [
         ["01", "02"],
