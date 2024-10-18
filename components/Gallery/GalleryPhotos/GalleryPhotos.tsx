@@ -5,6 +5,7 @@ import { galleryItemType } from "@/types/Gallery/gallery";
 import Image from "next/image";
 import LogoMainBlack from "@/components/Globals/Logo/LogoMainBlack";
 import { COLORS } from "@/utils/UI/colors";
+import Link from "next/link";
 
 const GalleryPhotos: React.FC<{ data: galleryItemType }> = ({ data }) => {
   const [showPhotoDetails, setShowPhotoDetails] = useState({
@@ -161,6 +162,22 @@ const GalleryPhotos: React.FC<{ data: galleryItemType }> = ({ data }) => {
             {data.title}
           </h1>
           <LogoMainBlack width="80%" height="auto" />
+          {data.collab && (
+            <Link
+              href={data.collabHref}
+              style={{ alignSelf: "center", textAlign: "center" }}
+            >
+              {data.collabHref !== "" && (
+                <Image
+                  src={`/gallery/collab/${data.collabLogo}`}
+                  style={{ width: "80%", height: "auto" }}
+                  width="190"
+                  height="152"
+                  alt={data.collabLogo}
+                />
+              )}
+            </Link>
+          )}
         </div>
         {data.images.landscapes.map((landscape, index) => {
           return (

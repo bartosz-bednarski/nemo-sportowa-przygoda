@@ -73,7 +73,8 @@ const OfertaLetniaPage = () => {
       />
       <SignInCamps
         theme="summer"
-        waiting={false}
+        waiting={true}
+        waitingTitle="STARTUJEMY JUŻ WIOSNĄ"
         activeCampsCoversList={POLKOLONIE_LATO_COVERS}
       />
       <AboutCamps

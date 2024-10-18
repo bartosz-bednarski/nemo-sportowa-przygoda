@@ -54,15 +54,9 @@ const VideosSection: React.FC<VideosSectionType> = ({
           loop
           muted
           playsInline
+          preload="metadata"
         ></video>
 
-        {/* <Image
-          className={styles["container__image-box__image"]}
-          src={`/assets/videos/${col1.image.src}`}
-          loading="eager"
-          alt={col1.image.alt}
-          fill={true}
-        /> */}
         {!oneSticker && col1.stickerH2 !== undefined && (
           <span
             className={styles["container__image-box__sticker-box"]}

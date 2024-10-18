@@ -240,7 +240,7 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
           "Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.",
       },
       image: {
-        src: "background-img-scrap-1.png",
+        src: "dorosli.webp",
         alt: "nauka pływania dorośli",
       },
     },

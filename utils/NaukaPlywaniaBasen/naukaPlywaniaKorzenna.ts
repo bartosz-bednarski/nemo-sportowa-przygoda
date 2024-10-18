@@ -307,7 +307,7 @@ export const NAUKA_PLYWANIA_KORZENNA: naukaPlywaniaBasen = {
           "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
       },
       image: {
-        src: "background-img-scrap-1.png",
+        src: "lessonsTypes/dorosli.webp",
         alt: "nauka pływania dorośli",
       },
     },

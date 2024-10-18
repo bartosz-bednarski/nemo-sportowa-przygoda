@@ -196,6 +196,10 @@
     &__title {
       font-size: 2rem;
     }
+    img {
+      width: auto !important;
+      height: 100px !important;
+    }
   }
   .galleryPhotos__landscape {
     width: 460px;

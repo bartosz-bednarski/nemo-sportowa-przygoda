@@ -2,7 +2,6 @@
 import React from "react";
 import styles from "./naukaPlywaniaMiasto.module.scss";
 import { COLORS } from "@/utils/UI/colors";
-import AboutTextPoppins from "../Ui/AboutTextPoppins/AboutTextPoppins";
 import SwimmingPoolCover from "../Ui/SwimmingPoolCover/SwimmingPoolCover";
 
 const NaukaPlywaniaMiasto: React.FC = () => {
@@ -11,16 +10,22 @@ const NaukaPlywaniaMiasto: React.FC = () => {
       className={styles.naukaPlywaniaMiasto}
       style={{ background: COLORS.lightBlue }}
     >
-      <AboutTextPoppins
+      {/* <AboutTextPoppins
         titleColor="lightBlue"
         title="Sprawdź naszą ofertę nauki pływania w Krakowie"
-        description="Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu."
-      />
+        description="Nauka pływania to doskonały sposób na wzmocnienie kondycji, poprawę zdrowia i pokonanie lęku przed wodą. Oferujemy zajęcia dla dzieci, młodzieży i dorosłych na różnych poziomach zaawansowania. Nasi doświadczeni instruktorzy zadbają o Twoje bezpieczeństwo i indywidualne postępy. Zapisz się już dziś i odkryj radość z pływania!"
+      /> */}
+
       <div className={styles["naukaPlywaniaMiasto__swimming-pools"]}>
         <SwimmingPoolCover
           image="eisenberga.jpg"
           title="BASEN EISENBERGA"
           url="/naukaplywania/krakow/eisenberga"
+        />
+        <SwimmingPoolCover
+          image="bronowianka.jpg"
+          title="BASEN BRONOWIANKA"
+          url="/naukaplywania/krakow/bronowianka"
         />
         <SwimmingPoolCover
           image="bronowianka.jpg"
