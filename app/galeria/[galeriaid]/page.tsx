@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../page.module.scss";
 import { GALLERY_MAIN } from "@/utils/Gallery/Gallery";
 import GalleryPhotos from "@/components/Gallery/GalleryPhotos/GalleryPhotos";

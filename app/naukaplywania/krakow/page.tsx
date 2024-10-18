@@ -1,9 +1,8 @@
-import React from "react";
 import styles from "../../page.module.scss";
 import VideosSection from "@/components/Globals/VideosSection";
 import NaukaPlywaniaMiasto from "@/components/NaukaPlywaniaMiasto/NaukaPlywaniaMiasto";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
-const NaukaPlywaniaKrakow: React.FC = () => {
+const NaukaPlywaniaKrakow = () => {
   return (
     <div className={styles.main} style={{ paddingBottom: "0rem" }}>
       <VideosSection
@@ -18,7 +17,7 @@ const NaukaPlywaniaKrakow: React.FC = () => {
           scale: 1.5,
         }}
         col1={{
-          video: { src: "pool-mix-1.mov", alt: "nauka pływania niemowlaki" },
+          video: { src: "pool-mix-1.mp4", alt: "nauka pływania niemowlaki" },
           stickerH2: {
             title: "MAŁE",
             titleStrip: "BOMBELKI",
@@ -29,7 +28,7 @@ const NaukaPlywaniaKrakow: React.FC = () => {
         }}
         col2={{
           video: {
-            src: "pool-mix-3.mov",
+            src: "pool-mix-3.mp4",
             alt: "nauka pływania dzieci i mlodzież",
           },
           stickerH2: {
@@ -41,7 +40,7 @@ const NaukaPlywaniaKrakow: React.FC = () => {
           },
         }}
         col3={{
-          video: { src: "pool-mix-5.mov", alt: "nauka pływania dorośli" },
+          video: { src: "pool-mix-5.mp4", alt: "nauka pływania dorośli" },
           stickerH2: {
             title: "DUŻE",
             titleStrip: "BOMBELKI",

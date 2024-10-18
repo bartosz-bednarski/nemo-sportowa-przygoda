@@ -1,10 +1,9 @@
-import React from "react";
 import styles from "../page.module.scss";
 import VideosSection from "@/components/Globals/VideosSection";
 import InstructorsList from "@/components/NaszZespol/InstructorsList/InstructorsList";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 
-const NaszZespolPage: React.FC = () => {
+const NaszZespolPage = () => {
   return (
     <main className={styles.main}>
       <VideosSection

@@ -21,7 +21,7 @@ const OfertaZimowaPage = () => {
           scale: 2,
         }}
         col1={{
-          video: { src: "winter-mix-1.mov", alt: "weekendowe narty" },
+          video: { src: "winter-mix-1.mp4", alt: "weekendowe narty" },
           stickerH2: {
             title: "WYJAZDY",
             titleStrip: "NARCIARSKIE",
@@ -31,7 +31,7 @@ const OfertaZimowaPage = () => {
           },
         }}
         col2={{
-          video: { src: "winter-mix-2.mov", alt: "polkolonie zimowe" },
+          video: { src: "winter-mix-2.mp4", alt: "polkolonie zimowe" },
           stickerH2: {
             title: "PÓŁKOLONIE",
             titleStrip: "ZIMOWE",
@@ -42,7 +42,7 @@ const OfertaZimowaPage = () => {
         }}
         col3={{
           video: {
-            src: "winter-mix-3.mov",
+            src: "winter-mix-3.mp4",
             alt: "obozy narciarskie",
           },
           stickerH2: {

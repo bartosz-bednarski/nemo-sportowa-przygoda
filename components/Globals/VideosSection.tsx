@@ -1,3 +1,4 @@
+"use client";
 import "react";
 import styles from "./videosSection.module.scss";
 import StickerH2 from "../Ui/StickerH2/StickerH2";
@@ -46,12 +47,15 @@ const VideosSection: React.FC<VideosSectionType> = ({
       <Scrap2 position="bottom" color={scrapColor} />
       <div className={styles["container__image-box"]}>
         <div className={styles["container__image-box__opacity-cover"]}></div>
+
         <video
           src={`/assets/videos/${col1.video.src}`}
           autoPlay
           loop
           muted
+          playsInline
         ></video>
+
         {/* <Image
           className={styles["container__image-box__image"]}
           src={`/assets/videos/${col1.image.src}`}
@@ -90,6 +94,7 @@ const VideosSection: React.FC<VideosSectionType> = ({
           autoPlay
           loop
           muted
+          playsInline
         ></video>
         {!oneSticker && col2.stickerH2 !== undefined && (
           <span
@@ -122,6 +127,7 @@ const VideosSection: React.FC<VideosSectionType> = ({
           autoPlay
           loop
           muted
+          playsInline
         ></video>
         {!oneSticker && col3.stickerH2 !== undefined && (
           <span

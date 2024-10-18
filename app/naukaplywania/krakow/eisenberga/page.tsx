@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../../page.module.scss";
 import VideosSection from "@/components/Globals/VideosSection";
 import NaukaPlywaniaBasen from "@/components/NaukaPlywaniaBasen/NaukaPlywaniaBasen";
@@ -15,7 +14,7 @@ import {
   NAUKA_PLYWANIA_EISENBERGA,
 } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaEisenberga";
 import LessonTypeWrapBox from "@/components/Globals/LessonTypeWrapBox/LessonTypeWrapBox";
-const NaukaPlywaniaEisenberga: React.FC = () => {
+const NaukaPlywaniaEisenberga = () => {
   return (
     <div className={styles.main}>
       <VideosSection
@@ -30,7 +29,7 @@ const NaukaPlywaniaEisenberga: React.FC = () => {
         }}
         scrapColor="lightBlue"
         col1={{
-          video: { src: "pool-mix-2.mov", alt: "nauka pływania niemowlaki" },
+          video: { src: "pool-mix-2.mp4", alt: "nauka pływania niemowlaki" },
           stickerH2: {
             title: "MAŁE",
             titleStrip: "BOMBELKI",
@@ -41,7 +40,7 @@ const NaukaPlywaniaEisenberga: React.FC = () => {
         }}
         col2={{
           video: {
-            src: "pool-mix-3.mov",
+            src: "pool-mix-3.mp4",
             alt: "nauka pływania dzieci i mlodzież",
           },
           stickerH2: {
@@ -53,7 +52,7 @@ const NaukaPlywaniaEisenberga: React.FC = () => {
           },
         }}
         col3={{
-          video: { src: "pool-mix-4.mov", alt: "nauka pływania dorośli" },
+          video: { src: "pool-mix-4.mp4", alt: "nauka pływania dorośli" },
           stickerH2: {
             title: "DUŻE",
             titleStrip: "BOMBELKI",

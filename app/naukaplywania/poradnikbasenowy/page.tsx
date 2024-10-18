@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../page.module.scss";
 import Hero from "@/components/PoradnikBasenowy/Hero/Hero";
 import List from "@/components/PoradnikBasenowy/List/List";
@@ -11,7 +10,7 @@ import PointSection6 from "@/components/PoradnikBasenowy/PointsSections/PointSec
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 import PointSection3 from "@/components/PoradnikBasenowy/PointsSections/PointSection3";
 
-const PoradnikBasenowyPage: React.FC = () => {
+const PoradnikBasenowyPage = () => {
   return (
     <main className={styles.main}>
       <Hero />
