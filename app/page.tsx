@@ -11,7 +11,7 @@ export default function Home() {
         oneSticker={false}
         scrapColor="mediumBlue"
         col1={{
-          video: { src: "pool-mix-1.mov", alt: "nauka pływania" },
+          video: { src: "pool-mix-1.mp4", alt: "nauka pływania" },
           stickerH2: {
             title: "NAUKA",
             titleStrip: "PŁYWANIA",
@@ -22,7 +22,7 @@ export default function Home() {
         }}
         col2={{
           video: {
-            src: "pool-mix-2.mov",
+            src: "pool-mix-2.mp4",
             alt: "obozy i półkolonie",
           },
           stickerH2: {
@@ -34,7 +34,7 @@ export default function Home() {
           },
         }}
         col3={{
-          video: { src: "pool-mix-3.mov", alt: "oferty specjalne" },
+          video: { src: "pool-mix-3.mp4", alt: "oferty specjalne" },
           stickerH2: {
             title: "OFERTY",
             titleStrip: "SPECJALNE",

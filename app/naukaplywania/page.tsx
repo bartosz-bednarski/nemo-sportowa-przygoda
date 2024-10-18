@@ -1,17 +1,16 @@
 import NaukaPlywania from "@/components/NaukaPlywania/NaukaPlywania";
 import styles from "../page.module.scss";
-import React from "react";
 import VideosSection from "@/components/Globals/VideosSection";
 import { NAUKA_PLYWANIA } from "@/utils/NaukaPlywania/naukaPlywania";
 import Bubbles from "@/components/Ui/Bubbles/Bubbles";
-const NaukaPlywaniaPage: React.FC = () => {
+const NaukaPlywaniaPage = () => {
   return (
     <main className={styles.main}>
       <VideosSection
         oneSticker={false}
         scrapColor="lightBlue"
         col1={{
-          video: { src: "pool-mix-5.mov", alt: "nauka pływania niemowlaki" },
+          video: { src: "pool-mix-5.mp4", alt: "nauka pływania niemowlaki" },
           stickerH2: {
             title: "MAŁE",
             titleStrip: "BOMBELKI",
@@ -22,7 +21,7 @@ const NaukaPlywaniaPage: React.FC = () => {
         }}
         col2={{
           video: {
-            src: "pool-mix-3.mov",
+            src: "pool-mix-3.mp4",
             alt: "nauka pływania dzieci i mlodzież",
           },
           stickerH2: {
@@ -34,7 +33,7 @@ const NaukaPlywaniaPage: React.FC = () => {
           },
         }}
         col3={{
-          video: { src: "pool-mix-1.mov", alt: "nauka pływania dorośli" },
+          video: { src: "pool-mix-1.mp4", alt: "nauka pływania dorośli" },
           stickerH2: {
             title: "DUŻE",
             titleStrip: "BOMBELKI",
