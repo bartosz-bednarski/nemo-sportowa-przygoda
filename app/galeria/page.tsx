@@ -1,7 +1,7 @@
 import styles from "../page.module.scss";
-import Gallery from "@/components/Gallery/Gallery";
-import Scrap2 from "@/components/Ui/Scrap/Scrap2";
-import { GALLERY_MAIN } from "@/utils/Gallery/Gallery";
+import Gallery from "../../components/Gallery/Gallery";
+import Scrap2 from "../../components/Ui/Scrap/Scrap2";
+import { GALLERY_MAIN } from "../../utils/Gallery/Gallery";
 
 const GaleriaPage = () => {
   return (
