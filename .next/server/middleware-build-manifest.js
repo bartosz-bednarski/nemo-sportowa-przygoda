@@ -6,17 +6,17 @@ self.__BUILD_MANIFEST = {
   "ampDevFiles": [],
   "lowPriorityFiles": [],
   "rootMainFiles": [
-    "static/chunks/webpack-f369ef6513a4ce47.js",
-    "static/chunks/main-app-7053ee3476de2b2a.js"
+    "static/chunks/webpack-7ef16ec32e23d073.js",
+    "static/chunks/main-app-77f94a2904328c9c.js"
   ],
   "pages": {
     "/_app": [
-      "static/chunks/webpack-f369ef6513a4ce47.js",
+      "static/chunks/webpack-7ef16ec32e23d073.js",
       "static/chunks/main-fc4835b4382feace.js",
       "static/chunks/pages/_app-55e4c612640dfd19.js"
     ],
     "/_error": [
-      "static/chunks/webpack-f369ef6513a4ce47.js",
+      "static/chunks/webpack-7ef16ec32e23d073.js",
       "static/chunks/main-fc4835b4382feace.js",
       "static/chunks/pages/_error-7b3be3b0482dca6c.js"
     ]
