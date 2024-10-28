@@ -1,14 +1,16 @@
 {
   "name": "nemo-sportowa-przygoda",
   "version": "0.1.0",
+  "homepage": "https://nemosportowaprzygoda.pl",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node app.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node app.js",
     "lint": "next lint"
   },
   "dependencies": {
+    "express": "^4.21.1",
     "next": "14.2.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"

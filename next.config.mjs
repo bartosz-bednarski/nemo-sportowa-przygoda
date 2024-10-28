@@ -30,27 +30,22 @@ const nextConfig = {
   // output: "export",
   reactStrictMode: true,
   swcMinify: true, // Ustawienie na true
+  output: "export",
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
   typescript: {
-    // !! WARN !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARN !!
     ignoreBuildErrors: true,
   },
   webpack: (config, { isServer }) => {
     config.resolve.alias["@"] = path.resolve(__dirname);
 
-    // Możesz usunąć lub skomentować poniższą sekcję
     if (!isServer) {
       config.optimization.splitChunks = {
         cacheGroups: {
           default: false,
         },
       };
-      config.optimization.minimizer = [];
     }
 
     return config;
