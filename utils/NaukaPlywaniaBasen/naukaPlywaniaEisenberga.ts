@@ -293,9 +293,9 @@ export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
       },
       aboutTextPoppins: {
         titleColor: "mediumBlue",
-        title: "Młodzież od 6 do 18 lat",
+        title: "Dzieci od 3 lat i młodzież do 18 lat",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
+          "Dzieci uczą się podstaw pływania w formie zabawy. Poprawiają technikę i koordynację, zdobywając kolejne umiejętności, w kraulu oraz grzbiecie. Młodzież uczy się pływać czterema stylami (styl dowolny, grzbietowy, klasyczny, motylkowy) oraz technik nawrotów. Zajęcia pomagają doskonalić technikę, poprawiać wytrzymałość i przygotowują do ewentualnych startów w zawodach pływackich.",
       },
       image: {
         src: "lessonsTypes/dzieciMlodziez2.webp",
@@ -359,7 +359,7 @@ export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
         titleColor: "darkBlue",
         title: "Dorośli",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
+          "Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.",
       },
       image: {
         src: "lessonsTypes/dorosli.webp",
@@ -411,7 +411,7 @@ export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
 export const BASEN_EISENBERGA_INFORMATIONS: poolInformationsType = {
   color: "darkBlue",
   title: "Basen Eisenberga",
-  imageSrc: "eisenberga-bg.png",
+  imageSrc: "custom-pool.webp",
   mapSrc:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.8758871211735!2d19.96455712691966!3d50.06988596469174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b20d70ce221%3A0x4553a84f578feaa9!2sCentrum%20Sportu%20i%20Rekreacji%20Przysta%C5%84%20na%20Eisenberga!5e0!3m2!1spl!2spl!4v1727424719893!5m2!1spl!2spl",
   stickerH2: {

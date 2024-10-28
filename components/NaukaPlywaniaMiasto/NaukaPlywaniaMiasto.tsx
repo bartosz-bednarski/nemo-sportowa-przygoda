@@ -18,19 +18,19 @@ const NaukaPlywaniaMiasto: React.FC = () => {
 
       <div className={styles["naukaPlywaniaMiasto__swimming-pools"]}>
         <SwimmingPoolCover
-          image="eisenberga.jpg"
+          image="eisenberga.webp"
           title="BASEN EISENBERGA"
           url="/naukaplywania/krakow/eisenberga"
         />
         <SwimmingPoolCover
-          image="bronowianka.jpg"
+          image="bronowianka.webp"
           title="BASEN BRONOWIANKA"
           url="/naukaplywania/krakow/bronowianka"
         />
         <SwimmingPoolCover
-          image="bronowianka.jpg"
-          title="BASEN BRONOWIANKA"
-          url="/naukaplywania/krakow/bronowianka"
+          image="plywaczek.webp"
+          title="BASEN PŁYWACZEK"
+          url="/naukaplywania/krakow/plywaczek"
         />
       </div>
     </div>

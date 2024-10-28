@@ -1,6 +1,13 @@
 import { groupLvlType } from "@/types/Globals/globals";
 
 export const GRUPY_POZIOM_ZAAWANSOWANIA = {
+  rybkiDzieci: {
+    title: "Grupa początkująca RYBKI",
+    age: "RYBKI 3-5 LAT",
+    description:
+      "Zajęcia z rodzicami mają na celu przystosowanie dziecka do pływania poprzez zabawę i bliski kontakt z rodzicem. Dzięki wspólnym ćwiczeniom w wodzie dziecko stopniowo oswaja się z nowym środowiskiem, buduje zaufanie do wody i rozwija podstawowe umiejętności potrzebne do dalszej nauki pływania. Ciepła atmosfera oraz obecność rodzica sprawiają, że dzieci czują się bezpiecznie i chętnie angażują się w aktywność.",
+    skills: [],
+  },
   poczatkujacaDzieci: {
     title: "Grupa początkująca RACZKI",
     age: "RACZKI 3-6 lat",
@@ -146,6 +153,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI = {
   },
 };
 type grupyPoziomZaawansowaniaForComponentsType = {
+  rybkiDzieci: groupLvlType;
   poczatkujacaDzieci: groupLvlType;
   kontynuacjaDzieci: groupLvlType;
   srednioZaawansowana: groupLvlType;
@@ -161,6 +169,22 @@ type grupyPoziomZaawansowaniaForComponentsType = {
 };
 export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowaniaForComponentsType =
   {
+    rybkiDzieci: {
+      stickerH4: {
+        title: "GRUPA",
+        titleStrip: "POCZĄTKUJĄCA",
+        scale: 1.2,
+        stripBgColor: "basicOrange",
+        stripTextColor: "darkBlue",
+        paddingBottom: 10,
+      },
+      aboutTextPoppins: {
+        title: GRUPY_POZIOM_ZAAWANSOWANIA.rybkiDzieci.age,
+        description: GRUPY_POZIOM_ZAAWANSOWANIA.rybkiDzieci.description,
+        titleColor: "darkBlue",
+      },
+      skills: GRUPY_POZIOM_ZAAWANSOWANIA.rybkiDzieci.skills,
+    },
     poczatkujacaDzieci: {
       stickerH4: {
         title: "GRUPA",

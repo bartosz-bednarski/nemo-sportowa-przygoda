@@ -90,7 +90,7 @@ const NaukaPlywaniaEisenberga = () => {
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <LessonTypeWrapBox
         bgColor="darkBlue"
-        bgImage="grupowe.png"
+        bgImage="lessons-types-bg.webp"
         lessonTypes={[
           RODZAJE_LEKCJI.grupowe,
           RODZAJE_LEKCJI.indywidualne,

@@ -134,7 +134,7 @@ export const NAUKA_PLYWANIA_BRONOWIANKA: naukaPlywaniaBasen = {
 export const BASEN_BRONOWIANKA_INFORMATIONS: poolInformationsType = {
   color: "darkBlue",
   title: "Basen BRONOWIANKA",
-  imageSrc: "bronowianka-bg.png",
+  imageSrc: "custom-pool.webp",
   mapSrc:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.5784458489893!2d19.879274776919935!3d50.075455964292786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bdabd2c10ef%3A0xa2da596d64995360!2sBronowianka.%20Klub%20sportowy!5e0!3m2!1spl!2spl!4v1727429256774!5m2!1spl!2spl",
   stickerH2: {

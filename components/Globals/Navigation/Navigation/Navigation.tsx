@@ -163,7 +163,7 @@ const Navigation: React.FC<{
             +48 505 189 956
           </span>
           <span className={styles["navigation__bottom-box__20__contact"]}>
-            nemosportowaprzygoda@gmail.com
+            szkolaplywanianemo1@gmail.com
           </span>
           <span className={styles["navigation__bottom-box__20__contact"]}>
             <Link href="https://www.facebook.com/profile.php?id=61550793572137">

@@ -8,7 +8,7 @@ type rodzajeLekcji = {
 };
 export const RODZAJE_LEKCJI: rodzajeLekcji = {
   indywidualne: {
-    img: "indywidualne.png",
+    img: "lessons-types-bg.webp",
     stickerH4: {
       title: "LEKCJE",
       titleStrip: "INDYWIDUALNE",
@@ -21,11 +21,11 @@ export const RODZAJE_LEKCJI: rodzajeLekcji = {
       title: "",
       titleColor: "basicOrange",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
+        "Lekcje indywidualne to zajęcia dostosowane w pełni do indywidualnych potrzeb ucznia. Instruktor pracuje wyłącznie z jednym uczestnikiem, co pozwala na szybkie postępy i maksymalne skupienie na rozwijaniu umiejętności. Jest to idealny wybór dla osób, które mają konkretne cele, potrzebują intensywnego wsparcia lub chcą przełamać barierę lęku przed wodą. Trener na bieżąco koryguje technikę i dostosowuje ćwiczenia do poziomu oraz tempa ucznia, dzięki czemu nauka jest efektywna i precyzyjnie ukierunkowana.",
     },
   },
   dwuosobowe: {
-    img: "dwuosobowe.png",
+    img: "lessons-types-bg.webp",
     stickerH4: {
       title: "LEKCJE",
       titleStrip: "DWUOSOBOWE",
@@ -38,11 +38,11 @@ export const RODZAJE_LEKCJI: rodzajeLekcji = {
       title: "",
       titleColor: "mediumBlue",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
+        "Lekcje dwuosobowe pozwalają dwóm uczestnikom uczyć się razem, co sprzyja wzajemnej motywacji i wprowadza element współpracy. To świetna opcja dla par, przyjaciół czy rodzeństw, którzy chcą wspólnie doskonalić umiejętności pływackie. Instruktor dostosowuje ćwiczenia i techniki do potrzeb obu uczestników, dzięki czemu każdy z nich osiąga postępy w przyjaznej atmosferze. Taka forma jest bardziej ekonomiczna niż lekcje indywidualne, a jednocześnie zapewnia dużo uwagi instruktora.",
     },
   },
   trzyosobowe: {
-    img: "trzyosobowe.png",
+    img: "lessons-types-bg.webp",
     stickerH4: {
       title: "LEKCJE",
       titleStrip: "TRZYOSOBOWE",
@@ -59,7 +59,7 @@ export const RODZAJE_LEKCJI: rodzajeLekcji = {
     },
   },
   grupowe: {
-    img: "grupowe.png",
+    img: "lessons-types-bg.webp",
     stickerH4: {
       title: "LEKCJE",
       titleStrip: "GRUPOWE",
@@ -72,7 +72,7 @@ export const RODZAJE_LEKCJI: rodzajeLekcji = {
       title: "",
       titleColor: "basicOrange",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
+        "Lekcje grupowe to zajęcia w kilkuosobowej grupie o zbliżonym poziomie umiejętności. Tego typu zajęcia sprzyjają integracji oraz rozwijają umiejętność współpracy i rywalizacji w przyjaznej atmosferze. Instruktor prowadzi różnorodne ćwiczenia, angażując całą grupę i dostosowując tempo do jej poziomu. Zajęcia grupowe są idealne dla osób, które lubią uczyć się w towarzystwie innych i cenią sobie dynamikę grupy. Jest to również najbardziej przystępna cenowo opcja, oferująca przy tym bogaty program ćwiczeń i technik pływackich.",
     },
   },
 };

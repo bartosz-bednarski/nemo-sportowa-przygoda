@@ -51,7 +51,7 @@ prawidłowej techniki pod okiem doświadczonych instruktorów."
 
         <div className={styles["swimming__offert__content__swimming-pools"]}>
           <SwimmingPoolCover
-            image="korzenna.jpg"
+            image="korzenna.webp"
             title="BASEN KORZENNA"
             url="/naukaplywania/korzenna"
           />
@@ -61,14 +61,19 @@ prawidłowej techniki pod okiem doświadczonych instruktorów."
             url="/naukaplywania/gorlice"
           />
           <SwimmingPoolCover
-            image="eisenberga.jpg"
+            image="eisenberga.webp"
             title="BASEN EISENBERGA"
             url="/naukaplywania/krakow/eisenberga"
           />
           <SwimmingPoolCover
-            image="bronowianka.jpg"
+            image="bronowianka.webp"
             title="BASEN BRONOWIANKA"
             url="/naukaplywania/krakow/bronowianka"
+          />
+          <SwimmingPoolCover
+            image="plywaczek.webp"
+            title="BASEN PŁYWACZEK"
+            url="/naukaplywania/krakow/plywaczek"
           />
         </div>
         <LinkButton
