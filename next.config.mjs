@@ -30,7 +30,7 @@ const nextConfig = {
   // output: "export",
   reactStrictMode: true,
   swcMinify: true, // Ustawienie na true
-  // output: "export",
+
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },

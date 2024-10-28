@@ -1,0 +1,472 @@
+import {
+  instructorsRowBoxType,
+  poolTutorialType,
+  priceListType,
+} from "@/types/Globals/globals";
+import {
+  aboutType,
+  groupsType,
+  poolInformationsType,
+} from "@/types/NaukaPlywania/naukaPlywania";
+import { customColors } from "@/types/UI/colors";
+import { GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS } from "../Grupy/grupyPoziomZaawansowania";
+import { NAUKA_PLYWANIA } from "../NaukaPlywania/naukaPlywania";
+
+type naukaPlywaniaBasen = {
+  zRodzicami: {
+    backgroundColor: customColors;
+    about: aboutType;
+    instructors: instructorsRowBoxType;
+    groups: groupsType;
+    priceList: priceListType;
+  };
+  dzieciMlodziez: {
+    backgroundColor: customColors;
+    about: aboutType;
+    instructors: instructorsRowBoxType;
+    groups: groupsType;
+    priceList: priceListType;
+  };
+  dorosli: {
+    backgroundColor: customColors;
+    about: aboutType;
+    instructors: instructorsRowBoxType;
+    groups: groupsType;
+    priceList: priceListType;
+  };
+};
+const CENNIK_Z_RODZICAMI_PLYWACZEK: priceListType = [
+  {
+    stickerH4: {
+      title: "LEKCJE",
+      titleStrip: "GRUPOWE",
+      scale: 1.6,
+      stripTextColor: "basicOrange",
+      stripBgColor: "white",
+      paddingBottom: 0,
+    },
+    oneLesson: {
+      price: "70 zł",
+      time: 30,
+    },
+    tenLessons: {
+      price: "700 zł",
+      time: "10 x 30",
+    },
+    button: {
+      title: "Zapisz się na zajęcia",
+      textColor: "lightBlue",
+      bgColor: "white",
+      href: "/",
+    },
+  },
+];
+const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: priceListType = [
+  {
+    stickerH4: {
+      title: "LEKCJE",
+      titleStrip: "GRUPOWE",
+      scale: 1.6,
+      stripTextColor: "basicOrange",
+      stripBgColor: "white",
+      paddingBottom: 0,
+    },
+    oneLesson: {
+      price: "70 zł",
+      time: 45,
+    },
+    tenLessons: {
+      price: "700 zł",
+      time: "10 x 45",
+    },
+    button: {
+      title: "Zapisz się na zajęcia",
+      textColor: "lightBlue",
+      bgColor: "white",
+      href: "/",
+    },
+  },
+  {
+    stickerH4: {
+      title: "LEKCJE",
+      titleStrip: "INDYWIDUALNE",
+      scale: 1.2,
+      stripTextColor: "lightBlue",
+      stripBgColor: "basicOrange",
+      paddingBottom: 0,
+    },
+    oneLesson: {
+      price: "160 zł",
+      time: 45,
+    },
+    tenLessons: {
+      price: "1200 zł",
+      time: "10 x 45",
+    },
+    button: {
+      title: "Zapisz się na zajęcia",
+      textColor: "lightBlue",
+      bgColor: "white",
+      href: "/",
+    },
+  },
+  {
+    stickerH4: {
+      title: "LEKCJE",
+      titleStrip: "2 OSOBOWE",
+      scale: 1.2,
+      stripBgColor: "darkBlue",
+      stripTextColor: "white",
+      paddingBottom: 0,
+    },
+    oneLesson: {
+      price: "240 zł",
+      time: 45,
+    },
+    tenLessons: {
+      price: "2000 zł",
+      time: "10 x 45",
+    },
+    button: {
+      title: "Zapisz się na zajęcia",
+      textColor: "lightBlue",
+      bgColor: "white",
+      href: "/",
+    },
+  },
+];
+const CENNIK_DOROSLI_PLYWACZEK: priceListType = [
+  {
+    stickerH4: {
+      title: "LEKCJE",
+      titleStrip: "GRUPOWE",
+      scale: 1.6,
+      stripTextColor: "basicOrange",
+      stripBgColor: "white",
+      paddingBottom: 0,
+    },
+    oneLesson: {
+      price: "70 zł",
+      time: 45,
+    },
+    tenLessons: {
+      price: "700 zł",
+      time: "10 x 45",
+    },
+    button: {
+      title: "Zapisz się na zajęcia",
+      textColor: "lightBlue",
+      bgColor: "white",
+      href: "/",
+    },
+  },
+  {
+    stickerH4: {
+      title: "LEKCJE",
+      titleStrip: "INDYWIDUALNE",
+      scale: 1.2,
+      stripTextColor: "lightBlue",
+      stripBgColor: "basicOrange",
+      paddingBottom: 0,
+    },
+    oneLesson: {
+      price: "160 zł",
+      time: 45,
+    },
+    tenLessons: {
+      price: "1200 zł",
+      time: "10 x 45",
+    },
+    button: {
+      title: "Zapisz się na zajęcia",
+      textColor: "lightBlue",
+      bgColor: "white",
+      href: "/",
+    },
+  },
+  {
+    stickerH4: {
+      title: "LEKCJE",
+      titleStrip: "2 OSOBOWE",
+      scale: 1.2,
+      stripBgColor: "lightBlue",
+      stripTextColor: "white",
+      paddingBottom: 0,
+    },
+    oneLesson: {
+      price: "240 zł",
+      time: 45,
+    },
+    tenLessons: {
+      price: "2000 zł",
+      time: "10 x 45",
+    },
+    button: {
+      title: "Zapisz się na zajęcia",
+      textColor: "lightBlue",
+      bgColor: "white",
+      href: "/",
+    },
+  },
+];
+export const NAUKA_PLYWANIA_PLYWACZEK: naukaPlywaniaBasen = {
+  zRodzicami: {
+    backgroundColor: "lightBlue",
+    about: {
+      stickerH2: {
+        title: "NAUKA PŁYWANIA",
+        titleStrip: "Z RODZICAMI",
+        scale: 1.2,
+        stripTextColor: "lightBlue",
+        stripBgColor: "white",
+        paddingBottom: 10,
+      },
+      aboutTextPoppins: {
+        titleColor: "lightBlue",
+        title: NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.title,
+        description:
+          NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.description,
+      },
+      image: {
+        src: "lessonsTypes/zRodzicami.webp",
+        alt: "nauka pływania z rodzicami",
+      },
+      button: {
+        title: "Dowiedz się więcej",
+        href: "/naukaplywania#tips",
+      },
+    },
+    priceList: CENNIK_Z_RODZICAMI_PLYWACZEK,
+    instructors: {
+      bgColor: "lightBlue",
+      instructors: [
+        {
+          instructorName: "WIKTORIA FRYCZEK",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+        {
+          instructorName: "WIKTORIA FRYCZ",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+        {
+          instructorName: "WIKTORIA FRYCZE",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+      ],
+    },
+    groups: {
+      stripH2: {
+        title: "GRUPY",
+        scale: 1.2,
+        stripBgColor: "white",
+        stripTextColor: "darkBlue",
+      },
+      groups: [
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.trzyMiesiace,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.siedemMiesiecy,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.dwanascieMiesiecy,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.dwaLata,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.czteryLata,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.czteryLataBez,
+      ],
+    },
+  },
+  dzieciMlodziez: {
+    backgroundColor: "mediumBlue",
+    about: {
+      stickerH2: {
+        title: "NAUKA PŁYWANIA",
+        titleStrip: "DZIECI I MŁODZIEŻ",
+        scale: 1.4,
+        stripTextColor: "lightBlue",
+        stripBgColor: "white",
+        paddingBottom: 10,
+      },
+      aboutTextPoppins: {
+        titleColor: "mediumBlue",
+        title: "Dzieci od 3 lat i młodzież do 18 lat",
+        description:
+          "Dzieci uczą się podstaw pływania w formie zabawy. Poprawiają technikę i koordynację, zdobywając kolejne umiejętności, w kraulu oraz grzbiecie. Młodzież uczy się pływać czterema stylami (styl dowolny, grzbietowy, klasyczny, motylkowy) oraz technik nawrotów. Zajęcia pomagają doskonalić technikę, poprawiać wytrzymałość i przygotowują do ewentualnych startów w zawodach pływackich.",
+      },
+      image: {
+        src: "lessonsTypes/dzieciMlodziez2.webp",
+        alt: "nauka pływania dzieci i mlodziez",
+      },
+    },
+    priceList: CENNIK_DZIECI_MLODZIEZ_PLYWACZEK,
+    instructors: {
+      bgColor: "mediumBlue",
+      instructors: [
+        {
+          instructorName: "WIKTORIA FRYCZEK",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+        {
+          instructorName: "WIKTORIA FRYCZ",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+        {
+          instructorName: "WIKTORIA FRYCZE",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+      ],
+    },
+    groups: {
+      stripH2: {
+        title: "GRUPY",
+        scale: 1.2,
+        stripBgColor: "white",
+        stripTextColor: "darkBlue",
+      },
+      groups: [
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.rybkiDzieci,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.poczatkujacaDzieci,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.kontynuacjaDzieci,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.srednioZaawansowana,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.zaawansowana,
+      ],
+    },
+  },
+  dorosli: {
+    backgroundColor: "darkBlue",
+    about: {
+      stickerH2: {
+        title: "NAUKA PŁYWANIA",
+        titleStrip: "DOROŚLI",
+        scale: 1.2,
+        stripTextColor: "darkBlue",
+        stripBgColor: "white",
+        paddingBottom: 5,
+      },
+      aboutTextPoppins: {
+        titleColor: "darkBlue",
+        title: "Dorośli",
+        description:
+          "Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.",
+      },
+      image: {
+        src: "lessonsTypes/dorosli.webp",
+        alt: "nauka pływania dorośli",
+      },
+    },
+    priceList: CENNIK_DOROSLI_PLYWACZEK,
+    instructors: {
+      bgColor: "darkBlue",
+      instructors: [
+        {
+          instructorName: "WIKTORIA FRYCZEK",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+        {
+          instructorName: "WIKTORIA FRYCZ",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+        {
+          instructorName: "WIKTORIA FRYCZE",
+          scale: 0.7,
+          img1: "instructor-1.png",
+          img2: "instructor-1.png",
+          href: "/",
+        },
+      ],
+    },
+    groups: {
+      stripH2: {
+        title: "GRUPY",
+        scale: 1.2,
+        stripBgColor: "white",
+        stripTextColor: "darkBlue",
+      },
+      groups: [
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.poczatkujacaDorosli,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.kontynuacjaDorosli,
+      ],
+    },
+  },
+};
+
+export const BASEN_PLYWACZEK_INFORMATIONS: poolInformationsType = {
+  color: "darkBlue",
+  title: "Basen Pływaczek",
+  imageSrc: "custom-pool.webp",
+  mapSrc:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.4020298195333!2d20.00558436653215!3d50.07875938459453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716453170f312bf%3A0xe3ac6ed98bd91e80!2sBasen%20Kryty%20%22P%C5%82ywaczek%22!5e0!3m2!1spl!2spl!4v1730119929819!5m2!1spl!2spl",
+  stickerH2: {
+    title: "BASEN",
+    titleStrip: "PŁYWACZEK",
+    stripBgColor: "basicOrange",
+    stripTextColor: "darkBlue",
+    scale: 1.2,
+    paddingBottom: 0,
+  },
+  icons: {
+    pool1: {
+      exists: true,
+      title: "BASEN SPORTOWY 25 X 16M, GŁĘBOKOŚĆ 1,20-2,00M",
+    },
+    pool2: {
+      exists: true,
+      title: "BASEN REKREACYJNY 16 X 5M, GŁĘBOKOŚĆ 0,80-1,20M",
+    },
+    stand: {
+      exists: true,
+      title: "TRYBUNY NA BASENIE",
+    },
+    cloakroomWomen: {
+      exists: true,
+      title: "SZATNIA DAMSKA",
+    },
+    cloakroomMen: {
+      exists: true,
+      title: "SZATNIA MĘSKA",
+    },
+    cloakroomFamily: {
+      exists: true,
+      title: "SZATNIA RODZINNA",
+    },
+    parking: {
+      exists: true,
+      title: "DARMOWY PRZY SZKOLE",
+    },
+  },
+};
+
+export const BASEN_PLYWACZEK_TUTORIAL: poolTutorialType = {
+  header: false,
+  color: "darkBlue",
+  firstRule:
+    "Zmień obuwie na odpowiednie do poruszania się po strefie basenowej.",
+  rules: [
+    'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
+    "Kup wejściówkę dla dziecka.",
+    "Udaj się z dzieckiem do szatni i przygotuj je do zajęć.",
+    "Upewnij się, że dziecko ma na sobie strój kąpielowy, czepek, okulary oraz klapki.",
+    "Po przebraniu przejdź z dzieckiem do głównego wejścia przy przejściu między szatnią a basenem.",
+    "W tym miejscu instruktorzy przejmują dziecko i prowadzą je na 45-minutową lekcję pływania.",
+    "Po zakończeniu zajęć rodzice proszeni są o przyjście w to samo miejsce, abyodebrać dziecko.",
+  ],
+};

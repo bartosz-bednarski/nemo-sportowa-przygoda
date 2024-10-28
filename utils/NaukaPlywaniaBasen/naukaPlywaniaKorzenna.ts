@@ -238,9 +238,9 @@ export const NAUKA_PLYWANIA_KORZENNA: naukaPlywaniaBasen = {
       },
       aboutTextPoppins: {
         titleColor: "lightBlue",
-        title: "Dzieci i młodzież do 18 lat",
+        title: "Dzieci od 3 lat i młodzież do 18 lat",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
+          "Dzieci uczą się podstaw pływania w formie zabawy. Poprawiają technikę i koordynację, zdobywając kolejne umiejętności, w kraulu oraz grzbiecie. Młodzież uczy się pływać czterema stylami (styl dowolny, grzbietowy, klasyczny, motylkowy) oraz technik nawrotów. Zajęcia pomagają doskonalić technikę, poprawiać wytrzymałość i przygotowują do ewentualnych startów w zawodach pływackich.",
       },
       image: {
         src: "lessonsTypes/dzieciMlodziez2.webp",
@@ -304,7 +304,7 @@ export const NAUKA_PLYWANIA_KORZENNA: naukaPlywaniaBasen = {
         titleColor: "mediumBlue",
         title: "Dorośli",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
+          "Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.",
       },
       image: {
         src: "lessonsTypes/dorosli.webp",
@@ -356,7 +356,7 @@ export const NAUKA_PLYWANIA_KORZENNA: naukaPlywaniaBasen = {
 export const BASEN_KORZENNA_INFORMATIONS: poolInformationsType = {
   color: "darkBlue",
   title: "Basen Korzenna",
-  imageSrc: "korzenna-bg.png",
+  imageSrc: "custom-pool.webp",
   mapSrc:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.7345853683228!2d20.83965477690252!3d49.678138042669985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473def6a8b71a751%3A0x12dc24214a047309!2sBasen%20Korzenna!5e0!3m2!1spl!2spl!4v1727419661233!5m2!1spl!2spl",
   stickerH2: {

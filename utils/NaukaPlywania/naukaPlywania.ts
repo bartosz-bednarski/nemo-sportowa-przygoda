@@ -103,13 +103,18 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
         },
         {
           title: "BASEN EISENBERGA",
-          image: "eisenberga.jpg",
+          image: "eisenberga.webp",
           url: "/naukaplywania/krakow/eisenberga",
         },
         {
           title: "BASEN BRONOWIANKA",
-          image: "bronowianka.jpg",
+          image: "bronowianka.webp",
           url: "/naukaplywania/krakow/bronowianka",
+        },
+        {
+          title: "BASEN PŁYWACZEK",
+          image: "plywaczek.webp",
+          url: "/naukaplywania/krakow/plywaczek",
         },
       ],
     },
@@ -197,13 +202,18 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       swimmingPools: [
         {
           title: "BASEN KORZENNA",
-          image: "korzenna.jpg",
+          image: "korzenna.webp",
           url: "/naukaplywania/korzenna",
         },
         {
           title: "BASEN EISENBERGA",
-          image: "eisenberga.jpg",
+          image: "eisenberga.webp",
           url: "/naukaplywania/krakow/eisenberga",
+        },
+        {
+          title: "BASEN PŁYWACZEK",
+          image: "plywaczek.webp",
+          url: "/naukaplywania/krakow/plywaczek",
         },
       ],
     },
@@ -240,7 +250,7 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
           "Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.",
       },
       image: {
-        src: "dorosli.webp",
+        src: "lessonsTypes/dorosli.webp",
         alt: "nauka pływania dorośli",
       },
     },
@@ -289,18 +299,18 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       swimmingPools: [
         {
           title: "BASEN KORZENNA",
-          image: "korzenna.jpg",
+          image: "korzenna.webp",
           url: "/naukaplywania/korzenna",
         },
         {
           title: "BASEN EISENBERGA",
-          image: "eisenberga.jpg",
+          image: "eisenberga.webp",
           url: "/naukaplywania/krakow/eisenberga",
         },
         {
-          title: "BASEN EISENBERGA",
-          image: "gorlice.webp",
-          url: "/naukaplywania/gorlice",
+          title: "BASEN PŁYWACZEK",
+          image: "plywaczek.webp",
+          url: "/naukaplywania/krakow/plywaczek",
         },
       ],
     },

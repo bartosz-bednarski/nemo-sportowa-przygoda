@@ -13,13 +13,18 @@ const Footer: React.FC = () => {
       </div>
       <ul className={styles["footer__navigation"]}>
         <li>
-          <Link href="/">POLITYKA PRYWATNOŚCI</Link>
+          <Link href="/assets/statues/NEMO_polityka-prywatnosci.pdf">
+            POLITYKA PRYWATNOŚCI
+          </Link>
+        </li>
+        <li>
+          <Link href="/regulamin">REGULAMIN</Link>
         </li>
         <li>
           <Link href="/">KONTAKT</Link>
         </li>
         <li>
-          <Link href="/">GALERIA</Link>
+          <Link href="/galeria">GALERIA</Link>
         </li>
       </ul>
       <ul className={styles["footer__navigation"]}>

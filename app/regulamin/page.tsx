@@ -1,0 +1,68 @@
+import Image from "next/image";
+import styles from "../page.module.scss";
+import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
+import Link from "next/link";
+const RegulaminPage = () => {
+  return (
+    <div className={styles["statues-row"]}>
+      <Link
+        href="/assets/statues/Regulamin-baseny.pdf"
+        className={styles["statues-row__row-item"]}
+      >
+        <Image
+          width={600}
+          height={1080}
+          src="/assets/statues/pools.webp"
+          alt="regulamin baseny"
+        />
+        <span className={styles["statues-row__row-item__sticker-box"]}>
+          <StickerH2
+            title="REGULAMIN"
+            titleStrip="BASENY"
+            stripBgColor="darkBlue"
+            stripTextColor="white"
+            scale={1.5}
+            paddingBottom={0}
+          />
+        </span>
+      </Link>
+      <Link href="/" className={styles["statues-row__row-item"]}>
+        <Image
+          width={600}
+          height={1080}
+          src="/assets/statues/camps.webp"
+          alt="regulamin obozy"
+        />
+        <span className={styles["statues-row__row-item__sticker-box"]}>
+          <StickerH2
+            title="REGULAMIN"
+            titleStrip="OBOZY"
+            stripBgColor="basicGreen"
+            stripTextColor="white"
+            scale={1.4}
+            paddingBottom={0}
+          />
+        </span>
+      </Link>
+      <Link href="/" className={styles["statues-row__row-item"]}>
+        <Image
+          width={600}
+          height={1080}
+          src="/assets/statues/colonies.webp"
+          alt="regulamin polkolonie"
+        />
+        <span className={styles["statues-row__row-item__sticker-box"]}>
+          <StickerH2
+            title="REGULAMIN"
+            titleStrip="PÓŁKOLONIE"
+            stripBgColor="basicOrange"
+            stripTextColor="white"
+            scale={1.2}
+            paddingBottom={0}
+          />
+        </span>
+      </Link>
+    </div>
+  );
+};
+export default RegulaminPage;

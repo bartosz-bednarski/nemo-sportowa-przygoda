@@ -138,7 +138,7 @@ export const NAUKA_PLYWANIA_GORLICE: naukaPlywaniaBasen = {
 export const BASEN_GORLICE_INFORMATIONS: poolInformationsType = {
   color: "darkBlue",
   title: "Basen GORLICE",
-  imageSrc: "gorlice-bg.png",
+  imageSrc: "custom-pool.webp",
   mapSrc:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.959838146512!2d21.16031532690143!3d49.65505599431353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473dc68bf7396df3%3A0xfa103fb8fdb78dfe!2zUMWCeXdhbmlhICJPU2lSIg!5e0!3m2!1spl!2spl!4v1727270999281!5m2!1spl!2spl",
   stickerH2: {
