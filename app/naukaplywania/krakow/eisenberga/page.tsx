@@ -95,7 +95,6 @@ const NaukaPlywaniaEisenberga = () => {
           RODZAJE_LEKCJI.grupowe,
           RODZAJE_LEKCJI.indywidualne,
           RODZAJE_LEKCJI.dwuosobowe,
-          RODZAJE_LEKCJI.trzyosobowe,
         ]}
       />
       {/* <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.grupowe} />

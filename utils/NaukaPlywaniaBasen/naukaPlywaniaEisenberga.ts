@@ -57,7 +57,7 @@ const CENNIK_Z_RODZICAMI_EISENBERGA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
 ];
@@ -83,7 +83,7 @@ const CENNIK_DZIECI_MLODZIEZ_EISENBERGA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -107,7 +107,7 @@ const CENNIK_DZIECI_MLODZIEZ_EISENBERGA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -131,7 +131,7 @@ const CENNIK_DZIECI_MLODZIEZ_EISENBERGA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
 ];
@@ -157,7 +157,7 @@ const CENNIK_DOROSLI_EISENBERGA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -181,7 +181,7 @@ const CENNIK_DOROSLI_EISENBERGA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -205,7 +205,7 @@ const CENNIK_DOROSLI_EISENBERGA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
 ];
@@ -432,7 +432,7 @@ export const BASEN_EISENBERGA_INFORMATIONS: poolInformationsType = {
       title: "BASEN REKREACYJNY 16 X 5M, GŁĘBOKOŚĆ 0,80-1,20M",
     },
     stand: {
-      exists: true,
+      exists: false,
       title: "TRYBUNY NA BASENIE",
     },
     cloakroomWomen: {

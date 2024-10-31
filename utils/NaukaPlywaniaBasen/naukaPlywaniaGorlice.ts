@@ -58,7 +58,7 @@ export const CENNIK_Z_RODZICAMI_GORLICE: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
 ];
@@ -176,7 +176,7 @@ export const BASEN_GORLICE_INFORMATIONS: poolInformationsType = {
     },
     parking: {
       exists: true,
-      title: "PARKING PŁATNY STREFA",
+      title: "PARKING BEZPŁATNY",
     },
   },
 };

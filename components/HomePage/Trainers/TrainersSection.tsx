@@ -21,9 +21,9 @@ const TrainersSection: React.FC = () => {
           paddingBottom={0}
         />
         <AboutTextPoppins
-          title="Lorem ipsum dolor sit amet consectetur"
+          title=""
           titleColor="basicOrange"
-          description="Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu."
+          description="Nasz zespół to grono doświadczonych instruktorów, którzy od lat z pasją i zaangażowaniem szkolą w zakresie pływania. Każdy z naszych instruktorów to osoba, która osobiście trenowała pływanie i posiada bogate doświadczenie w tej dziedzinie. Dzięki temu możemy zapewnić profesjonalne i rzetelne podejście do każdego uczestnika – wiemy, jak wygląda trening z perspektywy pływaka, i potrafimy skutecznie przekazywać wiedzę oraz technikę."
         />
       </div>
       <div className={styles["trainers__trainers-gallery"]}>

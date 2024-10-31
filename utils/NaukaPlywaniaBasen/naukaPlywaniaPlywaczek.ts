@@ -10,16 +10,15 @@ import {
 } from "@/types/NaukaPlywania/naukaPlywania";
 import { customColors } from "@/types/UI/colors";
 import { GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS } from "../Grupy/grupyPoziomZaawansowania";
-import { NAUKA_PLYWANIA } from "../NaukaPlywania/naukaPlywania";
 
 type naukaPlywaniaBasen = {
-  zRodzicami: {
-    backgroundColor: customColors;
-    about: aboutType;
-    instructors: instructorsRowBoxType;
-    groups: groupsType;
-    priceList: priceListType;
-  };
+  // zRodzicami: {
+  //   backgroundColor: customColors;
+  //   about: aboutType;
+  //   instructors: instructorsRowBoxType;
+  //   groups: groupsType;
+  //   priceList: priceListType;
+  // };
   dzieciMlodziez: {
     backgroundColor: customColors;
     about: aboutType;
@@ -35,32 +34,32 @@ type naukaPlywaniaBasen = {
     priceList: priceListType;
   };
 };
-const CENNIK_Z_RODZICAMI_PLYWACZEK: priceListType = [
-  {
-    stickerH4: {
-      title: "LEKCJE",
-      titleStrip: "GRUPOWE",
-      scale: 1.6,
-      stripTextColor: "basicOrange",
-      stripBgColor: "white",
-      paddingBottom: 0,
-    },
-    oneLesson: {
-      price: "70 zł",
-      time: 30,
-    },
-    tenLessons: {
-      price: "700 zł",
-      time: "10 x 30",
-    },
-    button: {
-      title: "Zapisz się na zajęcia",
-      textColor: "lightBlue",
-      bgColor: "white",
-      href: "/",
-    },
-  },
-];
+// const CENNIK_Z_RODZICAMI_PLYWACZEK: priceListType = [
+//   {
+//     stickerH4: {
+//       title: "LEKCJE",
+//       titleStrip: "GRUPOWE",
+//       scale: 1.6,
+//       stripTextColor: "basicOrange",
+//       stripBgColor: "white",
+//       paddingBottom: 0,
+//     },
+//     oneLesson: {
+//       price: "70 zł",
+//       time: 30,
+//     },
+//     tenLessons: {
+//       price: "700 zł",
+//       time: "10 x 30",
+//     },
+//     button: {
+//       title: "Zapisz się na zajęcia",
+//       textColor: "lightBlue",
+//       bgColor: "white",
+//       href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
+//     },
+//   },
+// ];
 const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: priceListType = [
   {
     stickerH4: {
@@ -83,7 +82,7 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -107,7 +106,7 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -131,7 +130,7 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
 ];
@@ -157,7 +156,7 @@ const CENNIK_DOROSLI_PLYWACZEK: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -181,7 +180,7 @@ const CENNIK_DOROSLI_PLYWACZEK: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -205,83 +204,13 @@ const CENNIK_DOROSLI_PLYWACZEK: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
 ];
 export const NAUKA_PLYWANIA_PLYWACZEK: naukaPlywaniaBasen = {
-  zRodzicami: {
-    backgroundColor: "lightBlue",
-    about: {
-      stickerH2: {
-        title: "NAUKA PŁYWANIA",
-        titleStrip: "Z RODZICAMI",
-        scale: 1.2,
-        stripTextColor: "lightBlue",
-        stripBgColor: "white",
-        paddingBottom: 10,
-      },
-      aboutTextPoppins: {
-        titleColor: "lightBlue",
-        title: NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.title,
-        description:
-          NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.description,
-      },
-      image: {
-        src: "lessonsTypes/zRodzicami.webp",
-        alt: "nauka pływania z rodzicami",
-      },
-      button: {
-        title: "Dowiedz się więcej",
-        href: "/naukaplywania#tips",
-      },
-    },
-    priceList: CENNIK_Z_RODZICAMI_PLYWACZEK,
-    instructors: {
-      bgColor: "lightBlue",
-      instructors: [
-        {
-          instructorName: "WIKTORIA FRYCZEK",
-          scale: 0.7,
-          img1: "instructor-1.png",
-          img2: "instructor-1.png",
-          href: "/",
-        },
-        {
-          instructorName: "WIKTORIA FRYCZ",
-          scale: 0.7,
-          img1: "instructor-1.png",
-          img2: "instructor-1.png",
-          href: "/",
-        },
-        {
-          instructorName: "WIKTORIA FRYCZE",
-          scale: 0.7,
-          img1: "instructor-1.png",
-          img2: "instructor-1.png",
-          href: "/",
-        },
-      ],
-    },
-    groups: {
-      stripH2: {
-        title: "GRUPY",
-        scale: 1.2,
-        stripBgColor: "white",
-        stripTextColor: "darkBlue",
-      },
-      groups: [
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.trzyMiesiace,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.siedemMiesiecy,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.dwanascieMiesiecy,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.dwaLata,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.czteryLata,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.czteryLataBez,
-      ],
-    },
-  },
   dzieciMlodziez: {
-    backgroundColor: "mediumBlue",
+    backgroundColor: "lightBlue",
     about: {
       stickerH2: {
         title: "NAUKA PŁYWANIA",
@@ -292,7 +221,7 @@ export const NAUKA_PLYWANIA_PLYWACZEK: naukaPlywaniaBasen = {
         paddingBottom: 10,
       },
       aboutTextPoppins: {
-        titleColor: "mediumBlue",
+        titleColor: "lightBlue",
         title: "Dzieci od 3 lat i młodzież do 18 lat",
         description:
           "Dzieci uczą się podstaw pływania w formie zabawy. Poprawiają technikę i koordynację, zdobywając kolejne umiejętności, w kraulu oraz grzbiecie. Młodzież uczy się pływać czterema stylami (styl dowolny, grzbietowy, klasyczny, motylkowy) oraz technik nawrotów. Zajęcia pomagają doskonalić technikę, poprawiać wytrzymałość i przygotowują do ewentualnych startów w zawodach pływackich.",
@@ -304,7 +233,7 @@ export const NAUKA_PLYWANIA_PLYWACZEK: naukaPlywaniaBasen = {
     },
     priceList: CENNIK_DZIECI_MLODZIEZ_PLYWACZEK,
     instructors: {
-      bgColor: "mediumBlue",
+      bgColor: "lightBlue",
       instructors: [
         {
           instructorName: "WIKTORIA FRYCZEK",
@@ -346,18 +275,18 @@ export const NAUKA_PLYWANIA_PLYWACZEK: naukaPlywaniaBasen = {
     },
   },
   dorosli: {
-    backgroundColor: "darkBlue",
+    backgroundColor: "mediumBlue",
     about: {
       stickerH2: {
         title: "NAUKA PŁYWANIA",
         titleStrip: "DOROŚLI",
         scale: 1.2,
-        stripTextColor: "darkBlue",
+        stripTextColor: "mediumBlue",
         stripBgColor: "white",
         paddingBottom: 5,
       },
       aboutTextPoppins: {
-        titleColor: "darkBlue",
+        titleColor: "mediumBlue",
         title: "Dorośli",
         description:
           "Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.",
@@ -369,7 +298,7 @@ export const NAUKA_PLYWANIA_PLYWACZEK: naukaPlywaniaBasen = {
     },
     priceList: CENNIK_DOROSLI_PLYWACZEK,
     instructors: {
-      bgColor: "darkBlue",
+      bgColor: "mediumBlue",
       instructors: [
         {
           instructorName: "WIKTORIA FRYCZEK",
@@ -433,7 +362,7 @@ export const BASEN_PLYWACZEK_INFORMATIONS: poolInformationsType = {
       title: "BASEN REKREACYJNY 16 X 5M, GŁĘBOKOŚĆ 0,80-1,20M",
     },
     stand: {
-      exists: true,
+      exists: false,
       title: "TRYBUNY NA BASENIE",
     },
     cloakroomWomen: {

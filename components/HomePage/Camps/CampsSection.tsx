@@ -1,15 +1,12 @@
 "use client";
 import "react";
 import styles from "./campsSection.module.scss";
-import BackgroundText from "@/components/Ui/BackgroundText/BackgroundText";
-import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
-import AboutTextPoppins from "@/components/Ui/AboutTextPoppins/AboutTextPoppins";
 import SummerOffert from "./SummerOffert";
 import WinterOffert from "./WinterOffert";
 const CampsSection: React.FC = () => {
   return (
     <section className={styles.camps}>
-      <div className={styles["camps__about-container"]}>
+      {/* <div className={styles["camps__about-container"]}>
         <BackgroundText title="PRZYGODA LATEM I ZIMĄ" />
         <StickerH2
           title="OBOZY"
@@ -29,7 +26,7 @@ mają szansę odkryć nowe pasje, poznać ciekawe dyscypliny sportowe oraz
 bliżej zapoznać się z lokalną kulturą i przyrodą. Zapewniamy opiekę
 doświadczonych instruktorów, którzy dbają o bezpieczeństwo i dobrą zabawę."
         />
-      </div>
+      </div> */}
       <SummerOffert />
       <WinterOffert />
     </section>

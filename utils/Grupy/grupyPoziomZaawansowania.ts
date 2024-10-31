@@ -2,10 +2,10 @@ import { groupLvlType } from "@/types/Globals/globals";
 
 export const GRUPY_POZIOM_ZAAWANSOWANIA = {
   rybkiDzieci: {
-    title: "Grupa początkująca RYBKI",
-    age: "RYBKI 3-5 LAT",
+    title: "2-4 lata z rodzicami",
+    age: "2-4 LAT",
     description:
-      "Zajęcia z rodzicami mają na celu przystosowanie dziecka do pływania poprzez zabawę i bliski kontakt z rodzicem. Dzięki wspólnym ćwiczeniom w wodzie dziecko stopniowo oswaja się z nowym środowiskiem, buduje zaufanie do wody i rozwija podstawowe umiejętności potrzebne do dalszej nauki pływania. Ciepła atmosfera oraz obecność rodzica sprawiają, że dzieci czują się bezpiecznie i chętnie angażują się w aktywność.",
+      "Dla dzieci 2-4 lata zajęcia skupiają się na samodzielnym utrzymywaniu się na wodzie oraz bardziej świadomych zanurzeniach i wstrzymywaniu oddechu. Zabawki wyławiane spod wody uczą nurkowania i zwiększają pewność siebie.",
     skills: [],
   },
   poczatkujacaDzieci: {
@@ -171,8 +171,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
   {
     rybkiDzieci: {
       stickerH4: {
-        title: "GRUPA",
-        titleStrip: "POCZĄTKUJĄCA",
+        title: "GRUPOWE",
+        titleStrip: "Z RODZICAMI",
         scale: 1.2,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
