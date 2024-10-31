@@ -43,18 +43,18 @@ export const CENNIK_Z_RODZICAMI_BRONOWIANKA: priceListType = [
       paddingBottom: 0,
     },
     oneLesson: {
-      price: "45",
+      price: "70 zł",
       time: 45,
     },
     tenLessons: {
-      price: "45",
+      price: "700 zł",
       time: "10 x 45",
     },
     button: {
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
 ];
@@ -147,7 +147,7 @@ export const BASEN_BRONOWIANKA_INFORMATIONS: poolInformationsType = {
   },
   icons: {
     pool1: {
-      exists: true,
+      exists: false,
       title: "BASEN SPORTOWY 25 X 12,5M, GŁĘBOKOŚĆ 1,35-1,90M",
     },
     pool2: {
@@ -155,7 +155,7 @@ export const BASEN_BRONOWIANKA_INFORMATIONS: poolInformationsType = {
       title: "BASEN REKREACYJNY 12,5 X 7M, GŁĘBOKOŚĆ 0,00-1,20M",
     },
     stand: {
-      exists: true,
+      exists: false,
       title: "TRYBUNY NA BASENIE",
     },
     cloakroomWomen: {

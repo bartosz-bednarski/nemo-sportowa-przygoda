@@ -5,7 +5,6 @@ import StickerH2 from "../../Ui/StickerH2/StickerH2";
 import AboutTextPoppins from "../../Ui/AboutTextPoppins/AboutTextPoppins";
 import BackgroundText from "../../Ui/BackgroundText/BackgroundText";
 import SwimmingOffert from "./SwimmingOffert";
-import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 const SwimmingSection: React.FC = () => {
   return (
     <section className={styles.swimming}>
@@ -29,7 +28,6 @@ bezpieczeństwo i indywidualne postępy. Zapisz się już dziś i odkryj radoś�
         />
       </div>
       <SwimmingOffert />
-      <Scrap2 color="basicOrange" position="bottom" />
     </section>
   );
 };

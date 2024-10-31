@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import styles from "./lessonTypeWrapBox.module.scss";
-import Image from "next/image";
 import StickerH4 from "@/components/Ui/StickerH4/StickerH4";
 import { COLORS } from "@/utils/UI/colors";
 import AboutTextPoppins from "@/components/Ui/AboutTextPoppins/AboutTextPoppins";
@@ -10,7 +9,6 @@ import { lessonTypeWrapBoxType } from "@/types/Globals/globals";
 
 const LessonTypeWrapBox: React.FC<lessonTypeWrapBoxType> = ({
   bgColor,
-  bgImage,
   lessonTypes,
 }) => {
   return (
@@ -19,13 +17,13 @@ const LessonTypeWrapBox: React.FC<lessonTypeWrapBoxType> = ({
         className={styles["lessonType__opacity"]}
         style={{ background: COLORS[bgColor] }}
       ></div>
-      <Image
+      {/* <Image
         src={`/assets/swimming/lessonsTypes/${bgImage}`}
         fill={true}
         alt="lekcja"
         objectFit="cover"
         objectPosition="top"
-      />
+      /> */}
       {lessonTypes.map((lessonType, index) => (
         <div className={styles["lessonType__content"]} key={index}>
           <StickerH4

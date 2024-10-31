@@ -16,7 +16,7 @@ const SwimmingOffert: React.FC = () => {
         alt="nauka pływania"
         style={{ objectFit: "cover", objectPosition: "top" }}
       />
-      <span className={styles["swimming__offert__opacity"]}></span>
+      {/* <span className={styles["swimming__offert__opacity"]}></span> */}
       <div className={styles["swimming__offert__content"]}>
         <div className={styles["swimming__offert__content__categories"]}>
           <TitleStripDescription

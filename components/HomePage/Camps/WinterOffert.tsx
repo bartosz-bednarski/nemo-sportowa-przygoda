@@ -59,7 +59,7 @@ niezapomniane wrażenia i mnóstwo frajdy."
           href="/ofertazimowa"
         />
       </div>
-      <Scrap2 color="basicOrange" position="bottom" />
+      <Scrap2 color="darkBlue" position="bottom" />
     </div>
   );
 };

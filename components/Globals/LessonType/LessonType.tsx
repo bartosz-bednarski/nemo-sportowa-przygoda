@@ -5,7 +5,7 @@ import Image from "next/image";
 import StickerH4 from "@/components/Ui/StickerH4/StickerH4";
 import { COLORS } from "@/utils/UI/colors";
 import AboutTextPoppins from "@/components/Ui/AboutTextPoppins/AboutTextPoppins";
-import Scrap2 from "@/components/Ui/Scrap/Scrap2";
+// import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 import { lessonTypeComponent } from "@/types/Globals/globals";
 
 const LessonType: React.FC<lessonTypeComponent> = ({ bgColor, lessonType }) => {
@@ -20,7 +20,7 @@ const LessonType: React.FC<lessonTypeComponent> = ({ bgColor, lessonType }) => {
         fill={true}
         alt="lekcja"
         objectFit="cover"
-        objectPosition="top"
+        objectPosition="center"
       />
       <div className={styles["lessonType__content"]}>
         <StickerH4
@@ -37,7 +37,7 @@ const LessonType: React.FC<lessonTypeComponent> = ({ bgColor, lessonType }) => {
           description={lessonType.aboutTextPoppins.description}
         />
       </div>
-      <Scrap2 position="bottom" color={bgColor} />
+      {/* <Scrap2 position="bottom" color={bgColor} /> */}
     </div>
   );
 };

@@ -4,9 +4,10 @@
   position: relative;
   flex-direction: column;
   box-sizing: border-box;
-  background-color: $basicOrange;
+  // background-color: $basicOrange;
   height: auto;
   width: 100%;
+  margin-top: -6rem;
   &__about-container {
     position: relative;
     box-sizing: border-box;

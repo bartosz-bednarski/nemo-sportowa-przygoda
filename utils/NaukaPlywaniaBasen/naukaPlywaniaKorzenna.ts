@@ -50,7 +50,7 @@ const CENNIK_DZIECI_MLODZIEZ_KORZENNA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -74,7 +74,7 @@ const CENNIK_DZIECI_MLODZIEZ_KORZENNA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -98,7 +98,7 @@ const CENNIK_DZIECI_MLODZIEZ_KORZENNA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -122,7 +122,7 @@ const CENNIK_DZIECI_MLODZIEZ_KORZENNA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
 ];
@@ -148,7 +148,7 @@ const CENNIK_DOROSLI_KORZENNA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -172,7 +172,7 @@ const CENNIK_DOROSLI_KORZENNA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -196,7 +196,7 @@ const CENNIK_DOROSLI_KORZENNA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
   {
@@ -220,7 +220,7 @@ const CENNIK_DOROSLI_KORZENNA: priceListType = [
       title: "Zapisz się na zajęcia",
       textColor: "lightBlue",
       bgColor: "white",
-      href: "/",
+      href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
     },
   },
 ];
@@ -377,7 +377,7 @@ export const BASEN_KORZENNA_INFORMATIONS: poolInformationsType = {
       title: "",
     },
     stand: {
-      exists: true,
+      exists: false,
       title: "TRYBUNY NA BASENIE",
     },
     cloakroomWomen: {
@@ -389,7 +389,7 @@ export const BASEN_KORZENNA_INFORMATIONS: poolInformationsType = {
       title: "SZATNIA MĘSKA",
     },
     cloakroomFamily: {
-      exists: true,
+      exists: false,
       title: "SZATNIA RODZINNA",
     },
     parking: {

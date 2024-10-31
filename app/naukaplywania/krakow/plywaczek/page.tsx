@@ -61,14 +61,7 @@ const NaukaPlywaniaPlywaczek = () => {
           },
         }}
       />
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_PLYWACZEK.zRodzicami.about}
-        backgroundColor={NAUKA_PLYWANIA_PLYWACZEK.zRodzicami.backgroundColor}
-        instructors={NAUKA_PLYWANIA_PLYWACZEK.zRodzicami.instructors}
-        groups={NAUKA_PLYWANIA_PLYWACZEK.zRodzicami.groups}
-        priceList={NAUKA_PLYWANIA_PLYWACZEK.zRodzicami.priceList}
-      />
-      <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
+
       <NaukaPlywaniaBasen
         about={NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.about}
         backgroundColor={
@@ -76,17 +69,17 @@ const NaukaPlywaniaPlywaczek = () => {
         }
         instructors={NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.instructors}
         groups={NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.groups}
-        priceList={NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.priceList}
+        priceList={[]}
       />
-      <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
+      <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
       <NaukaPlywaniaBasen
         about={NAUKA_PLYWANIA_PLYWACZEK.dorosli.about}
         backgroundColor={NAUKA_PLYWANIA_PLYWACZEK.dorosli.backgroundColor}
         instructors={NAUKA_PLYWANIA_PLYWACZEK.dorosli.instructors}
         groups={NAUKA_PLYWANIA_PLYWACZEK.dorosli.groups}
-        priceList={NAUKA_PLYWANIA_PLYWACZEK.dorosli.priceList}
+        priceList={[]}
       />
-      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
+      <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <LessonTypeWrapBox
         bgColor="darkBlue"
         bgImage="lessons-types-bg.webp"
