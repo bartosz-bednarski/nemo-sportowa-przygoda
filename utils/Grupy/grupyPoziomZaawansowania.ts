@@ -6,7 +6,14 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA = {
     age: "2-4 LAT",
     description:
       "Dla dzieci 2-4 lata zajęcia skupiają się na samodzielnym utrzymywaniu się na wodzie oraz bardziej świadomych zanurzeniach i wstrzymywaniu oddechu. Zabawki wyławiane spod wody uczą nurkowania i zwiększają pewność siebie.",
-    skills: [],
+    skills: [
+      "Oswajanie się z wodą",
+      "Nauka poruszania się w wodzie z pomocą instruktora lub na makaronie do pływania.",
+      "Ćwiczenia oddychania",
+      'Pływanie z pomocą, np. na plecach z deską, rękawkami lub "makaronami".',
+      "Skoki do wody z niskiego brzegu basenu z asekuracją.",
+      "Pierwsze próby leżenia na wodzie z asekuracją.",
+    ],
   },
   poczatkujacaDzieci: {
     title: "Grupa początkująca RACZKI",

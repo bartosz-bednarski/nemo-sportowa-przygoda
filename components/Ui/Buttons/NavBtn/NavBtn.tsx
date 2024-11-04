@@ -12,7 +12,10 @@ const NavBtn: React.FC<{
     <button
       className={styles.navBtn}
       style={{ background: COLORS[bgColor] }}
-      onClick={onClick}
+      onClick={() => {
+        console.log("button check!!!");
+        onClick();
+      }}
     >
       {type === "menu" ? (
         <svg
