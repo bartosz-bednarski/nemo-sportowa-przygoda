@@ -1,144 +1,144 @@
 {
   "pages": {
     "/_not-found/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
       "static/chunks/app/_not-found/page-01df9a9406845dad.js"
     ],
     "/layout": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
       "static/css/c88c6c1c6681b096.css",
       "static/css/8f87266d1294c9cf.css",
-      "static/chunks/app/layout-a1a250b8d5ca8e45.js"
+      "static/chunks/app/layout-9ec6aee8fa1ce367.js"
     ],
     "/loading": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
       "static/css/5db4a4dca1fa9fd0.css",
       "static/chunks/app/loading-30ed503a2f004b2a.js"
     ],
-    "/galeria/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
-      "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
-      "static/chunks/app/galeria/page-47d62ff97f207a1f.js"
-    ],
-    "/naszzespol/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
-      "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
-      "static/css/f5506fa2eee84b70.css",
-      "static/chunks/app/naszzespol/page-00a0829f17eb49d3.js"
-    ],
-    "/naukaplywania/gorlice/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
-      "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
-      "static/css/e6b31378fed88626.css",
-      "static/css/f5506fa2eee84b70.css",
-      "static/css/c88c6c1c6681b096.css",
-      "static/chunks/app/naukaplywania/gorlice/page-39236c20217dd8aa.js"
-    ],
     "/naukaplywania/korzenna/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
+      "static/css/9c6d6e569c109368.css",
       "static/css/e6b31378fed88626.css",
       "static/css/f5506fa2eee84b70.css",
       "static/css/c88c6c1c6681b096.css",
       "static/chunks/app/naukaplywania/korzenna/page-93c7bb2272779bc9.js"
     ],
-    "/naukaplywania/krakow/bronowianka/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+    "/galeria/page": [
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
+      "static/css/9c6d6e569c109368.css",
+      "static/chunks/app/galeria/page-47d62ff97f207a1f.js"
+    ],
+    "/naukaplywania/gorlice/page": [
+      "static/chunks/webpack-801b618c5497a5a3.js",
+      "static/chunks/main-app-77f94a2904328c9c.js",
+      "static/css/9c6d6e569c109368.css",
+      "static/css/e6b31378fed88626.css",
+      "static/css/f5506fa2eee84b70.css",
+      "static/css/c88c6c1c6681b096.css",
+      "static/chunks/app/naukaplywania/gorlice/page-39236c20217dd8aa.js"
+    ],
+    "/naukaplywania/krakow/bronowianka/page": [
+      "static/chunks/webpack-801b618c5497a5a3.js",
+      "static/chunks/main-app-77f94a2904328c9c.js",
+      "static/css/9c6d6e569c109368.css",
       "static/css/e6b31378fed88626.css",
       "static/css/f5506fa2eee84b70.css",
       "static/css/c88c6c1c6681b096.css",
       "static/chunks/app/naukaplywania/krakow/bronowianka/page-e77b09d4daeb5417.js"
     ],
     "/naukaplywania/krakow/eisenberga/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
+      "static/css/9c6d6e569c109368.css",
       "static/css/e6b31378fed88626.css",
       "static/css/f5506fa2eee84b70.css",
       "static/css/c88c6c1c6681b096.css",
       "static/chunks/app/naukaplywania/krakow/eisenberga/page-9e755564ee01b739.js"
     ],
-    "/naukaplywania/krakow/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+    "/naszzespol/page": [
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
+      "static/css/9c6d6e569c109368.css",
+      "static/css/f5506fa2eee84b70.css",
+      "static/chunks/app/naszzespol/page-00a0829f17eb49d3.js"
+    ],
+    "/naukaplywania/krakow/page": [
+      "static/chunks/webpack-801b618c5497a5a3.js",
+      "static/chunks/main-app-77f94a2904328c9c.js",
+      "static/css/9c6d6e569c109368.css",
       "static/css/f5506fa2eee84b70.css",
       "static/chunks/app/naukaplywania/krakow/page-99118caa6a96778a.js"
     ],
-    "/naukaplywania/krakow/plywaczek/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
-      "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
-      "static/css/e6b31378fed88626.css",
-      "static/css/f5506fa2eee84b70.css",
-      "static/css/c88c6c1c6681b096.css",
-      "static/chunks/app/naukaplywania/krakow/plywaczek/page-a6b295a35d42ea73.js"
-    ],
     "/naukaplywania/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
+      "static/css/9c6d6e569c109368.css",
       "static/css/f5506fa2eee84b70.css",
       "static/css/e6b31378fed88626.css",
       "static/css/c88c6c1c6681b096.css",
       "static/chunks/app/naukaplywania/page-59b15c00f331c147.js"
     ],
-    "/ofertaletnia/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+    "/naukaplywania/krakow/plywaczek/page": [
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
+      "static/css/9c6d6e569c109368.css",
+      "static/css/e6b31378fed88626.css",
+      "static/css/f5506fa2eee84b70.css",
+      "static/css/c88c6c1c6681b096.css",
+      "static/chunks/app/naukaplywania/krakow/plywaczek/page-a6b295a35d42ea73.js"
+    ],
+    "/naukaplywania/poradnikbasenowy/page": [
+      "static/chunks/webpack-801b618c5497a5a3.js",
+      "static/chunks/main-app-77f94a2904328c9c.js",
+      "static/css/9c6d6e569c109368.css",
+      "static/css/c88c6c1c6681b096.css",
+      "static/chunks/app/naukaplywania/poradnikbasenowy/page-04444d03816eb729.js"
+    ],
+    "/ofertaletnia/page": [
+      "static/chunks/webpack-801b618c5497a5a3.js",
+      "static/chunks/main-app-77f94a2904328c9c.js",
+      "static/css/9c6d6e569c109368.css",
       "static/css/f5506fa2eee84b70.css",
       "static/css/e6b31378fed88626.css",
       "static/css/ca861ccd6972eaee.css",
       "static/chunks/app/ofertaletnia/page-12d535c7c7317633.js"
     ],
-    "/naukaplywania/poradnikbasenowy/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+    "/page": [
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
+      "static/css/9c6d6e569c109368.css",
+      "static/css/f5506fa2eee84b70.css",
       "static/css/c88c6c1c6681b096.css",
-      "static/chunks/app/naukaplywania/poradnikbasenowy/page-04444d03816eb729.js"
+      "static/css/e6b31378fed88626.css",
+      "static/css/48e6ae5c1239a571.css",
+      "static/chunks/app/page-a636384cc9680974.js"
     ],
     "/regulamin/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
+      "static/css/9c6d6e569c109368.css",
       "static/css/f5506fa2eee84b70.css",
       "static/chunks/app/regulamin/page-2031e8886a1db97f.js"
     ],
     "/ofertazimowa/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
+      "static/css/9c6d6e569c109368.css",
       "static/css/f5506fa2eee84b70.css",
       "static/css/e6b31378fed88626.css",
       "static/css/ca861ccd6972eaee.css",
       "static/chunks/app/ofertazimowa/page-402b9d2bde5bfe3a.js"
     ],
     "/galeria/[galeriaid]/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
+      "static/chunks/webpack-801b618c5497a5a3.js",
       "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
+      "static/css/9c6d6e569c109368.css",
       "static/chunks/app/galeria/[galeriaid]/page-31f8baed5c83c7cf.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-e622cf888e89d8de.js",
-      "static/chunks/main-app-77f94a2904328c9c.js",
-      "static/css/4aa3a98b8085b047.css",
-      "static/css/f5506fa2eee84b70.css",
-      "static/css/c88c6c1c6681b096.css",
-      "static/css/e6b31378fed88626.css",
-      "static/css/48e6ae5c1239a571.css",
-      "static/chunks/app/page-a636384cc9680974.js"
     ]
   }
 }
