@@ -1,18 +1,6 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/naukaplywania/korzenna/page": "app/naukaplywania/korzenna/page.js",
-  "/galeria/page": "app/galeria/page.js",
-  "/naukaplywania/gorlice/page": "app/naukaplywania/gorlice/page.js",
-  "/naukaplywania/krakow/bronowianka/page": "app/naukaplywania/krakow/bronowianka/page.js",
   "/naukaplywania/krakow/eisenberga/page": "app/naukaplywania/krakow/eisenberga/page.js",
-  "/naszzespol/page": "app/naszzespol/page.js",
-  "/naukaplywania/krakow/page": "app/naukaplywania/krakow/page.js",
-  "/naukaplywania/page": "app/naukaplywania/page.js",
-  "/naukaplywania/krakow/plywaczek/page": "app/naukaplywania/krakow/plywaczek/page.js",
-  "/naukaplywania/poradnikbasenowy/page": "app/naukaplywania/poradnikbasenowy/page.js",
-  "/ofertaletnia/page": "app/ofertaletnia/page.js",
   "/page": "app/page.js",
-  "/regulamin/page": "app/regulamin/page.js",
-  "/ofertazimowa/page": "app/ofertazimowa/page.js",
-  "/galeria/[galeriaid]/page": "app/galeria/[galeriaid]/page.js"
+  "/naukaplywania/page": "app/naukaplywania/page.js",
+  "/ofertaletnia/page": "app/ofertaletnia/page.js"
 }

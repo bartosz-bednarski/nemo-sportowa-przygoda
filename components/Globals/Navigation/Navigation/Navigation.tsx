@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./navigation.module.scss";
 import XBtn from "@/components/Ui/Buttons/XBtn/XBtn";
 import Link from "next/link";
@@ -14,8 +14,19 @@ const Navigation: React.FC<{
   if (firstLoad === true) {
     setTimeout(() => {
       setFirstLoad();
-    }, 500);
+    }, 100);
   }
+  const [height, setHeight] = useState("0vh");
+  useEffect(() => {
+    if (showNavigation) {
+      setHeight("100vh");
+    } else if (!showNavigation) {
+      setTimeout(() => {
+        setHeight("0vh");
+      }, 1000);
+    }
+  }, [showNavigation, height]);
+
   return (
     <div
       className={`${styles.navigation} ${
@@ -23,6 +34,7 @@ const Navigation: React.FC<{
       }`}
       style={{
         opacity: firstLoad ? "0" : "1",
+        height: height,
       }}
     >
       <div

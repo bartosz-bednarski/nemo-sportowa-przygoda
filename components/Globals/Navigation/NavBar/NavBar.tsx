@@ -11,7 +11,10 @@ const NavBar: React.FC = () => {
   const [firstLoad, setFirstLoad] = useState(true);
   return (
     <>
-      <nav className={styles.navBar}>
+      <nav
+        className={styles.navBar}
+        style={{ zIndex: showNavigation ? 10 : 11 }}
+      >
         <div className={styles["navBar__logo"]}>
           {/* <Image
             src="/assets/logo/logo.png"
