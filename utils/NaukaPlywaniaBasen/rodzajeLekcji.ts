@@ -55,7 +55,7 @@ export const RODZAJE_LEKCJI: rodzajeLekcji = {
       title: "",
       titleColor: "mediumBlue",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Nunc vestibulum orci tincidunt sed tristique nullam. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu. Sed placerat turpis habitant nec tristique rhoncus odio quis nisl. Id a pharetra euismod hendrerit. Erat tellus pretium consequat eu eu eu.",
+        "Nasze zajęcia na basenie dla trzyosobowych grup to doskonała okazja do nauki i doskonalenia pływania w kameralnej atmosferze. Dzięki małej liczbie uczestników, każdy otrzymuje indywidualne wsparcie instruktora, który dopasowuje program do poziomu grupy. To idealne rozwiązanie dla osób, które chcą uczyć się w przyjaznym, bezpiecznym środowisku i w pełni korzystać z czasu spędzonego na basenie.",
     },
   },
   grupowe: {

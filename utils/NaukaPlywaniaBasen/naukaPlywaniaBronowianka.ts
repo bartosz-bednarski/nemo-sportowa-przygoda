@@ -1,4 +1,8 @@
-import { instructorsRowBoxType, priceListType } from "@/types/Globals/globals";
+import {
+  instructorsRowBoxType,
+  poolTutorialType,
+  priceListType,
+} from "@/types/Globals/globals";
 import {
   aboutType,
   groupsType,
@@ -175,4 +179,17 @@ export const BASEN_BRONOWIANKA_INFORMATIONS: poolInformationsType = {
       title: "PARKING PRZED OBIEKTEM",
     },
   },
+};
+export const BASEN_BRONOWIANKA_TUTORIAL: poolTutorialType = {
+  header: false,
+  color: "darkBlue",
+  firstRule:
+    "Odzież wierzchnią oraz buty zostaw w wyznaczonym miejscu w holu - przy recepcji w hotelu.",
+  rules: [
+    "W kasie biletowej kup bilet na lekcję pływania „Nemo Sportowa Przygoda” dla swojego dziecka.",
+    "Rodzic może pomóc dziecku przebrać się w szatni. Dziecko powinno być ubrane w strój kąpielowy, czepek, okulary i klapki.",
+    "Po przebraniu, przyprowadzamy dziecko do miejsca przejścia na basen. ",
+    "W wyznaczonym miejscu (przejście między szatnią a basenem) instruktor odbiera dziecko i prowadzi je na lekcję pływania.",
+    "Po zakończonej lekcji, trwającej 45 minut, instruktor przyprowadza dzieci z powrotem w to samo miejsce, gdzie rodzic może odebrać dziecko.",
+  ],
 };

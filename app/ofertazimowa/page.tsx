@@ -6,6 +6,12 @@ import SignInCamps from "@/components/Globals/SignInCamps/SignInCamps";
 import CollabWinter from "@/components/Winter/CollabWinter";
 import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Oferta ZIMOWA",
+};
+
 const OfertaZimowaPage = () => {
   return (
     <main className={styles.main}>
@@ -77,7 +83,7 @@ zimowej scenerii!
       <SignInCamps
         theme="winter"
         waiting={true}
-        waitingTitle="STARTUJEMY JUŻ WKRÓTCE"
+        waitingTitle="ZAPISY PRZEZ TELEFON"
       />
       <ScrapWinter bgColor="white" />
       <AboutCamps
@@ -106,7 +112,7 @@ sposób na aktywne ferie!"
       <SignInCamps
         theme="winter"
         waiting={true}
-        waitingTitle="STARTUJEMY JUŻ WKRÓTCE"
+        waitingTitle="ZAPISY PRZEZ TELEFON"
       />
       <CollabWinter />
       <AboutCamps
@@ -127,6 +133,11 @@ zimowej scenerii!
 "
         theme="winter"
         imgRight="winter-bg-3.webp"
+      />
+      <SignInCamps
+        theme="winter"
+        waiting={true}
+        waitingTitle="STARTUJEMY JUŻ WKRÓTCE!"
       />
       <GalleryLink
         href="/galeria"

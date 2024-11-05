@@ -8,12 +8,18 @@ import PoolNecessaryItems from "@/components/Globals/PoolNecessaryItems/PoolNece
 import PoolTutorial from "@/components/Globals/PoolTutorial/PoolTutorial";
 import PoolInformations from "@/components/Globals/PoolInformations/PoolInformations";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
-
 import {
   BASEN_BRONOWIANKA_INFORMATIONS,
+  BASEN_BRONOWIANKA_TUTORIAL,
   NAUKA_PLYWANIA_BRONOWIANKA,
 } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaBronowianka";
-import { BASEN_KORZENNA_TUTORIAL } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaKorzenna";
+import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nauka pływania Kraków BRONOWIANKA",
+};
+
 const NaukaPlywaniaBronowianka = () => {
   return (
     <div className={styles.main}>
@@ -74,11 +80,16 @@ const NaukaPlywaniaBronowianka = () => {
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      {/* TU TRZEBA WSTAWIĆ PORADNIK DO BRONOWIANKI TEN JEST Z KORZENNEJ */}
-      <PoolTutorial poolTutorial={BASEN_KORZENNA_TUTORIAL} />
+      <PoolTutorial poolTutorial={BASEN_BRONOWIANKA_TUTORIAL} />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_BRONOWIANKA_INFORMATIONS} />
       <Scrap2 position="bottom" color="darkBlue" />
+      <GalleryLink
+        href="/galeria"
+        img="/gallery/galleryLinks/swimming.webp"
+        bgColor="darkBlue"
+        textColor="white"
+      />
     </div>
   );
 };

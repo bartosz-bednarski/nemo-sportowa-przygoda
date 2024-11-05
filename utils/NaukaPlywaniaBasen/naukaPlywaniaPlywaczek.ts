@@ -388,14 +388,12 @@ export const BASEN_PLYWACZEK_TUTORIAL: poolTutorialType = {
   header: false,
   color: "darkBlue",
   firstRule:
-    "Zmień obuwie na odpowiednie do poruszania się po strefie basenowej.",
+    "Odzież wierzchnią oraz buty zostaw w wyznaczonym miejscu w holu - przy recepcji w hotelu.",
   rules: [
-    'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
-    "Kup wejściówkę dla dziecka.",
-    "Udaj się z dzieckiem do szatni i przygotuj je do zajęć.",
-    "Upewnij się, że dziecko ma na sobie strój kąpielowy, czepek, okulary oraz klapki.",
-    "Po przebraniu przejdź z dzieckiem do głównego wejścia przy przejściu między szatnią a basenem.",
-    "W tym miejscu instruktorzy przejmują dziecko i prowadzą je na 45-minutową lekcję pływania.",
-    "Po zakończeniu zajęć rodzice proszeni są o przyjście w to samo miejsce, abyodebrać dziecko.",
+    "W kasie biletowej kup bilet na lekcję pływania „Nemo Sportowa Przygoda” dla swojego dziecka.",
+    "Rodzic może pomóc dziecku przebrać się w szatni. Dziecko powinno być ubrane w strój kąpielowy, czepek, okulary i klapki.",
+    "Po przebraniu, przyprowadzamy dziecko do miejsca przejścia na basen. ",
+    "W wyznaczonym miejscu (przejście między szatnią a basenem) instruktor odbiera dziecko i prowadzi je na lekcję pływania.",
+    "Po zakończonej lekcji, trwającej 45 minut, instruktor przyprowadza dzieci z powrotem w to samo miejsce, gdzie rodzic może odebrać dziecko.",
   ],
 };

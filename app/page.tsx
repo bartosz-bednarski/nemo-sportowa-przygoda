@@ -2,11 +2,13 @@ import VideosSection from "@/components/Globals/VideosSection";
 import styles from "./page.module.scss";
 import SwimmingSection from "@/components/HomePage/Swimming/SwimmingSection";
 import CampsSection from "@/components/HomePage/Camps/CampsSection";
+import SignInPopupSwimming from "@/components/Ui/SignInPopup/SignInPopupSwimming";
 // import TrainersSection from "@/components/HomePage/Trainers/TrainersSection";
 // import colors from "../styles/fonts.module.scss";
 export default function Home() {
   return (
     <main className={styles.main}>
+      <SignInPopupSwimming />
       <VideosSection
         oneSticker={false}
         scrapColor="mediumBlue"

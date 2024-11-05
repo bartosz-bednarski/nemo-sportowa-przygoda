@@ -1,12 +1,12 @@
 import styles from "../page.module.scss";
-import VideosSection from "@/components/Globals/VideosSection";
-import InstructorsList from "@/components/NaszZespol/InstructorsList/InstructorsList";
-import Scrap2 from "@/components/Ui/Scrap/Scrap2";
+// import VideosSection from "@/components/Globals/VideosSection";
+// import InstructorsList from "@/components/NaszZespol/InstructorsList/InstructorsList";
+// import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 
 const NaszZespolPage = () => {
   return (
     <main className={styles.main}>
-      <VideosSection
+      {/* <VideosSection
         oneSticker={true}
         scrapColor="basicOrange"
         oneStickerContent={{
@@ -52,7 +52,7 @@ const NaszZespolPage = () => {
         }}
       />
       <InstructorsList />
-      <Scrap2 position="bottom" color="darkBlue" />
+      <Scrap2 position="bottom" color="darkBlue" /> */}
     </main>
   );
 };
