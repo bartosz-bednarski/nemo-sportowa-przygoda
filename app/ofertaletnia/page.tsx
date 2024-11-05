@@ -6,6 +6,12 @@ import { POLKOLONIE_LATO_COVERS } from "@/utils/Summer/Polkolonie";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 import CollabSummer from "@/components/Summer/CollabSummer";
 import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Oferta LETNIA",
+};
+
 const OfertaLetniaPage = () => {
   return (
     <main className={styles.main}>

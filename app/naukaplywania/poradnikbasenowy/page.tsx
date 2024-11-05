@@ -9,6 +9,11 @@ import PointSection5 from "@/components/PoradnikBasenowy/PointsSections/PointSec
 import PointSection6 from "@/components/PoradnikBasenowy/PointsSections/PointSection6";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 import PointSection3 from "@/components/PoradnikBasenowy/PointsSections/PointSection3";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Poradnik basenowy",
+};
 
 const PoradnikBasenowyPage = () => {
   return (

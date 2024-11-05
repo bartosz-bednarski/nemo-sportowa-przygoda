@@ -2,6 +2,12 @@ import Image from "next/image";
 import styles from "../page.module.scss";
 import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Regulamin",
+};
+
 const RegulaminPage = () => {
   return (
     <div className={styles["statues-row"]}>

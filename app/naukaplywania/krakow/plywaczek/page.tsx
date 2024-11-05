@@ -13,6 +13,13 @@ import {
   BASEN_PLYWACZEK_TUTORIAL,
   NAUKA_PLYWANIA_PLYWACZEK,
 } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaPlywaczek";
+import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nauka pływania Kraków PŁYWACZEK",
+};
+
 const NaukaPlywaniaPlywaczek = () => {
   return (
     <div className={styles.main}>
@@ -89,10 +96,6 @@ const NaukaPlywaniaPlywaczek = () => {
           RODZAJE_LEKCJI.dwuosobowe,
         ]}
       />
-      {/* <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.grupowe} />
-      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.indywidualne} />
-      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.dwuosobowe} />
-      <LessonType bgColor="darkBlue" lessonType={RODZAJE_LEKCJI.trzyosobowe} /> */}
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
@@ -100,6 +103,12 @@ const NaukaPlywaniaPlywaczek = () => {
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_PLYWACZEK_INFORMATIONS} />
       <Scrap2 position="bottom" color="darkBlue" />
+      <GalleryLink
+        href="/galeria"
+        img="/gallery/galleryLinks/swimming.webp"
+        bgColor="darkBlue"
+        textColor="white"
+      />
     </div>
   );
 };

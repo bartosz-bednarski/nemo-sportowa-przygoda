@@ -1,7 +1,14 @@
+import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
 import styles from "../../page.module.scss";
 import VideosSection from "@/components/Globals/VideosSection";
 import NaukaPlywaniaMiasto from "@/components/NaukaPlywaniaMiasto/NaukaPlywaniaMiasto";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nauka pływania KRAKÓW",
+};
+
 const NaukaPlywaniaKrakow = () => {
   return (
     <div className={styles.main} style={{ paddingBottom: "0rem" }}>
@@ -51,6 +58,12 @@ const NaukaPlywaniaKrakow = () => {
         }}
       />
       <NaukaPlywaniaMiasto />
+      <GalleryLink
+        href="/galeria"
+        img="/gallery/galleryLinks/swimming.webp"
+        bgColor="lightBlue"
+        textColor="white"
+      />
       <Scrap2 position="bottom" color="darkBlue" />
     </div>
   );

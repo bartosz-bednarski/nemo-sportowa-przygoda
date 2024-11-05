@@ -3,6 +3,13 @@ import styles from "../page.module.scss";
 import VideosSection from "@/components/Globals/VideosSection";
 import { NAUKA_PLYWANIA } from "@/utils/NaukaPlywania/naukaPlywania";
 import Bubbles from "@/components/Ui/Bubbles/Bubbles";
+import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nauka pływania",
+};
+
 const NaukaPlywaniaPage = () => {
   return (
     <main className={styles.main}>
@@ -62,6 +69,12 @@ const NaukaPlywaniaPage = () => {
         pools={NAUKA_PLYWANIA.dorosli.pools}
         backgroundColor={NAUKA_PLYWANIA.dorosli.backgroundColor}
         groups={NAUKA_PLYWANIA.dorosli.groups}
+      />
+      <GalleryLink
+        href="/galeria"
+        img="/gallery/galleryLinks/swimming.webp"
+        bgColor="darkBlue"
+        textColor="white"
       />
     </main>
   );

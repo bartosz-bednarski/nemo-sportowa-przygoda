@@ -13,6 +13,13 @@ import Bubbles from "@/components/Ui/Bubbles/Bubbles";
 import PoolTutorial from "@/components/Globals/PoolTutorial/PoolTutorial";
 import PoolInformations from "@/components/Globals/PoolInformations/PoolInformations";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
+import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nauka pływania GORLICE",
+};
+
 const NaukaPlywaniaGorlice = () => {
   return (
     <div className={styles.main}>
@@ -76,6 +83,12 @@ const NaukaPlywaniaGorlice = () => {
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_GORLICE_INFORMATIONS} />
       <Scrap2 position="bottom" color="darkBlue" />
+      <GalleryLink
+        href="/galeria"
+        img="/gallery/galleryLinks/swimming.webp"
+        bgColor="darkBlue"
+        textColor="white"
+      />
     </div>
   );
 };

@@ -5,10 +5,12 @@ import NavBtn from "@/components/Ui/Buttons/NavBtn/NavBtn";
 import Navigation from "../Navigation/Navigation";
 import LogoMainWhite from "../../Logo/LogoMainWhite";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const NavBar: React.FC = () => {
   const [showNavigation, setShowNavigation] = useState(false);
   const [firstLoad, setFirstLoad] = useState(true);
+  const router = useRouter();
   return (
     <>
       <nav
@@ -28,7 +30,12 @@ const NavBar: React.FC = () => {
         </div>
         <div className={styles["navBar__btns"]}>
           <NavBtn type="menu" onClick={() => setShowNavigation(true)} />
-          <NavBtn type="customer-panel" onClick={() => {}} />
+          <NavBtn
+            type="customer-panel"
+            onClick={() => {
+              router.push("https://app.activenow.io/users/sign_in");
+            }}
+          />
         </div>
       </nav>
       <Navigation

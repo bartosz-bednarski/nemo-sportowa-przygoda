@@ -172,7 +172,7 @@ const Navigation: React.FC<{
             Skontaktuj się z nami
           </span>
           <span className={styles["navigation__bottom-box__20__contact"]}>
-            +48 505 189 956
+            +48 519 625 894
           </span>
           <span className={styles["navigation__bottom-box__20__contact"]}>
             szkolaplywanianemo1@gmail.com
@@ -196,7 +196,7 @@ const Navigation: React.FC<{
               </svg>
             </Link>
 
-            <Link href="https://www.instagram.com/szkola.plywania.nemo?igsh=cDVwbGtsZTJuazVw">
+            <Link href="https://www.instagram.com/nemo_sportowa_przygoda_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
