@@ -1,0 +1,346 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./app/page.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page_main__ux7yf {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.page_statues-row__ENsIK {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: black;
+}
+.page_statues-row__row-item__mkAqG {
+  position: relative;
+  width: 32.5%;
+}
+.page_statues-row__row-item__mkAqG:hover {
+  cursor: pointer;
+}
+.page_statues-row__row-item__mkAqG:hover .page_statues-row__row-item__sticker-box__ZTUhI {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.page_statues-row__row-item__sticker-box__ZTUhI {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page_statues-row__row-item__mkAqG img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1400px) {
+  .page_statues-row__ENsIK {
+    flex-direction: column;
+  }
+  .page_statues-row__row-item__mkAqG {
+    height: 32.5%;
+    width: 100%;
+  }
+  .page_statues-row__row-item__sticker-box__ZTUhI {
+    box-sizing: border-box;
+    padding: 5% 20%;
+    justify-content: flex-start;
+  }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Gallery/gallery.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Inter";
+  src: url(/_next/static/media/Inter-VariableFont_opsz,wght.cc27cf3f.ttf) format("truetype");
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Inter-Italic";
+  src: url(/_next/static/media/Inter-Italic-VariableFont_opsz,wght.dd830f3b.ttf) format("truetype");
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-100";
+  src: url(/_next/static/media/Poppins-Thin.605324f7.ttf);
+  font-weight: 100; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-200";
+  src: url(/_next/static/media/Poppins-ExtraLight.9102fb84.ttf);
+  font-weight: 200; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-300";
+  src: url(/_next/static/media/Poppins-Light.8b20023e.ttf);
+  font-weight: 300; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-400";
+  src: url(/_next/static/media/Poppins-Regular.4b4ebe20.ttf);
+  font-weight: 400; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-500";
+  src: url(/_next/static/media/Poppins-Medium.a52d0bf0.ttf);
+  font-weight: 500; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-600";
+  src: url(/_next/static/media/Poppins-SemiBold.98512bf8.ttf);
+  font-weight: 600; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-700";
+  src: url(/_next/static/media/Poppins-Bold.8001a01b.ttf);
+  font-weight: 700; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-800";
+  src: url(/_next/static/media/Poppins-ExtraBold.7572a9b5.ttf);
+  font-weight: 800; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-900";
+  src: url(/_next/static/media/Poppins-Black.a7317f18.ttf);
+  font-weight: 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+.gallery_gallery__FSDNS {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.gallery_gallery__hero__5I9pq {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.gallery_gallery__hero__title__eFxzc {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.gallery_gallery__hero__title__header__AVBYw {
+  font-size: 6rem;
+  font-family: "Poppins-700";
+  margin: 0;
+}
+.gallery_gallery__hero__title__strip__x_8kt {
+  margin-left: 40%;
+}
+.gallery_gallery__row-box__R4CDl {
+  box-sizing: border-box;
+  background-color: #ff914c;
+  padding: 4rem 4rem 8rem 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.gallery_gallery__row-box__item__74olW {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  gap: 0.5rem;
+}
+.gallery_gallery__row-box__item__74olW:hover {
+  cursor: pointer;
+}
+.gallery_gallery__row-box__item__74olW:hover .gallery_gallery__row-box__item__title__2TYbd h4 {
+  color: #ff914c !important;
+}
+.gallery_gallery__row-box__item__image-box__b_FvC {
+  position: relative;
+  width: 500px;
+  height: 350px;
+}
+.gallery_gallery__row-box__item__title__2TYbd {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 4rem;
+  width: 80%;
+}
+.gallery_gallery__row-box__item__title__2TYbd h4 {
+  margin: 0;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 800;
+  z-index: 4;
+  text-align: center;
+  color: #ff914c;
+  transition: color 0.5s;
+}
+.gallery_gallery__row-box__item__title__scrap-left__Wp5gi {
+  display: block;
+  position: absolute;
+  left: -19px;
+  height: 100%;
+  top: 0;
+}
+.gallery_gallery__row-box__item__title__scrap-right__OPjzu {
+  display: block;
+  position: absolute;
+  right: -19px;
+  height: 100%;
+  top: 0;
+}
+
+@media only screen and (max-width: 1250px) {
+  .gallery_gallery__hero__title__strip__x_8kt {
+    margin-left: 50%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .gallery_gallery__hero__title__eFxzc h1 {
+    font-size: 5rem;
+  }
+  .gallery_gallery__hero__title__strip__x_8kt {
+    margin-left: 0%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .gallery_gallery__hero__title__eFxzc {
+    left: 10%;
+    top: 30%;
+  }
+  .gallery_gallery__hero__title__eFxzc h1 {
+    font-size: 3rem;
+  }
+  .gallery_gallery__row-box__R4CDl {
+    padding: 2rem;
+  }
+  .gallery_gallery__row-box__item__74olW {
+    width: 300px;
+  }
+  .gallery_gallery__row-box__item__image-box__b_FvC {
+    width: 300px;
+    height: 200px;
+  }
+  .gallery_gallery__row-box__item__title__2TYbd {
+    width: 80%;
+  }
+  .gallery_gallery__row-box__item__title__2TYbd h4 {
+    font-size: 1rem;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Ui/StripH1/strip.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.strip_box__MCnEK {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.strip_box__MCnEK h1 {
+  position: relative;
+  font-size: 3.2rem;
+  font-weight: 800;
+  z-index: 4;
+  text-align: center;
+  margin: 0;
+}
+.strip_box__mainScrap__wk_xR {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.strip_box__scrap-left__er54n {
+  display: none;
+  position: absolute;
+  left: -19px;
+  height: 100%;
+  top: 0;
+}
+.strip_box__scrap-right__PaTW9 {
+  display: none;
+  position: absolute;
+  right: -19px;
+  height: 100%;
+  top: 0;
+}
+
+@media only screen and (max-width: 1600px) {
+  .strip_box__MCnEK h1 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .strip_box__MCnEK h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .strip_box__MCnEK {
+    width: 100%;
+  }
+  .strip_box__MCnEK h1 {
+    margin: 0;
+    font-size: 2rem;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+  }
+  .strip_box__mainScrap__wk_xR {
+    display: none;
+  }
+  .strip_box__scrap-left__er54n {
+    display: block;
+  }
+  .strip_box__scrap-right__PaTW9 {
+    display: block;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .strip_box__MCnEK {
+    width: 100%;
+  }
+  .strip_box__MCnEK h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .strip_box__MCnEK {
+    width: 100%;
+  }
+  .strip_box__MCnEK h1 {
+    font-size: 1.3rem;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    margin: 0;
+  }
+}

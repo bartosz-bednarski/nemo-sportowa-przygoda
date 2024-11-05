@@ -27,7 +27,7 @@ const __dirname = path.dirname(__filename); // get the name of the directory
 //   },
 // };
 const nextConfig = {
-  output: "export",
+  // output: "export",
   reactStrictMode: true,
   swcMinify: true, // Ustawienie na true
 
