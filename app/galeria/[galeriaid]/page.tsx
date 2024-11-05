@@ -17,11 +17,6 @@ export async function generateStaticParams() {
 // Strona dla dynamicznego id galerii
 const GalleryPhotosPage = ({ params }: { params: { galeriaid: string } }) => {
   const data = GALLERY_MAIN.find((item) => item.href === params.galeriaid);
-
-  // if (data === undefined) {
-  //   return <p>Galeria nie została znaleziona</p>;
-  // }
-
   return (
     <main className={styles.main}>
       {data !== undefined && <GalleryPhotos data={data} />}
