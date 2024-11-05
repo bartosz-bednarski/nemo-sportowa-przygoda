@@ -18,13 +18,14 @@ export async function generateStaticParams() {
 const GalleryPhotosPage = ({ params }: { params: { galeriaid: string } }) => {
   const data = GALLERY_MAIN.find((item) => item.href === params.galeriaid);
 
-  if (data === undefined) {
-    return <p>Galeria nie została znaleziona</p>;
-  }
+  // if (data === undefined) {
+  //   return <p>Galeria nie została znaleziona</p>;
+  // }
 
   return (
     <main className={styles.main}>
-      <GalleryPhotos data={data} />
+      {data !== undefined && <GalleryPhotos data={data} />}
+
       <Scrap2 color="darkBlue" position="bottom" />
     </main>
   );
