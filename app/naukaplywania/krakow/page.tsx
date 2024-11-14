@@ -7,6 +7,16 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Nauka pływania KRAKÓW",
+  description:
+    "Zapraszamy na zajęcia pływania wszystkie niemowlaki, dzieci i młodzież oraz dorosłych w Krakowie! - Przystań Eisenberga | Bronowianka | Pływaczek.",
+  metadataBase: new URL("https://nemosportowaprzygoda.pl/naukaplywania/krakow"),
+  alternates: {
+    canonical: "https://nemosportowaprzygoda.pl/naukaplywania/krakow",
+    languages: {
+      "pl-PL": "/pl-PL",
+      "en-US": "/en-US",
+    },
+  },
 };
 
 const NaukaPlywaniaKrakow = () => {

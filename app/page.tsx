@@ -3,8 +3,22 @@ import styles from "./page.module.scss";
 import SwimmingSection from "@/components/HomePage/Swimming/SwimmingSection";
 import CampsSection from "@/components/HomePage/Camps/CampsSection";
 import SignInPopupSwimming from "@/components/Ui/SignInPopup/SignInPopupSwimming";
+import { Metadata } from "next";
 // import TrainersSection from "@/components/HomePage/Trainers/TrainersSection";
 // import colors from "../styles/fonts.module.scss";
+export const metadata: Metadata = {
+  title: "NEMO Sportowa Przygoda - Nauka pływania | Obozy i Półkolonie",
+  description:
+    "Rozpocznij swoją sportową przygodę z NEMO! Zajmujemy się nauką pływania od niemowlaków aż po dorosłych. Organizujemy półkolonie i obozy - Kraków | Korzenna | Gorlice.",
+  metadataBase: new URL("https://nemosportowaprzygoda.pl/"),
+  alternates: {
+    canonical: "https://nemosportowaprzygoda.pl/",
+    languages: {
+      "pl-PL": "/pl-PL",
+      "en-US": "/en-US",
+    },
+  },
+};
 export default function Home() {
   return (
     <main className={styles.main}>

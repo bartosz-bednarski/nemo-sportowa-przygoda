@@ -21,6 +21,7 @@ const LessonType: React.FC<lessonTypeComponent> = ({ bgColor, lessonType }) => {
         alt="lekcja"
         objectFit="cover"
         objectPosition="center"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       <div className={styles["lessonType__content"]}>
         <StickerH4

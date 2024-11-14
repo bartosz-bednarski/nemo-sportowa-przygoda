@@ -15,9 +15,22 @@ import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 import LessonTypeWrapBox from "@/components/Globals/LessonTypeWrapBox/LessonTypeWrapBox";
 import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
 import { Metadata } from "next";
+import Schedule from "@/components/Schedule/Schedule";
 
 export const metadata: Metadata = {
   title: "Nauka pływania KORZENNA",
+  description:
+    "Nasze zajęcia są przeznaczone zarówno dla dzieci i młodzieży jak i dorosłych. Zapraszamy wszystkich chętnych na basen w Korzennej!",
+  metadataBase: new URL(
+    "https://nemosportowaprzygoda.pl/naukaplywania/korzenna"
+  ),
+  alternates: {
+    canonical: "https://nemosportowaprzygoda.pl/naukaplywania/korzenna",
+    languages: {
+      "pl-PL": "/pl-PL",
+      "en-US": "/en-US",
+    },
+  },
 };
 
 const NaukaPlywaniaKorzenna = () => {
@@ -68,6 +81,8 @@ const NaukaPlywaniaKorzenna = () => {
           },
         }}
       />
+      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=68866&zz=" />
+
       <NaukaPlywaniaBasen
         about={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.about}
         backgroundColor={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.backgroundColor}

@@ -8,10 +8,11 @@ export const metadata: Metadata = {
     default: "NEMO Sportowa Przygoda",
     template: "%s - NEMO Sportowa Przygoda",
   },
-
   description:
     "Nauka plywania | Obozy i Półkolonie - Zima/Lato | Kraków | Gorlice | Korzenna ",
   metadataBase: new URL("https://nemosportowaprzygoda.pl"),
+  authors: [{ name: "Wiktoria Fryczek" }],
+  publisher: "Bartosz Bednarski",
   alternates: {
     canonical: "/",
     languages: {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
       "en-US": "/en-US",
     },
   },
+  robots: { index: true, follow: true },
   openGraph: {
     images: "/og-image.png",
   },

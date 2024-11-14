@@ -19,6 +19,19 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Nauka pływania Kraków EISENBERGA",
+  description:
+    "Zajęcia dla niemowlaków z rodzicami, dzieci i młodzieży od lat 3 oraz dorosłych. Zapraszamy wszystkich chętnych na basen Przystań Eisenberga w Krakowie!",
+  metadataBase: new URL(
+    "https://nemosportowaprzygoda.pl/naukaplywania/krakow/eisenberga"
+  ),
+  alternates: {
+    canonical:
+      "https://nemosportowaprzygoda.pl/naukaplywania/krakow/eisenberga",
+    languages: {
+      "pl-PL": "/pl-PL",
+      "en-US": "/en-US",
+    },
+  },
 };
 
 const NaukaPlywaniaEisenberga = () => {

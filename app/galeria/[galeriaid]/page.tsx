@@ -5,7 +5,15 @@ import Scrap2 from "../../../components/Ui/Scrap/Scrap2";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Galeria",
+  title: "Galeria zdjęć",
+  description:
+    "Sprawdź nasze zdjęcia! - Nauka pływania | Bobowska Przygoda | Wakacyjna Frajda | Wyjazd na Narty | Kreatywne Laboratorium.",
+  alternates: {
+    languages: {
+      "pl-PL": "/pl-PL",
+      "en-US": "/en-US",
+    },
+  },
 };
 // Generowanie statycznych ścieżek
 export async function generateStaticParams() {

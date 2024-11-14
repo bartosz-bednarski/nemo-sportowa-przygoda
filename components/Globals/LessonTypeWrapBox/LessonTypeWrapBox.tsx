@@ -17,13 +17,6 @@ const LessonTypeWrapBox: React.FC<lessonTypeWrapBoxType> = ({
         className={styles["lessonType__opacity"]}
         style={{ background: COLORS[bgColor] }}
       ></div>
-      {/* <Image
-        src={`/assets/swimming/lessonsTypes/${bgImage}`}
-        fill={true}
-        alt="lekcja"
-        objectFit="cover"
-        objectPosition="top"
-      /> */}
       {lessonTypes.map((lessonType, index) => (
         <div className={styles["lessonType__content"]} key={index}>
           <StickerH4
