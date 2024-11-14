@@ -4,7 +4,7 @@ import styles from "./galleryLink.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { customColors } from "@/types/UI/colors";
-import { COLORS } from "@/utils/UI/colors";
+import { COLORS } from "../../../utils/UI/colors";
 
 const GalleryLink: React.FC<{
   href: string;

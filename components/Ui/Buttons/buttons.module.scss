@@ -1,3 +1,4 @@
+@import "../../../styles/colors.scss";
 .linkButton {
   height: fit-content;
   display: flex;
@@ -11,8 +12,19 @@
   border: 0;
   border-radius: 40px;
   gap: 1rem;
+  background-color: $basicOrange;
+  transition: all 0.5s;
+  border: 2px solid $basicOrange;
   &:hover {
+    border: 2px solid $basicOrange;
+    background-color: white;
+    color: $basicOrange;
     cursor: pointer;
+    svg {
+      path {
+        fill: $basicOrange;
+      }
+    }
   }
 }
 .signInButton {

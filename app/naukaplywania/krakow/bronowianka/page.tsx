@@ -18,8 +18,20 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Nauka pływania Kraków BRONOWIANKA",
+  description:
+    "Nasze zajęcia są przeznaczone dla dzieci od 3. miesiąca życia, które uczestniczą w nich razem z rodzicem. Zapraszamy wszystkich chętnych na basen Bronowianka w Krakowie!",
+  metadataBase: new URL(
+    "https://nemosportowaprzygoda.pl/naukaplywania/krakow/bronowianka"
+  ),
+  alternates: {
+    canonical:
+      "https://nemosportowaprzygoda.pl/naukaplywania/krakow/bronowianka",
+    languages: {
+      "pl-PL": "/pl-PL",
+      "en-US": "/en-US",
+    },
+  },
 };
-
 const NaukaPlywaniaBronowianka = () => {
   return (
     <div className={styles.main}>

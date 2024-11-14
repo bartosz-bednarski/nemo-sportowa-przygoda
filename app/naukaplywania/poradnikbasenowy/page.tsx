@@ -13,6 +13,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Poradnik basenowy",
+  description:
+    "Co zabrać na basen? | Zasady korzystania z basenu | Odrabianie zajęć | Cennik i opłaty - Sprawdź nasz uniwersalny poradnik basenowy.",
+  metadataBase: new URL(
+    "https://nemosportowaprzygoda.pl/naukaplywania/poradnikbasenowy"
+  ),
+  alternates: {
+    canonical: "https://nemosportowaprzygoda.pl/naukaplywania/poradnikbasenowy",
+    languages: {
+      "pl-PL": "/pl-PL",
+      "en-US": "/en-US",
+    },
+  },
 };
 
 const PoradnikBasenowyPage = () => {

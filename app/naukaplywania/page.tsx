@@ -7,7 +7,17 @@ import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nauka pływania",
+  title: "Nauka pływania - KRAKÓW|KORZENNA|GORLICE",
+  description:
+    "Zapraszamy na zajęcia pływania wszystkie niemowlaki, dzieci i młodzież oraz dorosłych! - Lokalizacje: Kraków | Korzenna | Gorlice.",
+  metadataBase: new URL("https://nemosportowaprzygoda.pl/naukaplywania"),
+  alternates: {
+    canonical: "https://nemosportowaprzygoda.pl/naukaplywania",
+    languages: {
+      "pl-PL": "/pl-PL",
+      "en-US": "/en-US",
+    },
+  },
 };
 
 const NaukaPlywaniaPage = () => {

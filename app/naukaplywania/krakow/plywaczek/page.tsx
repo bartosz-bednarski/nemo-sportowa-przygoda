@@ -18,6 +18,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Nauka pływania Kraków PŁYWACZEK",
+  description:
+    "Nasze zajęcia są przeznaczone dla dzieci i młodzieży od lat 3 oraz dorosłych. Zapraszamy wszystkich chętnych na basen Pływaczek w Krakowie!",
+  metadataBase: new URL(
+    "https://nemosportowaprzygoda.pl/naukaplywania/krakow/plywaczek"
+  ),
+  alternates: {
+    canonical: "https://nemosportowaprzygoda.pl/naukaplywania/krakow/plywaczek",
+    languages: {
+      "pl-PL": "/pl-PL",
+      "en-US": "/en-US",
+    },
+  },
 };
 
 const NaukaPlywaniaPlywaczek = () => {
