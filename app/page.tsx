@@ -4,6 +4,7 @@ import SwimmingSection from "@/components/HomePage/Swimming/SwimmingSection";
 import CampsSection from "@/components/HomePage/Camps/CampsSection";
 import SignInPopupSwimming from "@/components/Ui/SignInPopup/SignInPopupSwimming";
 import { Metadata } from "next";
+import TrainersSection from "@/components/HomePage/Trainers/TrainersSection";
 // import TrainersSection from "@/components/HomePage/Trainers/TrainersSection";
 // import colors from "../styles/fonts.module.scss";
 export const metadata: Metadata = {
@@ -62,7 +63,7 @@ export default function Home() {
       />
       <SwimmingSection />
       <CampsSection />
-      {/* <TrainersSection /> */}
+      <TrainersSection />
     </main>
   );
 }
