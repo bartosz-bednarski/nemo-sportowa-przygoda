@@ -11,11 +11,11 @@ const LinkButton: React.FC<{
   title: string;
   href: string;
   onClick?: () => void;
-}> = ({ bgColor, textColor, title, href, onClick }) => {
+}> = ({ textColor, title, href, onClick }) => {
   return (
     <Link
       className={styles.linkButton}
-      style={{ background: COLORS[bgColor], color: COLORS[textColor] }}
+      // style={{ background: COLORS[bgColor], color: COLORS[textColor] }}
       href={href}
       onClick={onClick}
     >

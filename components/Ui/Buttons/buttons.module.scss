@@ -15,6 +15,11 @@
   background-color: $basicOrange;
   transition: all 0.5s;
   border: 2px solid $basicOrange;
+  svg {
+    path {
+      fill: white;
+    }
+  }
   &:hover {
     border: 2px solid $basicOrange;
     background-color: white;
@@ -36,13 +41,26 @@
   font-size: 1rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
-  color: white;
+  color: $darkBlue !important;
   border: 0;
   border-radius: 40px;
   gap: 0.5rem;
   z-index: 1;
+  background-color: white;
+  transition: all 0.5s;
+  svg {
+    path {
+      fill: $darkBlue;
+    }
+  }
   &:hover {
     cursor: pointer;
+    background-color: $basicOrange;
+    svg {
+      path {
+        fill: $darkBlue;
+      }
+    }
   }
 }
 .navBtn {
