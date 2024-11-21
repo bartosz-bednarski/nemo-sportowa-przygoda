@@ -22,14 +22,13 @@ export const POLKOLONIA_AKTYWNA_ZIMA_BOBOWA: polkoloniaType = {
   },
   localization: {
     localizationDescription: [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Miejskie Centrum Kultury w Bobowej to przestrzeń, która łączy nowoczesność z tradycją, oferując różnorodne możliwości organizacji wydarzeń. Sala konferencyjna znajduje się na poziomie 0, co sprawia, że jest łatwo dostępna zarówno dla uczestników, jak i organizatorów. Wejście do budynku prowadzi przez główne drzwi, które są doskonale oznaczone i wygodne dla wszystkich gości. Po wejściu do środka należy zejść schodami znajdującymi się po prawej stronie, aby dotrzeć do sali.",
     ],
   },
 
   schedule: {
     scheduleAbout:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Tydzień pełen różnorodnych aktywności zapewni dzieciom kreatywną zabawę, ruch i wartościową naukę. Rozpocznie się od budowania i programowania robotów, po czym przeniesie na basen, by odkrywać wodne przygody. W programie znajdzie się także kulig w zimowej scenerii, dzień strażacki pełen wyzwań oraz warsztaty uczące odpowiedzialności i pierwszej pomocy. To idealne połączenie rozwoju umiejętności technicznych, ruchu i integracji.",
     scheduleList: [
       {
         title: "1. DZIEŃ ROBOTYKI",
@@ -55,7 +54,7 @@ export const POLKOLONIA_AKTYWNA_ZIMA_BOBOWA: polkoloniaType = {
   },
   food: {
     foodAbout: [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Drugie śniadanie to pyszny i pożywny wybór, na który składa się świeży owoc lub tradycyjna drożdżówka, idealna na szybkie uzupełnienie energii w ciągu dnia. Smaczne obiady dostarczane są w ramach cateringu z restauracji Ostoja.",
     ],
   },
 
@@ -99,14 +98,13 @@ export const POLKOLONIA_AKTYWNA_ZIMA_LUZNA: polkoloniaType = {
   },
   localization: {
     localizationDescription: [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Gminny Ośrodek Kultury w Łużnej to miejsce, w którym odbędą się zaplanowane zajęcia półkolonii. Lokalizacja jest łatwa do znalezienia – należy skorzystać z głównego wejścia do budynku. Po wejściu sala znajduje się bezpośrednio na wprost, co ułatwia dotarcie na miejsce. Przestrzeń jest przygotowana tak, aby zapewnić dzieciom komfort i sprzyjać różnorodnym aktywnościom.",
     ],
   },
 
   schedule: {
     scheduleAbout:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Tydzień pełen różnorodnych aktywności zapewni dzieciom kreatywną zabawę, ruch i wartościową naukę. Rozpocznie się od budowania i programowania robotów, po czym przeniesie na basen, by odkrywać wodne przygody. W programie znajdzie się także kulig w zimowej scenerii, dzień strażacki pełen wyzwań oraz warsztaty uczące odpowiedzialności i pierwszej pomocy. To idealne połączenie rozwoju umiejętności technicznych, ruchu i integracji.",
     scheduleList: [
       {
         title: "1. DZIEŃ ROBOTYKI",
@@ -132,7 +130,7 @@ export const POLKOLONIA_AKTYWNA_ZIMA_LUZNA: polkoloniaType = {
   },
   food: {
     foodAbout: [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Drugie śniadanie to pyszny i pożywny wybór, na który składa się świeży owoc lub tradycyjna drożdżówka, idealna na szybkie uzupełnienie energii w ciągu dnia. Smaczne obiady dostarczane są w ramach cateringu z restauracji Ostoja.",
     ],
   },
 
@@ -163,7 +161,7 @@ export const POLKOLONIA_AKTYWNA_ZIMA_KORZENNA: polkoloniaType = {
   },
   details: {
     location: "KORZENNA",
-    fullLocationName: "CSIK W KORZENNEJ",
+    fullLocationName: "CSIR W KORZENNEJ",
     dateRange: "20.01-24.01",
     ageRange: "5-13 LAT",
     price: "800 PLN",
@@ -176,14 +174,13 @@ export const POLKOLONIA_AKTYWNA_ZIMA_KORZENNA: polkoloniaType = {
   },
   localization: {
     localizationDescription: [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Centrum Sportu i Rekreacji w Korzennej to miejsce, w którym odbędą się półkolonie zimowe. Aby dotrzeć do sali, należy wejść głównym wejściem prowadzącym na basen. Następnie trzeba skierować się w lewą stronę i wejść schodami na górę. Sala znajduje się na pierwszym piętrze i jest jedyną salą na tym poziomie, co ułatwia jej znalezienie.",
     ],
   },
 
   schedule: {
     scheduleAbout:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Tydzień pełen różnorodnych aktywności zapewni dzieciom kreatywną zabawę, ruch i wartościową naukę. Rozpocznie się od budowania i programowania robotów, po czym przeniesie na basen, by odkrywać wodne przygody. W programie znajdzie się także kulig w zimowej scenerii, dzień strażacki pełen wyzwań oraz warsztaty uczące odpowiedzialności i pierwszej pomocy. To idealne połączenie rozwoju umiejętności technicznych, ruchu i integracji.",
     scheduleList: [
       {
         title: "1. DZIEŃ ROBOTYKI",
@@ -209,7 +206,7 @@ export const POLKOLONIA_AKTYWNA_ZIMA_KORZENNA: polkoloniaType = {
   },
   food: {
     foodAbout: [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Drugie śniadanie to pyszny i pożywny wybór, na który składa się świeży owoc lub tradycyjna drożdżówka, idealna na szybkie uzupełnienie energii w ciągu dnia. Smaczne obiady dostarczane są w ramach cateringu z restauracji Ostoja.",
     ],
   },
 
@@ -253,40 +250,39 @@ export const POLKOLONIA_BIALE_SZALENSTWO_BOBOWA: polkoloniaType = {
   },
   localization: {
     localizationDescription: [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Miejskie Centrum Kultury w Bobowej to przestrzeń, która łączy nowoczesność z tradycją, oferując różnorodne możliwości organizacji wydarzeń. Sala konferencyjna znajduje się na poziomie 0, co sprawia, że jest łatwo dostępna zarówno dla uczestników, jak i organizatorów. Wejście do budynku prowadzi przez główne drzwi, które są doskonale oznaczone i wygodne dla wszystkich gości. Po wejściu do środka należy zejść schodami znajdującymi się po prawej stronie, aby dotrzeć do sali.",
     ],
   },
 
   schedule: {
     scheduleAbout:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Tydzień pełen wrażeń i różnorodnych aktywności to idealna propozycja dla dzieci, które chcą rozwijać swoje pasje, bawić się i zdobywać nowe umiejętności. Od konstruowania robotów, przez wodne zabawy i saneczkowe przygody, aż po dzień pełen szaleństwa i finałowe rozgrywki w gry planszowe oraz logiczne – każdy znajdzie coś dla siebie. To wyjątkowa okazja do aktywnego spędzenia czasu, nauki współpracy i świetnej zabawy.",
     scheduleList: [
       {
         title: "1. DZIEŃ ROBOTYKI",
-        text: "Warsztaty z konstruowania i programowania robotów – kreatywna zabawa rozwijająca wyobraźnię i umiejętności techniczne.",
+        text: "Warsztaty z konstruowania i programowania robotów, które w kreatywny sposób rozwijają wyobraźnię i umiejętności techniczne.",
       },
       {
         title: "2. DZIEŃ WODNNEJ PRZYGODY",
-        text: "Zajęcia na basenie, wodny tor przeszkód oraz gry i zabawy w wodzie pod okiem doświadczonych instruktorów.",
+        text: "Aktywny dzień na basenie, gdzie na uczestników czeka wodny tor przeszkód, gry i zabawy pod okiem doświadczonych instruktorów.",
       },
       {
         title: "3. WYCIECZKA NA TOR SANECZKOWY",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+        text: "Ekscytujący dzień na świeżym powietrzu z wyjazdem na tor saneczkowy w Muszynie, gdzie każdy uczestnik będzie mógł przeżyć jeden niezapomniany zjazd.",
       },
       {
         title: "4. DZIEŃ SZALEŃSTWA",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+        text: "Atrakcje dostosowane do pogody – jazda na sankach w zimowej scenerii lub, w razie niesprzyjającej aury, wyjazd do parku trampolin pełnego energii i zabawy.",
       },
       {
         title: "5. DZIEŃ WIELKIEGO FINAŁU",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+        text: "Dzień pełen emocji i rywalizacji w przyjaznej atmosferze! Odbędą się rozgrywki w warcaby, szachy, gry planszowe i logiczne, a także turniej zręcznościowy z użyciem prostych sportowych wyzwań. Na zakończenie dnia – relaksujący wieczór filmowy, który pozwoli podsumować pełen wrażeń tydzień.",
       },
     ],
   },
   food: {
     foodAbout: [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Drugie śniadanie to pyszny i pożywny wybór, na który składa się świeży owoc lub tradycyjna drożdżówka, idealna na szybkie uzupełnienie energii w ciągu dnia. Smaczne obiady dostarczane są w ramach cateringu z restauracji Ostoja.",
     ],
   },
 
@@ -327,40 +323,39 @@ export const POLKOLONIA_BIALE_SZALENSTWO_KORZENNA: polkoloniaType = {
   },
   localization: {
     localizationDescription: [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Centrum Sportu i Rekreacji w Korzennej to miejsce, w którym odbędą się półkolonie zimowe. Aby dotrzeć do sali, należy wejść głównym wejściem prowadzącym na basen. Następnie trzeba skierować się w lewą stronę i wejść schodami na górę. Sala znajduje się na pierwszym piętrze i jest jedyną salą na tym poziomie, co ułatwia jej znalezienie.",
     ],
   },
 
   schedule: {
     scheduleAbout:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Tydzień pełen wrażeń i różnorodnych aktywności to idealna propozycja dla dzieci, które chcą rozwijać swoje pasje, bawić się i zdobywać nowe umiejętności. Od konstruowania robotów, przez wodne zabawy i saneczkowe przygody, aż po dzień pełen szaleństwa i finałowe rozgrywki w gry planszowe oraz logiczne – każdy znajdzie coś dla siebie. To wyjątkowa okazja do aktywnego spędzenia czasu, nauki współpracy i świetnej zabawy.",
     scheduleList: [
       {
         title: "1. DZIEŃ ROBOTYKI",
-        text: "Warsztaty z konstruowania i programowania robotów – kreatywna zabawa rozwijająca wyobraźnię i umiejętności techniczne.",
+        text: "Warsztaty z konstruowania i programowania robotów, które w kreatywny sposób rozwijają wyobraźnię i umiejętności techniczne.",
       },
       {
         title: "2. DZIEŃ WODNNEJ PRZYGODY",
-        text: "Zajęcia na basenie, wodny tor przeszkód oraz gry i zabawy w wodzie pod okiem doświadczonych instruktorów.",
+        text: "Aktywny dzień na basenie, gdzie na uczestników czeka wodny tor przeszkód, gry i zabawy pod okiem doświadczonych instruktorów.",
       },
       {
         title: "3. WYCIECZKA NA TOR SANECZKOWY",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+        text: "Ekscytujący dzień na świeżym powietrzu z wyjazdem na tor saneczkowy w Muszynie, gdzie każdy uczestnik będzie mógł przeżyć jeden niezapomniany zjazd.",
       },
       {
         title: "4. DZIEŃ SZALEŃSTWA",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+        text: "Atrakcje dostosowane do pogody – jazda na sankach w zimowej scenerii lub, w razie niesprzyjającej aury, wyjazd do parku trampolin pełnego energii i zabawy.",
       },
       {
         title: "5. DZIEŃ WIELKIEGO FINAŁU",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+        text: "Dzień pełen emocji i rywalizacji w przyjaznej atmosferze! Odbędą się rozgrywki w warcaby, szachy, gry planszowe i logiczne, a także turniej zręcznościowy z użyciem prostych sportowych wyzwań. Na zakończenie dnia – relaksujący wieczór filmowy, który pozwoli podsumować pełen wrażeń tydzień.",
       },
     ],
   },
   food: {
     foodAbout: [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore vel, illum veniam minus aspernatur ad quasi aut id repudiandae ipsam natus, excepturi, ratione laboriosam rem iusto asperiores aliquid eveniet repellat!",
+      "Drugie śniadanie to pyszny i pożywny wybór, na który składa się świeży owoc lub tradycyjna drożdżówka, idealna na szybkie uzupełnienie energii w ciągu dnia. Smaczne obiady dostarczane są w ramach cateringu z restauracji Ostoja.",
     ],
   },
 
@@ -403,7 +398,7 @@ export const POLKOLONIE_LISTA_2025: campsCoversType = [
     active: true,
     title: "PÓŁKOLONIA AKTYWNA ZIMA",
     price: "800 PLN",
-    localization: "CSIK W KORZENNEJ",
+    localization: "CSIR W KORZENNEJ",
     date: "20.01-24.01",
     coverImage: "winter/polkolonie/polkolonie_winter.webp",
     href: "/ofertazimowa/polkolonie/aktywnazima/korzenna",

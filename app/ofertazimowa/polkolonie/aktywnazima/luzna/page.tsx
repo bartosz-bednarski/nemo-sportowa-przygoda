@@ -8,11 +8,13 @@ import { POLKOLONIA_AKTYWNA_ZIMA_LUZNA } from "@/utils/Winter/Polkolonie";
 import Food from "@/components/OfertaZimowa/Polkolonie/Food/Food";
 import PriceDetails from "@/components/OfertaZimowa/Polkolonie/PriceDetails/PriceDetails";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
+import Contact from "@/components/OfertaZimowa/Globals/Contact/Contact";
 const PolkoloniaAktywnaZimaLuzna = () => {
   return (
     <main className={styles.main} style={{ background: "white" }}>
       <Hero hero={POLKOLONIA_AKTYWNA_ZIMA_LUZNA.hero} />
       <Details details={POLKOLONIA_AKTYWNA_ZIMA_LUZNA.details} />
+      <Contact />
       <MountainsTrees />
       <Localization localization={POLKOLONIA_AKTYWNA_ZIMA_LUZNA.localization} />
       <Schedule schedule={POLKOLONIA_AKTYWNA_ZIMA_LUZNA.schedule} />
