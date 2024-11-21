@@ -11,7 +11,7 @@ import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 const PolkoloniaAktywnaZimaBobowa = () => {
   return (
     <main className={styles.main} style={{ background: "white" }}>
-      <Hero />
+      <Hero hero={POLKOLONIA_AKTYWNA_ZIMA_BOBOWA.hero} />
       <Details details={POLKOLONIA_AKTYWNA_ZIMA_BOBOWA.details} />
       <MountainsTrees />
       <Localization

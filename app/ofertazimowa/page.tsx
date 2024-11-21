@@ -7,6 +7,7 @@ import CollabWinter from "@/components/Winter/CollabWinter";
 import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 import { Metadata } from "next";
+import { POLKOLONIE_LISTA_2025 } from "@/utils/Winter/Polkolonie";
 
 export const metadata: Metadata = {
   title: "Oferta ZIMOWA",
@@ -82,8 +83,9 @@ zimowej scenerii!
 
       <SignInCamps
         theme="winter"
-        waiting={true}
+        waiting={false}
         waitingTitle="ZAPISY PRZEZ TELEFON"
+        activeCampsCoversList={POLKOLONIE_LISTA_2025}
       />
       <ScrapWinter bgColor="white" />
       <AboutCamps
