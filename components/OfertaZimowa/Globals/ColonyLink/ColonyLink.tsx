@@ -7,7 +7,17 @@ import Image from "next/image";
 
 const ColonyLink: React.FC<{ data: campTypeCover }> = ({ data }) => {
   return (
-    <Link className={styles.colonyLink} href={data.href}>
+    <Link
+      className={styles.colonyLink}
+      href={data.href}
+      style={{ pointerEvents: data.active ? "all" : "none" }}
+    >
+      {!data.active && (
+        <div className={styles.soldOut}>
+          <span className={styles["soldOut__info"]}>WYPRZEDANE</span>
+        </div>
+      )}
+
       <Image
         className={styles["colonyLink__image"]}
         src={`/assets/${data.coverImage}`}
