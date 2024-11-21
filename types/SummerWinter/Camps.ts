@@ -1,7 +1,9 @@
 export type campTypeCover = {
   active: boolean;
   title: string;
-  cityStart: string;
+  price: string;
+  localization: string;
+  date: string;
   coverImage: string;
   href: string;
 };
