@@ -9,6 +9,7 @@ export type polkoloniaType = {
   title: string;
   hero: heroComponentType;
   details: detailsComponentType;
+  contact: contactComponentType;
   localization: localizationComponentType;
   schedule: scheduleComponentType;
   food: foodComponentType;
@@ -19,7 +20,8 @@ export type heroComponentType = {
   mobile: string;
 };
 export type foodComponentType = {
-  foodAbout: string[];
+  foodAbout: string;
+  foodList?: string[];
 };
 export type localizationComponentType = {
   localizationDescription: string[];
@@ -38,8 +40,17 @@ export type detailsComponentType = {
   promotionInfo?: string;
   aboutTitle: string;
   aboutDescription: string;
+  about2Title?: string;
+  about2Description?: string;
 };
 export type scheduleComponentType = {
+  title: string;
   scheduleAbout: string;
   scheduleList: { title: string; text: string }[];
+};
+export type contactComponentType = {
+  title: string;
+  phone: string;
+  email: string;
+  website?: string;
 };
