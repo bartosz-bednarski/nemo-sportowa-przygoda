@@ -4,8 +4,8 @@ import { polkoloniaType } from "@/types/SummerWinter/Winter";
 export const POLKOLONIA_AKTYWNA_ZIMA_BOBOWA: polkoloniaType = {
   title: "PÓŁKOLONIA AKTYWNA ZIMA",
   hero: {
-    pc: "polkolonia_aktywnazima_bobowa_2025-pc",
-    mobile: "polkolonia_aktywnazima_bobowa_2025-mobile",
+    pc: "polkolonie/polkolonia_aktywnazima_bobowa_2025-pc",
+    mobile: "polkolonie/polkolonia_aktywnazima_bobowa_2025-mobile",
   },
   details: {
     location: "BOBOWA",
@@ -25,8 +25,14 @@ export const POLKOLONIA_AKTYWNA_ZIMA_BOBOWA: polkoloniaType = {
       "Miejskie Centrum Kultury w Bobowej to przestrzeń, która łączy nowoczesność z tradycją, oferując różnorodne możliwości organizacji wydarzeń. Sala konferencyjna znajduje się na poziomie 0, co sprawia, że jest łatwo dostępna zarówno dla uczestników, jak i organizatorów. Wejście do budynku prowadzi przez główne drzwi, które są doskonale oznaczone i wygodne dla wszystkich gości. Po wejściu do środka należy zejść schodami znajdującymi się po prawej stronie, aby dotrzeć do sali.",
     ],
   },
-
+  contact: {
+    title:
+      "Zapisz swoje dziecko już dziś i zapewnij mu niezapomniane wspomnienia!",
+    phone: "+48 519 625 894",
+    email: "szkolaplywanianemo1@gmail.com",
+  },
   schedule: {
+    title: "PLAN TYGODNIA",
     scheduleAbout:
       "Tydzień pełen różnorodnych aktywności zapewni dzieciom kreatywną zabawę, ruch i wartościową naukę. Rozpocznie się od budowania i programowania robotów, po czym przeniesie na basen, by odkrywać wodne przygody. W programie znajdzie się także kulig w zimowej scenerii, dzień strażacki pełen wyzwań oraz warsztaty uczące odpowiedzialności i pierwszej pomocy. To idealne połączenie rozwoju umiejętności technicznych, ruchu i integracji.",
     scheduleList: [
@@ -53,9 +59,8 @@ export const POLKOLONIA_AKTYWNA_ZIMA_BOBOWA: polkoloniaType = {
     ],
   },
   food: {
-    foodAbout: [
+    foodAbout:
       "Drugie śniadanie to pyszny i pożywny wybór, na który składa się świeży owoc lub tradycyjna drożdżówka, idealna na szybkie uzupełnienie energii w ciągu dnia. Smaczne obiady dostarczane są w ramach cateringu z restauracji Ostoja.",
-    ],
   },
 
   priceDetails: {
@@ -80,8 +85,8 @@ export const POLKOLONIA_AKTYWNA_ZIMA_BOBOWA: polkoloniaType = {
 export const POLKOLONIA_AKTYWNA_ZIMA_LUZNA: polkoloniaType = {
   title: "PÓŁKOLONIA AKTYWNA ZIMA",
   hero: {
-    pc: "polkolonia_aktywnazima_luzna_2025-pc",
-    mobile: "polkolonia_aktywnazima_luzna_2025-mobile",
+    pc: "polkolonie/polkolonia_aktywnazima_luzna_2025-pc",
+    mobile: "polkolonie/polkolonia_aktywnazima_luzna_2025-mobile",
   },
   details: {
     location: "ŁUŻNA",
@@ -96,6 +101,12 @@ export const POLKOLONIA_AKTYWNA_ZIMA_LUZNA: polkoloniaType = {
     aboutDescription:
       "Półkolonie w NEMO SPORTOWA PRZYGODA to idealne połączenie ruchu, nauki i świetnej zabawy. Nasi wykwalifikowani opiekunowie zadbają o bezpieczeństwo i doskonałą atmosferę, tak aby każdy dzień był pełen radości i inspiracji. Dzięki półkoloniom dzieci mają okazję nie tylko rozwinąć swoje pasje i zainteresowania, ale także poznać nowych przyjaciół.",
   },
+  contact: {
+    title:
+      "Zapisz swoje dziecko już dziś i zapewnij mu niezapomniane wspomnienia!",
+    phone: "+48 519 625 894",
+    email: "szkolaplywanianemo1@gmail.com",
+  },
   localization: {
     localizationDescription: [
       "Gminny Ośrodek Kultury w Łużnej to miejsce, w którym odbędą się zaplanowane zajęcia półkolonii. Lokalizacja jest łatwa do znalezienia – należy skorzystać z głównego wejścia do budynku. Po wejściu sala znajduje się bezpośrednio na wprost, co ułatwia dotarcie na miejsce. Przestrzeń jest przygotowana tak, aby zapewnić dzieciom komfort i sprzyjać różnorodnym aktywnościom.",
@@ -103,6 +114,7 @@ export const POLKOLONIA_AKTYWNA_ZIMA_LUZNA: polkoloniaType = {
   },
 
   schedule: {
+    title: "PLAN TYGODNIA",
     scheduleAbout:
       "Tydzień pełen różnorodnych aktywności zapewni dzieciom kreatywną zabawę, ruch i wartościową naukę. Rozpocznie się od budowania i programowania robotów, po czym przeniesie na basen, by odkrywać wodne przygody. W programie znajdzie się także kulig w zimowej scenerii, dzień strażacki pełen wyzwań oraz warsztaty uczące odpowiedzialności i pierwszej pomocy. To idealne połączenie rozwoju umiejętności technicznych, ruchu i integracji.",
     scheduleList: [
@@ -129,9 +141,8 @@ export const POLKOLONIA_AKTYWNA_ZIMA_LUZNA: polkoloniaType = {
     ],
   },
   food: {
-    foodAbout: [
+    foodAbout:
       "Drugie śniadanie to pyszny i pożywny wybór, na który składa się świeży owoc lub tradycyjna drożdżówka, idealna na szybkie uzupełnienie energii w ciągu dnia. Smaczne obiady dostarczane są w ramach cateringu z restauracji Ostoja.",
-    ],
   },
 
   priceDetails: {
@@ -156,8 +167,8 @@ export const POLKOLONIA_AKTYWNA_ZIMA_LUZNA: polkoloniaType = {
 export const POLKOLONIA_AKTYWNA_ZIMA_KORZENNA: polkoloniaType = {
   title: "PÓŁKOLONIA AKTYWNA ZIMA",
   hero: {
-    pc: "polkolonia_aktywnazima_korzenna_2025-pc",
-    mobile: "polkolonia_aktywnazima_korzenna_2025-mobile",
+    pc: "polkolonie/polkolonia_aktywnazima_korzenna_2025-pc",
+    mobile: "polkolonie/polkolonia_aktywnazima_korzenna_2025-mobile",
   },
   details: {
     location: "KORZENNA",
@@ -172,6 +183,12 @@ export const POLKOLONIA_AKTYWNA_ZIMA_KORZENNA: polkoloniaType = {
     aboutDescription:
       "Półkolonie w NEMO SPORTOWA PRZYGODA to idealne połączenie ruchu, nauki i świetnej zabawy. Nasi wykwalifikowani opiekunowie zadbają o bezpieczeństwo i doskonałą atmosferę, tak aby każdy dzień był pełen radości i inspiracji. Dzięki półkoloniom dzieci mają okazję nie tylko rozwinąć swoje pasje i zainteresowania, ale także poznać nowych przyjaciół.",
   },
+  contact: {
+    title:
+      "Zapisz swoje dziecko już dziś i zapewnij mu niezapomniane wspomnienia!",
+    phone: "+48 519 625 894",
+    email: "szkolaplywanianemo1@gmail.com",
+  },
   localization: {
     localizationDescription: [
       "Centrum Sportu i Rekreacji w Korzennej to miejsce, w którym odbędą się półkolonie zimowe. Aby dotrzeć do sali, należy wejść głównym wejściem prowadzącym na basen. Następnie trzeba skierować się w lewą stronę i wejść schodami na górę. Sala znajduje się na pierwszym piętrze i jest jedyną salą na tym poziomie, co ułatwia jej znalezienie.",
@@ -179,6 +196,7 @@ export const POLKOLONIA_AKTYWNA_ZIMA_KORZENNA: polkoloniaType = {
   },
 
   schedule: {
+    title: "PLAN TYGODNIA",
     scheduleAbout:
       "Tydzień pełen różnorodnych aktywności zapewni dzieciom kreatywną zabawę, ruch i wartościową naukę. Rozpocznie się od budowania i programowania robotów, po czym przeniesie na basen, by odkrywać wodne przygody. W programie znajdzie się także kulig w zimowej scenerii, dzień strażacki pełen wyzwań oraz warsztaty uczące odpowiedzialności i pierwszej pomocy. To idealne połączenie rozwoju umiejętności technicznych, ruchu i integracji.",
     scheduleList: [
@@ -205,9 +223,8 @@ export const POLKOLONIA_AKTYWNA_ZIMA_KORZENNA: polkoloniaType = {
     ],
   },
   food: {
-    foodAbout: [
+    foodAbout:
       "Drugie śniadanie to pyszny i pożywny wybór, na który składa się świeży owoc lub tradycyjna drożdżówka, idealna na szybkie uzupełnienie energii w ciągu dnia. Smaczne obiady dostarczane są w ramach cateringu z restauracji Ostoja.",
-    ],
   },
 
   priceDetails: {
@@ -232,8 +249,8 @@ export const POLKOLONIA_AKTYWNA_ZIMA_KORZENNA: polkoloniaType = {
 export const POLKOLONIA_BIALE_SZALENSTWO_BOBOWA: polkoloniaType = {
   title: "PÓŁKOLONIA BIAŁE SZALEŃSTWO",
   hero: {
-    pc: "polkolonia_bialeszalenstwo_bobowa_2025-pc",
-    mobile: "polkolonia_bialeszalenstwo_bobowa_2025-mobile",
+    pc: "polkolonie/polkolonia_bialeszalenstwo_bobowa_2025-pc",
+    mobile: "polkolonie/polkolonia_bialeszalenstwo_bobowa_2025-mobile",
   },
   details: {
     location: "BOBOWA",
@@ -248,6 +265,12 @@ export const POLKOLONIA_BIALE_SZALENSTWO_BOBOWA: polkoloniaType = {
     aboutDescription:
       "Półkolonie w NEMO SPORTOWA PRZYGODA to idealne połączenie ruchu, nauki i świetnej zabawy. Nasi wykwalifikowani opiekunowie zadbają o bezpieczeństwo i doskonałą atmosferę, tak aby każdy dzień był pełen radości i inspiracji. Dzięki półkoloniom dzieci mają okazję nie tylko rozwinąć swoje pasje i zainteresowania, ale także poznać nowych przyjaciół.",
   },
+  contact: {
+    title:
+      "Zapisz swoje dziecko już dziś i zapewnij mu niezapomniane wspomnienia!",
+    phone: "+48 519 625 894",
+    email: "szkolaplywanianemo1@gmail.com",
+  },
   localization: {
     localizationDescription: [
       "Miejskie Centrum Kultury w Bobowej to przestrzeń, która łączy nowoczesność z tradycją, oferując różnorodne możliwości organizacji wydarzeń. Sala konferencyjna znajduje się na poziomie 0, co sprawia, że jest łatwo dostępna zarówno dla uczestników, jak i organizatorów. Wejście do budynku prowadzi przez główne drzwi, które są doskonale oznaczone i wygodne dla wszystkich gości. Po wejściu do środka należy zejść schodami znajdującymi się po prawej stronie, aby dotrzeć do sali.",
@@ -255,6 +278,7 @@ export const POLKOLONIA_BIALE_SZALENSTWO_BOBOWA: polkoloniaType = {
   },
 
   schedule: {
+    title: "PLAN TYGODNIA",
     scheduleAbout:
       "Tydzień pełen wrażeń i różnorodnych aktywności to idealna propozycja dla dzieci, które chcą rozwijać swoje pasje, bawić się i zdobywać nowe umiejętności. Od konstruowania robotów, przez wodne zabawy i saneczkowe przygody, aż po dzień pełen szaleństwa i finałowe rozgrywki w gry planszowe oraz logiczne – każdy znajdzie coś dla siebie. To wyjątkowa okazja do aktywnego spędzenia czasu, nauki współpracy i świetnej zabawy.",
     scheduleList: [
@@ -281,9 +305,8 @@ export const POLKOLONIA_BIALE_SZALENSTWO_BOBOWA: polkoloniaType = {
     ],
   },
   food: {
-    foodAbout: [
+    foodAbout:
       "Drugie śniadanie to pyszny i pożywny wybór, na który składa się świeży owoc lub tradycyjna drożdżówka, idealna na szybkie uzupełnienie energii w ciągu dnia. Smaczne obiady dostarczane są w ramach cateringu z restauracji Ostoja.",
-    ],
   },
 
   priceDetails: {
@@ -305,8 +328,8 @@ export const POLKOLONIA_BIALE_SZALENSTWO_BOBOWA: polkoloniaType = {
 export const POLKOLONIA_BIALE_SZALENSTWO_KORZENNA: polkoloniaType = {
   title: "PÓŁKOLONIA BIAŁE SZALEŃSTWO",
   hero: {
-    pc: "polkolonia_bialeszalenstwo_korzenna_2025-pc",
-    mobile: "polkolonia_bialeszalenstwo_korzenna_2025-mobile",
+    pc: "polkolonie/polkolonia_bialeszalenstwo_korzenna_2025-pc",
+    mobile: "polkolonie/polkolonia_bialeszalenstwo_korzenna_2025-mobile",
   },
   details: {
     location: "KORZENNA",
@@ -321,6 +344,12 @@ export const POLKOLONIA_BIALE_SZALENSTWO_KORZENNA: polkoloniaType = {
     aboutDescription:
       "Półkolonie w NEMO SPORTOWA PRZYGODA to idealne połączenie ruchu, nauki i świetnej zabawy. Nasi wykwalifikowani opiekunowie zadbają o bezpieczeństwo i doskonałą atmosferę, tak aby każdy dzień był pełen radości i inspiracji. Dzięki półkoloniom dzieci mają okazję nie tylko rozwinąć swoje pasje i zainteresowania, ale także poznać nowych przyjaciół.",
   },
+  contact: {
+    title:
+      "Zapisz swoje dziecko już dziś i zapewnij mu niezapomniane wspomnienia!",
+    phone: "+48 519 625 894",
+    email: "szkolaplywanianemo1@gmail.com",
+  },
   localization: {
     localizationDescription: [
       "Centrum Sportu i Rekreacji w Korzennej to miejsce, w którym odbędą się półkolonie zimowe. Aby dotrzeć do sali, należy wejść głównym wejściem prowadzącym na basen. Następnie trzeba skierować się w lewą stronę i wejść schodami na górę. Sala znajduje się na pierwszym piętrze i jest jedyną salą na tym poziomie, co ułatwia jej znalezienie.",
@@ -328,6 +357,7 @@ export const POLKOLONIA_BIALE_SZALENSTWO_KORZENNA: polkoloniaType = {
   },
 
   schedule: {
+    title: "PLAN TYGODNIA",
     scheduleAbout:
       "Tydzień pełen wrażeń i różnorodnych aktywności to idealna propozycja dla dzieci, które chcą rozwijać swoje pasje, bawić się i zdobywać nowe umiejętności. Od konstruowania robotów, przez wodne zabawy i saneczkowe przygody, aż po dzień pełen szaleństwa i finałowe rozgrywki w gry planszowe oraz logiczne – każdy znajdzie coś dla siebie. To wyjątkowa okazja do aktywnego spędzenia czasu, nauki współpracy i świetnej zabawy.",
     scheduleList: [
@@ -354,9 +384,8 @@ export const POLKOLONIA_BIALE_SZALENSTWO_KORZENNA: polkoloniaType = {
     ],
   },
   food: {
-    foodAbout: [
+    foodAbout:
       "Drugie śniadanie to pyszny i pożywny wybór, na który składa się świeży owoc lub tradycyjna drożdżówka, idealna na szybkie uzupełnienie energii w ciągu dnia. Smaczne obiady dostarczane są w ramach cateringu z restauracji Ostoja.",
-    ],
   },
 
   priceDetails: {

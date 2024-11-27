@@ -10,14 +10,14 @@ const Hero: React.FC<{ hero: heroComponentType }> = ({ hero }) => {
     <div className={styles.hero}>
       <Image
         className={styles["hero__image"]}
-        src={`/assets/winter/polkolonie/${hero.pc}.webp`}
+        src={`/assets/winter/${hero.pc}.webp`}
         width={1920}
         height={1080}
         alt="aktywna zima bobowa"
       />
       <Image
         className={styles["hero__image-mobile"]}
-        src={`/assets/winter/polkolonie/${hero.mobile}.webp`}
+        src={`/assets/winter/${hero.mobile}.webp`}
         width={1242}
         height={2208}
         alt="aktywna zima bobowa"

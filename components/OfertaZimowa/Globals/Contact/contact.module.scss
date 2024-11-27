@@ -23,7 +23,8 @@
       color: $darkBlue;
       font-family: "poppins-700";
     }
-    &__text {
+    &__text,
+    a {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -41,6 +42,9 @@
         }
       }
     }
+    a:hover {
+      color: $basicOrange;
+    }
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -49,7 +53,8 @@
       &__header {
         font-size: 1.5rem;
       }
-      &__text {
+      &__text,
+      a {
         font-size: 1rem;
         svg {
           width: 40px;
@@ -67,7 +72,8 @@
       &__header {
         font-size: 1.3rem;
       }
-      &__text {
+      &__text,
+      a {
         gap: 0.5rem;
         font-size: 0.8rem;
         svg {
@@ -81,7 +87,8 @@
 @media only screen and (max-width: 410px) {
   .contact {
     &__box {
-      &__text {
+      &__text,
+      a {
         font-size: 0.5rem;
       }
     }
