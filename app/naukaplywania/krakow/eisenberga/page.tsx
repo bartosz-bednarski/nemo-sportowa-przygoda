@@ -29,7 +29,6 @@ export const metadata: Metadata = {
       "https://nemosportowaprzygoda.pl/naukaplywania/krakow/eisenberga",
     languages: {
       "pl-PL": "/pl-PL",
-      "en-US": "/en-US",
     },
   },
 };

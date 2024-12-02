@@ -12,6 +12,15 @@ import { OBOZY_LISTA_2025 } from "@/utils/Winter/Obozy";
 
 export const metadata: Metadata = {
   title: "Oferta ZIMOWA",
+  description:
+    "Sprawdź naszą ofertę na zimowe ferie małopolskie. Organizujemy półkolonie i obozy zimowe oraz weekendowe narty dla dzieci i młodzieży. KRAKÓW | BOBOWA | KORZENNA ",
+  metadataBase: new URL("https://nemosportowaprzygoda.pl/ofertazimowa"),
+  alternates: {
+    canonical: "https://nemosportowaprzygoda.pl/ofertazimowa",
+    languages: {
+      "pl-PL": "/pl-PL",
+    },
+  },
 };
 
 const OfertaZimowaPage = () => {

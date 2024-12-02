@@ -9,6 +9,22 @@ import Food from "@/components/OfertaZimowa/Globals/Food/Food";
 import PriceDetails from "@/components/OfertaZimowa/Globals/PriceDetails/PriceDetails";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 import Contact from "@/components/OfertaZimowa/Globals/Contact/Contact";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Półkolonia Aktywna Zima 2025 ŁUŻNA ",
+  description:
+    "Sprawdź naszą ofertę półkolonii zimowych dla dzieci i młodzieży w Gminnym Ośrodku Kultury w Łużnej - 20.01-24.01.2025. Zimowe ferie małopolskie z NEMO!",
+  metadataBase: new URL(
+    "https://nemosportowaprzygoda.pl/ofertazimowa/polkolonie/aktywnazima/luzna"
+  ),
+  alternates: {
+    canonical:
+      "https://nemosportowaprzygoda.pl/ofertazimowa/polkolonie/aktywnazima/luzna",
+    languages: {
+      "pl-PL": "/pl-PL",
+    },
+  },
+};
 const PolkoloniaAktywnaZimaLuzna = () => {
   return (
     <main className={styles.main} style={{ background: "white" }}>

@@ -15,7 +15,6 @@ export const metadata: Metadata = {
     canonical: "https://nemosportowaprzygoda.pl/naukaplywania",
     languages: {
       "pl-PL": "/pl-PL",
-      "en-US": "/en-US",
     },
   },
 };

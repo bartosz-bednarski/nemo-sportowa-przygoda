@@ -13,7 +13,22 @@ import Schedule from "@/components/OfertaZimowa/Globals/Schedule/Schedule";
 import Food from "@/components/OfertaZimowa/Globals/Food/Food";
 import PriceDetails from "@/components/OfertaZimowa/Globals/PriceDetails/PriceDetails";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Obóz narciarski 2025 MUSZYNA ",
+  description:
+    "Sprawdź naszą ofertę dla zimowego obozu narciarskiego dla dzieci i młodzieży w Muszynie - 27.01-31.01.2025. Zimowe ferie małopolskie z NEMO!",
+  metadataBase: new URL(
+    "https://nemosportowaprzygoda.pl/ofertazimowa/obozy/narciarskie/muszyna"
+  ),
+  alternates: {
+    canonical:
+      "https://nemosportowaprzygoda.pl/ofertazimowa/obozy/narciarskie/muszyna",
+    languages: {
+      "pl-PL": "/pl-PL",
+    },
+  },
+};
 const ObozNarciarskiMuszyna = () => {
   return (
     <main className={styles.main} style={{ background: "white" }}>
