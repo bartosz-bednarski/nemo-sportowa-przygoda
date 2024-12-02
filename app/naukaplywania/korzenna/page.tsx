@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     canonical: "https://nemosportowaprzygoda.pl/naukaplywania/korzenna",
     languages: {
       "pl-PL": "/pl-PL",
-      "en-US": "/en-US",
     },
   },
 };

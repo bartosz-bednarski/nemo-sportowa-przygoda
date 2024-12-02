@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     canonical: "https://nemosportowaprzygoda.pl/naukaplywania/krakow/plywaczek",
     languages: {
       "pl-PL": "/pl-PL",
-      "en-US": "/en-US",
     },
   },
 };

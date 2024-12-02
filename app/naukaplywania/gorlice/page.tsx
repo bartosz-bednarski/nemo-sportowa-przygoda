@@ -29,7 +29,6 @@ export const metadata: Metadata = {
     canonical: "https://nemosportowaprzygoda.pl/naukaplywania/gorlice",
     languages: {
       "pl-PL": "/pl-PL",
-      "en-US": "/en-US",
     },
   },
 };

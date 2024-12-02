@@ -10,8 +10,16 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Oferta LETNIA",
+  description:
+    "Zapraszamy do sprawdzenia naszej oferty letniej. Organizujemy półkolonie letnie dla dzieci oraz obozy młodzieżowe na terenie Małopolski - KRAKÓW | BOBOWA | KORZENNA.",
+  metadataBase: new URL("https://nemosportowaprzygoda.pl/ofertaletnia"),
+  alternates: {
+    canonical: "https://nemosportowaprzygoda.pl/ofertaletnia",
+    languages: {
+      "pl-PL": "/pl-PL",
+    },
+  },
 };
-
 const OfertaLetniaPage = () => {
   return (
     <main className={styles.main}>

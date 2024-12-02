@@ -9,6 +9,23 @@ import Schedule from "@/components/OfertaZimowa/Globals/Schedule/Schedule";
 import Food from "@/components/OfertaZimowa/Globals/Food/Food";
 import PriceDetails from "@/components/OfertaZimowa/Globals/PriceDetails/PriceDetails";
 import Details from "@/components/OfertaZimowa/Globals/Details/Details";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Półkolonia Aktywna Zima 2025 BOBOWA ",
+  description:
+    "Sprawdź naszą ofertę półkolonii zimowych dla dzieci i młodzieży w Miejskim Centrum Kultury w Bobowej - 20.01-24.01.2025. Zimowe ferie małopolskie z NEMO!",
+  metadataBase: new URL(
+    "https://nemosportowaprzygoda.pl/ofertazimowa/polkolonie/aktywnazima/bobowa"
+  ),
+  alternates: {
+    canonical:
+      "https://nemosportowaprzygoda.pl/ofertazimowa/polkolonie/aktywnazima/bobowa",
+    languages: {
+      "pl-PL": "/pl-PL",
+    },
+  },
+};
 const PolkoloniaAktywnaZimaBobowa = () => {
   return (
     <main className={styles.main} style={{ background: "white" }}>

@@ -9,6 +9,22 @@ import Food from "@/components/OfertaZimowa/Globals/Food/Food";
 import PriceDetails from "@/components/OfertaZimowa/Globals/PriceDetails/PriceDetails";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 import Contact from "@/components/OfertaZimowa/Globals/Contact/Contact";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Półkolonia Aktywna Zima 2025 KORZENNA ",
+  description:
+    "Sprawdź naszą ofertę półkolonii zimowych dla dzieci i młodzieży w Centrum Sportu i Rekreacji w Korzennej - 20.01-24.01.2025. Zimowe ferie małopolskie z NEMO!",
+  metadataBase: new URL(
+    "https://nemosportowaprzygoda.pl/ofertazimowa/polkolonie/aktywnazima/korzenna"
+  ),
+  alternates: {
+    canonical:
+      "https://nemosportowaprzygoda.pl/ofertazimowa/polkolonie/aktywnazima/korzenna",
+    languages: {
+      "pl-PL": "/pl-PL",
+    },
+  },
+};
 const PolkoloniaAktywnaZimaKorzenna = () => {
   return (
     <main className={styles.main} style={{ background: "white" }}>

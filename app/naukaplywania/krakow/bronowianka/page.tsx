@@ -28,7 +28,6 @@ export const metadata: Metadata = {
       "https://nemosportowaprzygoda.pl/naukaplywania/krakow/bronowianka",
     languages: {
       "pl-PL": "/pl-PL",
-      "en-US": "/en-US",
     },
   },
 };
