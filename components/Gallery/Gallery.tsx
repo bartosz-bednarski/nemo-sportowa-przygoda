@@ -27,6 +27,7 @@ const Gallery: React.FC<{
           <span className={styles["gallery__hero__title__strip"]}>
             {" "}
             <StripH1
+              type="h1"
               title="ZDJĘĆ"
               stripBgColor="basicOrange"
               stripTextColor="white"

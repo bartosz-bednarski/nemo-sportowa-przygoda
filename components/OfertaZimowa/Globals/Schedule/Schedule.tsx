@@ -12,6 +12,7 @@ const Schedule: React.FC<{ schedule: scheduleComponentType }> = ({
       <div className={styles["schedule__row-box"]}>
         <div className={styles["schedule__row-box__content"]}>
           <StripH2
+            type="h2"
             title={schedule.title}
             stripTextColor="white"
             stripBgColor="darkBlue"

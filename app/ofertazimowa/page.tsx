@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const OfertaZimowaPage = () => {
   return (
-    <main className={styles.main}>
+    <main className={styles.main} style={{ background: "white" }}>
       <VideosSection
         oneSticker={false}
         scrapColor="white"
@@ -44,7 +44,7 @@ const OfertaZimowaPage = () => {
             titleStrip: "NARCIARSKIE",
             stripBgColor: "white",
             stripTextColor: "darkBlue",
-            scale: 1.15,
+            scale: 1.3,
           },
         }}
         col2={{
@@ -67,7 +67,7 @@ const OfertaZimowaPage = () => {
             titleStrip: "NARCIARSKIE",
             stripBgColor: "white",
             stripTextColor: "darkBlue",
-            scale: 1.15,
+            scale: 1.3,
           },
         }}
       />

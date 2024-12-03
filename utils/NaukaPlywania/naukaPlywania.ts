@@ -37,7 +37,7 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       stickerH2: {
         title: "NAUKA PŁYWANIA",
         titleStrip: "Z RODZICAMI",
-        scale: 1.2,
+        scale: 1.25,
         stripTextColor: "lightBlue",
         stripBgColor: "white",
         paddingBottom: 10,
@@ -120,8 +120,9 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     },
     groups: {
       stripH2: {
+        type: "h2",
         title: "GRUPY",
-        scale: 1.2,
+        scale: 1.4,
         stripBgColor: "white",
         stripTextColor: "darkBlue",
       },
@@ -141,7 +142,7 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       stickerH2: {
         title: "NAUKA PŁYWANIA",
         titleStrip: "DZIECI I MŁODZIEŻ",
-        scale: 1.4,
+        scale: 1.8,
         stripTextColor: "mediumBlue",
         stripBgColor: "white",
         paddingBottom: 10,
@@ -219,8 +220,9 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     },
     groups: {
       stripH2: {
+        type: "h2",
         title: "GRUPY",
-        scale: 1.2,
+        scale: 1.3,
         stripBgColor: "white",
         stripTextColor: "mediumBlue",
       },
@@ -316,8 +318,9 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     },
     groups: {
       stripH2: {
+        type: "h2",
         title: "GRUPY",
-        scale: 1.2,
+        scale: 1.3,
         stripBgColor: "white",
         stripTextColor: "darkBlue",
       },

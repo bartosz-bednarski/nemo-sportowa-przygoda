@@ -16,6 +16,7 @@ import LessonTypeWrapBox from "@/components/Globals/LessonTypeWrapBox/LessonType
 import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
 import { Metadata } from "next";
 import Schedule from "@/components/Schedule/Schedule";
+import { COLORS } from "@/utils/UI/colors";
 
 export const metadata: Metadata = {
   title: "Nauka pływania KORZENNA",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
 
 const NaukaPlywaniaKorzenna = () => {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} style={{ background: COLORS["darkBlue"] }}>
       <VideosSection
         oneSticker={true}
         oneStickerContent={{

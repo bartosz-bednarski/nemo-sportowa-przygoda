@@ -16,7 +16,7 @@ const GalleryLink: React.FC<{
     <Link
       href={href}
       className={styles.galleryLink}
-      style={{ background: COLORS[bgColor] }}
+      style={{ background: `${COLORS[bgColor]} !important` }}
     >
       <Image
         className={styles["galleryLink__image"]}

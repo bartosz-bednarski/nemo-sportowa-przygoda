@@ -11,6 +11,7 @@ const Surroundings: React.FC<{
     <div className={styles["surroundings"]}>
       <div className={styles["surroundings__content"]}>
         <StripH2
+          type="h2"
           title="OKOLICA"
           stripBgColor="darkBlue"
           stripTextColor="white"

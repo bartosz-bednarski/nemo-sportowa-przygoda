@@ -26,8 +26,10 @@ const SignInPopupSwimming: React.FC = () => {
           <XBtn onClick={closePopupHandler} />
         </span>
         <div className={styles["popup__content-box__column"]}>
-          <h1>NAUKA PŁYWANIA</h1>
-          <h3>KRAKÓW | KORZENNA | GORLICE</h3>
+          <h3>
+            <b>NAUKA PŁYWANIA</b>
+            <br /> KRAKÓW | KORZENNA | GORLICE
+          </h3>
           <span>
             Rozpocznij przygodę z wodą niezależnie od wieku! Zapraszamy na
             zajęcia pływackie dostosowane do potrzeb każdej grupy wiekowej: od

@@ -14,7 +14,7 @@ export const RODZAJE_LEKCJI: rodzajeLekcji = {
       titleStrip: "INDYWIDUALNE",
       stripBgColor: "white",
       stripTextColor: "basicOrange",
-      scale: 1.2,
+      scale: 1.6,
       paddingBottom: 0,
     },
     aboutTextPoppins: {
@@ -31,7 +31,7 @@ export const RODZAJE_LEKCJI: rodzajeLekcji = {
       titleStrip: "DWUOSOBOWE",
       stripBgColor: "basicOrange",
       stripTextColor: "mediumBlue",
-      scale: 1.2,
+      scale: 1.5,
       paddingBottom: 0,
     },
     aboutTextPoppins: {
@@ -48,7 +48,7 @@ export const RODZAJE_LEKCJI: rodzajeLekcji = {
       titleStrip: "TRZYOSOBOWE",
       stripBgColor: "mediumBlue",
       stripTextColor: "white",
-      scale: 1.2,
+      scale: 1.6,
       paddingBottom: 0,
     },
     aboutTextPoppins: {

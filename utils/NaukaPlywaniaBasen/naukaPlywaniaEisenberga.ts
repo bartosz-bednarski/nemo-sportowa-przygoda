@@ -265,6 +265,7 @@ export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
     },
     groups: {
       stripH2: {
+        type: "h2",
         title: "GRUPY",
         scale: 1.2,
         stripBgColor: "white",
@@ -331,6 +332,7 @@ export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
     },
     groups: {
       stripH2: {
+        type: "h2",
         title: "GRUPY",
         scale: 1.2,
         stripBgColor: "white",
@@ -395,6 +397,7 @@ export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
     },
     groups: {
       stripH2: {
+        type: "h2",
         title: "GRUPY",
         scale: 1.2,
         stripBgColor: "white",
@@ -456,6 +459,7 @@ export const BASEN_EISENBERGA_INFORMATIONS: poolInformationsType = {
 export const BASEN_EISENBERGA_TUTORIAL_Z_RODZICAMI: poolTutorialType = {
   header: true,
   stripH4: {
+    type: "h4",
     title: "ZAJĘCIA Z RODZICAMI",
     stripBgColor: "white",
     stripTextColor: "basicOrange",
@@ -477,6 +481,7 @@ export const BASEN_EISENBERGA_TUTORIAL_Z_RODZICAMI: poolTutorialType = {
 export const BASEN_EISENBERGA_TUTORIAL_DZIECI_MLODZIEZ: poolTutorialType = {
   header: true,
   stripH4: {
+    type: "h4",
     title: "DZIECI I MŁODZIEŻ",
     stripBgColor: "white",
     stripTextColor: "basicOrange",

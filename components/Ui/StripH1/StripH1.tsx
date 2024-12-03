@@ -9,6 +9,7 @@ const StripH1: React.FC<stripH1Type> = ({
   stripBgColor,
   stripTextColor,
   title,
+  type,
 }) => {
   return (
     <span className={styles.box}>
@@ -39,14 +40,28 @@ const StripH1: React.FC<stripH1Type> = ({
           fill={COLORS[stripBgColor]}
         />
       </svg>
-      <h1
-        style={{
-          color: COLORS[stripTextColor],
-          background: COLORS[stripBgColor],
-        }}
-      >
-        {title}
-      </h1>{" "}
+
+      {type === "span" ? (
+        <span
+          className={styles["box__title"]}
+          style={{
+            color: COLORS[stripTextColor],
+            background: COLORS[stripBgColor],
+          }}
+        >
+          {title}
+        </span>
+      ) : (
+        <span
+          className={styles["box__title"]}
+          style={{
+            color: COLORS[stripTextColor],
+            background: COLORS[stripBgColor],
+          }}
+        >
+          {title}
+        </span>
+      )}
       <svg
         width="25"
         height="89"

@@ -9,6 +9,7 @@ const Food: React.FC<{ food: foodComponentType }> = ({ food }) => {
     <div className={styles["food"]}>
       <div className={styles["food__content"]}>
         <StripH2
+          type="h2"
           title="WYŻYWIENIE"
           stripTextColor="white"
           stripBgColor="darkBlue"
