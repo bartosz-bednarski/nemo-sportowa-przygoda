@@ -11,6 +11,7 @@ const Localization: React.FC<{ localization: localizationComponentType }> = ({
     <div className={styles["localization"]}>
       <div className={styles["localization__content"]}>
         <StripH2
+          type="h2"
           title="LOKALIZACJA"
           stripTextColor="white"
           stripBgColor="darkBlue"

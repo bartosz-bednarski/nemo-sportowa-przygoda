@@ -5,6 +5,7 @@ import { NAUKA_PLYWANIA } from "@/utils/NaukaPlywania/naukaPlywania";
 import Bubbles from "@/components/Ui/Bubbles/Bubbles";
 import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
 import { Metadata } from "next";
+import { COLORS } from "@/utils/UI/colors";
 
 export const metadata: Metadata = {
   title: "Nauka pływania - KRAKÓW|KORZENNA|GORLICE",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 
 const NaukaPlywaniaPage = () => {
   return (
-    <main className={styles.main}>
+    <main className={styles.main} style={{ background: COLORS["darkBlue"] }}>
       <VideosSection
         oneSticker={false}
         scrapColor="lightBlue"

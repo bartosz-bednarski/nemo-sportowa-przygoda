@@ -2,11 +2,12 @@ import AboutCamps from "@/components/Globals/AboutCamps/AboutCamps";
 import styles from "../page.module.scss";
 import VideosSection from "@/components/Globals/VideosSection";
 import SignInCamps from "@/components/Globals/SignInCamps/SignInCamps";
-import { POLKOLONIE_LATO_COVERS } from "@/utils/Summer/Polkolonie";
+// import { POLKOLONIE_LATO_COVERS } from "@/utils/Summer/Polkolonie";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 import CollabSummer from "@/components/Summer/CollabSummer";
 import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
 import { Metadata } from "next";
+import { COLORS } from "@/utils/UI/colors";
 
 export const metadata: Metadata = {
   title: "Oferta LETNIA",
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
 };
 const OfertaLetniaPage = () => {
   return (
-    <main className={styles.main}>
+    <main className={styles.main} style={{ background: COLORS["basicGreen"] }}>
       <VideosSection
         oneSticker={true}
         scrapColor="basicGreen"
@@ -89,7 +90,7 @@ const OfertaLetniaPage = () => {
         theme="summer"
         waiting={true}
         waitingTitle="STARTUJEMY JUŻ WIOSNĄ"
-        activeCampsCoversList={POLKOLONIE_LATO_COVERS}
+        activeCampsCoversList={[]}
       />
       <AboutCamps
         stickerH2={{

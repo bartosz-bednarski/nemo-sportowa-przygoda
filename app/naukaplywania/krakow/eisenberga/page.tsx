@@ -16,6 +16,7 @@ import {
 import LessonTypeWrapBox from "@/components/Globals/LessonTypeWrapBox/LessonTypeWrapBox";
 import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
 import { Metadata } from "next";
+import { COLORS } from "@/utils/UI/colors";
 
 export const metadata: Metadata = {
   title: "Nauka pływania Kraków EISENBERGA",
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
 
 const NaukaPlywaniaEisenberga = () => {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} style={{ background: COLORS["darkBlue"] }}>
       <VideosSection
         oneSticker={true}
         oneStickerContent={{

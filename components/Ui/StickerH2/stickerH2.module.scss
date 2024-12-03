@@ -1,5 +1,5 @@
 .box {
-  gap: 1.5rem;
+  gap: 2.5rem;
   box-sizing: border-box;
   padding-left: 20px;
   width: fit-content;
@@ -18,22 +18,21 @@
   }
 }
 @media only screen and (max-width: 1600px) {
-  .box h2 {
+  .box__title {
     font-size: 3rem;
   }
 }
-@media only screen and (max-width: 1250px) {
-  .box {
-    h2 {
-      font-size: 2rem;
-    }
+@media only screen and (max-width: 1500px) {
+  .box__title {
+    font-size: 2rem;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .box {
     width: 100%;
     padding: 0;
     &__title {
+      font-size: 1.5rem;
       text-align: center;
     }
   }
@@ -41,9 +40,6 @@
 @media only screen and (max-width: 500px) {
   .box {
     gap: 1rem;
-  }
-  .box h2 {
-    font-size: 1.3rem;
   }
   .box__title {
     font-size: 1.3rem;

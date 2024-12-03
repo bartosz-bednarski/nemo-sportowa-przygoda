@@ -9,6 +9,7 @@ const Groups: React.FC<groupsType> = ({ stripH2, groups }) => {
   return (
     <div className={styles.groups}>
       <StripH2
+        type="h2"
         title={stripH2.title}
         stripBgColor={stripH2.stripBgColor}
         stripTextColor={stripH2.stripTextColor}

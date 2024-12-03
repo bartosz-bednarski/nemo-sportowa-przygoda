@@ -12,15 +12,16 @@ const StickerH4: React.FC<stickerH4Type> = ({
   paddingBottom,
 }) => {
   return (
-    <div className={styles.box} style={{ paddingBottom: `${paddingBottom}%` }}>
-      <h4 className={styles["box__title"]}>{title}</h4>
+    <h4 className={styles.box} style={{ paddingBottom: `${paddingBottom}%` }}>
+      <span className={styles["box__title"]}>{title}</span>
       <StripH4
+        type="span"
         scale={scale}
         stripTextColor={stripTextColor}
         stripBgColor={stripBgColor}
         title={titleStrip}
       />
-    </div>
+    </h4>
   );
 };
 export default StickerH4;

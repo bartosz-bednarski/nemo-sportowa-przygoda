@@ -13,16 +13,17 @@ const StickerH1: React.FC<stickerH1Type> = ({
   paddingBottom,
 }) => {
   return (
-    <div className={styles.box} style={{ paddingBottom: `${paddingBottom}%` }}>
-      <h1 className={styles["box__title"]}>{title}</h1>
-      <h1 className={styles["box__title-2"]}>{title2}</h1>
+    <h1 className={styles.box} style={{ paddingBottom: `${paddingBottom}%` }}>
+      <span className={styles["box__title"]}>{title} </span>
+      <span className={styles["box__title-2"]}>{title2} </span>
       <StripH1
+        type="span"
         scale={scale}
         stripTextColor={stripTextColor}
         stripBgColor={stripBgColor}
         title={titleStrip}
       />
-    </div>
+    </h1>
   );
 };
 export default StickerH1;

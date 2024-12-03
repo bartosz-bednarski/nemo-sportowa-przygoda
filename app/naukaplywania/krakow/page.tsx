@@ -4,6 +4,7 @@ import VideosSection from "@/components/Globals/VideosSection";
 import NaukaPlywaniaMiasto from "@/components/NaukaPlywaniaMiasto/NaukaPlywaniaMiasto";
 import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 import { Metadata } from "next";
+import { COLORS } from "@/utils/UI/colors";
 
 export const metadata: Metadata = {
   title: "Nauka pływania KRAKÓW",
@@ -20,7 +21,10 @@ export const metadata: Metadata = {
 
 const NaukaPlywaniaKrakow = () => {
   return (
-    <div className={styles.main} style={{ paddingBottom: "0rem" }}>
+    <div
+      className={styles.main}
+      style={{ paddingBottom: "0rem", background: COLORS["lightBlue"] }}
+    >
       <VideosSection
         oneSticker={true}
         scrapColor="lightBlue"

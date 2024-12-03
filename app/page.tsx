@@ -18,6 +18,10 @@ export const metadata: Metadata = {
       "en-US": "/en-US",
     },
   },
+  openGraph: {
+    url: "https://nemosportowaprzygoda.pl/",
+    type: "website",
+  },
 };
 export default function Home() {
   return (
@@ -46,7 +50,7 @@ export default function Home() {
             titleStrip: "PÓŁKOLONIE",
             stripBgColor: "basicOrange",
             stripTextColor: "white",
-            scale: 1.15,
+            scale: 1.25,
           },
         }}
         col3={{

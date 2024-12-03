@@ -15,6 +15,7 @@ import {
 } from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaBronowianka";
 import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
 import { Metadata } from "next";
+import { COLORS } from "@/utils/UI/colors";
 
 export const metadata: Metadata = {
   title: "Nauka pływania Kraków BRONOWIANKA",
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
 };
 const NaukaPlywaniaBronowianka = () => {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} style={{ background: COLORS["darkBlue"] }}>
       <VideosSection
         oneSticker={true}
         oneStickerContent={{

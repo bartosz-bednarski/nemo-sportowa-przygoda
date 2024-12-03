@@ -406,7 +406,7 @@ export const POLKOLONIA_BIALE_SZALENSTWO_KORZENNA: polkoloniaType = {
 };
 export const POLKOLONIE_LISTA_2025: campsCoversType = [
   {
-    active: true,
+    active: false,
     title: "PÓŁKOLONIA AKTYWNA ZIMA",
     price: "800 PLN",
     localization: "MCK W BOBOWEJ",

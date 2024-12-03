@@ -118,6 +118,7 @@ export const NAUKA_PLYWANIA_BRONOWIANKA: naukaPlywaniaBasen = {
     },
     groups: {
       stripH2: {
+        type: "h2",
         title: "ZAJĘCIA",
         scale: 1.2,
         stripBgColor: "white",

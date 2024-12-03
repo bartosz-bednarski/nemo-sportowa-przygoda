@@ -180,7 +180,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "GRUPOWE",
         titleStrip: "Z RODZICAMI",
-        scale: 1.2,
+        scale: 1.35,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,
@@ -196,7 +196,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "GRUPA",
         titleStrip: "POCZĄTKUJĄCA",
-        scale: 1.2,
+        scale: 1.55,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,
@@ -212,7 +212,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "KONTYNUACJA",
         titleStrip: "NAUKI",
-        scale: 1.2,
+        scale: 1.7,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,
@@ -228,7 +228,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "ŚREDNIO",
         titleStrip: "ZAAWANSOWANA",
-        scale: 1.2,
+        scale: 1.65,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,
@@ -244,7 +244,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "GRUPA",
         titleStrip: "ZAAWANSOWANA",
-        scale: 1.2,
+        scale: 1.65,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,
@@ -260,7 +260,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "GRUPA",
         titleStrip: "POCZĄTKUJĄCA",
-        scale: 1.2,
+        scale: 1.65,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,
@@ -276,7 +276,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "KONTYNUACJA",
         titleStrip: "NAUKI",
-        scale: 1.2,
+        scale: 2,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,
@@ -292,7 +292,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "GRUPOWE",
         titleStrip: "Z RODZICAMI",
-        scale: 1.2,
+        scale: 1.35,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,
@@ -309,7 +309,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "GRUPOWE",
         titleStrip: "Z RODZICAMI",
-        scale: 1.2,
+        scale: 1.35,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,
@@ -326,7 +326,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "GRUPOWE",
         titleStrip: "Z RODZICAMI",
-        scale: 1.2,
+        scale: 1.35,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,
@@ -343,7 +343,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "GRUPOWE",
         titleStrip: "Z RODZICAMI",
-        scale: 1.2,
+        scale: 1.35,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,
@@ -359,7 +359,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "GRUPOWE",
         titleStrip: "Z RODZICAMI",
-        scale: 1.2,
+        scale: 1.35,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,
@@ -376,7 +376,7 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: "GRUPOWE",
         titleStrip: "BEZ RODZICÓW",
-        scale: 1.2,
+        scale: 1.45,
         stripBgColor: "basicOrange",
         stripTextColor: "darkBlue",
         paddingBottom: 10,

@@ -2,14 +2,15 @@
 import React from "react";
 import styles from "./strip.module.scss";
 import { COLORS } from "@/utils/UI/colors";
-import { stripH3Type } from "@/types/UI/stickerStripStrap";
+import { stripH4Type } from "@/types/UI/stickerStripStrap";
 
-const StripH4: React.FC<stripH3Type> = ({
+const StripH4: React.FC<stripH4Type> = ({
   scale,
   stripBgColor,
   stripTextColor,
   title,
   marginBottom,
+  type,
 }) => {
   return (
     <span className={styles.box} style={{ marginBottom: marginBottom }}>
@@ -41,15 +42,28 @@ const StripH4: React.FC<stripH3Type> = ({
           fill={COLORS[stripBgColor]}
         />
       </svg>
+      {type === "span" ? (
+        <span
+          className={styles["box__title"]}
+          style={{
+            color: COLORS[stripTextColor],
+            background: COLORS[stripBgColor],
+          }}
+        >
+          {title}
+        </span>
+      ) : (
+        <h4
+          className={styles["box__title"]}
+          style={{
+            color: COLORS[stripTextColor],
+            background: COLORS[stripBgColor],
+          }}
+        >
+          {title}
+        </h4>
+      )}
 
-      <h4
-        style={{
-          color: COLORS[stripTextColor],
-          background: COLORS[stripBgColor],
-        }}
-      >
-        {title}
-      </h4>
       <svg
         width="25"
         height="89"

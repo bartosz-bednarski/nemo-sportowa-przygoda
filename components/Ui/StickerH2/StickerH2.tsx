@@ -14,22 +14,23 @@ const StickerH2: React.FC<stickerH2Type> = ({
   titleColor,
 }) => {
   return (
-    <div className={styles.box} style={{ paddingBottom: `${paddingBottom}%` }}>
-      <h2
+    <h2 className={styles.box} style={{ paddingBottom: `${paddingBottom}%` }}>
+      <span
         className={styles["box__title"]}
         style={{
           color: COLORS[titleColor !== undefined ? titleColor : "white"],
         }}
       >
         {title}
-      </h2>
+      </span>
       <StripH2
+        type="span"
         scale={scale}
         stripTextColor={stripTextColor}
         stripBgColor={stripBgColor}
         title={titleStrip}
       />
-    </div>
+    </h2>
   );
 };
 export default StickerH2;

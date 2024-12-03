@@ -17,6 +17,7 @@ const PoolTutorial: React.FC<{ poolTutorial: poolTutorialType }> = ({
     >
       {poolTutorial.header && poolTutorial.stripH4 !== undefined && (
         <StripH4
+          type="h4"
           title={poolTutorial.stripH4.title}
           stripBgColor={poolTutorial.stripH4.stripBgColor}
           stripTextColor={poolTutorial.stripH4.stripTextColor}

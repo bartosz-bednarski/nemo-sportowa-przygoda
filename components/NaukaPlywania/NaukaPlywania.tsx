@@ -32,7 +32,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               titleStrip="W WODZIE"
               stripBgColor="basicOrange"
               stripTextColor="darkBlue"
-              scale={1.1}
+              scale={1.3}
               paddingBottom={5}
             />
             <ul>
@@ -65,7 +65,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               titleStrip="DO ZAJĘĆ"
               stripBgColor="basicOrange"
               stripTextColor="darkBlue"
-              scale={1.1}
+              scale={1.3}
               paddingBottom={5}
             />
             <ul>
@@ -99,7 +99,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               titleStrip="DZIECKA"
               stripBgColor="basicOrange"
               stripTextColor="darkBlue"
-              scale={1.1}
+              scale={1.4}
               paddingBottom={5}
             />
             <ul>
@@ -118,7 +118,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               titleStrip="RODZICA"
               stripBgColor="basicOrange"
               stripTextColor="darkBlue"
-              scale={1.1}
+              scale={1.4}
               paddingBottom={5}
             />
             <ul>
@@ -136,7 +136,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               titleStrip="INFORMACJE"
               stripBgColor="basicOrange"
               stripTextColor="darkBlue"
-              scale={1.2}
+              scale={1.4}
               paddingBottom={5}
             />
             <ul>
@@ -166,7 +166,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               titleStrip="I KOMFORT"
               stripBgColor="basicOrange"
               stripTextColor="darkBlue"
-              scale={1.2}
+              scale={1.3}
               paddingBottom={5}
             />
             <ul>

@@ -1,9 +1,10 @@
 .box {
+  display: block;
   position: relative;
   align-items: center;
   justify-content: center;
   width: fit-content;
-  h1 {
+  &__title {
     position: relative;
     font-size: 3.2rem;
     font-weight: 800;
@@ -21,35 +22,42 @@
   &__scrap-left {
     display: none;
     position: absolute;
-    left: -19px;
+    left: -17px;
     height: 100%;
     top: 0;
   }
   &__scrap-right {
     display: none;
     position: absolute;
-    right: -19px;
+    right: -17px;
     height: 100%;
     top: 0;
   }
 }
 @media only screen and (max-width: 1600px) {
-  .box h1 {
+  .box__title {
     font-size: 3.2rem;
   }
 }
 @media only screen and (max-width: 1250px) {
-  .box h1 {
+  .box__title {
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .box__title {
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 700px) {
   .box {
     width: 100%;
-    h1 {
+    &__title {
+      display: block;
+      width: 100%;
       margin: 0;
       font-size: 2rem;
-      padding: 0.5rem 2rem 0.5rem 0.5rem;
+      padding: 0;
     }
     &__mainScrap {
       display: none;
@@ -65,9 +73,9 @@
 @media only screen and (max-width: 550px) {
   .box {
     width: 100%;
-    h1 {
+    &__title {
       font-size: 1.5rem;
-      padding: 0.5rem 2rem 0.5rem 0.5rem;
+      padding: 0;
       margin: 0;
     }
   }
@@ -75,9 +83,9 @@
 @media only screen and (max-width: 500px) {
   .box {
     width: 100%;
-    h1 {
+    &__title {
       font-size: 1.3rem;
-      padding: 0.5rem 2rem 0.5rem 0.5rem;
+      padding: 0;
       margin: 0;
     }
   }

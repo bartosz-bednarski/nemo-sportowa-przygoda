@@ -28,13 +28,15 @@
   }
 }
 @media only screen and (max-width: 1600px) {
-  .box h1 {
+  .box__title,
+  .box__title-2 {
     font-size: 5rem;
   }
 }
 @media only screen and (max-width: 1250px) {
   .box {
-    h1 {
+    &__title,
+    &__title-2 {
       font-size: 4rem;
     }
   }
@@ -43,7 +45,8 @@
   .box {
     width: 100%;
     padding: 0;
-    h1 {
+    &__title,
+    &__title-2 {
       font-size: 3rem;
     }
   }
@@ -54,9 +57,6 @@
   }
 }
 @media only screen and (max-width: 616px) {
-  .box h1 {
-    font-size: 2.5rem;
-  }
   .box__title {
     font-size: 2.5rem;
   }
@@ -66,7 +66,7 @@
   }
 }
 @media only screen and (max-width: 500px) {
-  .box h1 {
+  .box span {
     font-size: 2rem;
   }
   .box__title {
@@ -78,7 +78,7 @@
   }
 }
 @media only screen and (max-width: 350px) {
-  .box h1 {
+  .box span {
     font-size: 1.5rem;
   }
   .box__title {

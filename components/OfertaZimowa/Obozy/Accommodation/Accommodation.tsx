@@ -14,6 +14,7 @@ const Accommodation: React.FC<{
       <div className={styles["accommodation__row-box"]}>
         <div className={styles["accommodation__row-box__content"]}>
           <StripH2
+            type="h2"
             title="ZAKWATEROWANIE"
             stripTextColor="white"
             stripBgColor="darkBlue"
