@@ -1,10 +1,6 @@
-import { GALLERY_MAIN } from "@/utils/Gallery/Gallery";
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const gallery = GALLERY_MAIN.map((item) => ({
-    url: `https://nemosportowaprzygoda.pl/galeria/${item.href}`,
-  }));
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: "https://nemosportowaprzygoda.pl/",
@@ -61,23 +57,31 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: "https://nemosportowaprzygoda.pl/ofertazimowa/polkolonie/bialeszalenstwo/korzenna",
     },
     {
-      url: "https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-1",
-    },
-    {
-      url: "https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-2",
-    },
-    {
-      url: "https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-3",
-    },
-    {
-      url: "https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-4",
-    },
-    {
       url: "https://nemosportowaprzygoda.pl/naszzespol",
     },
     {
       url: "https://nemosportowaprzygoda.pl/regulamin",
     },
-    ...gallery,
+    {
+      url: "https://nemosportowaprzygoda.pl/galeria/naukaplywaniazrodzicami",
+    },
+    {
+      url: "https://nemosportowaprzygoda.pl/galeria/naukaplywaniadzieciimlodziez",
+    },
+    {
+      url: "https://nemosportowaprzygoda.pl/galeria/wyjazdnanarty2024",
+    },
+    {
+      url: "https://nemosportowaprzygoda.pl/galeria/bobowskaprzygoda",
+    },
+    {
+      url: "https://nemosportowaprzygoda.pl/galeria/bobowskaprzygoda2",
+    },
+    {
+      url: "https://nemosportowaprzygoda.pl/galeria/kreatywnelaboratorium",
+    },
+    {
+      url: "https://nemosportowaprzygoda.pl/galeria/wakacyjnafrajda",
+    },
   ];
 }

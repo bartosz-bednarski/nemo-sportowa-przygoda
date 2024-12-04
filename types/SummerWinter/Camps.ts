@@ -12,7 +12,7 @@ export type campTypeCover = {
 export type campsCoversType = campTypeCover[];
 export type detailsBoxCampComponentType = {
   promo: boolean;
-  label: "MIEJSCE" | "TERMIN" | "CENA" | "WIEK";
+  label: "MIEJSCE" | "TERMIN" | "CENA" | "WIEK" | "ZBIÓRKA";
   content: string;
   promoPrice?: string;
   promoInfo?: string;
@@ -30,6 +30,25 @@ export type obozType = {
   schedule: scheduleCampComponentType;
   food: foodCampComponentType;
   priceDetails: priceDetailsCampComponentType;
+};
+export type weekendNaStokuType = {
+  title: string;
+  hero: heroCampComponentType;
+  details: detailsComponentType;
+  contactNemo: contactComponentType;
+  contactCollab?: contactComponentType;
+  whatsWaiting4You: whatsWaiting4YouComponentType;
+  hillSides: hillSidesCampComponentType;
+  schedule: weekendNaStokuScheduleComponentType;
+  priceDetails: priceDetailsCampComponentType;
+};
+export type weekendNaStokuScheduleComponentType = {
+  title: string;
+  list: {
+    time: string;
+    info: string;
+    subList?: { title: string; about: string }[];
+  }[];
 };
 export type hillSidesCampComponentType = {
   title1: string;
