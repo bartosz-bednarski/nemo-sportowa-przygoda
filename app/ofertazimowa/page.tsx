@@ -9,6 +9,7 @@ import Scrap2 from "@/components/Ui/Scrap/Scrap2";
 import { Metadata } from "next";
 import { POLKOLONIE_LISTA_2025 } from "@/utils/Winter/Polkolonie";
 import { OBOZY_LISTA_2025 } from "@/utils/Winter/Obozy";
+import { WEEKEND_NA_STOKU_LISTA_2025 } from "@/utils/Winter/WeekendoweNarty";
 
 export const metadata: Metadata = {
   title: "Oferta ZIMOWA",
@@ -149,8 +150,9 @@ zimowej scenerii!
       />
       <SignInCamps
         theme="winter"
-        waiting={true}
-        waitingTitle="STARTUJEMY JUŻ WKRÓTCE!"
+        waiting={false}
+        waitingTitle="ZAPISY PRZEZ TELEFON"
+        activeCampsCoversList={WEEKEND_NA_STOKU_LISTA_2025}
       />
       <GalleryLink
         href="/galeria"

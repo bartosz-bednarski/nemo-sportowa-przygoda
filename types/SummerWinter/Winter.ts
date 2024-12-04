@@ -1,10 +1,11 @@
 export type detailsBoxComponentType = {
   promo: boolean;
-  label: "MIEJSCE" | "TERMIN" | "CENA" | "WIEK";
+  label: "MIEJSCE" | "TERMIN" | "CENA" | "WIEK" | "ZBIÓRKA";
   content: string;
   promoPrice?: string;
   promoInfo?: string;
 };
+
 export type polkoloniaType = {
   title: string;
   hero: heroComponentType;
@@ -33,11 +34,12 @@ export type detailsComponentType = {
   location: string;
   fullLocationName: string;
   dateRange: string;
-  ageRange: string;
+  ageRange?: string;
   price: string;
   promotion: boolean;
   promotionPrice?: string;
   promotionInfo?: string;
+  rally?: string;
   aboutTitle: string;
   aboutDescription: string;
   about2Title?: string;
