@@ -10,7 +10,12 @@ const Details: React.FC<{ details: detailsComponentType }> = ({ details }) => {
       <div className={styles["details__row-box"]}>
         <DetailsBox promo={false} label="MIEJSCE" content={details.location} />
         <DetailsBox promo={false} label="TERMIN" content={details.dateRange} />
-        <DetailsBox promo={false} label="WIEK" content={details.ageRange} />
+        {details.ageRange !== undefined && (
+          <DetailsBox promo={false} label="WIEK" content={details.ageRange} />
+        )}
+        {details.rally !== undefined && (
+          <DetailsBox promo={false} label="ZBIÓRKA" content={details.rally} />
+        )}
         <DetailsBox
           promo={details.promotion}
           label="CENA"
