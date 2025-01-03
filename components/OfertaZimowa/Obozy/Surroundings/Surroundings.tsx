@@ -1,15 +1,15 @@
-"use client";
-import React from "react";
-import styles from "./surroundings.module.scss";
-import { surroundingsCampComponentType } from "@/types/SummerWinter/Camps";
-import StripH2 from "@/components/Ui/StripH2/StripH2";
+'use client';
+import React from 'react';
+import styles from './surroundings.module.scss';
+import {surroundingsCampComponentType} from '@/types/SummerWinter/Camps';
+import StripH2 from '@/components/Ui/StripH2/StripH2';
 
 const Surroundings: React.FC<{
   surroundings: surroundingsCampComponentType;
-}> = ({ surroundings }) => {
+}> = ({surroundings}) => {
   return (
-    <div className={styles["surroundings"]}>
-      <div className={styles["surroundings__content"]}>
+    <div className={styles['surroundings']}>
+      <div className={styles['surroundings__content']}>
         <StripH2
           type="h2"
           title="OKOLICA"
@@ -18,14 +18,14 @@ const Surroundings: React.FC<{
           scale={1.7}
           paddingBottom={0}
         />
-        <span className={styles["surroundings__content__text"]}>
+        <span className={styles['surroundings__content__text']}>
           {surroundings.about}
         </span>
         {surroundings.list !== undefined && (
-          <ul className={styles["surroundings__content__list"]}>
+          <ul className={styles['surroundings__content__list']}>
             <span
-              className={styles["surroundings__content__text"]}
-              style={{ margin: 0 }}
+              className={styles['surroundings__content__text']}
+              style={{margin: 0}}
             >
               {surroundings.list.title}
             </span>
@@ -36,13 +36,13 @@ const Surroundings: React.FC<{
         )}
 
         {surroundings.about2 !== undefined && (
-          <span className={styles["surroundings__content__text"]}>
+          <span className={styles['surroundings__content__text']}>
             {surroundings.about2}
           </span>
         )}
       </div>
       <svg
-        className={styles["surroundings__svg-image"]}
+        className={styles['surroundings__svg-image']}
         xmlns="http://www.w3.org/2000/svg"
         width="917"
         height="407"

@@ -1,83 +1,83 @@
-import styles from "../../../page.module.scss";
-import VideosSection from "@/components/Globals/VideosSection";
-import NaukaPlywaniaBasen from "@/components/NaukaPlywaniaBasen/NaukaPlywaniaBasen";
-import Bubbles from "@/components/Ui/Bubbles/Bubbles";
-import { RODZAJE_LEKCJI } from "@/utils/NaukaPlywaniaBasen/rodzajeLekcji";
-import PoolNecessaryItems from "@/components/Globals/PoolNecessaryItems/PoolNecessaryItems";
-import PoolTutorial from "@/components/Globals/PoolTutorial/PoolTutorial";
-import PoolInformations from "@/components/Globals/PoolInformations/PoolInformations";
-import Scrap2 from "@/components/Ui/Scrap/Scrap2";
+import styles from '../../../page.module.scss';
+import VideosSection from '@/components/Globals/VideosSection';
+import NaukaPlywaniaBasen from '@/components/NaukaPlywaniaBasen/NaukaPlywaniaBasen';
+import Bubbles from '@/components/Ui/Bubbles/Bubbles';
+import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
+import PoolNecessaryItems from '@/components/Globals/PoolNecessaryItems/PoolNecessaryItems';
+import PoolTutorial from '@/components/Globals/PoolTutorial/PoolTutorial';
+import PoolInformations from '@/components/Globals/PoolInformations/PoolInformations';
+import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {
   BASEN_EISENBERGA_INFORMATIONS,
   BASEN_EISENBERGA_TUTORIAL_DZIECI_MLODZIEZ,
   BASEN_EISENBERGA_TUTORIAL_Z_RODZICAMI,
   NAUKA_PLYWANIA_EISENBERGA,
-} from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaEisenberga";
-import LessonTypeWrapBox from "@/components/Globals/LessonTypeWrapBox/LessonTypeWrapBox";
-import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
-import { Metadata } from "next";
-import { COLORS } from "@/utils/UI/colors";
+} from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaEisenberga';
+import LessonTypeWrapBox from '@/components/Globals/LessonTypeWrapBox/LessonTypeWrapBox';
+import GalleryLink from '@/components/Globals/GalleryLink/GalleryLink';
+import {Metadata} from 'next';
+import {COLORS} from '@/utils/UI/colors';
 
 export const metadata: Metadata = {
-  title: "Nauka pływania Kraków EISENBERGA",
+  title: 'Nauka pływania Kraków EISENBERGA',
   description:
-    "Zajęcia dla niemowlaków z rodzicami, dzieci i młodzieży od lat 3 oraz dorosłych. Zapraszamy wszystkich chętnych na basen Przystań Eisenberga w Krakowie!",
+    'Zajęcia dla niemowlaków z rodzicami, dzieci i młodzieży od lat 3 oraz dorosłych. Zapraszamy wszystkich chętnych na basen Przystań Eisenberga w Krakowie!',
   metadataBase: new URL(
-    "https://nemosportowaprzygoda.pl/naukaplywania/krakow/eisenberga"
+    'https://nemosportowaprzygoda.pl/naukaplywania/krakow/eisenberga'
   ),
   alternates: {
     canonical:
-      "https://nemosportowaprzygoda.pl/naukaplywania/krakow/eisenberga",
+      'https://nemosportowaprzygoda.pl/naukaplywania/krakow/eisenberga',
     languages: {
-      "pl-PL": "/pl-PL",
+      'pl-PL': '/pl-PL',
     },
   },
 };
 
 const NaukaPlywaniaEisenberga = () => {
   return (
-    <div className={styles.main} style={{ background: COLORS["darkBlue"] }}>
+    <div className={styles.main} style={{background: COLORS['darkBlue']}}>
       <VideosSection
         oneSticker={true}
         oneStickerContent={{
-          title: "NAUKA ",
-          title2: "PŁYWANIA",
-          titleStrip: "EISENBERGA",
-          stripBgColor: "mediumBlue",
-          stripTextColor: "white",
+          title: 'NAUKA ',
+          title2: 'PŁYWANIA',
+          titleStrip: 'EISENBERGA',
+          stripBgColor: 'mediumBlue',
+          stripTextColor: 'white',
           scale: 2.1,
         }}
         scrapColor="lightBlue"
         col1={{
-          video: { src: "pool-mix-2.mp4", alt: "nauka pływania niemowlaki" },
+          video: {src: 'pool-mix-2.mp4', alt: 'nauka pływania niemowlaki'},
           stickerH2: {
-            title: "MAŁE",
-            titleStrip: "BOMBELKI",
-            stripBgColor: "lightBlue",
-            stripTextColor: "white",
+            title: 'MAŁE',
+            titleStrip: 'BOMBELKI',
+            stripBgColor: 'lightBlue',
+            stripTextColor: 'white',
             scale: 1.15,
           },
         }}
         col2={{
           video: {
-            src: "pool-mix-3.mp4",
-            alt: "nauka pływania dzieci i mlodzież",
+            src: 'pool-mix-3.mp4',
+            alt: 'nauka pływania dzieci i mlodzież',
           },
           stickerH2: {
-            title: "ŚREDNIE",
-            titleStrip: "BOMBELKI",
-            stripBgColor: "mediumBlue",
-            stripTextColor: "white",
+            title: 'ŚREDNIE',
+            titleStrip: 'BOMBELKI',
+            stripBgColor: 'mediumBlue',
+            stripTextColor: 'white',
             scale: 1.15,
           },
         }}
         col3={{
-          video: { src: "pool-mix-4.mp4", alt: "nauka pływania dorośli" },
+          video: {src: 'pool-mix-4.mp4', alt: 'nauka pływania dorośli'},
           stickerH2: {
-            title: "DUŻE",
-            titleStrip: "BOMBELKI",
-            stripBgColor: "darkBlue",
-            stripTextColor: "white",
+            title: 'DUŻE',
+            titleStrip: 'BOMBELKI',
+            stripBgColor: 'darkBlue',
+            stripTextColor: 'white',
             scale: 1.15,
           },
         }}

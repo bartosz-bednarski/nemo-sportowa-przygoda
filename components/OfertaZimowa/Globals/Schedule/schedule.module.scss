@@ -1,5 +1,5 @@
-@import "../../../../styles/colors.scss";
-@import "../../../../styles/fonts.scss";
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
 .schedule {
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@
       box-sizing: border-box;
       &__text {
         color: $darkBlue;
-        font-family: "poppins-500";
+        font-family: 'poppins-500';
       }
     }
     &__svg-image {
@@ -41,12 +41,12 @@
       &__header {
         color: rgba(15, 72, 183, 0.6);
         font-size: 2.5rem;
-        font-family: "poppins-700";
+        font-family: 'poppins-700';
         margin: 0;
       }
       &__about {
         color: $darkBlue;
-        font-family: "poppins-500";
+        font-family: 'poppins-500';
       }
     }
   }

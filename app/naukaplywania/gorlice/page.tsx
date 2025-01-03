@@ -1,85 +1,85 @@
-import styles from "../../page.module.scss";
-import VideosSection from "@/components/Globals/VideosSection";
-import NaukaPlywaniaBasen from "@/components/NaukaPlywaniaBasen/NaukaPlywaniaBasen";
+import styles from '../../page.module.scss';
+import VideosSection from '@/components/Globals/VideosSection';
+import NaukaPlywaniaBasen from '@/components/NaukaPlywaniaBasen/NaukaPlywaniaBasen';
 import {
   BASEN_GORLICE_INFORMATIONS,
   BASEN_GORLICE_TUTORIAL,
   NAUKA_PLYWANIA_GORLICE,
-} from "@/utils/NaukaPlywaniaBasen/naukaPlywaniaGorlice";
-import LessonType from "@/components/Globals/LessonType/LessonType";
-import { RODZAJE_LEKCJI } from "@/utils/NaukaPlywaniaBasen/rodzajeLekcji";
-import PoolNecessaryItems from "@/components/Globals/PoolNecessaryItems/PoolNecessaryItems";
-import Bubbles from "@/components/Ui/Bubbles/Bubbles";
-import PoolTutorial from "@/components/Globals/PoolTutorial/PoolTutorial";
-import PoolInformations from "@/components/Globals/PoolInformations/PoolInformations";
-import Scrap2 from "@/components/Ui/Scrap/Scrap2";
-import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
-import { Metadata } from "next";
-import Schedule from "@/components/Schedule/Schedule";
-import { COLORS } from "@/utils/UI/colors";
+} from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaGorlice';
+import LessonType from '@/components/Globals/LessonType/LessonType';
+import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
+import PoolNecessaryItems from '@/components/Globals/PoolNecessaryItems/PoolNecessaryItems';
+import Bubbles from '@/components/Ui/Bubbles/Bubbles';
+import PoolTutorial from '@/components/Globals/PoolTutorial/PoolTutorial';
+import PoolInformations from '@/components/Globals/PoolInformations/PoolInformations';
+import Scrap2 from '@/components/Ui/Scrap/Scrap2';
+import GalleryLink from '@/components/Globals/GalleryLink/GalleryLink';
+import {Metadata} from 'next';
+import Schedule from '@/components/Schedule/Schedule';
+import {COLORS} from '@/utils/UI/colors';
 
 export const metadata: Metadata = {
-  title: "Nauka pływania GORLICE",
+  title: 'Nauka pływania GORLICE',
   description:
-    "Nasze zajęcia są przeznaczone dla dzieci od 3. miesiąca życia, które uczestniczą w nich razem z rodzicem. Zapraszamy wszystkich chętnych na basen w Gorlicach!",
+    'Nasze zajęcia są przeznaczone dla dzieci od 3. miesiąca życia, które uczestniczą w nich razem z rodzicem. Zapraszamy wszystkich chętnych na basen w Gorlicach!',
   metadataBase: new URL(
-    "https://nemosportowaprzygoda.pl/naukaplywania/gorlice"
+    'https://nemosportowaprzygoda.pl/naukaplywania/gorlice'
   ),
   alternates: {
-    canonical: "https://nemosportowaprzygoda.pl/naukaplywania/gorlice",
+    canonical: 'https://nemosportowaprzygoda.pl/naukaplywania/gorlice',
     languages: {
-      "pl-PL": "/pl-PL",
+      'pl-PL': '/pl-PL',
     },
   },
 };
 
 const NaukaPlywaniaGorlice = () => {
   return (
-    <div className={styles.main} style={{ background: COLORS["darkBlue"] }}>
+    <div className={styles.main} style={{background: COLORS['darkBlue']}}>
       <VideosSection
         oneSticker={true}
         oneStickerContent={{
-          title: "NAUKA ",
-          title2: "PŁYWANIA",
-          titleStrip: "GORLICE",
-          stripBgColor: "mediumBlue",
-          stripTextColor: "white",
+          title: 'NAUKA ',
+          title2: 'PŁYWANIA',
+          titleStrip: 'GORLICE',
+          stripBgColor: 'mediumBlue',
+          stripTextColor: 'white',
           scale: 1.5,
         }}
         scrapColor="lightBlue"
         col1={{
           video: {
-            src: "toddler-mix-1.mp4",
-            alt: "nauka pływania niemowlaki",
+            src: 'toddler-mix-1.mp4',
+            alt: 'nauka pływania niemowlaki',
           },
           stickerH2: {
-            title: "MAŁE",
-            titleStrip: "BOMBELKI",
-            stripBgColor: "lightBlue",
-            stripTextColor: "white",
+            title: 'MAŁE',
+            titleStrip: 'BOMBELKI',
+            stripBgColor: 'lightBlue',
+            stripTextColor: 'white',
             scale: 1.15,
           },
         }}
         col2={{
           video: {
-            src: "toddler-mix-2.mp4",
-            alt: "nauka pływania dzieci i mlodzież",
+            src: 'toddler-mix-2.mp4',
+            alt: 'nauka pływania dzieci i mlodzież',
           },
           stickerH2: {
-            title: "ŚREDNIE",
-            titleStrip: "BOMBELKI",
-            stripBgColor: "mediumBlue",
-            stripTextColor: "white",
+            title: 'ŚREDNIE',
+            titleStrip: 'BOMBELKI',
+            stripBgColor: 'mediumBlue',
+            stripTextColor: 'white',
             scale: 1.15,
           },
         }}
         col3={{
-          video: { src: "toddler-mix-3.mp4", alt: "nauka pływania dorośli" },
+          video: {src: 'toddler-mix-3.mp4', alt: 'nauka pływania dorośli'},
           stickerH2: {
-            title: "DUŻE",
-            titleStrip: "BOMBELKI",
-            stripBgColor: "darkBlue",
-            stripTextColor: "white",
+            title: 'DUŻE',
+            titleStrip: 'BOMBELKI',
+            stripBgColor: 'darkBlue',
+            stripTextColor: 'white',
             scale: 1.15,
           },
         }}

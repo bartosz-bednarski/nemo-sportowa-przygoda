@@ -1,16 +1,14 @@
-"use client";
-import React from "react";
-import styles from "./schedule.module.scss";
-import StripH2 from "@/components/Ui/StripH2/StripH2";
-import { scheduleComponentType } from "@/types/SummerWinter/Winter";
+'use client';
+import React from 'react';
+import styles from './schedule.module.scss';
+import StripH2 from '@/components/Ui/StripH2/StripH2';
+import {scheduleComponentType} from '@/types/SummerWinter/Winter';
 
-const Schedule: React.FC<{ schedule: scheduleComponentType }> = ({
-  schedule,
-}) => {
+const Schedule: React.FC<{schedule: scheduleComponentType}> = ({schedule}) => {
   return (
     <div className={styles.schedule}>
-      <div className={styles["schedule__row-box"]}>
-        <div className={styles["schedule__row-box__content"]}>
+      <div className={styles['schedule__row-box']}>
+        <div className={styles['schedule__row-box__content']}>
           <StripH2
             type="h2"
             title={schedule.title}
@@ -19,13 +17,13 @@ const Schedule: React.FC<{ schedule: scheduleComponentType }> = ({
             scale={1.3}
           />
 
-          <span className={styles["schedule__row-box__content__text"]}>
+          <span className={styles['schedule__row-box__content__text']}>
             {schedule.scheduleAbout}
           </span>
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className={styles["schedule__row-box__svg-image"]}
+          className={styles['schedule__row-box__svg-image']}
           width="917"
           height="406"
           viewBox="0 0 917 406"
@@ -1294,13 +1292,13 @@ const Schedule: React.FC<{ schedule: scheduleComponentType }> = ({
           </defs>
         </svg>
       </div>
-      <ul className={styles["schedule__list"]}>
+      <ul className={styles['schedule__list']}>
         {schedule.scheduleList.map((listItem, index) => (
-          <li className={styles["schedule__list__item"]} key={index}>
-            <h3 className={styles["schedule__list__item__header"]}>
+          <li className={styles['schedule__list__item']} key={index}>
+            <h3 className={styles['schedule__list__item__header']}>
               {listItem.title}
             </h3>
-            <span className={styles["schedule__list__item__about"]}>
+            <span className={styles['schedule__list__item__about']}>
               {listItem.text}
             </span>
           </li>

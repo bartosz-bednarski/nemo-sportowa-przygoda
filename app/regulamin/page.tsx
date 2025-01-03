@@ -1,19 +1,19 @@
-import Image from "next/image";
-import styles from "../page.module.scss";
-import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
-import Link from "next/link";
-import { Metadata } from "next";
+import Image from 'next/image';
+import styles from '../page.module.scss';
+import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import Link from 'next/link';
+import {Metadata} from 'next';
 
 export const metadata: Metadata = {
-  title: "Regulamin",
+  title: 'Regulamin',
 };
 
 const RegulaminPage = () => {
   return (
-    <div className={styles["statues-row"]}>
+    <div className={styles['statues-row']}>
       <Link
         href="/assets/statues/Regulamin-baseny.pdf"
-        className={styles["statues-row__row-item"]}
+        className={styles['statues-row__row-item']}
       >
         <Image
           width={600}
@@ -21,7 +21,7 @@ const RegulaminPage = () => {
           src="/assets/statues/pools.webp"
           alt="regulamin baseny"
         />
-        <span className={styles["statues-row__row-item__sticker-box"]}>
+        <span className={styles['statues-row__row-item__sticker-box']}>
           <StickerH2
             title="REGULAMIN"
             titleStrip="BASENY"
@@ -32,14 +32,14 @@ const RegulaminPage = () => {
           />
         </span>
       </Link>
-      <Link href="/" className={styles["statues-row__row-item"]}>
+      <Link href="/" className={styles['statues-row__row-item']}>
         <Image
           width={600}
           height={1080}
           src="/assets/statues/camps.webp"
           alt="regulamin obozy"
         />
-        <span className={styles["statues-row__row-item__sticker-box"]}>
+        <span className={styles['statues-row__row-item__sticker-box']}>
           <StickerH2
             title="REGULAMIN"
             titleStrip="OBOZY"
@@ -50,14 +50,14 @@ const RegulaminPage = () => {
           />
         </span>
       </Link>
-      <Link href="/" className={styles["statues-row__row-item"]}>
+      <Link href="/" className={styles['statues-row__row-item']}>
         <Image
           width={600}
           height={1080}
           src="/assets/statues/colonies.webp"
           alt="regulamin polkolonie"
         />
-        <span className={styles["statues-row__row-item__sticker-box"]}>
+        <span className={styles['statues-row__row-item__sticker-box']}>
           <StickerH2
             title="REGULAMIN"
             titleStrip="PÓŁKOLONIE"

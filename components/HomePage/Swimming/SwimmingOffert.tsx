@@ -1,24 +1,24 @@
-"use client";
-import React from "react";
-import styles from "./swimmingSection.module.scss";
-import Image from "next/image";
-import TitleStripDescription from "@/components/Ui/TitleStripDescription/TitleStripDescription";
+'use client';
+import React from 'react';
+import styles from './swimmingSection.module.scss';
+import Image from 'next/image';
+import TitleStripDescription from '@/components/Ui/TitleStripDescription/TitleStripDescription';
 
-import SwimmingPoolCover from "@/components/Ui/SwimmingPoolCover/SwimmingPoolCover";
-import LinkButton from "@/components/Ui/Buttons/LinkButton";
+import SwimmingPoolCover from '@/components/Ui/SwimmingPoolCover/SwimmingPoolCover';
+import LinkButton from '@/components/Ui/Buttons/LinkButton';
 
 const SwimmingOffert: React.FC = () => {
   return (
-    <div className={styles["swimming__offert"]}>
+    <div className={styles['swimming__offert']}>
       <Image
         src="/assets/swimming/background-img-1.webp"
         fill={true}
         alt="nauka pływania"
-        style={{ objectFit: "cover", objectPosition: "top" }}
+        style={{objectFit: 'cover', objectPosition: 'top'}}
       />
       {/* <span className={styles["swimming__offert__opacity"]}></span> */}
-      <div className={styles["swimming__offert__content"]}>
-        <div className={styles["swimming__offert__content__categories"]}>
+      <div className={styles['swimming__offert__content']}>
+        <div className={styles['swimming__offert__content__categories']}>
           <TitleStripDescription
             title="NIEMOWLAKI"
             stripTextColor="white"
@@ -49,7 +49,7 @@ prawidłowej techniki pod okiem doświadczonych instruktorów."
           />
         </div>
 
-        <div className={styles["swimming__offert__content__swimming-pools"]}>
+        <div className={styles['swimming__offert__content__swimming-pools']}>
           <SwimmingPoolCover
             image="korzenna.webp"
             title="BASEN KORZENNA"

@@ -1,10 +1,10 @@
-"use client";
-import "react";
-import styles from "./videosSection.module.scss";
-import StickerH2 from "../Ui/StickerH2/StickerH2";
-import { VideosSectionType } from "@/types/Globals/globals";
-import StickerH1 from "../Ui/StickerH1/StickerH1";
-import Scrap2 from "../Ui/Scrap/Scrap2";
+'use client';
+import 'react';
+import styles from './videosSection.module.scss';
+import StickerH2 from '../Ui/StickerH2/StickerH2';
+import {VideosSectionType} from '@/types/Globals/globals';
+import StickerH1 from '../Ui/StickerH1/StickerH1';
+import Scrap2 from '../Ui/Scrap/Scrap2';
 const VideosSection: React.FC<VideosSectionType> = ({
   scrapColor,
   col1,
@@ -16,8 +16,8 @@ const VideosSection: React.FC<VideosSectionType> = ({
   return (
     <div className={styles.container}>
       {!oneSticker && col1.stickerH2 !== undefined && (
-        <span className={styles["container__image-box__mobileSticker"]}>
-          {" "}
+        <span className={styles['container__image-box__mobileSticker']}>
+          {' '}
           <StickerH1
             title="NEMO"
             title2="SPORTOWA"
@@ -30,8 +30,8 @@ const VideosSection: React.FC<VideosSectionType> = ({
         </span>
       )}
       {oneSticker && oneStickerContent !== undefined && (
-        <span className={styles["container__image-box__oneSticker-box"]}>
-          {" "}
+        <span className={styles['container__image-box__oneSticker-box']}>
+          {' '}
           <StickerH1
             title={oneStickerContent.title}
             title2={oneStickerContent.title2}
@@ -45,8 +45,8 @@ const VideosSection: React.FC<VideosSectionType> = ({
       )}
 
       <Scrap2 position="bottom" color={scrapColor} />
-      <div className={styles["container__image-box"]}>
-        <div className={styles["container__image-box__opacity-cover"]}></div>
+      <div className={styles['container__image-box']}>
+        <div className={styles['container__image-box__opacity-cover']}></div>
 
         <video
           src={`/assets/videos/${col1.video.src}`}
@@ -59,10 +59,10 @@ const VideosSection: React.FC<VideosSectionType> = ({
 
         {!oneSticker && col1.stickerH2 !== undefined && (
           <span
-            className={styles["container__image-box__sticker-box"]}
-            style={{ bottom: "30%" }}
+            className={styles['container__image-box__sticker-box']}
+            style={{bottom: '30%'}}
           >
-            {" "}
+            {' '}
             <StickerH2
               title={col1.stickerH2.title}
               titleStrip={col1.stickerH2.titleStrip}
@@ -74,8 +74,8 @@ const VideosSection: React.FC<VideosSectionType> = ({
           </span>
         )}
       </div>
-      <div className={styles["container__image-box"]}>
-        <div className={styles["container__image-box__opacity-cover"]}></div>
+      <div className={styles['container__image-box']}>
+        <div className={styles['container__image-box__opacity-cover']}></div>
         {/* <Image
           className={styles["container__image-box__image"]}
           src={`/assets/videos/${col2.image.src}`}
@@ -92,10 +92,10 @@ const VideosSection: React.FC<VideosSectionType> = ({
         ></video>
         {!oneSticker && col2.stickerH2 !== undefined && (
           <span
-            className={styles["container__image-box__sticker-box"]}
-            style={{ bottom: "15%" }}
+            className={styles['container__image-box__sticker-box']}
+            style={{bottom: '15%'}}
           >
-            {" "}
+            {' '}
             <StickerH2
               title={col2.stickerH2.title}
               titleStrip={col2.stickerH2.titleStrip}
@@ -107,8 +107,8 @@ const VideosSection: React.FC<VideosSectionType> = ({
           </span>
         )}
       </div>
-      <div className={styles["container__image-box"]}>
-        <div className={styles["container__image-box__opacity-cover"]}></div>
+      <div className={styles['container__image-box']}>
+        <div className={styles['container__image-box__opacity-cover']}></div>
         {/* <Image
           className={styles["container__image-box__image"]}
           src={`/assets/videos/${col3.image.src}`}
@@ -125,10 +125,10 @@ const VideosSection: React.FC<VideosSectionType> = ({
         ></video>
         {!oneSticker && col3.stickerH2 !== undefined && (
           <span
-            className={styles["container__image-box__sticker-box"]}
-            style={{ bottom: "25%" }}
+            className={styles['container__image-box__sticker-box']}
+            style={{bottom: '25%'}}
           >
-            {" "}
+            {' '}
             <StickerH2
               title={col3.stickerH2.title}
               titleStrip={col3.stickerH2.titleStrip}

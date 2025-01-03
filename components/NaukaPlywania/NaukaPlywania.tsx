@@ -1,12 +1,12 @@
-"use client";
-import React from "react";
-import styles from "./naukaPlywania.module.scss";
-import Pools from "./Pools/Pools";
-import { naukaPlywaniaType } from "@/types/NaukaPlywania/naukaPlywania";
-import { COLORS } from "@/utils/UI/colors";
-import NaukaPlywaniaAbout from "../Globals/NaukaPlywaniaAbout/NaukaPlywaniaAbout";
-import Groups from "../Globals/Groups/Groups";
-import StickerH4 from "../Ui/StickerH4/StickerH4";
+'use client';
+import React from 'react';
+import styles from './naukaPlywania.module.scss';
+import Pools from './Pools/Pools';
+import {naukaPlywaniaType} from '@/types/NaukaPlywania/naukaPlywania';
+import {COLORS} from '@/utils/UI/colors';
+import NaukaPlywaniaAbout from '../Globals/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import Groups from '../Globals/Groups/Groups';
+import StickerH4 from '../Ui/StickerH4/StickerH4';
 
 const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
   about,
@@ -17,16 +17,16 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
   return (
     <div
       className={styles.naukaPlywania}
-      style={{ background: COLORS[backgroundColor] }}
+      style={{background: COLORS[backgroundColor]}}
     >
       <NaukaPlywaniaAbout
         stickerH2={about.stickerH2}
         aboutTextPoppins={about.aboutTextPoppins}
         image={about.image}
       />
-      {about.stickerH2.titleStrip === "Z RODZICAMI" && (
-        <div className={styles["naukaPlywania__row-box"]} id="tips">
-          <div className={styles["naukaPlywania__row-box__column-box"]}>
+      {about.stickerH2.titleStrip === 'Z RODZICAMI' && (
+        <div className={styles['naukaPlywania__row-box']} id="tips">
+          <div className={styles['naukaPlywania__row-box__column-box']}>
             <StickerH4
               title="KORZYŚCI Z ZAJĘĆ"
               titleStrip="W WODZIE"
@@ -59,7 +59,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               </li>
             </ul>
           </div>
-          <div className={styles["naukaPlywania__row-box__column-box"]}>
+          <div className={styles['naukaPlywania__row-box__column-box']}>
             <StickerH4
               title="PRZYGOTOWANIE "
               titleStrip="DO ZAJĘĆ"
@@ -93,7 +93,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               </li>
             </ul>
           </div>
-          <div className={styles["naukaPlywania__row-box__column-box"]}>
+          <div className={styles['naukaPlywania__row-box__column-box']}>
             <StickerH4
               title="ZAWARTOŚĆ TORBY"
               titleStrip="DZIECKA"
@@ -112,7 +112,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               <li>Przekąska po zajęciach.</li>
             </ul>
           </div>
-          <div className={styles["naukaPlywania__row-box__column-box"]}>
+          <div className={styles['naukaPlywania__row-box__column-box']}>
             <StickerH4
               title="ZAWARTOŚĆ TORBY"
               titleStrip="RODZICA"
@@ -130,7 +130,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               <li>Kosmetyki do mycia po zajęciach.</li>
             </ul>
           </div>
-          <div className={styles["naukaPlywania__row-box__column-box"]}>
+          <div className={styles['naukaPlywania__row-box__column-box']}>
             <StickerH4
               title="PODSTAWOWE"
               titleStrip="INFORMACJE"
@@ -160,7 +160,7 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               </li>
             </ul>
           </div>
-          <div className={styles["naukaPlywania__row-box__column-box"]}>
+          <div className={styles['naukaPlywania__row-box__column-box']}>
             <StickerH4
               title="BEZPIECZEŃSTWO"
               titleStrip="I KOMFORT"

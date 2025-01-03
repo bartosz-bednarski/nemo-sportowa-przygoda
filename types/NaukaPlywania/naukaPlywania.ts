@@ -1,12 +1,8 @@
-import { groupLvlType, instructorBubbleType } from "../Globals/globals";
-import { aboutTextPoppinsType } from "../UI/aboutTextPoppins";
-import { customColors } from "../UI/colors";
-import {
-  stickerH2Type,
-  stripH2Type,
-  stripH3Type,
-} from "../UI/stickerStripStrap";
-import { swimmingPoolCoverType } from "../UI/swimmingPoolCover";
+import {groupLvlType, instructorBubbleType} from '../Globals/globals';
+import {aboutTextPoppinsType} from '../UI/aboutTextPoppins';
+import {customColors} from '../UI/colors';
+import {stickerH2Type, stripH2Type, stripH3Type} from '../UI/stickerStripStrap';
+import {swimmingPoolCoverType} from '../UI/swimmingPoolCover';
 export type naukaPlywaniaType = {
   about: aboutType;
   pools: poolsType;
@@ -16,8 +12,8 @@ export type naukaPlywaniaType = {
 export type aboutType = {
   stickerH2: stickerH2Type;
   aboutTextPoppins: aboutTextPoppinsType;
-  image: { src: string; alt: string };
-  button?: { title: string; href: string };
+  image: {src: string; alt: string};
+  button?: {title: string; href: string};
 };
 
 export type instructorsType = {
@@ -56,15 +52,15 @@ export type poolInformationsType = {
     };
     cloakroomWomen?: {
       exists: boolean;
-      title: "SZATNIA DAMSKA";
+      title: 'SZATNIA DAMSKA';
     };
     cloakroomMen?: {
       exists: boolean;
-      title: "SZATNIA MĘSKA";
+      title: 'SZATNIA MĘSKA';
     };
     cloakroomFamily?: {
       exists: boolean;
-      title: "SZATNIA RODZINNA";
+      title: 'SZATNIA RODZINNA';
     };
     parking?: {
       exists: boolean;

@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
-import styles from "./priceLessons.module.scss";
-import StickerH4 from "@/components/Ui/StickerH4/StickerH4";
-import { priceLessonsType } from "@/types/Globals/globals";
-import SingInButton from "@/components/Ui/Buttons/SignInButton";
+'use client';
+import React from 'react';
+import styles from './priceLessons.module.scss';
+import StickerH4 from '@/components/Ui/StickerH4/StickerH4';
+import {priceLessonsType} from '@/types/Globals/globals';
+import SingInButton from '@/components/Ui/Buttons/SignInButton';
 
 const PriceLessons: React.FC<priceLessonsType> = ({
   stickerH4,
@@ -21,15 +21,15 @@ const PriceLessons: React.FC<priceLessonsType> = ({
         scale={stickerH4.scale}
         paddingBottom={stickerH4.paddingBottom}
       />
-      <div className={styles["priceLessons__content-box"]}>
-        <span className={styles["priceLessons__content-box__orange"]}>
+      <div className={styles['priceLessons__content-box']}>
+        <span className={styles['priceLessons__content-box__orange']}>
           1 LEKCJA
         </span>
         <span>{oneLesson.price} </span>
         <span>{oneLesson.time} min</span>
       </div>
-      <div className={styles["priceLessons__content-box"]}>
-        <span className={styles["priceLessons__content-box__orange"]}>
+      <div className={styles['priceLessons__content-box']}>
+        <span className={styles['priceLessons__content-box__orange']}>
           10 LEKCJI
         </span>
         <span>{tenLessons.price} </span>

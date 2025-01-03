@@ -1,15 +1,15 @@
-"use client";
-import React from "react";
-import styles from "./whatsWaiting4You.module.scss";
-import { whatsWaiting4YouComponentType } from "@/types/SummerWinter/Camps";
-import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
+'use client';
+import React from 'react';
+import styles from './whatsWaiting4You.module.scss';
+import {whatsWaiting4YouComponentType} from '@/types/SummerWinter/Camps';
+import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
 
 const WhatsWaiting4You: React.FC<{
   details: whatsWaiting4YouComponentType;
-}> = ({ details }) => {
+}> = ({details}) => {
   return (
-    <div className={styles["whatsWaiting4You"]}>
-      <div className={styles["whatsWaiting4You__content"]}>
+    <div className={styles['whatsWaiting4You']}>
+      <div className={styles['whatsWaiting4You__content']}>
         <StickerH2
           title="CO NA CIEBIE"
           titleStrip="CZEKA?"
@@ -19,17 +19,17 @@ const WhatsWaiting4You: React.FC<{
           scale={1.5}
           paddingBottom={0}
         />
-        <ul className={styles["whatsWaiting4You__content__list"]}>
+        <ul className={styles['whatsWaiting4You__content__list']}>
           {details.list.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
-        <span className={styles["whatsWaiting4You__content__text"]}>
+        <span className={styles['whatsWaiting4You__content__text']}>
           {details.summary}
         </span>
       </div>
       <svg
-        className={styles["whatsWaiting4You__svg-image"]}
+        className={styles['whatsWaiting4You__svg-image']}
         width="283"
         height="299"
         viewBox="0 0 283 299"

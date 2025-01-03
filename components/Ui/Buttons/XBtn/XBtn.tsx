@@ -1,8 +1,8 @@
-"use client";
-import React from "react";
-import styles from "../buttons.module.scss";
+'use client';
+import React from 'react';
+import styles from '../buttons.module.scss';
 
-const XBtn: React.FC<{ onClick: () => void }> = ({ onClick }) => {
+const XBtn: React.FC<{onClick: () => void}> = ({onClick}) => {
   return (
     <button className={styles.xBtn} onClick={() => onClick()}>
       <svg

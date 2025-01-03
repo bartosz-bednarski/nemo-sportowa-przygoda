@@ -1,18 +1,18 @@
-"use client";
-import React from "react";
-import styles from "./accommodation.module.scss";
-import { accommodationCampComponentType } from "@/types/SummerWinter/Camps";
-import StripH2 from "@/components/Ui/StripH2/StripH2";
-import Image from "next/image";
-import Link from "next/link";
+'use client';
+import React from 'react';
+import styles from './accommodation.module.scss';
+import {accommodationCampComponentType} from '@/types/SummerWinter/Camps';
+import StripH2 from '@/components/Ui/StripH2/StripH2';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Accommodation: React.FC<{
   accommodation: accommodationCampComponentType;
-}> = ({ accommodation }) => {
+}> = ({accommodation}) => {
   return (
-    <div className={styles["accommodation"]}>
-      <div className={styles["accommodation__row-box"]}>
-        <div className={styles["accommodation__row-box__content"]}>
+    <div className={styles['accommodation']}>
+      <div className={styles['accommodation__row-box']}>
+        <div className={styles['accommodation__row-box__content']}>
           <StripH2
             type="h2"
             title="ZAKWATEROWANIE"
@@ -20,12 +20,12 @@ const Accommodation: React.FC<{
             stripBgColor="darkBlue"
             scale={1.4}
           />
-          <span className={styles["accommodation__row-box__content__text"]}>
+          <span className={styles['accommodation__row-box__content__text']}>
             {accommodation.about}
           </span>
 
-          <ul className={styles["accommodation__row-box__content__list"]}>
-            <span className={styles["accommodation__row-box__content__text"]}>
+          <ul className={styles['accommodation__row-box__content__list']}>
+            <span className={styles['accommodation__row-box__content__text']}>
               Ośrodek w pigułce:
             </span>
             {accommodation.list.map((item, index) => (
@@ -34,7 +34,7 @@ const Accommodation: React.FC<{
           </ul>
         </div>
         <svg
-          className={styles["accommodation__row-box__svg-image"]}
+          className={styles['accommodation__row-box__svg-image']}
           xmlns="http://www.w3.org/2000/svg"
           width="917"
           height="407"
@@ -914,18 +914,18 @@ const Accommodation: React.FC<{
         </svg>
       </div>
       <Link
-        className={styles["accommodation__image-box"]}
+        className={styles['accommodation__image-box']}
         href={accommodation.href}
       >
         <Image
-          className={styles["accommodation__image-box__image"]}
+          className={styles['accommodation__image-box__image']}
           src={`/assets/winter/zakwaterowanie/${accommodation.image}.webp`}
           width={1920}
           height={300}
           alt={accommodation.image}
           title={accommodation.image}
         />
-        <span className={styles["accommodation__image-box__button"]}>
+        <span className={styles['accommodation__image-box__button']}>
           Sprawdź stronę ośrodka
         </span>
       </Link>

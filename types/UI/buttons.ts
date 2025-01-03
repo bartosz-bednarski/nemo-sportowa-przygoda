@@ -1,4 +1,4 @@
-import { customColors } from "./colors";
+import {customColors} from './colors';
 
 export type signInButtonType = {
   bgColor: customColors;

@@ -1,14 +1,14 @@
-"use client";
-import "react";
-import styles from "./swimmingSection.module.scss";
-import StickerH2 from "../../Ui/StickerH2/StickerH2";
-import AboutTextPoppins from "../../Ui/AboutTextPoppins/AboutTextPoppins";
-import BackgroundText from "../../Ui/BackgroundText/BackgroundText";
-import SwimmingOffert from "./SwimmingOffert";
+'use client';
+import 'react';
+import styles from './swimmingSection.module.scss';
+import StickerH2 from '../../Ui/StickerH2/StickerH2';
+import AboutTextPoppins from '../../Ui/AboutTextPoppins/AboutTextPoppins';
+import BackgroundText from '../../Ui/BackgroundText/BackgroundText';
+import SwimmingOffert from './SwimmingOffert';
 const SwimmingSection: React.FC = () => {
   return (
     <section className={styles.swimming}>
-      <div className={styles["swimming__about-container"]}>
+      <div className={styles['swimming__about-container']}>
         <BackgroundText title="BOMBELKI MAŁE I DUŻE" />
         <StickerH2
           title="NAUKA"

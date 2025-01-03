@@ -1,9 +1,9 @@
-"use client";
-import React, { useState } from "react";
-import styles from "./groupLvl.module.scss";
-import StickerH4 from "@/components/Ui/StickerH4/StickerH4";
-import { groupLvlType } from "@/types/Globals/globals";
-import AboutTextPoppins from "@/components/Ui/AboutTextPoppins/AboutTextPoppins";
+'use client';
+import React, {useState} from 'react';
+import styles from './groupLvl.module.scss';
+import StickerH4 from '@/components/Ui/StickerH4/StickerH4';
+import {groupLvlType} from '@/types/Globals/globals';
+import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
 
 const GroupLvl: React.FC<groupLvlType> = ({
   stickerH4,
@@ -29,8 +29,8 @@ const GroupLvl: React.FC<groupLvlType> = ({
       {skills.length > 0 && (
         <>
           <button
-            className={styles["groupLvl__button"]}
-            style={{ flexDirection: showSkills ? "column-reverse" : "column" }}
+            className={styles['groupLvl__button']}
+            style={{flexDirection: showSkills ? 'column-reverse' : 'column'}}
             onClick={() => setShowSkills(!showSkills)}
           >
             Umiejętności
@@ -41,7 +41,7 @@ const GroupLvl: React.FC<groupLvlType> = ({
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               style={{
-                transform: showSkills ? "rotate(180deg)" : "",
+                transform: showSkills ? 'rotate(180deg)' : '',
               }}
             >
               <path
@@ -58,7 +58,7 @@ const GroupLvl: React.FC<groupLvlType> = ({
       {showSkills && (
         <>
           {/* <span className={styles["groupLvl__title"]}>UMIEJĘTNOŚCI</span> */}
-          <ul style={{ opacity: showSkills ? "1" : "0" }}>
+          <ul style={{opacity: showSkills ? '1' : '0'}}>
             {skills.length > 0 &&
               skills.map((skill, index) => <li key={index}>{skill}</li>)}
           </ul>

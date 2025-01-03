@@ -1,13 +1,13 @@
-"use client";
-import React from "react";
-import styles from "./bubbles.module.scss";
-import { customColors } from "@/types/UI/colors";
-import { COLORS } from "@/utils/UI/colors";
+'use client';
+import React from 'react';
+import styles from './bubbles.module.scss';
+import {customColors} from '@/types/UI/colors';
+import {COLORS} from '@/utils/UI/colors';
 
 const Bubbles: React.FC<{
   colorTop: customColors;
   colorBottom: customColors;
-}> = ({ colorTop, colorBottom }) => {
+}> = ({colorTop, colorBottom}) => {
   return (
     <div
       className={styles.bubbles}

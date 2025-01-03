@@ -1,13 +1,13 @@
-@import "../../../styles/colors.scss";
-@import "../../../styles/fonts.scss";
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
 .box {
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-family: "Poppins-400";
+  font-family: 'Poppins-400';
   z-index: 3;
   &__title {
-    font-family: "Poppins-700";
+    font-family: 'Poppins-700';
     font-size: 1.4rem;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: white;
@@ -29,7 +29,7 @@
   }
   .box__title {
     font-size: 1.2rem;
-    font-family: "Poppins-400";
+    font-family: 'Poppins-400';
   }
 }
 @media only screen and (max-width: 500px) {
@@ -41,6 +41,6 @@
   }
   .box__title {
     font-size: 1.1rem;
-    font-family: "Poppins-400";
+    font-family: 'Poppins-400';
   }
 }

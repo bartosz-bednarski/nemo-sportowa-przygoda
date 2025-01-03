@@ -1,8 +1,8 @@
-"use client";
-import "react";
-import styles from "./campsSection.module.scss";
-import SummerOffert from "./SummerOffert";
-import WinterOffert from "./WinterOffert";
+'use client';
+import 'react';
+import styles from './campsSection.module.scss';
+import SummerOffert from './SummerOffert';
+import WinterOffert from './WinterOffert';
 const CampsSection: React.FC = () => {
   return (
     <section className={styles.camps}>

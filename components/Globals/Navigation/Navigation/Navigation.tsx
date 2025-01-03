@@ -1,28 +1,28 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import styles from "./navigation.module.scss";
-import XBtn from "@/components/Ui/Buttons/XBtn/XBtn";
-import Link from "next/link";
-import LogoMainWhite from "../../Logo/LogoMainWhite";
+'use client';
+import React, {useEffect, useState} from 'react';
+import styles from './navigation.module.scss';
+import XBtn from '@/components/Ui/Buttons/XBtn/XBtn';
+import Link from 'next/link';
+import LogoMainWhite from '../../Logo/LogoMainWhite';
 
 const Navigation: React.FC<{
   showNavigation: boolean;
   hideNavigation: () => void;
   firstLoad: boolean;
   setFirstLoad: () => void;
-}> = ({ showNavigation, hideNavigation, firstLoad, setFirstLoad }) => {
+}> = ({showNavigation, hideNavigation, firstLoad, setFirstLoad}) => {
   if (firstLoad === true) {
     setTimeout(() => {
       setFirstLoad();
     }, 100);
   }
-  const [height, setHeight] = useState("0vh");
+  const [height, setHeight] = useState('0vh');
   useEffect(() => {
     if (showNavigation) {
-      setHeight("100vh");
+      setHeight('100vh');
     } else if (!showNavigation) {
       setTimeout(() => {
-        setHeight("0vh");
+        setHeight('0vh');
       }, 1000);
     }
   }, [showNavigation, height]);
@@ -30,47 +30,47 @@ const Navigation: React.FC<{
   return (
     <div
       className={`${styles.navigation} ${
-        !showNavigation && styles["navigation-hide"]
+        !showNavigation && styles['navigation-hide']
       }`}
       style={{
-        opacity: firstLoad ? "0" : "1",
+        opacity: firstLoad ? '0' : '1',
         height: height,
       }}
     >
       <div
-        className={`${styles["navigation__top-box"]} ${
-          !showNavigation && styles["navigation-hideContent"]
+        className={`${styles['navigation__top-box']} ${
+          !showNavigation && styles['navigation-hideContent']
         }`}
       >
-        <span className={styles["navigation__top-box__logo"]}>
+        <span className={styles['navigation__top-box__logo']}>
           <LogoMainWhite height="100px" width="auto" />
         </span>
 
         <XBtn onClick={hideNavigation} />
       </div>
       <div
-        className={`${styles["navigation__bottom-box"]} ${
-          !showNavigation && styles["navigation-hideContent"]
+        className={`${styles['navigation__bottom-box']} ${
+          !showNavigation && styles['navigation-hideContent']
         }`}
       >
-        <div className={styles["navigation__bottom-box__20"]}></div>
-        <div className={styles["navigation__bottom-box__80"]}>
+        <div className={styles['navigation__bottom-box__20']}></div>
+        <div className={styles['navigation__bottom-box__80']}>
           <ul>
             <li>
               <Link href="/" onClick={hideNavigation}>
-                <span className={styles["navigation__bottom-box__80__nav"]}>
+                <span className={styles['navigation__bottom-box__80__nav']}>
                   Strona główna
                 </span>
               </Link>
             </li>
             <li>
               <Link href="/naukaplywania/krakow" onClick={hideNavigation}>
-                <span className={styles["navigation__bottom-box__80__nav"]}>
-                  {" "}
+                <span className={styles['navigation__bottom-box__80__nav']}>
+                  {' '}
                   Nauka pływania
                   <span
                     className={
-                      styles["navigation__bottom-box__80__nav__location"]
+                      styles['navigation__bottom-box__80__nav__location']
                     }
                   >
                     kraków
@@ -80,12 +80,12 @@ const Navigation: React.FC<{
             </li>
             <li>
               <Link href="/naukaplywania/korzenna" onClick={hideNavigation}>
-                <span className={styles["navigation__bottom-box__80__nav"]}>
-                  {" "}
+                <span className={styles['navigation__bottom-box__80__nav']}>
+                  {' '}
                   Nauka pływania
                   <span
                     className={
-                      styles["navigation__bottom-box__80__nav__location"]
+                      styles['navigation__bottom-box__80__nav__location']
                     }
                   >
                     korzenna
@@ -95,12 +95,12 @@ const Navigation: React.FC<{
             </li>
             <li>
               <Link href="/naukaplywania/gorlice" onClick={hideNavigation}>
-                <span className={styles["navigation__bottom-box__80__nav"]}>
-                  {" "}
+                <span className={styles['navigation__bottom-box__80__nav']}>
+                  {' '}
                   Nauka pływania
                   <span
                     className={
-                      styles["navigation__bottom-box__80__nav__location"]
+                      styles['navigation__bottom-box__80__nav__location']
                     }
                   >
                     gorlice
@@ -110,12 +110,12 @@ const Navigation: React.FC<{
             </li>
             <li>
               <Link href="/ofertaletnia" onClick={hideNavigation}>
-                <span className={styles["navigation__bottom-box__80__nav"]}>
-                  {" "}
+                <span className={styles['navigation__bottom-box__80__nav']}>
+                  {' '}
                   obozy & półkolonie
                   <span
                     className={
-                      styles["navigation__bottom-box__80__nav__location"]
+                      styles['navigation__bottom-box__80__nav__location']
                     }
                   >
                     LATO
@@ -125,12 +125,12 @@ const Navigation: React.FC<{
             </li>
             <li>
               <Link href="/ofertazimowa" onClick={hideNavigation}>
-                <span className={styles["navigation__bottom-box__80__nav"]}>
-                  {" "}
+                <span className={styles['navigation__bottom-box__80__nav']}>
+                  {' '}
                   obozy & półkolonie
                   <span
                     className={
-                      styles["navigation__bottom-box__80__nav__location"]
+                      styles['navigation__bottom-box__80__nav__location']
                     }
                   >
                     ZIMA
@@ -147,7 +147,7 @@ const Navigation: React.FC<{
             </li> */}
             <li>
               <Link href="/galeria" onClick={hideNavigation}>
-                <span className={styles["navigation__bottom-box__80__nav"]}>
+                <span className={styles['navigation__bottom-box__80__nav']}>
                   galeria
                 </span>
               </Link>
@@ -157,27 +157,27 @@ const Navigation: React.FC<{
                 href="/naukaplywania/poradnikbasenowy"
                 onClick={hideNavigation}
               >
-                <span className={styles["navigation__bottom-box__80__nav"]}>
+                <span className={styles['navigation__bottom-box__80__nav']}>
                   Poradnik basenowy
                 </span>
               </Link>
             </li>
           </ul>
         </div>
-        <div className={styles["navigation__bottom-box__20"]}>
+        <div className={styles['navigation__bottom-box__20']}>
           <span
-            className={styles["navigation__bottom-box__20__contact"]}
-            style={{ color: "#669AD7" }}
+            className={styles['navigation__bottom-box__20__contact']}
+            style={{color: '#669AD7'}}
           >
             Skontaktuj się z nami
           </span>
-          <span className={styles["navigation__bottom-box__20__contact"]}>
+          <span className={styles['navigation__bottom-box__20__contact']}>
             +48 519 625 894
           </span>
-          <span className={styles["navigation__bottom-box__20__contact"]}>
+          <span className={styles['navigation__bottom-box__20__contact']}>
             szkolaplywanianemo1@gmail.com
           </span>
-          <span className={styles["navigation__bottom-box__20__contact"]}>
+          <span className={styles['navigation__bottom-box__20__contact']}>
             <Link href="https://www.facebook.com/profile.php?id=61550793572137">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -185,7 +185,7 @@ const Navigation: React.FC<{
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className={styles["navigation__bottom-box__20__contact__icon"]}
+                className={styles['navigation__bottom-box__20__contact__icon']}
               >
                 <path
                   fillRule="evenodd"
@@ -203,7 +203,7 @@ const Navigation: React.FC<{
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className={styles["navigation__bottom-box__20__contact__icon"]}
+                className={styles['navigation__bottom-box__20__contact__icon']}
               >
                 <path
                   d="M16.3748 3.24984C17.5342 3.25331 18.6451 3.71539 19.4648 4.53517C20.2846 5.35495 20.7467 6.46582 20.7502 7.62516V16.3748C20.7467 17.5342 20.2846 18.6451 19.4648 19.4648C18.6451 20.2846 17.5342 20.7467 16.3748 20.7502H7.62516C6.46582 20.7467 5.35495 20.2846 4.53517 19.4648C3.71539 18.6451 3.25331 17.5342 3.24984 16.3748V7.62516C3.25331 6.46582 3.71539 5.35495 4.53517 4.53517C5.35495 3.71539 6.46582 3.25331 7.62516 3.24984H16.3748ZM16.3748 1.5H7.62516C4.25625 1.5 1.5 4.25625 1.5 7.62516V16.3748C1.5 19.7437 4.25625 22.5 7.62516 22.5H16.3748C19.7437 22.5 22.5 19.7437 22.5 16.3748V7.62516C22.5 4.25625 19.7437 1.5 16.3748 1.5Z"

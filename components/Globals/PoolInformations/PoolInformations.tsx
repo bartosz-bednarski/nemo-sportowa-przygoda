@@ -1,18 +1,18 @@
-"use client";
-import React from "react";
-import styles from "./poolInformations.module.scss";
-import Image from "next/image";
-import { COLORS } from "@/utils/UI/colors";
-import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
-import { poolInformationsType } from "@/types/NaukaPlywania/naukaPlywania";
+'use client';
+import React from 'react';
+import styles from './poolInformations.module.scss';
+import Image from 'next/image';
+import {COLORS} from '@/utils/UI/colors';
+import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import {poolInformationsType} from '@/types/NaukaPlywania/naukaPlywania';
 
-const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
+const PoolInformations: React.FC<{poolInformation: poolInformationsType}> = ({
   poolInformation,
 }) => {
   return (
     <div
       className={styles.poolInformations}
-      style={{ background: COLORS[poolInformation.color] }}
+      style={{background: COLORS[poolInformation.color]}}
     >
       <Image
         src={`/assets/swimming/pools/${poolInformation.imageSrc}`}
@@ -29,17 +29,17 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
         scale={poolInformation.stickerH2.scale}
         paddingBottom={poolInformation.stickerH2.paddingBottom}
       />
-      <div className={styles["poolInformations__row-box"]}>
-        <div className={styles["poolInformations__row-box__list"]}>
+      <div className={styles['poolInformations__row-box']}>
+        <div className={styles['poolInformations__row-box__list']}>
           {poolInformation.icons.pool1?.exists && (
-            <div className={styles["poolInformations__row-box__list__item"]}>
+            <div className={styles['poolInformations__row-box__list__item']}>
               <svg
                 width="162"
                 height="73"
                 viewBox="0 0 162 73"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className={styles["poolInformations__row-box__list__item__svg"]}
+                className={styles['poolInformations__row-box__list__item__svg']}
               >
                 <path
                   fillRule="evenodd"
@@ -50,7 +50,7 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
               </svg>
               <span
                 className={
-                  styles["poolInformations__row-box__list__item__text"]
+                  styles['poolInformations__row-box__list__item__text']
                 }
               >
                 {poolInformation.icons.pool1.title}
@@ -58,14 +58,14 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
             </div>
           )}
           {poolInformation.icons.pool2?.exists && (
-            <div className={styles["poolInformations__row-box__list__item"]}>
+            <div className={styles['poolInformations__row-box__list__item']}>
               <svg
                 width="162"
                 height="73"
                 viewBox="0 0 162 73"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className={styles["poolInformations__row-box__list__item__svg"]}
+                className={styles['poolInformations__row-box__list__item__svg']}
               >
                 <path
                   fillRule="evenodd"
@@ -76,7 +76,7 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
               </svg>
               <span
                 className={
-                  styles["poolInformations__row-box__list__item__text"]
+                  styles['poolInformations__row-box__list__item__text']
                 }
               >
                 {poolInformation.icons.pool2.title}
@@ -84,14 +84,14 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
             </div>
           )}
           {poolInformation.icons.stand?.exists && (
-            <div className={styles["poolInformations__row-box__list__item"]}>
+            <div className={styles['poolInformations__row-box__list__item']}>
               <svg
                 width="253"
                 height="101"
                 viewBox="0 0 253 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className={styles["poolInformations__row-box__list__item__svg"]}
+                className={styles['poolInformations__row-box__list__item__svg']}
               >
                 <path
                   d="M45.9106 4.63184H31.1327C23.3826 4.71677 20.9503 6.77823 20.849 14.5924V57.0055M20.849 57.0055C15.9665 57.291 14.0088 58.0564 13.7812 62.1465V71.7858C13.9024 75.8733 15.6761 76.8167 20.849 76.6055H45.9106V95.8559M20.849 57.0055H45.9106M45.9106 22.9465H37.5594M45.9116 4.63184H60.6896C68.4396 4.71677 70.8719 6.77823 70.9733 14.5924V57.0055M70.9733 57.0055C75.8557 57.291 77.8134 58.0564 78.041 62.1465V71.7858C77.9198 75.8733 76.1461 76.8167 70.9733 76.6055H45.9116V95.8559M70.9733 57.0055H45.9116M45.9116 22.9465H54.2628M126.269 4.63184H111.491C103.741 4.71677 101.309 6.77823 101.208 14.5924V57.0055M101.208 57.0055C96.3251 57.291 94.3674 58.0564 94.1399 62.1465V71.7858C94.2611 75.8733 96.0347 76.8167 101.208 76.6055H126.269V95.8559M101.208 57.0055H126.269M126.269 22.9465H117.918M126.27 4.63184H141.048C148.798 4.71677 151.231 6.77823 151.332 14.5924V57.0055M151.332 57.0055C156.214 57.291 158.172 58.0564 158.4 62.1465V71.7858C158.278 75.8733 156.505 76.8167 151.332 76.6055H126.27V95.8559M151.332 57.0055H126.27M126.27 22.9465H134.621M206.625 4.63184H191.847C184.097 4.71677 181.665 6.77823 181.564 14.5924V57.0055M181.564 57.0055C176.681 57.291 174.723 58.0564 174.496 62.1465V71.7858C174.617 75.8733 176.391 76.8167 181.564 76.6055H206.625V95.8559M181.564 57.0055H206.625M206.625 22.9465H198.274M206.626 4.63184H221.404C229.154 4.71677 231.586 6.77823 231.688 14.5924V57.0055M231.688 57.0055C236.57 57.291 238.528 58.0564 238.756 62.1465V71.7858C238.634 75.8733 236.861 76.8167 231.688 76.6055H206.626V95.8559M231.688 57.0055H206.626M206.626 22.9465H214.977M77.9757 67.0957H94.1703M158.657 67.0957H174.562M14.0665 97.1704H239.339"
@@ -102,7 +102,7 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
               </svg>
               <span
                 className={
-                  styles["poolInformations__row-box__list__item__text"]
+                  styles['poolInformations__row-box__list__item__text']
                 }
               >
                 {poolInformation.icons.stand.title}
@@ -110,10 +110,10 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
             </div>
           )}
           {poolInformation.icons.cloakroomWomen?.exists && (
-            <div className={styles["poolInformations__row-box__list__item"]}>
+            <div className={styles['poolInformations__row-box__list__item']}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={styles["poolInformations__row-box__list__item__svg"]}
+                className={styles['poolInformations__row-box__list__item__svg']}
                 width="82"
                 height="82"
                 viewBox="0 0 82 82"
@@ -135,7 +135,7 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
               </svg>
               <span
                 className={
-                  styles["poolInformations__row-box__list__item__text"]
+                  styles['poolInformations__row-box__list__item__text']
                 }
               >
                 {poolInformation.icons.cloakroomWomen.title}
@@ -143,10 +143,10 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
             </div>
           )}
           {poolInformation.icons.cloakroomMen?.exists && (
-            <div className={styles["poolInformations__row-box__list__item"]}>
+            <div className={styles['poolInformations__row-box__list__item']}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={styles["poolInformations__row-box__list__item__svg"]}
+                className={styles['poolInformations__row-box__list__item__svg']}
                 width="81"
                 height="82"
                 viewBox="0 0 81 82"
@@ -169,7 +169,7 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
 
               <span
                 className={
-                  styles["poolInformations__row-box__list__item__text"]
+                  styles['poolInformations__row-box__list__item__text']
                 }
               >
                 {poolInformation.icons.cloakroomMen.title}
@@ -177,10 +177,10 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
             </div>
           )}
           {poolInformation.icons.cloakroomFamily?.exists && (
-            <div className={styles["poolInformations__row-box__list__item"]}>
+            <div className={styles['poolInformations__row-box__list__item']}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={styles["poolInformations__row-box__list__item__svg"]}
+                className={styles['poolInformations__row-box__list__item__svg']}
                 width="82"
                 height="83"
                 viewBox="0 0 82 83"
@@ -195,7 +195,7 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
               </svg>
               <span
                 className={
-                  styles["poolInformations__row-box__list__item__text"]
+                  styles['poolInformations__row-box__list__item__text']
                 }
               >
                 {poolInformation.icons.cloakroomFamily.title}
@@ -203,15 +203,15 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
             </div>
           )}
           {poolInformation.icons.parking?.exists && (
-            <div className={styles["poolInformations__row-box__list__item"]}>
+            <div className={styles['poolInformations__row-box__list__item']}>
               <span
-                className={styles["poolInformations__row-box__list__item__svg"]}
+                className={styles['poolInformations__row-box__list__item__svg']}
               >
                 P
               </span>
               <span
                 className={
-                  styles["poolInformations__row-box__list__item__text"]
+                  styles['poolInformations__row-box__list__item__text']
                 }
               >
                 {poolInformation.icons.parking.title}
@@ -223,10 +223,10 @@ const PoolInformations: React.FC<{ poolInformation: poolInformationsType }> = ({
           src={poolInformation.mapSrc}
           width="600"
           height="450"
-          style={{ border: 0, borderRadius: 30 }}
+          style={{border: 0, borderRadius: 30}}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className={styles["poolInformations__row-box__map"]}
+          className={styles['poolInformations__row-box__map']}
         ></iframe>
       </div>
     </div>

@@ -1,20 +1,18 @@
-"use client";
-import React from "react";
-import styles from "./logoLarge.module.scss";
+'use client';
+import React from 'react';
+import styles from './logoLarge.module.scss';
 
-const LogoLarge: React.FC<{ company: "NEMO" | "BOM4SPORTS" }> = ({
-  company,
-}) => {
+const LogoLarge: React.FC<{company: 'NEMO' | 'BOM4SPORTS'}> = ({company}) => {
   return (
     <div className={styles.logoLarge}>
-      {company === "NEMO" && (
+      {company === 'NEMO' && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1194"
           height="417"
           viewBox="0 0 1194 417"
           fill="none"
-          className={styles["logoLarge__image"]}
+          className={styles['logoLarge__image']}
         >
           <path
             d="M545.412 260.441C533.607 239.484 520.839 218.791 507.099 198.356C493.357 177.924 478.735 158.64 463.235 140.498V260.441H422.547V77.3547H456.106C461.919 83.1665 468.342 90.3018 475.393 98.7567C482.434 107.212 489.614 116.236 496.927 125.835C504.235 135.436 511.5 145.384 518.725 155.688C525.945 165.992 532.728 175.899 539.07 185.409V77.3547H580.023V260.441H545.412Z"
@@ -865,14 +863,14 @@ const LogoLarge: React.FC<{ company: "NEMO" | "BOM4SPORTS" }> = ({
           </defs>
         </svg>
       )}
-      {company === "BOM4SPORTS" && (
+      {company === 'BOM4SPORTS' && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="654"
           height="528"
           viewBox="0 0 654 528"
           fill="none"
-          className={styles["logoLarge__image"]}
+          className={styles['logoLarge__image']}
         >
           <path
             d="M647.84 355.611H5.98043C3.10799 355.611 0.757812 353.26 0.757812 350.388C0.757812 347.515 3.10799 345.165 5.98043 345.165H647.97C650.843 345.165 653.193 347.515 653.193 350.388C653.193 353.26 650.712 355.611 647.84 355.611Z"
