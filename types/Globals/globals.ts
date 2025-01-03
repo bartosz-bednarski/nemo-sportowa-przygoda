@@ -1,13 +1,13 @@
-import { campsCoversType } from "../SummerWinter/Camps";
-import { aboutTextPoppinsType } from "../UI/aboutTextPoppins";
-import { signInButtonType } from "../UI/buttons";
-import { customColors } from "../UI/colors";
+import {campsCoversType} from '../SummerWinter/Camps';
+import {aboutTextPoppinsType} from '../UI/aboutTextPoppins';
+import {signInButtonType} from '../UI/buttons';
+import {customColors} from '../UI/colors';
 import {
   stickerH1Type,
   stickerH2Type,
   stickerH4Type,
   stripH4Type,
-} from "../UI/stickerStripStrap";
+} from '../UI/stickerStripStrap';
 
 export type instructorBubbleType = {
   instructorName?: string;
@@ -92,7 +92,7 @@ export type aboutCampsComponentType = {
   right: boolean;
   aboutRight1?: string;
   aboutRight2?: string;
-  theme: "summer" | "winter";
+  theme: 'summer' | 'winter';
   imgRight: string;
   imgLeft?: string;
 };
@@ -100,5 +100,5 @@ export type signInCampsComponentType = {
   activeCampsCoversList?: campsCoversType;
   waitingTitle?: string;
   waiting: boolean;
-  theme: "summer" | "winter";
+  theme: 'summer' | 'winter';
 };

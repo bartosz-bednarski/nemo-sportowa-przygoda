@@ -1,246 +1,91 @@
-@import "../../../styles/colors.scss";
-@import "../../../styles/fonts.scss";
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/fonts.scss' as fonts;
+@use '../../../styles/mixin.scss' as mixin;
 .galleryPhotos {
   position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: $basicOrange;
+  background-color: colors.$basicOrange;
   padding: 15vh 1rem;
   justify-content: center;
   align-items: center;
-  &__row-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    &__custom-portrait {
-      box-sizing: border-box;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 2rem;
-      flex-direction: column;
-      border-radius: 15px;
-      //   background-color: #ffffff73;
-      background: $darkBlue;
-      height: 692px;
-      width: 600px;
-      padding: 4rem;
-      &__title {
-        font-size: 2.6rem;
-        color: black;
-        font-family: "poppins-700";
-        margin: 0;
-        text-align: center;
-      }
-    }
-    &__column {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      //   height: 692px;
-    }
-  }
-  &__landscape {
-    position: relative;
-    width: 600px;
-    height: 338px;
-    border-radius: 15px;
-    &:hover {
-      cursor: pointer;
-    }
-    img {
-      object-fit: cover;
-      width: 600px;
-      height: 338px;
-      border-radius: 15px;
-    }
-  }
-  &__portrait {
-    position: relative;
-    width: 600px;
-    height: 692px;
-
-    border-radius: 15px;
-    &:hover {
-      cursor: pointer;
-    }
-    img {
-      object-fit: cover;
-      width: 600px;
-      height: 692px;
-      border-radius: 15px;
-    }
-  }
-  &__selected-photo-overlay {
-    position: fixed;
-    z-index: 12;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.719);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    &__x-btn {
-      position: absolute;
-      top: -49px;
-      right: 0;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      font-family: "poppins-600";
-      font-size: 1.2rem;
-      color: white;
-      background-color: $basicOrange;
-      border: 0;
-      padding: 0.2rem 0.5rem 0.2rem 7rem;
-      border-top-right-radius: 15px;
-      border-top-left-radius: 15px;
-      transition: all 0.5s;
-      svg {
-        path {
-          fill: white;
-        }
-      }
-      &:hover {
-        cursor: pointer;
-        color: $basicOrange;
-        background-color: white;
-        svg {
-          path {
-            fill: $basicOrange;
-          }
-        }
-      }
-    }
-    &__button {
-      background-color: transparent;
-      border: 0;
-      svg {
-        width: 100px;
-        height: auto;
-        path {
-          fill: $basicOrange;
-        }
-      }
-
-      &:hover {
-        cursor: pointer;
-        svg {
-          path {
-            fill: white;
-          }
-        }
-      }
-    }
-    &__landscape {
-      position: relative;
-      width: 1200px;
-      height: 676px;
-      border-radius: 15px;
-      border-top-right-radius: 0px;
-      img {
-        object-fit: cover;
-        width: 1200px;
-        height: 676px;
-        border-radius: 15px;
-        border-top-right-radius: 0px;
-      }
-    }
-    &__portrait {
-      position: relative;
-      width: 680px;
-      height: 800px;
-      border-radius: 15px;
-      border-top-right-radius: 0px;
-      img {
-        object-fit: cover;
-        width: 680px;
-        height: 800px;
-        border-radius: 15px;
-        border-top-right-radius: 0px;
-      }
-    }
-  }
 }
-@media only screen and (max-width: 1450px) {
-  .galleryPhotos__selected-photo-overlay__landscape {
-    width: 80%;
-    max-height: 80vh;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .galleryPhotos__selected-photo-overlay {
-    display: none;
-  }
-  .galleryPhotos__row-container {
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  @include mixin.pc1000px {
     pointer-events: none;
   }
 }
-
-@media only screen and (max-width: 700px) {
-  .galleryPhotos__row-container__custom-portrait {
-    width: 460px;
-    height: 520px;
-    &__title {
-      font-size: 2rem;
-    }
-    img {
-      width: auto !important;
-      height: 100px !important;
-    }
-  }
-  .galleryPhotos__landscape {
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.landscape {
+  position: relative;
+  width: 600px;
+  height: 338px;
+  border-radius: 15px;
+  @include mixin.phone700px {
     width: 460px;
     height: 278px;
-    img {
+  }
+  @include mixin.phone500px {
+    width: 300px;
+    height: 198px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    object-fit: cover;
+    width: 600px;
+    height: 338px;
+    border-radius: 15px;
+    @include mixin.phone700px {
       width: 460px;
       height: 278px;
     }
-  }
-  .galleryPhotos__portrait {
-    width: 460px;
-    height: 520px;
-    img {
-      width: 460px;
-      height: 520px;
-    }
-  }
-}
-@media only screen and (max-width: 500px) {
-  .galleryPhotos__row-container__custom-portrait {
-    padding: 1rem;
-    width: 300px;
-    height: 360px;
-    &__title {
-      font-size: 1.2rem;
-    }
-  }
-  .galleryPhotos__landscape {
-    width: 300px;
-    height: 198px;
-    img {
+    @include mixin.phone500px {
       width: 300px;
       height: 198px;
     }
   }
-  .galleryPhotos__portrait {
+}
+.portrait {
+  position: relative;
+  width: 600px;
+  height: 692px;
+  @include mixin.phone700px {
+    width: 460px;
+    height: 520px;
+  }
+  @include mixin.phone500px {
     width: 300px;
     height: 360px;
-    img {
+  }
+  border-radius: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    object-fit: cover;
+    width: 600px;
+    height: 692px;
+    @include mixin.phone700px {
+      width: 460px;
+      height: 520px;
+    }
+    @include mixin.phone500px {
       width: 300px;
       height: 360px;
     }
+    border-radius: 15px;
   }
 }

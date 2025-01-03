@@ -1,27 +1,27 @@
-"use client";
-import React from "react";
-import styles from "./swimmingPoolCover.module.scss";
-import Image from "next/image";
-import Link from "next/link";
+'use client';
+import React from 'react';
+import styles from './swimmingPoolCover.module.scss';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const SwimmingPoolCover: React.FC<{
   image: string;
   title: string;
   url: string;
-}> = ({ image, title, url }) => {
+}> = ({image, title, url}) => {
   return (
     <Link href={url}>
-      <div className={styles["swimmingPoolCover"]}>
-        <div className={styles["swimmingPoolCover__hover-box"]}></div>
-        <div className={styles["swimmingPoolCover__image-box"]}>
+      <div className={styles['swimmingPoolCover']}>
+        <div className={styles['swimmingPoolCover__hover-box']}></div>
+        <div className={styles['swimmingPoolCover__image-box']}>
           <Image
             src={`/assets/swimming/pools/${image}`}
             fill={true}
             alt={title}
-            style={{ borderTopLeftRadius: 30, borderTopRightRadius: 30 }}
+            style={{borderTopLeftRadius: 30, borderTopRightRadius: 30}}
           />
         </div>
-        <span className={styles["swimmingPoolCover__h3-box"]}>
+        <span className={styles['swimmingPoolCover__h3-box']}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="328"

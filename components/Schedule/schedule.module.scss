@@ -1,5 +1,5 @@
-@import "../../styles/colors.scss";
-@import "../../styles/fonts.scss";
+@import '../../styles/colors.scss';
+@import '../../styles/fonts.scss';
 .activenow-table-name {
   font-size: 0.7rem;
 }
@@ -14,7 +14,7 @@
   background-color: $lightBlue;
   h2 {
     font-size: 3rem;
-    font-family: "poppins-700";
+    font-family: 'poppins-700';
   }
   &__table {
     width: 100%;

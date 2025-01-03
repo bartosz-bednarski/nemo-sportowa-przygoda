@@ -1,5 +1,5 @@
-@import "../../../styles/colors.scss";
-@import "../../../styles/fonts.scss";
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
 .signInCamps {
   box-sizing: border-box;
   padding: 4rem;
@@ -24,7 +24,7 @@
     gap: 2rem;
     &__waiting {
       text-align: center;
-      font-family: "poppins-700";
+      font-family: 'poppins-700';
       font-size: 6rem;
       color: rgba(255, 255, 255, 0.27);
     }
@@ -65,7 +65,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          font-family: "poppins-700";
+          font-family: 'poppins-700';
           font-size: 1.1rem;
           padding: 0.3rem;
           width: 100%;

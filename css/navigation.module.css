@@ -58,7 +58,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url("/assets/ui/nav-background.png");
+  background-image: url('/assets/ui/nav-background.png');
   background-position: right;
   background-repeat: no-repeat;
   animation-name: show;
@@ -211,4 +211,4 @@
   .navigation__bottom-box__80 ul li {
     padding: 0.5rem 0;
   }
-}/*# sourceMappingURL=navigation.module.css.map */
+} /*# sourceMappingURL=navigation.module.css.map */

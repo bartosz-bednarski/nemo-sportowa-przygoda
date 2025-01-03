@@ -1,4 +1,4 @@
-import { customColors } from "./colors";
+import {customColors} from './colors';
 
 export type stickerH1Type = {
   stripTextColor: customColors;
@@ -27,7 +27,7 @@ export type stickerH4Type = {
   paddingBottom?: number;
 };
 export type stripH1Type = {
-  type: "span" | "h1";
+  type: 'span' | 'h1';
   scale: number;
   stripBgColor: customColors;
   stripTextColor: customColors;
@@ -35,7 +35,7 @@ export type stripH1Type = {
   paddingBottom?: number;
 };
 export type stripH2Type = {
-  type: "span" | "h2";
+  type: 'span' | 'h2';
   scale: number;
   stripBgColor: customColors;
   stripTextColor: customColors;
@@ -51,7 +51,7 @@ export type stripH3Type = {
   marginBottom?: string;
 };
 export type stripH4Type = {
-  type: "span" | "h4";
+  type: 'span' | 'h4';
   scale: number;
   stripBgColor: customColors;
   stripTextColor: customColors;
@@ -65,5 +65,5 @@ export type stripParagraphType = {
   title: string;
 };
 
-export type scrapType = { position: "top" | "bottom"; color: customColors };
-export type scrap2Type = { position: "top" | "bottom"; color: customColors };
+export type scrapType = {position: 'top' | 'bottom'; color: customColors};
+export type scrap2Type = {position: 'top' | 'bottom'; color: customColors};

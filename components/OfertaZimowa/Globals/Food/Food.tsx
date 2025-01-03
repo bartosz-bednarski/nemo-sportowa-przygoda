@@ -1,13 +1,13 @@
-"use client";
-import React from "react";
-import styles from "./food.module.scss";
-import StripH2 from "@/components/Ui/StripH2/StripH2";
-import { foodComponentType } from "@/types/SummerWinter/Winter";
+'use client';
+import React from 'react';
+import styles from './food.module.scss';
+import StripH2 from '@/components/Ui/StripH2/StripH2';
+import {foodComponentType} from '@/types/SummerWinter/Winter';
 
-const Food: React.FC<{ food: foodComponentType }> = ({ food }) => {
+const Food: React.FC<{food: foodComponentType}> = ({food}) => {
   return (
-    <div className={styles["food"]}>
-      <div className={styles["food__content"]}>
+    <div className={styles['food']}>
+      <div className={styles['food__content']}>
         <StripH2
           type="h2"
           title="WYŻYWIENIE"
@@ -16,7 +16,7 @@ const Food: React.FC<{ food: foodComponentType }> = ({ food }) => {
           scale={1.1}
         />
 
-        <span className={styles["food__content__text"]}>{food.foodAbout}</span>
+        <span className={styles['food__content__text']}>{food.foodAbout}</span>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ const Food: React.FC<{ food: foodComponentType }> = ({ food }) => {
         height="460"
         viewBox="0 0 484 460"
         fill="none"
-        className={styles["food__svg-image"]}
+        className={styles['food__svg-image']}
       >
         <path
           d="M306.419 276.148C306.502 276.417 306.587 276.689 306.859 277.562C306.354 276.866 306.22 276.682 306.086 276.497C306.196 276.379 306.309 276.264 306.419 276.148Z"

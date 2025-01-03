@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
-import styles from "./priceList.module.scss";
+'use client';
+import React from 'react';
+import styles from './priceList.module.scss';
 // import BackgroundText from "@/components/Ui/BackgroundText/BackgroundText";
-import PriceLessons from "../PriceLessons/PriceLessons";
-import { priceListType } from "@/types/Globals/globals";
+import PriceLessons from '../PriceLessons/PriceLessons';
+import {priceListType} from '@/types/Globals/globals';
 
-const PriceList: React.FC<{ priceList: priceListType }> = ({ priceList }) => {
+const PriceList: React.FC<{priceList: priceListType}> = ({priceList}) => {
   return (
     <div className={styles.priceList}>
       {/* <BackgroundText title="CENNIK" /> */}

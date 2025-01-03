@@ -1,4 +1,4 @@
-import { customColors } from "../UI/colors";
+import {customColors} from '../UI/colors';
 
 export type galleryItemType = {
   href: string;
@@ -15,5 +15,5 @@ export type galleryItemType = {
     portraits: string[];
   };
 };
-export type galleryType = "LATO" | "ZIMA" | "PLYWANIE";
+export type galleryType = 'LATO' | 'ZIMA' | 'PLYWANIE';
 export type galleryMainType = galleryItemType[];

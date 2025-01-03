@@ -1,15 +1,15 @@
-"use client";
-import React from "react";
-import styles from "./schedule.module.scss";
+'use client';
+import React from 'react';
+import styles from './schedule.module.scss';
 
-const Schedule: React.FC<{ src: string }> = ({ src }) => {
-  const tableStyles = ".activenow-table-name{font-size:0.7rem;};";
+const Schedule: React.FC<{src: string}> = ({src}) => {
+  const tableStyles = '.activenow-table-name{font-size:0.7rem;};';
   return (
     <div className={styles.schedule}>
       <h2>HARMONOGRAM</h2>
       <div
-        className={`${tableStyles} ${"activenow-table-container"} ${
-          styles["schedule__table"]
+        className={`${tableStyles} ${'activenow-table-container'} ${
+          styles['schedule__table']
         }`}
       >
         <center>

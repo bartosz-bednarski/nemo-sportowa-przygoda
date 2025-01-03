@@ -1,6 +1,6 @@
 export type detailsBoxComponentType = {
   promo: boolean;
-  label: "MIEJSCE" | "TERMIN" | "CENA" | "WIEK" | "ZBIÓRKA";
+  label: 'MIEJSCE' | 'TERMIN' | 'CENA' | 'WIEK' | 'ZBIÓRKA';
   content: string;
   promoPrice?: string;
   promoInfo?: string;
@@ -48,7 +48,7 @@ export type detailsComponentType = {
 export type scheduleComponentType = {
   title: string;
   scheduleAbout: string;
-  scheduleList: { title: string; text: string }[];
+  scheduleList: {title: string; text: string}[];
 };
 export type contactComponentType = {
   title: string;

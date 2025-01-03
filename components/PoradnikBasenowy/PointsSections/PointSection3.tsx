@@ -1,15 +1,15 @@
-"use client";
-import React from "react";
-import styles from "./pointSection.module.scss";
+'use client';
+import React from 'react';
+import styles from './pointSection.module.scss';
 
 const PointSection3: React.FC = () => {
   return (
     <div className={styles.pointSection} id="3">
-      <span className={styles["pointSection__title"]}>3. ODRABIANIE ZAJĘĆ</span>
-      <div className={styles["pointSection__row-box"]}>
+      <span className={styles['pointSection__title']}>3. ODRABIANIE ZAJĘĆ</span>
+      <div className={styles['pointSection__row-box']}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className={styles["pointSection__row-box__image"]}
+          className={styles['pointSection__row-box__image']}
           width="697"
           height="425"
           viewBox="0 0 697 425"
@@ -849,10 +849,10 @@ const PointSection3: React.FC = () => {
           />
         </svg>
 
-        <div className={styles["pointSection__row-box__text"]}>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+        <div className={styles['pointSection__row-box__text']}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               ZGŁASZANIE NIEOBECNOŚCI
             </span>
@@ -860,9 +860,9 @@ const PointSection3: React.FC = () => {
             Uczestnicy Kursu mają możliwość odrobienia zajęć w innym terminie,
             pod warunkiem spełnienia warunków opisanych w punkcie 3.2.
           </span>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               WARUNKI ZGŁASZANIA NIEOBECNOŚCI
             </span>
@@ -876,17 +876,17 @@ const PointSection3: React.FC = () => {
                 nieobecności najpóźniej 12 godzin przed rozpoczęciem zajęć.
               </li>
             </ul>
-          </span>{" "}
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          </span>{' '}
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               FORMA ODRABIANIA ZAJĘĆ
             </span>
 
             <ul>
-              <li style={{ listStyleType: "none" }}>
-                {" "}
+              <li style={{listStyleType: 'none'}}>
+                {' '}
                 <b>
                   Zajęcia należy odrobić w takiej samej formie, w jakiej
                   odbywały się pierwotne zajęcia:
@@ -897,9 +897,9 @@ const PointSection3: React.FC = () => {
               <li>Zajęcia dwuosobowe - odrabiane w formie dwuosobowej.</li>
             </ul>
           </span>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               REZERWACJA TERMINU ODRABIANIA
             </span>
@@ -917,9 +917,9 @@ const PointSection3: React.FC = () => {
             Brak możliwości zwrotu opłaty: W przypadku nieobecności na
             zajęciach, opłata za zajęcia nie podlega zwrotowi.
           </span>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               ODRABIANIE KURSY GRUPOWE
             </span>
@@ -928,9 +928,9 @@ const PointSection3: React.FC = () => {
             zostać udostępnione innej osobie, która zgłosiła chęć odrobienia
             swoich nieobecnych zajęć w terminie.
           </span>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               ODRABIANIE KURSY INDYWIDUALNE
             </span>

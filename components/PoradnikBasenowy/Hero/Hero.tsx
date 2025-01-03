@@ -1,14 +1,14 @@
-"use client";
-import React from "react";
-import styles from "./hero.module.scss";
+'use client';
+import React from 'react';
+import styles from './hero.module.scss';
 const Hero: React.FC = () => {
   return (
     <div className={styles.hero}>
-      <h1 className={styles["hero__list"]}>
-        <span className={styles["hero__list__item"]}>PORADNIK </span>
-        <span className={styles["hero__list__item"]}>BASENOWY</span>
+      <h1 className={styles['hero__list']}>
+        <span className={styles['hero__list__item']}>PORADNIK </span>
+        <span className={styles['hero__list__item']}>BASENOWY</span>
       </h1>
-      <div className={styles["hero__row-box"]}>
+      <div className={styles['hero__row-box']}>
         <svg
           width="102"
           height="101"
@@ -123,7 +123,7 @@ const Hero: React.FC = () => {
         viewBox="0 0 1320 572"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className={styles["hero__logo"]}
+        className={styles['hero__logo']}
         id="logo-main"
       >
         <g clip-path="url(#clip0_1215_3023)">

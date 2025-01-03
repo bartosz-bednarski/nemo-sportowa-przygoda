@@ -1,18 +1,18 @@
-"use client";
-import "react";
-import styles from "./trainersSection.module.scss";
-import AboutTextPoppins from "@/components/Ui/AboutTextPoppins/AboutTextPoppins";
-import BackgroundText from "@/components/Ui/BackgroundText/BackgroundText";
-import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
-import InstructorBubble from "@/components/Globals/InstructorBubble/InstructorBubble";
-import LinkButton from "@/components/Ui/Buttons/LinkButton";
-import Scrap2 from "@/components/Ui/Scrap/Scrap2";
-import { COLORS } from "@/utils/UI/colors";
+'use client';
+import 'react';
+import styles from './trainersSection.module.scss';
+import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
+import BackgroundText from '@/components/Ui/BackgroundText/BackgroundText';
+import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import InstructorBubble from '@/components/Globals/InstructorBubble/InstructorBubble';
+import LinkButton from '@/components/Ui/Buttons/LinkButton';
+import Scrap2 from '@/components/Ui/Scrap/Scrap2';
+import {COLORS} from '@/utils/UI/colors';
 const TrainersSection: React.FC = () => {
   return (
     <section className={styles.trainers}>
       <BackgroundText title="NASZ ZESPÓŁ" />
-      <div className={styles["trainers__about-container"]}>
+      <div className={styles['trainers__about-container']}>
         <StickerH2
           title="DOŚWIADCZENI"
           titleStrip="TRENERZY"
@@ -27,7 +27,7 @@ const TrainersSection: React.FC = () => {
           description="Nasz zespół to grono doświadczonych instruktorów, którzy od lat z pasją i zaangażowaniem szkolą w zakresie pływania. Każdy z naszych instruktorów to osoba, która osobiście trenowała pływanie i posiada bogate doświadczenie w tej dziedzinie. Dzięki temu możemy zapewnić profesjonalne i rzetelne podejście do każdego uczestnika – wiemy, jak wygląda trening z perspektywy pływaka, i potrafimy skutecznie przekazywać wiedzę oraz technikę."
         />
       </div>
-      <div className={styles["trainers__trainers-gallery"]}>
+      <div className={styles['trainers__trainers-gallery']}>
         <InstructorBubble
           scale={1}
           img1="instructor-1.png"
@@ -67,7 +67,7 @@ const TrainersSection: React.FC = () => {
       <div
         className={styles.bubbles}
         style={{
-          background: `linear-gradient(180deg,${COLORS["darkBlue"]} 0%, ${COLORS["darkBlue"]} 100%)`,
+          background: `linear-gradient(180deg,${COLORS['darkBlue']} 0%, ${COLORS['darkBlue']} 100%)`,
         }}
       >
         <svg

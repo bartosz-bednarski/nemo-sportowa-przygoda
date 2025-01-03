@@ -1,22 +1,18 @@
-"use client";
-import React from "react";
-import styles from "./pointSection.module.scss";
+'use client';
+import React from 'react';
+import styles from './pointSection.module.scss';
 
 const PointSection6: React.FC = () => {
   return (
-    <div
-      className={styles.pointSection}
-      style={{ paddingBottom: "9rem" }}
-      id="6"
-    >
-      <span className={styles["pointSection__title"]}>
+    <div className={styles.pointSection} style={{paddingBottom: '9rem'}} id="6">
+      <span className={styles['pointSection__title']}>
         6. ZGODA NA PUBLIKACJĘ WIZERUNKU
       </span>
-      <div className={styles["pointSection__row-box"]}>
+      <div className={styles['pointSection__row-box']}>
         <svg
           width="687"
           height="443"
-          className={styles["pointSection__row-box__image"]}
+          className={styles['pointSection__row-box__image']}
           viewBox="0 0 687 443"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -215,10 +211,10 @@ const PointSection6: React.FC = () => {
           />
         </svg>
 
-        <div className={styles["pointSection__row-box__text"]}>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+        <div className={styles['pointSection__row-box__text']}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               ZGODA NA PUBLIKACJĘ
             </span>
@@ -233,16 +229,16 @@ const PointSection6: React.FC = () => {
             Zgoda może być udzielona w formie pisemnej lub za pośrednictwem
             elektronicznego formularza zgłoszeniowego w aplikacji ACTIVE NOW.
           </span>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               BRAK ZGODY NA PUBLIKACJĘ
             </span>
 
             <ul>
-              <li style={{ listStyleType: "none" }}>
-                {" "}
+              <li style={{listStyleType: 'none'}}>
+                {' '}
                 Uczestnik Kursu lub jego Rodzic/Opiekun prawny ma prawo nie
                 wyrazić zgody na publikację wizerunku w celach promocyjnych
                 Szkoły Pływania „NEMO SPORTOWA PRZYGODA” prowadzonej przez
@@ -250,7 +246,7 @@ const PointSection6: React.FC = () => {
                 <br />
                 <br />
               </li>
-              <li style={{ listStyleType: "none" }}>
+              <li style={{listStyleType: 'none'}}>
                 <b>Sposób zgłoszenia braku zgody:</b>
               </li>
               <li>
@@ -264,7 +260,7 @@ const PointSection6: React.FC = () => {
                 @gmail.com.
               </li>
             </ul>
-          </span>{" "}
+          </span>{' '}
         </div>
       </div>
     </div>

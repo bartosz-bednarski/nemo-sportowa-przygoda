@@ -1,15 +1,15 @@
-"use client";
-import React from "react";
-import styles from "./priceDetails.module.scss";
-import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
-import { priceDetailsComponentType } from "@/types/SummerWinter/Winter";
+'use client';
+import React from 'react';
+import styles from './priceDetails.module.scss';
+import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import {priceDetailsComponentType} from '@/types/SummerWinter/Winter';
 
-const PriceDetails: React.FC<{ priceDetails: priceDetailsComponentType }> = ({
+const PriceDetails: React.FC<{priceDetails: priceDetailsComponentType}> = ({
   priceDetails,
 }) => {
   return (
     <div className={styles.priceDetails}>
-      <div className={styles["priceDetails__content-box"]}>
+      <div className={styles['priceDetails__content-box']}>
         <StickerH2
           title="CO ZAWIERA"
           titleStrip="CENA ?"
@@ -19,10 +19,10 @@ const PriceDetails: React.FC<{ priceDetails: priceDetailsComponentType }> = ({
           scale={1.4}
           paddingBottom={0}
         />
-        <div className={styles["priceDetails__content-box__list-box"]}>
+        <div className={styles['priceDetails__content-box__list-box']}>
           {priceDetails.priceDetailsList.map((listItem, index) => (
             <span
-              className={styles["priceDetails__content-box__list-box__item"]}
+              className={styles['priceDetails__content-box__list-box__item']}
               key={index}
             >
               {listItem}
@@ -31,7 +31,7 @@ const PriceDetails: React.FC<{ priceDetails: priceDetailsComponentType }> = ({
         </div>
       </div>
       <svg
-        className={styles["priceDetails__svg-image"]}
+        className={styles['priceDetails__svg-image']}
         xmlns="http://www.w3.org/2000/svg"
         width="437"
         height="381"

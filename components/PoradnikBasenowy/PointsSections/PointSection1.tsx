@@ -1,16 +1,16 @@
-"use client";
-import React from "react";
-import styles from "./pointSection.module.scss";
+'use client';
+import React from 'react';
+import styles from './pointSection.module.scss';
 
 const PointSection1: React.FC = () => {
   return (
     <div className={styles.pointSection}>
-      <span className={styles["pointSection__title"]} id="1">
+      <span className={styles['pointSection__title']} id="1">
         1. ZAPISY NA ZAJĘCIA
       </span>
-      <div className={styles["pointSection__row-box"]}>
+      <div className={styles['pointSection__row-box']}>
         <svg
-          className={styles["pointSection__row-box__image"]}
+          className={styles['pointSection__row-box__image']}
           width="644"
           height="541"
           viewBox="0 0 644 541"
@@ -189,10 +189,10 @@ const PointSection1: React.FC = () => {
           </defs>
         </svg>
 
-        <div className={styles["pointSection__row-box__text"]}>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+        <div className={styles['pointSection__row-box__text']}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               WYBÓR RODZAJU ZAJĘĆ
             </span>
@@ -200,15 +200,15 @@ const PointSection1: React.FC = () => {
             różnych kategoriach wiekowych (niemowlaki, dzieci, młodzież,
             dorośli). Wybierz odpowiednią opcję w zależności od swoich potrzeb.
           </span>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               REZERWACJA MIEJSCA
             </span>
 
             <ul>
-              <li style={{ listStyleType: "none" }}>
+              <li style={{listStyleType: 'none'}}>
                 <b>
                   Zarezerwuj miejsce na wybrane zajęcia poprzez jeden z
                   poniższych kanałów:
@@ -220,19 +220,19 @@ const PointSection1: React.FC = () => {
               <li>Instagram: szkola.plywania.nemo</li>
               <li>Telefonicznie: Zadzwoń pod numer +48 519 625 894</li>
             </ul>
-          </span>{" "}
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          </span>{' '}
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               POTWIERDZENIE REZERWACJI
             </span>
             Po wypełnieniu formularza zgłoszeniowego, Organizator wyśle
             potwierdzenie rezerwacji na podany adres e-mail w ciągu 3 dni.
-          </span>{" "}
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          </span>{' '}
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               PIERWSZA LEKCJA PRÓBNA
             </span>
@@ -240,9 +240,9 @@ const PointSection1: React.FC = () => {
             zdecydujesz, czy chcesz kontynuować kurs. W przypadku kontynuacji,
             opłata za pierwszą lekcję zostanie wliczona w cenę kursu.
           </span>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               OPŁATA ZA KURS
             </span>

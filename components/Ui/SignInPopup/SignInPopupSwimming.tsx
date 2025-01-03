@@ -1,15 +1,15 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import styles from "./popup.module.scss";
-import Image from "next/image";
-import LinkButton from "../Buttons/LinkButton";
-import { hasCookie, setCookie } from "cookies-next";
-import XBtn from "../Buttons/XBtn/XBtn";
+'use client';
+import React, {useEffect, useState} from 'react';
+import styles from './popup.module.scss';
+import Image from 'next/image';
+import LinkButton from '../Buttons/LinkButton';
+import {hasCookie, setCookie} from 'cookies-next';
+import XBtn from '../Buttons/XBtn/XBtn';
 const SignInPopupSwimming: React.FC = () => {
   const [showPopup, setShowPopup] = useState(false);
   useEffect(() => {
-    if (hasCookie("popup") === false) {
-      setCookie("popup", 0);
+    if (hasCookie('popup') === false) {
+      setCookie('popup', 0);
       setShowPopup(true);
     }
   }, [showPopup]);
@@ -19,13 +19,13 @@ const SignInPopupSwimming: React.FC = () => {
   return (
     <div
       className={styles.popup}
-      style={{ display: showPopup ? "flex" : "none" }}
+      style={{display: showPopup ? 'flex' : 'none'}}
     >
-      <div className={styles["popup__content-box"]}>
-        <span className={styles["popup__content-box__x-btn-box"]}>
+      <div className={styles['popup__content-box']}>
+        <span className={styles['popup__content-box__x-btn-box']}>
           <XBtn onClick={closePopupHandler} />
         </span>
-        <div className={styles["popup__content-box__column"]}>
+        <div className={styles['popup__content-box__column']}>
           <h3>
             <b>NAUKA PŁYWANIA</b>
             <br /> KRAKÓW | KORZENNA | GORLICE
@@ -54,7 +54,7 @@ const SignInPopupSwimming: React.FC = () => {
           title="nauka plywania NEMO"
           objectFit="cover"
           objectPosition="left"
-          className={styles["popup__content-box__image"]}
+          className={styles['popup__content-box__image']}
         />
       </div>
     </div>

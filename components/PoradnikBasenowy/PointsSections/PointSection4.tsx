@@ -1,17 +1,17 @@
-"use client";
-import React from "react";
-import styles from "./pointSection.module.scss";
+'use client';
+import React from 'react';
+import styles from './pointSection.module.scss';
 
 const PointSection4: React.FC = () => {
   return (
     <div className={styles.pointSection} id="4">
-      <span className={styles["pointSection__title"]}>
+      <span className={styles['pointSection__title']}>
         4. ZA CO ODPOWIADA INSTRUKTOR?
       </span>
-      <div className={styles["pointSection__row-box"]}>
+      <div className={styles['pointSection__row-box']}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className={styles["pointSection__row-box__image"]}
+          className={styles['pointSection__row-box__image']}
           width="773"
           height="442"
           viewBox="0 0 773 442"
@@ -200,15 +200,15 @@ const PointSection4: React.FC = () => {
           />
         </svg>
 
-        <div className={styles["pointSection__row-box__text"]}>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+        <div className={styles['pointSection__row-box__text']}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               ODPOWIEDZIALNOŚĆ INSTRUKTORA
             </span>
             <ul>
-              <li style={{ listStyleType: "none" }}>
+              <li style={{listStyleType: 'none'}}>
                 <b>1. Moment przejęcia odpowiedzialności:</b>
               </li>
               <li>
@@ -220,7 +220,7 @@ const PointSection4: React.FC = () => {
                 Instruktor nie ponosi odpowiedzialności za Uczestników
                 znajdujących się w szatni.
               </li>
-              <li style={{ listStyleType: "none" }}>
+              <li style={{listStyleType: 'none'}}>
                 <b>2. Zakończenie zajęć:</b>
               </li>
               <li>
@@ -228,7 +228,7 @@ const PointSection4: React.FC = () => {
                 wejścia do szatni, po czym przestaje ponosić odpowiedzialność za
                 ich bezpieczeństwo.
               </li>
-              <li style={{ listStyleType: "none" }}>
+              <li style={{listStyleType: 'none'}}>
                 <b>3. Wymagania względem Uczestników:</b>
               </li>
               <li>
@@ -238,9 +238,9 @@ const PointSection4: React.FC = () => {
               </li>
             </ul>
           </span>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               OBOWIĄZKI UCZESTNIKÓW KURSU
             </span>
@@ -262,17 +262,17 @@ const PointSection4: React.FC = () => {
                 odnoszenie go na wyznaczone miejsce po użyciu.
               </li>
             </ul>
-          </span>{" "}
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          </span>{' '}
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               ZGŁASZANIE ZDARZEŃ
             </span>
             Bezzwłoczne informowanie Instruktora o wypadkach, urazach lub innych
             zdarzeniach mogących mieć wpływ na bezpieczeństwo własne lub innych
             uczestników.
-          </span>{" "}
+          </span>{' '}
         </div>
       </div>
     </div>

@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
-import styles from "./naukaPlywaniaAbout.module.scss";
-import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
-import AboutTextPoppins from "@/components/Ui/AboutTextPoppins/AboutTextPoppins";
-import Image from "next/image";
-import { aboutType } from "@/types/NaukaPlywania/naukaPlywania";
-import LinkButton from "@/components/Ui/Buttons/LinkButton";
+'use client';
+import React from 'react';
+import styles from './naukaPlywaniaAbout.module.scss';
+import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
+import Image from 'next/image';
+import {aboutType} from '@/types/NaukaPlywania/naukaPlywania';
+import LinkButton from '@/components/Ui/Buttons/LinkButton';
 
 const NaukaPlywaniaAbout: React.FC<aboutType> = ({
   stickerH2,
@@ -15,7 +15,7 @@ const NaukaPlywaniaAbout: React.FC<aboutType> = ({
 }) => {
   return (
     <div className={styles.about}>
-      <div className={styles["about__text-box"]}>
+      <div className={styles['about__text-box']}>
         <StickerH2
           title={stickerH2.title}
           titleStrip={stickerH2.titleStrip}
@@ -30,7 +30,7 @@ const NaukaPlywaniaAbout: React.FC<aboutType> = ({
           description={aboutTextPoppins.description}
         />
         {button !== undefined && (
-          <span style={{ width: "fit-content" }}>
+          <span style={{width: 'fit-content'}}>
             <LinkButton
               title={button.title}
               href={button.href}
@@ -40,7 +40,7 @@ const NaukaPlywaniaAbout: React.FC<aboutType> = ({
           </span>
         )}
       </div>
-      <div className={styles["about__image-box"]}>
+      <div className={styles['about__image-box']}>
         <Image
           objectFit="cover"
           objectPosition="left"

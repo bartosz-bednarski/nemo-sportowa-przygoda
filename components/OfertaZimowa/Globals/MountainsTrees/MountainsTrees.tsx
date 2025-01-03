@@ -1,6 +1,6 @@
-"use client";
-import React from "react";
-import styles from "./mountainsTrees.module.scss";
+'use client';
+import React from 'react';
+import styles from './mountainsTrees.module.scss';
 
 const MountainsTrees: React.FC = () => {
   return (

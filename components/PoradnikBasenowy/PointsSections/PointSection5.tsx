@@ -1,17 +1,17 @@
-"use client";
-import React from "react";
-import styles from "./pointSection.module.scss";
+'use client';
+import React from 'react';
+import styles from './pointSection.module.scss';
 
 const PointSection5: React.FC = () => {
   return (
     <div className={styles.pointSection} id="5">
-      <span className={styles["pointSection__title"]}>
+      <span className={styles['pointSection__title']}>
         5.CO ZABRAĆ NA BASEN?
       </span>
-      <div className={styles["pointSection__row-box"]}>
+      <div className={styles['pointSection__row-box']}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className={styles["pointSection__row-box__image"]}
+          className={styles['pointSection__row-box__image']}
           width="479"
           height="442"
           viewBox="0 0 479 442"
@@ -418,16 +418,16 @@ const PointSection5: React.FC = () => {
           </defs>
         </svg>
 
-        <div className={styles["pointSection__row-box__text"]}>
-          <div className={styles["poolNecessaryItems__row-box"]}>
-            <div className={styles["poolNecessaryItems__row-box__item"]}>
+        <div className={styles['pointSection__row-box__text']}>
+          <div className={styles['poolNecessaryItems__row-box']}>
+            <div className={styles['poolNecessaryItems__row-box__item']}>
               <svg
                 width="102"
                 height="101"
                 viewBox="0 0 102 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className={styles["poolNecessaryItems__row-box__item__svg"]}
+                className={styles['poolNecessaryItems__row-box__item__svg']}
               >
                 <path
                   fillRule="evenodd"
@@ -443,20 +443,20 @@ const PointSection5: React.FC = () => {
                 />
               </svg>
               <span
-                className={styles["poolNecessaryItems__row-box__item__title"]}
+                className={styles['poolNecessaryItems__row-box__item__title']}
               >
                 CZEPEK I OKULARY
               </span>
             </div>
 
-            <div className={styles["poolNecessaryItems__row-box__item"]}>
+            <div className={styles['poolNecessaryItems__row-box__item']}>
               <svg
                 width="101"
                 height="101"
                 viewBox="0 0 101 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className={styles["poolNecessaryItems__row-box__item__svg"]}
+                className={styles['poolNecessaryItems__row-box__item__svg']}
               >
                 <path
                   fillRule="evenodd"
@@ -467,19 +467,19 @@ const PointSection5: React.FC = () => {
               </svg>
 
               <span
-                className={styles["poolNecessaryItems__row-box__item__title"]}
+                className={styles['poolNecessaryItems__row-box__item__title']}
               >
                 STRÓJ KĄPIELOWY
               </span>
             </div>
-            <div className={styles["poolNecessaryItems__row-box__item"]}>
+            <div className={styles['poolNecessaryItems__row-box__item']}>
               <svg
                 width="101"
                 height="101"
                 viewBox="0 0 101 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className={styles["poolNecessaryItems__row-box__item__svg"]}
+                className={styles['poolNecessaryItems__row-box__item__svg']}
               >
                 <path
                   d="M33.7645 14.4745C28.369 12.5217 25.7083 12.7274 21.2386 14.4745C15.3834 17.4831 12.8381 20.1362 10.4368 27.4601C8.559 36.6619 8.88674 41.1929 10.4368 48.8345C13.1089 60.9825 14.466 67.9037 16.6437 80.4365C17.1716 85.8065 16.9008 88.9491 20.4349 95.0308C26.8941 103.712 35.4323 101.514 42.3839 93.9966C44.6615 90.9129 43.9916 85.7605 42.3839 79.0575C40.0988 68.4359 39.4794 61.8115 40.4303 47.8002C42.2226 40.0309 42.7099 35.5919 42.3839 27.4601C41.6156 21.2228 40.2834 18.0907 33.7645 14.4745Z"
@@ -504,19 +504,19 @@ const PointSection5: React.FC = () => {
               </svg>
 
               <span
-                className={styles["poolNecessaryItems__row-box__item__title"]}
+                className={styles['poolNecessaryItems__row-box__item__title']}
               >
                 KLAPKI
               </span>
             </div>
-            <div className={styles["poolNecessaryItems__row-box__item"]}>
+            <div className={styles['poolNecessaryItems__row-box__item']}>
               <svg
                 width="101"
                 height="101"
                 viewBox="0 0 101 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className={styles["poolNecessaryItems__row-box__item__svg"]}
+                className={styles['poolNecessaryItems__row-box__item__svg']}
               >
                 <path
                   d="M10.2656 16.4707H91.4922"
@@ -557,7 +557,7 @@ const PointSection5: React.FC = () => {
               </svg>
 
               <span
-                className={styles["poolNecessaryItems__row-box__item__title"]}
+                className={styles['poolNecessaryItems__row-box__item__title']}
               >
                 RĘCZNIK
               </span>

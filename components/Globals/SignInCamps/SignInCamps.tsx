@@ -1,10 +1,10 @@
-"use client";
-import React from "react";
-import styles from "./signInCamps.module.scss";
-import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
-import { COLORS } from "@/utils/UI/colors";
-import { signInCampsComponentType } from "@/types/Globals/globals";
-import ColonyLink from "@/components/OfertaZimowa/Globals/ColonyLink/ColonyLink";
+'use client';
+import React from 'react';
+import styles from './signInCamps.module.scss';
+import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import {COLORS} from '@/utils/UI/colors';
+import {signInCampsComponentType} from '@/types/Globals/globals';
+import ColonyLink from '@/components/OfertaZimowa/Globals/ColonyLink/ColonyLink';
 
 const SignInCamps: React.FC<signInCampsComponentType> = ({
   theme,
@@ -16,27 +16,27 @@ const SignInCamps: React.FC<signInCampsComponentType> = ({
     <div
       className={styles.signInCamps}
       style={{
-        background: COLORS[theme === "summer" ? "basicGreen" : "white"],
+        background: COLORS[theme === 'summer' ? 'basicGreen' : 'white'],
       }}
     >
-      <div className={styles["signInCamps__header-box"]}>
+      <div className={styles['signInCamps__header-box']}>
         <StickerH2
           title="AKTUALNE"
           titleStrip="ZAPISY"
-          stripBgColor={theme === "summer" ? "white" : "darkBlue"}
-          stripTextColor={theme === "summer" ? "basicGreen" : "white"}
-          titleColor={theme === "summer" ? "white" : "darkBlue"}
+          stripBgColor={theme === 'summer' ? 'white' : 'darkBlue'}
+          stripTextColor={theme === 'summer' ? 'basicGreen' : 'white'}
+          titleColor={theme === 'summer' ? 'white' : 'darkBlue'}
           scale={1.6}
           paddingBottom={0}
         />
-        {theme === "summer" ? (
+        {theme === 'summer' ? (
           <svg
             width="488"
             height="371"
             viewBox="0 0 488 371"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={styles["signInCamps__header-box__picture"]}
+            className={styles['signInCamps__header-box__picture']}
           >
             <path
               d="M58.297 308.746C53.9388 308.849 53.0797 307.47 52.8124 303.479L398.794 15.7093C402.255 14.8375 403.893 15.1957 405.155 19.4672L58.297 308.746Z"
@@ -295,7 +295,7 @@ const SignInCamps: React.FC<signInCampsComponentType> = ({
             viewBox="0 0 283 299"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={styles["signInCamps__header-box__picture"]}
+            className={styles['signInCamps__header-box__picture']}
           >
             <path
               d="M88.7214 277.014L119.475 259.758L115.595 252.843L84.8414 270.099C83.7893 270.776 83.0339 270.889 83.0714 273.317C83.5498 274.832 83.898 275.628 85.0152 276.781C86.4474 277.847 87.2715 277.812 88.7214 277.014Z"
@@ -1059,12 +1059,12 @@ const SignInCamps: React.FC<signInCampsComponentType> = ({
           </svg>
         )}
       </div>
-      <div className={styles["signInCamps__row-box"]}>
+      <div className={styles['signInCamps__row-box']}>
         {waiting && (
           <span
-            className={styles["signInCamps__row-box__waiting"]}
+            className={styles['signInCamps__row-box__waiting']}
             style={{
-              color: COLORS[theme === "summer" ? "white" : "winterIce"],
+              color: COLORS[theme === 'summer' ? 'white' : 'winterIce'],
             }}
           >
             {waitingTitle && waitingTitle}

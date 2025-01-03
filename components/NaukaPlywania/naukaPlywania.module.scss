@@ -1,4 +1,4 @@
-@import "../../styles/fonts.scss";
+@import '../../styles/fonts.scss';
 .naukaPlywania {
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@
       justify-content: flex-start;
       width: 25%;
       ul {
-        list-style-type: "\2B50";
+        list-style-type: '\2B50';
         // margin: 0 0 0 20px;
         margin-top: 0;
         padding: 0;
@@ -25,7 +25,7 @@
         li {
           font-weight: 500;
           font-size: 1rem;
-          font-family: "poppins-400";
+          font-family: 'poppins-400';
           margin: 0.5rem 0;
           padding: 0;
           line-height: 1.4rem;

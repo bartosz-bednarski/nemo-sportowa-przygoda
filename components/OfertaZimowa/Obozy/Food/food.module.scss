@@ -1,5 +1,5 @@
-@import "../../../../styles/colors.scss";
-@import "../../../../styles/fonts.scss";
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
 .food {
   box-sizing: border-box;
   display: flex;
@@ -14,7 +14,7 @@
     width: 40%;
     &__text {
       color: $darkBlue;
-      font-family: "poppins-500";
+      font-family: 'poppins-500';
     }
   }
   &__svg-image {

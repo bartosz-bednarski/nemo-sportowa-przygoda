@@ -1,20 +1,20 @@
-"use client";
-import React from "react";
-import styles from "./boss.module.scss";
-import Image from "next/image";
+'use client';
+import React from 'react';
+import styles from './boss.module.scss';
+import Image from 'next/image';
 
 const Boss: React.FC = () => {
   return (
     <div className={styles.boss}>
-      <div className={styles["boss__content"]}>
-        <div className={styles["boss__content__header-box"]}>
-          <div className={styles["boss__content__header-box__text-box"]}>
+      <div className={styles['boss__content']}>
+        <div className={styles['boss__content__header-box']}>
+          <div className={styles['boss__content__header-box__text-box']}>
             <div
-              className={styles["boss__content__header-box__text-box__header"]}
+              className={styles['boss__content__header-box__text-box__header']}
             >
               <h2>SZEFOWA</h2>
               <Image
-                className={styles["boss__logo"]}
+                className={styles['boss__logo']}
                 src="/assets/logo/logo-nemo-only.webp"
                 width={125}
                 height={122}
@@ -23,7 +23,7 @@ const Boss: React.FC = () => {
             </div>
             <h3>WIKTORIA FRYCZEK</h3>
             <Image
-              className={styles["boss__logo-mobile"]}
+              className={styles['boss__logo-mobile']}
               src="/assets/logo/logo-nemo-only.webp"
               width={125}
               height={122}
@@ -31,7 +31,7 @@ const Boss: React.FC = () => {
             />
           </div>
           <Image
-            className={styles["boss__image-mobile"]}
+            className={styles['boss__image-mobile']}
             src="/assets/instructors/boss.webp"
             width={500}
             height={500}
@@ -67,7 +67,7 @@ const Boss: React.FC = () => {
         </span>
       </div>
       <Image
-        className={styles["boss__image"]}
+        className={styles['boss__image']}
         src="/assets/instructors/boss.webp"
         width={500}
         height={500}

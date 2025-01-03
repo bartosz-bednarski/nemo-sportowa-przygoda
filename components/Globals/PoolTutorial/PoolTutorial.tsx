@@ -1,19 +1,19 @@
-"use client";
-import React from "react";
-import styles from "./poolTutorial.module.scss";
-import BackgroundText from "@/components/Ui/BackgroundText/BackgroundText";
+'use client';
+import React from 'react';
+import styles from './poolTutorial.module.scss';
+import BackgroundText from '@/components/Ui/BackgroundText/BackgroundText';
 // import { customColors } from "@/types/UI/colors";
-import { COLORS } from "@/utils/UI/colors";
-import { poolTutorialType } from "@/types/Globals/globals";
-import StripH4 from "@/components/Ui/StripH4/StripH4";
+import {COLORS} from '@/utils/UI/colors';
+import {poolTutorialType} from '@/types/Globals/globals';
+import StripH4 from '@/components/Ui/StripH4/StripH4';
 
-const PoolTutorial: React.FC<{ poolTutorial: poolTutorialType }> = ({
+const PoolTutorial: React.FC<{poolTutorial: poolTutorialType}> = ({
   poolTutorial,
 }) => {
   return (
     <div
       className={styles.poolTutorial}
-      style={{ background: COLORS[poolTutorial.color] }}
+      style={{background: COLORS[poolTutorial.color]}}
     >
       {poolTutorial.header && poolTutorial.stripH4 !== undefined && (
         <StripH4
@@ -26,9 +26,9 @@ const PoolTutorial: React.FC<{ poolTutorial: poolTutorialType }> = ({
         />
       )}
 
-      <div className={styles["poolTutorial__row-box"]}>
+      <div className={styles['poolTutorial__row-box']}>
         <BackgroundText title="PORADNIK KROK PO KROKU" />
-        <div className={styles["poolTutorial__row-box__circle"]}>
+        <div className={styles['poolTutorial__row-box__circle']}>
           {poolTutorial.firstRule}
         </div>
 
@@ -40,14 +40,14 @@ const PoolTutorial: React.FC<{ poolTutorial: poolTutorialType }> = ({
               viewBox="0 0 124 58"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className={styles["poolTutorial__row-box__arrow"]}
+              className={styles['poolTutorial__row-box__arrow']}
             >
               <path
                 d="M124.011 29L74.0112 0.132486V57.8675L124.011 29ZM0.929688 34H79.0112V24H0.929688V34Z"
-                fill={index % 2 === 0 ? "white" : COLORS.basicOrange}
+                fill={index % 2 === 0 ? 'white' : COLORS.basicOrange}
               />
             </svg>
-            <div className={styles["poolTutorial__row-box__circle"]}>
+            <div className={styles['poolTutorial__row-box__circle']}>
               {rule}
             </div>
           </>

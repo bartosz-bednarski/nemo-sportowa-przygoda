@@ -1,5 +1,5 @@
-@import "../../../styles/colors.scss";
-@import "../../../styles/fonts.scss";
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
 .popup {
   display: flex;
   justify-content: center;
@@ -25,12 +25,12 @@
       width: 50%;
       gap: 1rem;
       h1 {
-        font-family: "poppins-700";
+        font-family: 'poppins-700';
         margin: 0;
       }
       h3 {
         margin: 0;
-        font-family: "poppins-600";
+        font-family: 'poppins-600';
       }
     }
     &__image {

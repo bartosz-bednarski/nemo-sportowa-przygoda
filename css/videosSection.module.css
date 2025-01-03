@@ -14,7 +14,7 @@
   width: 32.5%;
   height: 100vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   justify-content: center;
   align-items: flex-end;
 }
@@ -67,4 +67,4 @@
   .container__image-box__oneSticker-box {
     left: 5%;
   }
-}/*# sourceMappingURL=videosSection.module.css.map */
+} /*# sourceMappingURL=videosSection.module.css.map */
