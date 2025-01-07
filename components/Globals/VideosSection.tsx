@@ -1,9 +1,9 @@
 'use client';
 import 'react';
 import styles from './videosSection.module.scss';
-import StickerH2 from '../Ui/StickerH2/StickerH2';
+import StickerH2 from '../Ui/Stickers/StickerH2/StickerH2';
 import {VideosSectionType} from '@/types/Globals/globals';
-import StickerH1 from '../Ui/StickerH1/StickerH1';
+import StickerH1 from '../Ui/Stickers/StickerH1/StickerH1';
 import Scrap2 from '../Ui/Scrap/Scrap2';
 const VideosSection: React.FC<VideosSectionType> = ({
   scrapColor,
@@ -24,8 +24,6 @@ const VideosSection: React.FC<VideosSectionType> = ({
             titleStrip="PRZYGODA"
             stripBgColor="basicOrange"
             stripTextColor="white"
-            scale={1.8}
-            paddingBottom={30}
           />
         </span>
       )}
@@ -38,8 +36,6 @@ const VideosSection: React.FC<VideosSectionType> = ({
             titleStrip={oneStickerContent.titleStrip}
             stripBgColor={oneStickerContent.stripBgColor}
             stripTextColor={oneStickerContent.stripTextColor}
-            scale={oneStickerContent.scale}
-            paddingBottom={30}
           />
         </span>
       )}
@@ -68,8 +64,6 @@ const VideosSection: React.FC<VideosSectionType> = ({
               titleStrip={col1.stickerH2.titleStrip}
               stripBgColor={col1.stickerH2.stripBgColor}
               stripTextColor={col1.stickerH2.stripTextColor}
-              scale={col1.stickerH2.scale}
-              paddingBottom={30}
             />
           </span>
         )}
@@ -93,7 +87,7 @@ const VideosSection: React.FC<VideosSectionType> = ({
         {!oneSticker && col2.stickerH2 !== undefined && (
           <span
             className={styles['container__image-box__sticker-box']}
-            style={{bottom: '15%'}}
+            style={{bottom: '25%'}}
           >
             {' '}
             <StickerH2
@@ -101,8 +95,6 @@ const VideosSection: React.FC<VideosSectionType> = ({
               titleStrip={col2.stickerH2.titleStrip}
               stripBgColor={col2.stickerH2.stripBgColor}
               stripTextColor={col2.stickerH2.stripTextColor}
-              scale={col2.stickerH2.scale}
-              paddingBottom={50}
             />
           </span>
         )}
@@ -126,7 +118,7 @@ const VideosSection: React.FC<VideosSectionType> = ({
         {!oneSticker && col3.stickerH2 !== undefined && (
           <span
             className={styles['container__image-box__sticker-box']}
-            style={{bottom: '25%'}}
+            style={{bottom: '35%'}}
           >
             {' '}
             <StickerH2
@@ -134,8 +126,6 @@ const VideosSection: React.FC<VideosSectionType> = ({
               titleStrip={col3.stickerH2.titleStrip}
               stripBgColor={col3.stickerH2.stripBgColor}
               stripTextColor={col3.stickerH2.stripTextColor}
-              scale={col3.stickerH2.scale}
-              paddingBottom={40}
             />
           </span>
         )}

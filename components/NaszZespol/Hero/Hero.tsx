@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './hero.module.scss';
 import Image from 'next/image';
-import StickerH1 from '@/components/Ui/StickerH1/StickerH1';
+import StickerH1 from '@/components/Ui/Stickers/StickerH1/StickerH1';
 
 const HeroTeam: React.FC = () => {
   return (
@@ -22,7 +22,6 @@ const HeroTeam: React.FC = () => {
           titleStrip="ZESPÓŁ"
           stripBgColor="darkBlue"
           stripTextColor="white"
-          scale={1.4}
         />
       </span>
     </div>

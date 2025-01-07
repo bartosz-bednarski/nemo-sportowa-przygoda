@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './whatsWaiting4You.module.scss';
 import {whatsWaiting4YouComponentType} from '@/types/SummerWinter/Camps';
-import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 
 const WhatsWaiting4You: React.FC<{
   details: whatsWaiting4YouComponentType;
@@ -16,8 +16,6 @@ const WhatsWaiting4You: React.FC<{
           titleColor="darkBlue"
           stripBgColor="darkBlue"
           stripTextColor="white"
-          scale={1.5}
-          paddingBottom={0}
         />
         <ul className={styles['whatsWaiting4You__content__list']}>
           {details.list.map((item, index) => (

@@ -1,4 +1,5 @@
-@import '../../../styles/colors.scss';
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles//mixin.scss' as mixin;
 @import '../../../styles/fonts.scss';
 .box {
   display: flex;
@@ -6,41 +7,36 @@
   width: 100%;
   font-family: 'Poppins-400';
   z-index: 3;
-  &__title {
-    font-family: 'Poppins-700';
-    font-size: 1.4rem;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: white;
-    -webkit-text-stroke-width: 1px;
-    color: $mediumBlue;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .box__title {
-    font-size: 1.5rem;
-  }
-  .box p {
-    font-size: 1rem;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .box {
+  @include mixin.phone800px {
     text-align: center;
   }
-  .box__title {
+  @include mixin.phone500px {
+    text-align: justify;
+  }
+}
+.title {
+  font-family: 'Poppins-700';
+  font-size: 1.4rem;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  color: colors.$mediumBlue;
+  @include mixin.pc1000px {
+    font-size: 1.5rem;
+  }
+  @include mixin.phone800px {
     font-size: 1.2rem;
     font-family: 'Poppins-400';
   }
-}
-@media only screen and (max-width: 500px) {
-  .box {
-    text-align: justify;
-    p {
-      line-height: 1.2rem;
-    }
-  }
-  .box__title {
+  @include mixin.phone500px {
     font-size: 1.1rem;
-    font-family: 'Poppins-400';
+  }
+}
+.paragraph {
+  @include mixin.pc1000px {
+    font-size: 1rem;
+  }
+  @include mixin.phone500px {
+    line-height: 1.2rem;
   }
 }

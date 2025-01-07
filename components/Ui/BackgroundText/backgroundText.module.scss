@@ -1,3 +1,4 @@
+@use '../../../styles/mixin.scss' as mixin;
 @import '../../../styles/fonts.scss';
 .text {
   position: absolute;
@@ -11,19 +12,13 @@
   color: rgba(255, 255, 255, 0.17);
   font-family: 'Poppins-700';
   text-align: end;
-}
-@media only screen and (max-width: 1520px) {
-  .text {
+  @include mixin.pc1520px {
     font-size: 5rem;
   }
-}
-@media only screen and (max-width: 900px) {
-  .text {
+  @include mixin.phone900px {
     font-size: 3rem;
   }
-}
-@media only screen and (max-width: 500px) {
-  .text {
+  @include mixin.phone500px {
     display: none;
   }
 }

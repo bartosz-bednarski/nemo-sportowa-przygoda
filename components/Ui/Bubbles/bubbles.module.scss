@@ -1,3 +1,4 @@
+@use '../../../styles/mixin.scss';
 @keyframes moveTop {
   0% {
     transform: translateY(0%);
@@ -20,6 +21,12 @@
   align-items: center;
 }
 .bubbles svg {
+  @include mixin.phone700px {
+    height: 200px;
+  }
+  @include mixin.phone500px {
+    height: 150px;
+  }
   g {
     display: block;
     animation-name: moveTop;
@@ -83,15 +90,5 @@
     &:nth-of-type(19) {
       animation-delay: 2.9s;
     }
-  }
-}
-@media only screen and (max-width: 700px) {
-  .bubbles svg {
-    height: 200px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .bubbles svg {
-    height: 150px;
   }
 }

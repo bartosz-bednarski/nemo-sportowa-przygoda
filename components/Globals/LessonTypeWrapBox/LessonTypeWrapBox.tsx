@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './lessonTypeWrapBox.module.scss';
-import StickerH4 from '@/components/Ui/StickerH4/StickerH4';
+import StickerH4 from '@/components/Ui/Stickers/StickerH4/StickerH4';
 import {COLORS} from '@/utils/UI/colors';
 import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
@@ -24,8 +24,6 @@ const LessonTypeWrapBox: React.FC<lessonTypeWrapBoxType> = ({
             titleStrip={lessonType.stickerH4.titleStrip}
             stripBgColor={lessonType.stickerH4.stripBgColor}
             stripTextColor={lessonType.stickerH4.stripTextColor}
-            scale={lessonType.stickerH4.scale}
-            paddingBottom={lessonType.stickerH4.paddingBottom}
           />
           <AboutTextPoppins
             title={lessonType.aboutTextPoppins.title}

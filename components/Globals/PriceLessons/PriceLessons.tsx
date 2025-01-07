@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './priceLessons.module.scss';
-import StickerH4 from '@/components/Ui/StickerH4/StickerH4';
+import StickerH4 from '@/components/Ui/Stickers/StickerH4/StickerH4';
 import {priceLessonsType} from '@/types/Globals/globals';
 import SingInButton from '@/components/Ui/Buttons/SignInButton';
 
@@ -18,8 +18,6 @@ const PriceLessons: React.FC<priceLessonsType> = ({
         stripBgColor={stickerH4.stripBgColor}
         title={stickerH4.title}
         titleStrip={stickerH4.titleStrip}
-        scale={stickerH4.scale}
-        paddingBottom={stickerH4.paddingBottom}
       />
       <div className={styles['priceLessons__content-box']}>
         <span className={styles['priceLessons__content-box__orange']}>

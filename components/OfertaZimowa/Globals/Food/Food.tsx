@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './food.module.scss';
-import StripH2 from '@/components/Ui/StripH2/StripH2';
+import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
 import {foodComponentType} from '@/types/SummerWinter/Winter';
 
 const Food: React.FC<{food: foodComponentType}> = ({food}) => {
@@ -13,7 +13,6 @@ const Food: React.FC<{food: foodComponentType}> = ({food}) => {
           title="WYŻYWIENIE"
           stripTextColor="white"
           stripBgColor="darkBlue"
-          scale={1.1}
         />
 
         <span className={styles['food__content__text']}>{food.foodAbout}</span>

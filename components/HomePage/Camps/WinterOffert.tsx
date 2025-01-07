@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './campsSection.module.scss';
 import Image from 'next/image';
-import StripH3 from '@/components/Ui/StripH3/StripH3';
+import StripH3 from '@/components/Ui/Strips/StripH3/StripH3';
 import TitleStripDescriptionStrip from '@/components/Ui/TitleStripDescriptionStrip/TitleStripDescriptionStrip';
 import LinkButton from '@/components/Ui/Buttons/LinkButton';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
@@ -20,7 +20,6 @@ const WinterOffert: React.FC = () => {
         <StripH3
           stripTextColor="mediumBlue"
           stripBgColor="white"
-          scale={1.2}
           title="OFERTA ZIMOWA"
         />
         <div className={styles['camps__offert__content__categories']}>

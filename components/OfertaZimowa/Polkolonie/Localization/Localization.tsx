@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './localization.module.scss';
-import StripH2 from '@/components/Ui/StripH2/StripH2';
+import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
 import {localizationComponentType} from '@/types/SummerWinter/Winter';
 
 const Localization: React.FC<{localization: localizationComponentType}> = ({
@@ -15,7 +15,6 @@ const Localization: React.FC<{localization: localizationComponentType}> = ({
           title="LOKALIZACJA"
           stripTextColor="white"
           stripBgColor="darkBlue"
-          scale={1.1}
         />
         {localization.localizationDescription.map((text, index) => (
           <span className={styles['localization__content__text']} key={index}>

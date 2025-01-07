@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './naukaPlywaniaAbout.module.scss';
-import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
 import Image from 'next/image';
 import {aboutType} from '@/types/NaukaPlywania/naukaPlywania';
@@ -19,10 +19,8 @@ const NaukaPlywaniaAbout: React.FC<aboutType> = ({
         <StickerH2
           title={stickerH2.title}
           titleStrip={stickerH2.titleStrip}
-          scale={stickerH2.scale}
           stripTextColor={stickerH2.stripTextColor}
           stripBgColor={stickerH2.stripBgColor}
-          paddingBottom={stickerH2.paddingBottom}
         />
         <AboutTextPoppins
           titleColor={aboutTextPoppins.titleColor}

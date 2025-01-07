@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './accommodation.module.scss';
 import {accommodationCampComponentType} from '@/types/SummerWinter/Camps';
-import StripH2 from '@/components/Ui/StripH2/StripH2';
+import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -18,7 +18,6 @@ const Accommodation: React.FC<{
             title="ZAKWATEROWANIE"
             stripTextColor="white"
             stripBgColor="darkBlue"
-            scale={1.4}
           />
           <span className={styles['accommodation__row-box__content__text']}>
             {accommodation.about}

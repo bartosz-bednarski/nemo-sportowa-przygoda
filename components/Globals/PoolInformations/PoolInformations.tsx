@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './poolInformations.module.scss';
 import Image from 'next/image';
 import {COLORS} from '@/utils/UI/colors';
-import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import {poolInformationsType} from '@/types/NaukaPlywania/naukaPlywania';
 
 const PoolInformations: React.FC<{poolInformation: poolInformationsType}> = ({
@@ -26,8 +26,6 @@ const PoolInformations: React.FC<{poolInformation: poolInformationsType}> = ({
         titleStrip={poolInformation.stickerH2.titleStrip}
         stripBgColor={poolInformation.stickerH2.stripBgColor}
         stripTextColor={poolInformation.stickerH2.stripTextColor}
-        scale={poolInformation.stickerH2.scale}
-        paddingBottom={poolInformation.stickerH2.paddingBottom}
       />
       <div className={styles['poolInformations__row-box']}>
         <div className={styles['poolInformations__row-box__list']}>
