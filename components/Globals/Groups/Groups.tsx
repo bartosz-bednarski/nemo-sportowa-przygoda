@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './groups.module.scss';
 import {groupsType} from '@/types/NaukaPlywania/naukaPlywania';
 import GroupLvl from '@/components/Globals/GroupLvl/GroupLvl';
-import StripH2 from '@/components/Ui/StripH2/StripH2';
+import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
 
 const Groups: React.FC<groupsType> = ({stripH2, groups}) => {
   return (
@@ -13,7 +13,6 @@ const Groups: React.FC<groupsType> = ({stripH2, groups}) => {
         title={stripH2.title}
         stripBgColor={stripH2.stripBgColor}
         stripTextColor={stripH2.stripTextColor}
-        scale={stripH2.scale}
       />
       <div className={styles['groups__row-box']}>
         {groups.length > 0 &&

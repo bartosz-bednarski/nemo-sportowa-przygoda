@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './lessonType.module.scss';
 import Image from 'next/image';
-import StickerH4 from '@/components/Ui/StickerH4/StickerH4';
+import StickerH4 from '@/components/Ui/Stickers/StickerH4/StickerH4';
 import {COLORS} from '@/utils/UI/colors';
 import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
 // import Scrap2 from "@/components/Ui/Scrap/Scrap2";
@@ -29,8 +29,6 @@ const LessonType: React.FC<lessonTypeComponent> = ({bgColor, lessonType}) => {
           titleStrip={lessonType.stickerH4.titleStrip}
           stripBgColor={lessonType.stickerH4.stripBgColor}
           stripTextColor={lessonType.stickerH4.stripTextColor}
-          scale={lessonType.stickerH4.scale}
-          paddingBottom={lessonType.stickerH4.paddingBottom}
         />
         <AboutTextPoppins
           title={lessonType.aboutTextPoppins.title}

@@ -1,0 +1,81 @@
+@use '../../../styles/mixin.scss' as mixin;
+.box {
+  gap: 0.5rem;
+  box-sizing: border-box;
+  padding-left: 20px;
+  width: fit-content;
+  height: fit-content;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  @include mixin.phone800px {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.h1Title,
+.h1Title2 {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 5rem;
+  font-weight: 800;
+  text-align: left;
+  @include mixin.pc1250px {
+    font-size: 4rem;
+  }
+  @include mixin.phone800px {
+    font-size: 2.5rem;
+  }
+  @include mixin.phone500px {
+    font-size: 2rem;
+  }
+  @include mixin.phone350px {
+    font-size: 1.5rem;
+  }
+}
+.h1Title2 {
+  margin-left: 7rem;
+  padding-bottom: 2rem;
+  @include mixin.pc1250px {
+    padding-bottom: 0;
+    margin-left: 3rem;
+  }
+}
+.h2Title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: left;
+  @include mixin.pc1600px {
+    font-size: 2.8rem;
+  }
+  @include mixin.pc1250px {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  @include mixin.pc1000px {
+    font-size: 1.7rem;
+  }
+  @include mixin.phone500px {
+    font-size: 1rem;
+  }
+}
+.h4Title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: left;
+  @include mixin.pc1600px {
+    font-size: 1.3rem;
+  }
+  @include mixin.pc1250px {
+    font-size: 1rem;
+    text-align: center;
+  }
+}

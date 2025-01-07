@@ -4,7 +4,7 @@ import styles from './poolNecessaryItems.module.scss';
 import BackgroundText from '@/components/Ui/BackgroundText/BackgroundText';
 import {customColors} from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
-import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 
 const PoolNecessaryItems: React.FC<{color: customColors}> = ({color}) => {
   return (
@@ -18,8 +18,6 @@ const PoolNecessaryItems: React.FC<{color: customColors}> = ({color}) => {
         titleStrip="BASENOWY"
         stripBgColor="basicOrange"
         stripTextColor={color}
-        scale={1.2}
-        paddingBottom={0}
       />
       <div className={styles['poolNecessaryItems__row-box']}>
         <div className={styles['poolNecessaryItems__row-box__item']}>

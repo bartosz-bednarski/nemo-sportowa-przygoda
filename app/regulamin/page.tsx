@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../page.module.scss';
-import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import Link from 'next/link';
 import {Metadata} from 'next';
 
@@ -27,8 +27,6 @@ const RegulaminPage = () => {
             titleStrip="BASENY"
             stripBgColor="darkBlue"
             stripTextColor="white"
-            scale={1.5}
-            paddingBottom={0}
           />
         </span>
       </Link>
@@ -45,8 +43,6 @@ const RegulaminPage = () => {
             titleStrip="OBOZY"
             stripBgColor="basicGreen"
             stripTextColor="white"
-            scale={1.4}
-            paddingBottom={0}
           />
         </span>
       </Link>
@@ -63,8 +59,6 @@ const RegulaminPage = () => {
             titleStrip="PÓŁKOLONIE"
             stripBgColor="basicOrange"
             stripTextColor="white"
-            scale={1.2}
-            paddingBottom={0}
           />
         </span>
       </Link>

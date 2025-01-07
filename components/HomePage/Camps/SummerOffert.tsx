@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './campsSection.module.scss';
 import Image from 'next/image';
-import StripH3 from '@/components/Ui/StripH3/StripH3';
+import StripH3 from '@/components/Ui/Strips/StripH3/StripH3';
 import TitleStripDescriptionStrip from '@/components/Ui/TitleStripDescriptionStrip/TitleStripDescriptionStrip';
 import LinkButton from '@/components/Ui/Buttons/LinkButton';
 
@@ -19,7 +19,6 @@ const SummerOffert: React.FC = () => {
         <StripH3
           stripTextColor="white"
           stripBgColor="basicGreen"
-          scale={1.2}
           title="OFERTA LETNIA"
         />
         <div className={styles['camps__offert__content__categories']}>

@@ -6,7 +6,7 @@ import {naukaPlywaniaType} from '@/types/NaukaPlywania/naukaPlywania';
 import {COLORS} from '@/utils/UI/colors';
 import NaukaPlywaniaAbout from '../Globals/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import Groups from '../Globals/Groups/Groups';
-import StickerH4 from '../Ui/StickerH4/StickerH4';
+import StickerH4 from '../Ui/Stickers/StickerH4/StickerH4';
 
 const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
   about,
@@ -32,8 +32,6 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               titleStrip="W WODZIE"
               stripBgColor="basicOrange"
               stripTextColor="darkBlue"
-              scale={1.3}
-              paddingBottom={5}
             />
             <ul>
               <li>
@@ -65,8 +63,6 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               titleStrip="DO ZAJĘĆ"
               stripBgColor="basicOrange"
               stripTextColor="darkBlue"
-              scale={1.3}
-              paddingBottom={5}
             />
             <ul>
               <li>
@@ -99,8 +95,6 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               titleStrip="DZIECKA"
               stripBgColor="basicOrange"
               stripTextColor="darkBlue"
-              scale={1.4}
-              paddingBottom={5}
             />
             <ul>
               <li>Ręcznik z kapturkiem i zapasowy ręcznik.</li>
@@ -118,8 +112,6 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               titleStrip="RODZICA"
               stripBgColor="basicOrange"
               stripTextColor="darkBlue"
-              scale={1.4}
-              paddingBottom={5}
             />
             <ul>
               <li>Ręcznik dla siebie.</li>
@@ -136,8 +128,6 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               titleStrip="INFORMACJE"
               stripBgColor="basicOrange"
               stripTextColor="darkBlue"
-              scale={1.4}
-              paddingBottom={5}
             />
             <ul>
               <li>
@@ -166,8 +156,6 @@ const NaukaPlywania: React.FC<naukaPlywaniaType> = ({
               titleStrip="I KOMFORT"
               stripBgColor="basicOrange"
               stripTextColor="darkBlue"
-              scale={1.3}
-              paddingBottom={5}
             />
             <ul>
               <li>

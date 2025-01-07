@@ -5,27 +5,30 @@ import Image from 'next/image';
 import LinkButton from '../Buttons/LinkButton';
 import {hasCookie, setCookie} from 'cookies-next';
 import XBtn from '../Buttons/XBtn/XBtn';
-const SignInPopupSwimming: React.FC = () => {
+const SignInPopupSwimming = () => {
   const [showPopup, setShowPopup] = useState(false);
+
   useEffect(() => {
     if (hasCookie('popup') === false) {
       setCookie('popup', 0);
       setShowPopup(true);
     }
   }, [showPopup]);
+
   const closePopupHandler = () => {
     setShowPopup(false);
   };
+
   return (
     <div
       className={styles.popup}
       style={{display: showPopup ? 'flex' : 'none'}}
     >
-      <div className={styles['popup__content-box']}>
-        <span className={styles['popup__content-box__x-btn-box']}>
+      <div className={styles.contentBox}>
+        <span className={styles.xBtnBox}>
           <XBtn onClick={closePopupHandler} />
         </span>
-        <div className={styles['popup__content-box__column']}>
+        <div className={styles.columnFlex}>
           <h3>
             <b>NAUKA PŁYWANIA</b>
             <br /> KRAKÓW | KORZENNA | GORLICE
@@ -54,7 +57,7 @@ const SignInPopupSwimming: React.FC = () => {
           title="nauka plywania NEMO"
           objectFit="cover"
           objectPosition="left"
-          className={styles['popup__content-box__image']}
+          className={styles.image}
         />
       </div>
     </div>

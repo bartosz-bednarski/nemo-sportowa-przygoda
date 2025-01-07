@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './about.module.scss';
-import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
 import Image from 'next/image';
 import {aboutCampsComponentType} from '@/types/Globals/globals';
@@ -31,8 +31,6 @@ const AboutCamps: React.FC<aboutCampsComponentType> = ({
             titleStrip={stickerH2.titleStrip}
             stripBgColor={stickerH2.stripBgColor}
             stripTextColor={stickerH2.stripTextColor}
-            scale={stickerH2.scale}
-            paddingBottom={stickerH2.paddingBottom}
             titleColor={stickerH2.titleColor}
           />
           <AboutTextPoppins

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './signInCamps.module.scss';
-import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import {COLORS} from '@/utils/UI/colors';
 import {signInCampsComponentType} from '@/types/Globals/globals';
 import ColonyLink from '@/components/OfertaZimowa/Globals/ColonyLink/ColonyLink';
@@ -26,8 +26,6 @@ const SignInCamps: React.FC<signInCampsComponentType> = ({
           stripBgColor={theme === 'summer' ? 'white' : 'darkBlue'}
           stripTextColor={theme === 'summer' ? 'basicGreen' : 'white'}
           titleColor={theme === 'summer' ? 'white' : 'darkBlue'}
-          scale={1.6}
-          paddingBottom={0}
         />
         {theme === 'summer' ? (
           <svg

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './priceDetails.module.scss';
-import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import {priceDetailsComponentType} from '@/types/SummerWinter/Winter';
 
 const PriceDetails: React.FC<{priceDetails: priceDetailsComponentType}> = ({
@@ -16,8 +16,6 @@ const PriceDetails: React.FC<{priceDetails: priceDetailsComponentType}> = ({
           titleColor="darkBlue"
           stripBgColor="darkBlue"
           stripTextColor="white"
-          scale={1.4}
-          paddingBottom={0}
         />
         <div className={styles['priceDetails__content-box__list-box']}>
           {priceDetails.priceDetailsList.map((listItem, index) => (

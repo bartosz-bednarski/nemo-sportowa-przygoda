@@ -1,7 +1,7 @@
 'use client';
 import 'react';
 import styles from './swimmingSection.module.scss';
-import StickerH2 from '../../Ui/StickerH2/StickerH2';
+import StickerH2 from '../../Ui/Stickers/StickerH2/StickerH2';
 import AboutTextPoppins from '../../Ui/AboutTextPoppins/AboutTextPoppins';
 import BackgroundText from '../../Ui/BackgroundText/BackgroundText';
 import SwimmingOffert from './SwimmingOffert';
@@ -15,8 +15,6 @@ const SwimmingSection: React.FC = () => {
           titleStrip="PŁYWANIA"
           stripBgColor="white"
           stripTextColor="mediumBlue"
-          scale={1.2}
-          paddingBottom={0}
         />
         <AboutTextPoppins
           title="Zacznij swoją przygodę z pływaniem!"

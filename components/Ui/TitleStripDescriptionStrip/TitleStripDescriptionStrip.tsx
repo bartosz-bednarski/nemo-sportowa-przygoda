@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './titleStripDescriptionStrip.module.scss';
-import StripH3 from '../StripH3/StripH3';
+import StripH3 from '../Strips/StripH3/StripH3';
 import {customColors} from '@/types/UI/colors';
 import StripParagraph from '../StripParagraph/StripParagraph';
 
@@ -9,7 +9,6 @@ const TitleStripDescriptionStrip: React.FC<{
   title: string;
   titleStripTextColor: customColors;
   titleStripBgColor: customColors;
-  titleScale: number;
   description: string;
   descriptionStripTextColor: customColors;
   descriptionStripBgColor: customColors;
@@ -18,7 +17,6 @@ const TitleStripDescriptionStrip: React.FC<{
   title,
   titleStripTextColor,
   titleStripBgColor,
-  titleScale,
   description,
   descriptionStripTextColor,
   descriptionStripBgColor,
@@ -30,7 +28,6 @@ const TitleStripDescriptionStrip: React.FC<{
         title={title}
         stripTextColor={titleStripTextColor}
         stripBgColor={titleStripBgColor}
-        scale={titleScale}
       />
       <StripParagraph
         title={description}

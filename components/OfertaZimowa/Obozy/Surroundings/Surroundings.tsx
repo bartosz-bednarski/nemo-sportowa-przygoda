@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './surroundings.module.scss';
 import {surroundingsCampComponentType} from '@/types/SummerWinter/Camps';
-import StripH2 from '@/components/Ui/StripH2/StripH2';
+import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
 
 const Surroundings: React.FC<{
   surroundings: surroundingsCampComponentType;
@@ -15,8 +15,6 @@ const Surroundings: React.FC<{
           title="OKOLICA"
           stripBgColor="darkBlue"
           stripTextColor="white"
-          scale={1.7}
-          paddingBottom={0}
         />
         <span className={styles['surroundings__content__text']}>
           {surroundings.about}

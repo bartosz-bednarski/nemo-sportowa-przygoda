@@ -5,7 +5,7 @@ import BackgroundText from '@/components/Ui/BackgroundText/BackgroundText';
 // import { customColors } from "@/types/UI/colors";
 import {COLORS} from '@/utils/UI/colors';
 import {poolTutorialType} from '@/types/Globals/globals';
-import StripH4 from '@/components/Ui/StripH4/StripH4';
+import StripH4 from '@/components/Ui/Strips/StripH4/StripH4';
 
 const PoolTutorial: React.FC<{poolTutorial: poolTutorialType}> = ({
   poolTutorial,
@@ -21,8 +21,6 @@ const PoolTutorial: React.FC<{poolTutorial: poolTutorialType}> = ({
           title={poolTutorial.stripH4.title}
           stripBgColor={poolTutorial.stripH4.stripBgColor}
           stripTextColor={poolTutorial.stripH4.stripTextColor}
-          scale={poolTutorial.stripH4.scale}
-          marginBottom={poolTutorial.stripH4.marginBottom}
         />
       )}
 

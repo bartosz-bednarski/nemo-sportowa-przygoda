@@ -1,7 +1,7 @@
 'use client';
 import React, {useState} from 'react';
 import styles from './groupLvl.module.scss';
-import StickerH4 from '@/components/Ui/StickerH4/StickerH4';
+import StickerH4 from '@/components/Ui/Stickers/StickerH4/StickerH4';
 import {groupLvlType} from '@/types/Globals/globals';
 import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
 
@@ -18,8 +18,6 @@ const GroupLvl: React.FC<groupLvlType> = ({
         title={stickerH4.title}
         stripTextColor={stickerH4.stripTextColor}
         stripBgColor={stickerH4.stripBgColor}
-        scale={stickerH4.scale}
-        paddingBottom={stickerH4.paddingBottom}
       />
       <AboutTextPoppins
         title={aboutTextPoppins.title}

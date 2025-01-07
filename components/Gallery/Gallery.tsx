@@ -9,9 +9,9 @@ const Gallery = () => {
   return (
     <div className={styles.gallery}>
       <GalleryHero />
-      <div className={styles['gallery__row-box']}>
+      <div className={styles.rowBox}>
         {GALLERY_MAIN.map((item) => (
-          <GalleryLinkPhoto item={item} key={item.title}/>
+          <GalleryLinkPhoto item={item} key={item.title} />
         ))}
       </div>
     </div>

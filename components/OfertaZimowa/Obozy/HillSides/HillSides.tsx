@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './hillSides.module.scss';
 import {hillSidesCampComponentType} from '@/types/SummerWinter/Camps';
-import StickerH2 from '@/components/Ui/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import Image from 'next/image';
 
 const HillSides: React.FC<{hillSides: hillSidesCampComponentType}> = ({
@@ -17,8 +17,6 @@ const HillSides: React.FC<{hillSides: hillSidesCampComponentType}> = ({
           titleColor="darkBlue"
           stripBgColor="darkBlue"
           stripTextColor="white"
-          scale={1.5}
-          paddingBottom={0}
         />
       </span>
       <div className={styles['hillSides__list']}>
