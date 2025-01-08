@@ -38,7 +38,11 @@ export interface StripH3PropsType {
 }
 
 const StripH3 = ({stripBgColor, stripTextColor, title}: StripH3PropsType) => {
-  const [scrap, setScrap] = useState<null | {main:typeof BasicBrownStripImg,left:typeof BasicBrownScrapLeftImg,right:typeof BasicBrownScrapRightImg}>(null);
+  const [scrap, setScrap] = useState<null | {
+    main: typeof BasicBrownStripImg;
+    left: typeof BasicBrownScrapLeftImg;
+    right: typeof BasicBrownScrapRightImg;
+  }>(null);
 
   useEffect(() => {
     switch (stripBgColor) {

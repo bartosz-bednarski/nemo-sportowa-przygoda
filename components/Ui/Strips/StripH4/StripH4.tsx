@@ -44,7 +44,11 @@ const StripH4 = ({
   title,
   type,
 }: StripH4PropsType) => {
-  const [scrap, setScrap] = useState<null | {main:typeof BasicBrownStripImg,left:typeof BasicBrownScrapLeftImg,right:typeof BasicBrownScrapRightImg}>(null);
+  const [scrap, setScrap] = useState<null | {
+    main: typeof BasicBrownStripImg;
+    left: typeof BasicBrownScrapLeftImg;
+    right: typeof BasicBrownScrapRightImg;
+  }>(null);
 
   useEffect(() => {
     switch (stripBgColor) {

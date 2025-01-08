@@ -9,6 +9,8 @@ export interface AboutTextPoppinsPropsType {
   title: string;
   description: string;
   descriptionColor?: customColors;
+  alignItems: 'flex-start' | 'flex-end' | 'center';
+  textAlign: 'left' | 'right' | 'center';
 }
 
 const AboutTextPoppins = ({
@@ -16,15 +18,18 @@ const AboutTextPoppins = ({
   title,
   description,
   descriptionColor,
+  alignItems,
+  textAlign,
 }: AboutTextPoppinsPropsType) => {
   return (
-    <div className={styles.box}>
+    <div className={styles.box} style={{alignItems: alignItems}}>
       <span className={styles.title} style={{color: COLORS[titleColor]}}>
         {title}
       </span>
       <p
         className={styles.paragraph}
         style={{
+          textAlign: textAlign,
           color:
             COLORS[descriptionColor !== undefined ? descriptionColor : 'white'],
         }}

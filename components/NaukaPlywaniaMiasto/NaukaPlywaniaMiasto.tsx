@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './naukaPlywaniaMiasto.module.scss';
 import {COLORS} from '@/utils/UI/colors';
-import SwimmingPoolCover from '../Ui/SwimmingPoolCover/SwimmingPoolCover';
+import SwimmingPoolCover from '../Ui/SwimmingPoolCover/LinkSwimmingPoolCover';
 
 const NaukaPlywaniaMiasto: React.FC = () => {
   return (

@@ -10,9 +10,6 @@
   @include mixin.phone800px {
     text-align: center;
   }
-  @include mixin.phone500px {
-    text-align: justify;
-  }
 }
 .title {
   font-family: 'Poppins-700';
