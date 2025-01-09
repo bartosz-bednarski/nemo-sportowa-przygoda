@@ -1,4 +1,4 @@
-import {groupLvlType} from '@/types/Globals/globals';
+import {GroupLvlPropsType} from '@/components/NaukaPlywania/Ui/GroupLvl/GroupLvl';
 
 export const GRUPY_POZIOM_ZAAWANSOWANIA = {
   rybkiDzieci: {
@@ -160,19 +160,19 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI = {
   },
 };
 type grupyPoziomZaawansowaniaForComponentsType = {
-  rybkiDzieci: groupLvlType;
-  poczatkujacaDzieci: groupLvlType;
-  kontynuacjaDzieci: groupLvlType;
-  srednioZaawansowana: groupLvlType;
-  zaawansowana: groupLvlType;
-  poczatkujacaDorosli: groupLvlType;
-  kontynuacjaDorosli: groupLvlType;
-  trzyMiesiace: groupLvlType;
-  siedemMiesiecy: groupLvlType;
-  dwanascieMiesiecy: groupLvlType;
-  dwaLata: groupLvlType;
-  czteryLata: groupLvlType;
-  czteryLataBez: groupLvlType;
+  rybkiDzieci: GroupLvlPropsType;
+  poczatkujacaDzieci: GroupLvlPropsType;
+  kontynuacjaDzieci: GroupLvlPropsType;
+  srednioZaawansowana: GroupLvlPropsType;
+  zaawansowana: GroupLvlPropsType;
+  poczatkujacaDorosli: GroupLvlPropsType;
+  kontynuacjaDorosli: GroupLvlPropsType;
+  trzyMiesiace: GroupLvlPropsType;
+  siedemMiesiecy: GroupLvlPropsType;
+  dwanascieMiesiecy: GroupLvlPropsType;
+  dwaLata: GroupLvlPropsType;
+  czteryLata: GroupLvlPropsType;
+  czteryLataBez: GroupLvlPropsType;
 };
 export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowaniaForComponentsType =
   {
@@ -189,6 +189,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         title: GRUPY_POZIOM_ZAAWANSOWANIA.rybkiDzieci.age,
         description: GRUPY_POZIOM_ZAAWANSOWANIA.rybkiDzieci.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA.rybkiDzieci.skills,
     },
@@ -205,6 +207,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         title: GRUPY_POZIOM_ZAAWANSOWANIA.poczatkujacaDzieci.age,
         description: GRUPY_POZIOM_ZAAWANSOWANIA.poczatkujacaDzieci.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA.poczatkujacaDzieci.skills,
     },
@@ -221,6 +225,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         title: GRUPY_POZIOM_ZAAWANSOWANIA.kontynuacjaDzieci.age,
         description: GRUPY_POZIOM_ZAAWANSOWANIA.kontynuacjaDzieci.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA.kontynuacjaDzieci.skills,
     },
@@ -237,6 +243,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         title: GRUPY_POZIOM_ZAAWANSOWANIA.srednioZaawansowana.age,
         description: GRUPY_POZIOM_ZAAWANSOWANIA.srednioZaawansowana.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA.srednioZaawansowana.skills,
     },
@@ -253,6 +261,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         title: GRUPY_POZIOM_ZAAWANSOWANIA.zaawansowana.age,
         description: GRUPY_POZIOM_ZAAWANSOWANIA.zaawansowana.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA.zaawansowana.skills,
     },
@@ -269,6 +279,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         title: GRUPY_POZIOM_ZAAWANSOWANIA.poczatkujacaDorosli.age,
         description: GRUPY_POZIOM_ZAAWANSOWANIA.poczatkujacaDorosli.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA.poczatkujacaDorosli.skills,
     },
@@ -285,6 +297,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         title: GRUPY_POZIOM_ZAAWANSOWANIA.kontynuacjaDorosli.age,
         description: GRUPY_POZIOM_ZAAWANSOWANIA.kontynuacjaDorosli.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA.kontynuacjaDorosli.skills,
     },
@@ -302,6 +316,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         description:
           GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.trzyMiesiace.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.trzyMiesiace.skills,
     },
@@ -319,6 +335,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         description:
           GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.siedemMiesiecy.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.siedemMiesiecy.skills,
     },
@@ -336,6 +354,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         description:
           GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.dwanascieMiesiecy.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.dwanascieMiesiecy.skills,
     },
@@ -352,6 +372,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         title: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.dwaLata.age,
         description: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.dwaLata.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.dwaLata.skills,
     },
@@ -369,6 +391,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         description:
           GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.czteryLata.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.czteryLata.skills,
     },
@@ -386,6 +410,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
         description:
           GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.czteryLataBez.description,
         titleColor: 'darkBlue',
+        textAlign: 'left',
+        alignItems: 'flex-start',
       },
       skills: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.czteryLataBez.skills,
     },

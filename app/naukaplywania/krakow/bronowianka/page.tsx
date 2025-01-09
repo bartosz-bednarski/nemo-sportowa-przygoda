@@ -1,21 +1,21 @@
 import styles from '../../../page.module.scss';
 import VideosSection from '@/components/Globals/VideosSection';
-import NaukaPlywaniaBasen from '@/components/NaukaPlywaniaBasen/NaukaPlywaniaBasen';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
-import LessonType from '@/components/Globals/LessonType/LessonType';
 import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
-import PoolNecessaryItems from '@/components/Globals/PoolNecessaryItems/PoolNecessaryItems';
-import PoolTutorial from '@/components/Globals/PoolTutorial/PoolTutorial';
-import PoolInformations from '@/components/Globals/PoolInformations/PoolInformations';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {
   BASEN_BRONOWIANKA_INFORMATIONS,
   BASEN_BRONOWIANKA_TUTORIAL,
   NAUKA_PLYWANIA_BRONOWIANKA,
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaBronowianka';
-import GalleryLink from '@/components/Globals/GalleryLink/GalleryLink';
 import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';
+import NaukaPlywaniaBasen from '@/components/NaukaPlywania/NaukaPlywaniaBasen/NaukaPlywaniaBasen';
+import PoolNecessaryItems from '@/components/NaukaPlywania/Ui/PoolNecessaryItems/PoolNecessaryItems';
+import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
+import PoolInformations from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
+import LessonType from '@/components/NaukaPlywania/Ui/LessonType/LessonType';
+import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania Kraków BRONOWIANKA',

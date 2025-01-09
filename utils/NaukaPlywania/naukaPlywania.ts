@@ -1,33 +1,30 @@
-import {
-  aboutType,
-  groupsType,
-  instructorsType,
-  poolsType,
-} from '@/types/NaukaPlywania/naukaPlywania';
+import {instructorsType, poolsType} from '@/types/NaukaPlywania/naukaPlywania';
 import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
+import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
+import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 
 type naukaPlywania = {
   zRodzicami: {
     backgroundColor: customColors;
-    about: aboutType;
+    about: NaukaPływaniaAboutPropsType;
     instructors: instructorsType;
     pools: poolsType;
-    groups: groupsType;
+    groups: GroupsPropsType;
   };
   dzieciMlodziez: {
     backgroundColor: customColors;
-    about: aboutType;
+    about: NaukaPływaniaAboutPropsType;
     instructors: instructorsType;
     pools: poolsType;
-    groups: groupsType;
+    groups: GroupsPropsType;
   };
   dorosli: {
     backgroundColor: customColors;
-    about: aboutType;
+    about: NaukaPływaniaAboutPropsType;
     instructors: instructorsType;
     pools: poolsType;
-    groups: groupsType;
+    groups: GroupsPropsType;
   };
 };
 export const NAUKA_PLYWANIA: naukaPlywania = {
@@ -37,16 +34,16 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       stickerH2: {
         title: 'NAUKA PŁYWANIA',
         titleStrip: 'Z RODZICAMI',
-        scale: 1.25,
         stripTextColor: 'lightBlue',
         stripBgColor: 'white',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         titleColor: 'lightBlue',
         title: 'Zajęcia od 3 miesiąca życia razem z rodzicem. BABY SWIM',
         description:
           'Nasze zajęcia są przeznaczone dla dzieci od 3. miesiąca życia, które uczestniczą w nich razem z rodzicem. To doskonała okazja, aby wspólnie odkrywać radość z zabawy w wodzie, wspierać rozwój malucha oraz wzmacniać więzi emocjonalne. Zajęcia pomagają oswoić dzieci z wodą w przyjaznej atmosferze, poprzez naukę przez zabawę, co wpływa pozytywnie zarówno na rozwój fizyczny, jak i psychiczny najmłodszych. U nas rodzice nie muszą umieć pływać – cała kadra instruktorska pomoże Wam bezpiecznie przejść przez każde ćwiczenie.',
+        alignItems: 'flex-start',
+        textAlign: 'left',
       },
       image: {
         src: 'lessonsTypes/zRodzicami.webp',
@@ -142,16 +139,16 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       stickerH2: {
         title: 'NAUKA PŁYWANIA',
         titleStrip: 'DZIECI I MŁODZIEŻ',
-        scale: 1.8,
         stripTextColor: 'mediumBlue',
         stripBgColor: 'white',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         titleColor: 'mediumBlue',
         title: 'Dzieci  od  3  lat  i  młodzież do 18 lat',
         description:
           'Dzieci uczą się podstaw pływania w formie zabawy. Poprawiają technikę i koordynację, zdobywając kolejne umiejętności, w kraulu oraz grzbiecie. Młodzież uczy się pływać czterema stylami (styl dowolny, grzbietowy, klasyczny, motylkowy) oraz technik nawrotów. Zajęcia pomagają doskonalić technikę, poprawiać wytrzymałość i przygotowują do ewentualnych startów w zawodach pływackich.',
+        alignItems: 'flex-start',
+        textAlign: 'left',
       },
       image: {
         src: 'lessonsTypes/dzieciMlodziez2.webp',
@@ -240,16 +237,16 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       stickerH2: {
         title: 'NAUKA PŁYWANIA',
         titleStrip: 'DOROŚLI',
-        scale: 1.1,
         stripTextColor: 'darkBlue',
         stripBgColor: 'white',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         titleColor: 'darkBlue',
         title: 'DOROŚLI',
         description:
           'Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.',
+        alignItems: 'flex-start',
+        textAlign: 'left',
       },
       image: {
         src: 'lessonsTypes/dorosli.webp',

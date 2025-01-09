@@ -4,12 +4,12 @@ import AboutCamps from '@/components/Globals/AboutCamps/AboutCamps';
 import ScrapWinter from '@/components/Ui/Scrap/ScrapWinter';
 import SignInCamps from '@/components/Globals/SignInCamps/SignInCamps';
 import CollabWinter from '@/components/Winter/CollabWinter';
-import GalleryLink from '@/components/Globals/GalleryLink/GalleryLink';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {Metadata} from 'next';
 import {POLKOLONIE_LISTA_2025} from '@/utils/Winter/Polkolonie';
 import {OBOZY_LISTA_2025} from '@/utils/Winter/Obozy';
 import {WEEKEND_NA_STOKU_LISTA_2025} from '@/utils/Winter/WeekendoweNarty';
+import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 
 export const metadata: Metadata = {
   title: 'Oferta ZIMOWA',

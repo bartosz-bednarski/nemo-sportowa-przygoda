@@ -1,0 +1,22 @@
+@use '../../../../styles/mixin.scss' as mixin;
+.pools {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 2rem 4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  @include mixin.phone700px {
+    padding: 2rem;
+  }
+}
+.rowBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

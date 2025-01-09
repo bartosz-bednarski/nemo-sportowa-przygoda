@@ -1,66 +1,28 @@
-import {
-  instructorsRowBoxType,
-  poolTutorialType,
-  priceListType,
-} from '@/types/Globals/globals';
-import {
-  aboutType,
-  groupsType,
-  poolInformationsType,
-} from '@/types/NaukaPlywania/naukaPlywania';
+import {instructorsRowBoxType, poolTutorialType} from '@/types/Globals/globals';
+import {poolInformationsType} from '@/types/NaukaPlywania/naukaPlywania';
 import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
+import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
+import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
+import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 
 type naukaPlywaniaBasen = {
-  // zRodzicami: {
-  //   backgroundColor: customColors;
-  //   about: aboutType;
-  //   instructors: instructorsRowBoxType;
-  //   groups: groupsType;
-  //   priceList: priceListType;
-  // };
   dzieciMlodziez: {
     backgroundColor: customColors;
-    about: aboutType;
+    about: NaukaPływaniaAboutPropsType;
     instructors: instructorsRowBoxType;
-    groups: groupsType;
-    priceList: priceListType;
+    groups: GroupsPropsType;
+    priceList: PriceListPropsType;
   };
   dorosli: {
     backgroundColor: customColors;
-    about: aboutType;
+    about: NaukaPływaniaAboutPropsType;
     instructors: instructorsRowBoxType;
-    groups: groupsType;
-    priceList: priceListType;
+    groups: GroupsPropsType;
+    priceList: PriceListPropsType;
   };
 };
-// const CENNIK_Z_RODZICAMI_PLYWACZEK: priceListType = [
-//   {
-//     stickerH4: {
-//       title: "LEKCJE",
-//       titleStrip: "GRUPOWE",
-//       scale: 1.6,
-//       stripTextColor: "basicOrange",
-//       stripBgColor: "white",
-//       paddingBottom: 0,
-//     },
-//     oneLesson: {
-//       price: "70 zł",
-//       time: 30,
-//     },
-//     tenLessons: {
-//       price: "700 zł",
-//       time: "10 x 30",
-//     },
-//     button: {
-//       title: "Zapisz się na zajęcia",
-//       textColor: "lightBlue",
-//       bgColor: "white",
-//       href: "https://zapisy.activenow.pl/szkola-plywania-nemo1/",
-//     },
-//   },
-// ];
-const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: priceListType = [
+const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
   {
     stickerH4: {
       title: 'LEKCJE',
@@ -134,7 +96,7 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: priceListType = [
     },
   },
 ];
-const CENNIK_DOROSLI_PLYWACZEK: priceListType = [
+const CENNIK_DOROSLI_PLYWACZEK: PriceListPropsType = [
   {
     stickerH4: {
       title: 'LEKCJE',
@@ -215,16 +177,16 @@ export const NAUKA_PLYWANIA_PLYWACZEK: naukaPlywaniaBasen = {
       stickerH2: {
         title: 'NAUKA PŁYWANIA',
         titleStrip: 'DZIECI I MŁODZIEŻ',
-        scale: 1.4,
         stripTextColor: 'lightBlue',
         stripBgColor: 'white',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         titleColor: 'lightBlue',
         title: 'Dzieci od 3 lat i młodzież do 18 lat',
         description:
           'Dzieci uczą się podstaw pływania w formie zabawy. Poprawiają technikę i koordynację, zdobywając kolejne umiejętności, w kraulu oraz grzbiecie. Młodzież uczy się pływać czterema stylami (styl dowolny, grzbietowy, klasyczny, motylkowy) oraz technik nawrotów. Zajęcia pomagają doskonalić technikę, poprawiać wytrzymałość i przygotowują do ewentualnych startów w zawodach pływackich.',
+        alignItems: 'flex-start',
+        textAlign: 'left',
       },
       image: {
         src: 'lessonsTypes/dzieciMlodziez2.webp',
@@ -281,16 +243,16 @@ export const NAUKA_PLYWANIA_PLYWACZEK: naukaPlywaniaBasen = {
       stickerH2: {
         title: 'NAUKA PŁYWANIA',
         titleStrip: 'DOROŚLI',
-        scale: 1.2,
         stripTextColor: 'mediumBlue',
         stripBgColor: 'white',
-        paddingBottom: 5,
       },
       aboutTextPoppins: {
         titleColor: 'mediumBlue',
         title: 'Dorośli',
         description:
           'Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.',
+        alignItems: 'flex-start',
+        textAlign: 'left',
       },
       image: {
         src: 'lessonsTypes/dorosli.webp',

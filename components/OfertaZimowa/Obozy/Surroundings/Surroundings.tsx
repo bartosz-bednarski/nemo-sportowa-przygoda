@@ -1,30 +1,33 @@
 'use client';
 import React from 'react';
 import styles from './surroundings.module.scss';
-import {surroundingsCampComponentType} from '@/types/SummerWinter/Camps';
 import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
 
+export interface SurroundingsPropsType {
+  about: string;
+  about2?: string;
+  list?: {
+    title: string;
+    list: string[];
+  };
+}
+
 const Surroundings: React.FC<{
-  surroundings: surroundingsCampComponentType;
+  surroundings: SurroundingsPropsType;
 }> = ({surroundings}) => {
   return (
-    <div className={styles['surroundings']}>
-      <div className={styles['surroundings__content']}>
+    <div className={styles.surroundings}>
+      <div className={styles.content}>
         <StripH2
           type="h2"
           title="OKOLICA"
           stripBgColor="darkBlue"
           stripTextColor="white"
         />
-        <span className={styles['surroundings__content__text']}>
-          {surroundings.about}
-        </span>
+        <span className={styles.text}>{surroundings.about}</span>
         {surroundings.list !== undefined && (
-          <ul className={styles['surroundings__content__list']}>
-            <span
-              className={styles['surroundings__content__text']}
-              style={{margin: 0}}
-            >
+          <ul className={styles.list}>
+            <span className={styles.text} style={{margin: 0}}>
               {surroundings.list.title}
             </span>
             {surroundings.list?.list.map((item, index) => (
@@ -34,13 +37,11 @@ const Surroundings: React.FC<{
         )}
 
         {surroundings.about2 !== undefined && (
-          <span className={styles['surroundings__content__text']}>
-            {surroundings.about2}
-          </span>
+          <span className={styles.text}>{surroundings.about2}</span>
         )}
       </div>
       <svg
-        className={styles['surroundings__svg-image']}
+        className={styles.image}
         xmlns="http://www.w3.org/2000/svg"
         width="917"
         height="407"
@@ -921,4 +922,5 @@ const Surroundings: React.FC<{
     </div>
   );
 };
+
 export default Surroundings;

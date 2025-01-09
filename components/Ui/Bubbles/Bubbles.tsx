@@ -4,10 +4,12 @@ import styles from './bubbles.module.scss';
 import {customColors} from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
 
-const Bubbles: React.FC<{
+export interface BubblesPropsType {
   colorTop: customColors;
   colorBottom: customColors;
-}> = ({colorTop, colorBottom}) => {
+}
+
+const Bubbles = ({colorTop, colorBottom}: BubblesPropsType) => {
   return (
     <div
       className={styles.bubbles}

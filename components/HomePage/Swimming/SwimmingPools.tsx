@@ -2,8 +2,8 @@
 import React from 'react';
 import styles from './swimmingSection.module.scss';
 import Image from 'next/image';
-import LinkSwimmingPoolCover from '@/components/Ui/SwimmingPoolCover/LinkSwimmingPoolCover';
 import LinkButton from '@/components/Ui/Buttons/LinkButton';
+import LinkSwimmingPoolCover from '@/components/Ui/Links/LinkSwimmingPoolCover/LinkSwimmingPoolCover';
 
 const SwimmingPools: React.FC = () => {
   return (

@@ -9,8 +9,10 @@
   box-sizing: border-box;
   margin-top: 1.5rem;
   @include mixin.pc1250px {
-    align-self: center;
     margin-top: 0.5rem;
+  }
+  @include mixin.phone900px {
+    align-self: center;
   }
   @include mixin.phone800px {
     width: 90%;

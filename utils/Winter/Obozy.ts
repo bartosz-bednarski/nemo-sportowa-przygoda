@@ -1,6 +1,16 @@
-import {campsCoversType, obozType} from '@/types/SummerWinter/Camps';
+import {obozType} from '@/types/SummerWinter/Camps';
+export type CampCoverType = {
+  active: boolean;
+  title: string;
+  price: string;
+  localization: string;
+  date: string;
+  coverImage: string;
+  href: string;
+};
+export type CampsCoversType = CampCoverType[];
 
-export const OBOZY_LISTA_2025: campsCoversType = [
+export const OBOZY_LISTA_2025: CampsCoversType = [
   {
     active: true,
     title: 'OBÓZ NARCIARSKI Z BOM4SPORTS',

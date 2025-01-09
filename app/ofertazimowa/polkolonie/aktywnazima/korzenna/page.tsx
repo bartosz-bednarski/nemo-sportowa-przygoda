@@ -1,14 +1,14 @@
-import Hero from '@/components/OfertaZimowa/Globals/Hero/Hero';
+import Hero from '@/components/OfertaZimowa/Ui/Hero/Hero';
 import styles from '../../../../page.module.scss';
-import MountainsTrees from '@/components/OfertaZimowa/Globals/MountainsTrees/MountainsTrees';
-import Details from '@/components/OfertaZimowa/Globals/Details/Details';
+import MountainsTrees from '@/components/OfertaZimowa/Ui/MountainsTrees/MountainsTrees';
+import Details from '@/components/OfertaZimowa/Ui/Details/Details';
 import Localization from '@/components/OfertaZimowa/Polkolonie/Localization/Localization';
-import Schedule from '@/components/OfertaZimowa/Globals/Schedule/Schedule';
+import Schedule from '@/components/OfertaZimowa/Ui/Schedule/Schedule';
 import {POLKOLONIA_AKTYWNA_ZIMA_KORZENNA} from '@/utils/Winter/Polkolonie';
-import Food from '@/components/OfertaZimowa/Globals/Food/Food';
-import PriceDetails from '@/components/OfertaZimowa/Globals/PriceDetails/PriceDetails';
+import Food from '@/components/OfertaZimowa/Ui/Food/Food';
+import PriceDetails from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
-import Contact from '@/components/OfertaZimowa/Globals/Contact/Contact';
+import Contact from '@/components/OfertaZimowa/Ui/Contact/Contact';
 import {Metadata} from 'next';
 export const metadata: Metadata = {
   title: 'Półkolonia Aktywna Zima 2025 KORZENNA ',

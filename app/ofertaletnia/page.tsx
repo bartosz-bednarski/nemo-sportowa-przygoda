@@ -5,9 +5,9 @@ import SignInCamps from '@/components/Globals/SignInCamps/SignInCamps';
 // import { POLKOLONIE_LATO_COVERS } from "@/utils/Summer/Polkolonie";
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import CollabSummer from '@/components/Summer/CollabSummer';
-import GalleryLink from '@/components/Globals/GalleryLink/GalleryLink';
 import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';
+import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 
 export const metadata: Metadata = {
   title: 'Oferta LETNIA',
