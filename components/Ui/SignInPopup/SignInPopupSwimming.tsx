@@ -5,6 +5,7 @@ import Image from 'next/image';
 import LinkButton from '../Buttons/LinkButton';
 import {hasCookie, setCookie} from 'cookies-next';
 import XBtn from '../Buttons/XBtn/XBtn';
+
 const SignInPopupSwimming = () => {
   const [showPopup, setShowPopup] = useState(false);
 

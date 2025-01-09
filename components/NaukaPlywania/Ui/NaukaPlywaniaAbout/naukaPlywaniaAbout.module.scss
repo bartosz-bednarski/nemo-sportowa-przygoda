@@ -1,0 +1,40 @@
+@use '../../../../styles/mixin.scss' as mixin;
+.about {
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 0 4rem 4rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  @include mixin.phone900px {
+    padding: 4rem;
+  }
+}
+.textBox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @include mixin.phone900px {
+    align-items: center !important;
+    width: 100%;
+  }
+}
+.imageBox {
+  position: relative;
+  width: 40%;
+  @include mixin.phone900px {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .about {
+    padding: 2rem;
+    &__text-box {
+      align-items: center;
+      width: 100%;
+    }
+    &__image-box {
+      display: none;
+    }
+  }
+}

@@ -2,9 +2,9 @@ import Link from 'next/link';
 import styles from './galleryLinkPhoto.module.scss';
 import Image from 'next/image';
 import {COLORS} from '@/utils/UI/colors';
-import {galleryItemType} from '@/types/Gallery/gallery';
+import {GalleryItemType} from '@/utils/Gallery/Gallery';
 interface GalleryLinkPhotoPropsType {
-  item: galleryItemType;
+  item: GalleryItemType;
 }
 
 const GalleryLinkPhoto = ({item}: GalleryLinkPhotoPropsType) => {

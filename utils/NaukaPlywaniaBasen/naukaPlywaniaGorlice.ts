@@ -1,42 +1,23 @@
-import {
-  instructorsRowBoxType,
-  poolTutorialType,
-  priceListType,
-} from '@/types/Globals/globals';
-import {
-  aboutType,
-  groupsType,
-  poolInformationsType,
-} from '@/types/NaukaPlywania/naukaPlywania';
+import {instructorsRowBoxType, poolTutorialType} from '@/types/Globals/globals';
+import {poolInformationsType} from '@/types/NaukaPlywania/naukaPlywania';
 import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
 import {NAUKA_PLYWANIA} from '../NaukaPlywania/naukaPlywania';
+import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
+import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
+import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 
 type naukaPlywaniaBasen = {
   zRodzicami: {
     backgroundColor: customColors;
-    about: aboutType;
+    about: NaukaPływaniaAboutPropsType;
     instructors: instructorsRowBoxType;
-    groups: groupsType;
-    priceList: priceListType;
+    groups: GroupsPropsType;
+    priceList: PriceListPropsType;
   };
-  // dzieci: {
-  //   backgroundColor: customColors;
-  //   about: aboutType;
-  //   instructors: instructorsType;
-  //   pools: poolsType;
-  //   groups: groupsType;
-  // };
-  // dorosli: {
-  //   backgroundColor: customColors;
-  //   about: aboutType;
-  //   instructors: instructorsType;
-  //   pools: poolsType;
-  //   groups: groupsType;
-  // };
 };
 
-export const CENNIK_Z_RODZICAMI_GORLICE: priceListType = [
+export const CENNIK_Z_RODZICAMI_GORLICE: PriceListPropsType = [
   {
     stickerH4: {
       title: 'LEKCJE',
@@ -69,16 +50,16 @@ export const NAUKA_PLYWANIA_GORLICE: naukaPlywaniaBasen = {
       stickerH2: {
         title: 'NAUKA PŁYWANIA',
         titleStrip: 'Z RODZICAMI',
-        scale: 1.2,
         stripTextColor: 'lightBlue',
         stripBgColor: 'white',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         titleColor: 'lightBlue',
         title: NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.title,
         description:
           NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.description,
+        alignItems: 'flex-start',
+        textAlign: 'left',
       },
       image: {
         src: 'lessonsTypes/zRodzicami.webp',

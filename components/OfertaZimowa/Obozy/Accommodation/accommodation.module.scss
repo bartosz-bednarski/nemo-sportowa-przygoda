@@ -1,4 +1,5 @@
-@import '../../../../styles/colors.scss';
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
 @import '../../../../styles/fonts.scss';
 .accommodation {
   box-sizing: border-box;
@@ -6,101 +7,92 @@
   flex-direction: column;
   padding: 4rem 0;
   gap: 2rem;
-  &__row-box {
-    padding: 0 0 0 4rem;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2rem;
-    &__content {
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      width: 40%;
-      &__list {
-        color: $darkBlue;
-        font-family: 'poppins-500';
-        margin: 0;
-        padding: 0;
-        li {
-          margin-left: 25px;
-        }
-      }
-      &__text {
-        color: $darkBlue;
-        font-family: 'poppins-600';
-      }
-    }
-    &__svg-image {
-      width: 50%;
-      height: auto;
-    }
-  }
-  &__image-box {
-    &:hover {
-      .accommodation__image-box__button {
-        background-color: $basicOrange;
-      }
-    }
-    width: 100%;
-    position: relative;
-    &__button {
-      transition: all 0.5s;
-      position: absolute;
-      top: 50%;
-      left: 40%;
-      background-color: $darkBlue;
-      font-size: 1rem;
-      font-family: 'poppins-600';
-      color: white;
-      padding: 1rem 3rem;
-      border-radius: 200px;
-    }
-    &__image {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .accommodation {
-    &__image-box {
-      display: none;
-    }
-    &__row-box {
-      flex-direction: column;
-      &__content {
-        align-items: center;
-        width: 100%;
-        padding-right: 4rem;
-        &__list {
-          text-align: center;
-          list-style-type: none;
-        }
-        &__text {
-          text-align: center;
-        }
-      }
-      &__svg-image {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 600px) {
-  .accommodation {
+  @include mixin.phone700px {
     padding: 2rem 0;
-    &__row-box {
-      padding-left: 2rem;
-      &__content {
-        padding-right: 2rem;
-        h2 {
-          font-size: 1rem !important;
-        }
-      }
+  }
+}
+.imageBox {
+  @include mixin.pc1000px {
+    display: none;
+  }
+  &:hover {
+    .accommodation__image-box__button {
+      background-color: colors.$basicOrange;
     }
+  }
+  width: 100%;
+  position: relative;
+}
+.button {
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  background-color: colors.$darkBlue;
+  font-size: 1rem;
+  font-family: 'poppins-600';
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 200px;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+.rowBox {
+  padding: 0 0 0 4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  @include mixin.pc1000px {
+    flex-direction: column;
+  }
+  @include mixin.phone700px {
+    padding-left: 2rem;
+  }
+}
+.content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40%;
+  @include mixin.pc1000px {
+    align-items: center;
+    width: 100%;
+    padding-right: 4rem;
+  }
+  @include mixin.phone700px {
+    padding-right: 2rem;
+  }
+}
+.list {
+  color: colors.$darkBlue;
+  font-family: 'poppins-500';
+  margin: 0;
+  padding: 0;
+  @include mixin.pc1000px {
+    text-align: center;
+    list-style-type: none;
+  }
+  li {
+    margin-left: 25px;
+  }
+}
+.text {
+  color: colors.$darkBlue;
+  font-family: 'poppins-600';
+  @include mixin.pc1000px {
+    text-align: center;
+  }
+}
+.svgImage {
+  width: 50%;
+  height: auto;
+  @include mixin.pc1000px {
+    width: 100%;
+    height: auto;
   }
 }

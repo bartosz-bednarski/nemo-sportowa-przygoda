@@ -1,6 +1,24 @@
-import {galleryMainType} from '@/types/Gallery/gallery';
+import {customColors} from '@/types/UI/colors';
 
-export const GALLERY_MAIN: galleryMainType = [
+export type GalleryItemType = {
+  href: string;
+  type: GalleryType;
+  title: string;
+  coverImage: string;
+  stripColor: customColors;
+  stripTextColor: customColors;
+  collab: boolean;
+  collabLogo: string;
+  collabHref: string;
+  images: {
+    landscapes: string[][];
+    portraits: string[];
+  };
+};
+export type GalleryType = 'LATO' | 'ZIMA' | 'PLYWANIE';
+export type GalleryMainType = GalleryItemType[];
+
+export const GALLERY_MAIN: GalleryMainType = [
   {
     type: 'PLYWANIE',
     title: 'NAUKA PŁYWANIA Z RODZICAMI',

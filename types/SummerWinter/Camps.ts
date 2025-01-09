@@ -1,15 +1,5 @@
 import {contactComponentType, detailsComponentType} from './Winter';
 
-export type campTypeCover = {
-  active: boolean;
-  title: string;
-  price: string;
-  localization: string;
-  date: string;
-  coverImage: string;
-  href: string;
-};
-export type campsCoversType = campTypeCover[];
 export type detailsBoxCampComponentType = {
   promo: boolean;
   label: 'MIEJSCE' | 'TERMIN' | 'CENA' | 'WIEK' | 'ZBIÓRKA';

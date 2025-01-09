@@ -3,15 +3,22 @@ import React from 'react';
 import styles from './signInCamps.module.scss';
 import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import {COLORS} from '@/utils/UI/colors';
-import {signInCampsComponentType} from '@/types/Globals/globals';
-import ColonyLink from '@/components/OfertaZimowa/Globals/ColonyLink/ColonyLink';
+import ColonyLink from '@/components/Ui/Links/ColonyLink/ColonyLink';
+import {CampsCoversType} from '@/utils/Winter/Obozy';
 
-const SignInCamps: React.FC<signInCampsComponentType> = ({
+export interface SignInCampsPropsType {
+  activeCampsCoversList?: CampsCoversType;
+  waitingTitle?: string;
+  waiting: boolean;
+  theme: 'summer' | 'winter';
+}
+
+const SignInCamps = ({
   theme,
   waiting,
   waitingTitle,
   activeCampsCoversList,
-}) => {
+}: SignInCampsPropsType) => {
   return (
     <div
       className={styles.signInCamps}

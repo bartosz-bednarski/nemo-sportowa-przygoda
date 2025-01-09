@@ -1,4 +1,5 @@
-@import '../../../../styles/colors.scss';
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
 @import '../../../../styles/fonts.scss';
 .surroundings {
   box-sizing: border-box;
@@ -8,61 +9,54 @@
   justify-content: space-between;
   gap: 2rem;
   align-items: flex-end;
-  &__content {
-    box-sizing: border-box;
-    padding: 0 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 60%;
-    h2 {
-      margin: 0;
-    }
-    &__list {
-      color: $darkBlue;
-      font-family: 'poppins-500';
-      margin: 0;
-      padding: 0;
-      li {
-        margin-left: 25px;
-      }
-    }
-    &__text {
-      color: $darkBlue;
-      font-family: 'poppins-600';
-    }
-  }
-  &__svg-image {
-    width: 30%;
-    height: max-content;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .surroundings {
+  @include mixin.pc1000px {
     flex-direction: column;
     align-items: center;
-    &__content {
-      align-items: center;
-      width: 100%;
-      &__list {
-        text-align: center;
-        list-style-type: none;
-      }
-      &__text {
-        text-align: center;
-      }
-    }
-    &__svg-image {
-      width: 100%;
-      height: auto;
-    }
+  }
+  @include mixin.phone700px {
+    padding: 2rem 0;
   }
 }
-@media only screen and (max-width: 600px) {
-  .surroundings {
-    padding: 2rem 0;
-    &__content {
-      padding: 0 2rem;
-    }
+.content {
+  box-sizing: border-box;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+  @include mixin.pc1000px {
+    align-items: center;
+    width: 100%;
+  }
+  @include mixin.phone700px {
+    padding: 0 2rem;
+  }
+}
+.image {
+  width: 30%;
+  height: max-content;
+  @include mixin.pc1000px {
+    width: 100%;
+    height: auto;
+  }
+}
+.list {
+  color: colors.$darkBlue;
+  font-family: 'poppins-500';
+  margin: 0;
+  padding: 0;
+  @include mixin.pc1000px {
+    text-align: center;
+    list-style-type: none;
+  }
+  li {
+    margin-left: 25px;
+  }
+}
+.text {
+  color: colors.$darkBlue;
+  font-family: 'poppins-600';
+  @include mixin.pc1000px {
+    text-align: center;
   }
 }

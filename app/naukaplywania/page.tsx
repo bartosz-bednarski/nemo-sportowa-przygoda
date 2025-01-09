@@ -1,11 +1,11 @@
-import NaukaPlywania from '@/components/NaukaPlywania/NaukaPlywania';
 import styles from '../page.module.scss';
 import VideosSection from '@/components/Globals/VideosSection';
 import {NAUKA_PLYWANIA} from '@/utils/NaukaPlywania/naukaPlywania';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
-import GalleryLink from '@/components/Globals/GalleryLink/GalleryLink';
 import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';
+import NaukaPlywania from '@/components/NaukaPlywania/NaukaPlywaniaPage/NaukaPlywania';
+import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania - KRAKÓW|KORZENNA|GORLICE',

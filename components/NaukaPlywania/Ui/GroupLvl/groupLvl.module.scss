@@ -1,0 +1,46 @@
+@use '../../../../styles/mixin.scss' as mixin;
+@use '../../../../styles/colors.scss' as colors;
+@import '../../../../styles/fonts.scss';
+.containerCol {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  @include mixin.pc1000px {
+    width: 300px;
+  }
+  @include mixin.phone900px {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    list-style-type: '\2B50';
+    margin-top: 0;
+    padding: 0;
+    transition: all 0.5s;
+    li {
+      font-weight: 500;
+      font-size: 1rem;
+      font-family: 'poppins-400';
+      margin: 0.5rem 0;
+      padding: 0;
+      line-height: 1.4rem;
+    }
+  }
+}
+.button {
+  display: flex;
+  border: 0;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-family: 'poppins-600';
+  color: colors.$basicOrange;
+  transition: all 0.5s;
+  &:hover {
+    cursor: pointer;
+  }
+}
