@@ -1,0 +1,597 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Globals/Footer/footer.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.footer_footer__7TSC6 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 4rem;
+  background-color: #053490;
+}
+.footer_footer__logo__VE6uC {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footer_footer__navigation__SDb25 {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer_footer__navigation__SDb25 li {
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: inline;
+  margin: 0 1rem;
+  transition: color 0.4s;
+}
+.footer_footer__navigation__SDb25 li:hover {
+  color: #ff914c;
+}
+.footer_footer__navigation__SDb25 li:hover svg path {
+  fill: #ff914c;
+}
+.footer_footer__navigation__SDb25 li svg {
+  width: 40px;
+  height: 40px;
+}
+.footer_footer__navigation__SDb25 li svg path {
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 1330px) {
+  .footer_footer__7TSC6 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+  .footer_footer__navigation__SDb25 li {
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .footer_footer__7TSC6 {
+    padding-top: 4rem;
+    gap: 1rem;
+    text-align: center;
+  }
+  .footer_footer__logo__VE6uC {
+    flex-direction: column-reverse;
+  }
+  .footer_footer__navigation__SDb25 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer_footer__navigation__SDb25 li {
+    font-weight: 500;
+    font-size: 0.6rem;
+    gap: 5px;
+  }
+  .footer_footer__navigation__SDb25 li svg {
+    height: 24px;
+    width: 24px;
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Globals/Navigation/NavBar/navBar.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.navBar_navBar__cKoW9 {
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+.navBar_navBar__logo__w6aju {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  font-weight: 700;
+}
+.navBar_navBar__btns__ToTdv {
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .navBar_navBar__logo__w6aju {
+    display: none;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Ui/Buttons/buttons.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.buttons_linkButton__AcaLA {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  color: white;
+  border: 0;
+  border-radius: 40px;
+  gap: 1rem;
+  background-color: #ff914c;
+  transition: all 0.5s;
+  border: 2px solid #ff914c;
+}
+.buttons_linkButton__AcaLA svg path {
+  fill: white;
+}
+.buttons_linkButton__AcaLA:hover {
+  border: 2px solid #ff914c;
+  background-color: white;
+  color: #ff914c;
+  cursor: pointer;
+}
+.buttons_linkButton__AcaLA:hover svg path {
+  fill: #ff914c;
+}
+
+.buttons_signInButton__qHHAZ {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  color: #053490 !important;
+  border: 0;
+  border-radius: 40px;
+  gap: 0.5rem;
+  z-index: 1;
+  background-color: white;
+  transition: all 0.5s;
+}
+.buttons_signInButton__qHHAZ svg path {
+  fill: #053490;
+}
+.buttons_signInButton__qHHAZ:hover {
+  cursor: pointer;
+  background-color: #ff914c;
+}
+.buttons_signInButton__qHHAZ:hover svg path {
+  fill: #053490;
+}
+
+.buttons_navBtn__fpNSW {
+  width: 80px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: white;
+  border: 0;
+  font-weight: 600;
+}
+.buttons_navBtn__fpNSW:hover {
+  cursor: pointer;
+}
+
+.buttons_xBtn__Km9HW {
+  border: 0;
+  background-color: transparent;
+}
+.buttons_xBtn__Km9HW:hover {
+  cursor: pointer;
+}
+
+.buttons_prevPhotoButton__bJDYl,
+.buttons_nextPhotoButton__V4Lxd {
+  background-color: transparent;
+  border: 0;
+}
+.buttons_prevPhotoButton__bJDYl svg,
+.buttons_nextPhotoButton__V4Lxd svg {
+  width: 100px;
+  height: auto;
+}
+.buttons_prevPhotoButton__bJDYl svg path,
+.buttons_nextPhotoButton__V4Lxd svg path {
+  fill: #ff914c;
+}
+.buttons_prevPhotoButton__bJDYl:hover,
+.buttons_nextPhotoButton__V4Lxd:hover {
+  cursor: pointer;
+}
+.buttons_prevPhotoButton__bJDYl:hover svg path,
+.buttons_nextPhotoButton__V4Lxd:hover svg path {
+  fill: white;
+}
+
+.buttons_xPhotoButton__ArfJq {
+  position: absolute;
+  top: -49px;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "poppins-600";
+  font-size: 1.2rem;
+  color: white;
+  background-color: #ff914c;
+  border: 0;
+  padding: 0.2rem 0.5rem 0.2rem 7rem;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  transition: all 0.5s;
+}
+.buttons_xPhotoButton__ArfJq svg path {
+  fill: white;
+}
+.buttons_xPhotoButton__ArfJq:hover {
+  cursor: pointer;
+  color: #ff914c;
+  background-color: white;
+}
+.buttons_xPhotoButton__ArfJq:hover svg path {
+  fill: #ff914c;
+}
+
+@media only screen and (max-width: 600px) {
+  .buttons_linkButton__AcaLA {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Globals/Navigation/Navigation/navigation.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@keyframes navigation_show__9EQJt {
+  from {
+    background-size: 0% 100%;
+  }
+  to {
+    background-size: 112% 100%;
+  }
+}
+@keyframes navigation_hide__1s9my {
+  from {
+    background-size: 112% 100%;
+  }
+  to {
+    background-size: 0% 100%;
+    display: none;
+  }
+}
+@keyframes navigation_showContent__ZDoiY {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes navigation_hideContent__3aArK {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.navigation_navigation-hide__MEs_w {
+  animation-name: navigation_hide__1s9my !important;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  overflow: hidden;
+}
+
+.navigation_navigation-hideContent__r3Htq {
+  animation-name: navigation_hideContent__3aArK !important;
+  animation-duration: 0.2s !important;
+  animation-delay: 0s !important;
+}
+
+.navigation_navigation___nF_a {
+  opacity: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("/assets/ui/nav-background.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  animation-name: navigation_show__9EQJt;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  overflow: hidden;
+}
+.navigation_navigation__top-box__994xM {
+  box-sizing: border-box;
+  width: 100%;
+  height: 10vh;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  animation-name: navigation_showContent__ZDoiY;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+.navigation_navigation__bottom-box__QPmq0 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90vh;
+  animation-name: navigation_showContent__ZDoiY;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+.navigation_navigation__bottom-box__20__MxjBD {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 80vh;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 0.3rem;
+}
+.navigation_navigation__bottom-box__20__contact__YHAxV {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: flex-end;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.navigation_navigation__bottom-box__20__contact__icon__izoy7 {
+  width: 30px;
+  height: 30px;
+}
+.navigation_navigation__bottom-box__20__contact__icon__izoy7 path {
+  transition: fill 0.4s;
+}
+.navigation_navigation__bottom-box__20__contact__icon__izoy7:hover path {
+  fill: #ff914c;
+}
+.navigation_navigation__bottom-box__80__pDfZQ {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+.navigation_navigation__bottom-box__80__nav__K1y9z {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.3rem;
+  font-weight: 600;
+  transition: background-color 1s;
+}
+.navigation_navigation__bottom-box__80__nav__location__fjcgY {
+  margin-left: 1rem;
+  color: #669ad7;
+}
+.navigation_navigation__bottom-box__80__nav__K1y9z:hover {
+  color: #1048b6;
+  background-color: white;
+  cursor: pointer;
+}
+.navigation_navigation__bottom-box__80__pDfZQ ul {
+  list-style-type: none;
+  padding: 0;
+}
+.navigation_navigation__bottom-box__80__pDfZQ ul li {
+  padding: 1rem 0;
+  border-bottom: 3px solid #669ad7;
+}
+.navigation_navigation__bottom-box__80__pDfZQ ul li a,
+.navigation_navigation__bottom-box__80__pDfZQ ul li a:visited,
+.navigation_navigation__bottom-box__80__pDfZQ ul li a:hover,
+.navigation_navigation__bottom-box__80__pDfZQ ul li a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1500px) {
+  .navigation_navigation__bottom-box__20__MxjBD:nth-of-type(1) {
+    width: 10%;
+  }
+  .navigation_navigation__bottom-box__20__MxjBD:nth-of-type(3) {
+    width: 30%;
+  }
+  .navigation_navigation__bottom-box__80__pDfZQ {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .navigation_navigation__bottom-box__QPmq0 {
+    justify-content: center;
+  }
+  .navigation_navigation__bottom-box__20__MxjBD {
+    display: none;
+  }
+  .navigation_navigation__bottom-box__80__pDfZQ {
+    align-items: center;
+    width: 80%;
+  }
+  .navigation_navigation__bottom-box__80__nav__K1y9z {
+    font-size: 1.2rem;
+  }
+  .navigation_navigation__bottom-box__80__pDfZQ ul {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navigation_navigation__top-box__994xM {
+    justify-content: flex-end;
+    padding-right: 0;
+  }
+  .navigation_navigation__top-box__logo__95fsZ {
+    display: none !important;
+  }
+  .navigation_navigation__bottom-box__80__pDfZQ {
+    width: 100%;
+  }
+  .navigation_navigation__bottom-box__80__nav__K1y9z {
+    font-size: 1.2rem;
+  }
+  .navigation_navigation__bottom-box__80__pDfZQ ul {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navigation_navigation__bottom-box__80__nav__K1y9z {
+    font-size: 0.7rem;
+  }
+  .navigation_navigation__bottom-box__80__nav__location__fjcgY {
+    margin-left: 0.5rem;
+  }
+  .navigation_navigation__bottom-box__80__pDfZQ ul li {
+    padding: 0.5rem 0;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./styles/globals.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Inter";
+  src: url(/_next/static/media/Inter-VariableFont_opsz,wght.cc27cf3f.ttf) format("truetype");
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Inter-Italic";
+  src: url(/_next/static/media/Inter-Italic-VariableFont_opsz,wght.dd830f3b.ttf) format("truetype");
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-100";
+  src: url(/_next/static/media/Poppins-Thin.605324f7.ttf);
+  font-weight: 100; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-200";
+  src: url(/_next/static/media/Poppins-ExtraLight.9102fb84.ttf);
+  font-weight: 200; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-300";
+  src: url(/_next/static/media/Poppins-Light.8b20023e.ttf);
+  font-weight: 300; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-400";
+  src: url(/_next/static/media/Poppins-Regular.4b4ebe20.ttf);
+  font-weight: 400; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-500";
+  src: url(/_next/static/media/Poppins-Medium.a52d0bf0.ttf);
+  font-weight: 500; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-600";
+  src: url(/_next/static/media/Poppins-SemiBold.98512bf8.ttf);
+  font-weight: 600; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-700";
+  src: url(/_next/static/media/Poppins-Bold.8001a01b.ttf);
+  font-weight: 700; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-800";
+  src: url(/_next/static/media/Poppins-ExtraBold.7572a9b5.ttf);
+  font-weight: 800; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-900";
+  src: url(/_next/static/media/Poppins-Black.a7317f18.ttf);
+  font-weight: 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+html {
+  font-family: "Inter-VariableFont_opsz", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  background-color: #1048b6;
+}
+
+p {
+  line-height: 1.4rem;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./app/layout.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.layout_main__KhA0t {
+  display: flex;
+  flex-direction: column;
+}

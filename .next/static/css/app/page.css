@@ -1,0 +1,1405 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./app/page.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page_main__ux7yf {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.page_statues-row__ENsIK {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: black;
+}
+.page_statues-row__row-item__mkAqG {
+  position: relative;
+  width: 32.5%;
+}
+.page_statues-row__row-item__mkAqG:hover {
+  cursor: pointer;
+}
+.page_statues-row__row-item__mkAqG:hover .page_statues-row__row-item__sticker-box__ZTUhI {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.page_statues-row__row-item__sticker-box__ZTUhI {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page_statues-row__row-item__mkAqG img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1400px) {
+  .page_statues-row__ENsIK {
+    flex-direction: column;
+  }
+  .page_statues-row__row-item__mkAqG {
+    height: 32.5%;
+    width: 100%;
+  }
+  .page_statues-row__row-item__sticker-box__ZTUhI {
+    box-sizing: border-box;
+    padding: 5% 20%;
+    justify-content: flex-start;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Globals/videosSection.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.videosSection_container__UKsJ_ {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+.videosSection_container__image-box__Pe6mJ {
+  display: flex;
+  position: relative;
+  width: 32.5%;
+  height: 100vh;
+  align-items: flex-end;
+}
+.videosSection_container__image-box__Pe6mJ video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: top;
+}
+.videosSection_container__image-box__sticker-box___ocUL {
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+.videosSection_container__image-box__mobileSticker__Qb7OL {
+  position: absolute;
+  z-index: 3;
+  left: 10%;
+  top: 30%;
+  display: none;
+}
+.videosSection_container__image-box__oneSticker-box__OUd8U {
+  position: absolute;
+  z-index: 3;
+  left: 20%;
+  top: 30%;
+}
+.videosSection_container__image-box__opacity-cover__81NiG {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .videosSection_container__image-box__sticker-box___ocUL {
+    left: 0%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .videosSection_container__image-box__sticker-box___ocUL {
+    display: none;
+  }
+  .videosSection_container__image-box__mobileSticker__Qb7OL {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .videosSection_container__image-box__oneSticker-box__OUd8U {
+    left: 5%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .videosSection_container__image-box__Pe6mJ {
+    width: 100%;
+  }
+  .videosSection_container__image-box__Pe6mJ:nth-of-type(1) {
+    display: none;
+  }
+  .videosSection_container__image-box__Pe6mJ:nth-of-type(2) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 616px) {
+  .videosSection_container__image-box__oneSticker-box__OUd8U {
+    left: 20%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .videosSection_container__image-box__oneSticker-box__OUd8U {
+    left: 20%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .videosSection_container__image-box__oneSticker-box__OUd8U {
+    left: 10%;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .videosSection_container__image-box__mobileSticker__Qb7OL {
+    left: 5%;
+    top: 60%;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .videosSection_container__image-box__oneSticker-box__OUd8U {
+    left: 5%;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Ui/Stickers/sticker.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.sticker_box__2DwwY {
+  gap: 1rem;
+  box-sizing: border-box;
+  padding-left: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 900px) {
+  .sticker_box__2DwwY {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .sticker_box__2DwwY {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.sticker_h1Title__1AgLH,
+.sticker_h1Title2__OBu9e {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 5rem;
+  font-weight: 800;
+  text-align: left;
+}
+@media only screen and (max-width: 1250px) {
+  .sticker_h1Title__1AgLH,
+  .sticker_h1Title2__OBu9e {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .sticker_h1Title__1AgLH,
+  .sticker_h1Title2__OBu9e {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sticker_h1Title__1AgLH,
+  .sticker_h1Title2__OBu9e {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .sticker_h1Title__1AgLH,
+  .sticker_h1Title2__OBu9e {
+    font-size: 1.5rem;
+  }
+}
+
+.sticker_h1Title2__OBu9e {
+  margin-left: 7rem;
+  padding-bottom: 2rem;
+}
+@media only screen and (max-width: 1250px) {
+  .sticker_h1Title2__OBu9e {
+    padding-bottom: 0;
+    margin-left: 3rem;
+  }
+}
+
+.sticker_h2Title__qK5lz {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: left;
+}
+@media only screen and (max-width: 1600px) {
+  .sticker_h2Title__qK5lz {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .sticker_h2Title__qK5lz {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .sticker_h2Title__qK5lz {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sticker_h2Title__qK5lz {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sticker_h2Title__qK5lz {
+    font-size: 1rem;
+  }
+}
+
+.sticker_h4Title__3QMI6 {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: left;
+}
+@media only screen and (max-width: 1600px) {
+  .sticker_h4Title__3QMI6 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .sticker_h4Title__3QMI6 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sticker_h4Title__3QMI6 {
+    text-align: center;
+  }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Ui/Strips/strip.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.strip_box__RFz8c {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-top: 1.5rem;
+}
+@media only screen and (max-width: 1250px) {
+  .strip_box__RFz8c {
+    margin-top: 0.5rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .strip_box__RFz8c {
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .strip_box__RFz8c {
+    width: 90%;
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .strip_box__RFz8c {
+    background-color: transparent !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .strip_box__RFz8c {
+    padding: 0.7rem;
+  }
+}
+
+.strip_h1Title__toZhd {
+  position: relative;
+  font-size: 3.2rem;
+  font-weight: 800;
+  z-index: 4;
+  text-align: center;
+  margin: 0;
+}
+@media only screen and (max-width: 1600px) {
+  .strip_h1Title__toZhd {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .strip_h1Title__toZhd {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .strip_h1Title__toZhd {
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .strip_h1Title__toZhd {
+    font-size: 1.5rem;
+  }
+}
+
+.strip_h2Title__Z3x_P {
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 800;
+  z-index: 4;
+  text-align: center;
+  margin: 0;
+  padding: 0 1rem;
+}
+@media only screen and (max-width: 1600px) {
+  .strip_h2Title__Z3x_P {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .strip_h2Title__Z3x_P {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .strip_h2Title__Z3x_P {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .strip_h2Title__Z3x_P {
+    font-size: 1rem;
+  }
+}
+
+.strip_h3Title__ICW8N {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 800;
+  z-index: 4;
+  text-align: center;
+  margin: 0;
+}
+@media only screen and (max-width: 1600px) {
+  .strip_h3Title__ICW8N {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .strip_h3Title__ICW8N {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .strip_h3Title__ICW8N {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .strip_h3Title__ICW8N {
+    font-size: 0.9rem;
+  }
+}
+
+.strip_h4Title__3Ddwe {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 800;
+  z-index: 4;
+  text-align: center;
+  margin: 0;
+}
+@media only screen and (max-width: 1600px) {
+  .strip_h4Title__3Ddwe {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .strip_h4Title__3Ddwe {
+    font-size: 1rem;
+  }
+}
+
+.strip_mainScrap__yuyXt {
+  position: absolute;
+  top: auto;
+  left: auto;
+  height: min-content;
+  width: -webkit-fill-available;
+}
+@media only screen and (max-width: 800px) {
+  .strip_mainScrap__yuyXt {
+    display: none;
+  }
+}
+
+.strip_scrapLeft__hOAtX {
+  display: none;
+  position: absolute;
+  left: -17px;
+  height: -webkit-fill-available;
+  width: auto;
+  top: 0;
+}
+@media only screen and (max-width: 800px) {
+  .strip_scrapLeft__hOAtX {
+    display: block;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .strip_scrapLeft__hOAtX {
+    left: -12px;
+  }
+}
+
+.strip_scrapRight__Gz_F5 {
+  display: none;
+  position: absolute;
+  right: -17px;
+  height: -webkit-fill-available;
+  width: auto;
+  top: 0;
+}
+@media only screen and (max-width: 800px) {
+  .strip_scrapRight__Gz_F5 {
+    display: block;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .strip_scrapRight__Gz_F5 {
+    right: -12px;
+  }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/HomePage/Camps/campsSection.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.campsSection_campLayout__KvoOo {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  padding: 5rem 0;
+  height: auto;
+  width: 100%;
+}
+
+.campsSection_content__iBQqF {
+  z-index: 3;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-bottom: 5rem;
+}
+
+.campsSection_rowBox__3pomG {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  padding: 0 4rem;
+}
+@media only screen and (max-width: 700px) {
+  .campsSection_rowBox__3pomG {
+    padding: 0 2rem;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Ui/TitleStripDescriptionStrip/titleStripDescriptionBox.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Inter";
+  src: url(/_next/static/media/Inter-VariableFont_opsz,wght.cc27cf3f.ttf) format("truetype");
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Inter-Italic";
+  src: url(/_next/static/media/Inter-Italic-VariableFont_opsz,wght.dd830f3b.ttf) format("truetype");
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-100";
+  src: url(/_next/static/media/Poppins-Thin.605324f7.ttf);
+  font-weight: 100; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-200";
+  src: url(/_next/static/media/Poppins-ExtraLight.9102fb84.ttf);
+  font-weight: 200; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-300";
+  src: url(/_next/static/media/Poppins-Light.8b20023e.ttf);
+  font-weight: 300; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-400";
+  src: url(/_next/static/media/Poppins-Regular.4b4ebe20.ttf);
+  font-weight: 400; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-500";
+  src: url(/_next/static/media/Poppins-Medium.a52d0bf0.ttf);
+  font-weight: 500; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-600";
+  src: url(/_next/static/media/Poppins-SemiBold.98512bf8.ttf);
+  font-weight: 600; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-700";
+  src: url(/_next/static/media/Poppins-Bold.8001a01b.ttf);
+  font-weight: 700; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-800";
+  src: url(/_next/static/media/Poppins-ExtraBold.7572a9b5.ttf);
+  font-weight: 800; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-900";
+  src: url(/_next/static/media/Poppins-Black.a7317f18.ttf);
+  font-weight: 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+.titleStripDescriptionBox_titleStripDescription___V0or {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  gap: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  .titleStripDescriptionBox_titleStripDescription___V0or {
+    width: 100%;
+    gap: 1rem;
+  }
+}
+
+.titleStripDescriptionBox_paragraphBox__u8iml {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+  font-family: "poppins-400";
+}
+@media only screen and (max-width: 500px) {
+  .titleStripDescriptionBox_paragraphBox__u8iml {
+    font-size: 0.8rem;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Ui/Buttons/buttons.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.buttons_linkButton__AcaLA {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  color: white;
+  border: 0;
+  border-radius: 40px;
+  gap: 1rem;
+  background-color: #ff914c;
+  transition: all 0.5s;
+  border: 2px solid #ff914c;
+}
+.buttons_linkButton__AcaLA svg path {
+  fill: white;
+}
+.buttons_linkButton__AcaLA:hover {
+  border: 2px solid #ff914c;
+  background-color: white;
+  color: #ff914c;
+  cursor: pointer;
+}
+.buttons_linkButton__AcaLA:hover svg path {
+  fill: #ff914c;
+}
+
+.buttons_signInButton__qHHAZ {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  color: #053490 !important;
+  border: 0;
+  border-radius: 40px;
+  gap: 0.5rem;
+  z-index: 1;
+  background-color: white;
+  transition: all 0.5s;
+}
+.buttons_signInButton__qHHAZ svg path {
+  fill: #053490;
+}
+.buttons_signInButton__qHHAZ:hover {
+  cursor: pointer;
+  background-color: #ff914c;
+}
+.buttons_signInButton__qHHAZ:hover svg path {
+  fill: #053490;
+}
+
+.buttons_navBtn__fpNSW {
+  width: 80px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: white;
+  border: 0;
+  font-weight: 600;
+}
+.buttons_navBtn__fpNSW:hover {
+  cursor: pointer;
+}
+
+.buttons_xBtn__Km9HW {
+  border: 0;
+  background-color: transparent;
+}
+.buttons_xBtn__Km9HW:hover {
+  cursor: pointer;
+}
+
+.buttons_prevPhotoButton__bJDYl,
+.buttons_nextPhotoButton__V4Lxd {
+  background-color: transparent;
+  border: 0;
+}
+.buttons_prevPhotoButton__bJDYl svg,
+.buttons_nextPhotoButton__V4Lxd svg {
+  width: 100px;
+  height: auto;
+}
+.buttons_prevPhotoButton__bJDYl svg path,
+.buttons_nextPhotoButton__V4Lxd svg path {
+  fill: #ff914c;
+}
+.buttons_prevPhotoButton__bJDYl:hover,
+.buttons_nextPhotoButton__V4Lxd:hover {
+  cursor: pointer;
+}
+.buttons_prevPhotoButton__bJDYl:hover svg path,
+.buttons_nextPhotoButton__V4Lxd:hover svg path {
+  fill: white;
+}
+
+.buttons_xPhotoButton__ArfJq {
+  position: absolute;
+  top: -49px;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "poppins-600";
+  font-size: 1.2rem;
+  color: white;
+  background-color: #ff914c;
+  border: 0;
+  padding: 0.2rem 0.5rem 0.2rem 7rem;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  transition: all 0.5s;
+}
+.buttons_xPhotoButton__ArfJq svg path {
+  fill: white;
+}
+.buttons_xPhotoButton__ArfJq:hover {
+  cursor: pointer;
+  color: #ff914c;
+  background-color: white;
+}
+.buttons_xPhotoButton__ArfJq:hover svg path {
+  fill: #ff914c;
+}
+
+@media only screen and (max-width: 600px) {
+  .buttons_linkButton__AcaLA {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/HomePage/Swimming/swimmingSection.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.swimmingSection_swimmingLayout__oWtJ4 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #1048b6;
+  height: auto;
+  width: 100%;
+}
+
+.swimmingSection_about__hTv2S {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 4rem;
+}
+@media only screen and (max-width: 700px) {
+  .swimmingSection_about__hTv2S {
+    padding: 2rem;
+  }
+}
+.swimmingSection_about__hTv2S .swimmingSection_categoriesBoxRow__chlR_ {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+}
+
+.swimmingSection_poolsContainer__gIqLR {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  padding: 5rem 0;
+  height: auto;
+  width: 100%;
+}
+
+.swimmingSection_poolsBoxCol__KGgqf {
+  padding: 0rem 4rem 5rem 4rem;
+  z-index: 3;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+@media only screen and (max-width: 700px) {
+  .swimmingSection_poolsBoxCol__KGgqf {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+}
+
+.swimmingSection_poolsBoxRow__20UJH {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Ui/AboutTextPoppins/aboutTextPoppins.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Inter";
+  src: url(/_next/static/media/Inter-VariableFont_opsz,wght.cc27cf3f.ttf) format("truetype");
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Inter-Italic";
+  src: url(/_next/static/media/Inter-Italic-VariableFont_opsz,wght.dd830f3b.ttf) format("truetype");
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-100";
+  src: url(/_next/static/media/Poppins-Thin.605324f7.ttf);
+  font-weight: 100; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-200";
+  src: url(/_next/static/media/Poppins-ExtraLight.9102fb84.ttf);
+  font-weight: 200; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-300";
+  src: url(/_next/static/media/Poppins-Light.8b20023e.ttf);
+  font-weight: 300; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-400";
+  src: url(/_next/static/media/Poppins-Regular.4b4ebe20.ttf);
+  font-weight: 400; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-500";
+  src: url(/_next/static/media/Poppins-Medium.a52d0bf0.ttf);
+  font-weight: 500; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-600";
+  src: url(/_next/static/media/Poppins-SemiBold.98512bf8.ttf);
+  font-weight: 600; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-700";
+  src: url(/_next/static/media/Poppins-Bold.8001a01b.ttf);
+  font-weight: 700; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-800";
+  src: url(/_next/static/media/Poppins-ExtraBold.7572a9b5.ttf);
+  font-weight: 800; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-900";
+  src: url(/_next/static/media/Poppins-Black.a7317f18.ttf);
+  font-weight: 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+.aboutTextPoppins_box__qyYIl {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Poppins-400";
+  z-index: 3;
+}
+@media only screen and (max-width: 900px) {
+  .aboutTextPoppins_box__qyYIl {
+    align-items: center !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .aboutTextPoppins_box__qyYIl {
+    text-align: center;
+  }
+}
+
+.aboutTextPoppins_title__kNY2x {
+  font-family: "Poppins-700";
+  font-size: 1.4rem;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  color: #1048b6;
+}
+@media only screen and (max-width: 1000px) {
+  .aboutTextPoppins_title__kNY2x {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .aboutTextPoppins_title__kNY2x {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .aboutTextPoppins_title__kNY2x {
+    font-size: 1.2rem;
+    font-family: "Poppins-400";
+  }
+}
+@media only screen and (max-width: 500px) {
+  .aboutTextPoppins_title__kNY2x {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .aboutTextPoppins_paragraph__PyNMN {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .aboutTextPoppins_paragraph__PyNMN {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .aboutTextPoppins_paragraph__PyNMN {
+    line-height: 1.2rem;
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Ui/BackgroundText/backgroundText.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Inter";
+  src: url(/_next/static/media/Inter-VariableFont_opsz,wght.cc27cf3f.ttf) format("truetype");
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Inter-Italic";
+  src: url(/_next/static/media/Inter-Italic-VariableFont_opsz,wght.dd830f3b.ttf) format("truetype");
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-100";
+  src: url(/_next/static/media/Poppins-Thin.605324f7.ttf);
+  font-weight: 100; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-200";
+  src: url(/_next/static/media/Poppins-ExtraLight.9102fb84.ttf);
+  font-weight: 200; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-300";
+  src: url(/_next/static/media/Poppins-Light.8b20023e.ttf);
+  font-weight: 300; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-400";
+  src: url(/_next/static/media/Poppins-Regular.4b4ebe20.ttf);
+  font-weight: 400; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-500";
+  src: url(/_next/static/media/Poppins-Medium.a52d0bf0.ttf);
+  font-weight: 500; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-600";
+  src: url(/_next/static/media/Poppins-SemiBold.98512bf8.ttf);
+  font-weight: 600; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-700";
+  src: url(/_next/static/media/Poppins-Bold.8001a01b.ttf);
+  font-weight: 700; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-800";
+  src: url(/_next/static/media/Poppins-ExtraBold.7572a9b5.ttf);
+  font-weight: 800; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-900";
+  src: url(/_next/static/media/Poppins-Black.a7317f18.ttf);
+  font-weight: 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+.backgroundText_text__uAljd {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 50px;
+  width: 70%;
+  height: 100%;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.17);
+  font-family: "Poppins-700";
+  text-align: end;
+}
+@media only screen and (max-width: 1520px) {
+  .backgroundText_text__uAljd {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .backgroundText_text__uAljd {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .backgroundText_text__uAljd {
+    display: none;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Ui/Links/LinkSwimmingPoolCover/linkSwimmingPoolCover.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.linkSwimmingPoolCover_container__m0l9K {
+  position: relative;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.41);
+  border-radius: 30px;
+}
+@media only screen and (max-width: 1100px) {
+  .linkSwimmingPoolCover_container__m0l9K {
+    width: 300px;
+    height: 300px;
+  }
+}
+.linkSwimmingPoolCover_container__m0l9K:hover .linkSwimmingPoolCover_hoverBox__YD7ZW {
+  width: 100%;
+}
+.linkSwimmingPoolCover_container__m0l9K:hover .linkSwimmingPoolCover_h3Box__nTQk9 img {
+  width: 80%;
+}
+@media only screen and (max-width: 1100px) {
+  .linkSwimmingPoolCover_container__m0l9K:hover .linkSwimmingPoolCover_h3Box__nTQk9 img {
+    scale: 1.1;
+  }
+}
+.linkSwimmingPoolCover_container__m0l9K:hover .linkSwimmingPoolCover_h3Box__nTQk9 h3 {
+  color: #053490;
+}
+
+.linkSwimmingPoolCover_hoverBox__YD7ZW {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.41);
+  z-index: 2;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  transition: width 0.5s;
+}
+@media only screen and (max-width: 1100px) {
+  .linkSwimmingPoolCover_hoverBox__YD7ZW {
+    height: 225px;
+  }
+}
+
+.linkSwimmingPoolCover_imageBox__uSJjg {
+  position: relative;
+  height: 300px;
+  width: 400px;
+}
+@media only screen and (max-width: 1100px) {
+  .linkSwimmingPoolCover_imageBox__uSJjg {
+    height: 225px;
+    width: 300px;
+  }
+}
+
+.linkSwimmingPoolCover_h3Box__nTQk9 {
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+@media only screen and (max-width: 1100px) {
+  .linkSwimmingPoolCover_h3Box__nTQk9 {
+    height: 75px;
+  }
+}
+.linkSwimmingPoolCover_h3Box__nTQk9 img {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 0%;
+  height: 80%;
+  z-index: 0;
+  transition: width 0.5s;
+}
+@media only screen and (max-width: 1100px) {
+  .linkSwimmingPoolCover_h3Box__nTQk9 img {
+    top: 5%;
+  }
+}
+.linkSwimmingPoolCover_h3Box__nTQk9 h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+@media only screen and (max-width: 1100px) {
+  .linkSwimmingPoolCover_h3Box__nTQk9 h3 {
+    font-size: 1rem;
+    height: 75px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .linkSwimmingPoolCover_swimmingPoolCover__VMePO {
+    width: 300px;
+    height: 300px;
+  }
+  .linkSwimmingPoolCover_swimmingPoolCover__VMePO:hover .linkSwimmingPoolCover_swimmingPoolCover__h3-box__0FlZb h3 {
+    color: white;
+  }
+  .linkSwimmingPoolCover_swimmingPoolCover__hover-box__sEaoT {
+    display: none;
+  }
+  .linkSwimmingPoolCover_swimmingPoolCover__image-box__y9DSK {
+    height: 250px;
+    width: 300px;
+  }
+  .linkSwimmingPoolCover_swimmingPoolCover__h3-box__0FlZb svg {
+    display: none;
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Ui/SignInPopup/popup.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Inter";
+  src: url(/_next/static/media/Inter-VariableFont_opsz,wght.cc27cf3f.ttf) format("truetype");
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Inter-Italic";
+  src: url(/_next/static/media/Inter-Italic-VariableFont_opsz,wght.dd830f3b.ttf) format("truetype");
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-100";
+  src: url(/_next/static/media/Poppins-Thin.605324f7.ttf);
+  font-weight: 100; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-200";
+  src: url(/_next/static/media/Poppins-ExtraLight.9102fb84.ttf);
+  font-weight: 200; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-300";
+  src: url(/_next/static/media/Poppins-Light.8b20023e.ttf);
+  font-weight: 300; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-400";
+  src: url(/_next/static/media/Poppins-Regular.4b4ebe20.ttf);
+  font-weight: 400; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-500";
+  src: url(/_next/static/media/Poppins-Medium.a52d0bf0.ttf);
+  font-weight: 500; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-600";
+  src: url(/_next/static/media/Poppins-SemiBold.98512bf8.ttf);
+  font-weight: 600; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-700";
+  src: url(/_next/static/media/Poppins-Bold.8001a01b.ttf);
+  font-weight: 700; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-800";
+  src: url(/_next/static/media/Poppins-ExtraBold.7572a9b5.ttf);
+  font-weight: 800; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+@font-face {
+  font-family: "Poppins-900";
+  src: url(/_next/static/media/Poppins-Black.a7317f18.ttf);
+  font-weight: 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+}
+.popup_popup__ANeCH {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 12;
+}
+
+.popup_contentBox__3tQYj {
+  width: 1000px;
+  height: 600px;
+  background-color: #1058e2;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1100px) {
+  .popup_contentBox__3tQYj {
+    width: 600px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .popup_contentBox__3tQYj {
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+}
+
+.popup_columnFlex__oCxW6 {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 50%;
+  gap: 1rem;
+}
+@media only screen and (max-width: 1100px) {
+  .popup_columnFlex__oCxW6 {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .popup_columnFlex__oCxW6 {
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.7rem;
+    padding: 1rem;
+    height: 100%;
+    text-align: center;
+  }
+}
+.popup_columnFlex__oCxW6 h1 {
+  font-family: "poppins-700";
+  margin: 0;
+}
+@media only screen and (max-width: 1100px) {
+  .popup_columnFlex__oCxW6 h1 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .popup_columnFlex__oCxW6 h1 {
+    font-size: 1rem;
+  }
+}
+.popup_columnFlex__oCxW6 h3 {
+  margin: 0;
+  font-family: "poppins-600";
+}
+@media only screen and (max-width: 1100px) {
+  .popup_columnFlex__oCxW6 h3 {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .popup_columnFlex__oCxW6 h3 {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .popup_columnFlex__oCxW6 a {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .popup_columnFlex__oCxW6 a {
+    font-size: 0.8rem;
+    padding: 0.7rem;
+  }
+}
+
+.popup_image__Kwd_f {
+  width: 50%;
+  object-fit: cover;
+  object-position: left;
+  height: 100%;
+}
+@media only screen and (max-width: 700px) {
+  .popup_image__Kwd_f {
+    display: none;
+  }
+}
+
+.popup_xBtnBox__KLRZi {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff914c;
+}

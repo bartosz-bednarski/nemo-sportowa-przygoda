@@ -1,4 +1,5 @@
-@import '../../../../styles/colors.scss';
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
 @import '../../../../styles/fonts.scss';
 .whatsWaiting4You {
   box-sizing: border-box;
@@ -8,56 +9,50 @@
   justify-content: space-between;
   gap: 2rem;
   align-items: center;
-  &__content {
-    display: flex;
+  @include mixin.pc1000px{
     flex-direction: column;
-    gap: 2rem;
-    width: 60%;
-    h2 {
-      margin: 0;
-    }
-    &__list {
-      color: $darkBlue;
-      font-family: 'poppins-500';
-      margin: 0;
-      padding: 0;
-      li {
-        margin-left: 25px;
-      }
-    }
-    &__text {
-      color: $darkBlue;
-      font-family: 'poppins-600';
-    }
+    align-items: center;  
   }
-  &__svg-image {
-    width: 30%;
-    height: max-content;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .whatsWaiting4You {
-    flex-direction: column;
-    align-items: center;
-    &__content {
-      align-items: center;
-      width: 100%;
-      &__list {
-        text-align: center;
-        list-style-type: none;
-      }
-      &__text {
-        text-align: center;
-      }
-    }
-    &__svg-image {
-      width: 80%;
-      height: auto;
-    }
-  }
-}
-@media only screen and (max-width: 600px) {
-  .whatsWaiting4You {
+  @include mixin.phone700px{
     padding: 2rem;
   }
 }
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+  @include mixin.pc1000px{
+    align-items: center;
+      width: 100%;
+  }
+}
+.list {
+  color: colors.$darkBlue;
+  font-family: 'poppins-500';
+  margin: 0;
+  padding: 0;
+  @include mixin.pc1000px{
+    text-align: center;
+        list-style-type: none;
+  }
+  li {
+    margin-left: 25px;
+  }
+}
+.text {
+  color: colors.$darkBlue;
+  font-family: 'poppins-600';
+  @include mixin.pc1000px{
+    text-align: center;
+  }
+}
+.image {
+  width: 30%;
+  height: max-content;
+  @include mixin.pc1000px{
+    width: 80%;
+      height: auto;
+  }
+}
+
