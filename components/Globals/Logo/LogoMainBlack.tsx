@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 
-const LogoMainBlack: React.FC<{ width: string; height: string }> = ({
+const LogoMainBlack: React.FC<{width: string; height: string}> = ({
   width,
   height,
 }) => {
@@ -12,7 +12,7 @@ const LogoMainBlack: React.FC<{ width: string; height: string }> = ({
       viewBox="0 0 1320 572"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{ width: width, height: height }}
+      style={{width: width, height: height}}
       id="logo-main-black"
     >
       <g clipPath="url(#clip0_1215_3023)">

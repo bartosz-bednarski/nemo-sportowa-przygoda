@@ -1,5 +1,5 @@
-import LogoMainWhite from "@/components/Globals/Logo/LogoMainWhite";
-import styles from "./loading.module.scss";
+import LogoMainWhite from '@/components/Globals/Logo/LogoMainWhite';
+import styles from './loading.module.scss';
 const Loading = () => {
   return (
     <div className={styles.loading}>

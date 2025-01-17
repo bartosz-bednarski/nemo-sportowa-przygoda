@@ -1,4 +1,4 @@
-@import "../../../styles/colors.scss";
+@use '../../../styles/colors.scss';
 .linkButton {
   height: fit-content;
   display: flex;
@@ -12,22 +12,22 @@
   border: 0;
   border-radius: 40px;
   gap: 1rem;
-  background-color: $basicOrange;
+  background-color: colors.$basicOrange;
   transition: all 0.5s;
-  border: 2px solid $basicOrange;
+  border: 2px solid colors.$basicOrange;
   svg {
     path {
       fill: white;
     }
   }
   &:hover {
-    border: 2px solid $basicOrange;
+    border: 2px solid colors.$basicOrange;
     background-color: white;
-    color: $basicOrange;
+    color: colors.$basicOrange;
     cursor: pointer;
     svg {
       path {
-        fill: $basicOrange;
+        fill: colors.$basicOrange;
       }
     }
   }
@@ -41,7 +41,7 @@
   font-size: 1rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
-  color: $darkBlue !important;
+  color: colors.$darkBlue !important;
   border: 0;
   border-radius: 40px;
   gap: 0.5rem;
@@ -50,15 +50,15 @@
   transition: all 0.5s;
   svg {
     path {
-      fill: $darkBlue;
+      fill: colors.$darkBlue;
     }
   }
   &:hover {
     cursor: pointer;
-    background-color: $basicOrange;
+    background-color: colors.$basicOrange;
     svg {
       path {
-        fill: $darkBlue;
+        fill: colors.$darkBlue;
       }
     }
   }
@@ -83,6 +83,59 @@
   background-color: transparent;
   &:hover {
     cursor: pointer;
+  }
+}
+.prevPhotoButton,
+.nextPhotoButton {
+  background-color: transparent;
+  border: 0;
+  svg {
+    width: 100px;
+    height: auto;
+    path {
+      fill: colors.$basicOrange;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    svg {
+      path {
+        fill: white;
+      }
+    }
+  }
+}
+.xPhotoButton {
+  position: absolute;
+  top: -49px;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'poppins-600';
+  font-size: 1.2rem;
+  color: white;
+  background-color: colors.$basicOrange;
+  border: 0;
+  padding: 0.2rem 0.5rem 0.2rem 7rem;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  transition: all 0.5s;
+  svg {
+    path {
+      fill: white;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    color: colors.$basicOrange;
+    background-color: white;
+    svg {
+      path {
+        fill: colors.$basicOrange;
+      }
+    }
   }
 }
 @media only screen and (max-width: 600px) {

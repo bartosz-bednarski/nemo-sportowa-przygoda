@@ -1,8 +1,8 @@
-"use client";
-import { scrap2Type } from "@/types/UI/stickerStripStrap";
-import { COLORS } from "@/utils/UI/colors";
-import React from "react";
-const Scrap2: React.FC<scrap2Type> = ({ position, color }) => {
+'use client';
+import {scrap2Type} from '@/types/UI/stickerStripStrap';
+import {COLORS} from '@/utils/UI/colors';
+import React from 'react';
+const Scrap2: React.FC<scrap2Type> = ({position, color}) => {
   return (
     <svg
       width="1922"
@@ -11,11 +11,11 @@ const Scrap2: React.FC<scrap2Type> = ({ position, color }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       style={{
-        position: "absolute",
-        width: "100%",
-        top: position === "top" ? 0 : "",
-        bottom: position === "bottom" ? "-65px" : "",
-        rotate: position === "top" ? "180deg" : "",
+        position: 'absolute',
+        width: '100%',
+        top: position === 'top' ? 0 : '',
+        bottom: position === 'bottom' ? '-65px' : '',
+        rotate: position === 'top' ? '180deg' : '',
         zIndex: 3,
       }}
     >

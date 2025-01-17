@@ -1,5 +1,5 @@
-@import "../../../../styles/colors.scss";
-@import "../../../../styles/fonts.scss";
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
 .whatsWaiting4You {
   box-sizing: border-box;
   display: flex;
@@ -18,7 +18,7 @@
     }
     &__list {
       color: $darkBlue;
-      font-family: "poppins-500";
+      font-family: 'poppins-500';
       margin: 0;
       padding: 0;
       li {
@@ -27,7 +27,7 @@
     }
     &__text {
       color: $darkBlue;
-      font-family: "poppins-600";
+      font-family: 'poppins-600';
     }
   }
   &__svg-image {

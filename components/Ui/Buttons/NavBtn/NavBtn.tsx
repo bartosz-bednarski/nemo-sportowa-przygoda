@@ -1,20 +1,20 @@
-"use client";
-import React from "react";
-import styles from "../buttons.module.scss";
-import { COLORS } from "@/utils/UI/colors";
+'use client';
+import React from 'react';
+import styles from '../buttons.module.scss';
+import {COLORS} from '@/utils/UI/colors';
 
 const NavBtn: React.FC<{
-  type: "menu" | "customer-panel";
+  type: 'menu' | 'customer-panel';
   onClick: () => void;
-}> = ({ type, onClick }) => {
-  const bgColor = type === "menu" ? "basicOrange" : "basicBrown";
+}> = ({type, onClick}) => {
+  const bgColor = type === 'menu' ? 'basicOrange' : 'basicBrown';
   return (
     <button
       className={styles.navBtn}
-      style={{ background: COLORS[bgColor] }}
+      style={{background: COLORS[bgColor]}}
       onClick={onClick}
     >
-      {type === "menu" ? (
+      {type === 'menu' ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="31"
@@ -44,7 +44,7 @@ const NavBtn: React.FC<{
       ) : (
         <span>PANEL</span>
       )}
-      {type === "menu" ? <span>MENU</span> : <span>KLIENTA</span>}
+      {type === 'menu' ? <span>MENU</span> : <span>KLIENTA</span>}
     </button>
   );
 };

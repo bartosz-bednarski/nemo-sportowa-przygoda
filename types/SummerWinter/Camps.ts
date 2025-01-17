@@ -1,18 +1,8 @@
-import { contactComponentType, detailsComponentType } from "./Winter";
+import {contactComponentType, detailsComponentType} from './Winter';
 
-export type campTypeCover = {
-  active: boolean;
-  title: string;
-  price: string;
-  localization: string;
-  date: string;
-  coverImage: string;
-  href: string;
-};
-export type campsCoversType = campTypeCover[];
 export type detailsBoxCampComponentType = {
   promo: boolean;
-  label: "MIEJSCE" | "TERMIN" | "CENA" | "WIEK" | "ZBIÓRKA";
+  label: 'MIEJSCE' | 'TERMIN' | 'CENA' | 'WIEK' | 'ZBIÓRKA';
   content: string;
   promoPrice?: string;
   promoInfo?: string;
@@ -47,13 +37,13 @@ export type weekendNaStokuScheduleComponentType = {
   list: {
     time: string;
     info: string;
-    subList?: { title: string; about: string }[];
+    subList?: {title: string; about: string}[];
   }[];
 };
 export type hillSidesCampComponentType = {
   title1: string;
   title2: string;
-  list: { title: string; image: string; listAbout: string[] }[];
+  list: {title: string; image: string; listAbout: string[]}[];
 };
 export type heroCampComponentType = {
   pc: string;
@@ -88,5 +78,5 @@ export type whatsWaiting4YouComponentType = {
 export type scheduleCampComponentType = {
   title: string;
   scheduleAbout: string;
-  scheduleList: { title: string; text: string }[];
+  scheduleList: {title: string; text: string}[];
 };

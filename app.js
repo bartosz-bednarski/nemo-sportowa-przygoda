@@ -1,8 +1,8 @@
-const express = require("express");
-const next = require("next");
+const express = require('express');
+const next = require('next');
 
-const dev = process.env.NODE_ENV !== "production";
-const app = next({ dev });
+const dev = process.env.NODE_ENV !== 'production';
+const app = next({dev});
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
@@ -12,7 +12,7 @@ app.prepare().then(() => {
   // Example: server.get('/custom-route', (req, res) => app.render(req, res, '/custom-route'));
 
   // Handle all other requests
-  server.all("*", (req, res) => {
+  server.all('*', (req, res) => {
     return handle(req, res);
   });
 

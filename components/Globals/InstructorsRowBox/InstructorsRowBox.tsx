@@ -1,10 +1,10 @@
-"use client";
-import React from "react";
-import styles from "./instructorsRowBox.module.scss";
-import BackgroundText from "@/components/Ui/BackgroundText/BackgroundText";
-import { instructorsRowBoxType } from "@/types/Globals/globals";
-import { COLORS } from "@/utils/UI/colors";
-import InstructorBubble from "../InstructorBubble/InstructorBubble";
+'use client';
+import React from 'react';
+import styles from './instructorsRowBox.module.scss';
+import BackgroundText from '@/components/Ui/BackgroundText/BackgroundText';
+import {instructorsRowBoxType} from '@/types/Globals/globals';
+import {COLORS} from '@/utils/UI/colors';
+import InstructorBubble from '../InstructorBubble/InstructorBubble';
 
 const InstructorsRowBox: React.FC<instructorsRowBoxType> = ({
   instructors,
@@ -13,7 +13,7 @@ const InstructorsRowBox: React.FC<instructorsRowBoxType> = ({
   return (
     <div
       className={styles.instructorsRowBox}
-      style={{ background: COLORS[bgColor] }}
+      style={{background: COLORS[bgColor]}}
     >
       <BackgroundText title="KADRA" />
       {instructors.map((instructor) => (

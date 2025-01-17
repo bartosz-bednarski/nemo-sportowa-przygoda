@@ -1,32 +1,32 @@
-"use client";
-import React, { useState } from "react";
-import styles from "./instructorsList.module.scss";
-import InstructorBubble from "./InstructorBubble/InstructorBubble";
-import { INSTRUKTORZY_BASEN } from "@/utils/Instruktorzy/InstruktorzyBasen";
-import Image from "next/image";
-import { COLORS } from "@/utils/UI/colors";
+'use client';
+import React, {useState} from 'react';
+import styles from './instructorsList.module.scss';
+import InstructorBubble from './InstructorBubble/InstructorBubble';
+import {INSTRUKTORZY_BASEN} from '@/utils/Instruktorzy/InstruktorzyBasen';
+import Image from 'next/image';
+import {COLORS} from '@/utils/UI/colors';
 
 const InstructorsList: React.FC = () => {
   const [showPopup, setShowPopup] = useState({
     show: false,
-    instructorName: "",
-    img: "wiktoria-fryczek.png",
-    about1: "",
-    about2: "",
+    instructorName: '',
+    img: 'wiktoria-fryczek.png',
+    about1: '',
+    about2: '',
   });
   const hidePopupHandler = () => {
     setShowPopup({
       show: false,
-      instructorName: "",
-      img: "wiktoria-fryczek.png",
-      about1: "",
-      about2: "",
+      instructorName: '',
+      img: 'wiktoria-fryczek.png',
+      about1: '',
+      about2: '',
     });
   };
   return (
     <div className={styles.instructorsList}>
       <h2>DRUŻYNA BASENOWA</h2>
-      <div className={styles["instructorsList__row-box"]}>
+      <div className={styles['instructorsList__row-box']}>
         {INSTRUKTORZY_BASEN.map((instructor) => (
           <InstructorBubble
             img1={instructor.img}
@@ -46,18 +46,18 @@ const InstructorsList: React.FC = () => {
       </div>
       {showPopup.show && (
         <div
-          className={styles["instructorsList__popup"]}
+          className={styles['instructorsList__popup']}
           onClick={hidePopupHandler}
         >
           <span
-            className={`${styles["instructorsList__popup__bubble"]} ${styles["instructorsList__popup__bubble-random-1"]}`}
+            className={`${styles['instructorsList__popup__bubble']} ${styles['instructorsList__popup__bubble-random-1']}`}
           ></span>
           <span
-            className={`${styles["instructorsList__popup__bubble"]} ${styles["instructorsList__popup__bubble-random-2"]}`}
+            className={`${styles['instructorsList__popup__bubble']} ${styles['instructorsList__popup__bubble-random-2']}`}
           ></span>
-          <div className={styles["instructorsList__popup__column-box"]}>
+          <div className={styles['instructorsList__popup__column-box']}>
             <div
-              className={`${styles["instructorsList__popup__bubble"]} ${styles["instructorsList__popup__bubble-about-image"]}`}
+              className={`${styles['instructorsList__popup__bubble']} ${styles['instructorsList__popup__bubble-about-image']}`}
             >
               <Image
                 src={`/assets/instructors/${showPopup.img}`}
@@ -66,19 +66,19 @@ const InstructorsList: React.FC = () => {
               />
             </div>
             <span
-              className={styles["instructorsList__popup__column-box__name"]}
+              className={styles['instructorsList__popup__column-box__name']}
             >
               {showPopup.instructorName}
             </span>
           </div>
           <div
-            className={`${styles["instructorsList__popup__bubble"]} ${styles["instructorsList__popup__bubble-about-1"]}`}
+            className={`${styles['instructorsList__popup__bubble']} ${styles['instructorsList__popup__bubble-about-1']}`}
           >
             <span>{showPopup.about1}</span>
           </div>
 
           <div
-            className={`${styles["instructorsList__popup__bubble"]} ${styles["instructorsList__popup__bubble-about-2"]}`}
+            className={`${styles['instructorsList__popup__bubble']} ${styles['instructorsList__popup__bubble-about-2']}`}
           >
             <span>{showPopup.about2}</span>
           </div>
@@ -87,7 +87,7 @@ const InstructorsList: React.FC = () => {
       <div
         className={styles.bubbles}
         style={{
-          background: `linear-gradient(180deg,${COLORS["mediumBlue"]} 0%, ${COLORS["darkBlue"]} 100%)`,
+          background: `linear-gradient(180deg,${COLORS['mediumBlue']} 0%, ${COLORS['darkBlue']} 100%)`,
         }}
       >
         <svg

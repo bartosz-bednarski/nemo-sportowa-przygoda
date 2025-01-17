@@ -1,7 +1,7 @@
-"use client";
-import Link from "next/link";
-import styles from "./collabSummer.module.scss";
-import React from "react";
+'use client';
+import Link from 'next/link';
+import styles from './collabSummer.module.scss';
+import React from 'react';
 
 const CollabSummer: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const CollabSummer: React.FC = () => {
         viewBox="0 0 1793 777"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className={styles["collabSummer__nemo"]}
+        className={styles['collabSummer__nemo']}
       >
         <g clipPath="url(#clip0_1298_2373)">
           <mask
@@ -260,7 +260,7 @@ const CollabSummer: React.FC = () => {
           viewBox="0 0 269 216"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className={styles["collabSummer__boom"]}
+          className={styles['collabSummer__boom']}
         >
           <g clipPath="url(#clip0_1343_2497)">
             <path

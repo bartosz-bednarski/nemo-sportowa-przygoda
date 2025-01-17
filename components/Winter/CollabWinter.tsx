@@ -1,28 +1,28 @@
-"use client";
-import Image from "next/image";
-import styles from "./collabWinter.module.scss";
-import React from "react";
-import Link from "next/link";
+'use client';
+import Image from 'next/image';
+import styles from './collabWinter.module.scss';
+import React from 'react';
+import Link from 'next/link';
 
 const CollabWinter: React.FC = () => {
   return (
-    <div className={styles["collabWinter-container"]}>
+    <div className={styles['collabWinter-container']}>
       <Image
         src="/assets/ui/scrap-winter.jpg"
-        className={styles["collabWinter-container__bg-svg"]}
+        className={styles['collabWinter-container__bg-svg']}
         width={1920}
         height={400}
         alt="winter-ice"
       />
 
-      <div className={styles["collabWinter-container__row-box"]}>
+      <div className={styles['collabWinter-container__row-box']}>
         <svg
           width="1793"
           height="777"
           viewBox="0 0 1793 777"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className={styles["collabWinter-container__row-box__nemo"]}
+          className={styles['collabWinter-container__row-box__nemo']}
         >
           <g clipPath="url(#clip0_1298_2373)">
             <mask
@@ -270,7 +270,7 @@ const CollabWinter: React.FC = () => {
             viewBox="0 0 269 216"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={styles["collabWinter-container__row-box__boom"]}
+            className={styles['collabWinter-container__row-box__boom']}
           >
             <g clipPath="url(#clip0_1343_2497)">
               <path

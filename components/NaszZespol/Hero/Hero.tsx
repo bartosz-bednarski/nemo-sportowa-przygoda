@@ -1,8 +1,8 @@
-"use client";
-import React from "react";
-import styles from "./hero.module.scss";
-import Image from "next/image";
-import StickerH1 from "@/components/Ui/StickerH1/StickerH1";
+'use client';
+import React from 'react';
+import styles from './hero.module.scss';
+import Image from 'next/image';
+import StickerH1 from '@/components/Ui/Stickers/StickerH1/StickerH1';
 
 const HeroTeam: React.FC = () => {
   return (
@@ -15,14 +15,13 @@ const HeroTeam: React.FC = () => {
         objectPosition="bottom"
         alt="basen akcesoria"
       />
-      <span className={styles["hero__sticker-box"]}>
+      <span className={styles['hero__sticker-box']}>
         <StickerH1
           title="POZNAJ"
           title2="NASZ"
           titleStrip="ZESPÓŁ"
           stripBgColor="darkBlue"
           stripTextColor="white"
-          scale={1.4}
         />
       </span>
     </div>

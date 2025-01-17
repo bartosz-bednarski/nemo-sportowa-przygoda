@@ -1,13 +1,13 @@
-import { campsCoversType } from "../SummerWinter/Camps";
-import { aboutTextPoppinsType } from "../UI/aboutTextPoppins";
-import { signInButtonType } from "../UI/buttons";
-import { customColors } from "../UI/colors";
+import {AboutTextPoppinsPropsType} from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
+import {campsCoversType} from '../SummerWinter/Camps';
+import {signInButtonType} from '../UI/buttons';
+import {customColors} from '../UI/colors';
 import {
   stickerH1Type,
   stickerH2Type,
   stickerH4Type,
   stripH4Type,
-} from "../UI/stickerStripStrap";
+} from '../UI/stickerStripStrap';
 
 export type instructorBubbleType = {
   instructorName?: string;
@@ -46,11 +46,6 @@ export type VideosSectionType = {
   oneSticker: boolean;
   oneStickerContent?: stickerH1Type;
 };
-export type groupLvlType = {
-  stickerH4: stickerH4Type;
-  aboutTextPoppins: aboutTextPoppinsType;
-  skills: string[];
-};
 export type priceLessonsType = {
   stickerH4: stickerH4Type;
   oneLesson: {
@@ -63,7 +58,6 @@ export type priceLessonsType = {
   };
   button: signInButtonType;
 };
-export type priceListType = priceLessonsType[];
 export type lessonTypeComponent = {
   bgColor: customColors;
   lessonType: lessonType;
@@ -71,7 +65,7 @@ export type lessonTypeComponent = {
 export type lessonType = {
   img: string;
   stickerH4: stickerH4Type;
-  aboutTextPoppins: aboutTextPoppinsType;
+  aboutTextPoppins: AboutTextPoppinsPropsType;
 };
 
 export type poolTutorialType = {
@@ -92,7 +86,7 @@ export type aboutCampsComponentType = {
   right: boolean;
   aboutRight1?: string;
   aboutRight2?: string;
-  theme: "summer" | "winter";
+  theme: 'summer' | 'winter';
   imgRight: string;
   imgLeft?: string;
 };
@@ -100,5 +94,5 @@ export type signInCampsComponentType = {
   activeCampsCoversList?: campsCoversType;
   waitingTitle?: string;
   waiting: boolean;
-  theme: "summer" | "winter";
+  theme: 'summer' | 'winter';
 };

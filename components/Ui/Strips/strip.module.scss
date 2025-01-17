@@ -1,0 +1,143 @@
+@use '../../../styles/mixin.scss' as mixin;
+.box {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-top: 1.5rem;
+  @include mixin.pc1250px {
+    margin-top: 0.5rem;
+  }
+  @include mixin.phone900px {
+    align-self: center;
+  }
+  @include mixin.phone800px {
+    width: 90%;
+    margin-top: 0;
+  }
+  @media only screen and (min-width: 800px) {
+    background-color: transparent !important;
+  }
+  @include mixin.phone500px {
+    padding: 0.7rem;
+  }
+}
+.h1Title {
+  position: relative;
+  font-size: 3.2rem;
+  font-weight: 800;
+  z-index: 4;
+  text-align: center;
+  margin: 0;
+
+  @include mixin.pc1600px {
+    font-size: 3.2rem;
+  }
+  @include mixin.pc1250px {
+    font-size: 2.5rem;
+  }
+  @include mixin.phone800px {
+    width: 100%;
+    font-size: 2rem;
+  }
+  @include mixin.phone500px {
+    font-size: 1.5rem;
+  }
+}
+.h2Title {
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 800;
+  z-index: 4;
+  text-align: center;
+  margin: 0;
+  padding: 0 1rem;
+
+  @include mixin.pc1600px {
+    font-size: 1.6rem;
+  }
+  @include mixin.pc1250px {
+    font-size: 1.2rem;
+  }
+  @include mixin.pc1000px {
+    font-size: 1.1rem;
+  }
+  @include mixin.phone500px {
+    font-size: 1rem;
+  }
+}
+.h3Title {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 800;
+  z-index: 4;
+  text-align: center;
+  margin: 0;
+  @include mixin.pc1600px {
+    font-size: 1.6rem;
+  }
+  @include mixin.pc1250px {
+    font-size: 1.5rem;
+  }
+  @include mixin.pc1000px {
+    font-size: 1.1rem;
+  }
+  @include mixin.phone500px {
+    font-size: 0.9rem;
+  }
+}
+.h4Title {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 800;
+  z-index: 4;
+  text-align: center;
+  margin: 0;
+  @include mixin.pc1600px {
+    font-size: 1.5rem;
+  }
+  @include mixin.pc1250px {
+    font-size: 1rem;
+  }
+}
+.mainScrap {
+  position: absolute;
+  top: auto;
+  left: auto;
+  height: min-content;
+  width: -webkit-fill-available;
+  @include mixin.phone800px {
+    display: none;
+  }
+}
+.scrapLeft {
+  display: none;
+  position: absolute;
+  left: -17px;
+  height: -webkit-fill-available;
+  width: auto;
+  top: 0;
+  @include mixin.phone800px {
+    display: block;
+  }
+  @include mixin.phone500px {
+    left: -12px;
+  }
+}
+.scrapRight {
+  display: none;
+  position: absolute;
+  right: -17px;
+  height: -webkit-fill-available;
+  width: auto;
+  top: 0;
+  @include mixin.phone800px {
+    display: block;
+  }
+  @include mixin.phone500px {
+    right: -12px;
+  }
+}

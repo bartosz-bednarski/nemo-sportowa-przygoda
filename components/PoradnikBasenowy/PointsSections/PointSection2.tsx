@@ -1,15 +1,15 @@
-"use client";
-import React from "react";
-import styles from "./pointSection.module.scss";
+'use client';
+import React from 'react';
+import styles from './pointSection.module.scss';
 
 const PointSection2: React.FC = () => {
   return (
     <div className={styles.pointSection} id="2">
-      <span className={styles["pointSection__title"]}>2. CENNIK I OPŁATY</span>
-      <div className={styles["pointSection__row-box"]}>
+      <span className={styles['pointSection__title']}>2. CENNIK I OPŁATY</span>
+      <div className={styles['pointSection__row-box']}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className={styles["pointSection__row-box__image"]}
+          className={styles['pointSection__row-box__image']}
           width="437"
           height="381"
           viewBox="0 0 437 381"
@@ -186,12 +186,12 @@ const PointSection2: React.FC = () => {
           />
         </svg>
 
-        <div className={styles["pointSection__row-box__text"]}>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+        <div className={styles['pointSection__row-box__text']}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
-              CENNIK{" "}
+              CENNIK{' '}
             </span>
             Cennik zajęć w Nemo Sportowa Przygoda może się różnić w zależności
             od lokalizacji i rodzaju zajęć. Dlatego zalecamy sprawdzenie
@@ -200,9 +200,9 @@ const PointSection2: React.FC = () => {
             mogą się różnić także w zależności od pory roku czy dostępnych
             promocji.
           </span>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               JAK DOKONAĆ PŁATNOŚCI?
             </span>
@@ -227,10 +227,10 @@ const PointSection2: React.FC = () => {
                 za zgodą organizatora.
               </li>
             </ul>
-          </span>{" "}
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          </span>{' '}
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               OPŁATY ZA KURSY GRUPOWE
             </span>
@@ -239,18 +239,18 @@ const PointSection2: React.FC = () => {
             uzasadnionych przypadkach Organizator może wyrazić zgodę na
             rozłożenie płatności na raty.
           </span>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               OPŁATY ZA KURSY INDYWIDUALNE
             </span>
             Powinny zostać opłacone z góry za dany miesiąc, w terminie do 10
             dnia danego miesiąca.
           </span>
-          <span className={styles["pointSection__row-box__text__text-box"]}>
+          <span className={styles['pointSection__row-box__text__text-box']}>
             <span
-              className={styles["pointSection__row-box__text__text-box__title"]}
+              className={styles['pointSection__row-box__text__text-box__title']}
             >
               PŁATNOŚCI RATALNE
             </span>

@@ -7,12 +7,14 @@
     "dev": "node app.js",
     "build": "next build",
     "start": "NODE_ENV=production node app.js",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier . --write './**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
     "cookies-next": "^4.3.0",
     "express": "^4.21.1",
     "next": "14.2.12",
+    "prettier": "^3.4.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

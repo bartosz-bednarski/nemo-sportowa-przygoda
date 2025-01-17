@@ -1,86 +1,86 @@
-import VideosSection from "@/components/Globals/VideosSection";
-import styles from "../page.module.scss";
-import AboutCamps from "@/components/Globals/AboutCamps/AboutCamps";
-import ScrapWinter from "@/components/Ui/Scrap/ScrapWinter";
-import SignInCamps from "@/components/Globals/SignInCamps/SignInCamps";
-import CollabWinter from "@/components/Winter/CollabWinter";
-import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
-import Scrap2 from "@/components/Ui/Scrap/Scrap2";
-import { Metadata } from "next";
-import { POLKOLONIE_LISTA_2025 } from "@/utils/Winter/Polkolonie";
-import { OBOZY_LISTA_2025 } from "@/utils/Winter/Obozy";
-import { WEEKEND_NA_STOKU_LISTA_2025 } from "@/utils/Winter/WeekendoweNarty";
+import VideosSection from '@/components/Globals/VideosSection';
+import styles from '../page.module.scss';
+import AboutCamps from '@/components/Globals/AboutCamps/AboutCamps';
+import ScrapWinter from '@/components/Ui/Scrap/ScrapWinter';
+import SignInCamps from '@/components/Globals/SignInCamps/SignInCamps';
+import CollabWinter from '@/components/Winter/CollabWinter';
+import Scrap2 from '@/components/Ui/Scrap/Scrap2';
+import {Metadata} from 'next';
+import {POLKOLONIE_LISTA_2025} from '@/utils/Winter/Polkolonie';
+import {OBOZY_LISTA_2025} from '@/utils/Winter/Obozy';
+import {WEEKEND_NA_STOKU_LISTA_2025} from '@/utils/Winter/WeekendoweNarty';
+import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 
 export const metadata: Metadata = {
-  title: "Oferta ZIMOWA",
+  title: 'Oferta ZIMOWA',
   description:
-    "Sprawdź naszą ofertę na zimowe ferie małopolskie. Organizujemy półkolonie i obozy zimowe oraz weekendowe narty dla dzieci i młodzieży. KRAKÓW | BOBOWA | KORZENNA ",
-  metadataBase: new URL("https://nemosportowaprzygoda.pl/ofertazimowa"),
+    'Sprawdź naszą ofertę na zimowe ferie małopolskie. Organizujemy półkolonie i obozy zimowe oraz weekendowe narty dla dzieci i młodzieży. KRAKÓW | BOBOWA | KORZENNA ',
+  metadataBase: new URL('https://nemosportowaprzygoda.pl/ofertazimowa'),
   alternates: {
-    canonical: "https://nemosportowaprzygoda.pl/ofertazimowa",
+    canonical: 'https://nemosportowaprzygoda.pl/ofertazimowa',
     languages: {
-      "pl-PL": "/pl-PL",
+      'pl-PL': '/pl-PL',
     },
   },
 };
 
 const OfertaZimowaPage = () => {
   return (
-    <main className={styles.main} style={{ background: "white" }}>
+    <main className={styles.main} style={{background: 'white'}}>
       <VideosSection
         oneSticker={false}
         scrapColor="white"
         oneStickerContent={{
-          title: "OFERTA",
-          title2: "",
-          titleStrip: "ZIMOWA",
-          stripBgColor: "white",
-          stripTextColor: "darkBlue",
+          title: 'OFERTA',
+          title2: '',
+          titleStrip: 'ZIMOWA',
+          stripBgColor: 'white',
+          stripTextColor: 'darkBlue',
           scale: 2,
         }}
         col1={{
-          video: { src: "winter-mix-1.mp4", alt: "weekendowe narty" },
+          video: {src: 'winter-mix-1.mp4', alt: 'weekendowe narty'},
           stickerH2: {
-            title: "WYJAZDY",
-            titleStrip: "NARCIARSKIE",
-            stripBgColor: "white",
-            stripTextColor: "darkBlue",
+            title: 'WYJAZDY',
+            titleStrip: 'NARCIARSKIE',
+            stripBgColor: 'white',
+            stripTextColor: 'darkBlue',
             scale: 1.3,
           },
         }}
         col2={{
-          video: { src: "winter-mix-2.mp4", alt: "polkolonie zimowe" },
+          video: {src: 'winter-mix-2.mp4', alt: 'polkolonie zimowe'},
           stickerH2: {
-            title: "PÓŁKOLONIE",
-            titleStrip: "ZIMOWE",
-            stripBgColor: "white",
-            stripTextColor: "darkBlue",
+            title: 'PÓŁKOLONIE',
+            titleStrip: 'ZIMOWE',
+            stripBgColor: 'white',
+            stripTextColor: 'darkBlue',
             scale: 1.5,
           },
         }}
         col3={{
           video: {
-            src: "winter-mix-3.mp4",
-            alt: "obozy narciarskie",
+            src: 'winter-mix-3.mp4',
+            alt: 'obozy narciarskie',
           },
           stickerH2: {
-            title: "OBOZY",
-            titleStrip: "NARCIARSKIE",
-            stripBgColor: "white",
-            stripTextColor: "darkBlue",
+            title: 'OBOZY',
+            titleStrip: 'NARCIARSKIE',
+            stripBgColor: 'white',
+            stripTextColor: 'darkBlue',
             scale: 1.3,
           },
         }}
       />
       <AboutCamps
         stickerH2={{
-          title: "PÓŁKOLONIE",
-          titleStrip: "ZIMOWE",
-          stripBgColor: "darkBlue",
-          stripTextColor: "white",
+          title: 'PÓŁKOLONIE',
+          titleStrip: 'ZIMOWE',
+          stripBgColor: 'darkBlue',
+          stripTextColor: 'white',
           scale: 1.4,
           paddingBottom: 0,
-          titleColor: "darkBlue",
+          titleColor: 'darkBlue',
         }}
         right={false}
         aboutLeft="Udowadniamy, że zima to doskonały czas na aktywność! Dzieci
@@ -101,13 +101,13 @@ zimowej scenerii!
       <ScrapWinter bgColor="white" />
       <AboutCamps
         stickerH2={{
-          title: "OBOZY",
-          titleStrip: "ZIMOWE",
-          stripBgColor: "darkBlue",
-          stripTextColor: "white",
+          title: 'OBOZY',
+          titleStrip: 'ZIMOWE',
+          stripBgColor: 'darkBlue',
+          stripTextColor: 'white',
           scale: 1.8,
           paddingBottom: 0,
-          titleColor: "darkBlue",
+          titleColor: 'darkBlue',
         }}
         right={false}
         aboutLeft="Zapraszamy na zimowe obozy
@@ -131,13 +131,13 @@ sposób na aktywne ferie!"
       <CollabWinter />
       <AboutCamps
         stickerH2={{
-          title: "WEEKENDOWE",
-          titleStrip: "NARTY",
-          stripBgColor: "darkBlue",
-          stripTextColor: "white",
+          title: 'WEEKENDOWE',
+          titleStrip: 'NARTY',
+          stripBgColor: 'darkBlue',
+          stripTextColor: 'white',
           scale: 1.4,
           paddingBottom: 0,
-          titleColor: "darkBlue",
+          titleColor: 'darkBlue',
         }}
         right={false}
         aboutLeft="Udowadniamy, że zima to doskonały czas na aktywność! Dzieci

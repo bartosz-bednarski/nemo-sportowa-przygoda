@@ -1,4 +1,4 @@
-@import "../../../../styles/colors.scss";
+@import '../../../../styles/colors.scss';
 @keyframes show {
   from {
     background-size: 0% 100%;
@@ -58,7 +58,7 @@
   top: 0;
   left: 0;
   //   background-color: $mediumBlue;
-  background-image: url("/assets/ui/nav-background.png");
+  background-image: url('/assets/ui/nav-background.png');
   background-position: right;
   background-repeat: no-repeat;
   animation-name: show;

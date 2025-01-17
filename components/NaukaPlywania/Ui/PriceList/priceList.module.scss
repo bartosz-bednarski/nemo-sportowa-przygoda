@@ -1,0 +1,14 @@
+@use '../../../../styles/mixin.scss' as mixin;
+.priceList {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem 4rem;
+  justify-content: center;
+  gap: 4rem;
+  @include mixin.phone700px {
+    padding: 2rem;
+  }
+}

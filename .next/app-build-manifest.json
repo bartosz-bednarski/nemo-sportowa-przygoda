@@ -1,0 +1,217 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/chunks/app/_not-found/page-8fe123352fb65d0f.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/9892cdb8034a8446.css",
+      "static/css/8f87266d1294c9cf.css",
+      "static/chunks/app/layout-b01b7cb5ea0da125.js"
+    ],
+    "/loading": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/5db4a4dca1fa9fd0.css",
+      "static/chunks/app/loading-4010cf4025ff77cc.js"
+    ],
+    "/naszzespol/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/css/4616ccf15a895d0d.css",
+      "static/chunks/app/naszzespol/page-ff3c865c686389cd.js"
+    ],
+    "/galeria/[galeriaid]/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/9892cdb8034a8446.css",
+      "static/chunks/app/galeria/[galeriaid]/page-536cc80c9cfd1821.js"
+    ],
+    "/galeria/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/css/1cf8a9e5cf74bcc2.css",
+      "static/chunks/app/galeria/page-6939eaa149245b6e.js"
+    ],
+    "/naukaplywania/gorlice/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/css/6f84265cd14c0976.css",
+      "static/css/9892cdb8034a8446.css",
+      "static/chunks/app/naukaplywania/gorlice/page-f6aff29b731053aa.js"
+    ],
+    "/naukaplywania/krakow/bronowianka/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/css/6f84265cd14c0976.css",
+      "static/css/9892cdb8034a8446.css",
+      "static/chunks/app/naukaplywania/krakow/bronowianka/page-ab112ee74e36c554.js"
+    ],
+    "/naukaplywania/krakow/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/css/49c2f296d63306ac.css",
+      "static/css/9892cdb8034a8446.css",
+      "static/chunks/app/naukaplywania/krakow/page-8e7086704604b06e.js"
+    ],
+    "/naukaplywania/krakow/eisenberga/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/css/6f84265cd14c0976.css",
+      "static/css/9892cdb8034a8446.css",
+      "static/chunks/app/naukaplywania/krakow/eisenberga/page-e33d015094033901.js"
+    ],
+    "/naukaplywania/poradnikbasenowy/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/9892cdb8034a8446.css",
+      "static/chunks/app/naukaplywania/poradnikbasenowy/page-fe153e0d8fd9415f.js"
+    ],
+    "/naukaplywania/krakow/plywaczek/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/css/6f84265cd14c0976.css",
+      "static/css/9892cdb8034a8446.css",
+      "static/chunks/app/naukaplywania/krakow/plywaczek/page-122a1e2e07e83734.js"
+    ],
+    "/naukaplywania/korzenna/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/css/6f84265cd14c0976.css",
+      "static/css/9892cdb8034a8446.css",
+      "static/chunks/app/naukaplywania/korzenna/page-1e845e52ef75be2f.js"
+    ],
+    "/naukaplywania/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/css/06ff48cfef2282ea.css",
+      "static/css/9892cdb8034a8446.css",
+      "static/chunks/app/naukaplywania/page-cb16fe2e00426935.js"
+    ],
+    "/ofertazimowa/obozy/narciarskie/muszyna/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/chunks/app/ofertazimowa/obozy/narciarskie/muszyna/page-a16043310f9e5cc4.js"
+    ],
+    "/ofertazimowa/polkolonie/aktywnazima/bobowa/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/chunks/app/ofertazimowa/polkolonie/aktywnazima/bobowa/page-441b91807f5d3e2a.js"
+    ],
+    "/ofertaletnia/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/css/9892cdb8034a8446.css",
+      "static/chunks/app/ofertaletnia/page-8f0cb5e3f51da1c5.js"
+    ],
+    "/ofertazimowa/polkolonie/aktywnazima/korzenna/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/chunks/app/ofertazimowa/polkolonie/aktywnazima/korzenna/page-e89f4589e87d5244.js"
+    ],
+    "/ofertazimowa/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/css/9892cdb8034a8446.css",
+      "static/chunks/app/ofertazimowa/page-f01d30905dfcae16.js"
+    ],
+    "/ofertazimowa/polkolonie/bialeszalenstwo/bobowa/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/chunks/app/ofertazimowa/polkolonie/bialeszalenstwo/bobowa/page-1ffc0fce58d939fd.js"
+    ],
+    "/ofertazimowa/polkolonie/bialeszalenstwo/korzenna/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/chunks/app/ofertazimowa/polkolonie/bialeszalenstwo/korzenna/page-01aa74a4213487e6.js"
+    ],
+    "/ofertazimowa/polkolonie/aktywnazima/luzna/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/chunks/app/ofertazimowa/polkolonie/aktywnazima/luzna/page-7d84ac6f1725cadc.js"
+    ],
+    "/ofertazimowa/weekend-na-stoku/termin-1/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/chunks/app/ofertazimowa/weekend-na-stoku/termin-1/page-5113ed14d1473b95.js"
+    ],
+    "/ofertazimowa/weekend-na-stoku/termin-2/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/chunks/app/ofertazimowa/weekend-na-stoku/termin-2/page-fe55916a900fd8c7.js"
+    ],
+    "/ofertazimowa/weekend-na-stoku/termin-3/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/chunks/app/ofertazimowa/weekend-na-stoku/termin-3/page-eab0d91e40a6604c.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/css/55b984601a74d7df.css",
+      "static/css/9892cdb8034a8446.css",
+      "static/chunks/app/page-3b3fbda0039c791d.js"
+    ],
+    "/ofertazimowa/weekend-na-stoku/termin-4/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/chunks/app/ofertazimowa/weekend-na-stoku/termin-4/page-40e4b29ff08f70f1.js"
+    ],
+    "/regulamin/page": [
+      "static/chunks/webpack-513f1ba909e30dc9.js",
+      "static/chunks/main-app-557709e0ba496caf.js",
+      "static/css/ce76fd885d7cf5df.css",
+      "static/css/e2d15c8036479d9f.css",
+      "static/chunks/app/regulamin/page-ecaee288e872ed8e.js"
+    ]
+  }
+}

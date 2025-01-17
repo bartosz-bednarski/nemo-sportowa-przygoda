@@ -1,5 +1,5 @@
-@import "../../../styles/colors.scss";
-@import "../../../styles/fonts.scss";
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
 .schedule {
   box-sizing: border-box;
   display: flex;
@@ -17,7 +17,7 @@
     &__header {
       color: rgba(15, 72, 183, 0.27);
       text-align: center;
-      font-family: "poppins-700";
+      font-family: 'poppins-700';
       font-size: 6rem;
       margin: 0;
     }
@@ -47,7 +47,7 @@
             border: 3px solid $basicOrange;
             font-size: 1.2rem;
             color: $basicOrange;
-            font-family: "poppins-600";
+            font-family: 'poppins-600';
           }
           &__about {
             display: flex;
@@ -62,7 +62,7 @@
             border-bottom: 3px solid $darkBlue;
             font-size: 1.2rem;
             color: $darkBlue;
-            font-family: "poppins-600";
+            font-family: 'poppins-600';
           }
         }
         &__sublist {
@@ -85,13 +85,13 @@
             &__title {
               font-size: 1.1rem;
               color: $basicOrange;
-              font-family: "poppins-600";
+              font-family: 'poppins-600';
               text-align: center;
             }
             &__about {
               font-size: 1rem;
               color: $darkBlue;
-              font-family: "poppins-600";
+              font-family: 'poppins-600';
               text-align: center;
             }
           }

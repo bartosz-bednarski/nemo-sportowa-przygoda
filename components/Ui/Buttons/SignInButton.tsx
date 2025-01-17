@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
-import styles from "./buttons.module.scss";
-import Link from "next/link";
-import { COLORS } from "@/utils/UI/colors";
-import { signInButtonType } from "@/types/UI/buttons";
+'use client';
+import React from 'react';
+import styles from './buttons.module.scss';
+import Link from 'next/link';
+import {COLORS} from '@/utils/UI/colors';
+import {signInButtonType} from '@/types/UI/buttons';
 
 const SingInButton: React.FC<signInButtonType> = ({
   bgColor,
@@ -14,7 +14,7 @@ const SingInButton: React.FC<signInButtonType> = ({
   return (
     <Link
       className={styles.signInButton}
-      style={{ background: COLORS[bgColor], color: COLORS[textColor] }}
+      style={{background: COLORS[bgColor], color: COLORS[textColor]}}
       href={href}
     >
       <span>{title}</span>

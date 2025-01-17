@@ -1,130 +1,127 @@
-import {
-  aboutType,
-  groupsType,
-  instructorsType,
-  poolsType,
-} from "@/types/NaukaPlywania/naukaPlywania";
-import { customColors } from "@/types/UI/colors";
-import { GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS } from "../Grupy/grupyPoziomZaawansowania";
+import {instructorsType, poolsType} from '@/types/NaukaPlywania/naukaPlywania';
+import {customColors} from '@/types/UI/colors';
+import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
+import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
+import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 
 type naukaPlywania = {
   zRodzicami: {
     backgroundColor: customColors;
-    about: aboutType;
+    about: NaukaPływaniaAboutPropsType;
     instructors: instructorsType;
     pools: poolsType;
-    groups: groupsType;
+    groups: GroupsPropsType;
   };
   dzieciMlodziez: {
     backgroundColor: customColors;
-    about: aboutType;
+    about: NaukaPływaniaAboutPropsType;
     instructors: instructorsType;
     pools: poolsType;
-    groups: groupsType;
+    groups: GroupsPropsType;
   };
   dorosli: {
     backgroundColor: customColors;
-    about: aboutType;
+    about: NaukaPływaniaAboutPropsType;
     instructors: instructorsType;
     pools: poolsType;
-    groups: groupsType;
+    groups: GroupsPropsType;
   };
 };
 export const NAUKA_PLYWANIA: naukaPlywania = {
   zRodzicami: {
-    backgroundColor: "lightBlue",
+    backgroundColor: 'lightBlue',
     about: {
       stickerH2: {
-        title: "NAUKA PŁYWANIA",
-        titleStrip: "Z RODZICAMI",
-        scale: 1.25,
-        stripTextColor: "lightBlue",
-        stripBgColor: "white",
-        paddingBottom: 10,
+        title: 'NAUKA PŁYWANIA',
+        titleStrip: 'Z RODZICAMI',
+        stripTextColor: 'lightBlue',
+        stripBgColor: 'white',
       },
       aboutTextPoppins: {
-        titleColor: "lightBlue",
-        title: "Zajęcia od 3 miesiąca życia razem z rodzicem. BABY SWIM",
+        titleColor: 'lightBlue',
+        title: 'Zajęcia od 3 miesiąca życia razem z rodzicem. BABY SWIM',
         description:
-          "Nasze zajęcia są przeznaczone dla dzieci od 3. miesiąca życia, które uczestniczą w nich razem z rodzicem. To doskonała okazja, aby wspólnie odkrywać radość z zabawy w wodzie, wspierać rozwój malucha oraz wzmacniać więzi emocjonalne. Zajęcia pomagają oswoić dzieci z wodą w przyjaznej atmosferze, poprzez naukę przez zabawę, co wpływa pozytywnie zarówno na rozwój fizyczny, jak i psychiczny najmłodszych. U nas rodzice nie muszą umieć pływać – cała kadra instruktorska pomoże Wam bezpiecznie przejść przez każde ćwiczenie.",
+          'Nasze zajęcia są przeznaczone dla dzieci od 3. miesiąca życia, które uczestniczą w nich razem z rodzicem. To doskonała okazja, aby wspólnie odkrywać radość z zabawy w wodzie, wspierać rozwój malucha oraz wzmacniać więzi emocjonalne. Zajęcia pomagają oswoić dzieci z wodą w przyjaznej atmosferze, poprzez naukę przez zabawę, co wpływa pozytywnie zarówno na rozwój fizyczny, jak i psychiczny najmłodszych. U nas rodzice nie muszą umieć pływać – cała kadra instruktorska pomoże Wam bezpiecznie przejść przez każde ćwiczenie.',
+        alignItems: 'flex-start',
+        textAlign: 'left',
       },
       image: {
-        src: "lessonsTypes/zRodzicami.webp",
-        alt: "nauka pływania niemowlaki",
+        src: 'lessonsTypes/zRodzicami.webp',
+        alt: 'nauka pływania niemowlaki',
       },
     },
     instructors: {
-      backgroundText: "KADRA",
+      backgroundText: 'KADRA',
       stripH3: {
-        title: "INSTRUKTORZY",
+        title: 'INSTRUKTORZY',
         scale: 1.2,
-        stripBgColor: "white",
-        stripTextColor: "lightBlue",
-        marginBottom: "4rem",
+        stripBgColor: 'white',
+        stripTextColor: 'lightBlue',
+        marginBottom: '4rem',
       },
       instructors: [
         {
-          instructorName: "WIKTORIA FRYCZEK",
+          instructorName: 'WIKTORIA FRYCZEK',
           scale: 0.7,
-          img1: "instructor-1.png",
-          img2: "instructor-1.png",
-          href: "/",
+          img1: 'instructor-1.png',
+          img2: 'instructor-1.png',
+          href: '/',
         },
         {
-          instructorName: "WIKTORIA FRYCZ",
+          instructorName: 'WIKTORIA FRYCZ',
           scale: 0.7,
-          img1: "instructor-1.png",
-          img2: "instructor-1.png",
-          href: "/",
+          img1: 'instructor-1.png',
+          img2: 'instructor-1.png',
+          href: '/',
         },
         {
-          instructorName: "WIKTORIA FRYCZE",
+          instructorName: 'WIKTORIA FRYCZE',
           scale: 0.7,
-          img1: "instructor-1.png",
-          img2: "instructor-1.png",
-          href: "/",
+          img1: 'instructor-1.png',
+          img2: 'instructor-1.png',
+          href: '/',
         },
       ],
     },
     pools: {
       stripH3: {
-        title: "LOKALIZACJE",
+        title: 'LOKALIZACJE',
         scale: 1.2,
-        stripBgColor: "white",
-        stripTextColor: "lightBlue",
-        marginBottom: "",
+        stripBgColor: 'white',
+        stripTextColor: 'lightBlue',
+        marginBottom: '',
       },
-      backgroundText: "LOKALIZACJE",
+      backgroundText: 'LOKALIZACJE',
       swimmingPools: [
         {
-          title: "BASEN GORLICE",
-          image: "gorlice.webp",
-          url: "/naukaplywania/gorlice",
+          title: 'BASEN GORLICE',
+          image: 'gorlice.webp',
+          url: '/naukaplywania/gorlice',
         },
         {
-          title: "BASEN EISENBERGA",
-          image: "eisenberga.webp",
-          url: "/naukaplywania/krakow/eisenberga",
+          title: 'BASEN EISENBERGA',
+          image: 'eisenberga.webp',
+          url: '/naukaplywania/krakow/eisenberga',
         },
         {
-          title: "BASEN BRONOWIANKA",
-          image: "bronowianka.webp",
-          url: "/naukaplywania/krakow/bronowianka",
+          title: 'BASEN BRONOWIANKA',
+          image: 'bronowianka.webp',
+          url: '/naukaplywania/krakow/bronowianka',
         },
         {
-          title: "BASEN PŁYWACZEK",
-          image: "plywaczek.webp",
-          url: "/naukaplywania/krakow/plywaczek",
+          title: 'BASEN PŁYWACZEK',
+          image: 'plywaczek.webp',
+          url: '/naukaplywania/krakow/plywaczek',
         },
       ],
     },
     groups: {
       stripH2: {
-        type: "h2",
-        title: "GRUPY",
+        type: 'h2',
+        title: 'GRUPY',
         scale: 1.4,
-        stripBgColor: "white",
-        stripTextColor: "darkBlue",
+        stripBgColor: 'white',
+        stripTextColor: 'darkBlue',
       },
       groups: [
         GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.trzyMiesiace,
@@ -137,94 +134,94 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     },
   },
   dzieciMlodziez: {
-    backgroundColor: "mediumBlue",
+    backgroundColor: 'mediumBlue',
     about: {
       stickerH2: {
-        title: "NAUKA PŁYWANIA",
-        titleStrip: "DZIECI I MŁODZIEŻ",
-        scale: 1.8,
-        stripTextColor: "mediumBlue",
-        stripBgColor: "white",
-        paddingBottom: 10,
+        title: 'NAUKA PŁYWANIA',
+        titleStrip: 'DZIECI I MŁODZIEŻ',
+        stripTextColor: 'mediumBlue',
+        stripBgColor: 'white',
       },
       aboutTextPoppins: {
-        titleColor: "mediumBlue",
-        title: "Dzieci  od  3  lat  i  młodzież do 18 lat",
+        titleColor: 'mediumBlue',
+        title: 'Dzieci  od  3  lat  i  młodzież do 18 lat',
         description:
-          "Dzieci uczą się podstaw pływania w formie zabawy. Poprawiają technikę i koordynację, zdobywając kolejne umiejętności, w kraulu oraz grzbiecie. Młodzież uczy się pływać czterema stylami (styl dowolny, grzbietowy, klasyczny, motylkowy) oraz technik nawrotów. Zajęcia pomagają doskonalić technikę, poprawiać wytrzymałość i przygotowują do ewentualnych startów w zawodach pływackich.",
+          'Dzieci uczą się podstaw pływania w formie zabawy. Poprawiają technikę i koordynację, zdobywając kolejne umiejętności, w kraulu oraz grzbiecie. Młodzież uczy się pływać czterema stylami (styl dowolny, grzbietowy, klasyczny, motylkowy) oraz technik nawrotów. Zajęcia pomagają doskonalić technikę, poprawiać wytrzymałość i przygotowują do ewentualnych startów w zawodach pływackich.',
+        alignItems: 'flex-start',
+        textAlign: 'left',
       },
       image: {
-        src: "lessonsTypes/dzieciMlodziez2.webp",
-        alt: "nauka pływania dzieci i mlodziez",
+        src: 'lessonsTypes/dzieciMlodziez2.webp',
+        alt: 'nauka pływania dzieci i mlodziez',
       },
     },
     instructors: {
-      backgroundText: "KADRA",
+      backgroundText: 'KADRA',
       stripH3: {
-        title: "INSTRUKTORZY",
+        title: 'INSTRUKTORZY',
         scale: 1.2,
-        stripBgColor: "white",
-        stripTextColor: "mediumBlue",
-        marginBottom: "4rem",
+        stripBgColor: 'white',
+        stripTextColor: 'mediumBlue',
+        marginBottom: '4rem',
       },
       instructors: [
         {
-          instructorName: "WIKTORIA FRYCZEK",
+          instructorName: 'WIKTORIA FRYCZEK',
           scale: 0.7,
-          img1: "instructor-1.png",
-          img2: "instructor-1.png",
-          href: "/",
+          img1: 'instructor-1.png',
+          img2: 'instructor-1.png',
+          href: '/',
         },
         {
-          instructorName: "WIKTORIA FRYCZ",
+          instructorName: 'WIKTORIA FRYCZ',
           scale: 0.7,
-          img1: "instructor-1.png",
-          img2: "instructor-1.png",
-          href: "/",
+          img1: 'instructor-1.png',
+          img2: 'instructor-1.png',
+          href: '/',
         },
         {
-          instructorName: "WIKTORIA FRYCZE",
+          instructorName: 'WIKTORIA FRYCZE',
           scale: 0.7,
-          img1: "instructor-1.png",
-          img2: "instructor-1.png",
-          href: "/",
+          img1: 'instructor-1.png',
+          img2: 'instructor-1.png',
+          href: '/',
         },
       ],
     },
     pools: {
       stripH3: {
-        title: "LOKALIZACJE",
+        title: 'LOKALIZACJE',
         scale: 1.2,
-        stripBgColor: "white",
-        stripTextColor: "mediumBlue",
-        marginBottom: "",
+        stripBgColor: 'white',
+        stripTextColor: 'mediumBlue',
+        marginBottom: '',
       },
-      backgroundText: "LOKALIZACJE",
+      backgroundText: 'LOKALIZACJE',
       swimmingPools: [
         {
-          title: "BASEN KORZENNA",
-          image: "korzenna.webp",
-          url: "/naukaplywania/korzenna",
+          title: 'BASEN KORZENNA',
+          image: 'korzenna.webp',
+          url: '/naukaplywania/korzenna',
         },
         {
-          title: "BASEN EISENBERGA",
-          image: "eisenberga.webp",
-          url: "/naukaplywania/krakow/eisenberga",
+          title: 'BASEN EISENBERGA',
+          image: 'eisenberga.webp',
+          url: '/naukaplywania/krakow/eisenberga',
         },
         {
-          title: "BASEN PŁYWACZEK",
-          image: "plywaczek.webp",
-          url: "/naukaplywania/krakow/plywaczek",
+          title: 'BASEN PŁYWACZEK',
+          image: 'plywaczek.webp',
+          url: '/naukaplywania/krakow/plywaczek',
         },
       ],
     },
     groups: {
       stripH2: {
-        type: "h2",
-        title: "GRUPY",
+        type: 'h2',
+        title: 'GRUPY',
         scale: 1.3,
-        stripBgColor: "white",
-        stripTextColor: "mediumBlue",
+        stripBgColor: 'white',
+        stripTextColor: 'mediumBlue',
       },
       groups: [
         GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.poczatkujacaDzieci,
@@ -235,94 +232,94 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     },
   },
   dorosli: {
-    backgroundColor: "darkBlue",
+    backgroundColor: 'darkBlue',
     about: {
       stickerH2: {
-        title: "NAUKA PŁYWANIA",
-        titleStrip: "DOROŚLI",
-        scale: 1.1,
-        stripTextColor: "darkBlue",
-        stripBgColor: "white",
-        paddingBottom: 10,
+        title: 'NAUKA PŁYWANIA',
+        titleStrip: 'DOROŚLI',
+        stripTextColor: 'darkBlue',
+        stripBgColor: 'white',
       },
       aboutTextPoppins: {
-        titleColor: "darkBlue",
-        title: "DOROŚLI",
+        titleColor: 'darkBlue',
+        title: 'DOROŚLI',
         description:
-          "Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.",
+          'Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.',
+        alignItems: 'flex-start',
+        textAlign: 'left',
       },
       image: {
-        src: "lessonsTypes/dorosli.webp",
-        alt: "nauka pływania dorośli",
+        src: 'lessonsTypes/dorosli.webp',
+        alt: 'nauka pływania dorośli',
       },
     },
     instructors: {
-      backgroundText: "KADRA",
+      backgroundText: 'KADRA',
       stripH3: {
-        title: "INSTRUKTORZY",
+        title: 'INSTRUKTORZY',
         scale: 1.2,
-        stripBgColor: "white",
-        stripTextColor: "darkBlue",
-        marginBottom: "4rem",
+        stripBgColor: 'white',
+        stripTextColor: 'darkBlue',
+        marginBottom: '4rem',
       },
       instructors: [
         {
-          instructorName: "WIKTORIA FRYCZEK",
+          instructorName: 'WIKTORIA FRYCZEK',
           scale: 0.7,
-          img1: "instructor-1.png",
-          img2: "instructor-1.png",
-          href: "/",
+          img1: 'instructor-1.png',
+          img2: 'instructor-1.png',
+          href: '/',
         },
         {
-          instructorName: "WIKTORIA FRYCZ",
+          instructorName: 'WIKTORIA FRYCZ',
           scale: 0.7,
-          img1: "instructor-1.png",
-          img2: "instructor-1.png",
-          href: "/",
+          img1: 'instructor-1.png',
+          img2: 'instructor-1.png',
+          href: '/',
         },
         {
-          instructorName: "WIKTORIA FRYCZE",
+          instructorName: 'WIKTORIA FRYCZE',
           scale: 0.7,
-          img1: "instructor-1.png",
-          img2: "instructor-1.png",
-          href: "/",
+          img1: 'instructor-1.png',
+          img2: 'instructor-1.png',
+          href: '/',
         },
       ],
     },
     pools: {
       stripH3: {
-        title: "LOKALIZACJE",
+        title: 'LOKALIZACJE',
         scale: 1.2,
-        stripBgColor: "white",
-        stripTextColor: "darkBlue",
-        marginBottom: "",
+        stripBgColor: 'white',
+        stripTextColor: 'darkBlue',
+        marginBottom: '',
       },
-      backgroundText: "LOKALIZACJE",
+      backgroundText: 'LOKALIZACJE',
       swimmingPools: [
         {
-          title: "BASEN KORZENNA",
-          image: "korzenna.webp",
-          url: "/naukaplywania/korzenna",
+          title: 'BASEN KORZENNA',
+          image: 'korzenna.webp',
+          url: '/naukaplywania/korzenna',
         },
         {
-          title: "BASEN EISENBERGA",
-          image: "eisenberga.webp",
-          url: "/naukaplywania/krakow/eisenberga",
+          title: 'BASEN EISENBERGA',
+          image: 'eisenberga.webp',
+          url: '/naukaplywania/krakow/eisenberga',
         },
         {
-          title: "BASEN PŁYWACZEK",
-          image: "plywaczek.webp",
-          url: "/naukaplywania/krakow/plywaczek",
+          title: 'BASEN PŁYWACZEK',
+          image: 'plywaczek.webp',
+          url: '/naukaplywania/krakow/plywaczek',
         },
       ],
     },
     groups: {
       stripH2: {
-        type: "h2",
-        title: "GRUPY",
+        type: 'h2',
+        title: 'GRUPY',
         scale: 1.3,
-        stripBgColor: "white",
-        stripTextColor: "darkBlue",
+        stripBgColor: 'white',
+        stripTextColor: 'darkBlue',
       },
       groups: [
         GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.poczatkujacaDorosli,

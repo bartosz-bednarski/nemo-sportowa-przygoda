@@ -1,0 +1,71 @@
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  @include mixin.phone575px {
+    width: 300px;
+  }
+  gap: 0.5rem;
+  &:hover {
+    cursor: pointer;
+    .header {
+      color: colors.$basicOrange !important;
+    }
+  }
+}
+
+.imageBox {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  @include mixin.phone575px {
+    width: 300px;
+    height: 200px;
+  }
+}
+.title {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 4rem;
+  width: 80%;
+  @include mixin.phone575px {
+    width: 80%;
+  }
+}
+.header {
+  margin: 0;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 800;
+  z-index: 4;
+  text-align: center;
+  color: colors.$basicOrange;
+  transition: color 0.5s;
+  @include mixin.phone575px {
+    font-size: 1rem;
+  }
+}
+.scrapLeft {
+  display: block;
+  position: absolute;
+  left: -19px;
+  height: 100%;
+  top: 0;
+  svg path {
+    fill: red;
+  }
+}
+.scrapRight {
+  display: block;
+  position: absolute;
+  right: -19px;
+  height: 100%;
+  top: 0;
+}

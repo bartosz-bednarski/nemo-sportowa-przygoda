@@ -1,43 +1,44 @@
-"use client";
-import React from "react";
-import styles from "./hillSides.module.scss";
-import { hillSidesCampComponentType } from "@/types/SummerWinter/Camps";
-import StickerH2 from "@/components/Ui/StickerH2/StickerH2";
-import Image from "next/image";
+'use client';
+import React from 'react';
+import styles from './hillSides.module.scss';
+import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import Image from 'next/image';
 
-const HillSides: React.FC<{ hillSides: hillSidesCampComponentType }> = ({
-  hillSides,
-}) => {
+export interface HillSidesPropsType {
+  title1: string;
+  title2: string;
+  list: {
+    title: string;
+    image: string;
+    listAbout: string[];
+  }[];
+}
+
+const HillSides: React.FC<{hillSides: HillSidesPropsType}> = ({hillSides}) => {
   return (
     <div className={styles.hillSides}>
-      <span className={styles["hillSides__header"]}>
+      <span className={styles.header}>
         <StickerH2
           title="OPISY"
           titleStrip="STOKÓW"
           titleColor="darkBlue"
           stripBgColor="darkBlue"
           stripTextColor="white"
-          scale={1.5}
-          paddingBottom={0}
         />
       </span>
-      <div className={styles["hillSides__list"]}>
+      <div className={styles.list}>
         {hillSides.list.map((item, index) => (
-          <div className={styles["hillSides__list__row-box"]} key={index}>
-            <div className={styles["hillSides__list__row-box__content"]}>
-              <span
-                className={styles["hillSides__list__row-box__content__header"]}
-              >
-                {item.title}
-              </span>
-              <ul className={styles["hillSides__list__row-box__content__list"]}>
+          <div className={styles.rowBox} key={index}>
+            <div className={styles.content}>
+              <span className={styles.contentHeader}>{item.title}</span>
+              <ul className={styles.contentList}>
                 {item.listAbout.map((listItem, index) => (
                   <li key={`listItem-${index}`}>{listItem}</li>
                 ))}
               </ul>
             </div>
             <Image
-              className={styles["hillSides__list__row-box__image"]}
+              className={styles.image}
               src={`/assets/winter/stoki/${item.image}.webp`}
               width={960}
               height={366}
@@ -50,4 +51,5 @@ const HillSides: React.FC<{ hillSides: hillSidesCampComponentType }> = ({
     </div>
   );
 };
+
 export default HillSides;

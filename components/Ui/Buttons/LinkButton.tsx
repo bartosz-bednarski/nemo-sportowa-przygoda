@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
-import styles from "./buttons.module.scss";
-import { customColors } from "@/types/UI/colors";
-import { COLORS } from "@/utils/UI/colors";
-import Link from "next/link";
+'use client';
+import React from 'react';
+import styles from './buttons.module.scss';
+import {customColors} from '@/types/UI/colors';
+import {COLORS} from '@/utils/UI/colors';
+import Link from 'next/link';
 
 const LinkButton: React.FC<{
   bgColor: customColors;
@@ -11,7 +11,7 @@ const LinkButton: React.FC<{
   title: string;
   href: string;
   onClick?: () => void;
-}> = ({ textColor, title, href, onClick }) => {
+}> = ({textColor, title, href, onClick}) => {
   return (
     <Link
       className={styles.linkButton}
@@ -19,7 +19,7 @@ const LinkButton: React.FC<{
       href={href}
       onClick={onClick}
     >
-      <span>{title}</span>{" "}
+      <span>{title}</span>{' '}
       <svg
         width="25"
         height="25"

@@ -1,23 +1,22 @@
-"use client";
-import React from "react";
-import styles from "./titleStripDescription.module.scss";
-import StripH3 from "../StripH3/StripH3";
-import { customColors } from "@/types/UI/colors";
+'use client';
+import React from 'react';
+import styles from './titleStripDescription.module.scss';
+import {customColors} from '@/types/UI/colors';
+import StripH4 from '../Strips/StripH4/StripH4';
 
 const TitleStripDescription: React.FC<{
   title: string;
   stripTextColor: customColors;
   stripBgColor: customColors;
-  scale: number;
   description: string;
-}> = ({ title, stripBgColor, stripTextColor, scale, description }) => {
+}> = ({title, stripBgColor, stripTextColor, description}) => {
   return (
-    <div className={styles["titleStripDescription"]}>
-      <StripH3
+    <div className={styles['titleStripDescription']}>
+      <StripH4
+        type="h4"
         title={title}
         stripTextColor={stripTextColor}
         stripBgColor={stripBgColor}
-        scale={scale}
       />
       <p>{description}</p>
     </div>

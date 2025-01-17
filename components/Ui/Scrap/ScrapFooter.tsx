@@ -1,8 +1,8 @@
-"use client";
-import { customColors } from "@/types/UI/colors";
-import { COLORS } from "@/utils/UI/colors";
-import React from "react";
-const ScrapFooter: React.FC<{ color: customColors }> = ({ color }) => {
+'use client';
+import {customColors} from '@/types/UI/colors';
+import {COLORS} from '@/utils/UI/colors';
+import React from 'react';
+const ScrapFooter: React.FC<{color: customColors}> = ({color}) => {
   return (
     <svg
       width="1922"
@@ -11,10 +11,10 @@ const ScrapFooter: React.FC<{ color: customColors }> = ({ color }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       style={{
-        position: "absolute",
-        width: "100%",
-        bottom: "-21px",
-        rotate: "180deg",
+        position: 'absolute',
+        width: '100%',
+        bottom: '-21px',
+        rotate: '180deg',
         zIndex: 3,
       }}
     >

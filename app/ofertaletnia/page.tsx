@@ -1,80 +1,80 @@
-import AboutCamps from "@/components/Globals/AboutCamps/AboutCamps";
-import styles from "../page.module.scss";
-import VideosSection from "@/components/Globals/VideosSection";
-import SignInCamps from "@/components/Globals/SignInCamps/SignInCamps";
+import AboutCamps from '@/components/Globals/AboutCamps/AboutCamps';
+import styles from '../page.module.scss';
+import VideosSection from '@/components/Globals/VideosSection';
+import SignInCamps from '@/components/Globals/SignInCamps/SignInCamps';
 // import { POLKOLONIE_LATO_COVERS } from "@/utils/Summer/Polkolonie";
-import Scrap2 from "@/components/Ui/Scrap/Scrap2";
-import CollabSummer from "@/components/Summer/CollabSummer";
-import GalleryLink from "@/components/Globals/GalleryLink/GalleryLink";
-import { Metadata } from "next";
-import { COLORS } from "@/utils/UI/colors";
+import Scrap2 from '@/components/Ui/Scrap/Scrap2';
+import CollabSummer from '@/components/Summer/CollabSummer';
+import {Metadata} from 'next';
+import {COLORS} from '@/utils/UI/colors';
+import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 
 export const metadata: Metadata = {
-  title: "Oferta LETNIA",
+  title: 'Oferta LETNIA',
   description:
-    "Zapraszamy do sprawdzenia naszej oferty letniej. Organizujemy półkolonie letnie dla dzieci oraz obozy młodzieżowe na terenie Małopolski - KRAKÓW | BOBOWA | KORZENNA.",
-  metadataBase: new URL("https://nemosportowaprzygoda.pl/ofertaletnia"),
+    'Zapraszamy do sprawdzenia naszej oferty letniej. Organizujemy półkolonie letnie dla dzieci oraz obozy młodzieżowe na terenie Małopolski - KRAKÓW | BOBOWA | KORZENNA.',
+  metadataBase: new URL('https://nemosportowaprzygoda.pl/ofertaletnia'),
   alternates: {
-    canonical: "https://nemosportowaprzygoda.pl/ofertaletnia",
+    canonical: 'https://nemosportowaprzygoda.pl/ofertaletnia',
     languages: {
-      "pl-PL": "/pl-PL",
+      'pl-PL': '/pl-PL',
     },
   },
 };
 const OfertaLetniaPage = () => {
   return (
-    <main className={styles.main} style={{ background: COLORS["basicGreen"] }}>
+    <main className={styles.main} style={{background: COLORS['basicGreen']}}>
       <VideosSection
         oneSticker={true}
         scrapColor="basicGreen"
         oneStickerContent={{
-          title: "OFERTA",
-          title2: "",
-          titleStrip: "LETNIA",
-          stripBgColor: "basicGreen",
-          stripTextColor: "white",
+          title: 'OFERTA',
+          title2: '',
+          titleStrip: 'LETNIA',
+          stripBgColor: 'basicGreen',
+          stripTextColor: 'white',
           scale: 2,
         }}
         col1={{
-          video: { src: "summer-mix-1.mp4", alt: "nauka pływania niemowlaki" },
+          video: {src: 'summer-mix-1.mp4', alt: 'nauka pływania niemowlaki'},
           stickerH2: {
-            title: "MAŁE",
-            titleStrip: "BOMBELKI",
-            stripBgColor: "lightBlue",
-            stripTextColor: "white",
+            title: 'MAŁE',
+            titleStrip: 'BOMBELKI',
+            stripBgColor: 'lightBlue',
+            stripTextColor: 'white',
             scale: 1.15,
           },
         }}
         col2={{
           video: {
-            src: "summer-mix-2.mp4",
-            alt: "nauka pływania dzieci i mlodzież",
+            src: 'summer-mix-2.mp4',
+            alt: 'nauka pływania dzieci i mlodzież',
           },
           stickerH2: {
-            title: "ŚREDNIE",
-            titleStrip: "BOMBELKI",
-            stripBgColor: "mediumBlue",
-            stripTextColor: "white",
+            title: 'ŚREDNIE',
+            titleStrip: 'BOMBELKI',
+            stripBgColor: 'mediumBlue',
+            stripTextColor: 'white',
             scale: 1.15,
           },
         }}
         col3={{
-          video: { src: "summer-mix-3.mp4", alt: "nauka pływania dorośli" },
+          video: {src: 'summer-mix-3.mp4', alt: 'nauka pływania dorośli'},
           stickerH2: {
-            title: "DUŻE",
-            titleStrip: "BOMBELKI",
-            stripBgColor: "darkBlue",
-            stripTextColor: "white",
+            title: 'DUŻE',
+            titleStrip: 'BOMBELKI',
+            stripBgColor: 'darkBlue',
+            stripTextColor: 'white',
             scale: 1.15,
           },
         }}
       />
       <AboutCamps
         stickerH2={{
-          title: "PÓŁKOLONIE",
-          titleStrip: "LETNIE",
-          stripBgColor: "white",
-          stripTextColor: "basicGreen",
+          title: 'PÓŁKOLONIE',
+          titleStrip: 'LETNIE',
+          stripBgColor: 'white',
+          stripTextColor: 'basicGreen',
           scale: 1.4,
           paddingBottom: 0,
         }}
@@ -94,10 +94,10 @@ const OfertaLetniaPage = () => {
       />
       <AboutCamps
         stickerH2={{
-          title: "OBOZY",
-          titleStrip: "LETNIE",
-          stripBgColor: "white",
-          stripTextColor: "basicGreen",
+          title: 'OBOZY',
+          titleStrip: 'LETNIE',
+          stripBgColor: 'white',
+          stripTextColor: 'basicGreen',
           scale: 1.4,
           paddingBottom: 0,
         }}

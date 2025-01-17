@@ -1,15 +1,19 @@
+@use '../../../styles/mixin.scss' as mixin;
+@import '../../../styles/fonts.scss';
 .titleStripDescription {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 400px;
+  @include mixin.phone700px {
+    width: 100%;
+  }
   p {
     text-align: center;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .titleStripDescription {
-    width: 300px;
+    font-family: 'poppins-400';
+    @include mixin.phone500px {
+      font-size: 0.8rem;
+    }
   }
 }

@@ -1,30 +1,29 @@
-"use client";
-import React from "react";
-import styles from "./localization.module.scss";
-import StripH2 from "@/components/Ui/StripH2/StripH2";
-import { localizationComponentType } from "@/types/SummerWinter/Winter";
+'use client';
+import React from 'react';
+import styles from './localization.module.scss';
+import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
+import {localizationComponentType} from '@/types/SummerWinter/Winter';
 
-const Localization: React.FC<{ localization: localizationComponentType }> = ({
+const Localization: React.FC<{localization: localizationComponentType}> = ({
   localization,
 }) => {
   return (
-    <div className={styles["localization"]}>
-      <div className={styles["localization__content"]}>
+    <div className={styles['localization']}>
+      <div className={styles['localization__content']}>
         <StripH2
           type="h2"
           title="LOKALIZACJA"
           stripTextColor="white"
           stripBgColor="darkBlue"
-          scale={1.1}
         />
         {localization.localizationDescription.map((text, index) => (
-          <span className={styles["localization__content__text"]} key={index}>
+          <span className={styles['localization__content__text']} key={index}>
             {text}
           </span>
         ))}
       </div>
       <svg
-        className={styles["localization__svg-image"]}
+        className={styles['localization__svg-image']}
         xmlns="http://www.w3.org/2000/svg"
         width="917"
         height="407"
