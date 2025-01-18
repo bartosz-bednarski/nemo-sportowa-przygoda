@@ -1,6 +1,7 @@
-import {campsCoversType, weekendNaStokuType} from '@/types/SummerWinter/Camps';
+import {weekendNaStokuType} from '@/types/SummerWinter/Camps';
+import {CampsCoversType} from './Obozy';
 
-export const WEEKEND_NA_STOKU_LISTA_2025: campsCoversType = [
+export const WEEKEND_NA_STOKU_LISTA_2025: CampsCoversType = [
   {
     active: true,
     title: 'WEEKEND NA STOKU',

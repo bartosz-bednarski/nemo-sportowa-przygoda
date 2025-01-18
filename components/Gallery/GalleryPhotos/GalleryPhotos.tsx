@@ -1,11 +1,11 @@
 'use client';
 import React, {useState} from 'react';
 import styles from './galleryPhotos.module.scss';
-import {galleryItemType} from '@/types/Gallery/gallery';
 import SelectedPhoto from './SelectedPhoto/SelectedPhoto';
 import TitleCart from './TitleCart/TitleCart';
 import LandscapePhoto from './LandscapePhoto/LandscapePhoto';
 import PortraitPhoto from './PortraitPhoto/PortraitPhoto';
+import {GalleryItemType} from '@/utils/Gallery/Gallery';
 
 export type ShowPhotoDetailsType = {
   status: boolean;
@@ -18,7 +18,7 @@ export type AllImagesType = {
   orientation: string;
 }[];
 
-const GalleryPhotos: React.FC<{data: galleryItemType}> = ({data}) => {
+const GalleryPhotos: React.FC<{data: GalleryItemType}> = ({data}) => {
   const [showPhotoDetails, setShowPhotoDetails] = useState({
     status: false,
     photoId: 0,

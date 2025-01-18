@@ -3,22 +3,17 @@ import {instructorBubbleType} from '../Globals/globals';
 import {customColors} from '../UI/colors';
 import {stickerH2Type, stripH3Type} from '../UI/stickerStripStrap';
 import {swimmingPoolCoverType} from '../UI/swimmingPoolCover';
-
-export type aboutType = {
-  stickerH2: stickerH2Type;
-  aboutTextPoppins: AboutTextPoppinsPropsType;
-  image: {src: string; alt: string};
-  button?: {title: string; href: string};
-};
+import {StickerH2PropsType} from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import {StripH3PropsType} from '@/components/Ui/Strips/StripH3/StripH3';
 
 export type instructorsType = {
   backgroundText: string;
-  stripH3: stripH3Type;
+  stripH3: StripH3PropsType;
   instructors: instructorBubbleType[];
 };
 
 export type poolsType = {
-  stripH3: stripH3Type;
+  stripH3: StripH3PropsType;
   backgroundText: string;
   swimmingPools: swimmingPoolCoverType[];
 };

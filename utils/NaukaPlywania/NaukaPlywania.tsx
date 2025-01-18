@@ -3,6 +3,11 @@ import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
 import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import KorzennaCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
+import GorliceCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
+import EisenbergaCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
+import BronowiankaCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
+import PlywaczekCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
 
 type naukaPlywania = {
   zRodzicami: {
@@ -54,10 +59,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       backgroundText: 'KADRA',
       stripH3: {
         title: 'INSTRUKTORZY',
-        scale: 1.2,
         stripBgColor: 'white',
         stripTextColor: 'lightBlue',
-        marginBottom: '4rem',
       },
       instructors: [
         {
@@ -86,31 +89,29 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     pools: {
       stripH3: {
         title: 'LOKALIZACJE',
-        scale: 1.2,
         stripBgColor: 'white',
         stripTextColor: 'lightBlue',
-        marginBottom: '',
       },
       backgroundText: 'LOKALIZACJE',
       swimmingPools: [
         {
           title: 'BASEN GORLICE',
-          image: 'gorlice.webp',
+          image: GorliceCoverImg,
           url: '/naukaplywania/gorlice',
         },
         {
           title: 'BASEN EISENBERGA',
-          image: 'eisenberga.webp',
+          image: EisenbergaCoverImg,
           url: '/naukaplywania/krakow/eisenberga',
         },
         {
           title: 'BASEN BRONOWIANKA',
-          image: 'bronowianka.webp',
+          image: BronowiankaCoverImg,
           url: '/naukaplywania/krakow/bronowianka',
         },
         {
           title: 'BASEN PŁYWACZEK',
-          image: 'plywaczek.webp',
+          image: PlywaczekCoverImg,
           url: '/naukaplywania/krakow/plywaczek',
         },
       ],
@@ -159,10 +160,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       backgroundText: 'KADRA',
       stripH3: {
         title: 'INSTRUKTORZY',
-        scale: 1.2,
         stripBgColor: 'white',
         stripTextColor: 'mediumBlue',
-        marginBottom: '4rem',
       },
       instructors: [
         {
@@ -191,26 +190,24 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     pools: {
       stripH3: {
         title: 'LOKALIZACJE',
-        scale: 1.2,
         stripBgColor: 'white',
         stripTextColor: 'mediumBlue',
-        marginBottom: '',
       },
       backgroundText: 'LOKALIZACJE',
       swimmingPools: [
         {
           title: 'BASEN KORZENNA',
-          image: 'korzenna.webp',
+          image: KorzennaCoverImg,
           url: '/naukaplywania/korzenna',
         },
         {
           title: 'BASEN EISENBERGA',
-          image: 'eisenberga.webp',
+          image: EisenbergaCoverImg,
           url: '/naukaplywania/krakow/eisenberga',
         },
         {
           title: 'BASEN PŁYWACZEK',
-          image: 'plywaczek.webp',
+          image: PlywaczekCoverImg,
           url: '/naukaplywania/krakow/plywaczek',
         },
       ],
@@ -257,10 +254,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       backgroundText: 'KADRA',
       stripH3: {
         title: 'INSTRUKTORZY',
-        scale: 1.2,
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
-        marginBottom: '4rem',
       },
       instructors: [
         {
@@ -289,26 +284,24 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     pools: {
       stripH3: {
         title: 'LOKALIZACJE',
-        scale: 1.2,
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
-        marginBottom: '',
       },
       backgroundText: 'LOKALIZACJE',
       swimmingPools: [
         {
           title: 'BASEN KORZENNA',
-          image: 'korzenna.webp',
+          image: KorzennaCoverImg,
           url: '/naukaplywania/korzenna',
         },
         {
           title: 'BASEN EISENBERGA',
-          image: 'eisenberga.webp',
+          image: EisenbergaCoverImg,
           url: '/naukaplywania/krakow/eisenberga',
         },
         {
           title: 'BASEN PŁYWACZEK',
-          image: 'plywaczek.webp',
+          image: PlywaczekCoverImg,
           url: '/naukaplywania/krakow/plywaczek',
         },
       ],

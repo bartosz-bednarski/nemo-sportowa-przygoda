@@ -28,7 +28,6 @@ import MediumBlueScrapRightImg from '@/public/assets/ui/ScrapRight/scrapRightMed
 import WhiteScrapRightImg from '@/public/assets/ui/ScrapRight/scrapRightWhite.svg';
 import WinterIceScrapRightImg from '@/public/assets/ui/ScrapRight/scrapRightWinterIce.svg';
 import BasicGreenScrapRightImg from '@/public/assets/ui/ScrapRight/scrapRightBasicGreen.svg';
-import Image from 'next/image';
 import {customColors} from '@/types/UI/colors';
 
 export interface StripH3PropsType {
@@ -119,8 +118,16 @@ const StripH3 = ({stripBgColor, stripTextColor, title}: StripH3PropsType) => {
           backgroundColor: COLORS[stripBgColor],
         }}
       >
-        <Image src={scrap.main} alt="mainScrap" className={styles.mainScrap} />
-        <Image src={scrap.left} alt="scrapLeft" className={styles.scrapLeft} />
+        <img
+          src={scrap.main.src}
+          alt="mainScrap"
+          className={styles.mainScrap}
+        />
+        <img
+          src={scrap.left.src}
+          alt="scrapLeft"
+          className={styles.scrapLeft}
+        />
 
         <h3
           className={styles.h3Title}
@@ -132,8 +139,8 @@ const StripH3 = ({stripBgColor, stripTextColor, title}: StripH3PropsType) => {
           {title}
         </h3>
 
-        <Image
-          src={scrap.right}
+        <img
+          src={scrap.right.src}
           alt="scrapRight"
           className={styles.scrapRight}
         />

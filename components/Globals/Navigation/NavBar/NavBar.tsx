@@ -15,12 +15,6 @@ const NavBar: React.FC = () => {
     <>
       <nav className={styles.navBar} style={{zIndex: showNavigation ? 10 : 11}}>
         <div className={styles['navBar__logo']}>
-          {/* <Image
-            src="/assets/logo/logo.png"
-            width={50}
-            height={50}
-            alt="logo"
-          /> */}
           <Link href="/">
             <LogoMainWhite width="auto" height="100px" />
           </Link>

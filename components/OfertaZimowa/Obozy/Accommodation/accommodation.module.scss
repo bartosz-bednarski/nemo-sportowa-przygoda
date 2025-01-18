@@ -57,7 +57,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
   width: 40%;
   @include mixin.pc1000px {
     align-items: center;

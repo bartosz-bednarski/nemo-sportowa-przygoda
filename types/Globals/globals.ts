@@ -1,5 +1,4 @@
 import {AboutTextPoppinsPropsType} from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
-import {campsCoversType} from '../SummerWinter/Camps';
 import {signInButtonType} from '../UI/buttons';
 import {customColors} from '../UI/colors';
 import {
@@ -8,6 +7,7 @@ import {
   stickerH4Type,
   stripH4Type,
 } from '../UI/stickerStripStrap';
+import {CampsCoversType} from '@/utils/Winter/Obozy';
 
 export type instructorBubbleType = {
   instructorName?: string;
@@ -91,7 +91,7 @@ export type aboutCampsComponentType = {
   imgLeft?: string;
 };
 export type signInCampsComponentType = {
-  activeCampsCoversList?: campsCoversType;
+  activeCampsCoversList?: CampsCoversType;
   waitingTitle?: string;
   waiting: boolean;
   theme: 'summer' | 'winter';

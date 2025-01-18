@@ -13,6 +13,7 @@ const ScrapFooter: React.FC<{color: customColors}> = ({color}) => {
       style={{
         position: 'absolute',
         width: '100%',
+        left: 0,
         bottom: '-21px',
         rotate: '180deg',
         zIndex: 3,

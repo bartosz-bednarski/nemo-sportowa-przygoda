@@ -1,6 +1,6 @@
 import styles from '../page.module.scss';
 import VideosSection from '@/components/Globals/VideosSection';
-import {NAUKA_PLYWANIA} from '@/utils/NaukaPlywania/naukaPlywania';
+import {NAUKA_PLYWANIA} from '@/utils/NaukaPlywania/NaukaPlywania';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
 import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';

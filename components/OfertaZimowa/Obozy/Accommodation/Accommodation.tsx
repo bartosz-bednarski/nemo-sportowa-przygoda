@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from './accommodation.module.scss';
 import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export interface AccommodationPropsType {
@@ -915,7 +914,7 @@ const Accommodation: React.FC<{
         </svg>
       </div>
       <Link className={styles.imageBox} href={accommodation.href}>
-        <Image
+        <img
           className={styles.image}
           src={`/assets/winter/zakwaterowanie/${accommodation.image}.webp`}
           width={1920}

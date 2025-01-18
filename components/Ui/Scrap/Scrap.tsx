@@ -13,6 +13,7 @@ const Scrap: React.FC<scrapType> = ({position, color}) => {
       style={{
         position: 'absolute',
         width: '100%',
+        left: 0,
         top: position === 'top' ? 0 : '',
         bottom: position === 'bottom' ? '-65px' : '',
         rotate: position === 'top' ? '180deg' : '',

@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './about.module.scss';
 import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
-import Image from 'next/image';
 import {aboutCampsComponentType} from '@/types/Globals/globals';
 import {COLORS} from '@/utils/UI/colors';
 
@@ -38,9 +37,11 @@ const AboutCamps: React.FC<aboutCampsComponentType> = ({
             titleColor={theme === 'summer' ? 'basicGreen' : 'darkBlue'}
             description={aboutLeft}
             descriptionColor={theme === 'summer' ? 'white' : 'darkBlue'}
+            alignItems="flex-start"
+            textAlign="left"
           />
         </div>
-        <Image
+        <img
           className={styles['about__row-box-left__picture']}
           src={`/assets/${theme}/${imgRight}`}
           width={960}
@@ -50,7 +51,7 @@ const AboutCamps: React.FC<aboutCampsComponentType> = ({
       </div>
       {right && (
         <div className={styles['about__row-box-right']}>
-          <Image
+          <img
             className={styles['about__row-box-right__picture']}
             src={`/assets/${theme}/${imgLeft}`}
             width={960}
@@ -64,6 +65,8 @@ const AboutCamps: React.FC<aboutCampsComponentType> = ({
                 titleColor={theme === 'summer' ? 'basicGreen' : 'darkBlue'}
                 description={aboutRight1}
                 descriptionColor={theme === 'summer' ? 'white' : 'darkBlue'}
+                alignItems="flex-start"
+                textAlign="left"
               />
             )}
 
@@ -73,6 +76,8 @@ const AboutCamps: React.FC<aboutCampsComponentType> = ({
                 titleColor={theme === 'summer' ? 'basicGreen' : 'darkBlue'}
                 description={aboutRight2}
                 descriptionColor={theme === 'summer' ? 'white' : 'darkBlue'}
+                alignItems="flex-start"
+                textAlign="left"
               />
             )}
           </div>

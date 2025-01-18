@@ -2,15 +2,17 @@
 import React from 'react';
 import styles from './naukaPlywania.module.scss';
 import Pools from './Pools/Pools';
-import {aboutType, poolsType} from '@/types/NaukaPlywania/naukaPlywania';
+import {poolsType} from '@/types/NaukaPlywania/naukaPlywania';
 import {COLORS} from '@/utils/UI/colors';
 import Groups, {GroupsPropsType} from '../Ui/Groups/Groups';
 import {customColors} from '@/types/UI/colors';
 import StickerH4 from '@/components/Ui/Stickers/StickerH4/StickerH4';
-import NaukaPlywaniaAbout from '../Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import NaukaPlywaniaAbout, {
+  NaukaPływaniaAboutPropsType,
+} from '../Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 
 export interface NaukaPlywaniaPropsType {
-  about: aboutType;
+  about: NaukaPływaniaAboutPropsType;
   pools: poolsType;
   groups?: GroupsPropsType;
   backgroundColor: customColors;

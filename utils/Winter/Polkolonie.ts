@@ -1,5 +1,5 @@
-import {campsCoversType} from '@/types/SummerWinter/Camps';
 import {polkoloniaType} from '@/types/SummerWinter/Winter';
+import {CampsCoversType} from './Obozy';
 
 export const POLKOLONIA_AKTYWNA_ZIMA_BOBOWA: polkoloniaType = {
   title: 'PÓŁKOLONIA AKTYWNA ZIMA',
@@ -404,7 +404,7 @@ export const POLKOLONIA_BIALE_SZALENSTWO_KORZENNA: polkoloniaType = {
     ],
   },
 };
-export const POLKOLONIE_LISTA_2025: campsCoversType = [
+export const POLKOLONIE_LISTA_2025: CampsCoversType = [
   {
     active: false,
     title: 'PÓŁKOLONIA AKTYWNA ZIMA',

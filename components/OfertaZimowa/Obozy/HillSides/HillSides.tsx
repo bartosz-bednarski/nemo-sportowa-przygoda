@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from './hillSides.module.scss';
 import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
-import Image from 'next/image';
 
 export interface HillSidesPropsType {
   title1: string;
@@ -37,7 +36,7 @@ const HillSides: React.FC<{hillSides: HillSidesPropsType}> = ({hillSides}) => {
                 ))}
               </ul>
             </div>
-            <Image
+            <img
               className={styles.image}
               src={`/assets/winter/stoki/${item.image}.webp`}
               width={960}
