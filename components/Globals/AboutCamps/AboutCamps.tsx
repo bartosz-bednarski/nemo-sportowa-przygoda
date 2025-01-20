@@ -1,12 +1,22 @@
 'use client';
 import React from 'react';
 import styles from './about.module.scss';
-import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import StickerH2, { StickerH2PropsType } from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
-import {aboutCampsComponentType} from '@/types/Globals/globals';
 import {COLORS} from '@/utils/UI/colors';
 
-const AboutCamps: React.FC<aboutCampsComponentType> = ({
+export interface AboutCampsPropsType {
+  stickerH2: StickerH2PropsType;
+    aboutLeft: string;
+    right: boolean;
+    aboutRight1?: string;
+    aboutRight2?: string;
+    theme: "summer" | "winter";
+    imgRight: string;
+    imgLeft?: string;
+}
+
+const AboutCamps = ({
   stickerH2,
   aboutLeft,
   right,
@@ -15,7 +25,8 @@ const AboutCamps: React.FC<aboutCampsComponentType> = ({
   theme,
   imgRight,
   imgLeft,
-}) => {
+}:AboutCampsPropsType) => {
+
   return (
     <div
       className={styles.about}
@@ -23,8 +34,8 @@ const AboutCamps: React.FC<aboutCampsComponentType> = ({
         background: theme === 'summer' ? COLORS.basicGreen : COLORS.white,
       }}
     >
-      <div className={styles['about__row-box-left']}>
-        <div className={styles['about__row-box-left__column']}>
+      <div className={styles.rowBoxLeft}>
+        <div className={styles.columnBox}>
           <StickerH2
             title={stickerH2.title}
             titleStrip={stickerH2.titleStrip}
@@ -42,7 +53,7 @@ const AboutCamps: React.FC<aboutCampsComponentType> = ({
           />
         </div>
         <img
-          className={styles['about__row-box-left__picture']}
+          className={styles.image}
           src={`/assets/${theme}/${imgRight}`}
           width={960}
           height={500}
@@ -50,15 +61,15 @@ const AboutCamps: React.FC<aboutCampsComponentType> = ({
         />
       </div>
       {right && (
-        <div className={styles['about__row-box-right']}>
+        <div className={styles.rowBoxRight}>
           <img
-            className={styles['about__row-box-right__picture']}
+            className={styles.image}
             src={`/assets/${theme}/${imgLeft}`}
             width={960}
             height={500}
             alt="polkolonie letnie"
           />
-          <div className={styles['about__row-box-right__column']}>
+          <div className={styles.columnBox}>
             {aboutRight1 && (
               <AboutTextPoppins
                 title=""

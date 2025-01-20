@@ -1,24 +1,31 @@
 'use client';
 import React from 'react';
 import styles from './details.module.scss';
-import {detailsBoxComponentType} from '@/types/SummerWinter/Winter';
 
-const DetailsBox: React.FC<detailsBoxComponentType> = ({
+export interface DetailsBoxPropsType{
+  promo: boolean;
+  label: "MIEJSCE" | "TERMIN" | "CENA" | "WIEK" | "ZBI\u00D3RKA";
+  content: string;
+  promoPrice?: string;
+  promoInfo?: string;
+}
+
+const DetailsBox = ({
   label,
   promo,
   content,
   promoInfo,
   promoPrice,
-}) => {
+}:DetailsBoxPropsType) => {
   return (
     <div className={styles.detailsBox}>
-      <span className={styles['detailsBox__label']}>{label}</span>
-      <span className={styles['detailsBox__content']}>{content}</span>
+      <span className={styles.label}>{label}</span>
+      <span className={styles.content}>{content}</span>
       {promo && promoPrice !== undefined && (
-        <span className={styles['detailsBox__promo-price']}>{promoPrice}</span>
+        <span className={styles.promoPrice}>{promoPrice}</span>
       )}
       {promo && promoInfo !== undefined && (
-        <span className={styles['detailsBox__promo-info']}>{promoInfo} </span>
+        <span className={styles.promoInfo}>{promoInfo} </span>
       )}
     </div>
   );

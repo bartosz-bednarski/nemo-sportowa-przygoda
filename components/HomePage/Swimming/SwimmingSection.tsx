@@ -6,7 +6,8 @@ import BackgroundText from '../../Ui/BackgroundText/BackgroundText';
 import SwimmingPools from './SwimmingPools';
 import TitleStripDescriptionStrip from '@/components/Ui/TitleStripDescriptionStrip/TitleStripDescriptionBox';
 import StripH3 from '@/components/Ui/Strips/StripH3/StripH3';
-const SwimmingSection: React.FC = () => {
+
+const SwimmingSection = () => {
   return (
     <section className={styles.swimmingLayout}>
       <div className={styles.about}>
@@ -60,4 +61,5 @@ prawidłowej techniki pod okiem doświadczonych instruktorów."
     </section>
   );
 };
+
 export default SwimmingSection;

@@ -5,6 +5,7 @@ import LinkButton from '../Buttons/LinkButton';
 import {hasCookie, setCookie} from 'cookies-next';
 import XBtn from '../Buttons/XBtn/XBtn';
 import PopupImage from '@/public/assets/popup/popup-swimmimg.webp';
+
 const SignInPopupSwimming = () => {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -61,4 +62,5 @@ const SignInPopupSwimming = () => {
     </div>
   );
 };
+
 export default SignInPopupSwimming;

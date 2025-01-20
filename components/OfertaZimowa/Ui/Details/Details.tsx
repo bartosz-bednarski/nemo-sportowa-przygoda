@@ -2,12 +2,27 @@
 import React from 'react';
 import styles from './details.module.scss';
 import DetailsBox from './DetailsBox';
-import {detailsComponentType} from '@/types/SummerWinter/Winter';
 
-const Details: React.FC<{details: detailsComponentType}> = ({details}) => {
+export interface DetailsPropsType {
+  location: string;
+  fullLocationName: string;
+  dateRange: string;
+  ageRange?: string;
+  price: string;
+  promotion: boolean;
+  promotionPrice?: string;
+  promotionInfo?: string;
+  rally?: string;
+  aboutTitle: string;
+  aboutDescription: string;
+  about2Title?: string;
+  about2Description?: string;
+}
+
+const Details: React.FC<{details: DetailsPropsType}> = ({details}) => {
   return (
     <div className={styles.details}>
-      <div className={styles['details__row-box']}>
+      <div className={styles.rowBox}>
         <DetailsBox promo={false} label="MIEJSCE" content={details.location} />
         <DetailsBox promo={false} label="TERMIN" content={details.dateRange} />
         {details.ageRange !== undefined && (
@@ -24,23 +39,23 @@ const Details: React.FC<{details: detailsComponentType}> = ({details}) => {
           promoInfo={details.promotionInfo}
         />
       </div>
-      <div className={styles['details__info-box']}>
-        <span className={styles['details__info-box__header']}>
+      <div className={styles.infoBox}>
+        <span className={styles.header}>
           {details.aboutTitle}
         </span>
-        <span className={styles['details__info-box__text']}>
+        <span className={styles.text}>
           {details.aboutDescription}
         </span>
       </div>
       {details.about2Title !== undefined && (
-        <div className={styles['details__info-box']}>
+        <div className={styles.infoBox}>
           {details.about2Title !== undefined && (
-            <span className={styles['details__info-box__header']}>
+            <span className={styles.header}>
               {details.about2Title}
             </span>
           )}
           {details.about2Description !== undefined && (
-            <span className={styles['details__info-box__text']}>
+            <span className={styles.text}>
               {details.about2Description}
             </span>
           )}
@@ -49,4 +64,5 @@ const Details: React.FC<{details: detailsComponentType}> = ({details}) => {
     </div>
   );
 };
+
 export default Details;

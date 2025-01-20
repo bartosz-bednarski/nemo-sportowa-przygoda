@@ -1,4 +1,5 @@
-@import '../../../../styles/colors.scss';
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
 @import '../../../../styles/fonts.scss';
 .details {
   display: flex;
@@ -6,14 +7,20 @@
   align-items: center;
   padding: 6rem 4rem;
   gap: 2rem;
-  &__row-box {
+@include mixin.phone700px{
+  padding: 2rem;
+}
+  .rowBox {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    @include mixin.phone700px{
+      flex-direction: column;
+    }
   }
-  &__info-box {
+  .infoBox {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -23,18 +30,24 @@
     justify-content: center;
     border: 3px solid #493a2d;
     border-radius: 20px;
-    &__header {
-      text-align: center;
-      font-size: 2rem;
-      color: $darkBlue;
-      font-family: 'poppins-700';
+    @include mixin.phone700px{
+      padding: 1rem
     }
-    &__text {
-      text-align: center;
-      color: $darkBlue;
-      font-family: 'poppins-500';
-      font-size: 1rem;
+  }
+  .header {
+    text-align: center;
+    font-size: 2rem;
+    color: colors.$darkBlue;
+    font-family: 'poppins-700';
+    @include mixin.phone700px{
+      font-size: 1.4rem;
     }
+  }
+  .text {
+    text-align: center;
+    color: colors.$darkBlue;
+    font-family: 'poppins-500';
+    font-size: 1rem;
   }
 }
 
@@ -46,23 +59,31 @@
   flex-direction: column;
   gap: 1px;
   padding: 0.5rem 5rem;
-
   background-color: #becdeb;
   border-radius: 20px;
   border: 3px solid #493a2d;
-  &__label {
+  @include mixin.phone700px{
+    padding: 0.5rem 1rem;
+  }
+  .label {
     text-align: center;
-    color: $darkBlue;
+    color: colors.$darkBlue;
     font-size: 1.5rem;
     font-family: 'poppins-700';
+    @include mixin.phone700px{
+      font-size: 1.3rem;
+    }
   }
-  &__content {
+  .content {
     text-align: center;
     color: white;
     font-size: 1.5rem;
     font-family: 'poppins-500';
+    @include mixin.phone700px{
+      font-size: 1.3rem;
+    }
   }
-  &__promo-price {
+  .promoPrice {
     text-align: center;
     color: white;
     font-size: 1.5rem;
@@ -70,34 +91,18 @@
     background-color: #3bb93b;
     border-radius: 50px;
     width: 100%;
+    @include mixin.phone700px{
+      font-size: 1.3rem;
+    }
   }
-  &__promo-info {
+  .promoInfo {
     text-align: center;
     color: #3bb93b;
     font-size: 1.5rem;
     font-family: 'poppins-700';
-  }
-}
-@media only screen and (max-width: 600px) {
-  .details {
-    padding: 2rem;
-    &__row-box {
-      flex-direction: column;
-    }
-    &__info-box {
-      padding: 1rem;
-      &__header {
-        font-size: 1.4rem;
-      }
+    @include mixin.phone700px{
+      font-size: 1.3rem;
     }
   }
-  .detailsBox {
-    padding: 0.5rem 1rem;
-  }
-  .detailsBox__label,
-  .detailsBox__promo-price,
-  .detailsBox__promo-info,
-  .detailsBox__content {
-    font-size: 1.3rem;
-  }
 }
+

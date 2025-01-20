@@ -5,7 +5,8 @@ import StripH3 from '@/components/Ui/Strips/StripH3/StripH3';
 import TitleStripDescriptionStrip from '@/components/Ui/TitleStripDescriptionStrip/TitleStripDescriptionBox';
 import LinkButton from '@/components/Ui/Buttons/LinkButton';
 import BackgroundImage from '@/public/assets/camps/background-img-1.webp';
-const SummerOffert: React.FC = () => {
+
+const SummerOffert = () => {
   return (
     <div className={styles.campLayout} style={{marginTop: '-6rem'}}>
       <img

@@ -1,21 +1,25 @@
 'use client';
 import React from 'react';
 import styles from './hero.module.scss';
-import {heroComponentType} from '@/types/SummerWinter/Winter';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 
-const Hero: React.FC<{hero: heroComponentType}> = ({hero}) => {
+export interface HeroPropsType{
+  pc: string;
+  mobile: string;
+}
+
+const Hero: React.FC<{hero: HeroPropsType}> = ({hero}) => {
   return (
     <div className={styles.hero}>
       <img
-        className={styles['hero__image']}
+        className={styles.image}
         src={`/assets/winter/${hero.pc}.webp`}
         width={1920}
         height={1080}
         alt="aktywna zima bobowa"
       />
       <img
-        className={styles['hero__image-mobile']}
+        className={styles.imageMobile}
         src={`/assets/winter/${hero.mobile}.webp`}
         width={1242}
         height={2208}
@@ -25,4 +29,5 @@ const Hero: React.FC<{hero: heroComponentType}> = ({hero}) => {
     </div>
   );
 };
+
 export default Hero;

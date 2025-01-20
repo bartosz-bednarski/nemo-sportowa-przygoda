@@ -1,35 +1,34 @@
-import {instructorsRowBoxType, poolTutorialType} from '@/types/Globals/globals';
-import {poolInformationsType} from '@/types/NaukaPlywania/naukaPlywania';
+
 import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
 import {NAUKA_PLYWANIA} from '../NaukaPlywania/NaukaPlywania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import { PoolInformationsPropsType } from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
+import { PoolTutorialPropsType } from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 
-type naukaPlywaniaBasen = {
+type NaukaPlywaniaBasen = {
   zRodzicami: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    instructors: instructorsRowBoxType;
     groups: GroupsPropsType;
     priceList: PriceListPropsType;
   };
   dzieciMlodziez: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    instructors: instructorsRowBoxType;
     groups: GroupsPropsType;
     priceList: PriceListPropsType;
   };
   dorosli: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    instructors: instructorsRowBoxType;
     groups: GroupsPropsType;
     priceList: PriceListPropsType;
   };
 };
+
 const CENNIK_Z_RODZICAMI_EISENBERGA: PriceListPropsType = [
   {
     stickerH4: {
@@ -204,7 +203,7 @@ const CENNIK_DOROSLI_EISENBERGA: PriceListPropsType = [
     },
   },
 ];
-export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
+export const NAUKA_PLYWANIA_EISENBERGA: NaukaPlywaniaBasen = {
   zRodzicami: {
     backgroundColor: 'lightBlue',
     about: {
@@ -232,32 +231,7 @@ export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
       },
     },
     priceList: CENNIK_Z_RODZICAMI_EISENBERGA,
-    instructors: {
-      bgColor: 'lightBlue',
-      instructors: [
-        {
-          instructorName: 'WIKTORIA FRYCZEK',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-        {
-          instructorName: 'WIKTORIA FRYCZ',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-        {
-          instructorName: 'WIKTORIA FRYCZE',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-      ],
-    },
+  
     groups: {
       stripH2: {
         type: 'h2',
@@ -299,32 +273,7 @@ export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
       },
     },
     priceList: CENNIK_DZIECI_MLODZIEZ_EISENBERGA,
-    instructors: {
-      bgColor: 'mediumBlue',
-      instructors: [
-        {
-          instructorName: 'WIKTORIA FRYCZEK',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-        {
-          instructorName: 'WIKTORIA FRYCZ',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-        {
-          instructorName: 'WIKTORIA FRYCZE',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-      ],
-    },
+   
     groups: {
       stripH2: {
         type: 'h2',
@@ -364,32 +313,7 @@ export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
       },
     },
     priceList: CENNIK_DOROSLI_EISENBERGA,
-    instructors: {
-      bgColor: 'darkBlue',
-      instructors: [
-        {
-          instructorName: 'WIKTORIA FRYCZEK',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-        {
-          instructorName: 'WIKTORIA FRYCZ',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-        {
-          instructorName: 'WIKTORIA FRYCZE',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-      ],
-    },
+  
     groups: {
       stripH2: {
         type: 'h2',
@@ -406,7 +330,7 @@ export const NAUKA_PLYWANIA_EISENBERGA: naukaPlywaniaBasen = {
   },
 };
 
-export const BASEN_EISENBERGA_INFORMATIONS: poolInformationsType = {
+export const BASEN_EISENBERGA_INFORMATIONS: PoolInformationsPropsType = {
   color: 'darkBlue',
   title: 'Basen Eisenberga',
   imageSrc: 'custom-pool.webp',
@@ -417,8 +341,6 @@ export const BASEN_EISENBERGA_INFORMATIONS: poolInformationsType = {
     titleStrip: 'EISENBERGA',
     stripBgColor: 'basicOrange',
     stripTextColor: 'darkBlue',
-    scale: 1.2,
-    paddingBottom: 0,
   },
   icons: {
     pool1: {
@@ -451,15 +373,13 @@ export const BASEN_EISENBERGA_INFORMATIONS: poolInformationsType = {
     },
   },
 };
-export const BASEN_EISENBERGA_TUTORIAL_Z_RODZICAMI: poolTutorialType = {
+export const BASEN_EISENBERGA_TUTORIAL_Z_RODZICAMI: PoolTutorialPropsType = {
   header: true,
   stripH4: {
     type: 'h4',
     title: 'ZAJĘCIA Z RODZICAMI',
     stripBgColor: 'white',
     stripTextColor: 'basicOrange',
-    scale: 1.3,
-    marginBottom: '6rem',
   },
   color: 'darkBlue',
   firstRule:
@@ -473,15 +393,13 @@ export const BASEN_EISENBERGA_TUTORIAL_Z_RODZICAMI: poolTutorialType = {
     'Następnie wejdź na wydzielony tor dla zajęć "Nemo Sportowa Przygoda".',
   ],
 };
-export const BASEN_EISENBERGA_TUTORIAL_DZIECI_MLODZIEZ: poolTutorialType = {
+export const BASEN_EISENBERGA_TUTORIAL_DZIECI_MLODZIEZ: PoolTutorialPropsType = {
   header: true,
   stripH4: {
     type: 'h4',
     title: 'DZIECI I MŁODZIEŻ',
     stripBgColor: 'white',
     stripTextColor: 'basicOrange',
-    scale: 1.2,
-    marginBottom: '6rem',
   },
   color: 'darkBlue',
   firstRule:

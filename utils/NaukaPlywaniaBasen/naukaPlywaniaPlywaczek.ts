@@ -1,27 +1,26 @@
-import {instructorsRowBoxType, poolTutorialType} from '@/types/Globals/globals';
-import {poolInformationsType} from '@/types/NaukaPlywania/naukaPlywania';
 import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import { PoolInformationsPropsType } from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
+import { PoolTutorialPropsType } from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 
-type naukaPlywaniaBasen = {
+type NaukaPlywaniaBasen = {
   dzieciMlodziez: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    instructors: instructorsRowBoxType;
     groups: GroupsPropsType;
     priceList: PriceListPropsType;
   };
   dorosli: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    instructors: instructorsRowBoxType;
     groups: GroupsPropsType;
     priceList: PriceListPropsType;
   };
 };
+
 const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
   {
     stickerH4: {
@@ -170,7 +169,7 @@ const CENNIK_DOROSLI_PLYWACZEK: PriceListPropsType = [
     },
   },
 ];
-export const NAUKA_PLYWANIA_PLYWACZEK: naukaPlywaniaBasen = {
+export const NAUKA_PLYWANIA_PLYWACZEK: NaukaPlywaniaBasen = {
   dzieciMlodziez: {
     backgroundColor: 'lightBlue',
     about: {
@@ -194,32 +193,7 @@ export const NAUKA_PLYWANIA_PLYWACZEK: naukaPlywaniaBasen = {
       },
     },
     priceList: CENNIK_DZIECI_MLODZIEZ_PLYWACZEK,
-    instructors: {
-      bgColor: 'lightBlue',
-      instructors: [
-        {
-          instructorName: 'WIKTORIA FRYCZEK',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-        {
-          instructorName: 'WIKTORIA FRYCZ',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-        {
-          instructorName: 'WIKTORIA FRYCZE',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-      ],
-    },
+   
     groups: {
       stripH2: {
         type: 'h2',
@@ -260,32 +234,7 @@ export const NAUKA_PLYWANIA_PLYWACZEK: naukaPlywaniaBasen = {
       },
     },
     priceList: CENNIK_DOROSLI_PLYWACZEK,
-    instructors: {
-      bgColor: 'mediumBlue',
-      instructors: [
-        {
-          instructorName: 'WIKTORIA FRYCZEK',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-        {
-          instructorName: 'WIKTORIA FRYCZ',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-        {
-          instructorName: 'WIKTORIA FRYCZE',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-      ],
-    },
+   
     groups: {
       stripH2: {
         type: 'h2',
@@ -302,7 +251,7 @@ export const NAUKA_PLYWANIA_PLYWACZEK: naukaPlywaniaBasen = {
   },
 };
 
-export const BASEN_PLYWACZEK_INFORMATIONS: poolInformationsType = {
+export const BASEN_PLYWACZEK_INFORMATIONS: PoolInformationsPropsType = {
   color: 'darkBlue',
   title: 'Basen Pływaczek',
   imageSrc: 'custom-pool.webp',
@@ -313,8 +262,6 @@ export const BASEN_PLYWACZEK_INFORMATIONS: poolInformationsType = {
     titleStrip: 'PŁYWACZEK',
     stripBgColor: 'basicOrange',
     stripTextColor: 'darkBlue',
-    scale: 1.2,
-    paddingBottom: 0,
   },
   icons: {
     pool1: {
@@ -348,7 +295,7 @@ export const BASEN_PLYWACZEK_INFORMATIONS: poolInformationsType = {
   },
 };
 
-export const BASEN_PLYWACZEK_TUTORIAL: poolTutorialType = {
+export const BASEN_PLYWACZEK_TUTORIAL: PoolTutorialPropsType = {
   header: false,
   color: 'darkBlue',
   firstRule:

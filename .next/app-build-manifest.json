@@ -1,0 +1,64 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/loading.css",
+      "static/chunks/app/loading.js"
+    ],
+    "/ofertazimowa/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/ofertazimowa/page.css",
+      "static/chunks/app/ofertazimowa/page.js"
+    ],
+    "/ofertaletnia/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/ofertaletnia/page.css",
+      "static/chunks/app/ofertaletnia/page.js"
+    ],
+    "/galeria/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/galeria/page.css",
+      "static/chunks/app/galeria/page.js"
+    ],
+    "/ofertazimowa/obozy/narciarskie/muszyna/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/ofertazimowa/obozy/narciarskie/muszyna/page.css",
+      "static/chunks/app/ofertazimowa/obozy/narciarskie/muszyna/page.js"
+    ],
+    "/ofertazimowa/weekend-na-stoku/termin-1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/ofertazimowa/weekend-na-stoku/termin-1/page.css",
+      "static/chunks/app/ofertazimowa/weekend-na-stoku/termin-1/page.js"
+    ],
+    "/ofertazimowa/polkolonie/aktywnazima/luzna/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/ofertazimowa/polkolonie/aktywnazima/luzna/page.css",
+      "static/chunks/app/ofertazimowa/polkolonie/aktywnazima/luzna/page.js"
+    ],
+    "/naukaplywania/poradnikbasenowy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/naukaplywania/poradnikbasenowy/page.css",
+      "static/chunks/app/naukaplywania/poradnikbasenowy/page.js"
+    ]
+  }
+}

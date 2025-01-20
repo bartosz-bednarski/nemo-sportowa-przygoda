@@ -159,4 +159,5 @@ const PoolInformations: React.FC<{
     </div>
   );
 };
+
 export default PoolInformations;

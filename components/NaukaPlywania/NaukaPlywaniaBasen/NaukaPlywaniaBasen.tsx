@@ -41,4 +41,5 @@ const NaukaPlywaniaBasen = ({
     </div>
   );
 };
+
 export default NaukaPlywaniaBasen;

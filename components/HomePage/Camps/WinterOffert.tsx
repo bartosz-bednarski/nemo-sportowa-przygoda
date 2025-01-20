@@ -7,7 +7,7 @@ import LinkButton from '@/components/Ui/Buttons/LinkButton';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import BackgroundImage from '@/public/assets/camps/background-img-2.webp';
 
-const WinterOffert: React.FC = () => {
+const WinterOffert = () => {
   return (
     <div className={styles.campLayout} style={{marginTop: '-6rem'}}>
       <img

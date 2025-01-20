@@ -11,7 +11,7 @@ const TitleStripDescription: React.FC<{
   description: string;
 }> = ({title, stripBgColor, stripTextColor, description}) => {
   return (
-    <div className={styles['titleStripDescription']}>
+    <div className={styles.titleStripDescription}>
       <StripH4
         type="h4"
         title={title}

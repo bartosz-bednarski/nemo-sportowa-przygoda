@@ -8,7 +8,8 @@ import GorliceCoverImg from '@/public/assets/swimming/pools/gorlice.webp';
 import EisenbergaCoverImg from '@/public/assets/swimming/pools/eisenberga.webp';
 import BronowiankaCoverImg from '@/public/assets/swimming/pools/bronowianka.webp';
 import PlywaczekCoverImg from '@/public/assets/swimming/pools/plywaczek.webp';
-const SwimmingPools: React.FC = () => {
+
+const SwimmingPools = () => {
   return (
     <div className={styles.poolsContainer}>
       <img
@@ -55,4 +56,5 @@ const SwimmingPools: React.FC = () => {
     </div>
   );
 };
+
 export default SwimmingPools;

@@ -33,4 +33,5 @@ const Groups = ({stripH2, groups}: GroupsPropsType) => {
     </div>
   );
 };
+
 export default Groups;

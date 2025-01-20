@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import styles from './navBar.module.scss';
 import NavBtn from '@/components/Ui/Buttons/NavBtn/NavBtn';
 import Navigation from '../Navigation/Navigation';
-import LogoMainWhite from '../../Logo/LogoMainWhite';
+import LogoMainWhiteImg from '@/public/assets/logo/Logo-main-white.svg';
 import Link from 'next/link';
 import {useRouter} from 'next/navigation';
 
@@ -14,12 +14,11 @@ const NavBar: React.FC = () => {
   return (
     <>
       <nav className={styles.navBar} style={{zIndex: showNavigation ? 10 : 11}}>
-        <div className={styles['navBar__logo']}>
+        
           <Link href="/">
-            <LogoMainWhite width="auto" height="100px" />
+            <img src={LogoMainWhiteImg.src} alt='logoNemo' className={styles.logo}/>
           </Link>
-        </div>
-        <div className={styles['navBar__btns']}>
+        <div className={styles.btnsBox}>
           <NavBtn type="menu" onClick={() => setShowNavigation(true)} />
           <NavBtn
             type="customer-panel"

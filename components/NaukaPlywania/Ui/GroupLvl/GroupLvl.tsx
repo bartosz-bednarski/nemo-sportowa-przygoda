@@ -70,4 +70,5 @@ const GroupLvl = ({stickerH4, aboutTextPoppins, skills}: GroupLvlPropsType) => {
     </div>
   );
 };
+
 export default GroupLvl;

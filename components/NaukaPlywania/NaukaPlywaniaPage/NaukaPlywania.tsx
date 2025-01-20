@@ -209,4 +209,5 @@ const NaukaPlywania = ({
     </div>
   );
 };
+
 export default NaukaPlywania;

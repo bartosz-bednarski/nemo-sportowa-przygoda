@@ -1,18 +1,15 @@
+@use '../../../../styles/mixin.scss' as mixin;
 .mountainsTrees {
   display: flex;
   height: auto;
   align-items: center;
-  svg {
+  img{
     width: 100%;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .mountainsTrees svg {
-    height: 200px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .mountainsTrees svg {
-    height: 150px;
+    @include mixin.phone700px{
+      height: 200px;
+    }
+    @include mixin.phone500px{
+      height: 150px;
+    }
   }
 }

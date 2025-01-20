@@ -1,131 +1,118 @@
-@import '../../../styles/colors.scss';
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
 @import '../../../styles/fonts.scss';
 .pointSection {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background-color: $lightBlue;
+  background-color: colors.$lightBlue;
   padding: 4rem;
   gap: 3rem;
-  &__title {
-    width: 100%;
-    height: 100%;
-    font-size: 4rem;
-    color: rgba(255, 255, 255, 0.17);
-    font-family: 'Poppins-700';
-  }
-  &__row-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    &__image {
-      width: 30%;
-      height: auto;
-      display: flex;
-      align-self: flex-start;
-    }
-    &__text {
-      display: flex;
-      flex-direction: column;
-      width: 60%;
-      gap: 2rem;
-      &__text-box {
-        display: flex;
-        position: relative;
-        font-size: 0.9rem;
-        border: 1px solid white;
-        padding: 1rem 1rem;
-        min-width: 400px;
-        width: fit-content;
-        border-radius: 10px;
-        height: fit-content;
-        ul {
-          margin: 0;
-        }
-        li {
-          margin: 0.3rem 0;
-        }
-        &__title {
-          position: absolute;
-          display: block;
-          background-color: $lightBlue;
-          padding: 0 0.5rem;
-          top: -10px;
-          left: 5%;
-          width: fit-content;
-          max-width: 80%;
-          color: $basicOrange;
-          font-size: 1rem;
-          font-weight: 600;
-        }
-      }
-    }
-  }
+ @include mixin.phone700px{
+  padding: 2rem;
+ }
+ @include mixin.phone500px{
+  padding: 1rem;
+ }
 }
-@media only screen and (max-width: 1200px) {
-  .pointSection__title {
+.title {
+  width: 100%;
+  height: 100%;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.17);
+  font-family: 'Poppins-700';
+  @include mixin.pc1250px{
     font-size: 2.5rem;
   }
-  .pointSection__row-box {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    &__image {
-      align-self: center;
+  @include mixin.phone700px{
+    font-size: 2rem;
+  }
+}
+.rowBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ @include mixin.pc1250px{
+  flex-direction: column;
+  gap: 2rem;
+  }
+}
+.image {
+  width: 30%;
+  height: auto;
+  display: flex;
+  align-self: flex-start;
+  @include mixin.pc1250px{
+    align-self: center;
       width: 40%;
+  }
+  @include mixin.phone500px{
+    width: 50%;
+   }
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 2rem;
+  @include mixin.pc1250px{
+    width: 100%;
+  }
+  
+}
+.textBox {
+  display: flex;
+  position: relative;
+  font-size: 0.9rem;
+  border: 1px solid white;
+  padding: 1rem 1rem;
+  min-width: 400px;
+  width: fit-content;
+  border-radius: 10px;
+  height: fit-content;
+  @include mixin.phone700px{
+    min-width: 300px;
+  }
+  @include mixin.phone500px{
+    min-width: 250px;
+   }
+  ul {
+    margin: 0;
+  }
+  li {
+    margin: 0.3rem 0;
+  }
+  .title {
+    position: absolute;
+    display: block;
+    height: auto;
+    background-color: colors.$lightBlue;
+    padding: 0 0.5rem;
+    top: -10px;
+    left: 5%;
+    width: fit-content;
+    max-width: 80%;
+    color: colors.$basicOrange;
+    font-size: 1rem;
+    font-weight: 600;
+    @include mixin.phone700px{
+      font-size: 0.8rem;
     }
-    &__text {
-      width: 100%;
-    }
+    @include mixin.phone500px{
+      font-size: 0.6rem;
+     }
   }
 }
-@media only screen and (max-width: 700px) {
-  .pointSection {
-    padding: 2rem;
-    &__title {
-      font-size: 2rem;
-    }
-    &__row-box {
-      &__text {
-        &__text-box {
-          min-width: 300px;
-          &__title {
-            font-size: 0.8rem;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 500px) {
-  .pointSection {
-    padding: 1rem;
-    &__row-box {
-      &__image {
-        width: 50%;
-      }
-      &__text {
-        width: 100%;
-        &__text-box {
-          min-width: 250px;
-          &__title {
-            font-size: 0.6rem;
-          }
-        }
-      }
-    }
-  }
-}
-.poolNecessaryItems {
-  &__row-box {
+
+  .poolNecessaryItemsrowBox {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     row-gap: 2rem;
-    &__item {
+    .poolNecessaryItemsitem {
       display: flex;
       flex-direction: column;
       width: 250px;
@@ -133,30 +120,24 @@
       gap: 1rem;
       justify-content: center;
       align-items: center;
-      &__svg {
+      @include mixin.pc1250px{
+        width: 150px;
+        height: 150px; 
+      }
+      .poolNecessaryItemsimage {
         width: 200px;
         height: 200px;
+        @include mixin.pc1250px{
+          width: 100px;
+      height: 100px; 
+        }
       }
-      &__title {
+      .poolNecessaryItemstitle {
         color: white;
         text-align: center;
         font-weight: 600;
       }
     }
   }
-}
-@media only screen and (max-width: 1200px) {
-  .poolNecessaryItems__row-box__item {
-    width: 150px;
-    height: 150px;
-    &__svg {
-      width: 100px;
-      height: 100px;
-    }
-  }
-}
-@media only screen and (max-width: 600px) {
-  .poolNecessaryItems {
-    padding: 2rem;
-  }
-}
+
+

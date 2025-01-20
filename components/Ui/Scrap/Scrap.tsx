@@ -1,8 +1,14 @@
 'use client';
-import {scrapType} from '@/types/UI/stickerStripStrap';
+import { customColors } from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
 import React from 'react';
-const Scrap: React.FC<scrapType> = ({position, color}) => {
+
+export interface ScrapPropsType{
+  position: "top" | "bottom";
+    color: customColors;
+}
+
+const Scrap = ({position, color}:ScrapPropsType) => {
   return (
     <svg
       width="1921"

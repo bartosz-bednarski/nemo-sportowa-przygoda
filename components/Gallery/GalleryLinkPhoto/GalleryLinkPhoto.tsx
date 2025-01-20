@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from './galleryLinkPhoto.module.scss';
 import {COLORS} from '@/utils/UI/colors';
 import {GalleryItemType} from '@/utils/Gallery/Gallery';
+
 interface GalleryLinkPhotoPropsType {
   item: GalleryItemType;
 }

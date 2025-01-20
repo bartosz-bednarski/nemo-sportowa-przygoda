@@ -16,6 +16,7 @@ const LandscapePhoto = ({
   data,
   showPhotoHandler,
 }: LandscapePhotoPropsType) => {
+  
   return (
     <div className={styles.columnContainer} key={`landscape${index}`}>
       {landscape[0] !== '' &&

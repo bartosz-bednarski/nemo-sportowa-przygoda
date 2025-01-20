@@ -2,6 +2,7 @@
 import {customColors} from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
 import React from 'react';
+
 const ScrapFooter: React.FC<{color: customColors}> = ({color}) => {
   return (
     <svg
@@ -26,4 +27,5 @@ const ScrapFooter: React.FC<{color: customColors}> = ({color}) => {
     </svg>
   );
 };
+
 export default ScrapFooter;
