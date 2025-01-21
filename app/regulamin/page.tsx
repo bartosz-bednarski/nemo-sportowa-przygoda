@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from '../page.module.scss';
 import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import Link from 'next/link';
