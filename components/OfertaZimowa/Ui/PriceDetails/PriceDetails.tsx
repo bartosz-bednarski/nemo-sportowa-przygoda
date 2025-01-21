@@ -2,9 +2,9 @@
 import React from 'react';
 import styles from './priceDetails.module.scss';
 import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
-import NemoHeisenbergLogo from '@/public/assets/customLogos/nemo-heisenberg.svg'
+import NemoHeisenbergLogo from '@/public/assets/customLogos/nemo-heisenberg.svg';
 
-export interface PriceDetailsPropsType{
+export interface PriceDetailsPropsType {
   priceDetailsList: string[];
 }
 
@@ -23,17 +23,17 @@ const PriceDetails: React.FC<{priceDetails: PriceDetailsPropsType}> = ({
         />
         <div className={styles.listBox}>
           {priceDetails.priceDetailsList.map((listItem, index) => (
-            <span
-              className={styles.item}
-              key={index}
-            >
+            <span className={styles.item} key={index}>
               {listItem}
             </span>
           ))}
         </div>
       </div>
-      <img src={NemoHeisenbergLogo.src} alt='nemoLogo' className={styles.image}/>
-     
+      <img
+        src={NemoHeisenbergLogo.src}
+        alt="nemoLogo"
+        className={styles.image}
+      />
     </div>
   );
 };

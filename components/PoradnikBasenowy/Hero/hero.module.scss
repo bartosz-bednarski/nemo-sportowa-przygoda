@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  @include mixin.phone700px{
+  @include mixin.phone700px {
     padding: 5vh 2rem;
   }
 }
@@ -24,18 +24,18 @@
   padding: 3.2rem 1rem;
   border: 5px solid white;
   border-radius: 15px;
- @include mixin.pc1520px{
-  width: 70%;
- }
- @include mixin.pc1000px{
-  border-width: 3px;
- }
- @include mixin.phone700px{
-  width: 100%;
- }
- @include mixin.phone500px{
-  border-width: 2px;
- }
+  @include mixin.pc1520px {
+    width: 70%;
+  }
+  @include mixin.pc1000px {
+    border-width: 3px;
+  }
+  @include mixin.phone700px {
+    width: 100%;
+  }
+  @include mixin.phone500px {
+    border-width: 2px;
+  }
 }
 .item {
   display: flex;
@@ -47,23 +47,22 @@
   padding: 1rem 1rem;
   height: 4.2rem;
   border-bottom: 5px solid colors.$blueStrokeOpacity;
-  @include mixin.pc1000px{
+  @include mixin.pc1000px {
     font-size: 1.5rem;
-      border-width: 3px;
-   }
-   @include mixin.phone500px{
+    border-width: 3px;
+  }
+  @include mixin.phone500px {
     border-width: 2px;
-   }
+  }
 }
 
 .logo {
   width: 35%;
   height: fit-content;
-  @include mixin.pc1520px{
+  @include mixin.pc1520px {
     width: 40%;
-   }
-   @include mixin.phone700px{
+  }
+  @include mixin.phone700px {
     width: 70%;
-   }
+  }
 }
-

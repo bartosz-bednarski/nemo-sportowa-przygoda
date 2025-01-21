@@ -3,8 +3,8 @@ import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaa
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
-import { PoolInformationsPropsType } from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
-import { PoolTutorialPropsType } from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
+import {PoolInformationsPropsType} from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
+import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 
 type NaukaPlywaniaBasen = {
   dzieciMlodziez: {
@@ -26,10 +26,8 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: 'GRUPOWE',
-      scale: 1.6,
       stripTextColor: 'basicOrange',
       stripBgColor: 'white',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '70 zł',
@@ -50,10 +48,8 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: 'INDYWIDUALNE',
-      scale: 1.2,
       stripTextColor: 'lightBlue',
       stripBgColor: 'basicOrange',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '160 zł',
@@ -74,10 +70,8 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: '2 OSOBOWE',
-      scale: 1.2,
       stripBgColor: 'darkBlue',
       stripTextColor: 'white',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '240 zł',
@@ -100,10 +94,8 @@ const CENNIK_DOROSLI_PLYWACZEK: PriceListPropsType = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: 'GRUPOWE',
-      scale: 1.6,
       stripTextColor: 'basicOrange',
       stripBgColor: 'white',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '70 zł',
@@ -124,10 +116,8 @@ const CENNIK_DOROSLI_PLYWACZEK: PriceListPropsType = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: 'INDYWIDUALNE',
-      scale: 1.2,
       stripTextColor: 'lightBlue',
       stripBgColor: 'basicOrange',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '160 zł',
@@ -148,10 +138,8 @@ const CENNIK_DOROSLI_PLYWACZEK: PriceListPropsType = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: '2 OSOBOWE',
-      scale: 1.2,
       stripBgColor: 'lightBlue',
       stripTextColor: 'white',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '240 zł',
@@ -193,12 +181,11 @@ export const NAUKA_PLYWANIA_PLYWACZEK: NaukaPlywaniaBasen = {
       },
     },
     priceList: CENNIK_DZIECI_MLODZIEZ_PLYWACZEK,
-   
+
     groups: {
       stripH2: {
         type: 'h2',
         title: 'GRUPY',
-        scale: 1.2,
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },
@@ -234,12 +221,11 @@ export const NAUKA_PLYWANIA_PLYWACZEK: NaukaPlywaniaBasen = {
       },
     },
     priceList: CENNIK_DOROSLI_PLYWACZEK,
-   
+
     groups: {
       stripH2: {
         type: 'h2',
         title: 'GRUPY',
-        scale: 1.2,
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },

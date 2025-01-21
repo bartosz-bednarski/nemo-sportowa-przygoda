@@ -4,8 +4,8 @@ import {NAUKA_PLYWANIA} from '../NaukaPlywania/NaukaPlywania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
-import { PoolInformationsPropsType } from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
-import { PoolTutorialPropsType } from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
+import {PoolInformationsPropsType} from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
+import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 
 type NaukaPlywaniaBasen = {
   zRodzicami: {
@@ -21,10 +21,8 @@ export const CENNIK_Z_RODZICAMI_GORLICE: PriceListPropsType = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: 'GRUPOWE',
-      scale: 1.6,
       stripTextColor: 'basicOrange',
       stripBgColor: 'white',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '40 zł (z rodzicem)',
@@ -70,12 +68,11 @@ export const NAUKA_PLYWANIA_GORLICE: NaukaPlywaniaBasen = {
       },
     },
     priceList: CENNIK_Z_RODZICAMI_GORLICE,
-  
+
     groups: {
       stripH2: {
         type: 'h2',
         title: 'ZAJĘCIA',
-        scale: 1.2,
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },

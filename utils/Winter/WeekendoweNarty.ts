@@ -1,11 +1,11 @@
 import {CampsCoversType} from './Obozy';
-import { HeroPropsType } from '@/components/OfertaZimowa/Ui/Hero/Hero';
-import { DetailsPropsType } from '@/components/OfertaZimowa/Ui/Details/Details';
-import { ContactPropsType } from '@/components/OfertaZimowa/Ui/Contact/Contact';
-import { WhatsWaiting4YouPropsType } from '@/components/OfertaZimowa/Obozy/WhatsWaiting4You/WhatsWaiting4You';
-import { HillSidesPropsType } from '@/components/OfertaZimowa/Obozy/HillSides/HillSides';
-import { WeekendNaStokuSchedulePropsType } from '@/components/OfertaZimowa/WeekendoweNarty/Schedule';
-import { PriceDetailsPropsType } from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
+import {HeroPropsType} from '@/components/OfertaZimowa/Ui/Hero/Hero';
+import {DetailsPropsType} from '@/components/OfertaZimowa/Ui/Details/Details';
+import {ContactPropsType} from '@/components/OfertaZimowa/Ui/Contact/Contact';
+import {WhatsWaiting4YouPropsType} from '@/components/OfertaZimowa/Obozy/WhatsWaiting4You/WhatsWaiting4You';
+import {HillSidesPropsType} from '@/components/OfertaZimowa/Obozy/HillSides/HillSides';
+import {WeekendNaStokuSchedulePropsType} from '@/components/OfertaZimowa/WeekendoweNarty/Schedule';
+import {PriceDetailsPropsType} from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
 
 export type WeekendNaStokuType = {
   title: string;
@@ -14,14 +14,14 @@ export type WeekendNaStokuType = {
   contactNemo: ContactPropsType;
   contactCollab?: ContactPropsType;
   whatsWaiting4You: WhatsWaiting4YouPropsType;
-  hillSides:HillSidesPropsType;
-  schedule:WeekendNaStokuSchedulePropsType;
+  hillSides: HillSidesPropsType;
+  schedule: WeekendNaStokuSchedulePropsType;
   priceDetails: PriceDetailsPropsType;
 };
 
 export const WEEKEND_NA_STOKU_LISTA_2025: CampsCoversType = [
   {
-    active: true,
+    active: false,
     title: 'WEEKEND NA STOKU',
     price: '219 PLN + KARNET (80 PLN)',
     localization: 'TYLICZ',
@@ -30,7 +30,7 @@ export const WEEKEND_NA_STOKU_LISTA_2025: CampsCoversType = [
     href: '/ofertazimowa/weekend-na-stoku/termin-1',
   },
   {
-    active: true,
+    active: false,
     title: 'WEEKEND NA STOKU',
     price: '219 PLN + KARNET (80 PLN)',
     localization: 'TYLICZ',

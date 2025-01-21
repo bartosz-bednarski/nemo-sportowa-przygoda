@@ -13,7 +13,7 @@
   "dependencies": {
     "cookies-next": "^4.3.0",
     "express": "^4.21.1",
-    "next": "14.2.12",
+    "next": "^14.2.23",
     "prettier": "^3.4.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -25,6 +25,6 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.12",
     "sass": "^1.79.1",
-    "typescript": "^5"
+    "typescript": "^5.5.4"
   }
 }

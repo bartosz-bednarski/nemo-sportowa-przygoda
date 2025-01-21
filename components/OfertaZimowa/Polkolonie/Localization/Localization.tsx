@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './localization.module.scss';
 import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
-import LocalizationImg from '@/public/assets/winter/zakwaterowanie/accommodation-basic.svg'
+import LocalizationImg from '@/public/assets/winter/zakwaterowanie/accommodation-basic.svg';
 
 export interface LocalizationPropsType {
   localizationDescription: string[];
@@ -26,8 +26,11 @@ const Localization: React.FC<{localization: LocalizationPropsType}> = ({
           </span>
         ))}
       </div>
-      <img src={LocalizationImg.src} alt='housesWithTrees'   className={styles.image}/>
-      
+      <img
+        src={LocalizationImg.src}
+        alt="housesWithTrees"
+        className={styles.image}
+      />
     </div>
   );
 };

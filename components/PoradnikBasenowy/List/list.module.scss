@@ -7,13 +7,13 @@
   justify-content: center;
   min-height: 100vh;
   background-color: colors.$lightBlue;
-  
+
   ul {
     list-style-type: none;
     min-width: 50%;
     border: 3px solid colors.$blueStrokeOpacity;
     padding: 2rem;
-    @include mixin.phone700px{
+    @include mixin.phone700px {
       border: none;
     }
     li {
@@ -25,10 +25,10 @@
       padding: 0.5rem 0rem 0.3rem 2rem;
       transition: background-color 1s;
       text-transform: uppercase;
-      @include mixin.phone700px{
+      @include mixin.phone700px {
         font-size: 0.9rem;
       }
-      @include mixin.phone500px{
+      @include mixin.phone500px {
         font-size: 0.7rem;
       }
       &:hover {
@@ -44,10 +44,10 @@
   padding-left: 0rem !important;
   color: white !important;
   font-weight: 700 !important;
-  @include mixin.phone700px{
+  @include mixin.phone700px {
     font-size: 1.3rem !important;
   }
-  @include mixin.phone500px{
+  @include mixin.phone500px {
     font-size: 1rem !important;
   }
   &:hover {

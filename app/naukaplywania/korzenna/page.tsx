@@ -44,7 +44,6 @@ const NaukaPlywaniaKorzenna = () => {
           titleStrip: 'KORZENNA',
           stripBgColor: 'mediumBlue',
           stripTextColor: 'white',
-          scale: 1.8,
         }}
         scrapColor="lightBlue"
         col1={{
@@ -54,7 +53,6 @@ const NaukaPlywaniaKorzenna = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'lightBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col2={{
@@ -67,7 +65,6 @@ const NaukaPlywaniaKorzenna = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'mediumBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col3={{
@@ -77,7 +74,6 @@ const NaukaPlywaniaKorzenna = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'darkBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
       />
@@ -86,7 +82,6 @@ const NaukaPlywaniaKorzenna = () => {
       <NaukaPlywaniaBasen
         about={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.about}
         backgroundColor={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.backgroundColor}
-        instructors={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.instructors}
         groups={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.groups}
         priceList={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.priceList}
       />
@@ -94,7 +89,6 @@ const NaukaPlywaniaKorzenna = () => {
       <NaukaPlywaniaBasen
         about={NAUKA_PLYWANIA_KORZENNA.dorosli.about}
         backgroundColor={NAUKA_PLYWANIA_KORZENNA.dorosli.backgroundColor}
-        instructors={NAUKA_PLYWANIA_KORZENNA.dorosli.instructors}
         groups={NAUKA_PLYWANIA_KORZENNA.dorosli.groups}
         priceList={NAUKA_PLYWANIA_KORZENNA.dorosli.priceList}
       />

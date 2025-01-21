@@ -3,6 +3,9 @@ import styles from '../page.module.scss';
 import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import Link from 'next/link';
 import {Metadata} from 'next';
+import PoolsStatuesImg from '@/public/assets/statues/pools.webp'
+import ColoniesStatuesImg from '@/public/assets/statues/colonies.webp'
+import CampsStatuesImg from '@/public/assets/statues/camps.webp'
 
 export const metadata: Metadata = {
   title: 'Regulamin',
@@ -15,10 +18,10 @@ const RegulaminPage = () => {
         href="/assets/statues/Regulamin-baseny.pdf"
         className={styles['statues-row__row-item']}
       >
-        <Image
+        <img
           width={600}
           height={1080}
-          src="/assets/statues/pools.webp"
+          src={PoolsStatuesImg.src}
           alt="regulamin baseny"
         />
         <span className={styles['statues-row__row-item__sticker-box']}>
@@ -31,10 +34,10 @@ const RegulaminPage = () => {
         </span>
       </Link>
       <Link href="/" className={styles['statues-row__row-item']}>
-        <Image
+        <img
           width={600}
           height={1080}
-          src="/assets/statues/camps.webp"
+          src={CampsStatuesImg.src}
           alt="regulamin obozy"
         />
         <span className={styles['statues-row__row-item__sticker-box']}>
@@ -47,10 +50,10 @@ const RegulaminPage = () => {
         </span>
       </Link>
       <Link href="/" className={styles['statues-row__row-item']}>
-        <Image
+        <img
           width={600}
           height={1080}
-          src="/assets/statues/colonies.webp"
+          src={ColoniesStatuesImg.src}
           alt="regulamin polkolonie"
         />
         <span className={styles['statues-row__row-item__sticker-box']}>

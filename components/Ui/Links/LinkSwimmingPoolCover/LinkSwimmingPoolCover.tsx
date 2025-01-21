@@ -35,4 +35,5 @@ const LinkSwimmingPoolCover = ({
     </Link>
   );
 };
+
 export default LinkSwimmingPoolCover;

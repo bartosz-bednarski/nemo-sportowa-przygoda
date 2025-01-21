@@ -180,10 +180,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'GRUPOWE',
         titleStrip: 'Z RODZICAMI',
-        scale: 1.35,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA.rybkiDzieci.age,
@@ -198,10 +196,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'GRUPA',
         titleStrip: 'POCZĄTKUJĄCA',
-        scale: 1.55,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA.poczatkujacaDzieci.age,
@@ -216,10 +212,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'KONTYNUACJA',
         titleStrip: 'NAUKI',
-        scale: 1.7,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA.kontynuacjaDzieci.age,
@@ -234,10 +228,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'ŚREDNIO',
         titleStrip: 'ZAAWANSOWANA',
-        scale: 1.65,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA.srednioZaawansowana.age,
@@ -252,10 +244,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'GRUPA',
         titleStrip: 'ZAAWANSOWANA',
-        scale: 1.65,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA.zaawansowana.age,
@@ -270,10 +260,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'GRUPA',
         titleStrip: 'POCZĄTKUJĄCA',
-        scale: 1.65,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA.poczatkujacaDorosli.age,
@@ -288,10 +276,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'KONTYNUACJA',
         titleStrip: 'NAUKI',
-        scale: 2,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA.kontynuacjaDorosli.age,
@@ -306,10 +292,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'GRUPOWE',
         titleStrip: 'Z RODZICAMI',
-        scale: 1.35,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.trzyMiesiace.age,
@@ -325,10 +309,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'GRUPOWE',
         titleStrip: 'Z RODZICAMI',
-        scale: 1.35,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.siedemMiesiecy.age,
@@ -344,10 +326,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'GRUPOWE',
         titleStrip: 'Z RODZICAMI',
-        scale: 1.35,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.dwanascieMiesiecy.age,
@@ -363,10 +343,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'GRUPOWE',
         titleStrip: 'Z RODZICAMI',
-        scale: 1.35,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.dwaLata.age,
@@ -381,10 +359,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'GRUPOWE',
         titleStrip: 'Z RODZICAMI',
-        scale: 1.35,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.czteryLata.age,
@@ -400,10 +376,8 @@ export const GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS: grupyPoziomZaawansowania
       stickerH4: {
         title: 'GRUPOWE',
         titleStrip: 'BEZ RODZICÓW',
-        scale: 1.45,
         stripBgColor: 'basicOrange',
         stripTextColor: 'darkBlue',
-        paddingBottom: 10,
       },
       aboutTextPoppins: {
         title: GRUPY_POZIOM_ZAAWANSOWANIA_NIEMOWLAKI.czteryLataBez.age,

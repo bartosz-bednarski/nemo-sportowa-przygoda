@@ -4,8 +4,8 @@ import {NAUKA_PLYWANIA} from '../NaukaPlywania/NaukaPlywania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
-import { StickerH2PropsType } from '@/components/Ui/Stickers/StickerH2/StickerH2';
-import { PoolTutorialPropsType } from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
+import {StickerH2PropsType} from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 
 type NaukaPlywaniaBasen = {
   zRodzicami: {
@@ -59,10 +59,8 @@ export const CENNIK_Z_RODZICAMI_BRONOWIANKA: PriceListPropsType = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: 'GRUPOWE',
-      scale: 1.6,
       stripTextColor: 'basicOrange',
       stripBgColor: 'white',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '70 zł',
@@ -108,12 +106,11 @@ export const NAUKA_PLYWANIA_BRONOWIANKA: NaukaPlywaniaBasen = {
       },
     },
     priceList: CENNIK_Z_RODZICAMI_BRONOWIANKA,
-   
+
     groups: {
       stripH2: {
         type: 'h2',
         title: 'ZAJĘCIA',
-        scale: 1.2,
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },
@@ -140,7 +137,6 @@ export const BASEN_BRONOWIANKA_INFORMATIONS: PoolInformationsType = {
     titleStrip: 'BRONOWIANKA',
     stripBgColor: 'basicOrange',
     stripTextColor: 'darkBlue',
-    
   },
   icons: {
     pool1: {

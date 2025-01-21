@@ -1,14 +1,14 @@
 'use client';
-import { customColors } from '@/types/UI/colors';
+import {customColors} from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
 import React from 'react';
 
-export interface ScrapPropsType{
-  position: "top" | "bottom";
-    color: customColors;
+export interface ScrapPropsType {
+  position: 'top' | 'bottom';
+  color: customColors;
 }
 
-const Scrap = ({position, color}:ScrapPropsType) => {
+const Scrap = ({position, color}: ScrapPropsType) => {
   return (
     <svg
       width="1921"

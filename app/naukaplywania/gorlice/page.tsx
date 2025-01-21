@@ -44,7 +44,6 @@ const NaukaPlywaniaGorlice = () => {
           titleStrip: 'GORLICE',
           stripBgColor: 'mediumBlue',
           stripTextColor: 'white',
-          scale: 1.5,
         }}
         scrapColor="lightBlue"
         col1={{
@@ -57,7 +56,6 @@ const NaukaPlywaniaGorlice = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'lightBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col2={{
@@ -70,7 +68,6 @@ const NaukaPlywaniaGorlice = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'mediumBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col3={{
@@ -80,7 +77,6 @@ const NaukaPlywaniaGorlice = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'darkBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
       />
@@ -89,7 +85,6 @@ const NaukaPlywaniaGorlice = () => {
       <NaukaPlywaniaBasen
         about={NAUKA_PLYWANIA_GORLICE.zRodzicami.about}
         backgroundColor={NAUKA_PLYWANIA_GORLICE.zRodzicami.backgroundColor}
-        instructors={NAUKA_PLYWANIA_GORLICE.zRodzicami.instructors}
         groups={NAUKA_PLYWANIA_GORLICE.zRodzicami.groups}
         priceList={NAUKA_PLYWANIA_GORLICE.zRodzicami.priceList}
       />

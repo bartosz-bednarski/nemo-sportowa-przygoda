@@ -2,7 +2,7 @@ import {COLORS} from '@/utils/UI/colors';
 import styles from './titleCart.module.scss';
 import Link from 'next/link';
 import {GalleryItemType} from '@/utils/Gallery/Gallery';
-import LogoMainBlackImg from '@/public/assets/logo/logo-main-black.svg'
+import LogoMainBlackImg from '@/public/assets/logo/logo-main-black.svg';
 
 interface TitleCartPropsType {
   data: GalleryItemType;
@@ -21,7 +21,11 @@ const TitleCart = ({data}: TitleCartPropsType) => {
         >
           {data.title}
         </h1>
-        <img src={LogoMainBlackImg.src} alt='logoNemo' className={styles.logoImage}/>
+        <img
+          src={LogoMainBlackImg.src}
+          alt="logoNemo"
+          className={styles.logoImage}
+        />
 
         <Link
           href={data.collabHref}
@@ -49,7 +53,11 @@ const TitleCart = ({data}: TitleCartPropsType) => {
       >
         {data.title}
       </h1>
-      <img src={LogoMainBlackImg.src} alt='logoNemo' className={styles.logoImage}/>
+      <img
+        src={LogoMainBlackImg.src}
+        alt="logoNemo"
+        className={styles.logoImage}
+      />
     </div>
   );
 };

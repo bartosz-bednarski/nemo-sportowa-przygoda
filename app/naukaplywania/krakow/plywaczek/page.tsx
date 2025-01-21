@@ -43,7 +43,6 @@ const NaukaPlywaniaPlywaczek = () => {
           titleStrip: 'PŁYWACZEK',
           stripBgColor: 'mediumBlue',
           stripTextColor: 'white',
-          scale: 2.1,
         }}
         scrapColor="lightBlue"
         col1={{
@@ -53,7 +52,6 @@ const NaukaPlywaniaPlywaczek = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'lightBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col2={{
@@ -66,7 +64,6 @@ const NaukaPlywaniaPlywaczek = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'mediumBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col3={{
@@ -76,7 +73,6 @@ const NaukaPlywaniaPlywaczek = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'darkBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
       />
@@ -86,7 +82,6 @@ const NaukaPlywaniaPlywaczek = () => {
         backgroundColor={
           NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.backgroundColor
         }
-        instructors={NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.instructors}
         groups={NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.groups}
         priceList={[]}
       />
@@ -94,7 +89,6 @@ const NaukaPlywaniaPlywaczek = () => {
       <NaukaPlywaniaBasen
         about={NAUKA_PLYWANIA_PLYWACZEK.dorosli.about}
         backgroundColor={NAUKA_PLYWANIA_PLYWACZEK.dorosli.backgroundColor}
-        instructors={NAUKA_PLYWANIA_PLYWACZEK.dorosli.instructors}
         groups={NAUKA_PLYWANIA_PLYWACZEK.dorosli.groups}
         priceList={[]}
       />

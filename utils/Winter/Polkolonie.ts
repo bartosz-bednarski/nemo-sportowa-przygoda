@@ -1,11 +1,11 @@
 import {CampsCoversType} from './Obozy';
-import { HeroPropsType } from '@/components/OfertaZimowa/Ui/Hero/Hero';
-import { DetailsPropsType } from '@/components/OfertaZimowa/Ui/Details/Details';
-import { ContactPropsType } from '@/components/OfertaZimowa/Ui/Contact/Contact';
-import { LocalizationPropsType } from '@/components/OfertaZimowa/Polkolonie/Localization/Localization';
-import { SchedulePropsType } from '@/components/OfertaZimowa/Ui/Schedule/Schedule';
-import { FoodPropsType } from '@/components/OfertaZimowa/Ui/Food/Food';
-import { PriceDetailsPropsType } from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
+import {HeroPropsType} from '@/components/OfertaZimowa/Ui/Hero/Hero';
+import {DetailsPropsType} from '@/components/OfertaZimowa/Ui/Details/Details';
+import {ContactPropsType} from '@/components/OfertaZimowa/Ui/Contact/Contact';
+import {LocalizationPropsType} from '@/components/OfertaZimowa/Polkolonie/Localization/Localization';
+import {SchedulePropsType} from '@/components/OfertaZimowa/Ui/Schedule/Schedule';
+import {FoodPropsType} from '@/components/OfertaZimowa/Ui/Food/Food';
+import {PriceDetailsPropsType} from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
 
 export type PolkoloniaType = {
   title: string;
@@ -17,6 +17,53 @@ export type PolkoloniaType = {
   food: FoodPropsType;
   priceDetails: PriceDetailsPropsType;
 };
+export const POLKOLONIE_LISTA_2025: CampsCoversType = [
+  {
+    active: false,
+    title: 'PÓŁKOLONIA AKTYWNA ZIMA',
+    price: '800 PLN',
+    localization: 'MCK W BOBOWEJ',
+    date: '20.01-24.01',
+    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
+    href: '/ofertazimowa/polkolonie/aktywnazima/bobowa',
+  },
+  {
+    active: false,
+    title: 'PÓŁKOLONIA AKTYWNA ZIMA',
+    price: '800 PLN',
+    localization: 'GOK W ŁUŻNEJ',
+    date: '20.01-24.01',
+    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
+    href: '/ofertazimowa/polkolonie/aktywnazima/luzna',
+  },
+  {
+    active: false,
+    title: 'PÓŁKOLONIA AKTYWNA ZIMA',
+    price: '800 PLN',
+    localization: 'CSIR W KORZENNEJ',
+    date: '20.01-24.01',
+    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
+    href: '/ofertazimowa/polkolonie/aktywnazima/korzenna',
+  },
+  {
+    active: false,
+    title: 'PÓŁKOLONIA BIAŁE SZALEŃSTWO',
+    price: '800 PLN',
+    localization: 'MCK W BOBOWEJ',
+    date: '27.01-31.01',
+    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
+    href: '/ofertazimowa/polkolonie/bialeszalenstwo/bobowa',
+  },
+  {
+    active: false,
+    title: 'PÓŁKOLONIA BIAŁE SZALEŃSTWO',
+    price: '800 PLN',
+    localization: 'CSIR W KORZENNEJ',
+    date: '27.01-31.01',
+    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
+    href: '/ofertazimowa/polkolonie/bialeszalenstwo/korzenna',
+  },
+];
 
 export const POLKOLONIA_AKTYWNA_ZIMA_BOBOWA: PolkoloniaType = {
   title: 'PÓŁKOLONIA AKTYWNA ZIMA',
@@ -421,50 +468,3 @@ export const POLKOLONIA_BIALE_SZALENSTWO_KORZENNA: PolkoloniaType = {
     ],
   },
 };
-export const POLKOLONIE_LISTA_2025: CampsCoversType = [
-  {
-    active: false,
-    title: 'PÓŁKOLONIA AKTYWNA ZIMA',
-    price: '800 PLN',
-    localization: 'MCK W BOBOWEJ',
-    date: '20.01-24.01',
-    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
-    href: '/ofertazimowa/polkolonie/aktywnazima/bobowa',
-  },
-  {
-    active: true,
-    title: 'PÓŁKOLONIA AKTYWNA ZIMA',
-    price: '800 PLN',
-    localization: 'GOK W ŁUŻNEJ',
-    date: '20.01-24.01',
-    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
-    href: '/ofertazimowa/polkolonie/aktywnazima/luzna',
-  },
-  {
-    active: true,
-    title: 'PÓŁKOLONIA AKTYWNA ZIMA',
-    price: '800 PLN',
-    localization: 'CSIR W KORZENNEJ',
-    date: '20.01-24.01',
-    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
-    href: '/ofertazimowa/polkolonie/aktywnazima/korzenna',
-  },
-  {
-    active: true,
-    title: 'PÓŁKOLONIA BIAŁE SZALEŃSTWO',
-    price: '800 PLN',
-    localization: 'MCK W BOBOWEJ',
-    date: '27.01-31.01',
-    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
-    href: '/ofertazimowa/polkolonie/bialeszalenstwo/bobowa',
-  },
-  {
-    active: true,
-    title: 'PÓŁKOLONIA BIAŁE SZALEŃSTWO',
-    price: '800 PLN',
-    localization: 'CSIR W KORZENNEJ',
-    date: '27.01-31.01',
-    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
-    href: '/ofertazimowa/polkolonie/bialeszalenstwo/korzenna',
-  },
-];

@@ -1,13 +1,13 @@
-import { AccommodationPropsType } from '@/components/OfertaZimowa/Obozy/Accommodation/Accommodation';
-import { HillSidesPropsType } from '@/components/OfertaZimowa/Obozy/HillSides/HillSides';
-import { SurroundingsPropsType } from '@/components/OfertaZimowa/Obozy/Surroundings/Surroundings';
-import { WhatsWaiting4YouPropsType } from '@/components/OfertaZimowa/Obozy/WhatsWaiting4You/WhatsWaiting4You';
-import { ContactPropsType } from '@/components/OfertaZimowa/Ui/Contact/Contact';
-import { DetailsPropsType } from '@/components/OfertaZimowa/Ui/Details/Details';
-import { FoodPropsType } from '@/components/OfertaZimowa/Ui/Food/Food';
-import { HeroPropsType } from '@/components/OfertaZimowa/Ui/Hero/Hero';
-import { PriceDetailsPropsType } from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
-import { SchedulePropsType } from '@/components/OfertaZimowa/Ui/Schedule/Schedule';
+import {AccommodationPropsType} from '@/components/OfertaZimowa/Obozy/Accommodation/Accommodation';
+import {HillSidesPropsType} from '@/components/OfertaZimowa/Obozy/HillSides/HillSides';
+import {SurroundingsPropsType} from '@/components/OfertaZimowa/Obozy/Surroundings/Surroundings';
+import {WhatsWaiting4YouPropsType} from '@/components/OfertaZimowa/Obozy/WhatsWaiting4You/WhatsWaiting4You';
+import {ContactPropsType} from '@/components/OfertaZimowa/Ui/Contact/Contact';
+import {DetailsPropsType} from '@/components/OfertaZimowa/Ui/Details/Details';
+import {FoodPropsType} from '@/components/OfertaZimowa/Ui/Food/Food';
+import {HeroPropsType} from '@/components/OfertaZimowa/Ui/Hero/Hero';
+import {PriceDetailsPropsType} from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
+import {SchedulePropsType} from '@/components/OfertaZimowa/Ui/Schedule/Schedule';
 
 export type CampCoverType = {
   active: boolean;
@@ -36,7 +36,7 @@ export type CampsCoversType = CampCoverType[];
 
 export const OBOZY_LISTA_2025: CampsCoversType = [
   {
-    active: true,
+    active: false,
     title: 'OBÓZ NARCIARSKI Z BOM4SPORTS',
     price: '2499 PLN + KARNETY (~600 PLN)',
     localization: 'MUSZYNA',

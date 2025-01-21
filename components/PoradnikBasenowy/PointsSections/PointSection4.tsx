@@ -1,24 +1,22 @@
 'use client';
 import React from 'react';
 import styles from './pointSection.module.scss';
-import NemoMegaphoneLogo from '@/public/assets/customLogos/nemo-megaphone.svg'
+import NemoMegaphoneLogo from '@/public/assets/customLogos/nemo-megaphone.svg';
 
 const PointSection4 = () => {
   return (
     <div className={styles.pointSection} id="4">
-      <span className={styles.title}>
-        4. ZA CO ODPOWIADA INSTRUKTOR?
-      </span>
+      <span className={styles.title}>4. ZA CO ODPOWIADA INSTRUKTOR?</span>
       <div className={styles.rowBox}>
-        <img src={NemoMegaphoneLogo.src} alt='nemoLogo' className={styles.image}/>
-       
+        <img
+          src={NemoMegaphoneLogo.src}
+          alt="nemoLogo"
+          className={styles.image}
+        />
+
         <div className={styles.text}>
           <span className={styles.textBox}>
-            <span
-              className={styles.title}
-            >
-              ODPOWIEDZIALNOŚĆ INSTRUKTORA
-            </span>
+            <span className={styles.title}>ODPOWIEDZIALNOŚĆ INSTRUKTORA</span>
             <ul>
               <li style={{listStyleType: 'none'}}>
                 <b>1. Moment przejęcia odpowiedzialności:</b>
@@ -51,11 +49,7 @@ const PointSection4 = () => {
             </ul>
           </span>
           <span className={styles.textBox}>
-            <span
-              className={styles.title}
-            >
-              OBOWIĄZKI UCZESTNIKÓW KURSU
-            </span>
+            <span className={styles.title}>OBOWIĄZKI UCZESTNIKÓW KURSU</span>
             <ul>
               <li>
                 Stosowanie się do poleceń Instruktora oraz znaków i sygnałów
@@ -76,11 +70,7 @@ const PointSection4 = () => {
             </ul>
           </span>{' '}
           <span className={styles.textBox}>
-            <span
-              className={styles.title}
-            >
-              ZGŁASZANIE ZDARZEŃ
-            </span>
+            <span className={styles.title}>ZGŁASZANIE ZDARZEŃ</span>
             Bezzwłoczne informowanie Instruktora o wypadkach, urazach lub innych
             zdarzeniach mogących mieć wpływ na bezpieczeństwo własne lub innych
             uczestników.

@@ -4,7 +4,6 @@ import styles from './naukaPlywaniaBasen.module.scss';
 import {customColors} from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
 import PriceList, {PriceListPropsType} from '../Ui/PriceList/PriceList';
-import {instructorsRowBoxType} from '@/types/Globals/globals';
 import Groups, {GroupsPropsType} from '../Ui/Groups/Groups';
 import NaukaPlywaniaAbout, {
   NaukaPływaniaAboutPropsType,
@@ -13,7 +12,6 @@ import NaukaPlywaniaAbout, {
 export interface NaukaPlywaniaBasenPropsType {
   about: NaukaPływaniaAboutPropsType;
   backgroundColor: customColors;
-  instructors: instructorsRowBoxType;
   groups: GroupsPropsType;
   priceList?: PriceListPropsType;
 }

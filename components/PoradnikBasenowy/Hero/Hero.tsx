@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './hero.module.scss';
-import LogoNemoImg from '@/public/assets/logo/Logo-main.svg'
+import LogoNemoImg from '@/public/assets/logo/Logo-main.svg';
 
 const Hero = () => {
   return (
@@ -10,8 +10,7 @@ const Hero = () => {
         <span className={styles.item}>PORADNIK </span>
         <span className={styles.item}>BASENOWY</span>
       </h1>
-     <img src={LogoNemoImg.src} alt='logoNemo' className={styles.logo}/>
-     
+      <img src={LogoNemoImg.src} alt="logoNemo" className={styles.logo} />
     </div>
   );
 };

@@ -45,7 +45,6 @@ const NaukaPlywaniaEisenberga = () => {
           titleStrip: 'EISENBERGA',
           stripBgColor: 'mediumBlue',
           stripTextColor: 'white',
-          scale: 2.1,
         }}
         scrapColor="lightBlue"
         col1={{
@@ -55,7 +54,6 @@ const NaukaPlywaniaEisenberga = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'lightBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col2={{
@@ -68,7 +66,6 @@ const NaukaPlywaniaEisenberga = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'mediumBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col3={{
@@ -78,14 +75,12 @@ const NaukaPlywaniaEisenberga = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'darkBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
       />
       <NaukaPlywaniaBasen
         about={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.about}
         backgroundColor={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.backgroundColor}
-        instructors={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.instructors}
         groups={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.groups}
         priceList={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.priceList}
       />
@@ -95,7 +90,6 @@ const NaukaPlywaniaEisenberga = () => {
         backgroundColor={
           NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.backgroundColor
         }
-        instructors={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.instructors}
         groups={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.groups}
         priceList={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.priceList}
       />
@@ -103,7 +97,6 @@ const NaukaPlywaniaEisenberga = () => {
       <NaukaPlywaniaBasen
         about={NAUKA_PLYWANIA_EISENBERGA.dorosli.about}
         backgroundColor={NAUKA_PLYWANIA_EISENBERGA.dorosli.backgroundColor}
-        instructors={NAUKA_PLYWANIA_EISENBERGA.dorosli.instructors}
         groups={NAUKA_PLYWANIA_EISENBERGA.dorosli.groups}
         priceList={NAUKA_PLYWANIA_EISENBERGA.dorosli.priceList}
       />

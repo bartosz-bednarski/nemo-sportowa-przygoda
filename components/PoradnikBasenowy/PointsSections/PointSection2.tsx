@@ -1,23 +1,22 @@
 'use client';
 import React from 'react';
 import styles from './pointSection.module.scss';
-import NemoHeisenbergLogo from '@/public/assets/customLogos/nemo-heisenberg.svg'
+import NemoHeisenbergLogo from '@/public/assets/customLogos/nemo-heisenberg.svg';
 
 const PointSection2 = () => {
   return (
     <div className={styles.pointSection} id="2">
       <span className={styles.title}>2. CENNIK I OPŁATY</span>
       <div className={styles.rowBox}>
-        <img src={NemoHeisenbergLogo.src} alt='nemoLogo' className={styles.image}/>
-        
+        <img
+          src={NemoHeisenbergLogo.src}
+          alt="nemoLogo"
+          className={styles.image}
+        />
 
         <div className={styles.text}>
           <span className={styles.textBox}>
-            <span
-              className={styles.title}
-            >
-              CENNIK{' '}
-            </span>
+            <span className={styles.title}>CENNIK </span>
             Cennik zajęć w Nemo Sportowa Przygoda może się różnić w zależności
             od lokalizacji i rodzaju zajęć. Dlatego zalecamy sprawdzenie
             aktualnych cen bezpośrednio dla wybranej lokalizacji na stronie
@@ -26,11 +25,7 @@ const PointSection2 = () => {
             promocji.
           </span>
           <span className={styles.textBox}>
-            <span
-              className={styles.title}
-            >
-              JAK DOKONAĆ PŁATNOŚCI?
-            </span>
+            <span className={styles.title}>JAK DOKONAĆ PŁATNOŚCI?</span>
             <ul>
               <li>
                 <b>Płatność przez aplikacje Active Now w panelu klienta</b>
@@ -54,31 +49,19 @@ const PointSection2 = () => {
             </ul>
           </span>{' '}
           <span className={styles.textBox}>
-            <span
-              className={styles.title}
-            >
-              OPŁATY ZA KURSY GRUPOWE
-            </span>
+            <span className={styles.title}>OPŁATY ZA KURSY GRUPOWE</span>
             Powinny zostać opłacone z góry za dany semestr w terminie 14 dni od
             daty pierwszych zajęć cyklu Kursu. Jedynie w szczególnie
             uzasadnionych przypadkach Organizator może wyrazić zgodę na
             rozłożenie płatności na raty.
           </span>
           <span className={styles.textBox}>
-            <span
-              className={styles.title}
-            >
-              OPŁATY ZA KURSY INDYWIDUALNE
-            </span>
+            <span className={styles.title}>OPŁATY ZA KURSY INDYWIDUALNE</span>
             Powinny zostać opłacone z góry za dany miesiąc, w terminie do 10
             dnia danego miesiąca.
           </span>
           <span className={styles.textBox}>
-            <span
-              className={styles.title}
-            >
-              PŁATNOŚCI RATALNE
-            </span>
+            <span className={styles.title}>PŁATNOŚCI RATALNE</span>
             W celu uzgodnienia płatności ratalnych prosimy o kontakt pod numerem
             telefonu 519 625 894 lub mailowo na adres szkolaplywanianemo1
             <br />

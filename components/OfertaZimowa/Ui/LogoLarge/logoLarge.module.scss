@@ -7,11 +7,10 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 4rem;
- 
 }
 .image {
   height: 20vh;
-@include mixin.phone700px{
-  width: 80vw;
-}
+  @include mixin.phone700px {
+    width: 80vw;
+  }
 }

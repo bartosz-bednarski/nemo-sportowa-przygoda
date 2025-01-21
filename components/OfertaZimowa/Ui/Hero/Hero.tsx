@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './hero.module.scss';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 
-export interface HeroPropsType{
+export interface HeroPropsType {
   pc: string;
   mobile: string;
 }

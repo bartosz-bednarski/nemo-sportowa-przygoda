@@ -5,9 +5,9 @@
   box-sizing: border-box;
   padding: 4rem 0rem;
   gap: 2rem;
-@include mixin.phone700px{
-  padding: 2rem 0;
-}
+  @include mixin.phone700px {
+    padding: 2rem 0;
+  }
 }
 
 .rowBoxLeft {
@@ -15,18 +15,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  @include mixin.pc1450px{
+  @include mixin.pc1450px {
     flex-direction: column;
   }
-  .columnBox{
-    @include mixin.pc1450px{
+  .columnBox {
+    @include mixin.pc1450px {
       gap: 1rem;
-    align-self: flex-start;
-    width: 100%;
+      align-self: flex-start;
+      width: 100%;
     }
   }
-  .image{
-    @include mixin.pc1450px{
+  .image {
+    @include mixin.pc1450px {
       align-self: flex-end;
       width: 80%;
     }
@@ -39,40 +39,39 @@
   padding: 0 4rem;
   width: 40%;
   gap: 2rem;
-@include mixin.phone700px{
-  padding: 0 2rem;
-}
+  @include mixin.phone700px {
+    padding: 0 2rem;
+  }
 }
 
-  .image {
-    z-index: 2;
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-  }
+.image {
+  z-index: 2;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
 .rowBoxRight {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  @include mixin.pc1450px{
+  @include mixin.pc1450px {
     flex-direction: column-reverse;
   }
-.columnBox{
-  @include mixin.pc1450px{
-    gap: 1rem;
-    align-self: flex-end;
-    width: 100%;
-    text-align: right;
+  .columnBox {
+    @include mixin.pc1450px {
+      gap: 1rem;
+      align-self: flex-end;
+      width: 100%;
+      text-align: right;
+    }
   }
-  
-}
-.image{
-  @include mixin.pc1450px{
-    align-self: flex-start;
-  width: 80%;
+  .image {
+    @include mixin.pc1450px {
+      align-self: flex-start;
+      width: 80%;
+    }
   }
-}
 }
 // @media only screen and (max-width: 1400px) {
 //   .about__row-box-left {
@@ -101,4 +100,3 @@
 //     width: 80%;
 //   }
 // }
-

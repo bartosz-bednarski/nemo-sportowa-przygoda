@@ -7,7 +7,7 @@ import EisenbergaCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
 import BronowiankaCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
 import PlywaczekCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
 
-const NaukaPlywaniaMiasto= () => {
+const NaukaPlywaniaMiasto = () => {
   return (
     <div
       className={styles.naukaPlywaniaMiasto}

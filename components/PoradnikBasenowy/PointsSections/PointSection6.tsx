@@ -1,24 +1,22 @@
 'use client';
 import React from 'react';
 import styles from './pointSection.module.scss';
-import NemoPhotographerLogo from '@/public/assets/customLogos/nemo-photographer.svg'
+import NemoPhotographerLogo from '@/public/assets/customLogos/nemo-photographer.svg';
 
 const PointSection6: React.FC = () => {
   return (
     <div className={styles.pointSection} style={{paddingBottom: '9rem'}} id="6">
-      <span className={styles.title}>
-        6. ZGODA NA PUBLIKACJĘ WIZERUNKU
-      </span>
+      <span className={styles.title}>6. ZGODA NA PUBLIKACJĘ WIZERUNKU</span>
       <div className={styles.rowBox}>
-        <img src={NemoPhotographerLogo.src} alt='nemoLogo' className={styles.image}/>
-       
+        <img
+          src={NemoPhotographerLogo.src}
+          alt="nemoLogo"
+          className={styles.image}
+        />
+
         <div className={styles.text}>
           <span className={styles.textBox}>
-            <span
-              className={styles.title}
-            >
-              ZGODA NA PUBLIKACJĘ
-            </span>
+            <span className={styles.title}>ZGODA NA PUBLIKACJĘ</span>
             Organizator może gromadzić zgody uczestników na publikację ich
             wizerunku w celach promocyjnych. Uczestnicy Kursu lub ich
             Rodzice/Opiekunowie prawni wyrażają zgodę na udostępnienie wizerunku
@@ -31,11 +29,7 @@ const PointSection6: React.FC = () => {
             elektronicznego formularza zgłoszeniowego w aplikacji ACTIVE NOW.
           </span>
           <span className={styles.textBox}>
-            <span
-              className={styles.title}
-            >
-              BRAK ZGODY NA PUBLIKACJĘ
-            </span>
+            <span className={styles.title}>BRAK ZGODY NA PUBLIKACJĘ</span>
 
             <ul>
               <li style={{listStyleType: 'none'}}>

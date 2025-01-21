@@ -2,11 +2,11 @@
 import React from 'react';
 import styles from './whatsWaiting4You.module.scss';
 import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
-import NemoSkierImg from '@/public/assets/customLogos/nemo-skier.svg'
+import NemoSkierImg from '@/public/assets/customLogos/nemo-skier.svg';
 
 export interface WhatsWaiting4YouPropsType {
   list: string[];
-    summary: string
+  summary: string;
 }
 
 const WhatsWaiting4You: React.FC<{
@@ -27,12 +27,10 @@ const WhatsWaiting4You: React.FC<{
             <li key={index}>{item}</li>
           ))}
         </ul>
-        <span className={styles.text}>
-          {details.summary}
-        </span>
+        <span className={styles.text}>{details.summary}</span>
       </div>
-    
-        <img src={NemoSkierImg.src} alt='nemoLogo' className={styles.svgImage}/>
+
+      <img src={NemoSkierImg.src} alt="nemoLogo" className={styles.svgImage} />
     </div>
   );
 };

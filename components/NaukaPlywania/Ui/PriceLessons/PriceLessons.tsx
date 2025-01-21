@@ -1,13 +1,14 @@
 'use client';
 import React from 'react';
 import styles from './priceLessons.module.scss';
-import StickerH4 from '@/components/Ui/Stickers/StickerH4/StickerH4';
+import StickerH4, {
+  StickerH4PropsType,
+} from '@/components/Ui/Stickers/StickerH4/StickerH4';
 import SingInButton from '@/components/Ui/Buttons/SignInButton';
-import {stickerH4Type} from '@/types/UI/stickerStripStrap';
 import {signInButtonType} from '@/types/UI/buttons';
 
 export interface PriceLessonsPropsType {
-  stickerH4: stickerH4Type;
+  stickerH4: StickerH4PropsType;
   oneLesson: {
     price: string;
     time: number;

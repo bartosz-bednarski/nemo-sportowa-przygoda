@@ -9,29 +9,29 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
- @include mixin.pc1000px{
-  flex-direction: column;
- }
- @include mixin.phone700px{
-  padding: 2rem;
- }
+  @include mixin.pc1000px {
+    flex-direction: column;
+  }
+  @include mixin.phone700px {
+    padding: 2rem;
+  }
 }
 .contentBox {
   display: flex;
   flex-direction: column;
   width: 40%;
   gap: 2rem;
-@include mixin.pc1000px{
-  align-items: center;
-      width: 100%;
- }
+  @include mixin.pc1000px {
+    align-items: center;
+    width: 100%;
+  }
 }
 .listBox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
-  @include mixin.pc1000px{
+  @include mixin.pc1000px {
     justify-content: center;
   }
 }
@@ -42,14 +42,14 @@
   padding: 0.5rem 1rem;
   border-radius: 15px;
   font-family: 'poppins-500';
-  @include mixin.pc1000px{
+  @include mixin.pc1000px {
     text-align: center;
   }
 }
 .image {
   width: auto;
   height: fit-content;
-  @include mixin.pc1000px{
+  @include mixin.pc1000px {
     width: 60%;
     height: auto;
   }

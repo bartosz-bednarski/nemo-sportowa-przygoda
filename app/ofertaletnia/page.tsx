@@ -33,7 +33,6 @@ const OfertaLetniaPage = () => {
           titleStrip: 'LETNIA',
           stripBgColor: 'basicGreen',
           stripTextColor: 'white',
-          scale: 2,
         }}
         col1={{
           video: {src: 'summer-mix-1.mp4', alt: 'nauka pływania niemowlaki'},
@@ -42,7 +41,6 @@ const OfertaLetniaPage = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'lightBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col2={{
@@ -55,7 +53,6 @@ const OfertaLetniaPage = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'mediumBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col3={{
@@ -65,7 +62,6 @@ const OfertaLetniaPage = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'darkBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
       />
@@ -75,8 +71,6 @@ const OfertaLetniaPage = () => {
           titleStrip: 'LETNIE',
           stripBgColor: 'white',
           stripTextColor: 'basicGreen',
-          scale: 1.4,
-          paddingBottom: 0,
         }}
         right={true}
         aboutLeft="Półkolonie to tygodniowy program pełen atrakcji, podczas którego dzieci mają zapewnioną opiekę od godziny 8:00 do 16:00. Każdy dzień wypełniony jest aktywnymi zajęciami, które pozwalają na rozwój zarówno fizyczny, jak i kreatywny. Uczestnicy biorą udział w grach sportowych, warsztatach plastycznych, zajęciach muzycznych, a także zabawach integracyjnych, które sprzyjają nawiązywaniu nowych przyjaźni."
@@ -98,8 +92,6 @@ const OfertaLetniaPage = () => {
           titleStrip: 'LETNIE',
           stripBgColor: 'white',
           stripTextColor: 'basicGreen',
-          scale: 1.4,
-          paddingBottom: 0,
         }}
         right={false}
         aboutLeft="Nasze obozy organizowane są we współpracy z zaprzyjaźnioną firmą Bom4Sport, która specjalizuje się w aktywnym wypoczynku dla dzieci i młodzieży. Oferujemy zarówno letnie obozy rowerowe, jak i zimowe obozy narciarskie oraz snowboardowe. Każdy program jest starannie przygotowany, aby uczestnicy nie tylko rozwijali swoje umiejętności sportowe, ale także spędzili czas w przyjaznej atmosferze, pełnej przygód i dobrej zabawy. Pod okiem doświadczonych instruktorów dzieci mają szansę na bezpieczną naukę oraz doskonalenie swoich umiejętności na rowerze, nartach lub snowboardzie."

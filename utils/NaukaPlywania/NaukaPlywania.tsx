@@ -120,7 +120,6 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       stripH2: {
         type: 'h2',
         title: 'GRUPY',
-        scale: 1.4,
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },
@@ -216,7 +215,6 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       stripH2: {
         type: 'h2',
         title: 'GRUPY',
-        scale: 1.3,
         stripBgColor: 'white',
         stripTextColor: 'mediumBlue',
       },
@@ -310,7 +308,6 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
       stripH2: {
         type: 'h2',
         title: 'GRUPY',
-        scale: 1.3,
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },

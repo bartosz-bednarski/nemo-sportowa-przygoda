@@ -4,9 +4,8 @@ import styles from './navigation.module.scss';
 import XBtn from '@/components/Ui/Buttons/XBtn/XBtn';
 import Link from 'next/link';
 import LogoMainWhiteImg from '@/public/assets/logo/Logo-main-white.svg';
-import InstagramImg from '@/public/assets/ui/Icons/social/instagram.svg'
-import FacebookImg from '@/public/assets/ui/Icons/social/facebook.svg'
-
+import InstagramImg from '@/public/assets/ui/Icons/social/instagram.svg';
+import FacebookImg from '@/public/assets/ui/Icons/social/facebook.svg';
 
 interface NavigationPropsType {
   showNavigation: boolean;
@@ -15,7 +14,12 @@ interface NavigationPropsType {
   setFirstLoad: () => void;
 }
 
-const Navigation= ({showNavigation, hideNavigation, firstLoad, setFirstLoad}:NavigationPropsType) => {
+const Navigation = ({
+  showNavigation,
+  hideNavigation,
+  firstLoad,
+  setFirstLoad,
+}: NavigationPropsType) => {
   const [height, setHeight] = useState('0vh');
 
   if (firstLoad === true) {
@@ -49,9 +53,11 @@ const Navigation= ({showNavigation, hideNavigation, firstLoad, setFirstLoad}:Nav
           !showNavigation && styles.navigationHideContent
         }`}
       >
-        
-          <img src={LogoMainWhiteImg.src} alt='logoNemo' className={styles.logo}/>
-       
+        <img
+          src={LogoMainWhiteImg.src}
+          alt="logoNemo"
+          className={styles.logo}
+        />
 
         <XBtn onClick={hideNavigation} />
       </div>
@@ -65,23 +71,14 @@ const Navigation= ({showNavigation, hideNavigation, firstLoad, setFirstLoad}:Nav
           <ul>
             <li>
               <Link href="/" onClick={hideNavigation}>
-                <span className={styles.nav}>
-                  Strona główna
-                </span>
+                <span className={styles.nav}>Strona główna</span>
               </Link>
             </li>
             <li>
               <Link href="/naukaplywania/krakow" onClick={hideNavigation}>
                 <span className={styles.nav}>
-                 
                   Nauka pływania
-                  <span
-                    className={
-                      styles.location
-                    }
-                  >
-                    kraków
-                  </span>
+                  <span className={styles.location}>kraków</span>
                 </span>
               </Link>
             </li>
@@ -89,13 +86,7 @@ const Navigation= ({showNavigation, hideNavigation, firstLoad, setFirstLoad}:Nav
               <Link href="/naukaplywania/korzenna" onClick={hideNavigation}>
                 <span className={styles.nav}>
                   Nauka pływania
-                  <span
-                    className={
-                      styles.location
-                    }
-                  >
-                    korzenna
-                  </span>
+                  <span className={styles.location}>korzenna</span>
                 </span>
               </Link>
             </li>
@@ -104,13 +95,7 @@ const Navigation= ({showNavigation, hideNavigation, firstLoad, setFirstLoad}:Nav
                 <span className={styles.nav}>
                   {' '}
                   Nauka pływania
-                  <span
-                    className={
-                      styles.location
-                    }
-                  >
-                    gorlice
-                  </span>
+                  <span className={styles.location}>gorlice</span>
                 </span>
               </Link>
             </li>
@@ -119,13 +104,7 @@ const Navigation= ({showNavigation, hideNavigation, firstLoad, setFirstLoad}:Nav
                 <span className={styles.nav}>
                   {' '}
                   obozy & półkolonie
-                  <span
-                    className={
-                      styles.location
-                    }
-                  >
-                    LATO
-                  </span>
+                  <span className={styles.location}>LATO</span>
                 </span>
               </Link>
             </li>
@@ -134,21 +113,13 @@ const Navigation= ({showNavigation, hideNavigation, firstLoad, setFirstLoad}:Nav
                 <span className={styles.nav}>
                   {' '}
                   obozy & półkolonie
-                  <span
-                    className={
-                      styles.location
-                    }
-                  >
-                    ZIMA
-                  </span>
+                  <span className={styles.location}>ZIMA</span>
                 </span>
               </Link>
             </li>
             <li>
               <Link href="/galeria" onClick={hideNavigation}>
-                <span className={styles.nav}>
-                  galeria
-                </span>
+                <span className={styles.nav}>galeria</span>
               </Link>
             </li>
             <li>
@@ -156,33 +127,34 @@ const Navigation= ({showNavigation, hideNavigation, firstLoad, setFirstLoad}:Nav
                 href="/naukaplywania/poradnikbasenowy"
                 onClick={hideNavigation}
               >
-                <span className={styles.nav}>
-                  Poradnik basenowy
-                </span>
+                <span className={styles.nav}>Poradnik basenowy</span>
               </Link>
             </li>
           </ul>
         </div>
         <div className={styles.box20w}>
-          <span
-            className={styles.contactBox}
-            style={{color: '#669AD7'}}
-          >
+          <span className={styles.contactBox} style={{color: '#669AD7'}}>
             Skontaktuj się z nami
           </span>
-          <span className={styles.contactBox}>
-            +48 519 625 894
-          </span>
+          <span className={styles.contactBox}>+48 519 625 894</span>
           <span className={styles.contactBox}>
             szkolaplywanianemo1@gmail.com
           </span>
           <span className={styles.contactBox}>
             <Link href="https://www.facebook.com/profile.php?id=61550793572137">
-              <img src={FacebookImg.src} alt='facebook' className={styles.icon}/>
+              <img
+                src={FacebookImg.src}
+                alt="facebook"
+                className={styles.icon}
+              />
             </Link>
 
             <Link href="https://www.instagram.com/nemo_sportowa_przygoda_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
-            <img src={InstagramImg.src} alt='instagram' className={styles.icon}/>
+              <img
+                src={InstagramImg.src}
+                alt="instagram"
+                className={styles.icon}
+              />
             </Link>
           </span>
         </div>

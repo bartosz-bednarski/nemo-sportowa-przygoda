@@ -5,13 +5,14 @@ import StripH3, {
   StripH3PropsType,
 } from '@/components/Ui/Strips/StripH3/StripH3';
 import BackgroundText from '@/components/Ui/BackgroundText/BackgroundText';
-import {swimmingPoolCoverType} from '@/types/UI/swimmingPoolCover';
-import LinkSwimmingPoolCover from '@/components/Ui/Links/LinkSwimmingPoolCover/LinkSwimmingPoolCover';
+import LinkSwimmingPoolCover, {
+  LinkSwimmingPoolCoverPropsType,
+} from '@/components/Ui/Links/LinkSwimmingPoolCover/LinkSwimmingPoolCover';
 
 export interface PoolsPropsType {
   stripH3: StripH3PropsType;
   backgroundText: string;
-  swimmingPools: swimmingPoolCoverType[];
+  swimmingPools: LinkSwimmingPoolCoverPropsType[];
 }
 
 const Pools = ({stripH3, backgroundText, swimmingPools}: PoolsPropsType) => {

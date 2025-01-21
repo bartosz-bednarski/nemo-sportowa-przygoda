@@ -4,8 +4,8 @@ import {PriceLessonsPropsType} from '@/components/NaukaPlywania/Ui/PriceLessons/
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
-import { PoolInformationsPropsType } from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
-import { PoolTutorialPropsType } from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
+import {PoolInformationsPropsType} from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
+import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 
 type NaukaPlywaniaBasen = {
   dzieciMlodziez: {
@@ -27,10 +27,8 @@ const CENNIK_DZIECI_MLODZIEZ_KORZENNA: PriceLessonsPropsType[] = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: 'GRUPOWE',
-      scale: 1.6,
       stripTextColor: 'basicOrange',
       stripBgColor: 'white',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '30 zł + bilet 14 zł',
@@ -47,10 +45,8 @@ const CENNIK_DZIECI_MLODZIEZ_KORZENNA: PriceLessonsPropsType[] = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: 'INDYWIDUALNE',
-      scale: 1.2,
       stripTextColor: 'lightBlue',
       stripBgColor: 'basicOrange',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '70 zł + bilet 14 zł',
@@ -67,10 +63,8 @@ const CENNIK_DZIECI_MLODZIEZ_KORZENNA: PriceLessonsPropsType[] = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: '2 OSOBOWE',
-      scale: 1.2,
       stripBgColor: 'mediumBlue',
       stripTextColor: 'white',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '50 zł + bilety 2x14 zł',
@@ -87,10 +81,8 @@ const CENNIK_DZIECI_MLODZIEZ_KORZENNA: PriceLessonsPropsType[] = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: '3 OSOBOWE',
-      scale: 1.2,
       stripBgColor: 'mediumBlue',
       stripTextColor: 'basicOrange',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '40 zł + bilety 3x14 zł',
@@ -109,10 +101,8 @@ const CENNIK_DOROSLI_KORZENNA: PriceLessonsPropsType[] = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: 'GRUPOWE',
-      scale: 1.6,
       stripTextColor: 'basicOrange',
       stripBgColor: 'white',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '30 zł + bilet 14 zł',
@@ -129,10 +119,8 @@ const CENNIK_DOROSLI_KORZENNA: PriceLessonsPropsType[] = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: 'INDYWIDUALNE',
-      scale: 1.2,
       stripTextColor: 'lightBlue',
       stripBgColor: 'basicOrange',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '70 zł + bilet 14 zł',
@@ -149,10 +137,8 @@ const CENNIK_DOROSLI_KORZENNA: PriceLessonsPropsType[] = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: '2 OSOBOWE',
-      scale: 1.2,
       stripBgColor: 'lightBlue',
       stripTextColor: 'white',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '50 zł + bilety 2x14 zł',
@@ -169,10 +155,8 @@ const CENNIK_DOROSLI_KORZENNA: PriceLessonsPropsType[] = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: '3 OSOBOWE',
-      scale: 1.2,
       stripBgColor: 'white',
       stripTextColor: 'basicOrange',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '40 zł + bilety 3x14 zł',
@@ -210,12 +194,11 @@ export const NAUKA_PLYWANIA_KORZENNA: NaukaPlywaniaBasen = {
       },
     },
     priceList: CENNIK_DZIECI_MLODZIEZ_KORZENNA,
-  
+
     groups: {
       stripH2: {
         type: 'h2',
         title: 'GRUPY',
-        scale: 1.6,
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },
@@ -250,12 +233,11 @@ export const NAUKA_PLYWANIA_KORZENNA: NaukaPlywaniaBasen = {
       },
     },
     priceList: CENNIK_DOROSLI_KORZENNA,
-    
+
     groups: {
       stripH2: {
         type: 'h2',
         title: 'GRUPY',
-        scale: 1.2,
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },

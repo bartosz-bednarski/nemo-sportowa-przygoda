@@ -4,7 +4,7 @@ const Loading = () => {
   return (
     <div className={styles.loading}>
       <div className={styles.loader}></div>
-     <img src={LogoMainWhite.src} alt='logoNemo' className={styles.logoImg}/>
+      <img src={LogoMainWhite.src} alt="logoNemo" className={styles.logoImg} />
       <h1>Ładowanie...</h1>
     </div>
   );

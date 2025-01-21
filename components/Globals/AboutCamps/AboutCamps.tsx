@@ -1,19 +1,21 @@
 'use client';
 import React from 'react';
 import styles from './about.module.scss';
-import StickerH2, { StickerH2PropsType } from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import StickerH2, {
+  StickerH2PropsType,
+} from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
 import {COLORS} from '@/utils/UI/colors';
 
 export interface AboutCampsPropsType {
   stickerH2: StickerH2PropsType;
-    aboutLeft: string;
-    right: boolean;
-    aboutRight1?: string;
-    aboutRight2?: string;
-    theme: "summer" | "winter";
-    imgRight: string;
-    imgLeft?: string;
+  aboutLeft: string;
+  right: boolean;
+  aboutRight1?: string;
+  aboutRight2?: string;
+  theme: 'summer' | 'winter';
+  imgRight: string;
+  imgLeft?: string;
 }
 
 const AboutCamps = ({
@@ -25,8 +27,7 @@ const AboutCamps = ({
   theme,
   imgRight,
   imgLeft,
-}:AboutCampsPropsType) => {
-
+}: AboutCampsPropsType) => {
   return (
     <div
       className={styles.about}

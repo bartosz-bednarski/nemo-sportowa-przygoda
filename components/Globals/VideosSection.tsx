@@ -1,47 +1,50 @@
 'use client';
 import 'react';
 import styles from './videosSection.module.scss';
-import StickerH2, { StickerH2PropsType } from '../Ui/Stickers/StickerH2/StickerH2';
-import StickerH1, { StickerH1PropsType } from '../Ui/Stickers/StickerH1/StickerH1';
+import StickerH2, {
+  StickerH2PropsType,
+} from '../Ui/Stickers/StickerH2/StickerH2';
+import StickerH1, {
+  StickerH1PropsType,
+} from '../Ui/Stickers/StickerH1/StickerH1';
 import Scrap2 from '../Ui/Scrap/Scrap2';
-import { customColors } from '@/types/UI/colors';
+import {customColors} from '@/types/UI/colors';
 
-export interface VideosSectionPropsType{
+export interface VideosSectionPropsType {
   scrapColor: customColors;
-    col1: {
-        video: {
-            src: string;
-            alt: string;
-        };
-        stickerH2?: StickerH2PropsType;
+  col1: {
+    video: {
+      src: string;
+      alt: string;
     };
-    col2: {
-        video: {
-            src: string;
-            alt: string;
-        };
-        stickerH2?: StickerH2PropsType;
+    stickerH2?: StickerH2PropsType;
+  };
+  col2: {
+    video: {
+      src: string;
+      alt: string;
     };
-    col3: {
-        video: {
-            src: string;
-            alt: string;
-        };
-        stickerH2?: StickerH2PropsType;
+    stickerH2?: StickerH2PropsType;
+  };
+  col3: {
+    video: {
+      src: string;
+      alt: string;
     };
-    oneSticker: boolean;
-    oneStickerContent?: StickerH1PropsType;
+    stickerH2?: StickerH2PropsType;
+  };
+  oneSticker: boolean;
+  oneStickerContent?: StickerH1PropsType;
 }
 
-const VideosSection= ({
+const VideosSection = ({
   scrapColor,
   col1,
   col2,
   col3,
   oneSticker,
   oneStickerContent,
-}:VideosSectionPropsType) => {
-
+}: VideosSectionPropsType) => {
   return (
     <div className={styles.container}>
       {!oneSticker && col1.stickerH2 !== undefined && (
@@ -82,10 +85,7 @@ const VideosSection= ({
         ></video>
 
         {!oneSticker && col1.stickerH2 !== undefined && (
-          <span
-            className={styles.stickerBox}
-            style={{bottom: '30%'}}
-          >
+          <span className={styles.stickerBox} style={{bottom: '30%'}}>
             <StickerH2
               title={col1.stickerH2.title}
               titleStrip={col1.stickerH2.titleStrip}
@@ -97,7 +97,7 @@ const VideosSection= ({
       </div>
       <div className={styles.imageBox}>
         <div className={styles.opacityCover}></div>
-       
+
         <video
           src={`/assets/videos/${col2.video.src}`}
           autoPlay
@@ -106,10 +106,7 @@ const VideosSection= ({
           playsInline
         ></video>
         {!oneSticker && col2.stickerH2 !== undefined && (
-          <span
-            className={styles.stickerBox}
-            style={{bottom: '25%'}}
-          >
+          <span className={styles.stickerBox} style={{bottom: '25%'}}>
             <StickerH2
               title={col2.stickerH2.title}
               titleStrip={col2.stickerH2.titleStrip}
@@ -121,7 +118,7 @@ const VideosSection= ({
       </div>
       <div className={styles.imageBox}>
         <div className={styles.opacityCover}></div>
-     
+
         <video
           src={`/assets/videos/${col3.video.src}`}
           autoPlay
@@ -130,10 +127,7 @@ const VideosSection= ({
           playsInline
         ></video>
         {!oneSticker && col3.stickerH2 !== undefined && (
-          <span
-            className={styles.stickerBox}
-            style={{bottom: '35%'}}
-          >
+          <span className={styles.stickerBox} style={{bottom: '35%'}}>
             <StickerH2
               title={col3.stickerH2.title}
               titleStrip={col3.stickerH2.titleStrip}

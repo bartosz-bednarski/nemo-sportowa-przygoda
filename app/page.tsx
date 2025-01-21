@@ -37,7 +37,6 @@ export default function Home() {
             titleStrip: 'PŁYWANIA',
             stripBgColor: 'mediumBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col2={{
@@ -50,7 +49,6 @@ export default function Home() {
             titleStrip: 'PÓŁKOLONIE',
             stripBgColor: 'basicOrange',
             stripTextColor: 'white',
-            scale: 1.25,
           },
         }}
         col3={{
@@ -60,7 +58,6 @@ export default function Home() {
             titleStrip: 'SPECJALNE',
             stripBgColor: 'basicBrown',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
       />

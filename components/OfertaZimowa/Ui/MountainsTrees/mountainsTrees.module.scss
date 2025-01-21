@@ -3,12 +3,12 @@
   display: flex;
   height: auto;
   align-items: center;
-  img{
+  img {
     width: 100%;
-    @include mixin.phone700px{
+    @include mixin.phone700px {
       height: 200px;
     }
-    @include mixin.phone500px{
+    @include mixin.phone500px {
       height: 150px;
     }
   }

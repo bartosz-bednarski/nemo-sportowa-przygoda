@@ -9,7 +9,6 @@
   width: 100%;
   background-color: black;
   position: relative;
- 
 }
 .imageBox {
   display: flex;
@@ -17,11 +16,12 @@
   width: 32.5%;
   height: 100vh;
   align-items: flex-end;
-  @include mixin.phone900px{
+  @include mixin.phone900px {
     width: 100%;
   }
-  &:nth-of-type(1), &:nth-of-type(2){
-    @include mixin.phone900px{
+  &:nth-of-type(1),
+  &:nth-of-type(2) {
+    @include mixin.phone900px {
       display: none;
     }
   }
@@ -31,17 +31,16 @@
     object-fit: cover;
     object-position: top;
   }
-  
 }
 .stickerBox {
   display: flex;
   position: absolute;
   bottom: 10%;
   left: 5%;
-  @include mixin.pc1450px{
+  @include mixin.pc1450px {
     left: 0%;
   }
-  @include mixin.phone900px{
+  @include mixin.phone900px {
     display: none;
   }
 }
@@ -51,7 +50,7 @@
   left: 10%;
   top: 30%;
   display: none;
-  @include mixin.phone900px{
+  @include mixin.phone900px {
     display: flex;
   }
 }
@@ -60,13 +59,13 @@
   z-index: 3;
   left: 20%;
   top: 30%;
-  @include mixin.phone700px{
+  @include mixin.phone700px {
     left: 5%;
   }
-  @include mixin.phone700px{
+  @include mixin.phone700px {
     left: 5%;
   }
-  @include mixin.phone500px{
+  @include mixin.phone500px {
     left: 20%;
   }
 }

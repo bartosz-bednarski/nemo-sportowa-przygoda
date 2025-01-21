@@ -2,9 +2,9 @@
 import React from 'react';
 import styles from './details.module.scss';
 
-export interface DetailsBoxPropsType{
+export interface DetailsBoxPropsType {
   promo: boolean;
-  label: "MIEJSCE" | "TERMIN" | "CENA" | "WIEK" | "ZBI\u00D3RKA";
+  label: 'MIEJSCE' | 'TERMIN' | 'CENA' | 'WIEK' | 'ZBI\u00D3RKA';
   content: string;
   promoPrice?: string;
   promoInfo?: string;
@@ -16,7 +16,7 @@ const DetailsBox = ({
   content,
   promoInfo,
   promoPrice,
-}:DetailsBoxPropsType) => {
+}: DetailsBoxPropsType) => {
   return (
     <div className={styles.detailsBox}>
       <span className={styles.label}>{label}</span>
