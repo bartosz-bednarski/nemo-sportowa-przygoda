@@ -11,6 +11,7 @@
     "prettier": "prettier . --write './**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
+    "@next/third-parties": "^15.1.6",
     "cookies-next": "^4.3.0",
     "express": "^4.21.1",
     "next": "^14.2.23",

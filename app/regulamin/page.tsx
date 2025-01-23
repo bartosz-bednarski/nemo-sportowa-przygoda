@@ -2,9 +2,9 @@ import styles from '../page.module.scss';
 import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import Link from 'next/link';
 import {Metadata} from 'next';
-import PoolsStatuesImg from '@/public/assets/statues/pools.webp'
-import ColoniesStatuesImg from '@/public/assets/statues/colonies.webp'
-import CampsStatuesImg from '@/public/assets/statues/camps.webp'
+import PoolsStatuesImg from '@/public/assets/statues/pools.webp';
+import ColoniesStatuesImg from '@/public/assets/statues/colonies.webp';
+import CampsStatuesImg from '@/public/assets/statues/camps.webp';
 
 export const metadata: Metadata = {
   title: 'Regulamin',
