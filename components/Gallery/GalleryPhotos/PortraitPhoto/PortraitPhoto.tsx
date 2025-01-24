@@ -1,11 +1,10 @@
-import Image from 'next/image';
 import styles from '../galleryPhotos.module.scss';
-import {galleryItemType} from '@/types/Gallery/gallery';
+import {GalleryItemType} from '@/utils/Gallery/Gallery';
 
 interface PortraitPhotoPropsType {
   portrait: string;
   index: number;
-  data: galleryItemType;
+  data: GalleryItemType;
   landscapesFlatWithHref: {
     href: string;
     orientation: string;
@@ -24,13 +23,12 @@ const PortraitPhoto = ({
     return (
       <span className={styles.portrait} key={`portrait${index}`}>
         {portrait !== '' && (
-          <Image
+          <img
             src={`/gallery/${data.href}/portraits/${portrait}.webp`}
             alt={`${data.href}-portrait-${index}`}
             title={`${data.href}-portrait-${index}`}
             width={600}
             height={692}
-            objectFit="cover"
             loading="lazy"
             id={`${landscapesFlatWithHref.length + index}`}
             onClick={() =>

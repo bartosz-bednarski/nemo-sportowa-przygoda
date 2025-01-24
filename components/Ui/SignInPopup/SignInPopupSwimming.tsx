@@ -1,10 +1,10 @@
 'use client';
 import React, {useEffect, useState} from 'react';
 import styles from './popup.module.scss';
-import Image from 'next/image';
 import LinkButton from '../Buttons/LinkButton';
 import {hasCookie, setCookie} from 'cookies-next';
 import XBtn from '../Buttons/XBtn/XBtn';
+import PopupImage from '@/public/assets/popup/popup-swimmimg.webp';
 
 const SignInPopupSwimming = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -50,18 +50,17 @@ const SignInPopupSwimming = () => {
             onClick={closePopupHandler}
           />
         </div>
-        <Image
-          src="/assets/popup/popup-swimmimg.webp"
+        <img
+          src={PopupImage.src}
           width={550}
           height={550}
           alt="nauka plywania NEMO"
           title="nauka plywania NEMO"
-          objectFit="cover"
-          objectPosition="left"
           className={styles.image}
         />
       </div>
     </div>
   );
 };
+
 export default SignInPopupSwimming;

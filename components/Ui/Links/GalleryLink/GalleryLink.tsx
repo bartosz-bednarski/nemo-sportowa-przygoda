@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import styles from './galleryLink.module.scss';
-import Image from 'next/image';
 import Link from 'next/link';
 import {customColors} from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
@@ -20,7 +19,7 @@ const GalleryLink = ({href, img, bgColor, textColor}: GalleryLinkPropsType) => {
       className={styles.galleryLink}
       style={{background: `${COLORS[bgColor]} !important`}}
     >
-      <Image
+      <img
         className={styles.image}
         src={img}
         width={1920}

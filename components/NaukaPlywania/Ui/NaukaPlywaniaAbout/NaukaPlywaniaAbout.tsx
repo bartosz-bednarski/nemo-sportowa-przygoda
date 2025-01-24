@@ -4,7 +4,6 @@ import styles from './naukaPlywaniaAbout.module.scss';
 import StickerH2, {
   StickerH2PropsType,
 } from '@/components/Ui/Stickers/StickerH2/StickerH2';
-import Image from 'next/image';
 import LinkButton from '@/components/Ui/Buttons/LinkButton';
 import AboutTextPoppins, {
   AboutTextPoppinsPropsType,
@@ -57,12 +56,10 @@ const NaukaPlywaniaAbout = ({
         )}
       </div>
       <div className={styles.imageBox}>
-        <Image
-          objectFit="cover"
-          objectPosition="left"
+        <img
+          className={styles.imageFill}
           src={`/assets/swimming/${image.src}`}
           alt={image.alt}
-          fill={true}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>

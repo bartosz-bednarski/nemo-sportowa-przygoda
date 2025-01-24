@@ -1,12 +1,11 @@
 import {COLORS} from '@/utils/UI/colors';
 import styles from './titleCart.module.scss';
-import {galleryItemType} from '@/types/Gallery/gallery';
-import LogoMainBlack from '@/components/Globals/Logo/LogoMainBlack';
 import Link from 'next/link';
-import Image from 'next/image';
+import {GalleryItemType} from '@/utils/Gallery/Gallery';
+import LogoMainBlackImg from '@/public/assets/logo/logo-main-black.svg';
 
 interface TitleCartPropsType {
-  data: galleryItemType;
+  data: GalleryItemType;
 }
 
 const TitleCart = ({data}: TitleCartPropsType) => {
@@ -22,13 +21,17 @@ const TitleCart = ({data}: TitleCartPropsType) => {
         >
           {data.title}
         </h1>
-        <LogoMainBlack width="80%" height="auto" />
+        <img
+          src={LogoMainBlackImg.src}
+          alt="logoNemo"
+          className={styles.logoImage}
+        />
 
         <Link
           href={data.collabHref}
           style={{alignSelf: 'center', textAlign: 'center'}}
         >
-          <Image
+          <img
             src={`/gallery/collab/${data.collabLogo}`}
             style={{width: '80%', height: 'auto'}}
             width="190"
@@ -50,7 +53,11 @@ const TitleCart = ({data}: TitleCartPropsType) => {
       >
         {data.title}
       </h1>
-      <LogoMainBlack width="80%" height="auto" />
+      <img
+        src={LogoMainBlackImg.src}
+        alt="logoNemo"
+        className={styles.logoImage}
+      />
     </div>
   );
 };

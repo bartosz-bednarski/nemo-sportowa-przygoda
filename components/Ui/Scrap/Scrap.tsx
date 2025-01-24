@@ -1,8 +1,14 @@
 'use client';
-import {scrapType} from '@/types/UI/stickerStripStrap';
+import {customColors} from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
 import React from 'react';
-const Scrap: React.FC<scrapType> = ({position, color}) => {
+
+export interface ScrapPropsType {
+  position: 'top' | 'bottom';
+  color: customColors;
+}
+
+const Scrap = ({position, color}: ScrapPropsType) => {
   return (
     <svg
       width="1921"
@@ -13,6 +19,7 @@ const Scrap: React.FC<scrapType> = ({position, color}) => {
       style={{
         position: 'absolute',
         width: '100%',
+        left: 0,
         top: position === 'top' ? 0 : '',
         bottom: position === 'bottom' ? '-65px' : '',
         rotate: position === 'top' ? '180deg' : '',

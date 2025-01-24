@@ -1,4 +1,5 @@
-@import '../../../../styles/colors.scss';
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
 @keyframes show {
   from {
     background-size: 0% 100%;
@@ -32,14 +33,14 @@
     opacity: 0;
   }
 }
-.navigation-hide {
+.navigationHide {
   animation-name: hide !important;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-direction: alternate;
   overflow: hidden;
 }
-.navigation-hideContent {
+.navigationHideContent {
   animation-name: hideContent !important;
   animation-duration: 0.2s !important;
   animation-delay: 0s !important;
@@ -57,7 +58,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  //   background-color: $mediumBlue;
   background-image: url('/assets/ui/nav-background.png');
   background-position: right;
   background-repeat: no-repeat;
@@ -66,174 +66,141 @@
   animation-fill-mode: both;
   animation-direction: alternate;
   overflow: hidden;
-  &__top-box {
-    box-sizing: border-box;
-    width: 100%;
-    height: 10vh;
-    padding: 1rem 3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    animation-name: showContent;
-    animation-delay: 0.8s;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-direction: alternate;
-  }
-  &__bottom-box {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 90vh;
-    animation-name: showContent;
-    animation-delay: 0.8s;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-direction: alternate;
-    &__20 {
-      display: flex;
-      flex-direction: column;
-      width: 20%;
-      height: 80vh;
-      justify-content: flex-end;
-      align-items: flex-end;
-      gap: 0.3rem;
-      &__contact {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 0.5rem;
-        align-items: flex-end;
-        font-weight: 600;
-        font-size: 0.8rem;
-        &__icon {
-          width: 30px;
-          height: 30px;
-          path {
-            transition: fill 0.4s;
-          }
-          &:hover {
-            path {
-              fill: $basicOrange;
-            }
-          }
-        }
-      }
-    }
-    &__80 {
-      display: flex;
-      flex-direction: column;
-      width: 60%;
-      height: 100%;
-
-      &__nav {
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        padding: 0.3rem;
-        font-weight: 600;
-        transition: background-color 1s;
-        &__location {
-          margin-left: 1rem;
-          color: #669ad7;
-        }
-        &:hover {
-          color: $mediumBlue;
-          background-color: white;
-          cursor: pointer;
-        }
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-        li {
-          padding: 1rem 0;
-
-          border-bottom: 3px solid #669ad7;
-          a,
-          a:visited,
-          a:hover,
-          a:active {
-            color: inherit;
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
 }
-@media only screen and (max-width: 1500px) {
-  // .navigation__bottom-box__20 {
-  //   width: 10%;
-  // }
-  .navigation__bottom-box__20:nth-of-type(1) {
-    width: 10%;
-  }
-  .navigation__bottom-box__20:nth-of-type(3) {
-    width: 30%;
-  }
-  .navigation__bottom-box__80 {
-    width: 60%;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  // .navigation__bottom-box__20 {
-  //   width: 10%;
-  // }
-  .navigation__bottom-box {
-    justify-content: center;
-    &__20 {
-      display: none;
-    }
-    &__80 {
-      align-items: center;
-      width: 80%;
-      &__nav {
-        font-size: 1.2rem;
-      }
-      ul {
-        width: 100%;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 600px) {
-  .navigation__top-box {
+.topBox {
+  box-sizing: border-box;
+  width: 100%;
+  height: 10vh;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  animation-name: showContent;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  @include mixin.phone700px {
     justify-content: flex-end;
     padding-right: 0;
-    &__logo {
-      display: none !important;
+  }
+}
+.logo {
+  height: 100px;
+  width: auto;
+  @include mixin.phone700px {
+    display: none !important;
+  }
+}
+.bottomBox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90vh;
+  animation-name: showContent;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  @include mixin.pc1100px {
+    justify-content: center;
+  }
+}
+.box20w {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 80vh;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 0.3rem;
+  @include mixin.pc1100px {
+    display: none;
+  }
+  &:nth-of-type(1) {
+    @include mixin.pc1520px {
+      width: 10%;
     }
   }
-  .navigation__bottom-box {
-    &__80 {
+  &:nth-of-type(3) {
+    @include mixin.pc1520px {
+      width: 30%;
+    }
+  }
+}
+.contactBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: flex-end;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.box80w {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  @include mixin.pc1520px {
+    width: 60%;
+  }
+  @include mixin.pc1100px {
+    align-items: center;
+    width: 80%;
+  }
+  @include mixin.phone700px {
+    width: 100%;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    @include mixin.pc1100px {
       width: 100%;
-      &__nav {
-        font-size: 1.2rem;
+    }
+    li {
+      padding: 1rem 0;
+      border-bottom: 3px solid #669ad7;
+      a,
+      a:visited,
+      a:hover,
+      a:active {
+        color: inherit;
+        text-decoration: none;
       }
-      ul {
-        width: 100%;
+      @include mixin.phone500px {
+        padding: 0.5rem 0;
       }
     }
   }
 }
-@media only screen and (max-width: 500px) {
-  // .navigation__bottom-box__20 {
-  //   width: 10%;
-  // }
-  .navigation__bottom-box {
-    &__80 {
-      &__nav {
-        font-size: 0.7rem;
-        &__location {
-          margin-left: 0.5rem;
-        }
-      }
-      ul {
-        li {
-          padding: 0.5rem 0;
-        }
-      }
-    }
+.nav {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.3rem;
+  font-weight: 600;
+  transition: background-color 1s;
+  @include mixin.pc1100px {
+    font-size: 1.2rem;
+  }
+  @include mixin.phone500px {
+    font-size: 0.7rem;
+  }
+  &:hover {
+    color: colors.$mediumBlue;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+.location {
+  margin-left: 1rem;
+  color: #669ad7;
+  @include mixin.phone500px {
+    margin-left: 0.5rem;
   }
 }

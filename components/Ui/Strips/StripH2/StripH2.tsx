@@ -29,7 +29,6 @@ import MediumBlueScrapRightImg from '@/public/assets/ui/ScrapRight/scrapRightMed
 import WhiteScrapRightImg from '@/public/assets/ui/ScrapRight/scrapRightWhite.svg';
 import WinterIceScrapRightImg from '@/public/assets/ui/ScrapRight/scrapRightWinterIce.svg';
 import BasicGreenScrapRightImg from '@/public/assets/ui/ScrapRight/scrapRightBasicGreen.svg';
-import Image from 'next/image';
 
 export interface StripH2PropsType {
   type: 'span' | 'h2';
@@ -125,8 +124,16 @@ const StripH2 = ({
           backgroundColor: COLORS[stripBgColor],
         }}
       >
-        <Image src={scrap.main} alt="mainScrap" className={styles.mainScrap} />
-        <Image src={scrap.left} alt="scrapLeft" className={styles.scrapLeft} />
+        <img
+          src={scrap.main.src}
+          alt="mainScrap"
+          className={styles.mainScrap}
+        />
+        <img
+          src={scrap.left.src}
+          alt="scrapLeft"
+          className={styles.scrapLeft}
+        />
         {type === 'span' ? (
           <span
             className={styles.h2Title}
@@ -148,8 +155,8 @@ const StripH2 = ({
             {title}
           </h2>
         )}
-        <Image
-          src={scrap.right}
+        <img
+          src={scrap.right.src}
           alt="scrapRight"
           className={styles.scrapRight}
         />

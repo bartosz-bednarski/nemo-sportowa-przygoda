@@ -1,4 +1,5 @@
-@import '../../../../styles/colors.scss';
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
 @import '../../../../styles/fonts.scss';
 .priceDetails {
   box-sizing: border-box;
@@ -8,52 +9,48 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  &__content-box {
-    display: flex;
+  @include mixin.pc1000px {
     flex-direction: column;
-    width: 40%;
-    gap: 2rem;
-    &__list-box {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 1rem;
-      &__item {
-        color: white;
-        background-color: $darkBlue;
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-        border-radius: 15px;
-        font-family: 'poppins-500';
-      }
-    }
   }
-  &__svg-image {
-    width: auto;
-    height: fit-content;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .priceDetails {
-    flex-direction: column;
-    &__content-box {
-      align-items: center;
-      width: 100%;
-      &__list-box {
-        justify-content: center;
-        &__item {
-          text-align: center;
-        }
-      }
-    }
-    &__svg-image {
-      width: 80%;
-      height: auto;
-    }
-  }
-}
-@media only screen and (max-width: 600px) {
-  .priceDetails {
+  @include mixin.phone700px {
     padding: 2rem;
+  }
+}
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 2rem;
+  @include mixin.pc1000px {
+    align-items: center;
+    width: 100%;
+  }
+}
+.listBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  @include mixin.pc1000px {
+    justify-content: center;
+  }
+}
+.item {
+  color: white;
+  background-color: colors.$darkBlue;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-family: 'poppins-500';
+  @include mixin.pc1000px {
+    text-align: center;
+  }
+}
+.image {
+  width: auto;
+  height: fit-content;
+  @include mixin.pc1000px {
+    width: 60%;
+    height: auto;
   }
 }

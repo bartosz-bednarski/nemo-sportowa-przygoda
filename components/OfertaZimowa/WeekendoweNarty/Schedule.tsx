@@ -1,68 +1,39 @@
 'use client';
 import React from 'react';
 import styles from './schedule.module.scss';
-import {weekendNaStokuScheduleComponentType} from '@/types/SummerWinter/Camps';
 
-const Schedule: React.FC<{schedule: weekendNaStokuScheduleComponentType}> = ({
+export interface WeekendNaStokuSchedulePropsType {
+  title: string;
+  list: {
+    time: string;
+    info: string;
+    subList?: {
+      title: string;
+      about: string;
+    }[];
+  }[];
+}
+
+const Schedule: React.FC<{schedule: WeekendNaStokuSchedulePropsType}> = ({
   schedule,
 }) => {
   return (
     <div className={styles.schedule}>
-      <div className={styles['schedule__content']}>
-        <h2 className={styles['schedule__content__header']}>PLAN DNIA</h2>
-        <div className={styles['schedule__content__list']}>
+      <div className={styles.content}>
+        <h2 className={styles.header}>PLAN DNIA</h2>
+        <div className={styles.list}>
           {schedule.list.map((listItem, index) => (
-            <div
-              className={styles['schedule__content__list__item']}
-              key={index}
-            >
-              <div
-                className={styles['schedule__content__list__item__item-row']}
-              >
-                <span
-                  className={
-                    styles['schedule__content__list__item__item-row__time']
-                  }
-                >
-                  {listItem.time}
-                </span>
-                <span
-                  className={
-                    styles['schedule__content__list__item__item-row__about']
-                  }
-                >
-                  {listItem.info}
-                </span>
+            <div className={styles.item} key={index}>
+              <div className={styles.itemRow}>
+                <span className={styles.time}>{listItem.time}</span>
+                <span className={styles.about}>{listItem.info}</span>
               </div>
               {listItem.subList !== undefined && (
-                <div
-                  className={styles['schedule__content__list__item__sublist']}
-                >
+                <div className={styles.sublist}>
                   {listItem.subList.map((sublistItem, index) => (
-                    <div
-                      key={`sublistItem-${index}`}
-                      className={
-                        styles['schedule__content__list__item__sublist__item']
-                      }
-                    >
-                      <span
-                        className={
-                          styles[
-                            'schedule__content__list__item__sublist__item__title'
-                          ]
-                        }
-                      >
-                        {sublistItem.title}
-                      </span>
-                      <span
-                        className={
-                          styles[
-                            'schedule__content__list__item__sublist__item__about'
-                          ]
-                        }
-                      >
-                        {sublistItem.about}
-                      </span>
+                    <div key={`sublistItem-${index}`} className={styles.item}>
+                      <span className={styles.title}>{sublistItem.title}</span>
+                      <span className={styles.about}>{sublistItem.about}</span>
                     </div>
                   ))}
                 </div>
@@ -74,4 +45,5 @@ const Schedule: React.FC<{schedule: weekendNaStokuScheduleComponentType}> = ({
     </div>
   );
 };
+
 export default Schedule;

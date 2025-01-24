@@ -38,7 +38,7 @@ const PoolTutorial: React.FC<{poolTutorial: PoolTutorialPropsType}> = ({
         <div className={styles.circle}>{poolTutorial.firstRule}</div>
 
         {poolTutorial.rules.map((rule, index) => (
-          <>
+          <React.Fragment key={index}>
             <svg
               width="124"
               height="58"
@@ -53,7 +53,7 @@ const PoolTutorial: React.FC<{poolTutorial: PoolTutorialPropsType}> = ({
               />
             </svg>
             <div className={styles.circle}>{rule}</div>
-          </>
+          </React.Fragment>
         ))}
       </div>
     </div>

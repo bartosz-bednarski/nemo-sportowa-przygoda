@@ -1,14 +1,15 @@
 'use client';
 import React, {useState} from 'react';
 import styles from './groupLvl.module.scss';
-import StickerH4 from '@/components/Ui/Stickers/StickerH4/StickerH4';
+import StickerH4, {
+  StickerH4PropsType,
+} from '@/components/Ui/Stickers/StickerH4/StickerH4';
 import AboutTextPoppins, {
   AboutTextPoppinsPropsType,
 } from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
-import {stickerH4Type} from '@/types/UI/stickerStripStrap';
 
 export interface GroupLvlPropsType {
-  stickerH4: stickerH4Type;
+  stickerH4: StickerH4PropsType;
   aboutTextPoppins: AboutTextPoppinsPropsType;
   skills: string[];
 }
@@ -70,4 +71,5 @@ const GroupLvl = ({stickerH4, aboutTextPoppins, skills}: GroupLvlPropsType) => {
     </div>
   );
 };
+
 export default GroupLvl;

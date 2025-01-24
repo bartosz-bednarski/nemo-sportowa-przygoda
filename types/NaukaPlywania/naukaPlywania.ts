@@ -1,62 +1,15 @@
-import {AboutTextPoppinsPropsType} from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
+import {LinkSwimmingPoolCoverPropsType} from '@/components/Ui/Links/LinkSwimmingPoolCover/LinkSwimmingPoolCover';
 import {instructorBubbleType} from '../Globals/globals';
-import {customColors} from '../UI/colors';
-import {stickerH2Type, stripH3Type} from '../UI/stickerStripStrap';
-import {swimmingPoolCoverType} from '../UI/swimmingPoolCover';
-
-export type aboutType = {
-  stickerH2: stickerH2Type;
-  aboutTextPoppins: AboutTextPoppinsPropsType;
-  image: {src: string; alt: string};
-  button?: {title: string; href: string};
-};
+import {StripH3PropsType} from '@/components/Ui/Strips/StripH3/StripH3';
 
 export type instructorsType = {
   backgroundText: string;
-  stripH3: stripH3Type;
+  stripH3: StripH3PropsType;
   instructors: instructorBubbleType[];
 };
 
 export type poolsType = {
-  stripH3: stripH3Type;
+  stripH3: StripH3PropsType;
   backgroundText: string;
-  swimmingPools: swimmingPoolCoverType[];
-};
-
-export type poolInformationsType = {
-  color: customColors;
-  title: string;
-  imageSrc: string;
-  stickerH2: stickerH2Type;
-  mapSrc: string;
-  icons: {
-    pool1?: {
-      exists: boolean;
-      title: string;
-    };
-    pool2?: {
-      exists: boolean;
-      title: string;
-    };
-    stand?: {
-      exists: boolean;
-      title: string;
-    };
-    cloakroomWomen?: {
-      exists: boolean;
-      title: 'SZATNIA DAMSKA';
-    };
-    cloakroomMen?: {
-      exists: boolean;
-      title: 'SZATNIA MĘSKA';
-    };
-    cloakroomFamily?: {
-      exists: boolean;
-      title: 'SZATNIA RODZINNA';
-    };
-    parking?: {
-      exists: boolean;
-      title: string;
-    };
-  };
+  swimmingPools: LinkSwimmingPoolCoverPropsType[];
 };

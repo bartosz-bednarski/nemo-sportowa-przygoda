@@ -1,18 +1,17 @@
 'use client';
 import React from 'react';
 import styles from './naukaPlywaniaBasen.module.scss';
-import {aboutType} from '@/types/NaukaPlywania/naukaPlywania';
 import {customColors} from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
 import PriceList, {PriceListPropsType} from '../Ui/PriceList/PriceList';
-import {instructorsRowBoxType} from '@/types/Globals/globals';
 import Groups, {GroupsPropsType} from '../Ui/Groups/Groups';
-import NaukaPlywaniaAbout from '../Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import NaukaPlywaniaAbout, {
+  NaukaPływaniaAboutPropsType,
+} from '../Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 
 export interface NaukaPlywaniaBasenPropsType {
-  about: aboutType;
+  about: NaukaPływaniaAboutPropsType;
   backgroundColor: customColors;
-  instructors: instructorsRowBoxType;
   groups: GroupsPropsType;
   priceList?: PriceListPropsType;
 }
@@ -40,4 +39,5 @@ const NaukaPlywaniaBasen = ({
     </div>
   );
 };
+
 export default NaukaPlywaniaBasen;

@@ -1,8 +1,27 @@
-import {campsCoversType, weekendNaStokuType} from '@/types/SummerWinter/Camps';
+import {CampsCoversType} from './Obozy';
+import {HeroPropsType} from '@/components/OfertaZimowa/Ui/Hero/Hero';
+import {DetailsPropsType} from '@/components/OfertaZimowa/Ui/Details/Details';
+import {ContactPropsType} from '@/components/OfertaZimowa/Ui/Contact/Contact';
+import {WhatsWaiting4YouPropsType} from '@/components/OfertaZimowa/Obozy/WhatsWaiting4You/WhatsWaiting4You';
+import {HillSidesPropsType} from '@/components/OfertaZimowa/Obozy/HillSides/HillSides';
+import {WeekendNaStokuSchedulePropsType} from '@/components/OfertaZimowa/WeekendoweNarty/Schedule';
+import {PriceDetailsPropsType} from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
 
-export const WEEKEND_NA_STOKU_LISTA_2025: campsCoversType = [
+export type WeekendNaStokuType = {
+  title: string;
+  hero: HeroPropsType;
+  details: DetailsPropsType;
+  contactNemo: ContactPropsType;
+  contactCollab?: ContactPropsType;
+  whatsWaiting4You: WhatsWaiting4YouPropsType;
+  hillSides: HillSidesPropsType;
+  schedule: WeekendNaStokuSchedulePropsType;
+  priceDetails: PriceDetailsPropsType;
+};
+
+export const WEEKEND_NA_STOKU_LISTA_2025: CampsCoversType = [
   {
-    active: true,
+    active: false,
     title: 'WEEKEND NA STOKU',
     price: '219 PLN + KARNET (80 PLN)',
     localization: 'TYLICZ',
@@ -11,7 +30,7 @@ export const WEEKEND_NA_STOKU_LISTA_2025: campsCoversType = [
     href: '/ofertazimowa/weekend-na-stoku/termin-1',
   },
   {
-    active: true,
+    active: false,
     title: 'WEEKEND NA STOKU',
     price: '219 PLN + KARNET (80 PLN)',
     localization: 'TYLICZ',
@@ -38,7 +57,7 @@ export const WEEKEND_NA_STOKU_LISTA_2025: campsCoversType = [
     href: '/ofertazimowa/weekend-na-stoku/termin-4',
   },
 ];
-export const WEEKEND_NA_STOKU_22_12_2024: weekendNaStokuType = {
+export const WEEKEND_NA_STOKU_22_12_2024: WeekendNaStokuType = {
   title: 'WEEKEND NA STOKU',
   hero: {
     pc: 'weekend_na_stoku/weekend_na_stoku_tylicz_22_12_2024-pc',
@@ -139,7 +158,7 @@ export const WEEKEND_NA_STOKU_22_12_2024: weekendNaStokuType = {
     ],
   },
 };
-export const WEEKEND_NA_STOKU_12_01_2025: weekendNaStokuType = {
+export const WEEKEND_NA_STOKU_12_01_2025: WeekendNaStokuType = {
   title: 'WEEKEND NA STOKU',
   hero: {
     pc: 'weekend_na_stoku/weekend_na_stoku_tylicz_12_01_2025-pc',
@@ -240,7 +259,7 @@ export const WEEKEND_NA_STOKU_12_01_2025: weekendNaStokuType = {
     ],
   },
 };
-export const WEEKEND_NA_STOKU_26_01_2025: weekendNaStokuType = {
+export const WEEKEND_NA_STOKU_26_01_2025: WeekendNaStokuType = {
   title: 'WEEKEND NA STOKU',
   hero: {
     pc: 'weekend_na_stoku/weekend_na_stoku_tylicz_26_01_2025-pc',
@@ -341,7 +360,7 @@ export const WEEKEND_NA_STOKU_26_01_2025: weekendNaStokuType = {
     ],
   },
 };
-export const WEEKEND_NA_STOKU_09_02_2025: weekendNaStokuType = {
+export const WEEKEND_NA_STOKU_09_02_2025: WeekendNaStokuType = {
   title: 'WEEKEND NA STOKU',
   hero: {
     pc: 'weekend_na_stoku/weekend_na_stoku_tylicz_09_02_2025-pc',

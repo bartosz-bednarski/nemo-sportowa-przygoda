@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@use '../../styles/mixin.scss' as mixin;
 
 .container {
   display: flex;
@@ -9,100 +9,72 @@
   width: 100%;
   background-color: black;
   position: relative;
-  &__image-box {
-    display: flex;
-    position: relative;
-    width: 32.5%;
-    height: 100vh;
-    align-items: flex-end;
-    video {
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-      object-position: top;
-    }
-    &__sticker-box {
-      display: flex;
-      position: absolute;
-      bottom: 10%;
-      left: 5%;
-    }
-    &__mobileSticker {
-      position: absolute;
-      z-index: 3;
-      left: 10%;
-      top: 30%;
-      display: none;
-    }
-    &__oneSticker-box {
-      position: absolute;
-      z-index: 3;
-      left: 20%;
-      top: 30%;
-    }
-    &__opacity-cover {
-      z-index: 2;
-      background-color: rgba(0, 0, 0, 0.1);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  }
 }
-@media only screen and (max-width: 1400px) {
-  .container__image-box__sticker-box {
-    left: 0%;
-  }
-}
-@media only screen and (max-width: 850px) {
-  .container__image-box__sticker-box {
-    display: none;
-  }
-  .container__image-box__mobileSticker {
-    display: flex;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .container__image-box__oneSticker-box {
-    left: 5%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .container__image-box {
+.imageBox {
+  display: flex;
+  position: relative;
+  width: 32.5%;
+  height: 100vh;
+  align-items: flex-end;
+  @include mixin.phone900px {
     width: 100%;
   }
-  .container__image-box:nth-of-type(1) {
-    display: none;
+  &:nth-of-type(1),
+  &:nth-of-type(2) {
+    @include mixin.phone900px {
+      display: none;
+    }
   }
-  .container__image-box:nth-of-type(2) {
+  video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+.stickerBox {
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  @include mixin.pc1450px {
+    left: 0%;
+  }
+  @include mixin.phone900px {
     display: none;
   }
 }
-@media only screen and (max-width: 616px) {
-  .container__image-box__oneSticker-box {
+.mobileSticker {
+  position: absolute;
+  z-index: 3;
+  left: 10%;
+  top: 30%;
+  display: none;
+  @include mixin.phone900px {
+    display: flex;
+  }
+}
+.oneStickerBox {
+  position: absolute;
+  z-index: 3;
+  left: 20%;
+  top: 30%;
+  @include mixin.phone700px {
+    left: 5%;
+  }
+  @include mixin.phone700px {
+    left: 5%;
+  }
+  @include mixin.phone500px {
     left: 20%;
   }
 }
-@media only screen and (max-width: 500px) {
-  .container__image-box__oneSticker-box {
-    left: 20%;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .container__image-box__oneSticker-box {
-    left: 10%;
-  }
-}
-@media only screen and (max-width: 370px) {
-  .container__image-box__mobileSticker {
-    left: 5%;
-    top: 60%;
-  }
-}
-@media only screen and (max-width: 330px) {
-  .container__image-box__oneSticker-box {
-    left: 5%;
-  }
+.opacityCover {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

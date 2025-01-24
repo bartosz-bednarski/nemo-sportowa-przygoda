@@ -9,7 +9,6 @@ import GooglesIcon from '@/public/assets/ui/Icons/czepek_i_gogle.svg';
 import SwimSuitIcon from '@/public/assets/ui/Icons/stroj_kapielowy.svg';
 import SlippersIcon from '@/public/assets/ui/Icons/klapki.svg';
 import TowelIcon from '@/public/assets/ui/Icons/recznik.svg';
-import Image from 'next/image';
 
 const PoolNecessaryItems: React.FC<{color: customColors}> = ({color}) => {
   return (
@@ -26,23 +25,23 @@ const PoolNecessaryItems: React.FC<{color: customColors}> = ({color}) => {
       />
       <div className={styles.rowBox}>
         <div className={styles.itemCol}>
-          <Image src={GooglesIcon} alt="googles" className={styles.image} />
+          <img src={GooglesIcon.src} alt="googles" className={styles.image} />
 
           <span className={styles.title}>CZEPEK I OKULARY</span>
         </div>
 
         <div className={styles.itemCol}>
-          <Image src={SwimSuitIcon} alt="swimsuit" className={styles.image} />
+          <img src={SwimSuitIcon.src} alt="swimsuit" className={styles.image} />
 
           <span className={styles.title}>STRÓJ KĄPIELOWY</span>
         </div>
         <div className={styles.itemCol}>
-          <Image src={SlippersIcon} alt="slippers" className={styles.image} />
+          <img src={SlippersIcon.src} alt="slippers" className={styles.image} />
 
           <span className={styles.title}>KLAPKI</span>
         </div>
         <div className={styles.itemCol}>
-          <Image src={TowelIcon} alt="towel" className={styles.image} />
+          <img src={TowelIcon.src} alt="towel" className={styles.image} />
 
           <span className={styles.title}>RĘCZNIK</span>
         </div>
