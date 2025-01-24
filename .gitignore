@@ -13,12 +13,12 @@ css
 .next/cache
 
 #dev
-# components
-# app
-# styles
-# types
-# utils
-# .prettierrc.cjs
+components
+app
+styles
+types
+utils
+.prettierrc.cjs
 
 
 # production
