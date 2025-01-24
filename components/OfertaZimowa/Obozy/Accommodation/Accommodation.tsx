@@ -2,9 +2,8 @@
 import React from 'react';
 import styles from './accommodation.module.scss';
 import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
-import Image from 'next/image';
 import Link from 'next/link';
-import AccomodationImg from '@/public/assets/winter/surroundings.svg'
+import AccommodationImg from '@/public/assets/winter/zakwaterowanie/accommodation-basic.svg';
 
 export interface AccommodationPropsType {
   about: string;
@@ -35,11 +34,15 @@ const Accommodation: React.FC<{
             ))}
           </ul>
         </div>
-        <Image src={AccomodationImg} alt='accomodation' className={styles.svgImage}/>
-        
+
+        <img
+          src={AccommodationImg.src}
+          alt="housesAndTrees"
+          className={styles.svgImage}
+        />
       </div>
       <Link className={styles.imageBox} href={accommodation.href}>
-        <Image
+        <img
           className={styles.image}
           src={`/assets/winter/zakwaterowanie/${accommodation.image}.webp`}
           width={1920}
@@ -52,4 +55,5 @@ const Accommodation: React.FC<{
     </div>
   );
 };
+
 export default Accommodation;

@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import styles from './collabWinter.module.scss';
 import React from 'react';
 import Link from 'next/link';
@@ -7,7 +6,7 @@ import Link from 'next/link';
 const CollabWinter: React.FC = () => {
   return (
     <div className={styles['collabWinter-container']}>
-      <Image
+      <img
         src="/assets/ui/scrap-winter.jpg"
         className={styles['collabWinter-container__bg-svg']}
         width={1920}

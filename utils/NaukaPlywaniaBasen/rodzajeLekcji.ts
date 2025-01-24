@@ -1,11 +1,12 @@
-import {lessonType} from '@/types/Globals/globals';
+import {LessonType} from '@/components/NaukaPlywania/Ui/LessonType/LessonType';
 
 type RodzajeLekcjiType = {
-  indywidualne: lessonType;
-  dwuosobowe: lessonType;
-  trzyosobowe: lessonType;
-  grupowe: lessonType;
+  indywidualne: LessonType;
+  dwuosobowe: LessonType;
+  trzyosobowe: LessonType;
+  grupowe: LessonType;
 };
+
 export const RODZAJE_LEKCJI: RodzajeLekcjiType = {
   indywidualne: {
     img: 'lessons-types-bg.webp',
@@ -14,8 +15,6 @@ export const RODZAJE_LEKCJI: RodzajeLekcjiType = {
       titleStrip: 'INDYWIDUALNE',
       stripBgColor: 'white',
       stripTextColor: 'basicOrange',
-      scale: 1.6,
-      paddingBottom: 0,
     },
     aboutTextPoppins: {
       title: '',
@@ -33,8 +32,6 @@ export const RODZAJE_LEKCJI: RodzajeLekcjiType = {
       titleStrip: 'DWUOSOBOWE',
       stripBgColor: 'basicOrange',
       stripTextColor: 'mediumBlue',
-      scale: 1.5,
-      paddingBottom: 0,
     },
     aboutTextPoppins: {
       title: '',
@@ -52,8 +49,6 @@ export const RODZAJE_LEKCJI: RodzajeLekcjiType = {
       titleStrip: 'TRZYOSOBOWE',
       stripBgColor: 'mediumBlue',
       stripTextColor: 'white',
-      scale: 1.6,
-      paddingBottom: 0,
     },
     aboutTextPoppins: {
       title: '',
@@ -71,8 +66,6 @@ export const RODZAJE_LEKCJI: RodzajeLekcjiType = {
       titleStrip: 'GRUPOWE',
       stripBgColor: 'mediumBlue',
       stripTextColor: 'basicOrange',
-      scale: 1.2,
-      paddingBottom: 0,
     },
     aboutTextPoppins: {
       title: '',

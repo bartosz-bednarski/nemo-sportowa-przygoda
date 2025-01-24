@@ -1,6 +1,6 @@
 import styles from '../page.module.scss';
 import VideosSection from '@/components/Globals/VideosSection';
-import {NAUKA_PLYWANIA} from '@/utils/NaukaPlywania/naukaPlywania';
+import {NAUKA_PLYWANIA} from '@/utils/NaukaPlywania/NaukaPlywania';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
 import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';
@@ -33,7 +33,6 @@ const NaukaPlywaniaPage = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'lightBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col2={{
@@ -46,7 +45,6 @@ const NaukaPlywaniaPage = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'mediumBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col3={{
@@ -56,7 +54,6 @@ const NaukaPlywaniaPage = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'darkBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
       />

@@ -1,4 +1,14 @@
-import {obozType} from '@/types/SummerWinter/Camps';
+import {AccommodationPropsType} from '@/components/OfertaZimowa/Obozy/Accommodation/Accommodation';
+import {HillSidesPropsType} from '@/components/OfertaZimowa/Obozy/HillSides/HillSides';
+import {SurroundingsPropsType} from '@/components/OfertaZimowa/Obozy/Surroundings/Surroundings';
+import {WhatsWaiting4YouPropsType} from '@/components/OfertaZimowa/Obozy/WhatsWaiting4You/WhatsWaiting4You';
+import {ContactPropsType} from '@/components/OfertaZimowa/Ui/Contact/Contact';
+import {DetailsPropsType} from '@/components/OfertaZimowa/Ui/Details/Details';
+import {FoodPropsType} from '@/components/OfertaZimowa/Ui/Food/Food';
+import {HeroPropsType} from '@/components/OfertaZimowa/Ui/Hero/Hero';
+import {PriceDetailsPropsType} from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
+import {SchedulePropsType} from '@/components/OfertaZimowa/Ui/Schedule/Schedule';
+
 export type CampCoverType = {
   active: boolean;
   title: string;
@@ -8,11 +18,25 @@ export type CampCoverType = {
   coverImage: string;
   href: string;
 };
+export type CampType = {
+  title: string;
+  hero: HeroPropsType;
+  details: DetailsPropsType;
+  contactNemo: ContactPropsType;
+  contactCollab?: ContactPropsType;
+  whatsWaiting4You: WhatsWaiting4YouPropsType;
+  accommodation: AccommodationPropsType;
+  surroundings: SurroundingsPropsType;
+  hillSides: HillSidesPropsType;
+  schedule: SchedulePropsType;
+  food: FoodPropsType;
+  priceDetails: PriceDetailsPropsType;
+};
 export type CampsCoversType = CampCoverType[];
 
 export const OBOZY_LISTA_2025: CampsCoversType = [
   {
-    active: true,
+    active: false,
     title: 'OBÓZ NARCIARSKI Z BOM4SPORTS',
     price: '2499 PLN + KARNETY (~600 PLN)',
     localization: 'MUSZYNA',
@@ -21,7 +45,7 @@ export const OBOZY_LISTA_2025: CampsCoversType = [
     href: '/ofertazimowa/obozy/narciarskie/muszyna',
   },
 ];
-export const OBOZ_NARCIARSKI_MUSZYNA: obozType = {
+export const OBOZ_NARCIARSKI_MUSZYNA: CampType = {
   title: 'OBÓZ NARCIARSKI Z BOM4SPORTS',
   hero: {
     pc: 'obozy/oboz_narciarski_muszyna_2025-pc',

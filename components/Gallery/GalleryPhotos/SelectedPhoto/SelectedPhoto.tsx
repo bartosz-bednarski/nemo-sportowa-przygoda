@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './selectedPhoto.module.scss';
 import {
   AllImagesType,
@@ -31,13 +30,12 @@ const SelectedPhoto = ({
 
       <div className={styles[`${showPhotoDetails.orientation}`]}>
         <XPhotoButton onClick={xBtnHandler} />
-        <Image
+        <img
           src={allImages[showPhotoDetails.photoId].href}
           alt={`photo-${showPhotoDetails.photoId}`}
           title={`photo-${showPhotoDetails.photoId}`}
           width={showPhotoDetails.orientation === 'landscape' ? 1200 : 780}
           height={showPhotoDetails.orientation === 'landscape' ? 676 : 900}
-          objectFit="cover"
           loading="eager"
           id={`${landscapeId}`}
         />

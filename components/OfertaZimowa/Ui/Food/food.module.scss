@@ -1,4 +1,5 @@
-@import '../../../../styles/colors.scss';
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
 @import '../../../../styles/fonts.scss';
 .food {
   box-sizing: border-box;
@@ -7,40 +8,36 @@
   padding: 4rem;
   justify-content: space-between;
   gap: 2rem;
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 40%;
-    &__text {
-      color: $darkBlue;
-      font-family: 'poppins-500';
-    }
-  }
-  &__svg-image {
-    width: auto;
-    height: fit-content;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .food {
+  @include mixin.pc1000px {
     flex-direction: column;
     align-items: center;
-    &__content {
-      align-items: center;
-      width: 100%;
-      &__text {
-        text-align: center;
-      }
-    }
-    &__svg-image {
-      width: 80%;
-      height: auto;
-    }
+  }
+  @include mixin.phone700px {
+    padding: 2rem;
   }
 }
-@media only screen and (max-width: 600px) {
-  .food {
-    padding: 2rem;
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40%;
+  @include mixin.pc1000px {
+    align-items: center;
+    width: 100%;
+  }
+}
+.text {
+  color: colors.$darkBlue;
+  font-family: 'poppins-500';
+  @include mixin.pc1000px {
+    text-align: center;
+  }
+}
+.logo {
+  width: auto;
+  height: fit-content;
+  @include mixin.pc1000px {
+    width: 60%;
+    height: auto;
   }
 }

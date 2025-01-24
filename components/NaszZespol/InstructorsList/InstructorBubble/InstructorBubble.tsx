@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import styles from './instructorBubble.module.scss';
-import Image from 'next/image';
 
 const InstructorBubble: React.FC<{
   instructorName: string;
@@ -11,11 +10,7 @@ const InstructorBubble: React.FC<{
   return (
     <div onClick={() => onClick()} className={styles.insctructorBubble}>
       <div className={styles['insctructorBubble__image']}>
-        <Image
-          src={`/assets/instructors/${img1}`}
-          fill={true}
-          alt="instructor"
-        />
+        <img src={`/assets/instructors/${img1}`} alt="instructor" />
       </div>
       <span className={styles['insctructorBubble__title']}>
         {instructorName}

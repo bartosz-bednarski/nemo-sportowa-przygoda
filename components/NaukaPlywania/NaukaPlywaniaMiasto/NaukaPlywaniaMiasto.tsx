@@ -3,8 +3,11 @@ import React from 'react';
 import styles from './naukaPlywaniaMiasto.module.scss';
 import {COLORS} from '@/utils/UI/colors';
 import LinkSwimmingPoolCover from '@/components/Ui/Links/LinkSwimmingPoolCover/LinkSwimmingPoolCover';
+import EisenbergaCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
+import BronowiankaCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
+import PlywaczekCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
 
-const NaukaPlywaniaMiasto: React.FC = () => {
+const NaukaPlywaniaMiasto = () => {
   return (
     <div
       className={styles.naukaPlywaniaMiasto}
@@ -12,17 +15,17 @@ const NaukaPlywaniaMiasto: React.FC = () => {
     >
       <div className={styles['naukaPlywaniaMiasto__swimming-pools']}>
         <LinkSwimmingPoolCover
-          image="eisenberga.webp"
+          image={EisenbergaCoverImg}
           title="BASEN EISENBERGA"
           url="/naukaplywania/krakow/eisenberga"
         />
         <LinkSwimmingPoolCover
-          image="bronowianka.webp"
+          image={BronowiankaCoverImg}
           title="BASEN BRONOWIANKA"
           url="/naukaplywania/krakow/bronowianka"
         />
         <LinkSwimmingPoolCover
-          image="plywaczek.webp"
+          image={PlywaczekCoverImg}
           title="BASEN PŁYWACZEK"
           url="/naukaplywania/krakow/plywaczek"
         />

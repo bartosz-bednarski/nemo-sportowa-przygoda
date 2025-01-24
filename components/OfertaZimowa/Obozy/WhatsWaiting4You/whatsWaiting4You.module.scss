@@ -9,11 +9,11 @@
   justify-content: space-between;
   gap: 2rem;
   align-items: center;
-  @include mixin.pc1000px{
+  @include mixin.pc1000px {
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
   }
-  @include mixin.phone700px{
+  @include mixin.phone700px {
     padding: 2rem;
   }
 }
@@ -22,9 +22,9 @@
   flex-direction: column;
   gap: 2rem;
   width: 60%;
-  @include mixin.pc1000px{
+  @include mixin.pc1000px {
     align-items: center;
-      width: 100%;
+    width: 100%;
   }
 }
 .list {
@@ -32,9 +32,9 @@
   font-family: 'poppins-500';
   margin: 0;
   padding: 0;
-  @include mixin.pc1000px{
+  @include mixin.pc1000px {
     text-align: center;
-        list-style-type: none;
+    list-style-type: none;
   }
   li {
     margin-left: 25px;
@@ -43,16 +43,15 @@
 .text {
   color: colors.$darkBlue;
   font-family: 'poppins-600';
-  @include mixin.pc1000px{
+  @include mixin.pc1000px {
     text-align: center;
   }
 }
-.image {
+.svgImage {
   width: 30%;
   height: max-content;
-  @include mixin.pc1000px{
-    width: 80%;
-      height: auto;
+  @include mixin.pc1000px {
+    width: 60%;
+    height: auto;
   }
 }
-

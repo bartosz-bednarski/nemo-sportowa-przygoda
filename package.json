@@ -4,17 +4,16 @@
   "homepage": "https://nemosportowaprzygoda.pl",
   "private": true,
   "scripts": {
-    "dev": "node app.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node app.js",
+    "start": "npx serve@latest out",
     "lint": "next lint",
     "prettier": "prettier . --write './**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
+    "@next/third-parties": "^15.1.6",
     "cookies-next": "^4.3.0",
-    "express": "^4.21.1",
-    "next": "14.2.12",
-    "prettier": "^3.4.2",
+    "next": "^14.2.23",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -24,7 +23,8 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.12",
+    "prettier": "^3.4.2",
     "sass": "^1.79.1",
-    "typescript": "^5"
+    "typescript": "^5.5.4"
   }
 }

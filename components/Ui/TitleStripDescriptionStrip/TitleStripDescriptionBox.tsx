@@ -40,4 +40,5 @@ const TitleStripDescriptionBox = ({
     </div>
   );
 };
+
 export default TitleStripDescriptionBox;

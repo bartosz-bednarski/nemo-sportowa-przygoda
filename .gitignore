@@ -5,15 +5,23 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
-
+css
 # testing
 /coverage
 
 # next.js
 .next/cache
 
+#dev
+# components
+# app
+# styles
+# types
+# utils
+# .prettierrc.cjs
+
+
 # production
-/build
 
 # misc
 .DS_Store

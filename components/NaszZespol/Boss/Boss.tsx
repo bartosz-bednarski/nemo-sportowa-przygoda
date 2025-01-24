@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import styles from './boss.module.scss';
-import Image from 'next/image';
 
 const Boss: React.FC = () => {
   return (
@@ -13,7 +12,7 @@ const Boss: React.FC = () => {
               className={styles['boss__content__header-box__text-box__header']}
             >
               <h2>SZEFOWA</h2>
-              <Image
+              <img
                 className={styles['boss__logo']}
                 src="/assets/logo/logo-nemo-only.webp"
                 width={125}
@@ -22,7 +21,7 @@ const Boss: React.FC = () => {
               />
             </div>
             <h3>WIKTORIA FRYCZEK</h3>
-            <Image
+            <img
               className={styles['boss__logo-mobile']}
               src="/assets/logo/logo-nemo-only.webp"
               width={125}
@@ -30,7 +29,7 @@ const Boss: React.FC = () => {
               alt="logo nemo"
             />
           </div>
-          <Image
+          <img
             className={styles['boss__image-mobile']}
             src="/assets/instructors/boss.webp"
             width={500}
@@ -66,7 +65,7 @@ const Boss: React.FC = () => {
           </b>
         </span>
       </div>
-      <Image
+      <img
         className={styles['boss__image']}
         src="/assets/instructors/boss.webp"
         width={500}

@@ -34,7 +34,6 @@ const NaukaPlywaniaKrakow = () => {
           titleStrip: 'KRAKÓW',
           stripBgColor: 'mediumBlue',
           stripTextColor: 'white',
-          scale: 1.5,
         }}
         col1={{
           video: {src: 'pool-mix-1.mp4', alt: 'nauka pływania niemowlaki'},
@@ -43,7 +42,6 @@ const NaukaPlywaniaKrakow = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'lightBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col2={{
@@ -56,7 +54,6 @@ const NaukaPlywaniaKrakow = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'mediumBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col3={{
@@ -66,7 +63,6 @@ const NaukaPlywaniaKrakow = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'darkBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
       />

@@ -2,8 +2,8 @@
 import React from 'react';
 import styles from './surroundings.module.scss';
 import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
-import Image from 'next/image';
-import SurroundingsImg from '@/public/assets/winter/surroundings.svg'
+import SurroundingsImg from '@/public/assets/winter/zakwaterowanie/accommodation-basic.svg';
+
 export interface SurroundingsPropsType {
   about: string;
   about2?: string;
@@ -42,8 +42,11 @@ const Surroundings: React.FC<{
           <span className={styles.text}>{surroundings.about2}</span>
         )}
       </div>
-      <Image src={SurroundingsImg} alt='surroundings' className={styles.image}/>
-      
+      <img
+        src={SurroundingsImg.src}
+        alt="housesWithTrees"
+        className={styles.image}
+      />
     </div>
   );
 };

@@ -1,19 +1,56 @@
-import {instructorsRowBoxType, poolTutorialType} from '@/types/Globals/globals';
-import {poolInformationsType} from '@/types/NaukaPlywania/naukaPlywania';
 import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
-import {NAUKA_PLYWANIA} from '../NaukaPlywania/naukaPlywania';
+import {NAUKA_PLYWANIA} from '../NaukaPlywania/NaukaPlywania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import {StickerH2PropsType} from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 
-type naukaPlywaniaBasen = {
+type NaukaPlywaniaBasen = {
   zRodzicami: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    instructors: instructorsRowBoxType;
     groups: GroupsPropsType;
     priceList: PriceListPropsType;
+  };
+};
+
+export type PoolInformationsType = {
+  color: customColors;
+  title: string;
+  imageSrc: string;
+  stickerH2: StickerH2PropsType;
+  mapSrc: string;
+  icons: {
+    pool1?: {
+      exists: boolean;
+      title: string;
+    };
+    pool2?: {
+      exists: boolean;
+      title: string;
+    };
+    stand?: {
+      exists: boolean;
+      title: string;
+    };
+    cloakroomWomen?: {
+      exists: boolean;
+      title: 'SZATNIA DAMSKA';
+    };
+    cloakroomMen?: {
+      exists: boolean;
+      title: 'SZATNIA MĘSKA';
+    };
+    cloakroomFamily?: {
+      exists: boolean;
+      title: 'SZATNIA RODZINNA';
+    };
+    parking?: {
+      exists: boolean;
+      title: string;
+    };
   };
 };
 
@@ -22,10 +59,8 @@ export const CENNIK_Z_RODZICAMI_BRONOWIANKA: PriceListPropsType = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: 'GRUPOWE',
-      scale: 1.6,
       stripTextColor: 'basicOrange',
       stripBgColor: 'white',
-      paddingBottom: 0,
     },
     oneLesson: {
       price: '70 zł',
@@ -43,7 +78,7 @@ export const CENNIK_Z_RODZICAMI_BRONOWIANKA: PriceListPropsType = [
     },
   },
 ];
-export const NAUKA_PLYWANIA_BRONOWIANKA: naukaPlywaniaBasen = {
+export const NAUKA_PLYWANIA_BRONOWIANKA: NaukaPlywaniaBasen = {
   zRodzicami: {
     backgroundColor: 'lightBlue',
     about: {
@@ -71,37 +106,11 @@ export const NAUKA_PLYWANIA_BRONOWIANKA: naukaPlywaniaBasen = {
       },
     },
     priceList: CENNIK_Z_RODZICAMI_BRONOWIANKA,
-    instructors: {
-      bgColor: 'lightBlue',
-      instructors: [
-        {
-          instructorName: 'WIKTORIA FRYCZEK',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-        {
-          instructorName: 'WIKTORIA FRYCZ',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-        {
-          instructorName: 'WIKTORIA FRYCZE',
-          scale: 0.7,
-          img1: 'instructor-1.png',
-          img2: 'instructor-1.png',
-          href: '/',
-        },
-      ],
-    },
+
     groups: {
       stripH2: {
         type: 'h2',
         title: 'ZAJĘCIA',
-        scale: 1.2,
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },
@@ -117,7 +126,7 @@ export const NAUKA_PLYWANIA_BRONOWIANKA: naukaPlywaniaBasen = {
   },
 };
 
-export const BASEN_BRONOWIANKA_INFORMATIONS: poolInformationsType = {
+export const BASEN_BRONOWIANKA_INFORMATIONS: PoolInformationsType = {
   color: 'darkBlue',
   title: 'Basen BRONOWIANKA',
   imageSrc: 'custom-pool.webp',
@@ -128,8 +137,6 @@ export const BASEN_BRONOWIANKA_INFORMATIONS: poolInformationsType = {
     titleStrip: 'BRONOWIANKA',
     stripBgColor: 'basicOrange',
     stripTextColor: 'darkBlue',
-    scale: 1.2,
-    paddingBottom: 0,
   },
   icons: {
     pool1: {
@@ -162,7 +169,7 @@ export const BASEN_BRONOWIANKA_INFORMATIONS: poolInformationsType = {
     },
   },
 };
-export const BASEN_BRONOWIANKA_TUTORIAL: poolTutorialType = {
+export const BASEN_BRONOWIANKA_TUTORIAL: PoolTutorialPropsType = {
   header: false,
   color: 'darkBlue',
   firstRule:

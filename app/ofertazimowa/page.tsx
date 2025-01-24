@@ -36,7 +36,6 @@ const OfertaZimowaPage = () => {
           titleStrip: 'ZIMOWA',
           stripBgColor: 'white',
           stripTextColor: 'darkBlue',
-          scale: 2,
         }}
         col1={{
           video: {src: 'winter-mix-1.mp4', alt: 'weekendowe narty'},
@@ -45,7 +44,6 @@ const OfertaZimowaPage = () => {
             titleStrip: 'NARCIARSKIE',
             stripBgColor: 'white',
             stripTextColor: 'darkBlue',
-            scale: 1.3,
           },
         }}
         col2={{
@@ -55,7 +53,6 @@ const OfertaZimowaPage = () => {
             titleStrip: 'ZIMOWE',
             stripBgColor: 'white',
             stripTextColor: 'darkBlue',
-            scale: 1.5,
           },
         }}
         col3={{
@@ -68,7 +65,6 @@ const OfertaZimowaPage = () => {
             titleStrip: 'NARCIARSKIE',
             stripBgColor: 'white',
             stripTextColor: 'darkBlue',
-            scale: 1.3,
           },
         }}
       />
@@ -78,8 +74,6 @@ const OfertaZimowaPage = () => {
           titleStrip: 'ZIMOWE',
           stripBgColor: 'darkBlue',
           stripTextColor: 'white',
-          scale: 1.4,
-          paddingBottom: 0,
           titleColor: 'darkBlue',
         }}
         right={false}
@@ -105,8 +99,6 @@ zimowej scenerii!
           titleStrip: 'ZIMOWE',
           stripBgColor: 'darkBlue',
           stripTextColor: 'white',
-          scale: 1.8,
-          paddingBottom: 0,
           titleColor: 'darkBlue',
         }}
         right={false}
@@ -135,8 +127,6 @@ sposób na aktywne ferie!"
           titleStrip: 'NARTY',
           stripBgColor: 'darkBlue',
           stripTextColor: 'white',
-          scale: 1.4,
-          paddingBottom: 0,
           titleColor: 'darkBlue',
         }}
         right={false}

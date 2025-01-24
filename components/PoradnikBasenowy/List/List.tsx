@@ -3,11 +3,11 @@ import React from 'react';
 import styles from './list.module.scss';
 import Link from 'next/link';
 
-const List: React.FC = () => {
+const List = () => {
   return (
     <div className={styles.list}>
       <ul>
-        <li className={styles['list__header']}>
+        <li className={styles.header}>
           <Link href="#1">1. ZAPISY NA ZAJĘCIA</Link>
         </li>
         <li>
@@ -25,7 +25,7 @@ const List: React.FC = () => {
         <li>
           <Link href="#1">1.5. Opłata za kurs</Link>
         </li>
-        <li className={styles['list__header']}>
+        <li className={styles.header}>
           <Link href="#2">2. CENNIK I OPŁATY</Link>
         </li>
         <li>
@@ -43,7 +43,7 @@ const List: React.FC = () => {
         <li>
           <Link href="#2">2.5. PŁATNOŚCI RATALNE</Link>
         </li>
-        <li className={styles['list__header']}>
+        <li className={styles.header}>
           <Link href="#3">3. ODRABIANIE ZAJĘĆ</Link>
         </li>
         <li>
@@ -64,7 +64,7 @@ const List: React.FC = () => {
         <li>
           <Link href="#3">3.6. ODRABIANIE KURSY INDYWIDUALNE I DWUOSOBOWE</Link>
         </li>
-        <li className={styles['list__header']}>
+        <li className={styles.header}>
           <Link href="#4">4. ZA CO ODPOWIADA INSTRUKTOR?</Link>
         </li>
         <li>
@@ -76,10 +76,10 @@ const List: React.FC = () => {
         <li>
           <Link href="#4">4.3 ZGŁASZANIE ZDARZEŃ</Link>
         </li>
-        <li className={styles['list__header']}>
+        <li className={styles.header}>
           <Link href="#5">5. CO ZABRAĆ NA BASEN? </Link>
         </li>
-        <li className={styles['list__header']}>
+        <li className={styles.header}>
           <Link href="#6">6. ZGODA NA PUBLIKACJĘ WIZERUNKU</Link>
         </li>
         <li>
@@ -92,4 +92,5 @@ const List: React.FC = () => {
     </div>
   );
 };
+
 export default List;

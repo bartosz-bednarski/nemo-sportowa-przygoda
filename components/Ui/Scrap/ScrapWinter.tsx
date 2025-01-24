@@ -3,6 +3,7 @@ import {customColors} from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
 import React from 'react';
 import styles from './scrap.module.scss';
+
 const ScrapWinter: React.FC<{bgColor: customColors}> = ({bgColor}) => {
   return (
     <svg
@@ -25,4 +26,5 @@ const ScrapWinter: React.FC<{bgColor: customColors}> = ({bgColor}) => {
     </svg>
   );
 };
+
 export default ScrapWinter;

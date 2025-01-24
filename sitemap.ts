@@ -69,6 +69,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-4',
     },
     {
+      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-1',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-2',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-3',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-4',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-1',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-2',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-3',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-2',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-3',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-4',
+    },
+    {
       url: 'https://nemosportowaprzygoda.pl/naszzespol',
     },
     {

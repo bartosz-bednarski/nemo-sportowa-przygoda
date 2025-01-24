@@ -3,6 +3,7 @@ import '../styles/globals.scss';
 import styles from './layout.module.scss';
 import Footer from '@/components/Globals/Footer/Footer';
 import NavBar from '@/components/Globals/Navigation/NavBar/NavBar';
+import {GoogleAnalytics} from '@next/third-parties/google';
 export const metadata: Metadata = {
   title: {
     default: 'NEMO Sportowa Przygoda',
@@ -42,6 +43,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </main>
+        <GoogleAnalytics gaId="G-BDJF7917NT" />
       </body>
     </html>
   );

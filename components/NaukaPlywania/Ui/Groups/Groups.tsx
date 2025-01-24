@@ -1,12 +1,13 @@
 'use client';
 import React from 'react';
 import styles from './groups.module.scss';
-import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
+import StripH2, {
+  StripH2PropsType,
+} from '@/components/Ui/Strips/StripH2/StripH2';
 import GroupLvl, {GroupLvlPropsType} from '../GroupLvl/GroupLvl';
-import {stripH2Type} from '@/types/UI/stickerStripStrap';
 
 export interface GroupsPropsType {
-  stripH2: stripH2Type;
+  stripH2: StripH2PropsType;
   groups: GroupLvlPropsType[];
 }
 
@@ -33,4 +34,5 @@ const Groups = ({stripH2, groups}: GroupsPropsType) => {
     </div>
   );
 };
+
 export default Groups;

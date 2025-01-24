@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import styles from './lessonType.module.scss';
-import Image from 'next/image';
 import StickerH4, {
   StickerH4PropsType,
 } from '@/components/Ui/Stickers/StickerH4/StickerH4';
@@ -29,12 +28,10 @@ const LessonType = ({bgColor, lessonType}: LessonTypePropsType) => {
         className={styles.opacity}
         style={{background: COLORS[bgColor]}}
       ></div>
-      <Image
+      <img
         src={`/assets/swimming/lessonsTypes/${lessonType.img}`}
-        fill={true}
+        className={styles.image}
         alt="lekcja"
-        objectFit="cover"
-        objectPosition="center"
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       <div className={styles.content}>

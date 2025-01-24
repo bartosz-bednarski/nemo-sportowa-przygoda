@@ -43,7 +43,6 @@ const NaukaPlywaniaBronowianka = () => {
           titleStrip: 'BRONOWIANKA',
           stripBgColor: 'mediumBlue',
           stripTextColor: 'white',
-          scale: 2.5,
         }}
         scrapColor="lightBlue"
         col1={{
@@ -53,7 +52,6 @@ const NaukaPlywaniaBronowianka = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'lightBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col2={{
@@ -66,7 +64,6 @@ const NaukaPlywaniaBronowianka = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'mediumBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
         col3={{
@@ -76,14 +73,12 @@ const NaukaPlywaniaBronowianka = () => {
             titleStrip: 'BOMBELKI',
             stripBgColor: 'darkBlue',
             stripTextColor: 'white',
-            scale: 1.15,
           },
         }}
       />
       <NaukaPlywaniaBasen
         about={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.about}
         backgroundColor={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.backgroundColor}
-        instructors={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.instructors}
         groups={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.groups}
         priceList={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.priceList}
       />

@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from './colonyLink.module.scss';
 import Link from 'next/link';
-import Image from 'next/image';
 import {CampCoverType} from '@/utils/Winter/Obozy';
 
 export type ColonyLinkPropsType = {
@@ -22,13 +21,11 @@ const ColonyLink: React.FC<ColonyLinkPropsType> = ({data}) => {
         </div>
       )}
 
-      <Image
+      <img
         className={styles['colonyLink__image']}
         src={`/assets/${data.coverImage}`}
         width={400}
         height={200}
-        objectFit="cover"
-        objectPosition="center"
         alt="polkolonie zimowe"
       />
       <div className={styles['colonyLink__content']}>

@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import styles from './poolInformations.module.scss';
-import Image from 'next/image';
 import {COLORS} from '@/utils/UI/colors';
 import StickerH2, {
   StickerH2PropsType,
@@ -59,12 +58,10 @@ const PoolInformations: React.FC<{
       className={styles.poolInformations}
       style={{background: COLORS[poolInformation.color]}}
     >
-      <Image
+      <img
         src={`/assets/swimming/pools/${poolInformation.imageSrc}`}
-        fill={true}
-        objectFit="cover"
+        className={styles.imageFill}
         alt={poolInformation.title}
-        objectPosition="top"
       />
       <StickerH2
         title={poolInformation.stickerH2.title}
@@ -76,7 +73,7 @@ const PoolInformations: React.FC<{
         <div className={styles.columnBox}>
           {poolInformation.icons.pool1?.exists && (
             <div className={styles.rowBoxItem}>
-              <Image src={PoolIcon} alt="poolIcon" className={styles.image} />
+              <img src={PoolIcon.src} alt="poolIcon" className={styles.image} />
 
               <span className={styles.text}>
                 {poolInformation.icons.pool1.title}
@@ -85,7 +82,7 @@ const PoolInformations: React.FC<{
           )}
           {poolInformation.icons.pool2?.exists && (
             <div className={styles.rowBoxItem}>
-              <Image src={PoolIcon} alt="poolIcon" className={styles.image} />
+              <img src={PoolIcon.src} alt="poolIcon" className={styles.image} />
               <span className={styles.text}>
                 {poolInformation.icons.pool2.title}
               </span>
@@ -93,7 +90,11 @@ const PoolInformations: React.FC<{
           )}
           {poolInformation.icons.stand?.exists && (
             <div className={styles.rowBoxItem}>
-              <Image src={StandIcon} alt="standIcon" className={styles.image} />
+              <img
+                src={StandIcon.src}
+                alt="standIcon"
+                className={styles.image}
+              />
               <span className={styles.text}>
                 {poolInformation.icons.stand.title}
               </span>
@@ -101,8 +102,8 @@ const PoolInformations: React.FC<{
           )}
           {poolInformation.icons.cloakroomWomen?.exists && (
             <div className={styles.rowBoxItem}>
-              <Image
-                src={WomenCloackRoomIcon}
+              <img
+                src={WomenCloackRoomIcon.src}
                 alt="cloackroomWomen"
                 className={styles.image}
               />
@@ -113,8 +114,8 @@ const PoolInformations: React.FC<{
           )}
           {poolInformation.icons.cloakroomMen?.exists && (
             <div className={styles.rowBoxItem}>
-              <Image
-                src={MenCloackRoomIcon}
+              <img
+                src={MenCloackRoomIcon.src}
                 alt="cloackroomMen"
                 className={styles.image}
               />
@@ -126,8 +127,8 @@ const PoolInformations: React.FC<{
           )}
           {poolInformation.icons.cloakroomFamily?.exists && (
             <div className={styles.rowBoxItem}>
-              <Image
-                src={FamilyCloackRoomIcon}
+              <img
+                src={FamilyCloackRoomIcon.src}
                 alt="cloackroomFamily"
                 className={styles.image}
               />
@@ -158,4 +159,5 @@ const PoolInformations: React.FC<{
     </div>
   );
 };
+
 export default PoolInformations;

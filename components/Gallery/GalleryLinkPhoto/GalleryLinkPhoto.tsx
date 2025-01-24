@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import styles from './galleryLinkPhoto.module.scss';
-import Image from 'next/image';
 import {COLORS} from '@/utils/UI/colors';
 import {GalleryItemType} from '@/utils/Gallery/Gallery';
+
 interface GalleryLinkPhotoPropsType {
   item: GalleryItemType;
 }
@@ -11,7 +11,7 @@ const GalleryLinkPhoto = ({item}: GalleryLinkPhotoPropsType) => {
   return (
     <Link href={`/galeria/${item.href}`} key={item.title}>
       <div className={styles.container}>
-        <Image
+        <img
           className={styles.imageBox}
           src={`/gallery/Covers/${item.coverImage}`}
           width={500}
