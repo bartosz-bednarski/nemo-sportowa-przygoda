@@ -39,7 +39,7 @@ export const WEEKEND_NA_STOKU_LISTA_2025: CampsCoversType = [
     href: '/ofertazimowa/weekend-na-stoku/termin-2',
   },
   {
-    active: true,
+    active: false,
     title: 'WEEKEND NA STOKU',
     price: '219 PLN + KARNET (80 PLN)',
     localization: 'TYLICZ',

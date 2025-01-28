@@ -58,15 +58,16 @@
   position: absolute;
   z-index: 3;
   left: 20%;
-  top: 30%;
+  bottom: 20%;
   @include mixin.phone700px {
     left: 5%;
+    bottom: 30%;
   }
   @include mixin.phone700px {
     left: 5%;
   }
   @include mixin.phone500px {
-    left: 20%;
+    left: 10%;
   }
 }
 .opacityCover {
