@@ -109,6 +109,7 @@
   left: auto;
   height: min-content;
   width: -webkit-fill-available;
+  width: 100%;
   @include mixin.phone800px {
     display: none;
   }
@@ -118,6 +119,7 @@
   position: absolute;
   left: -17px;
   height: -webkit-fill-available;
+  height: 100%;
   width: auto;
   top: 0;
   @include mixin.phone800px {
@@ -132,6 +134,7 @@
   position: absolute;
   right: -17px;
   height: -webkit-fill-available;
+  height: 100%;
   width: auto;
   top: 0;
   @include mixin.phone800px {
