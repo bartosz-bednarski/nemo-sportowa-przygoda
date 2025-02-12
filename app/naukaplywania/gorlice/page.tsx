@@ -15,7 +15,6 @@ import NaukaPlywaniaBasen from '@/components/NaukaPlywania/NaukaPlywaniaBasen/Na
 import PoolNecessaryItems from '@/components/NaukaPlywania/Ui/PoolNecessaryItems/PoolNecessaryItems';
 import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 import PoolInformations from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
-import LessonType from '@/components/NaukaPlywania/Ui/LessonType/LessonType';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import LessonTypeWrapBox from '@/components/NaukaPlywania/Ui/LessonTypeWrapBox/LessonTypeWrapBox';
 
