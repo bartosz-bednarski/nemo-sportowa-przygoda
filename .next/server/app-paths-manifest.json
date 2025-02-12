@@ -1,6 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/naukaplywania/krakow/page": "app/naukaplywania/krakow/page.js",
-  "/naukaplywania/gorlice/page": "app/naukaplywania/gorlice/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
-}
