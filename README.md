@@ -4,7 +4,7 @@ Web application for swimming school.
 
 ## Description
 
- Application describes the company's profile, its offer, and necessary information. The application was built with Next.js and deployed using an SSG build
+Application describes the company's profile, its offer, and necessary information. The application was built with Next.js and deployed using an SSG build
 
 ## Getting Started
 
@@ -40,6 +40,7 @@ npm run dev
 ```
 npm run build
 ```
+
 ```
 npm start
 ```

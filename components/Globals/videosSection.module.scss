@@ -10,11 +10,11 @@
   background-color: black;
   position: relative;
 }
-.onLoadImg{
+.onLoadImg {
   width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: top;
+  height: 100vh;
+  object-fit: cover;
+  object-position: top;
 }
 .imageBox {
   display: flex;
@@ -37,7 +37,6 @@
     object-fit: cover;
     object-position: top;
   }
-  
 }
 .stickerBox {
   display: flex;

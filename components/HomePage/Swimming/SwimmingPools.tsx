@@ -8,6 +8,9 @@ import GorliceCoverImg from '@/public/assets/swimming/pools/gorlice.webp';
 import EisenbergaCoverImg from '@/public/assets/swimming/pools/eisenberga.webp';
 import BronowiankaCoverImg from '@/public/assets/swimming/pools/bronowianka.webp';
 import PlywaczekCoverImg from '@/public/assets/swimming/pools/plywaczek.webp';
+import ChelmiecCoverImg from '@/public/assets/swimming/pools/chelmiec.webp';
+import StrozeCoverImg from '@/public/assets/swimming/pools/stroze.webp';
+import TemporarylinkSwimmingPoolCover from '@/components/Ui/Links/TemporaryLinkSwimmingPoolCover/TemporaryLinkSwimmingPoolCover';
 
 const SwimmingPools = () => {
   return (
@@ -44,6 +47,15 @@ const SwimmingPools = () => {
             image={PlywaczekCoverImg}
             title="BASEN PŁYWACZEK"
             url="/naukaplywania/krakow/plywaczek"
+          />
+          <LinkSwimmingPoolCover
+            image={ChelmiecCoverImg}
+            title="BASEN CHEŁMIEC"
+            url="/naukaplywania/chelmiec"
+          />
+          <TemporarylinkSwimmingPoolCover
+            image={StrozeCoverImg}
+            title="BASEN STRÓŻE"
           />
         </div>
         <LinkButton

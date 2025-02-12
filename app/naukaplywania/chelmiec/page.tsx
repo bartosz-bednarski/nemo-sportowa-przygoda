@@ -1,40 +1,38 @@
 import styles from '../../page.module.scss';
 import VideosSection from '@/components/Globals/VideosSection';
-import {
-  BASEN_GORLICE_INFORMATIONS,
-  BASEN_GORLICE_TUTORIAL,
-  NAUKA_PLYWANIA_GORLICE,
-} from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaGorlice';
-import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
+import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {Metadata} from 'next';
-import Schedule from '@/components/Schedule/Schedule';
 import {COLORS} from '@/utils/UI/colors';
 import NaukaPlywaniaBasen from '@/components/NaukaPlywania/NaukaPlywaniaBasen/NaukaPlywaniaBasen';
 import PoolNecessaryItems from '@/components/NaukaPlywania/Ui/PoolNecessaryItems/PoolNecessaryItems';
 import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 import PoolInformations from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
-import LessonType from '@/components/NaukaPlywania/Ui/LessonType/LessonType';
-import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import LessonTypeWrapBox from '@/components/NaukaPlywania/Ui/LessonTypeWrapBox/LessonTypeWrapBox';
+import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
+import {
+  BASEN_CHELMIEC_INFORMATIONS,
+  BASEN_CHELMIEC_TUTORIAL,
+  NAUKA_PLYWANIA_CHELMIEC,
+} from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaChelmiec';
 
 export const metadata: Metadata = {
-  title: 'Nauka pływania GORLICE',
+  title: 'Nauka pływania CHEŁMIEC',
   description:
-    'Nasze zajęcia są przeznaczone dla dzieci od 3. miesiąca życia, które uczestniczą w nich razem z rodzicem. Zapraszamy wszystkich chętnych na basen w Gorlicach!',
+    'Nasze zajęcia są przeznaczone zarówno dla dzieci i młodzieży jak i dorosłych. Zapraszamy wszystkich chętnych na basen Aqua Centrum w Chełmcu!',
   metadataBase: new URL(
-    'https://nemosportowaprzygoda.pl/naukaplywania/gorlice'
+    'https://nemosportowaprzygoda.pl/naukaplywania/chelmiec'
   ),
   alternates: {
-    canonical: 'https://nemosportowaprzygoda.pl/naukaplywania/gorlice',
+    canonical: 'https://nemosportowaprzygoda.pl/naukaplywania/chelmiec',
     languages: {
       'pl-PL': '/pl-PL',
     },
   },
 };
 
-const NaukaPlywaniaGorlice = () => {
+const NaukaPlywaniaChelmiec = () => {
   return (
     <div className={styles.main} style={{background: COLORS['darkBlue']}}>
       <VideosSection
@@ -42,16 +40,13 @@ const NaukaPlywaniaGorlice = () => {
         oneStickerContent={{
           title: 'NAUKA ',
           title2: 'PŁYWANIA',
-          titleStrip: 'GORLICE',
+          titleStrip: 'CHEŁMIEC',
           stripBgColor: 'mediumBlue',
           stripTextColor: 'white',
         }}
         scrapColor="lightBlue"
         col1={{
-          video: {
-            src: 'toddler-mix-1.mp4',
-            alt: 'nauka pływania niemowlaki',
-          },
+          video: {src: 'pool-mix-2.mp4', alt: 'nauka pływania niemowlaki'},
           stickerH2: {
             title: 'MAŁE',
             titleStrip: 'BOMBELKI',
@@ -61,7 +56,7 @@ const NaukaPlywaniaGorlice = () => {
         }}
         col2={{
           video: {
-            src: 'toddler-mix-2.mp4',
+            src: 'pool-mix-5.mp4',
             alt: 'nauka pływania dzieci i mlodzież',
           },
           stickerH2: {
@@ -72,7 +67,7 @@ const NaukaPlywaniaGorlice = () => {
           },
         }}
         col3={{
-          video: {src: 'toddler-mix-3.mp4', alt: 'nauka pływania dorośli'},
+          video: {src: 'pool-mix-3.mp4', alt: 'nauka pływania dorośli'},
           stickerH2: {
             title: 'DUŻE',
             titleStrip: 'BOMBELKI',
@@ -81,29 +76,21 @@ const NaukaPlywaniaGorlice = () => {
           },
         }}
       />
-      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=74801&zz=" />
 
       <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_GORLICE.zRodzicami.about}
-        backgroundColor={NAUKA_PLYWANIA_GORLICE.zRodzicami.backgroundColor}
-        groups={NAUKA_PLYWANIA_GORLICE.zRodzicami.groups}
-        priceList={NAUKA_PLYWANIA_GORLICE.zRodzicami.priceList}
+        about={NAUKA_PLYWANIA_CHELMIEC.dzieciMlodziez.about}
+        backgroundColor={NAUKA_PLYWANIA_CHELMIEC.dzieciMlodziez.backgroundColor}
+        groups={NAUKA_PLYWANIA_CHELMIEC.dzieciMlodziez.groups}
+        priceList={NAUKA_PLYWANIA_CHELMIEC.dzieciMlodziez.priceList}
       />
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
       <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.about}
-        backgroundColor={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.backgroundColor}
-        groups={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.groups}
-        priceList={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.priceList}
+        about={NAUKA_PLYWANIA_CHELMIEC.dorosli.about}
+        backgroundColor={NAUKA_PLYWANIA_CHELMIEC.dorosli.backgroundColor}
+        groups={NAUKA_PLYWANIA_CHELMIEC.dorosli.groups}
+        priceList={NAUKA_PLYWANIA_CHELMIEC.dorosli.priceList}
       />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_GORLICE.dorosli.about}
-        backgroundColor={NAUKA_PLYWANIA_GORLICE.dorosli.backgroundColor}
-        groups={NAUKA_PLYWANIA_GORLICE.dorosli.groups}
-        priceList={NAUKA_PLYWANIA_GORLICE.dorosli.priceList}
-      />
-      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <LessonTypeWrapBox
         bgImage="grupowe.png"
         bgColor="darkBlue"
@@ -114,11 +101,12 @@ const NaukaPlywaniaGorlice = () => {
           RODZAJE_LEKCJI.trzyosobowe,
         ]}
       />
+      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <PoolTutorial poolTutorial={BASEN_GORLICE_TUTORIAL} />
+      <PoolTutorial poolTutorial={BASEN_CHELMIEC_TUTORIAL} />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <PoolInformations poolInformation={BASEN_GORLICE_INFORMATIONS} />
+      <PoolInformations poolInformation={BASEN_CHELMIEC_INFORMATIONS} />
       <Scrap2 position="bottom" color="darkBlue" />
       <GalleryLink
         href="/galeria"
@@ -129,4 +117,4 @@ const NaukaPlywaniaGorlice = () => {
     </div>
   );
 };
-export default NaukaPlywaniaGorlice;
+export default NaukaPlywaniaChelmiec;

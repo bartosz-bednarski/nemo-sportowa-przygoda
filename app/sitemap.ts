@@ -25,6 +25,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: 'https://nemosportowaprzygoda.pl/naukaplywania/gorlice',
     },
     {
+      url: 'https://nemosportowaprzygoda.pl/naukaplywania/chelmiec',
+    },
+    {
       url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/eisenberga',
     },
     {

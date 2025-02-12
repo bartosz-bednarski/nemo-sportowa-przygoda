@@ -6,6 +6,7 @@ import Link from 'next/link';
 import LogoMainWhiteImg from '@/public/assets/logo/Logo-main-white.svg';
 import InstagramImg from '@/public/assets/ui/Icons/social/instagram.svg';
 import FacebookImg from '@/public/assets/ui/Icons/social/facebook.svg';
+import TiktokImg from '@/public/assets/ui/Icons/social/tiktok.svg';
 
 interface NavigationPropsType {
   showNavigation: boolean;
@@ -100,6 +101,15 @@ const Navigation = ({
               </Link>
             </li>
             <li>
+              <Link href="/naukaplywania/chelmiec" onClick={hideNavigation}>
+                <span className={styles.nav}>
+                  {' '}
+                  Nauka pływania
+                  <span className={styles.location}>chełmiec</span>
+                </span>
+              </Link>
+            </li>
+            <li>
               <Link href="/ofertaletnia" onClick={hideNavigation}>
                 <span className={styles.nav}>
                   {' '}
@@ -155,6 +165,9 @@ const Navigation = ({
                 alt="instagram"
                 className={styles.icon}
               />
+            </Link>
+            <Link href="https://www.tiktok.com/@nemportowaprzygoda?is_from_webapp=1&sender_device=pc">
+              <img src={TiktokImg.src} alt="tiktok" className={styles.icon} />
             </Link>
           </span>
         </div>

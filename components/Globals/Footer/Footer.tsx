@@ -4,6 +4,7 @@ import styles from './footer.module.scss';
 import Link from 'next/link';
 import FacebookImg from '@/public/assets/ui/Icons/social/facebook.svg';
 import InstagramImg from '@/public/assets/ui/Icons/social/instagram.svg';
+import TiktokImg from '@/public/assets/ui/Icons/social/tiktok.svg';
 import PhoneImg from '@/public/assets/ui/Icons/social/phone.svg';
 import EmailImg from '@/public/assets/ui/Icons/social/email.svg';
 import LogoMainWhiteImg from '@/public/assets/logo/Logo-main-white.svg';
@@ -43,8 +44,14 @@ const Footer: React.FC = () => {
               src={InstagramImg.src}
               alt="instagramImg"
               className={styles.image}
-            />{' '}
+            />
             nemo_sportowa_przygoda_
+          </Link>
+        </li>
+        <li>
+          <Link href="https://www.tiktok.com/@nemportowaprzygoda?is_from_webapp=1&sender_device=pc">
+            <img src={TiktokImg.src} alt="tiktokImg" className={styles.image} />
+            nemportowaprzygoda
           </Link>
         </li>
         <li>
