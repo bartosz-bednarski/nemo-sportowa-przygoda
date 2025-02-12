@@ -45,6 +45,7 @@ const VideosSection = ({
   oneSticker,
   oneStickerContent,
 }: VideosSectionPropsType) => {
+  
   return (
     <div className={styles.container}>
       {!oneSticker && col1.stickerH2 !== undefined && (
@@ -75,7 +76,7 @@ const VideosSection = ({
       <div className={styles.imageBox}>
         <div className={styles.opacityCover}></div>
 
-        <video
+        <video id='video1'
           src={`/assets/videos/${col1.video.src}`}
           autoPlay
           loop
@@ -104,7 +105,7 @@ const VideosSection = ({
           loop
           muted
           playsInline
-        ></video>
+                  ></video>
         {!oneSticker && col2.stickerH2 !== undefined && (
           <span className={styles.stickerBox} style={{bottom: '25%'}}>
             <StickerH2
