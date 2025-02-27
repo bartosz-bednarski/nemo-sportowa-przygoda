@@ -17,6 +17,7 @@ import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutoria
 import PoolInformations from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
 import LessonTypeWrapBox from '@/components/NaukaPlywania/Ui/LessonTypeWrapBox/LessonTypeWrapBox';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
+import Schedule from '@/components/Schedule/Schedule';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania Kraków EISENBERGA',
@@ -78,6 +79,7 @@ const NaukaPlywaniaEisenberga = () => {
           },
         }}
       />
+      <Schedule src='https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=88837&zz='/>
       <NaukaPlywaniaBasen
         about={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.about}
         backgroundColor={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.backgroundColor}
