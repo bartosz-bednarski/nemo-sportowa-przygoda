@@ -4,10 +4,11 @@ import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaa
 import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import KorzennaCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
-import GorliceCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
-import EisenbergaCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
-import BronowiankaCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
-import PlywaczekCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
+import GorliceCoverImg from '@/public/assets/swimming/pools/gorlice.webp';
+import EisenbergaCoverImg from '@/public/assets/swimming/pools/eisenberga.webp';
+import BronowiankaCoverImg from '@/public/assets/swimming/pools/bronowianka.webp';
+import PlywaczekCoverImg from '@/public/assets/swimming/pools/plywaczek.webp';
+import ChelmiecCoverImg from '@/public/assets/swimming/pools/chelmiec.webp';
 
 type naukaPlywania = {
   zRodzicami: {
@@ -209,6 +210,11 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
           image: PlywaczekCoverImg,
           url: '/naukaplywania/krakow/plywaczek',
         },
+        {
+          title: 'BASEN CHEŁMIEC',
+          image: ChelmiecCoverImg,
+          url: '/naukaplywania/chelmiec',
+        },
       ],
     },
     groups: {
@@ -301,6 +307,11 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
           title: 'BASEN PŁYWACZEK',
           image: PlywaczekCoverImg,
           url: '/naukaplywania/krakow/plywaczek',
+        },
+        {
+          title: 'BASEN CHEŁMIEC',
+          image: ChelmiecCoverImg,
+          url: '/naukaplywania/chelmiec',
         },
       ],
     },

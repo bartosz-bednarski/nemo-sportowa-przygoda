@@ -76,6 +76,7 @@ const VideosSection = ({
         <div className={styles.opacityCover}></div>
 
         <video
+          id="video1"
           src={`/assets/videos/${col1.video.src}`}
           autoPlay
           loop

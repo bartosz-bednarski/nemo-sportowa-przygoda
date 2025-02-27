@@ -31,7 +31,7 @@ const CENNIK_DZIECI_MLODZIEZ_KORZENNA: PriceLessonsPropsType[] = [
       stripBgColor: 'white',
     },
     oneLesson: {
-      price: '30 zł + bilet 14 zł',
+      price: '35 zł + bilet 16 zł',
       time: 45,
     },
     button: {
@@ -49,7 +49,7 @@ const CENNIK_DZIECI_MLODZIEZ_KORZENNA: PriceLessonsPropsType[] = [
       stripBgColor: 'basicOrange',
     },
     oneLesson: {
-      price: '70 zł + bilet 14 zł',
+      price: '70 zł + bilet 16 zł',
       time: 45,
     },
     button: {
@@ -67,7 +67,7 @@ const CENNIK_DZIECI_MLODZIEZ_KORZENNA: PriceLessonsPropsType[] = [
       stripTextColor: 'white',
     },
     oneLesson: {
-      price: '50 zł + bilety 2x14 zł',
+      price: '50 zł + bilety 2x16 zł',
       time: 45,
     },
     button: {
@@ -85,7 +85,7 @@ const CENNIK_DZIECI_MLODZIEZ_KORZENNA: PriceLessonsPropsType[] = [
       stripTextColor: 'basicOrange',
     },
     oneLesson: {
-      price: '40 zł + bilety 3x14 zł',
+      price: '45 zł + bilety 3x16 zł',
       time: 45,
     },
     button: {
@@ -105,7 +105,7 @@ const CENNIK_DOROSLI_KORZENNA: PriceLessonsPropsType[] = [
       stripBgColor: 'white',
     },
     oneLesson: {
-      price: '30 zł + bilet 14 zł',
+      price: '35 zł + bilet 16 zł',
       time: 45,
     },
     button: {
@@ -123,7 +123,7 @@ const CENNIK_DOROSLI_KORZENNA: PriceLessonsPropsType[] = [
       stripBgColor: 'basicOrange',
     },
     oneLesson: {
-      price: '70 zł + bilet 14 zł',
+      price: '70 zł + bilet 16 zł',
       time: 45,
     },
     button: {
@@ -141,7 +141,7 @@ const CENNIK_DOROSLI_KORZENNA: PriceLessonsPropsType[] = [
       stripTextColor: 'white',
     },
     oneLesson: {
-      price: '50 zł + bilety 2x14 zł',
+      price: '50 zł + bilety 2x16 zł',
       time: 45,
     },
     button: {
@@ -159,7 +159,7 @@ const CENNIK_DOROSLI_KORZENNA: PriceLessonsPropsType[] = [
       stripTextColor: 'basicOrange',
     },
     oneLesson: {
-      price: '40 zł + bilety 3x14 zł',
+      price: '45 zł + bilety 3x16 zł',
       time: 45,
     },
     button: {

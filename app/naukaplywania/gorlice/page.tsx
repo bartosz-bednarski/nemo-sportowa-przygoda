@@ -15,8 +15,8 @@ import NaukaPlywaniaBasen from '@/components/NaukaPlywania/NaukaPlywaniaBasen/Na
 import PoolNecessaryItems from '@/components/NaukaPlywania/Ui/PoolNecessaryItems/PoolNecessaryItems';
 import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 import PoolInformations from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
-import LessonType from '@/components/NaukaPlywania/Ui/LessonType/LessonType';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
+import LessonTypeWrapBox from '@/components/NaukaPlywania/Ui/LessonTypeWrapBox/LessonTypeWrapBox';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania GORLICE',
@@ -88,12 +88,35 @@ const NaukaPlywaniaGorlice = () => {
         groups={NAUKA_PLYWANIA_GORLICE.zRodzicami.groups}
         priceList={NAUKA_PLYWANIA_GORLICE.zRodzicami.priceList}
       />
-
-      <LessonType bgColor="lightBlue" lessonType={RODZAJE_LEKCJI.grupowe} />
-      <PoolNecessaryItems color="lightBlue" />
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-      <PoolTutorial poolTutorial={BASEN_GORLICE_TUTORIAL} />
+      <NaukaPlywaniaBasen
+        about={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.about}
+        backgroundColor={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.backgroundColor}
+        groups={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.groups}
+        priceList={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.priceList}
+      />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
+      <NaukaPlywaniaBasen
+        about={NAUKA_PLYWANIA_GORLICE.dorosli.about}
+        backgroundColor={NAUKA_PLYWANIA_GORLICE.dorosli.backgroundColor}
+        groups={NAUKA_PLYWANIA_GORLICE.dorosli.groups}
+        priceList={NAUKA_PLYWANIA_GORLICE.dorosli.priceList}
+      />
+      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
+      <LessonTypeWrapBox
+        bgImage="grupowe.png"
+        bgColor="darkBlue"
+        lessonTypes={[
+          RODZAJE_LEKCJI.grupowe,
+          RODZAJE_LEKCJI.indywidualne,
+          RODZAJE_LEKCJI.dwuosobowe,
+          RODZAJE_LEKCJI.trzyosobowe,
+        ]}
+      />
+      <PoolNecessaryItems color="darkBlue" />
+      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
+      <PoolTutorial poolTutorial={BASEN_GORLICE_TUTORIAL} />
+      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_GORLICE_INFORMATIONS} />
       <Scrap2 position="bottom" color="darkBlue" />
       <GalleryLink

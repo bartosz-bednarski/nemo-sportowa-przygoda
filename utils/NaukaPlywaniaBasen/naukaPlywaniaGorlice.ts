@@ -6,9 +6,22 @@ import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import {PoolInformationsPropsType} from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
 import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
+import {PriceLessonsPropsType} from '@/components/NaukaPlywania/Ui/PriceLessons/PriceLessons';
 
 type NaukaPlywaniaBasen = {
   zRodzicami: {
+    backgroundColor: customColors;
+    about: NaukaPływaniaAboutPropsType;
+    groups: GroupsPropsType;
+    priceList: PriceListPropsType;
+  };
+  dzieciMlodziez: {
+    backgroundColor: customColors;
+    about: NaukaPływaniaAboutPropsType;
+    groups: GroupsPropsType;
+    priceList: PriceListPropsType;
+  };
+  dorosli: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
     groups: GroupsPropsType;
@@ -28,9 +41,153 @@ export const CENNIK_Z_RODZICAMI_GORLICE: PriceListPropsType = [
       price: '40 zł (z rodzicem)',
       time: 30,
     },
-    tenLessons: {
-      price: '400 zł (z rodzicem)',
-      time: '10 x 45',
+    button: {
+      title: 'Zapisz się na zajęcia',
+      textColor: 'lightBlue',
+      bgColor: 'white',
+      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+    },
+  },
+];
+const CENNIK_DZIECI_MLODZIEZ_GORLICE: PriceLessonsPropsType[] = [
+  {
+    stickerH4: {
+      title: 'LEKCJE',
+      titleStrip: 'GRUPOWE',
+      stripTextColor: 'basicOrange',
+      stripBgColor: 'white',
+    },
+    oneLesson: {
+      price: '40 zł + bilet 13 zł',
+      time: 45,
+    },
+    button: {
+      title: 'Zapisz się na zajęcia',
+      textColor: 'lightBlue',
+      bgColor: 'white',
+      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+    },
+  },
+  {
+    stickerH4: {
+      title: 'LEKCJE',
+      titleStrip: 'INDYWIDUALNE',
+      stripTextColor: 'lightBlue',
+      stripBgColor: 'basicOrange',
+    },
+    oneLesson: {
+      price: '70 zł + bilet 13 zł',
+      time: 45,
+    },
+    button: {
+      title: 'Zapisz się na zajęcia',
+      textColor: 'lightBlue',
+      bgColor: 'white',
+      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+    },
+  },
+  {
+    stickerH4: {
+      title: 'LEKCJE',
+      titleStrip: '2 OSOBOWE',
+      stripBgColor: 'white',
+      stripTextColor: 'basicOrange',
+    },
+    oneLesson: {
+      price: '50 zł + bilety 2x13 zł',
+      time: 45,
+    },
+    button: {
+      title: 'Zapisz się na zajęcia',
+      textColor: 'lightBlue',
+      bgColor: 'white',
+      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+    },
+  },
+  {
+    stickerH4: {
+      title: 'LEKCJE',
+      titleStrip: '3 OSOBOWE',
+      stripBgColor: 'lightBlue',
+      stripTextColor: 'basicOrange',
+    },
+    oneLesson: {
+      price: '45 zł + bilety 3x13 zł',
+      time: 45,
+    },
+    button: {
+      title: 'Zapisz się na zajęcia',
+      textColor: 'lightBlue',
+      bgColor: 'white',
+      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+    },
+  },
+];
+const CENNIK_DOROSLI_GORLICE: PriceLessonsPropsType[] = [
+  {
+    stickerH4: {
+      title: 'LEKCJE',
+      titleStrip: 'GRUPOWE',
+      stripTextColor: 'basicOrange',
+      stripBgColor: 'white',
+    },
+    oneLesson: {
+      price: '40 zł + bilet 13 zł',
+      time: 45,
+    },
+    button: {
+      title: 'Zapisz się na zajęcia',
+      textColor: 'lightBlue',
+      bgColor: 'white',
+      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+    },
+  },
+  {
+    stickerH4: {
+      title: 'LEKCJE',
+      titleStrip: 'INDYWIDUALNE',
+      stripTextColor: 'lightBlue',
+      stripBgColor: 'basicOrange',
+    },
+    oneLesson: {
+      price: '70 zł + bilet 13 zł',
+      time: 45,
+    },
+    button: {
+      title: 'Zapisz się na zajęcia',
+      textColor: 'lightBlue',
+      bgColor: 'white',
+      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+    },
+  },
+  {
+    stickerH4: {
+      title: 'LEKCJE',
+      titleStrip: '2 OSOBOWE',
+      stripBgColor: 'lightBlue',
+      stripTextColor: 'white',
+    },
+    oneLesson: {
+      price: '50 zł + bilety 2x13 zł',
+      time: 45,
+    },
+    button: {
+      title: 'Zapisz się na zajęcia',
+      textColor: 'lightBlue',
+      bgColor: 'white',
+      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+    },
+  },
+  {
+    stickerH4: {
+      title: 'LEKCJE',
+      titleStrip: '3 OSOBOWE',
+      stripBgColor: 'white',
+      stripTextColor: 'basicOrange',
+    },
+    oneLesson: {
+      price: '45 zł + bilety 3x13 zł',
+      time: 45,
     },
     button: {
       title: 'Zapisz się na zajęcia',
@@ -80,9 +237,82 @@ export const NAUKA_PLYWANIA_GORLICE: NaukaPlywaniaBasen = {
         GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.trzyMiesiace,
         GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.siedemMiesiecy,
         GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.dwanascieMiesiecy,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.dwaLata,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.czteryLata,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.czteryLataBez,
+      ],
+    },
+  },
+  dzieciMlodziez: {
+    backgroundColor: 'mediumBlue',
+    about: {
+      stickerH2: {
+        title: 'NAUKA PŁYWANIA',
+        titleStrip: 'DZIECI I MŁODZIEŻ',
+        stripTextColor: 'mediumBlue',
+        stripBgColor: 'white',
+      },
+      aboutTextPoppins: {
+        titleColor: 'mediumBlue',
+        title: 'Dzieci od 3 lat i młodzież do 18 lat',
+        description:
+          'Dzieci uczą się podstaw pływania w formie zabawy. Poprawiają technikę i koordynację, zdobywając kolejne umiejętności, w kraulu oraz grzbiecie. Młodzież uczy się pływać czterema stylami (styl dowolny, grzbietowy, klasyczny, motylkowy) oraz technik nawrotów. Zajęcia pomagają doskonalić technikę, poprawiać wytrzymałość i przygotowują do ewentualnych startów w zawodach pływackich.',
+        alignItems: 'flex-start',
+        textAlign: 'left',
+      },
+      image: {
+        src: 'lessonsTypes/dzieciMlodziez2.webp',
+        alt: 'nauka pływania dzieci i mlodziez',
+      },
+    },
+    priceList: CENNIK_DZIECI_MLODZIEZ_GORLICE,
+
+    groups: {
+      stripH2: {
+        type: 'h2',
+        title: 'GRUPY',
+        stripBgColor: 'white',
+        stripTextColor: 'darkBlue',
+      },
+      groups: [
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.poczatkujacaDzieci,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.kontynuacjaDzieci,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.srednioZaawansowana,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.zaawansowana,
+      ],
+    },
+  },
+  dorosli: {
+    backgroundColor: 'darkBlue',
+    about: {
+      stickerH2: {
+        title: 'NAUKA PŁYWANIA',
+        titleStrip: 'DOROŚLI',
+        stripTextColor: 'darkBlue',
+        stripBgColor: 'white',
+      },
+      aboutTextPoppins: {
+        titleColor: 'darkBlue',
+        title: 'Dorośli',
+        description:
+          'Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.',
+        alignItems: 'flex-start',
+        textAlign: 'left',
+      },
+      image: {
+        src: 'lessonsTypes/dorosli.webp',
+        alt: 'nauka pływania dorośli',
+      },
+    },
+    priceList: CENNIK_DOROSLI_GORLICE,
+
+    groups: {
+      stripH2: {
+        type: 'h2',
+        title: 'GRUPY',
+        stripBgColor: 'white',
+        stripTextColor: 'darkBlue',
+      },
+      groups: [
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.poczatkujacaDorosli,
+        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.kontynuacjaDorosli,
       ],
     },
   },
@@ -134,7 +364,7 @@ export const BASEN_GORLICE_INFORMATIONS: PoolInformationsPropsType = {
 
 export const BASEN_GORLICE_TUTORIAL: PoolTutorialPropsType = {
   header: false,
-  color: 'mediumBlue',
+  color: 'darkBlue',
   firstRule: 'Zostaw odzież wierzchnią w szatni obok kasy biletowej.',
   rules: [
     'Kup bilet dla siebie (dziecko do 3 lat ma darmowe wejście)',
