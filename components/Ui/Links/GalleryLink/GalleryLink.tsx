@@ -25,6 +25,8 @@ const GalleryLink = ({href, img, bgColor, textColor}: GalleryLinkPropsType) => {
         width={1920}
         height={300}
         alt="galeria"
+        title="galeria"
+        loading="lazy"
       />
       <span className={styles.text} style={{color: COLORS[textColor]}}>
         SPRAWDŹ NASZĄ

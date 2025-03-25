@@ -57,7 +57,11 @@ const Navigation = ({
         <img
           src={LogoMainWhiteImg.src}
           alt="logoNemo"
+          title="NEMO Sportowa Przygoda"
           className={styles.logo}
+          width={230}
+          height={100}
+          loading="eager"
         />
 
         <XBtn onClick={hideNavigation} />
@@ -155,7 +159,11 @@ const Navigation = ({
               <img
                 src={FacebookImg.src}
                 alt="facebook"
+                title="facebook"
                 className={styles.icon}
+                width={30}
+                height={30}
+                loading="eager"
               />
             </Link>
 
@@ -163,11 +171,23 @@ const Navigation = ({
               <img
                 src={InstagramImg.src}
                 alt="instagram"
+                title="instagram"
                 className={styles.icon}
+                width={30}
+                height={30}
+                loading="eager"
               />
             </Link>
             <Link href="https://www.tiktok.com/@nemportowaprzygoda?is_from_webapp=1&sender_device=pc">
-              <img src={TiktokImg.src} alt="tiktok" className={styles.icon} />
+              <img
+                src={TiktokImg.src}
+                alt="tiktok"
+                title="tiktok"
+                className={styles.icon}
+                width={30}
+                height={30}
+                loading="eager"
+              />
             </Link>
           </span>
         </div>

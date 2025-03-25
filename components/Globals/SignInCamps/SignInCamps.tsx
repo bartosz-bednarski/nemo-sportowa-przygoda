@@ -3,13 +3,15 @@ import React from 'react';
 import styles from './signInCamps.module.scss';
 import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
 import {COLORS} from '@/utils/UI/colors';
-import ColonyLink from '@/components/Ui/Links/ColonyLink/ColonyLink';
-import {CampsCoversType} from '@/utils/Winter/Obozy';
 import NemoSummerIcon from '@/public/assets/customLogos/nemo-podroznik.svg';
 import NemoWinterIcon from '@/public/assets/customLogos/nemo-skier.svg';
+import ColonyLinkSummer, {
+  ColonyLinkPropsType,
+} from '@/components/Ui/Links/ColonyLink/Summer/ColonyLinkSummer';
+import ColonyLinkWinter from '@/components/Ui/Links/ColonyLink/Winter/ColonyLinkWinter';
 
 export interface SignInCampsPropsType {
-  activeCampsCoversList?: CampsCoversType;
+  activeCampsCoversList?: ColonyLinkPropsType[];
   waitingTitle?: string;
   waiting: boolean;
   theme: 'summer' | 'winter';
@@ -57,7 +59,7 @@ const SignInCamps = ({
           {!waiting &&
             activeCampsCoversList !== undefined &&
             activeCampsCoversList.map((camp, index) => (
-              <ColonyLink key={index} data={camp} />
+              <ColonyLinkSummer key={index} {...camp} />
             ))}
         </div>
       </div>
@@ -99,7 +101,7 @@ const SignInCamps = ({
           {!waiting &&
             activeCampsCoversList !== undefined &&
             activeCampsCoversList.map((camp, index) => (
-              <ColonyLink key={index} data={camp} />
+              <ColonyLinkWinter key={index} {...camp} />
             ))}
         </div>
       </div>

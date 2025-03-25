@@ -8,6 +8,8 @@ import {FoodPropsType} from '@/components/OfertaZimowa/Ui/Food/Food';
 import {HeroPropsType} from '@/components/OfertaZimowa/Ui/Hero/Hero';
 import {PriceDetailsPropsType} from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
 import {SchedulePropsType} from '@/components/OfertaZimowa/Ui/Schedule/Schedule';
+import {ColonyLinkPropsType} from '@/components/Ui/Links/ColonyLink/Winter/ColonyLinkWinter';
+import ColonyCoverImage from '@/public/assets/winter/polkolonie/polkolonie_winter.webp';
 
 export type CampCoverType = {
   active: boolean;
@@ -32,16 +34,15 @@ export type CampType = {
   food: FoodPropsType;
   priceDetails: PriceDetailsPropsType;
 };
-export type CampsCoversType = CampCoverType[];
 
-export const OBOZY_LISTA_2025: CampsCoversType = [
+export const OBOZY_LISTA_2025: ColonyLinkPropsType[] = [
   {
     active: false,
     title: 'OBÓZ NARCIARSKI Z BOM4SPORTS',
     price: '2499 PLN + KARNETY (~600 PLN)',
     localization: 'MUSZYNA',
     date: '26.01-01.02',
-    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
+    coverImage: ColonyCoverImage,
     href: '/ofertazimowa/obozy/narciarskie/muszyna',
   },
 ];

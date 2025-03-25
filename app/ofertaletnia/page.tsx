@@ -8,6 +8,7 @@ import CollabSummer from '@/components/Summer/CollabSummer';
 import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
+import {POLKOLONIE_LISTA_2025} from '@/utils/Summer/Polkolonie';
 
 export const metadata: Metadata = {
   title: 'Oferta LETNIA',
@@ -82,9 +83,9 @@ const OfertaLetniaPage = () => {
       />
       <SignInCamps
         theme="summer"
-        waiting={true}
+        waiting={false}
         waitingTitle="STARTUJEMY JUŻ WIOSNĄ"
-        activeCampsCoversList={[]}
+        activeCampsCoversList={POLKOLONIE_LISTA_2025}
       />
       <AboutCamps
         stickerH2={{

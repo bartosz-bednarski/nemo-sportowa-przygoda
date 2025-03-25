@@ -25,6 +25,10 @@ const NavBar: React.FC = () => {
                 : LogoMainWhiteImg.src
             }
             alt="logoNemo"
+            title="NEMO Sportowa Przygoda"
+            loading="eager"
+            width={230}
+            height={100}
             className={styles.logo}
           />
         </Link>

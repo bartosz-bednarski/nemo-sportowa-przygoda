@@ -30,9 +30,11 @@ export const GALLERY_MAIN: GalleryMainType = [
     collabLogo: '',
     collabHref: '',
     images: {
-      landscapes: [['01', '02'],
-      ['03', '04'],
-      ['05', ''],],
+      landscapes: [
+        ['01', '02'],
+        ['03', '04'],
+        ['05', ''],
+      ],
       portraits: [
         '01',
         '02',
@@ -74,9 +76,11 @@ export const GALLERY_MAIN: GalleryMainType = [
     collabLogo: '',
     collabHref: '',
     images: {
-      landscapes: [['01', '02'],
-      ['03', '04'],
-      ['05', ''],],
+      landscapes: [
+        ['01', '02'],
+        ['03', '04'],
+        ['05', ''],
+      ],
       portraits: [
         '01',
         '02',
