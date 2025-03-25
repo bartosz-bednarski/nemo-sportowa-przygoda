@@ -16,11 +16,16 @@ const AttractionCard = ({
 }: AttractionCardPropsType) => {
   return (
     <div className={styles.container}>
-      <h3>ZAJĘCIA NA BASENIE</h3>
-      <img src={image.src} />
-      <span className={styles.description}>
-        Doskonalenie technik pływackich i zabawy wodne
-      </span>
+      <h3>{title}</h3>
+      <img
+        src={image.src}
+        width={450}
+        height={360}
+        alt={title}
+        title={title}
+        loading="lazy"
+      />
+      <span className={styles.description}>{description}</span>
     </div>
   );
 };

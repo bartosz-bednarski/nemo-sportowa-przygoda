@@ -22,6 +22,9 @@
     @include mixin.phone700px {
       flex-direction: column;
     }
+    @include mixin.phone500px {
+      width: 100%;
+    }
   }
   .infoBox {
     box-sizing: border-box;
@@ -46,12 +49,18 @@
     @include mixin.phone700px {
       font-size: 1.4rem;
     }
+    @include mixin.phone500px {
+      font-size: 1.2rem;
+    }
   }
   .text {
     text-align: center;
     color: colors.$basicWhite;
     font-family: 'poppins-500';
     font-size: 1rem;
+    @include mixin.phone500px {
+      font-size: 0.7rem;
+    }
   }
   .argumentsBox {
     text-align: center;
@@ -61,6 +70,9 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    @include mixin.phone500px {
+      font-size: 0.7rem;
+    }
     li {
       padding: 0.2rem;
       display: inline;
@@ -90,6 +102,9 @@
   @include mixin.phone700px {
     padding: 0.5rem 1rem;
   }
+  @include mixin.phone500px {
+    width: 100%;
+  }
   .label {
     text-align: center;
     color: colors.$basicOrange;
@@ -97,6 +112,9 @@
     font-family: 'poppins-700';
     @include mixin.phone700px {
       font-size: 1.3rem;
+    }
+    @include mixin.phone500px {
+      font-size: 1rem;
     }
   }
   .content {
@@ -106,6 +124,9 @@
     font-family: 'poppins-700';
     @include mixin.phone700px {
       font-size: 1.3rem;
+    }
+    @include mixin.phone500px {
+      font-size: 0.9rem;
     }
   }
   .promoPrice {
@@ -119,6 +140,9 @@
     @include mixin.phone700px {
       font-size: 1.3rem;
     }
+    @include mixin.phone500px {
+      font-size: 0.9rem;
+    }
   }
   .promoInfo {
     text-align: center;
@@ -127,6 +151,9 @@
     font-family: 'poppins-700';
     @include mixin.phone700px {
       font-size: 1.3rem;
+    }
+    @include mixin.phone500px {
+      font-size: 0.9rem;
     }
   }
 }

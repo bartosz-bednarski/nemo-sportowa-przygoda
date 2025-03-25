@@ -34,8 +34,9 @@
   height: 49.25%;
   gap: 0.5rem;
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
+    text-align: center;
     @include mixin.pc1000px {
       font-size: 1.2rem;
     }
@@ -83,6 +84,7 @@
 }
 .logo {
   height: 27%;
+  width: auto;
   @include mixin.pc1000px {
     height: 20%;
   }

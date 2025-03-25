@@ -2,20 +2,34 @@
 import React from 'react';
 import styles from './colonyLink.module.scss';
 import Link from 'next/link';
-import {CampCoverType} from '@/utils/Winter/Obozy';
+import {StaticImageData} from 'next/image';
 
-export type ColonyLinkPropsType = {
-  data: CampCoverType;
-};
+export interface ColonyLinkPropsType {
+  active: boolean;
+  title: string;
+  price: string;
+  localization: string;
+  date: string;
+  coverImage: StaticImageData;
+  href: string;
+}
 
-const ColonyLink: React.FC<ColonyLinkPropsType> = ({data}) => {
+const ColonyLinkWinter = ({
+  active,
+  title,
+  price,
+  localization,
+  date,
+  coverImage,
+  href,
+}: ColonyLinkPropsType) => {
   return (
     <Link
       className={styles.colonyLink}
-      href={data.href}
-      style={{pointerEvents: data.active ? 'all' : 'none'}}
+      href={href}
+      style={{pointerEvents: active ? 'all' : 'none'}}
     >
-      {!data.active && (
+      {!active && (
         <div className={styles.soldOut}>
           <span className={styles['soldOut__info']}>WYPRZEDANE</span>
         </div>
@@ -23,20 +37,18 @@ const ColonyLink: React.FC<ColonyLinkPropsType> = ({data}) => {
 
       <img
         className={styles['colonyLink__image']}
-        src={`/assets/${data.coverImage}`}
+        src={coverImage.src}
         width={400}
         height={200}
         alt="polkolonie zimowe"
       />
       <div className={styles['colonyLink__content']}>
-        <h3>{data.title}</h3>
-        <span className={styles['colonyLink__content__date']}>{data.date}</span>
+        <h3>{title}</h3>
+        <span className={styles['colonyLink__content__date']}>{date}</span>
         <span className={styles['colonyLink__content__localization']}>
-          {data.localization}
+          {localization}
         </span>
-        <span className={styles['colonyLink__content__price']}>
-          {data.price}
-        </span>
+        <span className={styles['colonyLink__content__price']}>{price}</span>
         <span className={styles['colonyLink__content__button-fake']}>
           Dowiedz się więcej
         </span>
@@ -44,4 +56,4 @@ const ColonyLink: React.FC<ColonyLinkPropsType> = ({data}) => {
     </Link>
   );
 };
-export default ColonyLink;
+export default ColonyLinkWinter;

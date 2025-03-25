@@ -26,12 +26,26 @@ const Contact: React.FC<{contact: ContactPropsType}> = ({contact}) => {
         )}
 
         <span className={styles.text}>
-          <img src={PhoneIcon.src} alt="phoneIcon" />
+          <img
+            src={PhoneIcon.src}
+            alt="phoneIcon"
+            title="phone"
+            width={50}
+            height={50}
+            loading="lazy"
+          />
 
           {contact.phone}
         </span>
         <span className={styles.text}>
-          <img src={EmailIcon.src} alt="emailIcon" />
+          <img
+            src={EmailIcon.src}
+            alt="emailIcon"
+            title="email"
+            width={50}
+            height={50}
+            loading="lazy"
+          />
 
           {contact.email}
         </span>

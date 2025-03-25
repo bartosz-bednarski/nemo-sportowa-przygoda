@@ -30,6 +30,10 @@ const PriceDetails = ({priceDetailsList}: PriceDetailsPropsType) => {
       <img
         src={NemoHeisenbergLogo.src}
         alt="nemoLogo"
+        title="NEMO Sportowa Przygoda"
+        width={440}
+        height={380}
+        loading="lazy"
         className={styles.image}
       />
     </div>

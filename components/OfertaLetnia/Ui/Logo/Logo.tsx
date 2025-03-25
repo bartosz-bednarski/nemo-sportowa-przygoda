@@ -10,6 +10,9 @@ const LogoSummer = () => {
         src={LogoSummerImg.src}
         alt="NEMO Sportowa Przygoda"
         title="NEMO Sportowa Przygoda"
+        width={870}
+        height={270}
+        loading="lazy"
       />
     </div>
   );

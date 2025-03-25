@@ -77,4 +77,7 @@
   @include mixin.phone700px {
     font-size: 1.3rem;
   }
+  @include mixin.phone500px {
+    font-size: 1rem;
+  }
 }
