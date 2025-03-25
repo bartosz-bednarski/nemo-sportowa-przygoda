@@ -1,7 +1,6 @@
 'use client';
 import {StaticImageData} from 'next/image';
 import styles from './attractionCard.module.scss';
-import image from '@/public/gallery/naukaplywaniadzieciimlodziez/portraits/03.webp';
 
 export interface AttractionCardPropsType {
   title: string;

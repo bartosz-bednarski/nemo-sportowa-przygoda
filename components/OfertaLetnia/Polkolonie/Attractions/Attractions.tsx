@@ -12,7 +12,7 @@ export interface AttractionsPropsType {
 const Attractions = ({title, attracions}: AttractionsPropsType) => {
   return (
     <div className={styles.container}>
-      <h2>ATRAKCJE W PROGRAMIE</h2>
+      <h2>{title}</h2>
       <div className={styles.rowBox}>
         {attracions.map((attraction, index) => (
           <AttractionCard {...attraction} key={index} />

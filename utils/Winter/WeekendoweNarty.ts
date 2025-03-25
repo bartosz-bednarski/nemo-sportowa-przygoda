@@ -1,4 +1,3 @@
-import {CampsCoversType} from './Obozy';
 import {HeroPropsType} from '@/components/OfertaZimowa/Ui/Hero/Hero';
 import {DetailsPropsType} from '@/components/OfertaZimowa/Ui/Details/Details';
 import {ContactPropsType} from '@/components/OfertaZimowa/Ui/Contact/Contact';
@@ -6,7 +5,8 @@ import {WhatsWaiting4YouPropsType} from '@/components/OfertaZimowa/Obozy/WhatsWa
 import {HillSidesPropsType} from '@/components/OfertaZimowa/Obozy/HillSides/HillSides';
 import {WeekendNaStokuSchedulePropsType} from '@/components/OfertaZimowa/WeekendoweNarty/Schedule';
 import {PriceDetailsPropsType} from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
-
+import { ColonyLinkPropsType } from '@/components/Ui/Links/ColonyLink/Winter/ColonyLinkWinter';
+import WinterCoverImage from '@/public/assets/winter/polkolonie/polkolonie_winter.webp'
 export type WeekendNaStokuType = {
   title: string;
   hero: HeroPropsType;
@@ -19,14 +19,14 @@ export type WeekendNaStokuType = {
   priceDetails: PriceDetailsPropsType;
 };
 
-export const WEEKEND_NA_STOKU_LISTA_2025: CampsCoversType = [
+export const WEEKEND_NA_STOKU_LISTA_2025: ColonyLinkPropsType[] = [
   {
     active: false,
     title: 'WEEKEND NA STOKU',
     price: '219 PLN + KARNET (80 PLN)',
     localization: 'TYLICZ',
     date: '22.12.2024',
-    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
+    coverImage: WinterCoverImage,
     href: '/ofertazimowa/weekend-na-stoku/termin-1',
   },
   {
@@ -35,7 +35,7 @@ export const WEEKEND_NA_STOKU_LISTA_2025: CampsCoversType = [
     price: '219 PLN + KARNET (80 PLN)',
     localization: 'TYLICZ',
     date: '12.01.2025',
-    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
+    coverImage: WinterCoverImage,
     href: '/ofertazimowa/weekend-na-stoku/termin-2',
   },
   {
@@ -44,7 +44,7 @@ export const WEEKEND_NA_STOKU_LISTA_2025: CampsCoversType = [
     price: '219 PLN + KARNET (80 PLN)',
     localization: 'TYLICZ',
     date: '26.01.2025',
-    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
+    coverImage: WinterCoverImage,
     href: '/ofertazimowa/weekend-na-stoku/termin-3',
   },
   {
@@ -53,7 +53,7 @@ export const WEEKEND_NA_STOKU_LISTA_2025: CampsCoversType = [
     price: '219 PLN + KARNET (80 PLN)',
     localization: 'TYLICZ',
     date: '09.02.2025',
-    coverImage: 'winter/polkolonie/polkolonie_winter.webp',
+    coverImage: WinterCoverImage,
     href: '/ofertazimowa/weekend-na-stoku/termin-4',
   },
 ];
