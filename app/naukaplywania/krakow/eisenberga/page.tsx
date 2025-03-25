@@ -79,7 +79,7 @@ const NaukaPlywaniaEisenberga = () => {
           },
         }}
       />
-      <Schedule src='https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=88837&zz='/>
+      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=88837&zz=" />
       <NaukaPlywaniaBasen
         about={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.about}
         backgroundColor={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.backgroundColor}

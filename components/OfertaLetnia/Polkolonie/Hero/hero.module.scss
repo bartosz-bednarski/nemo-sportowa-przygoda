@@ -1,0 +1,127 @@
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
+@use '../../../../styles/fonts.scss';
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: colors.$basicWhite;
+  padding: 0.5rem;
+  position: relative;
+  gap: 0.5vw;
+  @include mixin.phone500px {
+    padding: 0;
+  }
+}
+.columnBox {
+  display: flex;
+  flex-direction: column;
+  width: 52.25%;
+  height: 100%;
+  gap: 0.5vw;
+  @include mixin.pc1000px {
+    width: 100%;
+  }
+}
+.detailsBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: colors.$basicGreen;
+  height: 49.25%;
+  gap: 0.5rem;
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+    @include mixin.pc1000px {
+      font-size: 1.2rem;
+    }
+  }
+  h2 {
+    font-size: 2.5rem;
+    color: colors.$basicOrange;
+    margin: 0;
+    @include mixin.pc1000px {
+      font-size: 1.2rem;
+    }
+  }
+  .title {
+    display: none;
+    font-size: 2rem;
+    font-family: 'poppins-700';
+    color: colors.$basicOrange;
+    text-align: center;
+    @include mixin.pc1000px {
+      display: flex;
+    }
+    @include mixin.phone700px {
+      font-size: 1.5rem;
+    }
+    @include mixin.phone500px {
+      font-size: 1.1rem;
+    }
+  }
+  .subTitle {
+    display: none;
+    font-size: 1.8rem;
+    font-family: 'poppins-700';
+    color: colors.$basicOrange;
+    text-align: center;
+    @include mixin.pc1000px {
+      display: flex;
+    }
+    @include mixin.phone700px {
+      font-size: 1.3rem;
+    }
+    @include mixin.phone500px {
+      font-size: 1.1rem;
+    }
+  }
+}
+.logo {
+  height: 27%;
+  @include mixin.pc1000px {
+    height: 20%;
+  }
+}
+.portraitImage {
+  width: 47.25%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  @include mixin.pc1000px {
+    display: none;
+  }
+}
+.landscapeImage {
+  height: 50.25%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.sticker {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-family: 'poppins-700';
+  padding: 2rem 160px 3rem 2rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-image: url('../../../../public/assets/ui/summer-sticker.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+  @include mixin.pc1000px {
+    display: none;
+  }
+  .firstLine {
+    font-size: 2rem;
+  }
+  .secondLine {
+    font-size: 1.5rem;
+    color: colors.$basicOrange;
+  }
+}

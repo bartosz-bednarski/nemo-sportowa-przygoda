@@ -1,0 +1,20 @@
+@use '../../../../styles/mixin.scss' as mixin;
+.box {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mixin.phone700px {
+    padding: 2rem;
+  }
+}
+.logo {
+  width: 50%;
+  object-fit: contain;
+  height: auto;
+  @include mixin.pc1250px {
+    width: 90%;
+  }
+}
