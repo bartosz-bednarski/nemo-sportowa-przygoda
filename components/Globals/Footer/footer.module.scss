@@ -10,11 +10,16 @@
   justify-content: space-between;
   padding: 4rem 3rem;
   background-color: colors.$darkBlue;
-  @include mixin.pc1000px {
+  border-top: 2px solid colors.$basicWhite;
+  z-index: 3;
+  @include mixin.pc1450px {
+    padding: 2rem 1rem;
+  }
+  @include mixin.pc1250px {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
     gap: 1rem;
   }
   @include mixin.phone500px {
@@ -24,6 +29,18 @@
 .logo {
   height: 100px;
   width: auto;
+  align-self: center;
+}
+.navMap {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  @include mixin.pc1450px {
+    gap: 0.5rem;
+  }
+  @include mixin.phone700px {
+    display: none;
+  }
 }
 .socjal {
   flex-direction: column;
@@ -48,28 +65,33 @@
 }
 .navigation,
 .socjal {
+  b {
+    color: colors.$basicOrange;
+  }
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   list-style-type: none;
   flex-direction: column;
   gap: 0.5rem;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   li {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 0.9rem;
     font-weight: 500;
     margin: 0 1rem;
     transition: color 0.4s;
     gap: 0.5rem;
+
     a {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
+      font-size: 0.7rem;
     }
     &:hover {
       color: colors.$basicOrange;

@@ -21,20 +21,61 @@ const Footer: React.FC = () => {
         loading="lazy"
         className={styles.logo}
       />
+      <div className={styles.navMap}>
+        <ul className={styles.navigation}>
+          <li>
+            <b>NAUKA PŁYWANIA</b>
+          </li>
+          <li>
+            <Link href="/naukaplywania">Oferta Ogólna</Link>
+          </li>
+          <li>
+            <Link href="/naukaplywania/krakow">Oferta Kraków</Link>
+          </li>
+          <li>
+            <Link href="/naukaplywania/korzenna">Oferta Korzenna</Link>
+          </li>
+          <li>
+            <Link href="/naukaplywania/gorlice">Oferta Gorlice</Link>
+          </li>
+          <li>
+            <Link href="/naukaplywania/chelmiec">Oferta Chełmiec</Link>
+          </li>
+        </ul>
+        <ul className={styles.navigation}>
+          <li>
+            <b>OBOZY I PÓŁKOLONIE</b>
+          </li>
+          <li>
+            <Link href="/ofertaletnia">Oferta Letnia</Link>
+          </li>
+          <li>
+            <Link href="/ofertazimowa">Oferta Zimowa</Link>
+          </li>
+        </ul>
+        <ul className={styles.navigation}>
+          <li>
+            <b>INFORMACJE</b>
+          </li>
+          <li>
+            <Link href="/assets/statues/NEMO_polityka-prywatnosci.pdf">
+              Polityka prywatności
+            </Link>
+          </li>
+          <li>
+            <Link href="/regulamin">Regulamin</Link>
+          </li>
+          <li>
+            <Link href="/galeria">Galeria</Link>
+          </li>
+          <li>
+            <Link href="/naukaplywania/poradnikbasenowy">
+              Poradnik basenowy
+            </Link>
+          </li>
+        </ul>
+      </div>
 
-      <ul className={styles.navigation}>
-        <li>
-          <Link href="/assets/statues/NEMO_polityka-prywatnosci.pdf">
-            POLITYKA PRYWATNOŚCI
-          </Link>
-        </li>
-        <li>
-          <Link href="/regulamin">REGULAMIN</Link>
-        </li>
-        <li>
-          <Link href="/galeria">GALERIA</Link>
-        </li>
-      </ul>
       <ul className={styles.socjal}>
         <li>
           <Link href="https://www.facebook.com/profile.php?id=61550793572137">

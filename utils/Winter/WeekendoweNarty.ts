@@ -5,8 +5,8 @@ import {WhatsWaiting4YouPropsType} from '@/components/OfertaZimowa/Obozy/WhatsWa
 import {HillSidesPropsType} from '@/components/OfertaZimowa/Obozy/HillSides/HillSides';
 import {WeekendNaStokuSchedulePropsType} from '@/components/OfertaZimowa/WeekendoweNarty/Schedule';
 import {PriceDetailsPropsType} from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
-import { ColonyLinkPropsType } from '@/components/Ui/Links/ColonyLink/Winter/ColonyLinkWinter';
-import WinterCoverImage from '@/public/assets/winter/polkolonie/polkolonie_winter.webp'
+import {ColonyLinkPropsType} from '@/components/Ui/Links/ColonyLink/Winter/ColonyLinkWinter';
+import WinterCoverImage from '@/public/assets/winter/polkolonie/polkolonie_winter.webp';
 export type WeekendNaStokuType = {
   title: string;
   hero: HeroPropsType;
