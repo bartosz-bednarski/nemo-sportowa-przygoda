@@ -1,26 +1,3 @@
-// import { campsCoversType, campTypeCover } from "@/types/SummerWinter/Camps";
-
-// export const BOBOWSKA_PRZYGODA: campTypeCover = {
-//   active: false,
-//   title: "BOBOWSKA PRZYGODA",
-//   localization: "KORZENNA",
-//   coverImage: "bobowska-przygoda-2.webp",
-//   href: "/galeria",
-// };
-// export const KREATYWNE_LABORATORIUM: campTypeCover = {
-//   active: false,
-//   title: "KREATYWNE LABORATORIUM",
-//   localization: "KRAKÓW",
-//   coverImage: "kreatywne-laboratorium.webp",
-//   href: "/galeria",
-// };
-// export const POLKOLONIE_LATO_COVERS: campsCoversType = [
-//   BOBOWSKA_PRZYGODA,
-//   KREATYWNE_LABORATORIUM,
-//   BOBOWSKA_PRZYGODA,
-//   KREATYWNE_LABORATORIUM,
-//   KREATYWNE_LABORATORIUM,
-// ];
 import EkstremalneLatoBobowaLandscapeImg from '@/public/gallery/bobowskaprzygoda2/landscapes/01.webp';
 import EkstremalneLatoBobowaPortraitImg from '@/public/gallery/bobowskaprzygoda2/portraits/02.webp';
 import EkstremalneLatoGorliceLandscapeImg from '@/public/gallery/bobowskaprzygoda/landscapes/06.webp';
@@ -31,7 +8,6 @@ import EkstremalneLatoNowySaczLandscapeImg from '@/public/gallery/bobowskaprzygo
 import EkstremalneLatoNowySaczPortraitImg from '@/public/gallery/bobowskaprzygoda2/portraits/11.webp';
 import SummerLogoWithName from '@/public/assets/logo/Logo-nemo-summer-with-name.svg';
 import Attraction1Img from '@/public/gallery/naukaplywaniadzieciimlodziez/portraits/14.webp';
-import Attraction2Img from '@/public/gallery/bobowskaprzygoda2/landscapes/05.webp';
 import Attraction3Img from '@/public/gallery/bobowskaprzygoda2/landscapes/02.webp';
 import Attraction4Img from '@/public/gallery/bobowskaprzygoda/portraits/26.webp';
 import Attraction5Img from '@/public/gallery/bobowskaprzygoda/landscapes/05.webp';
@@ -97,7 +73,7 @@ export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
     active: true,
     title: 'PÓŁKOLONIA EKSTREMALNE LATO',
     price: '850 PLN',
-    localization: 'SP 21 W NOWYM SĄCZU',
+    localization: 'NOWY SĄCZ',
     date: '14.07-18.07',
     coverImage: EkstremalneLatoNowySaczLandscapeImg,
     href: '/ofertaletnia/polkolonie/nowysacz/polkolonia-1',
@@ -175,11 +151,7 @@ export const POLKOLONIA_EKSTREMALNE_LATO_BOBOWA: PolkoloniaType = {
         image: Attraction1Img,
         description: 'Doskonalenie technik pływackich i zabawy wodne',
       },
-      {
-        title: 'Wycieczka rowerowa',
-        image: Attraction2Img,
-        description: 'Aktywna eksploracja okolicy',
-      },
+
       {
         title: 'Ognisko',
         image: Attraction3Img,
@@ -352,11 +324,7 @@ export const POLKOLONIA_EKSTREMALNE_LATO_GORLICE: PolkoloniaType = {
         image: Attraction1Img,
         description: 'Doskonalenie technik pływackich i zabawy wodne',
       },
-      {
-        title: 'Wycieczka rowerowa',
-        image: Attraction2Img,
-        description: 'Aktywna eksploracja okolicy',
-      },
+
       {
         title: 'Ognisko',
         image: Attraction3Img,
@@ -529,11 +497,7 @@ export const POLKOLONIA_EKSTREMALNE_LATO_KORZENNA: PolkoloniaType = {
         image: Attraction1Img,
         description: 'Doskonalenie technik pływackich i zabawy wodne',
       },
-      {
-        title: 'Wycieczka rowerowa',
-        image: Attraction2Img,
-        description: 'Aktywna eksploracja okolicy',
-      },
+
       {
         title: 'Ognisko',
         image: Attraction3Img,
@@ -647,7 +611,7 @@ export const POLKOLONIA_EKSTREMALNE_LATO_NOWY_SACZ: PolkoloniaType = {
       firstLine: 'PÓŁKOLONIA SPORTOWA',
       secondLine: 'EKSTREMALNE LATO 2025',
     },
-    location: 'SP 21 W NOWYM SĄCZU',
+    location: 'NOWY SĄCZ',
     dateRange: '14.07-18.07.2025',
   },
   details: {
@@ -706,11 +670,7 @@ export const POLKOLONIA_EKSTREMALNE_LATO_NOWY_SACZ: PolkoloniaType = {
         image: Attraction1Img,
         description: 'Doskonalenie technik pływackich i zabawy wodne',
       },
-      {
-        title: 'Wycieczka rowerowa',
-        image: Attraction2Img,
-        description: 'Aktywna eksploracja okolicy',
-      },
+
       {
         title: 'Ognisko',
         image: Attraction3Img,
