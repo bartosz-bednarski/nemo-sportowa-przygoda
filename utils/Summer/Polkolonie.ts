@@ -40,6 +40,11 @@ import Attraction7Img from '@/public/gallery/bobowskaprzygoda2/portraits/06.webp
 import Attraction8Img from '@/public/gallery/bobowskaprzygoda2/portraits/14.webp';
 import Attraction9Img from '@/public/gallery/bobowskaprzygoda/portraits/03.webp';
 import Attraction10Img from '@/public/gallery/kreatywnelaboratorium/landscapes/03.webp';
+import ScheduleBackgroundImg1 from '@/public/gallery/naukaplywaniadzieciimlodziez/portraits/13.webp';
+import ScheduleBackgroundImg2 from '@/public/gallery/bobowskaprzygoda2/portraits/02.webp';
+import ScheduleBackgroundImg3 from '@/public/gallery/bobowskaprzygoda2/landscapes/04.webp';
+import ScheduleBackgroundImg4 from '@/public/gallery/wakacyjnafrajda/portraits/33.webp';
+import ScheduleBackgroundImg5 from '@/public/gallery/bobowskaprzygoda/portraits/17.webp';
 
 import {StaticImageData} from 'next/image';
 import {HeroPropsType} from '@/components/OfertaLetnia/Polkolonie/Hero/Hero';
@@ -48,6 +53,7 @@ import {ContactPropsType} from '@/components/OfertaZimowa/Ui/Contact/Contact';
 import {AttractionsPropsType} from '@/components/OfertaLetnia/Polkolonie/Attractions/Attractions';
 import {PriceDetailsPropsType} from '@/components/OfertaLetnia/Ui/PriceDetails/PriceDetails';
 import {ColonyLinkPropsType} from '@/components/Ui/Links/ColonyLink/Winter/ColonyLinkWinter';
+import {SchedulePropsType} from '@/components/OfertaLetnia/Polkolonie/Schedule/Schedule';
 
 type PolkoloniaType = {
   logo: StaticImageData;
@@ -56,13 +62,14 @@ type PolkoloniaType = {
   contact: ContactPropsType;
   attractions: AttractionsPropsType;
   priceDetails: PriceDetailsPropsType;
+  schedule: SchedulePropsType[];
 };
 
 export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
   {
     active: true,
     title: 'PÓŁKOLONIA EKSTREMALNE LATO',
-    price: '800 PLN',
+    price: '850 PLN',
     localization: 'SP W BOBOWEJ',
     date: '07.07-11.07',
     coverImage: EkstremalneLatoBobowaLandscapeImg,
@@ -71,7 +78,7 @@ export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
   {
     active: true,
     title: 'PÓŁKOLONIA EKSTREMALNE LATO',
-    price: '800 PLN',
+    price: '850 PLN',
     localization: 'OSIR W GORLICACH',
     date: '07.07-11.07',
     coverImage: EkstremalneLatoGorliceLandscapeImg,
@@ -80,7 +87,7 @@ export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
   {
     active: true,
     title: 'PÓŁKOLONIA EKSTREMALNE LATO',
-    price: '800 PLN',
+    price: '850 PLN',
     localization: 'CSIR W KORZENNEJ',
     date: '14.07-18.07',
     coverImage: EkstremalneLatoKorzennaLandscapeImg,
@@ -89,7 +96,7 @@ export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
   {
     active: true,
     title: 'PÓŁKOLONIA EKSTREMALNE LATO',
-    price: '800 PLN',
+    price: '850 PLN',
     localization: 'SP 21 W NOWYM SĄCZU',
     date: '14.07-18.07',
     coverImage: EkstremalneLatoNowySaczLandscapeImg,
@@ -116,7 +123,7 @@ export const POLKOLONIA_EKSTREMALNE_LATO_BOBOWA: PolkoloniaType = {
     location: 'BOBOWA',
     dateRange: '07.07-11.07.2025',
     price: {
-      price: '800 PLN',
+      price: '850 PLN',
       promotion: true,
       promotionPrice: '700 PLN',
       promotionInfo: 'DLA KLIENTÓW NEMO',
@@ -233,6 +240,43 @@ export const POLKOLONIA_EKSTREMALNE_LATO_BOBOWA: PolkoloniaType = {
       'Materiały do zdjęć',
     ],
   },
+  schedule: [
+    {
+      day: 'PONIEDZIAŁEK',
+      title: 'Basen i Survival',
+      description:
+        'Rozpoczynamy aktywnie! Trening na basenie, a potem survivalowe wyzwania - wiązanie lin, obsługa kompasu i sprytne sztuczki przetrwania. Idealny start pełen ruchu i emocji!',
+      backgroundImg: ScheduleBackgroundImg1,
+    },
+    {
+      day: 'WTOREK',
+      title: 'Przygoda w Jurasówce',
+      description:
+        'Dzień pełen atrakcji w ośrodku Jurasówka! Będzie ruch, zabawa i mnóstwo śmiechu.',
+      backgroundImg: ScheduleBackgroundImg2,
+    },
+    {
+      day: 'ŚRODA',
+      title: 'Wycieczka do Krynicy i Letnia Sankostrada',
+      description:
+        'Ruszamy w góry! W planie ekscytująca przejażdżka na letniej sankostradzie i czas na wspólną zabawę w pięknej scenerii Krynicy.',
+      backgroundImg: ScheduleBackgroundImg3,
+    },
+    {
+      day: 'CZWARTEK',
+      title: 'Stadnina, Piana Party i Festiwal Kolorów',
+      description:
+        'Jazda konna, szalone Piana Party i finałowy Festiwal Kolorów - to będzie dzień pełen wrażeń, którego dzieci długo nie zapomną!',
+      backgroundImg: ScheduleBackgroundImg4,
+    },
+    {
+      day: 'PIĄTEK',
+      title: 'Basen, Zawody i Kolorowe Zakończenie',
+      description:
+        'Sportowa rywalizacja na basenie, emocjonujące zawody i wielki finał kolonii z Festiwalem Kolorów - idealne zakończenie niezapomnianego tygodnia!',
+      backgroundImg: ScheduleBackgroundImg5,
+    },
+  ],
 };
 
 export const POLKOLONIA_EKSTREMALNE_LATO_GORLICE: PolkoloniaType = {
@@ -254,7 +298,7 @@ export const POLKOLONIA_EKSTREMALNE_LATO_GORLICE: PolkoloniaType = {
     location: 'GORLICE',
     dateRange: '07.07-11.07.2025',
     price: {
-      price: '800 PLN',
+      price: '850 PLN',
       promotion: true,
       promotionPrice: '700 PLN',
       promotionInfo: 'DLA KLIENTÓW NEMO',
@@ -371,6 +415,43 @@ export const POLKOLONIA_EKSTREMALNE_LATO_GORLICE: PolkoloniaType = {
       'Materiały do zdjęć',
     ],
   },
+  schedule: [
+    {
+      day: 'PONIEDZIAŁEK',
+      title: 'Basen i Survival',
+      description:
+        'Rozpoczynamy aktywnie! Trening na basenie, a potem survivalowe wyzwania - wiązanie lin, obsługa kompasu i sprytne sztuczki przetrwania. Idealny start pełen ruchu i emocji!',
+      backgroundImg: ScheduleBackgroundImg1,
+    },
+    {
+      day: 'WTOREK',
+      title: 'Przygoda w Jurasówce',
+      description:
+        'Dzień pełen atrakcji w ośrodku Jurasówka! Będzie ruch, zabawa i mnóstwo śmiechu.',
+      backgroundImg: ScheduleBackgroundImg2,
+    },
+    {
+      day: 'ŚRODA',
+      title: 'Wycieczka do Krynicy i Letnia Sankostrada',
+      description:
+        'Ruszamy w góry! W planie ekscytująca przejażdżka na letniej sankostradzie i czas na wspólną zabawę w pięknej scenerii Krynicy.',
+      backgroundImg: ScheduleBackgroundImg3,
+    },
+    {
+      day: 'CZWARTEK',
+      title: 'Stadnina, Piana Party i Festiwal Kolorów',
+      description:
+        'Jazda konna, szalone Piana Party i finałowy Festiwal Kolorów - to będzie dzień pełen wrażeń, którego dzieci długo nie zapomną!',
+      backgroundImg: ScheduleBackgroundImg4,
+    },
+    {
+      day: 'PIĄTEK',
+      title: 'Basen, Zawody i Kolorowe Zakończenie',
+      description:
+        'Sportowa rywalizacja na basenie, emocjonujące zawody i wielki finał kolonii z Festiwalem Kolorów - idealne zakończenie niezapomnianego tygodnia!',
+      backgroundImg: ScheduleBackgroundImg5,
+    },
+  ],
 };
 
 export const POLKOLONIA_EKSTREMALNE_LATO_KORZENNA: PolkoloniaType = {
@@ -392,7 +473,7 @@ export const POLKOLONIA_EKSTREMALNE_LATO_KORZENNA: PolkoloniaType = {
     location: 'KORZENNA',
     dateRange: '14.07-18.07.2025',
     price: {
-      price: '800 PLN',
+      price: '850 PLN',
       promotion: true,
       promotionPrice: '700 PLN',
       promotionInfo: 'DLA KLIENTÓW NEMO',
@@ -509,6 +590,43 @@ export const POLKOLONIA_EKSTREMALNE_LATO_KORZENNA: PolkoloniaType = {
       'Materiały do zdjęć',
     ],
   },
+  schedule: [
+    {
+      day: 'PONIEDZIAŁEK',
+      title: 'Basen i Survival',
+      description:
+        'Rozpoczynamy aktywnie! Trening na basenie, a potem survivalowe wyzwania - wiązanie lin, obsługa kompasu i sprytne sztuczki przetrwania. Idealny start pełen ruchu i emocji!',
+      backgroundImg: ScheduleBackgroundImg1,
+    },
+    {
+      day: 'WTOREK',
+      title: 'Przygoda w Jurasówce',
+      description:
+        'Dzień pełen atrakcji w ośrodku Jurasówka! Będzie ruch, zabawa i mnóstwo śmiechu.',
+      backgroundImg: ScheduleBackgroundImg2,
+    },
+    {
+      day: 'ŚRODA',
+      title: 'Wycieczka do Krynicy i Letnia Sankostrada',
+      description:
+        'Ruszamy w góry! W planie ekscytująca przejażdżka na letniej sankostradzie i czas na wspólną zabawę w pięknej scenerii Krynicy.',
+      backgroundImg: ScheduleBackgroundImg3,
+    },
+    {
+      day: 'CZWARTEK',
+      title: 'Stadnina, Piana Party i Festiwal Kolorów',
+      description:
+        'Jazda konna, szalone Piana Party i finałowy Festiwal Kolorów - to będzie dzień pełen wrażeń, którego dzieci długo nie zapomną!',
+      backgroundImg: ScheduleBackgroundImg4,
+    },
+    {
+      day: 'PIĄTEK',
+      title: 'Basen, Zawody i Kolorowe Zakończenie',
+      description:
+        'Sportowa rywalizacja na basenie, emocjonujące zawody i wielki finał kolonii z Festiwalem Kolorów - idealne zakończenie niezapomnianego tygodnia!',
+      backgroundImg: ScheduleBackgroundImg5,
+    },
+  ],
 };
 
 export const POLKOLONIA_EKSTREMALNE_LATO_NOWY_SACZ: PolkoloniaType = {
@@ -530,7 +648,7 @@ export const POLKOLONIA_EKSTREMALNE_LATO_NOWY_SACZ: PolkoloniaType = {
     location: 'NOWY SĄCZ',
     dateRange: '14.07-18.07.2025',
     price: {
-      price: '800 PLN',
+      price: '850 PLN',
       promotion: true,
       promotionPrice: '700 PLN',
       promotionInfo: 'DLA KLIENTÓW NEMO',
@@ -647,4 +765,41 @@ export const POLKOLONIA_EKSTREMALNE_LATO_NOWY_SACZ: PolkoloniaType = {
       'Materiały do zdjęć',
     ],
   },
+  schedule: [
+    {
+      day: 'PONIEDZIAŁEK',
+      title: 'Basen i Survival',
+      description:
+        'Rozpoczynamy aktywnie! Trening na basenie, a potem survivalowe wyzwania - wiązanie lin, obsługa kompasu i sprytne sztuczki przetrwania. Idealny start pełen ruchu i emocji!',
+      backgroundImg: ScheduleBackgroundImg1,
+    },
+    {
+      day: 'WTOREK',
+      title: 'Przygoda w Jurasówce',
+      description:
+        'Dzień pełen atrakcji w ośrodku Jurasówka! Będzie ruch, zabawa i mnóstwo śmiechu.',
+      backgroundImg: ScheduleBackgroundImg2,
+    },
+    {
+      day: 'ŚRODA',
+      title: 'Wycieczka do Krynicy i Letnia Sankostrada',
+      description:
+        'Ruszamy w góry! W planie ekscytująca przejażdżka na letniej sankostradzie i czas na wspólną zabawę w pięknej scenerii Krynicy.',
+      backgroundImg: ScheduleBackgroundImg3,
+    },
+    {
+      day: 'CZWARTEK',
+      title: 'Stadnina, Piana Party i Festiwal Kolorów',
+      description:
+        'Jazda konna, szalone Piana Party i finałowy Festiwal Kolorów - to będzie dzień pełen wrażeń, którego dzieci długo nie zapomną!',
+      backgroundImg: ScheduleBackgroundImg4,
+    },
+    {
+      day: 'PIĄTEK',
+      title: 'Basen, Zawody i Kolorowe Zakończenie',
+      description:
+        'Sportowa rywalizacja na basenie, emocjonujące zawody i wielki finał kolonii z Festiwalem Kolorów - idealne zakończenie niezapomnianego tygodnia!',
+      backgroundImg: ScheduleBackgroundImg5,
+    },
+  ],
 };

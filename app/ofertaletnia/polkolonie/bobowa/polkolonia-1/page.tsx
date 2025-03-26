@@ -10,6 +10,7 @@ import Attractions from '@/components/OfertaLetnia/Polkolonie/Attractions/Attrac
 import PriceDetails from '@/components/OfertaLetnia/Ui/PriceDetails/PriceDetails';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
+import Schedule from '@/components/OfertaLetnia/Polkolonie/Schedule/Schedule';
 
 export const metadata: Metadata = {
   title: 'Półkolonia Ekstremalne Lato 2025 BOBOWA',
@@ -35,11 +36,13 @@ const PolkoloniaBobowa = () => {
       <LogoSummer />
       <Contact contact={POLKOLONIA_EKSTREMALNE_LATO_BOBOWA.contact} />
       <Attractions {...POLKOLONIA_EKSTREMALNE_LATO_BOBOWA.attractions} />
+      <Schedule schedule={POLKOLONIA_EKSTREMALNE_LATO_BOBOWA.schedule} />
       <PriceDetails
         priceDetailsList={
           POLKOLONIA_EKSTREMALNE_LATO_BOBOWA.priceDetails.priceDetailsList
         }
       />
+
       <GalleryLink
         href="/galeria"
         img="/gallery/galleryLinks/summer.webp"
