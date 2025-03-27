@@ -1,16 +1,16 @@
 import styles from '@/app/page.module.scss';
-import Hero from '@/components/OfertaLetnia/Polkolonie/Hero/Hero';
+import Hero from '@/components/OfertaLetnia/PolkolonieObozy/Hero/Hero';
 import {COLORS} from '@/utils/UI/colors';
 import {Metadata} from 'next';
 import {POLKOLONIA_EKSTREMALNE_LATO_BOBOWA} from '@/utils/Summer/Polkolonie';
 import Details from '@/components/OfertaLetnia/Ui/Details/Details';
 import LogoSummer from '@/components/OfertaLetnia/Ui/Logo/Logo';
 import Contact from '@/components/OfertaLetnia/Ui/Contact/Contact';
-import Attractions from '@/components/OfertaLetnia/Polkolonie/Attractions/Attractions';
+import Attractions from '@/components/OfertaLetnia/PolkolonieObozy/Attractions/Attractions';
 import PriceDetails from '@/components/OfertaLetnia/Ui/PriceDetails/PriceDetails';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
-import Schedule from '@/components/OfertaLetnia/Polkolonie/Schedule/Schedule';
+import Schedule from '@/components/OfertaLetnia/PolkolonieObozy/Schedule/Schedule';
 
 export const metadata: Metadata = {
   title: 'Półkolonia Ekstremalne Lato 2025 BOBOWA',
@@ -33,7 +33,7 @@ const PolkoloniaBobowa = () => {
     <main className={styles.main} style={{background: COLORS['basicGreen']}}>
       <Hero {...POLKOLONIA_EKSTREMALNE_LATO_BOBOWA.hero} />
       <Details {...POLKOLONIA_EKSTREMALNE_LATO_BOBOWA.details} />
-      <LogoSummer />
+      <LogoSummer collab={false} />
       <Contact contact={POLKOLONIA_EKSTREMALNE_LATO_BOBOWA.contact} />
       <Attractions {...POLKOLONIA_EKSTREMALNE_LATO_BOBOWA.attractions} />
       <Schedule schedule={POLKOLONIA_EKSTREMALNE_LATO_BOBOWA.schedule} />

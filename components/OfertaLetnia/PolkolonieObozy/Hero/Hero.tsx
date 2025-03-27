@@ -2,6 +2,10 @@
 import {StaticImageData} from 'next/image';
 import styles from './hero.module.scss';
 export interface HeroPropsType {
+  collab?: {
+    image: StaticImageData;
+    company: string;
+  };
   logo: StaticImageData;
   images: {
     landscape: StaticImageData;
@@ -15,7 +19,14 @@ export interface HeroPropsType {
   dateRange: string;
 }
 
-const Hero = ({images, sticker, location, dateRange, logo}: HeroPropsType) => {
+const Hero = ({
+  images,
+  sticker,
+  location,
+  dateRange,
+  logo,
+  collab,
+}: HeroPropsType) => {
   return (
     <div className={styles.container}>
       <div className={styles.sticker}>
@@ -37,15 +48,28 @@ const Hero = ({images, sticker, location, dateRange, logo}: HeroPropsType) => {
           <span className={styles.subTitle}>{sticker.secondLine}</span>
           <h1>{location}</h1>
           <h2>{dateRange}</h2>
-          <img
-            className={styles.logo}
-            src={logo.src}
-            alt="NEMO Sportowa Przygoda"
-            title="NEMO Sportowa Przygoda"
-            width={390}
-            height={125}
-            loading="eager"
-          />
+          <div className={styles.logoBox}>
+            <img
+              className={styles.logo}
+              src={logo.src}
+              alt="NEMO Sportowa Przygoda"
+              title="NEMO Sportowa Przygoda"
+              width={390}
+              height={125}
+              loading="eager"
+            />
+            {collab && (
+              <img
+                className={styles.logo}
+                src={collab.image.src}
+                alt={collab.company}
+                title={collab.company}
+                width={390}
+                height={125}
+                loading="eager"
+              />
+            )}
+          </div>
         </div>
       </div>
       <img

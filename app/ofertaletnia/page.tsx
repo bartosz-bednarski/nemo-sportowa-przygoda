@@ -9,6 +9,7 @@ import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import {POLKOLONIE_LISTA_2025} from '@/utils/Summer/Polkolonie';
+import {OBOZY_LISTA_2025} from '@/utils/Summer/Obozy';
 
 export const metadata: Metadata = {
   title: 'Oferta LETNIA',
@@ -102,8 +103,9 @@ const OfertaLetniaPage = () => {
       <CollabSummer />
       <SignInCamps
         theme="summer"
-        waiting={true}
+        waiting={false}
         waitingTitle="STARTUJEMY JUŻ WIOSNĄ"
+        activeCampsCoversList={OBOZY_LISTA_2025}
       />
       <GalleryLink
         href="/galeria"
