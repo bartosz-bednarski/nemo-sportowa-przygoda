@@ -2,7 +2,7 @@ import styles from '@/app/page.module.scss';
 import Hero from '@/components/OfertaLetnia/PolkolonieObozy/Hero/Hero';
 import {COLORS} from '@/utils/UI/colors';
 import {Metadata} from 'next';
-import {POLKOLONIA_EKSTREMALNE_LATO_GORLICE} from '@/utils/Summer/Polkolonie';
+import {POLKOLONIA_LETNIA_MISJA_BOBOWA} from '@/utils/Summer/Polkolonie';
 import Details from '@/components/OfertaLetnia/Ui/Details/Details';
 import LogoSummer from '@/components/OfertaLetnia/Ui/Logo/Logo';
 import Contact from '@/components/OfertaLetnia/Ui/Contact/Contact';
@@ -13,35 +13,36 @@ import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import Schedule from '@/components/OfertaLetnia/PolkolonieObozy/Schedule/Schedule';
 
 export const metadata: Metadata = {
-  title: 'Półkolonia Ekstremalne Lato 2025 GORLICE',
+  title: 'Półkolonia Letnia Misja 2025 BOBOWA',
   description:
-    'Sprawdź naszą ofertę półkolonii letnich dla dzieci i młodzieży w OSIR w Gorlicach - 07.07-11.07.2025. EKSTREMALNE LATO Z NEMO!',
+    'Sprawdź naszą ofertę półkolonii letnich dla dzieci i młodzieży w SP w Bobowej - 04.08-08.08.2025. LETNIA MISJA Z NEMO!',
   metadataBase: new URL(
-    'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/gorlice/polkolonia-1'
+    'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/bobowa/polkolonia-2'
   ),
   alternates: {
     canonical:
-      'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/gorlice/polkolonia-1',
+      'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/bobowa/polkolonia-2',
     languages: {
       'pl-PL': '/pl-PL',
     },
   },
 };
 
-const PolkoloniaGorlice = () => {
+const PolkoloniaBobowa2 = () => {
   return (
     <main className={styles.main} style={{background: COLORS['basicGreen']}}>
-      <Hero {...POLKOLONIA_EKSTREMALNE_LATO_GORLICE.hero} />
-      <Details {...POLKOLONIA_EKSTREMALNE_LATO_GORLICE.details} />
+      <Hero {...POLKOLONIA_LETNIA_MISJA_BOBOWA.hero} />
+      <Details {...POLKOLONIA_LETNIA_MISJA_BOBOWA.details} />
       <LogoSummer collab={false} />
-      <Contact contact={POLKOLONIA_EKSTREMALNE_LATO_GORLICE.contact} />
-      <Attractions {...POLKOLONIA_EKSTREMALNE_LATO_GORLICE.attractions} />
-      <Schedule schedule={POLKOLONIA_EKSTREMALNE_LATO_GORLICE.schedule} />
+      <Contact contact={POLKOLONIA_LETNIA_MISJA_BOBOWA.contact} />
+      <Attractions {...POLKOLONIA_LETNIA_MISJA_BOBOWA.attractions} />
+      <Schedule schedule={POLKOLONIA_LETNIA_MISJA_BOBOWA.schedule} />
       <PriceDetails
         priceDetailsList={
-          POLKOLONIA_EKSTREMALNE_LATO_GORLICE.priceDetails.priceDetailsList
+          POLKOLONIA_LETNIA_MISJA_BOBOWA.priceDetails.priceDetailsList
         }
       />
+
       <GalleryLink
         href="/galeria"
         img="/gallery/galleryLinks/summer.webp"
@@ -53,4 +54,4 @@ const PolkoloniaGorlice = () => {
   );
 };
 
-export default PolkoloniaGorlice;
+export default PolkoloniaBobowa2;

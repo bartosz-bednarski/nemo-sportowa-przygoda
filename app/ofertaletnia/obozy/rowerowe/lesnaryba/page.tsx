@@ -2,7 +2,7 @@ import styles from '@/app/page.module.scss';
 import Hero from '@/components/OfertaLetnia/PolkolonieObozy/Hero/Hero';
 import {COLORS} from '@/utils/UI/colors';
 import {Metadata} from 'next';
-import {POLKOLONIA_EKSTREMALNE_LATO_GORLICE} from '@/utils/Summer/Polkolonie';
+import {OBOZ_LESNA_RYBA_2025} from '@/utils/Summer/Obozy';
 import Details from '@/components/OfertaLetnia/Ui/Details/Details';
 import LogoSummer from '@/components/OfertaLetnia/Ui/Logo/Logo';
 import Contact from '@/components/OfertaLetnia/Ui/Contact/Contact';
@@ -10,38 +10,39 @@ import Attractions from '@/components/OfertaLetnia/PolkolonieObozy/Attractions/A
 import PriceDetails from '@/components/OfertaLetnia/Ui/PriceDetails/PriceDetails';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
-import Schedule from '@/components/OfertaLetnia/PolkolonieObozy/Schedule/Schedule';
 
 export const metadata: Metadata = {
-  title: 'Półkolonia Ekstremalne Lato 2025 GORLICE',
+  title: 'Obóz rowerowy Leśna Ryba 2025',
   description:
-    'Sprawdź naszą ofertę półkolonii letnich dla dzieci i młodzieży w OSIR w Gorlicach - 07.07-11.07.2025. EKSTREMALNE LATO Z NEMO!',
+    'Sprawdź naszą ofertę obozu rowerowego dla dzieci i młodzieży w Leśnej Rybie - 29.06-07.07.2025. OBOZY ROWEROWE Z NEMO!',
   metadataBase: new URL(
-    'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/gorlice/polkolonia-1'
+    'https://nemosportowaprzygoda.pl/ofertaletnia/obozy/rowerowe/lesnaryba'
   ),
   alternates: {
     canonical:
-      'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/gorlice/polkolonia-1',
+      'https://nemosportowaprzygoda.pl/ofertaletnia/obozy/rowerowe/lesnaryba',
     languages: {
       'pl-PL': '/pl-PL',
     },
   },
 };
 
-const PolkoloniaGorlice = () => {
+const ObozLesnaRyba = () => {
   return (
     <main className={styles.main} style={{background: COLORS['basicGreen']}}>
-      <Hero {...POLKOLONIA_EKSTREMALNE_LATO_GORLICE.hero} />
-      <Details {...POLKOLONIA_EKSTREMALNE_LATO_GORLICE.details} />
+      <Hero {...OBOZ_LESNA_RYBA_2025.hero} />
+      <Details {...OBOZ_LESNA_RYBA_2025.details} />
       <LogoSummer collab={false} />
-      <Contact contact={POLKOLONIA_EKSTREMALNE_LATO_GORLICE.contact} />
-      <Attractions {...POLKOLONIA_EKSTREMALNE_LATO_GORLICE.attractions} />
-      <Schedule schedule={POLKOLONIA_EKSTREMALNE_LATO_GORLICE.schedule} />
+      <Contact contact={OBOZ_LESNA_RYBA_2025.contact} />
+      <LogoSummer collab={true} />
+      {OBOZ_LESNA_RYBA_2025.collabContact && (
+        <Contact contact={OBOZ_LESNA_RYBA_2025.collabContact} />
+      )}
+      <Attractions {...OBOZ_LESNA_RYBA_2025.attractions} />
       <PriceDetails
-        priceDetailsList={
-          POLKOLONIA_EKSTREMALNE_LATO_GORLICE.priceDetails.priceDetailsList
-        }
+        priceDetailsList={OBOZ_LESNA_RYBA_2025.priceDetails.priceDetailsList}
       />
+
       <GalleryLink
         href="/galeria"
         img="/gallery/galleryLinks/summer.webp"
@@ -53,4 +54,4 @@ const PolkoloniaGorlice = () => {
   );
 };
 
-export default PolkoloniaGorlice;
+export default ObozLesnaRyba;

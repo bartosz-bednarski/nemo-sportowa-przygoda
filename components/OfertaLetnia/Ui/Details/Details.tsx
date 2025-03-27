@@ -6,13 +6,14 @@ import DetailsBox from './DetailsBox';
 export interface DetailsPropsType {
   location: string;
   dateRange: string;
+  ageRange?: string;
   price: {
     price: string;
     promotion: boolean;
     promotionPrice?: string;
     promotionInfo?: string;
   };
-
+  accomodation?: string;
   about: {
     title: string;
     description: string;
@@ -29,13 +30,24 @@ const Details = ({
   price,
   about,
   argumentsList,
+  accomodation,
+  ageRange,
 }: DetailsPropsType) => {
   return (
     <div className={styles.details}>
       <div className={styles.rowBox}>
         <DetailsBox promo={false} label="MIEJSCE" content={location} />
         <DetailsBox promo={false} label="TERMIN" content={dateRange} />
-
+        {ageRange && (
+          <DetailsBox promo={false} label="WIEK" content={ageRange} />
+        )}
+        {accomodation && (
+          <DetailsBox
+            promo={false}
+            label="ZAKWATEROWANIE"
+            content={accomodation}
+          />
+        )}
         <DetailsBox
           promo={price.promotion}
           label="CENA"

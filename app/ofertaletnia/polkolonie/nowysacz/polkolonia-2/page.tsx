@@ -2,7 +2,7 @@ import styles from '@/app/page.module.scss';
 import Hero from '@/components/OfertaLetnia/PolkolonieObozy/Hero/Hero';
 import {COLORS} from '@/utils/UI/colors';
 import {Metadata} from 'next';
-import {POLKOLONIA_EKSTREMALNE_LATO_GORLICE} from '@/utils/Summer/Polkolonie';
+import {POLKOLONIA_LETNIA_MISJA_NOWY_SACZ} from '@/utils/Summer/Polkolonie';
 import Details from '@/components/OfertaLetnia/Ui/Details/Details';
 import LogoSummer from '@/components/OfertaLetnia/Ui/Logo/Logo';
 import Contact from '@/components/OfertaLetnia/Ui/Contact/Contact';
@@ -13,33 +13,33 @@ import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import Schedule from '@/components/OfertaLetnia/PolkolonieObozy/Schedule/Schedule';
 
 export const metadata: Metadata = {
-  title: 'Półkolonia Ekstremalne Lato 2025 GORLICE',
+  title: 'Półkolonia Letnia Misja 2025 NOWY SĄCZ',
   description:
-    'Sprawdź naszą ofertę półkolonii letnich dla dzieci i młodzieży w OSIR w Gorlicach - 07.07-11.07.2025. EKSTREMALNE LATO Z NEMO!',
+    'Sprawdź naszą ofertę półkolonii letnich dla dzieci i młodzieży w Nowym Sączu - 11.08-15.08.2025. LETNIA MISJA Z NEMO!',
   metadataBase: new URL(
-    'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/gorlice/polkolonia-1'
+    'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/nowysacz/polkolonia-2'
   ),
   alternates: {
     canonical:
-      'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/gorlice/polkolonia-1',
+      'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/nowysacz/polkolonia-2',
     languages: {
       'pl-PL': '/pl-PL',
     },
   },
 };
 
-const PolkoloniaGorlice = () => {
+const PolkoloniaNowySacz2 = () => {
   return (
     <main className={styles.main} style={{background: COLORS['basicGreen']}}>
-      <Hero {...POLKOLONIA_EKSTREMALNE_LATO_GORLICE.hero} />
-      <Details {...POLKOLONIA_EKSTREMALNE_LATO_GORLICE.details} />
+      <Hero {...POLKOLONIA_LETNIA_MISJA_NOWY_SACZ.hero} />
+      <Details {...POLKOLONIA_LETNIA_MISJA_NOWY_SACZ.details} />
       <LogoSummer collab={false} />
-      <Contact contact={POLKOLONIA_EKSTREMALNE_LATO_GORLICE.contact} />
-      <Attractions {...POLKOLONIA_EKSTREMALNE_LATO_GORLICE.attractions} />
-      <Schedule schedule={POLKOLONIA_EKSTREMALNE_LATO_GORLICE.schedule} />
+      <Contact contact={POLKOLONIA_LETNIA_MISJA_NOWY_SACZ.contact} />
+      <Attractions {...POLKOLONIA_LETNIA_MISJA_NOWY_SACZ.attractions} />
+      <Schedule schedule={POLKOLONIA_LETNIA_MISJA_NOWY_SACZ.schedule} />
       <PriceDetails
         priceDetailsList={
-          POLKOLONIA_EKSTREMALNE_LATO_GORLICE.priceDetails.priceDetailsList
+          POLKOLONIA_LETNIA_MISJA_NOWY_SACZ.priceDetails.priceDetailsList
         }
       />
       <GalleryLink
@@ -53,4 +53,4 @@ const PolkoloniaGorlice = () => {
   );
 };
 
-export default PolkoloniaGorlice;
+export default PolkoloniaNowySacz2;

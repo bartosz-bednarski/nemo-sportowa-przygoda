@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './contact.module.scss';
-import WebsiteIcon from '@/public/assets/ui/Icons/social/website.svg';
+import WebsiteIcon from '@/public/assets/ui/Icons/social/website-white.svg';
 import PhoneIcon from '@/public/assets/ui/Icons/social/phone.svg';
 import EmailIcon from '@/public/assets/ui/Icons/social/email.svg';
 

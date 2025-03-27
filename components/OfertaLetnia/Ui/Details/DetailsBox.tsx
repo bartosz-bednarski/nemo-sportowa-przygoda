@@ -4,7 +4,7 @@ import styles from './details.module.scss';
 
 export interface DetailsBoxPropsType {
   promo: boolean;
-  label: 'MIEJSCE' | 'TERMIN' | 'CENA';
+  label: 'MIEJSCE' | 'TERMIN' | 'CENA' | 'ZAKWATEROWANIE' | 'WIEK';
   content: string;
   promoPrice?: string;
   promoInfo?: string;

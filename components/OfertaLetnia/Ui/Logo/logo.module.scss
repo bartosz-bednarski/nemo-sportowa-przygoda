@@ -4,17 +4,20 @@
   width: 100%;
   padding: 0rem 4rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 5rem;
   @include mixin.phone700px {
     padding: 2rem;
   }
 }
 .logo {
-  width: 50%;
+  height: 23vh;
+  width: auto;
   object-fit: contain;
   height: auto;
-  @include mixin.pc1250px {
-    width: 90%;
+  @include mixin.phone700px {
+    height: 13vh;
   }
 }

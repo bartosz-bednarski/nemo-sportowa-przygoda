@@ -46,13 +46,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: 'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/bobowa/polkolonia-1',
     },
     {
+      url: 'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/bobowa/polkolonia-2',
+    },
+    {
       url: 'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/gorlice/polkolonia-1',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/gorlice/polkolonia-2',
     },
     {
       url: 'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/korzenna/polkolonia-1',
     },
     {
+      url: 'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/korzenna/polkolonia-2',
+    },
+    {
       url: 'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/nowysacz/polkolonia-1',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/ofertaletnia/polkolonie/nowysacz/polkolonia-2',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/ofertaletnia/obozy/rowerowe/lesnaryba',
     },
     {
       url: 'https://nemosportowaprzygoda.pl/ofertazimowa',
