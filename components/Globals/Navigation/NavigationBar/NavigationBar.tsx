@@ -1,22 +1,23 @@
 'use client';
-import React, {useState} from 'react';
-import styles from './navBar.module.scss';
+import React from 'react';
+import styles from './navigationBar.module.scss';
 import NavBtn from '@/components/Ui/Buttons/NavBtn/NavBtn';
-import Navigation from '../Navigation/Navigation';
 import LogoMainWhiteImg from '@/public/assets/logo/Logo-main-white.svg';
 import LogoMainDarkBlueImg from '@/public/assets/logo/Logo-main-darkBlue.svg';
 import Link from 'next/link';
 import {useRouter} from 'next/navigation';
 import {usePathname} from 'next/navigation';
 
-const NavBar: React.FC = () => {
-  const [showNavigation, setShowNavigation] = useState(false);
-  const [firstLoad, setFirstLoad] = useState(true);
+interface NavigationBarProps {
+  showMenuHandler: () => void;
+}
+
+const NavigationBar = ({showMenuHandler}: NavigationBarProps) => {
   const router = useRouter();
   const pathName = usePathname();
   return (
     <>
-      <nav className={styles.navBar} style={{zIndex: showNavigation ? 10 : 11}}>
+      <nav className={styles.navBar}>
         <Link href="/">
           <img
             src={
@@ -33,7 +34,7 @@ const NavBar: React.FC = () => {
           />
         </Link>
         <div className={styles.btnsBox}>
-          <NavBtn type="menu" onClick={() => setShowNavigation(true)} />
+          <NavBtn type="menu" onClick={showMenuHandler} />
           <NavBtn
             type="customer-panel"
             onClick={() => {
@@ -42,14 +43,8 @@ const NavBar: React.FC = () => {
           />
         </div>
       </nav>
-      <Navigation
-        showNavigation={showNavigation}
-        hideNavigation={() => setShowNavigation(false)}
-        firstLoad={firstLoad}
-        setFirstLoad={() => setFirstLoad(false)}
-      />
     </>
   );
 };
 
-export default NavBar;
+export default NavigationBar;

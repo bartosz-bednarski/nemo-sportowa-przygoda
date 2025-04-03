@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import '../styles/globals.scss';
 import styles from './layout.module.scss';
 import Footer from '@/components/Globals/Footer/Footer';
-import NavBar from '@/components/Globals/Navigation/NavBar/NavBar';
 import {GoogleAnalytics} from '@next/third-parties/google';
+import Navigation from '@/components/Globals/Navigation/Navigation';
 export const metadata: Metadata = {
   title: {
     default: 'NEMO Sportowa Przygoda',
@@ -39,7 +39,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main className={styles.main}>
-          <NavBar />
+          <Navigation />
           {children}
           <Footer />
         </main>
