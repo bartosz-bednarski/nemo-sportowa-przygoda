@@ -6,7 +6,7 @@ import {poolsType} from '@/types/NaukaPlywania/naukaPlywania';
 import {COLORS} from '@/utils/UI/colors';
 import Groups, {GroupsPropsType} from '../Ui/Groups/Groups';
 import {customColors} from '@/types/UI/colors';
-import StickerH4 from '@/components/Ui/Stickers/StickerH4/StickerH4';
+import StickerH4 from '@/components/Ui/Headers/Stickers/StickerH4/StickerH4';
 import NaukaPlywaniaAbout, {
   NaukaPływaniaAboutPropsType,
 } from '../Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';

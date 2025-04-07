@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import styles from './groupLvl.module.scss';
 import StickerH4, {
   StickerH4PropsType,
-} from '@/components/Ui/Stickers/StickerH4/StickerH4';
+} from '@/components/Ui/Headers/Stickers/StickerH4/StickerH4';
 import AboutTextPoppins, {
   AboutTextPoppinsPropsType,
 } from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
@@ -28,8 +28,8 @@ const GroupLvl = ({stickerH4, aboutTextPoppins, skills}: GroupLvlPropsType) => {
         title={aboutTextPoppins.title}
         titleColor={aboutTextPoppins.titleColor}
         description={aboutTextPoppins.description}
-        alignItems="flex-start"
-        textAlign="left"
+        alignItems="center"
+        textAlign="center"
       />
       {skills.length > 0 && (
         <>

@@ -1,32 +1,156 @@
 @use '../../../styles/mixin.scss' as mixin;
+@use '../../../styles/colors.scss' as colors;
 @import '../../../styles/fonts.scss';
 .titleStripDescription {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  gap: 3rem;
-  @include mixin.phone700px {
+  width: auto;
+  max-width: 70%;
+  gap: 2rem;
+  @include mixin.pc1000px {
     width: 100%;
     gap: 1rem;
+    max-width: 100%;
   }
   // @include mixin.phone575px{
   //   width: 300px;
   // }
 }
-.paragraphBox {
-  margin: 0;
+.paragraphBox{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 220px;
-  border-radius: 30px;
+  flex-direction: row;
+  height: fit-content;
+  width: fit-content;
+}
+.paragraphText{
+  box-sizing: border-box;
+  display: flex;
+  box-sizing: border-box;
+  padding: .5rem 2rem;
+  height: fit-content;
+  width: fit-content;
   text-align: center;
-  font-size: 1rem;
   padding: 1rem;
-  font-family: 'poppins-400';
-  @include mixin.phone500px {
-    font-size: 0.8rem;
+}
+.scrapLeft{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 5%;
+  @include mixin.pc1450px{
+    width: 10%;
   }
+  @include mixin.phone700px{
+    display: none;
+  }
+}
+.scrapRight{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 5%;
+  @include mixin.pc1450px{
+    width: 10%;
+  }
+  @include mixin.phone700px{
+    display: none;
+  }
+}
+
+.basicOrange{
+  .paragraphText{
+  background-color: colors.$basicOrange;
+}
+.scrapLeft{
+background-image: url('../../../public/assets/ui/ScrapLeft/scrapLeftBasicOrange.svg');
+}
+.scrapRight{
+background-image: url('../../../public/assets/ui/ScrapRight/scrapRightBasicOrange.svg');
+}
+}
+
+.basicBrown{
+  .paragraphText{
+  background-color: colors.$basicBrown;
+}
+.scrapLeft{
+background-image: url('../../../public/assets/ui/ScrapLeft/scrapLeftBasicBrown.svg');
+}
+.scrapRight{
+background-image: url('../../../public/assets/ui/ScrapRight/scrapRightBasicBrown.svg');
+}
+}
+
+.basicGreen{
+  .paragraphText{
+  background-color: colors.$basicGreen;
+}
+.scrapLeft{
+background-image: url('../../../public/assets/ui/ScrapLeft/scrapLeftBasicGreen.svg');
+}
+.scrapRight{
+background-image: url('../../../public/assets/ui/ScrapRight/scrapRightBasicGreen.svg');
+}
+}
+
+.darkBlue{
+  .paragraphText{
+  background-color: colors.$darkBlue;
+}
+.scrapLeft{
+background-image: url('../../../public/assets/ui/ScrapLeft/scrapLeftDarkBlue.svg');
+}
+.scrapRight{
+background-image: url('../../../public/assets/ui/ScrapRight/scrapRightDarkBlue.svg');
+}
+}
+
+.lightBlue{
+  .paragraphText{
+  background-color: colors.$lightBlue;
+}
+.scrapLeft{
+background-image: url('../../../public/assets/ui/ScrapLeft/scrapLeftLightBlue.svg');
+}
+.scrapRight{
+background-image: url('../../../public/assets/ui/ScrapRight/scrapRightLightBlue.svg');
+}
+}
+
+.mediumBlue{
+  .paragraphText{
+  background-color: colors.$mediumBlue;
+}
+.scrapLeft{
+background-image: url('../../../public/assets/ui/ScrapLeft/scrapLeftMediumBlue.svg');
+}
+.scrapRight{
+background-image: url('../../../public/assets/ui/ScrapRight/scrapRightMediumBlue.svg');
+}
+}
+
+.white{
+  .paragraphText{
+  background-color: colors.$white;
+}
+.scrapLeft{
+background-image: url('../../../public/assets/ui/ScrapLeft/scrapLeftWhite.svg');
+}
+.scrapRight{
+background-image: url('../../../public/assets/ui/ScrapRight/scrapRightWhite.svg');
+}
+}
+
+.winterIce{
+  .paragraphText{
+  background-color: colors.$winterIce;
+}
+.scrapLeft{
+background-image: url('../../../public/assets/ui/ScrapLeft/scrapLeftWinterIce.svg');
+}
+.scrapRight{
+background-image: url('../../../public/assets/ui/ScrapRight/scrapRightWinterIce.svg');
+}
 }

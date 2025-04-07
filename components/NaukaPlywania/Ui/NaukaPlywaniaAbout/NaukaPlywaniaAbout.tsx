@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './naukaPlywaniaAbout.module.scss';
 import StickerH2, {
   StickerH2PropsType,
-} from '@/components/Ui/Stickers/StickerH2/StickerH2';
+} from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import LinkButton from '@/components/Ui/Buttons/LinkButton';
 import AboutTextPoppins, {
   AboutTextPoppinsPropsType,

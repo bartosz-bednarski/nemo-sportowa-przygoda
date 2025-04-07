@@ -3,10 +3,10 @@ import 'react';
 import styles from './videosSection.module.scss';
 import StickerH2, {
   StickerH2PropsType,
-} from '../Ui/Stickers/StickerH2/StickerH2';
+} from '../Ui/Headers/Stickers/StickerH2/StickerH2';
 import StickerH1, {
   StickerH1PropsType,
-} from '../Ui/Stickers/StickerH1/StickerH1';
+} from '../Ui/Headers/Stickers/StickerH1/StickerH1';
 import Scrap2 from '../Ui/Scrap/Scrap2';
 import {customColors} from '@/types/UI/colors';
 

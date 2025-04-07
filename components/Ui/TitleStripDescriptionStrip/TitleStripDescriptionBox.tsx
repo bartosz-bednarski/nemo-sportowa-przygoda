@@ -1,15 +1,16 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './titleStripDescriptionBox.module.scss';
 import {customColors} from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
-import StripH4 from '../Strips/StripH4/StripH4';
+import StickerH4 from '../Headers/Stickers/StickerH4/StickerH4';
 
 export interface TitleStripDescriptionBoxPropsType {
   title: string;
   titleStripTextColor: customColors;
   titleStripBgColor: customColors;
   description: string;
+  descriptionBgColor:customColors
 }
 
 const TitleStripDescriptionBox = ({
@@ -17,26 +18,27 @@ const TitleStripDescriptionBox = ({
   titleStripTextColor,
   titleStripBgColor,
   description,
+  descriptionBgColor
 }: TitleStripDescriptionBoxPropsType) => {
+
+const stripStyles = `${styles.paragraphBox} ${styles[`${descriptionBgColor}`]}`
+const stripTextStyles = {
+  color: COLORS[titleStripTextColor !== undefined ? titleStripTextColor : 'white'],
+}
   return (
     <div className={styles.titleStripDescription}>
-      <StripH4
-        type="h4"
-        title={title}
+      <StickerH4
+        title=""
+        titleStrip={title}
         stripTextColor={titleStripTextColor}
         stripBgColor={titleStripBgColor}
       />
-      <p
-        style={{
-          color: COLORS[titleStripTextColor],
-          backgroundColor: COLORS[titleStripBgColor],
-          border: `1px solid ${COLORS[titleStripTextColor]}`,
-          boxShadow: `1px 1px 1px 1px ${COLORS[titleStripTextColor]}`,
-        }}
-        className={styles.paragraphBox}
-      >
-        {description}
-      </p>
+      <span className={stripStyles}>
+        <span className={styles.scrapLeft}></span>
+        <p className={styles.paragraphText} style={stripTextStyles}> {description}</p>
+        <span className={styles.scrapRight}></span>
+        </span>
+      
     </div>
   );
 };

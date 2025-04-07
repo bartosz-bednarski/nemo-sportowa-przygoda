@@ -42,9 +42,9 @@
   display: flex;
   position: absolute;
   bottom: 10%;
-  left: 5%;
+  left: 16%;
   @include mixin.pc1450px {
-    left: 0%;
+    left: 2%;
   }
   @include mixin.phone900px {
     display: none;

@@ -1,16 +1,14 @@
 'use client';
 import React from 'react';
 import styles from './pools.module.scss';
-import StripH3, {
-  StripH3PropsType,
-} from '@/components/Ui/Strips/StripH3/StripH3';
 import BackgroundText from '@/components/Ui/BackgroundText/BackgroundText';
 import LinkSwimmingPoolCover, {
   LinkSwimmingPoolCoverPropsType,
 } from '@/components/Ui/Links/LinkSwimmingPoolCover/LinkSwimmingPoolCover';
+import StickerH3, { StickerH3PropsType } from '@/components/Ui/Headers/Stickers/StickerH3/StickerH3';
 
 export interface PoolsPropsType {
-  stripH3: StripH3PropsType;
+  stripH3: StickerH3PropsType;
   backgroundText: string;
   swimmingPools: LinkSwimmingPoolCoverPropsType[];
 }
@@ -18,8 +16,9 @@ export interface PoolsPropsType {
 const Pools = ({stripH3, backgroundText, swimmingPools}: PoolsPropsType) => {
   return (
     <div className={styles.pools}>
-      <StripH3
-        title={stripH3.title}
+      <StickerH3
+        titleStrip={stripH3.title}
+        title=''
         stripTextColor={stripH3.stripTextColor}
         stripBgColor={stripH3.stripBgColor}
       />

@@ -4,7 +4,7 @@ import styles from './poolNecessaryItems.module.scss';
 import BackgroundText from '@/components/Ui/BackgroundText/BackgroundText';
 import {customColors} from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
-import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import GooglesIcon from '@/public/assets/ui/Icons/czepek_i_gogle.svg';
 import SwimSuitIcon from '@/public/assets/ui/Icons/stroj_kapielowy.svg';
 import SlippersIcon from '@/public/assets/ui/Icons/klapki.svg';

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './signInCamps.module.scss';
-import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import {COLORS} from '@/utils/UI/colors';
 import NemoSummerIcon from '@/public/assets/customLogos/nemo-podroznik.svg';
 import NemoWinterIcon from '@/public/assets/customLogos/nemo-skier.svg';
