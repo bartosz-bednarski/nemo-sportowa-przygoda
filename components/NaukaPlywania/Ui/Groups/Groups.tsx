@@ -2,7 +2,9 @@
 import React from 'react';
 import styles from './groups.module.scss';
 import GroupLvl, {GroupLvlPropsType} from '../GroupLvl/GroupLvl';
-import StickerH2, { StickerH2PropsType } from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
+import StickerH2, {
+  StickerH2PropsType,
+} from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 
 export interface GroupsPropsType {
   stripH2: StickerH2PropsType;
@@ -13,8 +15,8 @@ const Groups = ({stripH2, groups}: GroupsPropsType) => {
   return (
     <div className={styles.groups}>
       <StickerH2
-      titleStrip={stripH2.title}
-        title=''
+        titleStrip={stripH2.title}
+        title=""
         stripBgColor={stripH2.stripBgColor}
         stripTextColor={stripH2.stripTextColor}
       />

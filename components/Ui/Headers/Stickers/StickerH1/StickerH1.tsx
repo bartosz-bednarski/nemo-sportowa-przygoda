@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from '../sticker.module.scss';
 import {customColors} from '@/types/UI/colors';
-import { COLORS } from '@/utils/UI/colors';
+import {COLORS} from '@/utils/UI/colors';
 
 export interface StickerH1PropsType {
   stripTextColor: customColors;
@@ -12,8 +12,6 @@ export interface StickerH1PropsType {
   titleStrip: string;
 }
 
-
-
 const StickerH1 = ({
   stripBgColor,
   stripTextColor,
@@ -21,11 +19,10 @@ const StickerH1 = ({
   title2,
   titleStrip,
 }: StickerH1PropsType) => {
-
-const stripStyles = `${styles.scrapBox} ${styles[`${stripBgColor}`]}`
-const stripTextStyles = {
-  color: COLORS[stripTextColor !== undefined ? stripTextColor : 'white'],
-}
+  const stripStyles = `${styles.scrapBox} ${styles[`${stripBgColor}`]}`;
+  const stripTextStyles = {
+    color: COLORS[stripTextColor !== undefined ? stripTextColor : 'white'],
+  };
   return (
     <h1 className={styles.box}>
       <span className={styles.h1Title}>{title} </span>
@@ -33,9 +30,12 @@ const stripTextStyles = {
 
       <span className={stripStyles}>
         <span className={styles.scrapLeft}></span>
-        <span className={styles.scrapText} style={stripTextStyles}> {titleStrip}</span>
-        <span className={styles.scrapRight}></span>
+        <span className={styles.scrapText} style={stripTextStyles}>
+          {' '}
+          {titleStrip}
         </span>
+        <span className={styles.scrapRight}></span>
+      </span>
     </h1>
   );
 };

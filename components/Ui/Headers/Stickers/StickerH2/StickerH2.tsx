@@ -17,29 +17,30 @@ const StickerH2 = ({
   title,
   titleStrip,
   titleColor,
-  stripTextColor
+  stripTextColor,
 }: StickerH2PropsType) => {
-
-const stripStyles = `${styles.scrapBox} ${styles[`${stripBgColor}`]}`
-const stripTextStyles = {
-  color: COLORS[stripTextColor !== undefined ? stripTextColor : 'white'],
-}
-const titleStyles = { color: COLORS[titleColor !== undefined ? titleColor : 'white']}
+  const stripStyles = `${styles.scrapBox} ${styles[`${stripBgColor}`]}`;
+  const stripTextStyles = {
+    color: COLORS[stripTextColor !== undefined ? stripTextColor : 'white'],
+  };
+  const titleStyles = {
+    color: COLORS[titleColor !== undefined ? titleColor : 'white'],
+  };
 
   return (
     <h2 className={styles.box}>
-      <span
-        className={styles.h2Title}
-       style={titleStyles}
-      >
-        {title} {" "}
+      <span className={styles.h2Title} style={titleStyles}>
+        {title}{' '}
       </span>
       <span className={stripStyles}>
         <span className={styles.scrapLeft}></span>
-        <span className={styles.scrapText} style={stripTextStyles}> {titleStrip}</span>
-       
-        <span className={styles.scrapRight}></span>
+        <span className={styles.scrapText} style={stripTextStyles}>
+          {' '}
+          {titleStrip}
         </span>
+
+        <span className={styles.scrapRight}></span>
+      </span>
     </h2>
   );
 };

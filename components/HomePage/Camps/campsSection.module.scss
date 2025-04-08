@@ -43,7 +43,9 @@
     padding: 1rem;
   }
 }
-.cardBox,.cardBoxSummer,.cardBoxWinter{
+.cardBox,
+.cardBoxSummer,
+.cardBoxWinter {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -51,11 +53,11 @@
   height: 400px;
   border: 2px solid white;
   border-radius: 15px;
-  @include mixin.pc1250px{
+  @include mixin.pc1250px {
     width: 100%;
     height: auto;
   }
-  h4{
+  h4 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,14 +66,14 @@
     height: 100px;
     background-color: colors.$basicOrange;
     border-bottom: 2px solid white;
-    @include mixin.pc1250px{
+    @include mixin.pc1250px {
       box-sizing: border-box;
       width: 100%;
       height: auto;
-      padding: .5rem;
+      padding: 0.5rem;
     }
   }
-  p{
+  p {
     display: flex;
     height: 430px;
     align-items: center;
@@ -79,21 +81,21 @@
     padding: 1rem;
     justify-content: center;
     text-align: center;
-    @include mixin.pc1250px{
+    @include mixin.pc1250px {
       width: 100%;
       height: auto;
     }
   }
 }
-.cardBoxSummer{
+.cardBoxSummer {
   border-color: colors.$white;
-  h4{
+  h4 {
     background-color: colors.$basicGreen;
   }
 }
-.cardBoxWinter{
+.cardBoxWinter {
   border-color: colors.$white;
-  h4{
+  h4 {
     background-color: colors.$darkBlue;
   }
 }

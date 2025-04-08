@@ -1,5 +1,5 @@
 import styles from '../../../page.module.scss';
-import VideosSection from '@/components/Globals/VideosSection';
+import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
 import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
@@ -16,6 +16,9 @@ import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutoria
 import PoolInformations from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
 import LessonType from '@/components/NaukaPlywania/Ui/LessonType/LessonType';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
+import Image1 from '@/public/assets/videos/toddler-mix-2.webp';
+import Image2 from '@/public/assets/videos/toddler-mix-3.webp';
+import Image3 from '@/public/assets/videos/toddler-mix-1.webp';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania Kraków BRONOWIANKA',
@@ -46,7 +49,11 @@ const NaukaPlywaniaBronowianka = () => {
         }}
         scrapColor="lightBlue"
         col1={{
-          video: {src: 'toddler-mix-2.mp4', alt: 'nauka pływania niemowlaki'},
+          video: {
+            src: 'toddler-mix-2.mp4',
+            alt: 'nauka pływania niemowlaki',
+            image: Image1,
+          },
           stickerH2: {
             title: 'MAŁE',
             titleStrip: 'BOMBELKI',
@@ -58,6 +65,7 @@ const NaukaPlywaniaBronowianka = () => {
           video: {
             src: 'toddler-mix-3.mp4',
             alt: 'nauka pływania dzieci i mlodzież',
+            image: Image2,
           },
           stickerH2: {
             title: 'ŚREDNIE',
@@ -67,7 +75,11 @@ const NaukaPlywaniaBronowianka = () => {
           },
         }}
         col3={{
-          video: {src: 'toddler-mix-1.mp4', alt: 'nauka pływania dorośli'},
+          video: {
+            src: 'toddler-mix-1.mp4',
+            alt: 'nauka pływania dorośli',
+            image: Image3,
+          },
           stickerH2: {
             title: 'DUŻE',
             titleStrip: 'BOMBELKI',

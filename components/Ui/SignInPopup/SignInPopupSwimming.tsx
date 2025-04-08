@@ -30,18 +30,18 @@ const SignInPopupSwimming = () => {
           <XBtn onClick={closePopupHandler} />
         </span>
         <div className={styles.columnFlex}>
-          <h3>
+          <span className={styles.header}>
             <b>NAUKA PŁYWANIA</b>
             <br /> KRAKÓW | KORZENNA | GORLICE
-          </h3>
-          <span>
+          </span>
+          <p>
             Rozpocznij przygodę z wodą niezależnie od wieku! Zapraszamy na
             zajęcia pływackie dostosowane do potrzeb każdej grupy wiekowej: od
             niemowląt, przez dzieci i młodzież, aż po dorosłych. <br />
             <br />
             Dołącz do nas i odkryj radość pływania z NEMO!
             <br />
-          </span>
+          </p>
           <LinkButton
             title="Zapisz się"
             bgColor="white"

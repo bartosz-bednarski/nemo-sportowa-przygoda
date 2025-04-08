@@ -8,13 +8,13 @@ const GalleryHero = () => {
     <div className={styles.hero}>
       <img className={styles.img} src={HeroImg.src} alt="gallery-hero" />
       <div className={styles.title}>
-          <StickerH1
-            titleStrip="ZDJĘĆ"
-            title='GALERIA'
-            title2=''
-            stripBgColor="basicOrange"
-            stripTextColor="white"
-          />
+        <StickerH1
+          titleStrip="ZDJĘĆ"
+          title="GALERIA"
+          title2=""
+          stripBgColor="basicOrange"
+          stripTextColor="white"
+        />
       </div>
       <Scrap2 position="bottom" color="basicOrange" />
     </div>

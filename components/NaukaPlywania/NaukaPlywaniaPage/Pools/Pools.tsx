@@ -5,7 +5,9 @@ import BackgroundText from '@/components/Ui/BackgroundText/BackgroundText';
 import LinkSwimmingPoolCover, {
   LinkSwimmingPoolCoverPropsType,
 } from '@/components/Ui/Links/LinkSwimmingPoolCover/LinkSwimmingPoolCover';
-import StickerH3, { StickerH3PropsType } from '@/components/Ui/Headers/Stickers/StickerH3/StickerH3';
+import StickerH3, {
+  StickerH3PropsType,
+} from '@/components/Ui/Headers/Stickers/StickerH3/StickerH3';
 
 export interface PoolsPropsType {
   stripH3: StickerH3PropsType;
@@ -18,7 +20,7 @@ const Pools = ({stripH3, backgroundText, swimmingPools}: PoolsPropsType) => {
     <div className={styles.pools}>
       <StickerH3
         titleStrip={stripH3.title}
-        title=''
+        title=""
         stripTextColor={stripH3.stripTextColor}
         stripBgColor={stripH3.stripBgColor}
       />
