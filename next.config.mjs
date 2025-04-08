@@ -1,8 +1,7 @@
 // /** @type {import('next').NextConfig} */
-import type {NextConfig} from 'next';
 //STATIC EXPORT
-const nextConfig:NextConfig = {
-  distDir: 'out',
+const nextConfig = {
+  // distDir: 'out',
   // output: 'export',
   // reactStrictMode: true,
   // swcMinify: true, // Ustawienie na true
