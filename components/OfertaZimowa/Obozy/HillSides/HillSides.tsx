@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './hillSides.module.scss';
-import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 
 export interface HillSidesPropsType {
   title1: string;

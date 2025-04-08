@@ -27,6 +27,9 @@ export async function GET(req: Request) {
       },
     });
   } catch (err) {
-    return NextResponse.json({error: 'Video not found',errorData:err}, {status: 404});
+    return NextResponse.json(
+      {error: 'Video not found', errorData: err},
+      {status: 404}
+    );
   }
 }

@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import styles from './surroundings.module.scss';
-import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
 import SurroundingsImg from '@/public/assets/winter/zakwaterowanie/accommodation-basic.svg';
+import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 
 export interface SurroundingsPropsType {
   about: string;
@@ -19,9 +19,9 @@ const Surroundings: React.FC<{
   return (
     <div className={styles.surroundings}>
       <div className={styles.content}>
-        <StripH2
-          type="h2"
-          title="OKOLICA"
+        <StickerH2
+          titleStrip="OKOLICA"
+          title=""
           stripBgColor="darkBlue"
           stripTextColor="white"
         />

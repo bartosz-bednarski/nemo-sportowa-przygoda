@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './hero.module.scss';
-import StickerH1 from '@/components/Ui/Stickers/StickerH1/StickerH1';
+import StickerH1 from '@/components/Ui/Headers/Stickers/StickerH1/StickerH1';
 
 const HeroTeam: React.FC = () => {
   return (

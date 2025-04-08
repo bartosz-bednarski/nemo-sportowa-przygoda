@@ -4,7 +4,7 @@ import styles from './instructors.module.scss';
 import InstructorBubble from '@/components/Globals/InstructorBubble/InstructorBubble';
 import BackgroundText from '@/components/Ui/BackgroundText/BackgroundText';
 import {instructorsType} from '@/types/NaukaPlywania/naukaPlywania';
-import StripH3 from '@/components/Ui/Strips/StripH3/StripH3';
+import StickerH3 from '@/components/Ui/Headers/Stickers/StickerH3/StickerH3';
 
 const Instructors: React.FC<instructorsType> = ({
   backgroundText,
@@ -14,8 +14,9 @@ const Instructors: React.FC<instructorsType> = ({
   return (
     <div className={styles.instructors}>
       <BackgroundText title={backgroundText} />
-      <StripH3
-        title={stripH3.title}
+      <StickerH3
+        titleStrip={stripH3.title}
+        title=""
         stripBgColor={stripH3.stripBgColor}
         stripTextColor={stripH3.stripTextColor}
       />

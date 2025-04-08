@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './whatsWaiting4You.module.scss';
-import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import NemoSkierImg from '@/public/assets/customLogos/nemo-skier.svg';
 
 export interface WhatsWaiting4YouPropsType {

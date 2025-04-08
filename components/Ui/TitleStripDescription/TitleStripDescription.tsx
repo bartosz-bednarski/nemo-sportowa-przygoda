@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './titleStripDescription.module.scss';
 import {customColors} from '@/types/UI/colors';
-import StripH4 from '../Strips/StripH4/StripH4';
+import StickerH4 from '../Headers/Stickers/StickerH4/StickerH4';
 
 const TitleStripDescription: React.FC<{
   title: string;
@@ -12,9 +12,9 @@ const TitleStripDescription: React.FC<{
 }> = ({title, stripBgColor, stripTextColor, description}) => {
   return (
     <div className={styles.titleStripDescription}>
-      <StripH4
-        type="h4"
-        title={title}
+      <StickerH4
+        titleStrip={title}
+        title=""
         stripTextColor={stripTextColor}
         stripBgColor={stripBgColor}
       />

@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import styles from './schedule.module.scss';
-import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
 import ScheduleImg from '@/public/assets/winter/schedule.svg';
+import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 
 export interface SchedulePropsType {
   title: string;
@@ -18,9 +18,9 @@ const Schedule: React.FC<{schedule: SchedulePropsType}> = ({schedule}) => {
     <div className={styles.schedule}>
       <div className={styles.rowBox}>
         <div className={styles.content}>
-          <StripH2
-            type="h2"
-            title={schedule.title}
+          <StickerH2
+            titleStrip={schedule.title}
+            title=""
             stripTextColor="white"
             stripBgColor="darkBlue"
           />
