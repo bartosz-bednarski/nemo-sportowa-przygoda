@@ -1,7 +1,7 @@
-/** @type {import('next').NextConfig} */
-
+// /** @type {import('next').NextConfig} */
+import type {NextConfig} from 'next';
 //STATIC EXPORT
-const nextConfig = {
+const nextConfig:NextConfig = {
   distDir: 'out',
   // output: 'export',
   // reactStrictMode: true,
