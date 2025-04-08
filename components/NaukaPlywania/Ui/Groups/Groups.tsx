@@ -15,8 +15,8 @@ const Groups = ({stripH2, groups}: GroupsPropsType) => {
   return (
     <div className={styles.groups}>
       <StickerH2
-        titleStrip={stripH2.title}
-        title=""
+        titleStrip={stripH2.titleStrip}
+        title={stripH2.title}
         stripBgColor={stripH2.stripBgColor}
         stripTextColor={stripH2.stripTextColor}
       />

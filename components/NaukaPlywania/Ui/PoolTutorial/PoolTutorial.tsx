@@ -26,8 +26,8 @@ const PoolTutorial: React.FC<{poolTutorial: PoolTutorialPropsType}> = ({
     >
       {poolTutorial.header && poolTutorial.stripH4 !== undefined && (
         <StickerH4
-          title=""
-          titleStrip={poolTutorial.stripH4.title}
+          title={poolTutorial.stripH4.title}
+          titleStrip={poolTutorial.stripH4.titleStrip}
           stripBgColor={poolTutorial.stripH4.stripBgColor}
           stripTextColor={poolTutorial.stripH4.stripTextColor}
         />

@@ -26,7 +26,6 @@ const StickerH2 = ({
   const titleStyles = {
     color: COLORS[titleColor !== undefined ? titleColor : 'white'],
   };
-
   return (
     <h2 className={styles.box}>
       <span className={styles.h2Title} style={titleStyles}>

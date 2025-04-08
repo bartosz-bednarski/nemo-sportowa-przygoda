@@ -19,8 +19,8 @@ const Pools = ({stripH3, backgroundText, swimmingPools}: PoolsPropsType) => {
   return (
     <div className={styles.pools}>
       <StickerH3
-        titleStrip={stripH3.title}
-        title=""
+        titleStrip={stripH3.titleStrip}
+        title={stripH3.title}
         stripTextColor={stripH3.stripTextColor}
         stripBgColor={stripH3.stripBgColor}
       />
