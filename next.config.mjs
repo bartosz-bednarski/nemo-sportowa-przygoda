@@ -2,7 +2,8 @@
 
 //STATIC EXPORT
 const nextConfig = {
-  output: 'export',
+  distDir: 'out',
+  // output: 'export',
   // reactStrictMode: true,
   // swcMinify: true, // Ustawienie na true
 };
