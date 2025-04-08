@@ -1,0 +1,88 @@
+@use '../../../styles/mixin.scss' as mixin;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+.onLoadImg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: top;
+}
+.imageBox,
+.imageBoxCol23 {
+  display: flex;
+  position: relative;
+  width: 32.5%;
+  height: 100vh;
+  align-items: flex-end;
+  @include mixin.phone900px {
+    width: 100%;
+  }
+  video,
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+.imageBoxCol23 {
+  @include mixin.phone900px {
+    display: none;
+  }
+}
+.stickerBox {
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+  left: 16%;
+  @include mixin.pc1450px {
+    left: 2%;
+  }
+  @include mixin.phone900px {
+    display: none;
+  }
+}
+.mobileSticker {
+  position: absolute;
+  z-index: 3;
+  left: 10%;
+  top: 30%;
+  display: none;
+  @include mixin.phone900px {
+    display: flex;
+  }
+}
+.oneStickerBox {
+  position: absolute;
+  z-index: 3;
+  left: 20%;
+  bottom: 20%;
+  @include mixin.phone700px {
+    left: 5%;
+    bottom: 30%;
+  }
+  @include mixin.phone700px {
+    left: 5%;
+  }
+  @include mixin.phone500px {
+    left: 10%;
+  }
+}
+.opacityCover {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

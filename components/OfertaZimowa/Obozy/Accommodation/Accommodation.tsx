@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
 import styles from './accommodation.module.scss';
-import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
 import Link from 'next/link';
 import AccommodationImg from '@/public/assets/winter/zakwaterowanie/accommodation-basic.svg';
+import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 
 export interface AccommodationPropsType {
   about: string;
@@ -19,9 +19,9 @@ const Accommodation: React.FC<{
     <div className={styles.accommodation}>
       <div className={styles.rowBox}>
         <div className={styles.content}>
-          <StripH2
-            type="h2"
-            title="ZAKWATEROWANIE"
+          <StickerH2
+            titleStrip="ZAKWATEROWANIE"
+            title=""
             stripTextColor="white"
             stripBgColor="darkBlue"
           />

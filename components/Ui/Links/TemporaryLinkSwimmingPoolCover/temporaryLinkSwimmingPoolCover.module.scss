@@ -22,13 +22,13 @@
         opacity: 1;
       }
     }
-    .h3Box img {
+    .h4Box img {
       width: 80%;
       @include mixin.pc1100px {
         scale: 1.1;
       }
     }
-    .h3Box h3 {
+    .h4Box h4 {
       color: $darkBlue;
     }
   }
@@ -82,7 +82,7 @@
     height: 100%;
   }
 }
-.h3Box {
+.h4Box {
   position: relative;
   height: 100px;
   width: 100%;
@@ -101,7 +101,7 @@
       top: 5%;
     }
   }
-  h3 {
+  h4 {
     position: relative;
     z-index: 1;
     margin: 0;
@@ -122,7 +122,7 @@
     width: 300px;
     height: 300px;
     &:hover {
-      .swimmingPoolCover__h3-box h3 {
+      .swimmingPoolCover__h4-box h4 {
         color: white;
       }
     }
@@ -134,7 +134,7 @@
       width: 300px;
     }
   }
-  .swimmingPoolCover__h3-box svg {
+  .swimmingPoolCover__h4-box svg {
     display: none;
   }
 }

@@ -1,11 +1,14 @@
 import styles from '../page.module.scss';
-import VideosSection from '@/components/Globals/VideosSection';
+import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import {NAUKA_PLYWANIA} from '@/utils/NaukaPlywania/NaukaPlywania';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
 import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';
 import NaukaPlywania from '@/components/NaukaPlywania/NaukaPlywaniaPage/NaukaPlywania';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
+import Image1 from '@/public/assets/videos/pool-mix-5.webp';
+import Image2 from '@/public/assets/videos/pool-mix-3.webp';
+import Image3 from '@/public/assets/videos/pool-mix-1.webp';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania - KRAKÓW|KORZENNA|GORLICE',
@@ -27,7 +30,11 @@ const NaukaPlywaniaPage = () => {
         oneSticker={false}
         scrapColor="lightBlue"
         col1={{
-          video: {src: 'pool-mix-5.mp4', alt: 'nauka pływania niemowlaki'},
+          video: {
+            src: 'pool-mix-5.mp4',
+            alt: 'nauka pływania niemowlaki',
+            image: Image1,
+          },
           stickerH2: {
             title: 'MAŁE',
             titleStrip: 'BOMBELKI',
@@ -39,6 +46,7 @@ const NaukaPlywaniaPage = () => {
           video: {
             src: 'pool-mix-3.mp4',
             alt: 'nauka pływania dzieci i mlodzież',
+            image: Image2,
           },
           stickerH2: {
             title: 'ŚREDNIE',
@@ -48,7 +56,11 @@ const NaukaPlywaniaPage = () => {
           },
         }}
         col3={{
-          video: {src: 'pool-mix-1.mp4', alt: 'nauka pływania dorośli'},
+          video: {
+            src: 'pool-mix-1.mp4',
+            alt: 'nauka pływania dorośli',
+            image: Image3,
+          },
           stickerH2: {
             title: 'DUŻE',
             titleStrip: 'BOMBELKI',

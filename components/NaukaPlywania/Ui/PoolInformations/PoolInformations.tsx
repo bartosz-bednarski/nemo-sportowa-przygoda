@@ -4,7 +4,7 @@ import styles from './poolInformations.module.scss';
 import {COLORS} from '@/utils/UI/colors';
 import StickerH2, {
   StickerH2PropsType,
-} from '@/components/Ui/Stickers/StickerH2/StickerH2';
+} from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import PoolIcon from '@/public/assets/ui/Icons/basen.svg';
 import MenCloackRoomIcon from '@/public/assets/ui/Icons/szatnia_meska.svg';
 import WomenCloackRoomIcon from '@/public/assets/ui/Icons/szatnia_damska.svg';

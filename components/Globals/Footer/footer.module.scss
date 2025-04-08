@@ -8,9 +8,8 @@
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
-  padding: 4rem 3rem;
+  padding: 2rem 3rem;
   background-color: colors.$darkBlue;
-  border-top: 2px solid colors.$basicWhite;
   z-index: 3;
   @include mixin.pc1450px {
     padding: 2rem 1rem;

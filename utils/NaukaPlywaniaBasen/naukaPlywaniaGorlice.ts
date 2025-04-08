@@ -228,8 +228,8 @@ export const NAUKA_PLYWANIA_GORLICE: NaukaPlywaniaBasen = {
 
     groups: {
       stripH2: {
-        type: 'h2',
-        title: 'ZAJĘCIA',
+        title: '',
+        titleStrip: 'ZAJĘCIA',
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },
@@ -266,8 +266,8 @@ export const NAUKA_PLYWANIA_GORLICE: NaukaPlywaniaBasen = {
 
     groups: {
       stripH2: {
-        type: 'h2',
-        title: 'GRUPY',
+        title: '',
+        titleStrip: 'GRUPY',
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },
@@ -305,8 +305,8 @@ export const NAUKA_PLYWANIA_GORLICE: NaukaPlywaniaBasen = {
 
     groups: {
       stripH2: {
-        type: 'h2',
-        title: 'GRUPY',
+        title: '',
+        titleStrip: 'GRUPY',
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },

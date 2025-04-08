@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import styles from './localization.module.scss';
-import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
 import LocalizationImg from '@/public/assets/winter/zakwaterowanie/accommodation-basic.svg';
+import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 
 export interface LocalizationPropsType {
   localizationDescription: string[];
@@ -14,9 +14,9 @@ const Localization: React.FC<{localization: LocalizationPropsType}> = ({
   return (
     <div className={styles.localization}>
       <div className={styles.content}>
-        <StripH2
-          type="h2"
-          title="LOKALIZACJA"
+        <StickerH2
+          titleStrip="LOKALIZACJA"
+          title=""
           stripTextColor="white"
           stripBgColor="darkBlue"
         />

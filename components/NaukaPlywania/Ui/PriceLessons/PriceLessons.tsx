@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './priceLessons.module.scss';
 import StickerH4, {
   StickerH4PropsType,
-} from '@/components/Ui/Stickers/StickerH4/StickerH4';
+} from '@/components/Ui/Headers/Stickers/StickerH4/StickerH4';
 import SingInButton from '@/components/Ui/Buttons/SignInButton';
 import {signInButtonType} from '@/types/UI/buttons';
 

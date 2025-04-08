@@ -1,5 +1,5 @@
 import styles from '../page.module.scss';
-import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import Link from 'next/link';
 import {Metadata} from 'next';
 import PoolsStatuesImg from '@/public/assets/statues/pools.webp';

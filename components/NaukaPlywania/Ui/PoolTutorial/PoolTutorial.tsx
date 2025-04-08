@@ -3,14 +3,14 @@ import React from 'react';
 import styles from './poolTutorial.module.scss';
 import BackgroundText from '@/components/Ui/BackgroundText/BackgroundText';
 import {COLORS} from '@/utils/UI/colors';
-import StripH4, {
-  StripH4PropsType,
-} from '@/components/Ui/Strips/StripH4/StripH4';
 import {customColors} from '@/types/UI/colors';
+import StickerH4, {
+  StickerH4PropsType,
+} from '@/components/Ui/Headers/Stickers/StickerH4/StickerH4';
 
 export type PoolTutorialPropsType = {
   header: boolean;
-  stripH4?: StripH4PropsType;
+  stripH4?: StickerH4PropsType;
   color: customColors;
   firstRule: string;
   rules: string[];
@@ -25,9 +25,9 @@ const PoolTutorial: React.FC<{poolTutorial: PoolTutorialPropsType}> = ({
       style={{background: COLORS[poolTutorial.color]}}
     >
       {poolTutorial.header && poolTutorial.stripH4 !== undefined && (
-        <StripH4
-          type="h4"
+        <StickerH4
           title={poolTutorial.stripH4.title}
+          titleStrip={poolTutorial.stripH4.titleStrip}
           stripBgColor={poolTutorial.stripH4.stripBgColor}
           stripTextColor={poolTutorial.stripH4.stripTextColor}
         />

@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './about.module.scss';
 import StickerH2, {
   StickerH2PropsType,
-} from '@/components/Ui/Stickers/StickerH2/StickerH2';
+} from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
 import {COLORS} from '@/utils/UI/colors';
 

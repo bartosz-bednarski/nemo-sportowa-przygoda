@@ -1,9 +1,12 @@
-import VideosSection from '@/components/Globals/VideosSection';
+import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import styles from './page.module.scss';
 import SwimmingSection from '@/components/HomePage/Swimming/SwimmingSection';
 import CampsSection from '@/components/HomePage/Camps/CampsSection';
 import SignInPopupSwimming from '@/components/Ui/SignInPopup/SignInPopupSwimming';
 import {Metadata} from 'next';
+import Image1 from '@/public/assets/videos/pool-mix-1.webp';
+import Image2 from '@/public/assets/videos/winter-mix-1.webp';
+import Image3 from '@/public/assets/videos/summer-mix-1.webp';
 // import TrainersSection from "@/components/HomePage/Trainers/TrainersSection";
 // import colors from "../styles/fonts.module.scss";
 export const metadata: Metadata = {
@@ -31,7 +34,7 @@ export default function Home() {
         oneSticker={false}
         scrapColor="mediumBlue"
         col1={{
-          video: {src: 'pool-mix-1.mp4', alt: 'nauka pływania'},
+          video: {src: 'pool-mix-1.mp4', alt: 'nauka pływania', image: Image1},
           stickerH2: {
             title: 'NAUKA',
             titleStrip: 'PŁYWANIA',
@@ -43,6 +46,7 @@ export default function Home() {
           video: {
             src: 'winter-mix-1.mp4',
             alt: 'obozy i półkolonie',
+            image: Image2,
           },
           stickerH2: {
             title: 'OBOZY',
@@ -52,7 +56,11 @@ export default function Home() {
           },
         }}
         col3={{
-          video: {src: 'summer-mix-1.mp4', alt: 'oferty specjalne'},
+          video: {
+            src: 'summer-mix-1.mp4',
+            alt: 'oferty specjalne',
+            image: Image3,
+          },
           stickerH2: {
             title: 'OFERTY',
             titleStrip: 'SPECJALNE',

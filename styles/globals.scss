@@ -1,5 +1,7 @@
+@use 'mixin.scss' as mixin;
 @import 'colors.scss';
 @import 'fonts.scss';
+
 html {
   font-family: 'Inter-VariableFont_opsz', sans-serif;
   font-weight: 500;
@@ -12,7 +14,20 @@ body {
   background-color: $mediumBlue;
 }
 p {
-  line-height: 1.4rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6rem;
+  font-size: 1rem;
+  font-family: 'RobotoFlex';
+  font-weight: 400;
+  @include mixin.pc1250px {
+    line-height: 1.4rem;
+    font-size: 1rem;
+  }
+  @include mixin.phone800px {
+    line-height: 1.1rem;
+    font-size: 0.7rem;
+  }
 }
 a,
 a:visited,
@@ -26,4 +41,79 @@ h2,
 h3,
 h4 {
   font-family: 'poppins-700';
+  margin: 0;
+  padding: 0;
+}
+ul {
+  font-weight: 400 !important;
+  font-family: 'Roboto' !important;
+  li {
+    line-height: 1.4rem !important;
+    font-weight: 400 !important;
+    font-family: 'Roboto' !important;
+    font-size: 1rem !important;
+    @include mixin.phone800px {
+      line-height: 1.1rem !important;
+      font-size: 0.7rem !important;
+    }
+  }
+}
+
+h1 {
+  font-size: 3.8rem;
+  @include mixin.pc1250px {
+    font-size: 4rem;
+  }
+  @include mixin.phone800px {
+    font-size: 2.5rem;
+  }
+  @include mixin.phone500px {
+    font-size: 2rem;
+  }
+  @include mixin.phone350px {
+    font-size: 1.5rem;
+  }
+}
+h2 {
+  font-size: 2.6rem;
+  @include mixin.pc1600px {
+    font-size: 2rem;
+  }
+  @include mixin.pc1250px {
+    font-size: 1.7rem;
+  }
+  @include mixin.pc1000px {
+    font-size: 1.5rem;
+  }
+  @include mixin.phone900px {
+    font-size: 1rem;
+    text-align: center;
+  }
+  @include mixin.phone500px {
+    font-size: 1rem;
+  }
+}
+h3 {
+  font-size: 2.4rem;
+  @include mixin.pc1600px {
+    font-size: 1.8rem;
+  }
+  @include mixin.pc1250px {
+    font-size: 1.6rem;
+  }
+  @include mixin.pc1000px {
+    font-size: 1.3rem;
+  }
+  @include mixin.phone500px {
+    font-size: 1.2rem;
+  }
+}
+h4 {
+  font-size: 1.4rem;
+  @include mixin.pc1600px {
+    font-size: 1.3rem;
+  }
+  @include mixin.pc1250px {
+    font-size: 1rem;
+  }
 }
