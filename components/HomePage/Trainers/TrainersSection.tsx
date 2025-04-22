@@ -7,7 +7,7 @@ import InstructorBubble from '@/components/Globals/InstructorBubble/InstructorBu
 import LinkButton from '@/components/Ui/Buttons/LinkButton';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {COLORS} from '@/utils/UI/colors';
-import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 const TrainersSection: React.FC = () => {
   return (
     <section className={styles.trainers}>

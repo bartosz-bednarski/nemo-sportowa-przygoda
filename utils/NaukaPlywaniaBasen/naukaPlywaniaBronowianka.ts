@@ -4,7 +4,7 @@ import {NAUKA_PLYWANIA} from '../NaukaPlywania/NaukaPlywania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
-import {StickerH2PropsType} from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import {StickerH2PropsType} from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 
 type NaukaPlywaniaBasen = {
@@ -109,8 +109,8 @@ export const NAUKA_PLYWANIA_BRONOWIANKA: NaukaPlywaniaBasen = {
 
     groups: {
       stripH2: {
-        type: 'h2',
-        title: 'ZAJĘCIA',
+        title: '',
+        titleStrip: 'ZAJĘCIA',
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },

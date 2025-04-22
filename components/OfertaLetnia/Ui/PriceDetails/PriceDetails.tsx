@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './priceDetails.module.scss';
-import StickerH2 from '@/components/Ui/Stickers/StickerH2/StickerH2';
+import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import NemoHeisenbergLogo from '@/public/assets/customLogos/nemo-heisenberg.svg';
 
 export interface PriceDetailsPropsType {

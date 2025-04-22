@@ -1,4 +1,4 @@
-import VideosSection from '@/components/Globals/VideosSection';
+import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import styles from '../page.module.scss';
 import AboutCamps from '@/components/Globals/AboutCamps/AboutCamps';
 import ScrapWinter from '@/components/Ui/Scrap/ScrapWinter';
@@ -10,6 +10,9 @@ import {POLKOLONIE_LISTA_2025} from '@/utils/Winter/Polkolonie';
 import {OBOZY_LISTA_2025} from '@/utils/Winter/Obozy';
 import {WEEKEND_NA_STOKU_LISTA_2025} from '@/utils/Winter/WeekendoweNarty';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
+import Image1 from '@/public/assets/videos/winter-mix-1.webp';
+import Image2 from '@/public/assets/videos/winter-mix-2.webp';
+import Image3 from '@/public/assets/videos/winter-mix-3.webp';
 
 export const metadata: Metadata = {
   title: 'Oferta ZIMOWA',
@@ -38,7 +41,11 @@ const OfertaZimowaPage = () => {
           stripTextColor: 'darkBlue',
         }}
         col1={{
-          video: {src: 'winter-mix-1.mp4', alt: 'weekendowe narty'},
+          video: {
+            src: 'winter-mix-1.mp4',
+            alt: 'weekendowe narty',
+            image: Image1,
+          },
           stickerH2: {
             title: 'WYJAZDY',
             titleStrip: 'NARCIARSKIE',
@@ -47,7 +54,11 @@ const OfertaZimowaPage = () => {
           },
         }}
         col2={{
-          video: {src: 'winter-mix-2.mp4', alt: 'polkolonie zimowe'},
+          video: {
+            src: 'winter-mix-2.mp4',
+            alt: 'polkolonie zimowe',
+            image: Image2,
+          },
           stickerH2: {
             title: 'PÓŁKOLONIE',
             titleStrip: 'ZIMOWE',
@@ -59,6 +70,7 @@ const OfertaZimowaPage = () => {
           video: {
             src: 'winter-mix-3.mp4',
             alt: 'obozy narciarskie',
+            image: Image3,
           },
           stickerH2: {
             title: 'OBOZY',

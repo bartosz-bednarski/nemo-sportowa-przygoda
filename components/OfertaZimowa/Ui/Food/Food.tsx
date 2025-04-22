@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import styles from './food.module.scss';
-import StripH2 from '@/components/Ui/Strips/StripH2/StripH2';
 import NemoCookImg from '@/public/assets/customLogos/nemo-cook.svg';
+import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 
 export interface FoodPropsType {
   foodAbout: string;
@@ -13,9 +13,9 @@ const Food: React.FC<{food: FoodPropsType}> = ({food}) => {
   return (
     <div className={styles.food}>
       <div className={styles.content}>
-        <StripH2
-          type="h2"
-          title="WYŻYWIENIE"
+        <StickerH2
+          titleStrip="WYŻYWIENIE"
+          title=""
           stripTextColor="white"
           stripBgColor="darkBlue"
         />

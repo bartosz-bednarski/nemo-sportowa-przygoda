@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './lessonType.module.scss';
 import StickerH4, {
   StickerH4PropsType,
-} from '@/components/Ui/Stickers/StickerH4/StickerH4';
+} from '@/components/Ui/Headers/Stickers/StickerH4/StickerH4';
 import {COLORS} from '@/utils/UI/colors';
 import AboutTextPoppins, {
   AboutTextPoppinsPropsType,

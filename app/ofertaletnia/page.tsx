@@ -1,6 +1,6 @@
 import AboutCamps from '@/components/Globals/AboutCamps/AboutCamps';
 import styles from '../page.module.scss';
-import VideosSection from '@/components/Globals/VideosSection';
+import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import SignInCamps from '@/components/Globals/SignInCamps/SignInCamps';
 // import { POLKOLONIE_LATO_COVERS } from "@/utils/Summer/Polkolonie";
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
@@ -10,6 +10,9 @@ import {COLORS} from '@/utils/UI/colors';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import {POLKOLONIE_LISTA_2025} from '@/utils/Summer/Polkolonie';
 import {OBOZY_LISTA_2025} from '@/utils/Summer/Obozy';
+import Image1 from '@/public/assets/videos/summer-mix-1.webp';
+import Image2 from '@/public/assets/videos/summer-mix-2.webp';
+import Image3 from '@/public/assets/videos/summer-mix-3.webp';
 
 export const metadata: Metadata = {
   title: 'Oferta LETNIA',
@@ -37,7 +40,11 @@ const OfertaLetniaPage = () => {
           stripTextColor: 'white',
         }}
         col1={{
-          video: {src: 'summer-mix-1.mp4', alt: 'nauka pływania niemowlaki'},
+          video: {
+            src: 'summer-mix-1.mp4',
+            alt: 'nauka pływania niemowlaki',
+            image: Image1,
+          },
           stickerH2: {
             title: 'MAŁE',
             titleStrip: 'BOMBELKI',
@@ -49,6 +56,7 @@ const OfertaLetniaPage = () => {
           video: {
             src: 'summer-mix-2.mp4',
             alt: 'nauka pływania dzieci i mlodzież',
+            image: Image2,
           },
           stickerH2: {
             title: 'ŚREDNIE',
@@ -58,7 +66,11 @@ const OfertaLetniaPage = () => {
           },
         }}
         col3={{
-          video: {src: 'summer-mix-3.mp4', alt: 'nauka pływania dorośli'},
+          video: {
+            src: 'summer-mix-3.mp4',
+            alt: 'nauka pływania dorośli',
+            image: Image3,
+          },
           stickerH2: {
             title: 'DUŻE',
             titleStrip: 'BOMBELKI',

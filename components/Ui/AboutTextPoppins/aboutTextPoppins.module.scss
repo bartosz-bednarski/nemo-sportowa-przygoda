@@ -4,11 +4,12 @@
 .box {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  font-family: 'Poppins-400';
+  width: 80%;
   z-index: 3;
+  gap: 1rem;
   @include mixin.phone900px {
     align-items: center !important;
+    width: 100%;
   }
   @include mixin.phone800px {
     text-align: center;
@@ -36,13 +37,7 @@
   }
 }
 .paragraph {
-  @include mixin.pc1000px {
-    font-size: 1rem;
-  }
   @include mixin.phone900px {
     text-align: center !important;
-  }
-  @include mixin.phone500px {
-    line-height: 1.2rem;
   }
 }

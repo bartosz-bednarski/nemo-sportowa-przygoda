@@ -184,8 +184,8 @@ export const NAUKA_PLYWANIA_PLYWACZEK: NaukaPlywaniaBasen = {
 
     groups: {
       stripH2: {
-        type: 'h2',
-        title: 'GRUPY',
+        title: '',
+        titleStrip: 'GRUPY',
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },
@@ -224,8 +224,8 @@ export const NAUKA_PLYWANIA_PLYWACZEK: NaukaPlywaniaBasen = {
 
     groups: {
       stripH2: {
-        type: 'h2',
-        title: 'GRUPY',
+        title: '',
+        titleStrip: 'GRUPY',
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },

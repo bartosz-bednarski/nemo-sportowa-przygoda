@@ -1,5 +1,5 @@
 import styles from '../../page.module.scss';
-import VideosSection from '@/components/Globals/VideosSection';
+import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
 import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
@@ -16,6 +16,9 @@ import {
   BASEN_CHELMIEC_TUTORIAL,
   NAUKA_PLYWANIA_CHELMIEC,
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaChelmiec';
+import Image1 from '@/public/assets/videos/pool-mix-2.webp';
+import Image2 from '@/public/assets/videos/pool-mix-5.webp';
+import Image3 from '@/public/assets/videos/pool-mix-3.webp';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania CHEŁMIEC',
@@ -46,7 +49,11 @@ const NaukaPlywaniaChelmiec = () => {
         }}
         scrapColor="lightBlue"
         col1={{
-          video: {src: 'pool-mix-2.mp4', alt: 'nauka pływania niemowlaki'},
+          video: {
+            src: 'pool-mix-2.mp4',
+            alt: 'nauka pływania niemowlaki',
+            image: Image1,
+          },
           stickerH2: {
             title: 'MAŁE',
             titleStrip: 'BOMBELKI',
@@ -58,6 +65,7 @@ const NaukaPlywaniaChelmiec = () => {
           video: {
             src: 'pool-mix-5.mp4',
             alt: 'nauka pływania dzieci i mlodzież',
+            image: Image2,
           },
           stickerH2: {
             title: 'ŚREDNIE',
@@ -67,7 +75,11 @@ const NaukaPlywaniaChelmiec = () => {
           },
         }}
         col3={{
-          video: {src: 'pool-mix-3.mp4', alt: 'nauka pływania dorośli'},
+          video: {
+            src: 'pool-mix-3.mp4',
+            alt: 'nauka pływania dorośli',
+            image: Image3,
+          },
           stickerH2: {
             title: 'DUŻE',
             titleStrip: 'BOMBELKI',

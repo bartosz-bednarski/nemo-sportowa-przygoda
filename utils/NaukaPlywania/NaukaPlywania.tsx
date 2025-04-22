@@ -59,7 +59,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     instructors: {
       backgroundText: 'KADRA',
       stripH3: {
-        title: 'INSTRUKTORZY',
+        title: '',
+        titleStrip: 'INSTRUKTORZY',
         stripBgColor: 'white',
         stripTextColor: 'lightBlue',
       },
@@ -89,7 +90,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     },
     pools: {
       stripH3: {
-        title: 'LOKALIZACJE',
+        title: '',
+        titleStrip: 'LOKALIZACJE',
         stripBgColor: 'white',
         stripTextColor: 'lightBlue',
       },
@@ -119,8 +121,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     },
     groups: {
       stripH2: {
-        type: 'h2',
-        title: 'GRUPY',
+        title: '',
+        titleStrip: 'GRUPY',
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },
@@ -159,7 +161,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     instructors: {
       backgroundText: 'KADRA',
       stripH3: {
-        title: 'INSTRUKTORZY',
+        title: '',
+        titleStrip: 'INSTRUKTORZY',
         stripBgColor: 'white',
         stripTextColor: 'mediumBlue',
       },
@@ -189,7 +192,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     },
     pools: {
       stripH3: {
-        title: 'LOKALIZACJE',
+        title: '',
+        titleStrip: 'LOKALIZACJE',
         stripBgColor: 'white',
         stripTextColor: 'mediumBlue',
       },
@@ -219,8 +223,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     },
     groups: {
       stripH2: {
-        type: 'h2',
-        title: 'GRUPY',
+        title: '',
+        titleStrip: 'GRUPY',
         stripBgColor: 'white',
         stripTextColor: 'mediumBlue',
       },
@@ -257,7 +261,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     instructors: {
       backgroundText: 'KADRA',
       stripH3: {
-        title: 'INSTRUKTORZY',
+        title: '',
+        titleStrip: 'INSTRUKTORZY',
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },
@@ -287,7 +292,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     },
     pools: {
       stripH3: {
-        title: 'LOKALIZACJE',
+        title: '',
+        titleStrip: 'LOKALIZACJE',
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },
@@ -317,8 +323,8 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
     },
     groups: {
       stripH2: {
-        type: 'h2',
-        title: 'GRUPY',
+        title: '',
+        titleStrip: 'GRUPY',
         stripBgColor: 'white',
         stripTextColor: 'darkBlue',
       },

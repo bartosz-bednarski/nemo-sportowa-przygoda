@@ -11,6 +11,14 @@
   background-color: rgb(0, 0, 0, 0.4);
   z-index: 12;
 }
+.header {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  @include mixin.pc1250px {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
 .contentBox {
   width: 1000px;
   height: 600px;
@@ -30,6 +38,12 @@
     height: auto;
     justify-content: center;
     padding-top: 2rem;
+  }
+  p {
+    @include mixin.pc1250px {
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+    }
   }
 }
 .columnFlex {
