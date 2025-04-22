@@ -16,7 +16,7 @@ const Contact: React.FC<{contact: ContactPropsType}> = ({contact}) => {
   return (
     <div className={styles.contact}>
       <div className={styles.box}>
-        <span className={styles.header}>{contact.title}</span>
+        <h3 className={styles.header}>{contact.title}</h3>
         {contact.website !== undefined && (
           <a href={contact.website} className={styles.text}>
             <img src={WebsiteIcon.src} alt="websiteIcon" />

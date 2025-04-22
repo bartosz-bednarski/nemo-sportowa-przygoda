@@ -5,13 +5,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem 4rem;
+  padding: 2rem;
   gap: 2rem;
-  @include mixin.phone700px {
-    padding: 2rem;
-  }
-  @include mixin.phone500px {
-    padding: 2rem 1rem;
+  @include mixin.phone800px {
+    padding: 1rem;
   }
   .rowBox {
     display: flex;
@@ -19,11 +16,9 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    @include mixin.phone700px {
-      flex-direction: column;
-    }
-    @include mixin.phone500px {
+    @include mixin.phone800px {
       width: 100%;
+      flex-direction: column;
     }
   }
   .infoBox {
@@ -31,33 +26,32 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    width: 100%;
+    width: 70%;
     align-items: center;
     justify-content: center;
     border: 3px solid #493a2d;
     border-radius: 20px;
     gap: 0.5rem;
-    @include mixin.phone700px {
+    @include mixin.phone800px {
       padding: 1rem;
+      width: 100%;
     }
   }
   .header {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: colors.$basicOrange;
     font-family: 'poppins-700';
-    @include mixin.phone700px {
-      font-size: 1.4rem;
-    }
-    @include mixin.phone500px {
+    @include mixin.pc1000px {
       font-size: 1.2rem;
+    }
+    @include mixin.phone800px {
+      font-size: 1rem;
     }
   }
   .text {
     text-align: center;
     color: colors.$basicWhite;
-    font-family: 'poppins-500';
-    font-size: 1rem;
     @include mixin.phone500px {
       font-size: 0.7rem;
     }
@@ -108,7 +102,7 @@
   .label {
     text-align: center;
     color: colors.$basicOrange;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: 'poppins-700';
     @include mixin.phone700px {
       font-size: 1.3rem;
@@ -120,10 +114,10 @@
   .content {
     text-align: center;
     color: colors.$basicGreen;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'poppins-700';
     @include mixin.phone700px {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
     @include mixin.phone500px {
       font-size: 0.9rem;
@@ -132,14 +126,14 @@
   .promoPrice {
     text-align: center;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'poppins-700';
     background-color: colors.$basicOrange;
     border-radius: 50px;
     width: 100%;
     padding: 0.5rem;
     @include mixin.phone700px {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
     @include mixin.phone500px {
       font-size: 0.9rem;
@@ -148,10 +142,10 @@
   .promoInfo {
     text-align: center;
     color: colors.$basicOrange;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'poppins-700';
     @include mixin.phone700px {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
     @include mixin.phone500px {
       font-size: 0.9rem;

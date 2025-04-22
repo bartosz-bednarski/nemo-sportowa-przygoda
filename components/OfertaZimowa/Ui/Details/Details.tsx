@@ -40,8 +40,8 @@ const Details: React.FC<{details: DetailsPropsType}> = ({details}) => {
         />
       </div>
       <div className={styles.infoBox}>
-        <span className={styles.header}>{details.aboutTitle}</span>
-        <span className={styles.text}>{details.aboutDescription}</span>
+        <h3 className={styles.header}>{details.aboutTitle}</h3>
+        <p className={styles.text}>{details.aboutDescription}</p>
       </div>
       {details.about2Title !== undefined && (
         <div className={styles.infoBox}>

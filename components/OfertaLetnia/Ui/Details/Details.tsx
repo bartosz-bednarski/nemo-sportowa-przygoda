@@ -57,8 +57,8 @@ const Details = ({
         />
       </div>
       <div className={styles.infoBox}>
-        <span className={styles.header}>{about.title}</span>
-        <span className={styles.text}>{about.description}</span>
+        <h3 className={styles.header}>{about.title}</h3>
+        <p className={styles.text}>{about.description}</p>
       </div>
       <div className={styles.infoBox}>
         <span className={styles.header}>{argumentsList.title}</span>
