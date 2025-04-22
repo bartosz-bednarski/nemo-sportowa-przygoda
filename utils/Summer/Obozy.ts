@@ -31,7 +31,7 @@ type ObozType = {
 
 export const OBOZY_LISTA_2025: ColonyLinkPropsType[] = [
   {
-    active: true,
+    active: false,
     title: 'OBÓZ ROWEROWY LEŚNA RYBA',
     price: '2749 PLN',
     localization: 'LEŚNA RYBA & STARA JEDLANKA',
