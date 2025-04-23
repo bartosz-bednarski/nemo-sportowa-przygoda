@@ -11,13 +11,13 @@
   border: 2px solid white;
   border-radius: 15px;
   justify-content: flex-start;
-  transition: all .5s;
-  &:hover{
+  transition: all 0.5s;
+  &:hover {
     cursor: pointer;
-.button{
-  color:colors.$white;
-  background-color: colors.$basicOrange;
-}
+    .button {
+      color: colors.$white;
+      background-color: colors.$basicOrange;
+    }
   }
   @include mixin.pc1250px {
     width: 100%;
@@ -41,12 +41,11 @@
       padding: 0.5rem;
     }
   }
-  h5{
+  h5 {
     background-color: colors.$white;
     color: colors.$basicOrange;
     text-align: center;
-    padding: .5rem;
-
+    padding: 0.5rem;
   }
   p {
     display: flex;
@@ -61,30 +60,30 @@
       height: 100%;
     }
   }
-  .button{
+  .button {
     box-sizing: border-box;
     display: flex;
     text-align: center;
     justify-content: center;
     border: none;
     font-family: 'poppins-500';
-    font-size: .9rem;
+    font-size: 0.9rem;
     border-top: 2px solid colors.$white;
-    color:colors.$white;
+    color: colors.$white;
     width: 100%;
-    padding: .4rem;
+    padding: 0.4rem;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    transition: all .5s;
+    transition: all 0.5s;
     @include mixin.phone500px {
-      font-size: .7rem;
+      font-size: 0.7rem;
     }
   }
-  ul{
+  ul {
     box-sizing: border-box;
-    list-style-type:none;
+    list-style-type: none;
     margin: 0;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -93,18 +92,18 @@
     background-color: colors.$white;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    transition: all .5s;
-    li{
-      transition: all .5s;
+    transition: all 0.5s;
+    li {
+      transition: all 0.5s;
       box-sizing: border-box;
       text-align: center;
-      font-size: .8rem!important;
+      font-size: 0.8rem !important;
       margin: 0;
       border-bottom: 1px solid colors.$basicOrange;
-      padding: .3rem .4rem;
+      padding: 0.3rem 0.4rem;
       width: 100%;
       color: colors.$mediumBlue;
-      margin-bottom: .1rem;
+      margin-bottom: 0.1rem;
       @include mixin.phone800px {
         line-height: 1.1rem !important;
         font-size: 0.7rem !important;
