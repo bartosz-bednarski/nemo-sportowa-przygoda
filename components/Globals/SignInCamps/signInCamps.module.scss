@@ -1,17 +1,15 @@
 @use '../../../styles/mixin.scss' as mixin;
+@use '../../../styles/colors.scss' as colors;
 @import '../../../styles/fonts.scss';
 .signInCamps {
   box-sizing: border-box;
-  padding: 4rem;
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   z-index: 2;
   gap: 2rem;
-  @include mixin.phone700px {
-    padding: 2rem;
-  }
-  @include mixin.phone500px {
-    padding: 2rem 1rem;
+  @include mixin.phone800px {
+    padding: 2rem 0;
   }
 }
 .headerBox {
@@ -20,14 +18,65 @@
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
+  padding-right: 2rem;
   @include mixin.phone800px {
-    flex-direction: column;
+    padding: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
+
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    width: 50%;
+    margin: 0;
+    padding: 2rem;
+
+    @include mixin.pc1250px {
+      font-size: 1.8rem;
+      width: 70%;
+    }
+    @include mixin.phone800px {
+      box-sizing: border-box;
+      background-position: right;
+      width: 80%;
+      font-size: 1.6rem;
+      text-align: center;
+      padding: 1rem;
+    }
+    @include mixin.phone700px {
+      background-color: colors.$basicWhite;
+      width: 100%;
+    }
+    @include mixin.phone500px {
+      font-size: 1.3rem;
+    }
+  }
+  .h2StripSummer {
+    background-image: url('../../../public/assets/ui/summer-strip-left-title.svg');
+    color: colors.$basicGreen;
+    @include mixin.phone700px {
+      background-color: colors.$basicWhite;
+    }
+  }
+  .h2StripWinter {
+    background-image: url('../../../public/assets/ui/winter-strip-left-title.svg');
+    color: colors.$basicWhite;
+    @include mixin.phone700px {
+      background-color: colors.$darkBlue;
+    }
   }
 }
 .logo {
   width: 20%;
   @include mixin.phone800px {
-    width: 70%;
+    display: none;
   }
   @include mixin.phone575px {
     width: 300px;
@@ -39,6 +88,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  padding: 1rem;
 }
 .waiting {
   text-align: center;

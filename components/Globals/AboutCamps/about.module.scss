@@ -1,102 +1,152 @@
 @use '../../../styles/mixin.scss' as mixin;
-.about {
+@use '../../../styles/colors.scss' as colors;
+
+.container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  padding: 4rem 0rem;
+  padding: 2rem 0;
   gap: 2rem;
-  @include mixin.phone700px {
-    padding: 2rem 0;
+  z-index: 2;
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
+
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    width: 50%;
+    margin: 0;
+    padding: 2rem;
+
+    @include mixin.pc1250px {
+      font-size: 1.8rem;
+      width: 70%;
+    }
+    @include mixin.phone700px {
+      box-sizing: border-box;
+      background-image: none;
+      width: 100%;
+      font-size: 1.6rem;
+      text-align: center;
+      padding: 1rem;
+    }
+    @include mixin.phone500px {
+      font-size: 1.3rem;
+    }
+  }
+  .h2StripSummer {
+    background-image: url('../../../public/assets/ui/summer-strip-left-title.svg');
+    color: colors.$basicGreen;
+    @include mixin.phone700px {
+      background-color: colors.$basicWhite;
+    }
+  }
+  .h2StripWinter {
+    background-image: url('../../../public/assets/ui/winter-strip-left-title.svg');
+    color: colors.$basicWhite;
+    @include mixin.phone700px {
+      background-color: colors.$darkBlue;
+    }
   }
 }
-
-.rowBoxLeft {
+.rowContainer {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  @include mixin.pc1450px {
+  @include mixin.pc1000px {
     flex-direction: column;
-  }
-  .columnBox {
-    @include mixin.pc1450px {
-      gap: 1rem;
-      align-self: flex-start;
-      width: 100%;
-    }
-  }
-  .image {
-    @include mixin.pc1450px {
-      align-self: flex-end;
-      width: 80%;
-    }
+    align-items: normal;
+    gap: 1rem;
   }
 }
 .columnBox {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 0 4rem;
+  gap: 1rem;
   width: 40%;
-  gap: 2rem;
+  @include mixin.pc1000px {
+    width: 85%;
+  }
   @include mixin.phone700px {
-    padding: 0 2rem;
+    width: 100%;
   }
 }
-
-.image {
-  z-index: 2;
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-}
-.rowBoxRight {
+.paragraphStrip {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  @include mixin.pc1450px {
-    flex-direction: column-reverse;
+  justify-content: center;
+  font-size: 1rem;
+
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 2rem;
+
+  @include mixin.pc1250px {
+    width: 100%;
+    font-size: 0.8rem;
   }
-  .columnBox {
-    @include mixin.pc1450px {
-      gap: 1rem;
-      align-self: flex-end;
-      width: 100%;
-      text-align: right;
-    }
+  @include mixin.phone700px {
+    box-sizing: border-box;
+    background-image: none;
+
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem;
   }
-  .image {
-    @include mixin.pc1450px {
-      align-self: flex-start;
-      width: 80%;
-    }
+  @include mixin.phone500px {
+    font-size: 0.7rem;
   }
 }
-// @media only screen and (max-width: 1400px) {
-//   .about__row-box-left {
-//     flex-direction: column;
-//   }
-//   .about__row-box-left__column {
-//     gap: 1rem;
-//     align-self: flex-start;
-//     width: 100%;
-//   }
-//   .about__row-box-left__picture {
-//     align-self: flex-end;
-//     width: 80%;
-//   }
-//   .about__row-box-right {
-//     flex-direction: column-reverse;
-//   }
-//   .about__row-box-right__column {
-//     gap: 1rem;
-//     align-self: flex-end;
-//     width: 100%;
-//     text-align: right;
-//   }
-//   .about__row-box-right__picture {
-//     align-self: flex-start;
-//     width: 80%;
-//   }
-// }
+.paragraphStripWhite {
+  background-image: url('../../../public/assets/ui/summer-strip-left-title.svg');
+  color: colors.$basicGreen;
+  @include mixin.phone700px {
+    background-color: colors.$basicWhite;
+  }
+}
+.paragraphStripBlue {
+  background-image: url('../../../public/assets/ui/winter-strip-left-title.svg');
+  color: colors.$basicWhite;
+  @include mixin.phone700px {
+    background-color: colors.$darkBlue;
+  }
+}
+.paragraphStripOrange {
+  color: colors.$basicWhite;
+  background-image: url('../../../public/assets/ui/orange-strip-left-title.svg');
+  @include mixin.phone700px {
+    background-color: colors.$darkOrange;
+  }
+}
+.image {
+  height: 100%;
+  width: auto;
+  max-width: 50%;
+  align-self: flex-end;
+  justify-self: center;
+  object-fit: cover;
+  object-position: left;
+  @include mixin.pc1000px {
+    width: 90%;
+    max-width: 90%;
+    height: 35vh;
+  }
+  @include mixin.phone700px {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    object-position: right;
+    align-self: center;
+    height: 50vh;
+  }
+}

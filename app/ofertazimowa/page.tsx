@@ -13,6 +13,9 @@ import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import Image1 from '@/public/assets/videos/winter-mix-1.webp';
 import Image2 from '@/public/assets/videos/winter-mix-2.webp';
 import Image3 from '@/public/assets/videos/winter-mix-3.webp';
+import AboutCampsImage1 from '@/public/assets/winter/winter-bg-1.webp';
+import AboutCampsImage2 from '@/public/assets/winter/winter-bg-1.webp';
+import AboutCampsImage3 from '@/public/assets/winter/winter-bg-3.webp';
 
 export const metadata: Metadata = {
   title: 'Oferta ZIMOWA',
@@ -81,21 +84,16 @@ const OfertaZimowaPage = () => {
         }}
       />
       <AboutCamps
-        stickerH2={{
-          title: 'PÓŁKOLONIE',
-          titleStrip: 'ZIMOWE',
-          stripBgColor: 'darkBlue',
-          stripTextColor: 'white',
-          titleColor: 'darkBlue',
-        }}
-        right={false}
-        aboutLeft="Udowadniamy, że zima to doskonały czas na aktywność! Dzieci
-poznają różnorodne sporty zimowe, takie jak łyżwiarstwo, narty czy zabawy na
-śniegu, a także uczą się, jak kreatywnie i zdrowo spędzać czas w chłodniejsze dni. Codziennie dzieci mają również zapewnione zdrowe i pożywne posiłki, które dodają im energii do kolejnych aktywności. Półkolonie to idealna okazja do spędzenia wakacji w sposób pełen przygód, zabawy i rozwoju, pod opieką doświadczonych wychowawców. Nasze półkolonie to nie tylko sport, ale również mnóstwo zabawy i przygód w
-zimowej scenerii!
-"
+        h2="PÓŁKOLONIE ZIMOWE"
+        section1About={[
+          'Udowadniamy, że zima to doskonały czas na aktywność! Dzieci poznają różnorodne sporty zimowe, takie jak łyżwiarstwo, narty czy zabawy na śniegu, a także uczą się, jak kreatywnie i zdrowo spędzać czas w chłodniejsze dni.',
+          'Codziennie dzieci mają również zapewnione zdrowe i pożywne posiłki, które dodają im energii do kolejnych aktywności. Półkolonie to idealna okazja do spędzenia wakacji w sposób pełen przygód, zabawy i rozwoju, pod opieką doświadczonych wychowawców.',
+          'Nasze półkolonie to nie tylko sport, ale również mnóstwo zabawy i przygód w zimowej scenerii!',
+        ]}
+        section2About={[]}
         theme="winter"
-        imgRight="winter-bg-1.webp"
+        section1Img={AboutCampsImage1}
+        section2Img={null}
       />
 
       <SignInCamps
@@ -106,24 +104,17 @@ zimowej scenerii!
       />
       <ScrapWinter bgColor="white" />
       <AboutCamps
-        stickerH2={{
-          title: 'OBOZY',
-          titleStrip: 'ZIMOWE',
-          stripBgColor: 'darkBlue',
-          stripTextColor: 'white',
-          titleColor: 'darkBlue',
-        }}
-        right={false}
-        aboutLeft="Zapraszamy na zimowe obozy
-
-pełne adrenaliny! Uczestnicy będą mieli okazję nauczyć się lub doskonalić
-umiejętności jazdy na nartach i snowboardzie pod okiem doświadczonych
-instruktorów. Zajęcia odbywają się na świetnie przygotowanych stokach, zapewniając
-niezapomniane wrażenia i mnóstwo frajdy. Oprócz sportu, nie zabraknie gier
-integracyjnych i zabaw na śniegu, a także wieczornych spotkań przy ognisku. Idealny
-sposób na aktywne ferie!"
+        h2="OBOZY ZIMOWE"
+        section1About={[
+          'Zapraszamy na zimowe obozy pełne adrenaliny!',
+          'Uczestnicy będą mieli okazję nauczyć się lub doskonalić umiejętności jazdy na nartach i snowboardzie pod okiem doświadczonych instruktorów.',
+          'Zajęcia odbywają się na świetnie przygotowanych stokach, zapewniając niezapomniane wrażenia i mnóstwo frajdy.',
+          'Oprócz sportu, nie zabraknie gier integracyjnych i zabaw na śniegu, a także wieczornych spotkań przy ognisku. Idealny sposób na aktywne ferie!',
+        ]}
+        section2About={[]}
         theme="winter"
-        imgRight="winter-bg-2.webp"
+        section1Img={AboutCampsImage2}
+        section2Img={null}
       />
 
       <SignInCamps
@@ -134,22 +125,18 @@ sposób na aktywne ferie!"
       />
       <CollabWinter />
       <AboutCamps
-        stickerH2={{
-          title: 'WEEKENDOWE',
-          titleStrip: 'NARTY',
-          stripBgColor: 'darkBlue',
-          stripTextColor: 'white',
-          titleColor: 'darkBlue',
-        }}
-        right={false}
-        aboutLeft="Udowadniamy, że zima to doskonały czas na aktywność! Dzieci
-poznają różnorodne sporty zimowe, takie jak łyżwiarstwo, narty czy zabawy na
-śniegu, a także uczą się, jak kreatywnie i zdrowo spędzać czas w chłodniejsze dni. Codziennie dzieci mają również zapewnione zdrowe i pożywne posiłki, które dodają im energii do kolejnych aktywności. Półkolonie to idealna okazja do spędzenia wakacji w sposób pełen przygód, zabawy i rozwoju, pod opieką doświadczonych wychowawców. Nasze półkolonie to nie tylko sport, ale również mnóstwo zabawy i przygód w
-zimowej scenerii!
-"
+        h2="WEEKENDOWE NARTY"
+        section1About={[
+          'Udowadniamy, że zima to doskonały czas na aktywność! Dzieci poznają różnorodne sporty zimowe, takie jak łyżwiarstwo, narty czy zabawy na śniegu, a także uczą się, jak kreatywnie i zdrowo spędzać czas w chłodniejsze dni.',
+          'Codziennie dzieci mają również zapewnione zdrowe i pożywne posiłki, które dodają im energii do kolejnych aktywności. Półkolonie to idealna okazja do spędzenia wakacji w sposób pełen przygód, zabawy i rozwoju, pod opieką doświadczonych wychowawców.',
+          'Nasze półkolonie to nie tylko sport, ale również mnóstwo zabawy i przygód w zimowej scenerii!',
+        ]}
+        section2About={[]}
         theme="winter"
-        imgRight="winter-bg-3.webp"
+        section1Img={AboutCampsImage3}
+        section2Img={null}
       />
+
       <SignInCamps
         theme="winter"
         waiting={false}
