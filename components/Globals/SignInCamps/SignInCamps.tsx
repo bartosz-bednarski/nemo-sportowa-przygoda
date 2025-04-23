@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import styles from './signInCamps.module.scss';
-import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import {COLORS} from '@/utils/UI/colors';
 import NemoSummerIcon from '@/public/assets/customLogos/nemo-podroznik.svg';
 import NemoWinterIcon from '@/public/assets/customLogos/nemo-skier.svg';
@@ -23,6 +22,9 @@ const SignInCamps = ({
   waitingTitle,
   activeCampsCoversList,
 }: SignInCampsPropsType) => {
+  const h2Styles =
+    theme === 'summer' ? styles.h2StripSummer : styles.h2StripWinter;
+
   if (theme === 'summer') {
     return (
       <div
@@ -32,13 +34,8 @@ const SignInCamps = ({
         }}
       >
         <div className={styles.headerBox}>
-          <StickerH2
-            title="AKTUALNE"
-            titleStrip="ZAPISY"
-            stripBgColor={'white'}
-            stripTextColor={'basicGreen'}
-            titleColor={'white'}
-          />
+          <h2 className={h2Styles}>AKTUALNE ZAPISY</h2>
+
           <img
             src={NemoSummerIcon.src}
             alt="nemoIcon"
@@ -74,13 +71,7 @@ const SignInCamps = ({
         }}
       >
         <div className={styles.headerBox}>
-          <StickerH2
-            title="AKTUALNE"
-            titleStrip="ZAPISY"
-            stripBgColor={'darkBlue'}
-            stripTextColor={'white'}
-            titleColor={'darkBlue'}
-          />
+          <h2 className={h2Styles}>AKTUALNE ZAPISY</h2>
           <img
             src={NemoWinterIcon.src}
             alt="nemoIcon"

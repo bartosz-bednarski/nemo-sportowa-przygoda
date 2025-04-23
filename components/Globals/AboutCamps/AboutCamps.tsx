@@ -1,100 +1,77 @@
 'use client';
 import React from 'react';
 import styles from './about.module.scss';
-import StickerH2, {
-  StickerH2PropsType,
-} from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
-import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
 import {COLORS} from '@/utils/UI/colors';
+import {StaticImageData} from 'next/image';
 
 export interface AboutCampsPropsType {
-  stickerH2: StickerH2PropsType;
-  aboutLeft: string;
-  right: boolean;
-  aboutRight1?: string;
-  aboutRight2?: string;
+  h2: string;
+  section1About: string[];
+  section2About: string[];
   theme: 'summer' | 'winter';
-  imgRight: string;
-  imgLeft?: string;
+  section1Img: StaticImageData;
+  section2Img: StaticImageData | null;
 }
 
 const AboutCamps = ({
-  stickerH2,
-  aboutLeft,
-  right,
-  aboutRight1,
-  aboutRight2,
+  h2,
+  section1About,
+  section2About,
   theme,
-  imgRight,
-  imgLeft,
+  section1Img,
+  section2Img,
 }: AboutCampsPropsType) => {
+  const h2Styles =
+    theme === 'summer' ? styles.h2StripSummer : styles.h2StripWinter;
+  const paragraphStyles =
+    theme === 'summer'
+      ? `${styles.paragraphStrip} ${styles.paragraphStripWhite}`
+      : `${styles.paragraphStrip} ${styles.paragraphStripBlue}`;
+  const paragraphOrangeStyles = `${styles.paragraphStrip} ${styles.paragraphStripOrange}`;
   return (
     <div
-      className={styles.about}
+      className={styles.container}
       style={{
         background: theme === 'summer' ? COLORS.basicGreen : COLORS.white,
       }}
     >
-      <div className={styles.rowBoxLeft}>
+      <h2 className={h2Styles}>{h2}</h2>
+      <div className={styles.rowContainer}>
         <div className={styles.columnBox}>
-          <StickerH2
-            title={stickerH2.title}
-            titleStrip={stickerH2.titleStrip}
-            stripBgColor={stickerH2.stripBgColor}
-            stripTextColor={stickerH2.stripTextColor}
-            titleColor={stickerH2.titleColor}
-          />
-          <AboutTextPoppins
-            title=""
-            titleColor={theme === 'summer' ? 'basicGreen' : 'darkBlue'}
-            description={aboutLeft}
-            descriptionColor={theme === 'summer' ? 'white' : 'darkBlue'}
-            alignItems="flex-start"
-            textAlign="left"
-          />
+          {section1About.map((paragraph, index) => (
+            <p
+              key={index}
+              className={index === 0 ? paragraphOrangeStyles : paragraphStyles}
+            >
+              {paragraph}
+            </p>
+          ))}
         </div>
         <img
+          src={section1Img.src}
           className={styles.image}
-          src={`/assets/${theme}/${imgRight}`}
-          width={960}
-          height={500}
-          alt="polkolonie letnie"
+          alt="oferta letnia 1"
         />
       </div>
-      {right && (
-        <div className={styles.rowBoxRight}>
-          <img
-            className={styles.image}
-            src={`/assets/${theme}/${imgLeft}`}
-            width={960}
-            height={500}
-            alt="polkolonie letnie"
-          />
-          <div className={styles.columnBox}>
-            {aboutRight1 && (
-              <AboutTextPoppins
-                title=""
-                titleColor={theme === 'summer' ? 'basicGreen' : 'darkBlue'}
-                description={aboutRight1}
-                descriptionColor={theme === 'summer' ? 'white' : 'darkBlue'}
-                alignItems="flex-start"
-                textAlign="left"
-              />
-            )}
-
-            {aboutRight2 && (
-              <AboutTextPoppins
-                title=""
-                titleColor={theme === 'summer' ? 'basicGreen' : 'darkBlue'}
-                description={aboutRight2}
-                descriptionColor={theme === 'summer' ? 'white' : 'darkBlue'}
-                alignItems="flex-start"
-                textAlign="left"
-              />
-            )}
-          </div>
+      <div className={styles.rowContainer}>
+        <div className={styles.columnBox}>
+          {section2About.map((paragraph, index) => (
+            <p
+              key={index}
+              className={index === 0 ? paragraphOrangeStyles : paragraphStyles}
+            >
+              {paragraph}
+            </p>
+          ))}
         </div>
-      )}
+        {section2Img && (
+          <img
+            src={section2Img.src}
+            className={styles.image}
+            alt="oferta letnia 2"
+          />
+        )}
+      </div>
     </div>
   );
 };

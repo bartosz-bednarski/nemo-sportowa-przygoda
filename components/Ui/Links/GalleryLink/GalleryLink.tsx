@@ -4,6 +4,7 @@ import styles from './galleryLink.module.scss';
 import Link from 'next/link';
 import {customColors} from '@/types/UI/colors';
 import {COLORS} from '@/utils/UI/colors';
+import ScrapLeft from '@/public/assets/ui/ScrapLeft/scrapLeftBasicOrange.svg';
 
 export interface GalleryLinkPropsType {
   href: string;
@@ -12,7 +13,7 @@ export interface GalleryLinkPropsType {
   textColor: customColors;
 }
 
-const GalleryLink = ({href, img, bgColor, textColor}: GalleryLinkPropsType) => {
+const GalleryLink = ({href, img, bgColor}: GalleryLinkPropsType) => {
   return (
     <Link
       href={href}
@@ -28,10 +29,18 @@ const GalleryLink = ({href, img, bgColor, textColor}: GalleryLinkPropsType) => {
         title="galeria"
         loading="lazy"
       />
-      <span className={styles.text} style={{color: COLORS[textColor]}}>
-        SPRAWDŹ NASZĄ
-        <br /> GALERIĘ
-      </span>
+      <div className={styles.textContainer}>
+        <span className={styles.textBox}>
+          <span className={styles.text}>SPRAWDŹ NASZĄ GALERIĘ</span>
+        </span>
+        <img
+          src={ScrapLeft.src}
+          alt="scrapOrange"
+          width={20}
+          height={101}
+          className={styles.scrapRight}
+        />
+      </div>
     </Link>
   );
 };

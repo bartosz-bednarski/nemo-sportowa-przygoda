@@ -2,7 +2,6 @@ import AboutCamps from '@/components/Globals/AboutCamps/AboutCamps';
 import styles from '../page.module.scss';
 import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import SignInCamps from '@/components/Globals/SignInCamps/SignInCamps';
-// import { POLKOLONIE_LATO_COVERS } from "@/utils/Summer/Polkolonie";
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import CollabSummer from '@/components/Summer/CollabSummer';
 import {Metadata} from 'next';
@@ -13,7 +12,9 @@ import {OBOZY_LISTA_2025} from '@/utils/Summer/Obozy';
 import Image1 from '@/public/assets/videos/summer-mix-1.webp';
 import Image2 from '@/public/assets/videos/summer-mix-2.webp';
 import Image3 from '@/public/assets/videos/summer-mix-3.webp';
-
+import AboutCampsImage1 from '@/public/assets/summer/summer-bg-1.webp';
+import AboutCampsImage2 from '@/public/assets/summer/summer-bg-2.webp';
+import AboutCampsImage3 from '@/public/assets/summer/summer-bg-2.webp';
 export const metadata: Metadata = {
   title: 'Oferta LETNIA',
   description:
@@ -80,19 +81,20 @@ const OfertaLetniaPage = () => {
         }}
       />
       <AboutCamps
-        stickerH2={{
-          title: 'PÓŁKOLONIE',
-          titleStrip: 'LETNIE',
-          stripBgColor: 'white',
-          stripTextColor: 'basicGreen',
-        }}
-        right={true}
-        aboutLeft="Półkolonie to tygodniowy program pełen atrakcji, podczas którego dzieci mają zapewnioną opiekę od godziny 8:00 do 16:00. Każdy dzień wypełniony jest aktywnymi zajęciami, które pozwalają na rozwój zarówno fizyczny, jak i kreatywny. Uczestnicy biorą udział w grach sportowych, warsztatach plastycznych, zajęciach muzycznych, a także zabawach integracyjnych, które sprzyjają nawiązywaniu nowych przyjaźni."
-        aboutRight1="Dzieci spędzają czas na świeżym powietrzu, uczestniczą w różnorodnych aktywnościach dostosowanych do ich wieku, a także odkrywają nowe zainteresowania. Podczas półkolonii organizowana jest również tematyczna wycieczka, która nawiązuje do przewodniego motywu całego turnusu. To doskonała okazja, by poprzez zabawę i aktywne zwiedzanie zgłębić ciekawe zagadnienia. Może to być np. wizyta w muzeum, parku przyrody lub wycieczka edukacyjna w terenie."
-        aboutRight2="Codziennie dzieci mają również zapewnione zdrowe i pożywne posiłki, które dodają im energii do kolejnych aktywności. Półkolonie to idealna okazja do spędzenia wakacji w sposób pełen przygód, zabawy i rozwoju, pod opieką doświadczonych wychowawców."
+        h2="PÓŁKOLONIE LETNIE"
+        section1About={[
+          'Półkolonie to tygodniowy program pełen atrakcji, podczas którego dzieci mają zapewnioną opiekę od godziny 8:00 do 16:00.',
+          'Każdy dzień wypełniony jest aktywnymi zajęciami, które pozwalają na rozwój zarówno fizyczny, jak i kreatywny.',
+          'Uczestnicy biorą udział w grach sportowych, warsztatach plastycznych, zajęciach muzycznych, a także zabawach integracyjnych, które sprzyjają nawiązywaniu nowych przyjaźni.',
+        ]}
+        section2About={[
+          'Dzieci spędzają czas na świeżym powietrzu, uczestniczą w różnorodnych aktywnościach dostosowanych do ich wieku, a także odkrywają nowe zainteresowania.',
+          'Podczas półkolonii organizowana jest również tematyczna wycieczka, która nawiązuje do przewodniego motywu całego turnusu. To doskonała okazja, by poprzez zabawę i aktywne zwiedzanie zgłębić ciekawe zagadnienia. Może to być np. wizyta w muzeum, parku przyrody lub wycieczka edukacyjna w terenie.',
+          'Codziennie dzieci mają również zapewnione zdrowe i pożywne posiłki, które dodają im energii do kolejnych aktywności. Półkolonie to idealna okazja do spędzenia wakacji w sposób pełen przygód, zabawy i rozwoju, pod opieką doświadczonych wychowawców.',
+        ]}
         theme="summer"
-        imgRight="summer-bg-1.webp"
-        imgLeft="summer-bg-2.webp"
+        section1Img={AboutCampsImage1}
+        section2Img={AboutCampsImage2}
       />
       <SignInCamps
         theme="summer"
@@ -101,17 +103,18 @@ const OfertaLetniaPage = () => {
         activeCampsCoversList={POLKOLONIE_LISTA_2025}
       />
       <AboutCamps
-        stickerH2={{
-          title: 'OBOZY',
-          titleStrip: 'LETNIE',
-          stripBgColor: 'white',
-          stripTextColor: 'basicGreen',
-        }}
-        right={false}
-        aboutLeft="Nasze obozy organizowane są we współpracy z zaprzyjaźnioną firmą Bom4Sport, która specjalizuje się w aktywnym wypoczynku dla dzieci i młodzieży. Oferujemy zarówno letnie obozy rowerowe, jak i zimowe obozy narciarskie oraz snowboardowe. Każdy program jest starannie przygotowany, aby uczestnicy nie tylko rozwijali swoje umiejętności sportowe, ale także spędzili czas w przyjaznej atmosferze, pełnej przygód i dobrej zabawy. Pod okiem doświadczonych instruktorów dzieci mają szansę na bezpieczną naukę oraz doskonalenie swoich umiejętności na rowerze, nartach lub snowboardzie."
+        h2="OBOZY LETNIE"
+        section1About={[
+          'Nasze obozy organizowane są we współpracy z zaprzyjaźnioną firmą Bom4Sport, która specjalizuje się w aktywnym wypoczynku dla dzieci i młodzieży.',
+          'Oferujemy zarówno letnie obozy rowerowe, jak i zimowe obozy narciarskie oraz snowboardowe. Każdy program jest starannie przygotowany, aby uczestnicy nie tylko rozwijali swoje umiejętności sportowe, ale także spędzili czas w przyjaznej atmosferze, pełnej przygód i dobrej zabawy.',
+          'Pod okiem doświadczonych instruktorów dzieci mają szansę na bezpieczną naukę oraz doskonalenie swoich umiejętności na rowerze, nartach lub snowboardzie.',
+        ]}
+        section2About={[]}
         theme="summer"
-        imgRight="summer-bg-3.webp"
+        section1Img={AboutCampsImage3}
+        section2Img={null}
       />
+
       <CollabSummer />
       <SignInCamps
         theme="summer"
