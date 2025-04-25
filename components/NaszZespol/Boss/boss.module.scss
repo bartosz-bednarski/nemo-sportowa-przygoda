@@ -1,144 +1,299 @@
-@import '../../../styles/colors.scss';
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
 @import '../../../styles/fonts.scss';
-.boss {
+.container{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0rem 2rem 4rem;
+  @include mixin.pc1000px{
+    padding-left: 0;
+  }
+ 
+}
+.containerRow{
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  padding: 2rem 0rem 2rem 4rem;
+  width: 100%;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
-  &__content {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 1rem;
-    &__header-box {
-      display: flex;
-      flex-direction: column;
-      &__text-box {
-        display: flex;
-        flex-direction: column;
-        &__header {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 2rem;
-          padding-bottom: 1rem;
-        }
-      }
-    }
+  @include mixin.pc1250px{
+    align-items: center;
   }
-  &__image {
-    object-fit: cover;
-    object-position: left;
-    height: auto;
-    width: 40%;
+  @include mixin.pc1000px{
+    flex-wrap: wrap;
+    position: relative;
   }
-  &__logo {
-    display: flex;
-  }
-  &__logo-mobile {
-    display: none;
-  }
-  &__image-mobile {
-    object-fit: cover;
-    object-position: left;
-    height: auto;
-    width: 40%;
-    display: none;
-    align-self: flex-end;
+}
+.contentBox{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 1rem;
+  @include mixin.pc1000px{
+    width: 100%;
   }
   h2 {
     color: rgba(255, 255, 255, 0.41);
-    font-family: 'poppins-700';
-    font-size: 6rem;
     margin: 0;
+    font-size: 6rem;
+    @include mixin.pc1450px{
+      font-size: 4rem;
+    }
+    @include mixin.pc1000px{
+      box-sizing: border-box;
+      padding-left: 2rem;
+      width: 100%;
+      text-align: left;
+    }
+    @include mixin.phone800px{
+      text-align: center;
+      font-size: 3.5rem;
+      padding-left: 0;
+      
+    }
+    @include mixin.phone500px{
+      font-size: 2rem;
+    }
   }
   h3 {
-    color: rgba(255, 255, 255, 0.41);
-    font-family: 'poppins-700';
-    font-size: 3rem;
+    color: rgba(255, 145, 76, 0.9);
     margin: 0;
     padding-bottom: 1rem;
-  }
-  span {
-    color: white;
-    font-size: 1rem;
-    font-family: 'poppins-400';
-    font-weight: 400;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .boss {
-    gap: 1rem;
-    h2 {
-      font-size: 4rem;
-      padding-bottom: 0;
-    }
-    h3 {
-      font-size: 2rem;
-      padding-bottom: 0;
-    }
-    span {
-      font-size: 0.8rem;
-    }
-  }
-}
-@media only screen and (max-width: 900px) {
-  .boss {
-    flex-direction: column;
-    padding: 2rem 0rem 2rem 1rem;
-    &__content {
-      width: 100%;
-      &__header-box {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-      }
-    }
-    &__logo {
-      display: none;
-    }
-    &__logo-mobile {
-      display: flex;
-      margin-top: 1rem;
-      align-self: center;
-    }
-    &__image {
-      display: none;
-    }
-    &__image-mobile {
-      display: flex;
-    }
-    h2 {
-      font-size: 3rem;
-      padding-bottom: 0;
-    }
-    h3 {
-      font-size: 1.2rem;
-      padding-bottom: 0;
-    }
-    span {
-      font-size: 0.8rem;
-      padding-right: 1rem;
-    }
-  }
-}
-@media only screen and (max-width: 520px) {
-  .boss {
-    h2 {
+    font-size: 3rem;
+    @include mixin.pc1450px{
       font-size: 2rem;
     }
-    span {
+    @include mixin.pc1000px{
+      padding-left: 2rem;
+    }
+    @include mixin.phone800px{
       text-align: center;
-      font-size: 0.7rem;
+      font-size: 2rem;
+      padding-left: 0;
     }
-    &__logo-mobile {
-      width: 70px;
-      height: auto;
-      align-self: flex-start;
+    @include mixin.phone500px{
+      font-size: 1.5rem;
+    }
+  }
+  p{
+    @include mixin.pc1450px{
+      font-size: .8rem;
+      line-height: 1.3rem;
+    }
+    @include mixin.pc1000px{
+      display: none;
+    }
+    b{
+      color: colors.$basicOrange;
     }
   }
 }
+
+.headerBox{
+  display: flex;
+  flex-direction: column;
+}
+.imageRight {
+  object-fit: cover;
+  object-position: left;
+  height: auto;
+  width: 40%;
+  @include mixin.pc1000px{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 50%;
+  }
+  @include mixin.phone800px{
+    width: 45%;
+    top: 25%;
+  }
+  @include mixin.phone500px{
+    width: 50%;
+    top: 30%;
+  }
+}
+.imageLeft {
+  display: none;
+  object-fit: cover;
+  object-position: right;
+  height: auto;
+  width: 45%;
+  @include mixin.pc1000px{
+    display: flex;
+  }
+  @include mixin.phone800px{
+    margin-top: 3rem;
+    width: 50%;
+  }
+}
+.textBoxMobile{
+  display: none;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  p{
+    width: 90%;
+    b{
+      color: colors.$basicOrange;
+    }
+    @include mixin.phone500px{
+      width: 100%;
+    }
+  }
+@include mixin.pc1000px{
+  display: flex;
+}
+@include mixin.phone500px{
+  padding: 2rem 1rem;
+}
+}
+// .boss {
+//   box-sizing: border-box;
+//   display: flex;
+//   flex-direction: row;
+//   padding: 2rem 0rem 2rem 4rem;
+//   justify-content: space-between;
+//   align-items: center;
+//   gap: 2rem;
+//   &__content {
+//     display: flex;
+//     flex-direction: column;
+//     width: 50%;
+//     gap: 1rem;
+//     &__header-box {
+//       display: flex;
+//       flex-direction: column;
+//       &__text-box {
+//         display: flex;
+//         flex-direction: column;
+//         &__header {
+//           display: flex;
+//           flex-direction: row;
+//           align-items: center;
+//           gap: 2rem;
+//           padding-bottom: 1rem;
+//         }
+//       }
+//     }
+//   }
+//   &__image {
+//     object-fit: cover;
+//     object-position: left;
+//     height: auto;
+//     width: 40%;
+//   }
+//   &__logo {
+//     display: flex;
+//   }
+//   &__logo-mobile {
+//     display: none;
+//   }
+//   &__image-mobile {
+//     object-fit: cover;
+//     object-position: left;
+//     height: auto;
+//     width: 40%;
+//     display: none;
+//     align-self: flex-end;
+//   }
+  // h2 {
+  //   color: rgba(255, 255, 255, 0.41);
+  //   font-family: 'poppins-700';
+  //   font-size: 6rem;
+  //   margin: 0;
+  // }
+  // h3 {
+  //   color: rgba(255, 255, 255, 0.41);
+  //   font-family: 'poppins-700';
+  //   font-size: 3rem;
+  //   margin: 0;
+  //   padding-bottom: 1rem;
+  // }
+  // span {
+  //   color: white;
+  //   font-size: 1rem;
+  //   font-family: 'poppins-400';
+  //   font-weight: 400;
+  // }
+// }
+// @media only screen and (max-width: 1200px) {
+//   .boss {
+//     gap: 1rem;
+//     h2 {
+//       font-size: 4rem;
+//       padding-bottom: 0;
+//     }
+//     h3 {
+//       font-size: 2rem;
+//       padding-bottom: 0;
+//     }
+//     span {
+//       font-size: 0.8rem;
+//     }
+//   }
+// }
+// @media only screen and (max-width: 900px) {
+//   .boss {
+//     flex-direction: column;
+//     padding: 2rem 0rem 2rem 1rem;
+//     &__content {
+//       width: 100%;
+//       &__header-box {
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: space-between;
+//       }
+//     }
+//     &__logo {
+//       display: none;
+//     }
+//     &__logo-mobile {
+//       display: flex;
+//       margin-top: 1rem;
+//       align-self: center;
+//     }
+//     &__image {
+//       display: none;
+//     }
+//     &__image-mobile {
+//       display: flex;
+//     }
+//     h2 {
+//       font-size: 3rem;
+//       padding-bottom: 0;
+//     }
+//     h3 {
+//       font-size: 1.2rem;
+//       padding-bottom: 0;
+//     }
+//     span {
+//       font-size: 0.8rem;
+//       padding-right: 1rem;
+//     }
+//   }
+// }
+// @media only screen and (max-width: 520px) {
+//   .boss {
+//     h2 {
+//       font-size: 2rem;
+//     }
+//     span {
+//       text-align: center;
+//       font-size: 0.7rem;
+//     }
+//     &__logo-mobile {
+//       width: 70px;
+//       height: auto;
+//       align-self: flex-start;
+//     }
+//   }
+// }
