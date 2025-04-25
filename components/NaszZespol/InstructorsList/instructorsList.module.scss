@@ -1,4 +1,5 @@
-@import '../../../styles/colors.scss';
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
 @keyframes start {
   from {
     scale: 0;
@@ -7,13 +8,18 @@
     transform: scale(1);
   }
 }
-.instructorsList {
+
+.container {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 4rem 4rem 8rem 4rem;
-
+  padding: 2rem 2rem 15rem 2rem;
+  gap: 3rem;
+  align-items: center;
+  @include mixin.phone800px {
+    padding: 1rem 1rem 6rem 1rem;
+  }
   h2 {
     z-index: 1;
     font-family: 'Poppins-700';
@@ -21,247 +27,248 @@
     color: rgba(255, 255, 255, 0.41);
     font-size: 6rem;
     text-align: center;
-  }
-  &__row-box {
-    z-index: 1;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-  }
-  &__popup {
-    background-color: $lightBlue;
-
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(5, 52, 143, 0.98);
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    &__column-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-
-      &__name {
-        animation: start;
-        animation-duration: 0.5s;
-        width: fit-content;
-        height: fit-content;
-        border: 4px solid rgba(255, 255, 255, 0.62);
-        box-shadow: 5px 6px 10px rgba(255, 255, 255, 0.62);
-        border-radius: 50px;
-        font-size: 2rem;
-        color: $basicOrange;
-        font-weight: 600;
-        padding: 1rem 3rem;
-        text-align: center;
-      }
+    @include mixin.pc1450px {
+      font-size: 4rem;
     }
-    &__bubble {
-      animation: start;
-      animation-duration: 0.5s;
-      position: relative;
-      box-sizing: border-box;
-      z-index: 11;
-      padding: 2.2rem;
-      border: 4px solid rgba(255, 255, 255, 0.62);
-      box-shadow: 10px 6px 10px rgba(255, 255, 255, 0.62);
-      border-radius: 50%;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      font-size: 0.9rem;
-      text-align: center;
-      color: $basicOrange;
-      font-weight: 600;
-      img {
-        border-radius: 50%;
-      }
+    @include mixin.phone800px {
+      font-size: 3.5rem;
     }
-    &__bubble-about-1 {
-      width: 380px;
-      height: 380px;
-    }
-    &__bubble-about-image {
-      width: 500px;
-      height: 500px;
-    }
-    &__bubble-about-2 {
-      width: 200px;
-      height: 200px;
-      margin-bottom: 20%;
-    }
-    &__bubble-random-1 {
-      animation-delay: 0.5s;
-      &::before {
-        content: '';
-        position: absolute;
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        top: 10%;
-        left: 10%;
-        background-color: rgba(255, 255, 255, 0.62);
-      }
-      width: 100px;
-      height: 100px;
-      position: absolute !important;
-      bottom: 15%;
-      right: 15%;
-    }
-    &__bubble-random-2 {
-      animation-delay: 0.5s;
-      &::before {
-        content: '';
-        position: absolute;
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        top: 10%;
-        left: 10%;
-        background-color: rgba(255, 255, 255, 0.62);
-      }
-      width: 150px;
-      height: 150px;
-      position: absolute !important;
-      top: 5%;
-      right: 40%;
-    }
-  }
-}
-@media only screen and (max-width: 1250px) {
-  .instructorsList__popup {
-    &__column-box {
-      gap: 1rem;
-      &__name {
-        font-size: 1rem;
-      }
-    }
-    &__bubble {
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-    &__bubble-about-1 {
-      width: 330px;
-      height: 330px;
-    }
-    &__bubble-about-2 {
-      width: 150px;
-      height: 150px;
-    }
-    &__bubble-about-image {
-      width: 320px;
-      height: 320px;
-    }
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .instructorsList {
-    h2 {
-      font-size: 3rem;
-    }
-  }
-  .instructorsList__popup {
-    flex-direction: column;
-    &__column-box {
-      gap: 1rem;
-      &__name {
-        font-size: 1rem;
-      }
-    }
-    &__bubble {
-      font-size: 0.8rem;
-    }
-    &__bubble-about-1 {
-      width: 320px;
-      height: 320px;
-    }
-    &__bubble-about-2 {
-      display: none;
-    }
-    &__bubble-random-1 {
-      top: 5%;
-      left: 5%;
-    }
-    &__bubble-random-2 {
-      width: 80px;
-      height: 80px;
-      top: 85%;
-      right: 5%;
-    }
-    &__bubble-about-image {
-      width: 320px;
-      height: 320px;
-    }
-  }
-}
-@media only screen and (max-width: 700px) {
-  .instructorsList {
-    padding: 2rem 2rem 4rem 2rem;
-    h2 {
-      font-size: 3rem;
-      text-align: center;
-    }
-  }
-}
-@media only screen and (max-width: 500px) {
-  .instructorsList {
-    h2 {
+    @include mixin.phone500px {
       font-size: 2rem;
     }
-    &__popup {
-      &__column-box {
-        gap: 1rem;
-        &__name {
-          border-width: 2px;
-          font-size: 1rem;
-          padding: 0.5rem 1rem;
-          box-shadow: none;
-        }
-      }
-      &__bubble-about-image {
-        width: 220px;
-        height: 220px;
-      }
-      &__bubble-about-1 {
-        width: auto;
-        height: auto;
-        border-radius: 0;
-        border: 0;
-        box-shadow: none;
-        padding: 0 1rem;
-      }
-      &__bubble-random-1 {
-        top: 5%;
-        left: 5%;
-        width: 70px;
-        height: 70px;
-        padding: 0;
-        box-shadow: none;
-      }
-      &__bubble-random-2 {
-        width: 70px;
-        height: 70px;
-        padding: 0;
-        top: 88%;
-        right: 5%;
-        box-shadow: none;
-      }
+  }
+  p {
+    width: 60%;
+    text-align: center;
+    z-index: 1;
+    @include mixin.pc1000px {
+      width: 80%;
+    }
+    @include mixin.phone500px {
+      width: 100%;
+    }
+    b {
+      color: colors.$basicOrange;
     }
   }
 }
+.logo {
+  width: 600px;
+  z-index: 1;
+  @include mixin.pc1250px {
+    width: 400px;
+  }
+  @include mixin.phone700px {
+    width: 280px;
+  }
+}
+.rowBox {
+  z-index: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 4rem 0;
+}
+.popup {
+  background-color: colors.$lightBlue;
+
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: colors.$darkBlue;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  @include mixin.pc1000px {
+    flex-direction: column;
+  }
+}
+.columnBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  @include mixin.pc1250px {
+    gap: 1rem;
+  }
+}
+.name {
+  animation: start;
+  animation-duration: 0.5s;
+  width: fit-content;
+  height: fit-content;
+  border: 4px solid rgba(255, 255, 255, 0.62);
+  box-shadow: 5px 6px 10px rgba(255, 255, 255, 0.62);
+  border-radius: 50px;
+  font-size: 2rem;
+  color: colors.$basicOrange;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  text-align: center;
+  @include mixin.pc1250px {
+    font-size: 1rem;
+  }
+  @include mixin.phone500px {
+    border-width: 2px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: none;
+  }
+}
+.bubble {
+  animation: start;
+  animation-duration: 0.5s;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 11;
+  padding: 2.2rem;
+  border: 4px solid rgba(255, 255, 255, 0.62);
+  box-shadow: 10px 6px 10px rgba(255, 255, 255, 0.62);
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  text-align: center;
+  color: colors.$basicOrange;
+  font-weight: 600;
+  @include mixin.pc1250px {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  img {
+    border-radius: 50%;
+  }
+}
+.bubbleAbout1 {
+  width: 380px;
+  height: 380px;
+  @include mixin.pc1250px {
+    width: 330px;
+    height: 330px;
+  }
+  @include mixin.pc1000px {
+    width: 320px;
+    height: 320px;
+  }
+  @include mixin.phone500px {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    padding: 0 1rem;
+  }
+}
+.bubbleAbout2 {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20%;
+  @include mixin.pc1250px {
+    width: 150px;
+    height: 150px;
+  }
+  @include mixin.pc1000px {
+    display: none;
+  }
+}
+.bubbleAboutImage {
+  width: 500px;
+  height: 500px;
+  padding: 0px !important;
+  @include mixin.pc1250px {
+    width: 320px;
+    height: 320px;
+  }
+  img {
+    object-fit: cover;
+    object-position: center;
+    height: 101%;
+    width: 101%;
+  }
+  @include mixin.pc1000px {
+    width: 320px;
+    height: 320px;
+  }
+  @include mixin.phone500px {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+.bubbleRandom1 {
+  animation-delay: 0.5s;
+  &::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 10%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.62);
+  }
+  width: 100px;
+  height: 100px;
+  position: absolute !important;
+  bottom: 15%;
+  right: 15%;
+  @include mixin.pc1000px {
+    top: 5%;
+    left: 5%;
+  }
+  @include mixin.phone500px {
+    top: 5%;
+    left: 5%;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    box-shadow: none;
+  }
+}
+.bubbleRandom2 {
+  animation-delay: 0.5s;
+  &::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 10%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.62);
+  }
+  width: 150px;
+  height: 150px;
+  position: absolute !important;
+  top: 5%;
+  right: 40%;
+  @include mixin.pc1000px {
+    width: 80px;
+    height: 80px;
+    top: 85%;
+    right: 5%;
+  }
+  @include mixin.phone500px {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    top: 88%;
+    right: 5%;
+    box-shadow: none;
+  }
+}
+
 @keyframes moveTop {
   0% {
     transform: translateY(0%);
@@ -274,7 +281,7 @@
     opacity: 1;
   }
   100% {
-    transform: translateY(-70%);
+    transform: translateY(-160%);
     opacity: 0;
   }
 }
@@ -289,10 +296,13 @@
 }
 .bubbles svg {
   height: 100%;
+  @include mixin.phone700px {
+    display: none;
+  }
   g {
     display: block;
     animation-name: moveTop;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 

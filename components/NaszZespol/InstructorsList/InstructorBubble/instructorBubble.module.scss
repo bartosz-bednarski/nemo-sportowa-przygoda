@@ -1,3 +1,5 @@
+@use '../../../../styles/mixin.scss' as mixin;
+@use '../../../../styles/colors.scss' as colors;
 .insctructorBubble {
   display: flex;
   flex-direction: column;
@@ -7,36 +9,35 @@
   &:hover {
     cursor: pointer;
   }
-  &__image {
-    position: relative;
-    z-index: 3;
-    width: 280px;
-    height: 280px;
-    border: 4px solid rgba(255, 255, 255, 0.62);
-    box-shadow: 10px 6px 10px rgba(255, 255, 255, 0.62);
-    background-color: rgba(255, 255, 255, 0.62);
-    border-radius: 140px;
-    row-gap: 10px;
-    img {
-      border-radius: 140px;
-    }
-  }
-  &__title {
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-  }
 }
-@media only screen and (max-width: 1250px) {
-  .insctructorBubble__image {
+.image {
+  position: relative;
+  z-index: 3;
+  width: 280px;
+  height: 280px;
+  border: 4px solid rgba(255, 255, 255, 0.62);
+  box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.62);
+  background-color: rgba(255, 255, 255, 0.62);
+  border-radius: 140px;
+  row-gap: 10px;
+  @include mixin.pc1250px {
     width: 200px;
     height: 200px;
   }
-}
-@media only screen and (max-width: 530px) {
-  .insctructorBubble__image {
+  @include mixin.phone500px {
     width: 250px;
     height: 250px;
   }
+  img {
+    border-radius: 140px;
+    width: 101%;
+    height: 101%;
+  }
+}
+.title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: colors.$basicOrange;
 }
