@@ -7,8 +7,7 @@ import {Metadata} from 'next';
 import Image1 from '@/public/assets/videos/pool-mix-1.webp';
 import Image2 from '@/public/assets/videos/winter-mix-1.webp';
 import Image3 from '@/public/assets/videos/summer-mix-1.webp';
-// import TrainersSection from "@/components/HomePage/Trainers/TrainersSection";
-// import colors from "../styles/fonts.module.scss";
+import TeamSection from '@/components/HomePage/Team/TeamSection';
 export const metadata: Metadata = {
   title: 'NEMO Sportowa Przygoda - Nauka pływania | Obozy i Półkolonie',
   description:
@@ -70,8 +69,9 @@ export default function Home() {
         }}
       />
       <SwimmingSection />
+      <TeamSection/>
       <CampsSection />
-      {/* <TrainersSection /> */}
+     
     </main>
   );
 }
