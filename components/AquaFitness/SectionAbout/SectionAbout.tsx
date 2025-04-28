@@ -2,16 +2,24 @@
 import StickerH2 from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import styles from './sectionAbout.module.scss';
 import AguaFitnessAbout from '@/public/assets/aquaFitness/aquaFitness_about.webp';
-const SectionAbout = () => {
+import {customColors} from '@/types/UI/colors';
+import {COLORS} from '@/utils/UI/colors';
+
+interface SectionAboutAquaFitnessPropsType {
+  backgroundColor: customColors;
+}
+
+const SectionAbout = ({backgroundColor}: SectionAboutAquaFitnessPropsType) => {
+  const background = {backgroundColor: COLORS[backgroundColor]};
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={background}>
       <div className={styles.contentBox}>
         <StickerH2
           title=""
           titleStrip="AQUA FITNESS"
           titleColor="white"
           stripBgColor="white"
-          stripTextColor="lightBlue"
+          stripTextColor={backgroundColor}
         />
         <p>
           <b>Intensywny trening: </b>Aqua Fitness to połączenie intensywnego
@@ -31,10 +39,17 @@ const SectionAbout = () => {
         </p>
         <p>
           <b>Releks: </b>Dodatkowym atutem zajęć jest relaksujący wpływ wody,
-          który pomaga redukować stres i poprawia samopoczucie
+          który pomaga redukować stres i poprawia samopoczucie.
         </p>
       </div>
-      <img src={AguaFitnessAbout.src} alt="aquaFitness" />
+      <img
+        src={AguaFitnessAbout.src}
+        alt="aquaFitness"
+        title="aquaFitness"
+        loading="eager"
+        width={600}
+        height={1200}
+      />
     </div>
   );
 };

@@ -41,6 +41,11 @@ const LINKS_LIST: LinkItemType[] = [
     location: 'chełmiec',
   },
   {
+    url: '/aquafitness',
+    title: 'Aqua Fitness',
+    location: 'korzenna & gorlice',
+  },
+  {
     url: '/ofertaletnia',
     title: 'obozy & półkolonie',
     location: 'LATO',

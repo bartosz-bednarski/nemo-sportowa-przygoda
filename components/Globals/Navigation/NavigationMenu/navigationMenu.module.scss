@@ -105,8 +105,9 @@
       width: 100%;
     }
     li {
-      padding: 1rem 0;
+      padding: 0.8rem 0;
       border-bottom: 3px solid #669ad7;
+      line-height: 1.2rem !important;
       a,
       a:visited,
       a:hover,
@@ -115,21 +116,21 @@
         text-decoration: none;
       }
       @include mixin.phone500px {
-        padding: 0.5rem 0;
+        padding: 0.3rem 0;
         text-align: center;
       }
     }
   }
 }
 .nav {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   padding: 0.3rem;
   font-weight: 600;
   font-family: 'poppins-600';
   transition: background-color 1s;
   @include mixin.pc1100px {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   @include mixin.phone500px {
     font-size: 0.7rem;

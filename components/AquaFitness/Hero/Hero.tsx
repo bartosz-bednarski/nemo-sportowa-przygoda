@@ -28,6 +28,7 @@ const Hero = () => {
             className={styles.videoImg}
             src={VideoThumbail.src}
             alt="aquaFitness"
+            title="aquaFitness"
             loading="eager"
             width={600}
             height={1920}
@@ -62,6 +63,7 @@ const Hero = () => {
         className={styles.heroImg}
         src={HeroImg.src}
         alt="aquaFitness"
+        title="aquaFitness"
         loading="eager"
         width={600}
         height={1920}
@@ -70,6 +72,7 @@ const Hero = () => {
         className={styles.videoImg}
         src={VideoThumbail.src}
         alt="aquaFitness"
+        title="aquaFitness"
         loading="eager"
         width={600}
         height={1920}

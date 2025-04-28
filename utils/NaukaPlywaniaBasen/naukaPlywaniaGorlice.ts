@@ -29,6 +29,27 @@ type NaukaPlywaniaBasen = {
   };
 };
 
+export const PRICE_LIST_AQUA_FITNESS_GORLICE: PriceListPropsType = [
+  {
+    stickerH4: {
+      title: 'ZAJĘCIA GRUPOWE',
+      titleStrip: 'AQUA FITNESS',
+      stripTextColor: 'basicOrange',
+      stripBgColor: 'white',
+    },
+    oneLesson: {
+      price: '15 zł + 13 zł bilet',
+      time: 45,
+    },
+    button: {
+      title: 'Zapisz się na zajęcia',
+      textColor: 'lightBlue',
+      bgColor: 'white',
+      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+    },
+  },
+];
+
 export const CENNIK_Z_RODZICAMI_GORLICE: PriceListPropsType = [
   {
     stickerH4: {

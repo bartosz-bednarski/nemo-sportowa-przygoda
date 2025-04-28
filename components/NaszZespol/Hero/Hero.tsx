@@ -42,10 +42,10 @@ const HeroTeam = () => {
   return (
     <div className={styles.container}>
       <div className={styles.col0}>
-        <img key={col0.img.src} src={col0.img.src} />
+        <img key={col0.img.src} src={col0.img.src} alt={col0.name} title={col0.name} width={650} height={1080}/>
       </div>
       <div className={columnBox1Styles}>
-        <img className={imgStyles} key={col1.img.src} src={col1.img.src} />
+        <img className={imgStyles} key={col1.img.src} src={col1.img.src} alt={col1.name} title={col1.name} width={650} height={1080} />
         <span className={styles.scrapBox}>
           <span className={styles.scrapLeft}></span>
           <span className={styles.scrapText}>{col1.name}</span>
@@ -53,7 +53,7 @@ const HeroTeam = () => {
         </span>
       </div>
       <div className={columnBox2Styles}>
-        <img className={imgStyles} key={col2.img.src} src={col2.img.src} />
+        <img className={imgStyles} key={col2.img.src} src={col2.img.src} alt={col2.name} title={col2.name} width={650} height={1080}/>
         <span className={styles.scrapBox}>
           <span className={styles.scrapLeft}></span>
           <span className={styles.scrapText}>{col2.name}</span>
@@ -61,7 +61,7 @@ const HeroTeam = () => {
         </span>
       </div>
       <div className={columnBox3Styles}>
-        <img className={imgStyles} key={col3.img.src} src={col3.img.src} />
+        <img className={imgStyles} key={col3.img.src} src={col3.img.src} alt={col3.name} title={col3.name} width={650} height={1080}/>
         <span className={styles.scrapBox}>
           <span className={styles.scrapLeft}></span>
           <span className={styles.scrapText}>{col3.name}</span>

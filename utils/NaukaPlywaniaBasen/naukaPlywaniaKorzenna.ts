@@ -21,7 +21,26 @@ type NaukaPlywaniaBasen = {
     priceList: PriceListPropsType;
   };
 };
-
+export const PRICE_LIST_AQUA_FITNESS_KORZENNA: PriceListPropsType = [
+  {
+    stickerH4: {
+      title: 'ZAJĘCIA GRUPOWE',
+      titleStrip: 'AQUA FITNESS',
+      stripTextColor: 'basicOrange',
+      stripBgColor: 'white',
+    },
+    oneLesson: {
+      price: '15 zł + 16 zł bilet',
+      time: 45,
+    },
+    button: {
+      title: 'Zapisz się na zajęcia',
+      textColor: 'lightBlue',
+      bgColor: 'white',
+      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+    },
+  },
+];
 const CENNIK_DZIECI_MLODZIEZ_KORZENNA: PriceLessonsPropsType[] = [
   {
     stickerH4: {
