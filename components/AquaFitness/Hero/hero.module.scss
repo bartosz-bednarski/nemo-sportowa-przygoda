@@ -1,0 +1,34 @@
+@use '../../../styles/mixin.scss' as mixin;
+.container {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.heroImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  @include mixin.phone900px {
+    display: none;
+  }
+}
+.videoImg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  display: none;
+  @include mixin.phone900px {
+    display: flex;
+  }
+}
+.stickerBox {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  width: auto;
+  height: auto;
+}

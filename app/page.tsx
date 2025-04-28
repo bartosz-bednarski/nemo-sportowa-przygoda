@@ -69,9 +69,8 @@ export default function Home() {
         }}
       />
       <SwimmingSection />
-      <TeamSection/>
+      <TeamSection />
       <CampsSection />
-     
     </main>
   );
 }

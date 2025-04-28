@@ -15,33 +15,31 @@ export interface GalleryLinkPropsType {
 
 const GalleryLink = ({href, img, bgColor}: GalleryLinkPropsType) => {
   return (
-    <Link
-      href={href}
-      className={styles.galleryLink}
-      style={{background: `${COLORS[bgColor]} !important`}}
-    >
-      <img
-        className={styles.image}
-        src={img}
-        width={1920}
-        height={300}
-        alt="galeria"
-        title="galeria"
-        loading="lazy"
-      />
-      <div className={styles.textContainer}>
-        <span className={styles.textBox}>
-          <span className={styles.text}>SPRAWDŹ NASZĄ GALERIĘ</span>
-        </span>
+    <div className={styles.galleryLink} style={{background: COLORS[bgColor]}}>
+      <Link href={href}>
         <img
-          src={ScrapLeft.src}
-          alt="scrapOrange"
-          width={20}
-          height={101}
-          className={styles.scrapRight}
+          className={styles.image}
+          src={img}
+          width={1920}
+          height={300}
+          alt="galeria"
+          title="galeria"
+          loading="lazy"
         />
-      </div>
-    </Link>
+        <div className={styles.textContainer}>
+          <span className={styles.textBox}>
+            <span className={styles.text}>SPRAWDŹ NASZĄ GALERIĘ</span>
+          </span>
+          <img
+            src={ScrapLeft.src}
+            alt="scrapOrange"
+            width={20}
+            height={101}
+            className={styles.scrapRight}
+          />
+        </div>
+      </Link>
+    </div>
   );
 };
 

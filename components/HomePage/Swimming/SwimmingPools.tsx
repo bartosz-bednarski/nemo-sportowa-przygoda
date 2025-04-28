@@ -15,12 +15,6 @@ import TemporarylinkSwimmingPoolCover from '@/components/Ui/Links/TemporaryLinkS
 const SwimmingPools = () => {
   return (
     <div className={styles.poolsContainer}>
-      {/* <img
-        src="/assets/swimming/background-img-1.webp"
-        className={styles.imageFill}
-        alt="nauka pływania"
-        style={{objectFit: 'cover', objectPosition: 'top'}}
-      /> */}
       <div className={styles.poolsBoxCol}>
         <div className={styles.poolsBoxRow}>
           <LinkSwimmingPoolCover

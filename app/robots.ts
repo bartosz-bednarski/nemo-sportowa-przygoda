@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/naszzespol', '/regulamin'],
+        disallow: ['/regulamin'],
       },
     ],
     sitemap: 'https://nemosportowaprzygoda.pl/sitemap.xml',

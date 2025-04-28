@@ -51,6 +51,11 @@ const LINKS_LIST: LinkItemType[] = [
     location: 'ZIMA',
   },
   {
+    url: '/naszzespol',
+    title: 'NASZ ZESPÓŁ',
+    location: '',
+  },
+  {
     url: '/galeria',
     title: 'galeria',
     location: '',
