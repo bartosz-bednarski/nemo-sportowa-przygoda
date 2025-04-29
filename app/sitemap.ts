@@ -106,6 +106,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: 'https://nemosportowaprzygoda.pl/naszzespol',
     },
     {
+      url: 'https://nemosportowaprzygoda.pl/aquafitness',
+    },
+    {
       url: 'https://nemosportowaprzygoda.pl/regulamin',
     },
     ...gallery,

@@ -2,84 +2,112 @@
 import React, {useState} from 'react';
 import styles from './instructorsList.module.scss';
 import InstructorBubble from './InstructorBubble/InstructorBubble';
-import {INSTRUKTORZY_BASEN} from '@/utils/Instruktorzy/InstruktorzyBasen';
-import Image from 'next/image';
+import {
+  InstruktorBasenType,
+  INSTRUKTORZY_BASEN,
+} from '@/utils/Instruktorzy/InstruktorzyBasen';
 import {COLORS} from '@/utils/UI/colors';
+import InstructorDefaultImg from '@/public/assets/instructors/instructor.svg';
+import NemoLogoImg from '@/public/assets/logo/Logo-main-white.svg';
+interface ShowPopuptype extends InstruktorBasenType {
+  show: boolean;
+}
 
 const InstructorsList: React.FC = () => {
-  const [showPopup, setShowPopup] = useState({
+  const [showPopup, setShowPopup] = useState<ShowPopuptype>({
     show: false,
-    instructorName: '',
-    img: 'wiktoria-fryczek.png',
+    name: '',
+    img: InstructorDefaultImg,
     about1: '',
     about2: '',
   });
   const hidePopupHandler = () => {
     setShowPopup({
       show: false,
-      instructorName: '',
-      img: 'wiktoria-fryczek.png',
+      name: '',
+      img: InstructorDefaultImg,
       about1: '',
       about2: '',
     });
   };
+  const showPopupHandler: (instructor: InstruktorBasenType) => void = (
+    instructor
+  ) => {
+    setShowPopup({
+      show: true,
+      name: instructor.name,
+      img: instructor.img,
+      about1: instructor.about1,
+      about2: instructor.about2,
+    });
+  };
+  const bubbleRandom1Style = `${styles.bubble} ${styles.bubbleRandom1}`;
+  const bubbleRandom2Style = `${styles.bubble} ${styles.bubbleRandom2}`;
+  const bubbleAboutImageStyle = `${styles.bubble} ${styles.bubbleAboutImage}`;
+  const bubbleAbout1Style = `${styles.bubble} ${styles.bubbleAbout1}`;
+  const bubbleAbout2Style = `${styles.bubble} ${styles.bubbleAbout2}`;
   return (
-    <div className={styles.instructorsList}>
-      <h2>DRUŻYNA BASENOWA</h2>
-      <div className={styles['instructorsList__row-box']}>
+    <div className={styles.container}>
+      <h2>NASZ ZESPÓŁ</h2>
+      <p>
+        Nasz zespół to grono doświadczonych instruktorów, którzy od lat z pasją
+        i zaangażowaniem szkolą w zakresie pływania. Każdy z naszych
+        instruktorów to osoba, która osobiście trenowała pływanie i posiada
+        bogate doświadczenie w tej dziedzinie. Dzięki temu możemy zapewnić
+        profesjonalne i rzetelne podejście do każdego uczestnika – wiemy, jak
+        wygląda trening z perspektywy pływaka, i potrafimy skutecznie
+        przekazywać wiedzę oraz technikę.
+      </p>
+      <div className={styles.rowBox}>
         {INSTRUKTORZY_BASEN.map((instructor) => (
           <InstructorBubble
-            img1={instructor.img}
-            instructorName={instructor.nameAndSurname}
-            key={instructor.nameAndSurname}
-            onClick={() =>
-              setShowPopup({
-                show: true,
-                instructorName: instructor.nameAndSurname,
-                img: instructor.img,
-                about1: instructor.about1,
-                about2: instructor.about2,
-              })
-            }
+            img={instructor.img}
+            name={instructor.name}
+            key={instructor.name}
+            onClick={() => showPopupHandler(instructor)}
           />
         ))}
       </div>
+      <p>
+        <b>Nauczymy pływać każdego – zarówno dorosłych, jak i dzieci!</b>
+        <br /> Nasze zajęcia są dostosowane do wieku i poziomu umiejętności
+        uczestników, dzięki czemu każdy, bez względu na wcześniejsze
+        doświadczenia, może poczuć się pewnie w wodzie.{' '}
+      </p>
+      <p>
+        <b>
+          Każdy z naszych instruktorów to nie tylko specjalista w swojej
+          dziedzinie, ale również pasjonat pływania.
+        </b>
+        <br /> Regularnie podnoszą swoje kwalifikacje i śledzą najnowsze trendy
+        w technikach pływackich, co pozwala nam oferować zajęcia dopasowane do
+        aktualnych standardów sportowych. Dbamy o to, aby nasze treningi były
+        nie tylko efektywne, ale także przyjemne, rozwijając jednocześnie
+        pewność siebie, kondycję i technikę naszych podopiecznych.
+      </p>
+      <img className={styles.logo} src={NemoLogoImg.src} />
+      <p>
+        <b>
+          Niezależnie od tego, czy zaczynasz swoją przygodę z pływaniem, czy
+          chcesz doskonalić technikę, nasi doświadczeni instruktorzy pomogą Ci
+          osiągnąć zamierzone cele.
+        </b>
+      </p>
       {showPopup.show && (
-        <div
-          className={styles['instructorsList__popup']}
-          onClick={hidePopupHandler}
-        >
-          <span
-            className={`${styles['instructorsList__popup__bubble']} ${styles['instructorsList__popup__bubble-random-1']}`}
-          ></span>
-          <span
-            className={`${styles['instructorsList__popup__bubble']} ${styles['instructorsList__popup__bubble-random-2']}`}
-          ></span>
-          <div className={styles['instructorsList__popup__column-box']}>
-            <div
-              className={`${styles['instructorsList__popup__bubble']} ${styles['instructorsList__popup__bubble-about-image']}`}
-            >
-              <Image
-                src={`/assets/instructors/${showPopup.img}`}
-                fill={true}
-                alt={showPopup.instructorName}
-              />
+        <div className={styles.popup} onClick={hidePopupHandler}>
+          <span className={bubbleRandom1Style}></span>
+          <span className={bubbleRandom2Style}></span>
+          <div className={styles.columnBox}>
+            <div className={bubbleAboutImageStyle}>
+              <img src={showPopup.img.src} alt={showPopup.name} />
             </div>
-            <span
-              className={styles['instructorsList__popup__column-box__name']}
-            >
-              {showPopup.instructorName}
-            </span>
+            <span className={styles.name}>{showPopup.name}</span>
           </div>
-          <div
-            className={`${styles['instructorsList__popup__bubble']} ${styles['instructorsList__popup__bubble-about-1']}`}
-          >
+          <div className={bubbleAbout1Style}>
             <span>{showPopup.about1}</span>
           </div>
 
-          <div
-            className={`${styles['instructorsList__popup__bubble']} ${styles['instructorsList__popup__bubble-about-2']}`}
-          >
+          <div className={bubbleAbout2Style}>
             <span>{showPopup.about2}</span>
           </div>
         </div>

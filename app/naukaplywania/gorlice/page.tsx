@@ -4,6 +4,7 @@ import {
   BASEN_GORLICE_INFORMATIONS,
   BASEN_GORLICE_TUTORIAL,
   NAUKA_PLYWANIA_GORLICE,
+  PRICE_LIST_AQUA_FITNESS_GORLICE,
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaGorlice';
 import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
@@ -20,6 +21,8 @@ import LessonTypeWrapBox from '@/components/NaukaPlywania/Ui/LessonTypeWrapBox/L
 import Image1 from '@/public/assets/videos/toddler-mix-1.webp';
 import Image2 from '@/public/assets/videos/toddler-mix-2.webp';
 import Image3 from '@/public/assets/videos/toddler-mix-3.webp';
+import SectionAbout from '@/components/AquaFitness/SectionAbout/SectionAbout';
+import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania GORLICE',
@@ -125,6 +128,9 @@ const NaukaPlywaniaGorlice = () => {
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolTutorial poolTutorial={BASEN_GORLICE_TUTORIAL} />
+      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
+      <SectionAbout backgroundColor="darkBlue" />
+      <PriceList priceList={PRICE_LIST_AQUA_FITNESS_GORLICE} />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_GORLICE_INFORMATIONS} />
       <Scrap2 position="bottom" color="darkBlue" />

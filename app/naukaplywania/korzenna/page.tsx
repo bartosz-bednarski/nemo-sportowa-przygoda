@@ -4,6 +4,7 @@ import {
   BASEN_KORZENNA_INFORMATIONS,
   BASEN_KORZENNA_TUTORIAL,
   NAUKA_PLYWANIA_KORZENNA,
+  PRICE_LIST_AQUA_FITNESS_KORZENNA,
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaKorzenna';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
 import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
@@ -20,6 +21,8 @@ import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import Image1 from '@/public/assets/videos/pool-mix-4.webp';
 import Image2 from '@/public/assets/videos/pool-mix-2.webp';
 import Image3 from '@/public/assets/videos/pool-mix-5.webp';
+import SectionAbout from '@/components/AquaFitness/SectionAbout/SectionAbout';
+import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania KORZENNA',
@@ -119,6 +122,9 @@ const NaukaPlywaniaKorzenna = () => {
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolTutorial poolTutorial={BASEN_KORZENNA_TUTORIAL} />
+      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
+      <SectionAbout backgroundColor="darkBlue" />
+      <PriceList priceList={PRICE_LIST_AQUA_FITNESS_KORZENNA} />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_KORZENNA_INFORMATIONS} />
       <Scrap2 position="bottom" color="darkBlue" />

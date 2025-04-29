@@ -17,7 +17,7 @@
   background-color: colors.$basicOrange;
   transition: all 0.5s;
   border: 2px solid colors.$basicOrange;
-  font-family: 'Inter';
+  font-family: 'RobotoFlex';
   @include mixin.phone700px {
     font-size: 0.7rem;
     font-weight: 500;
@@ -34,6 +34,7 @@
     }
   }
   &:hover {
+    font-family: 'RobotoFlex';
     border: 2px solid colors.$basicOrange;
     background-color: white;
     color: colors.$basicOrange;
@@ -61,7 +62,7 @@
   z-index: 1;
   background-color: white;
   transition: all 0.5s;
-  font-family: 'Inter';
+  font-family: 'RobotoFlex';
   @include mixin.phone700px {
     font-size: 0.7rem;
     font-weight: 500;
@@ -80,6 +81,7 @@
   &:hover {
     cursor: pointer;
     background-color: colors.$basicOrange;
+    font-family: 'RobotoFlex';
     svg {
       path {
         fill: colors.$darkBlue;
@@ -98,8 +100,10 @@
   color: white;
   border: 0;
   font-weight: 600;
+  font-family: 'RobotoFlex';
   &:hover {
     cursor: pointer;
+    font-family: 'RobotoFlex';
   }
 }
 .xBtn {
