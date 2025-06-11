@@ -3,7 +3,7 @@ import styles from '../page.module.scss';
 import HeroTeam from '@/components/NaszZespol/Hero/Hero';
 import InstructorsList from '@/components/NaszZespol/InstructorsList/InstructorsList';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
-import { Metadata } from 'next';
+import {Metadata} from 'next';
 
 export const metadata: Metadata = {
   title: 'Poznajcie nasz zespół!',

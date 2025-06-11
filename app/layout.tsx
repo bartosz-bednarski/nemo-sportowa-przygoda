@@ -4,6 +4,7 @@ import styles from './layout.module.scss';
 import Footer from '@/components/Globals/Footer/Footer';
 import {GoogleAnalytics} from '@next/third-parties/google';
 import Navigation from '@/components/Globals/Navigation/Navigation';
+import CookiesPopup from '@/components/Ui/CookiesPopup/CookiesPopup';
 export const metadata: Metadata = {
   title: {
     default: 'NEMO Sportowa Przygoda',
@@ -39,6 +40,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main className={styles.main}>
+          <CookiesPopup />
           <Navigation />
           {children}
           <Footer />

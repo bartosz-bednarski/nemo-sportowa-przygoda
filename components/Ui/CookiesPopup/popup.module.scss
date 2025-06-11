@@ -1,0 +1,84 @@
+@use '../../../styles/mixin.scss' as mixin;
+@use '../../../styles/colors.scss' as colors;
+.popup {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: fit-content;
+  width: 100%;
+  background-color: colors.$mediumBlue;
+  border-top: 2px solid colors.$basicOrange;
+  z-index: 12;
+  bottom: 0;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.cookiesAbout {
+  width: fit-content;
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  a {
+    color: colors.$basicOrange;
+  }
+}
+.rowBox {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  @include mixin.phone500px {
+    flex-direction: column;
+  }
+}
+.linkButton {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.3rem 0.9rem;
+  color: white;
+  border: 0;
+  border-radius: 25px;
+  gap: 0.5rem;
+  background-color: colors.$basicOrange;
+  transition: all 0.5s;
+  border: 2px solid colors.$basicOrange;
+  font-family: 'RobotoFlex';
+  @include mixin.phone700px {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  svg {
+    width: 16px;
+    height: 16px;
+    @include mixin.phone700px {
+      width: 15px;
+      height: 15px;
+    }
+    path {
+      fill: white;
+    }
+  }
+  &:hover {
+    font-family: 'RobotoFlex';
+    border: 2px solid colors.$basicOrange;
+    background-color: white;
+    color: colors.$basicOrange;
+    cursor: pointer;
+    svg {
+      path {
+        fill: colors.$basicOrange;
+      }
+    }
+  }
+}
