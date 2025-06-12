@@ -12,7 +12,14 @@ const Boss: React.FC = () => {
             <h2>SZEFOWA</h2>
             <h3>WIKTORIA FRYCZEK</h3>
           </div>
-          <img src={BossImage2.src} className={styles.imageLeft} alt='szefowa' title='szefowa' width={600} height={1080}/>
+          <img
+            src={BossImage2.src}
+            className={styles.imageLeft}
+            alt="szefowa"
+            title="szefowa"
+            width={600}
+            height={1080}
+          />
           <p>
             {' '}
             Stworzyłam Nemo Sportową Przygodę, aby rozbudzić w ludziach pasję do
@@ -47,7 +54,14 @@ const Boss: React.FC = () => {
             </b>
           </p>
         </div>
-        <img src={BossImage1.src} className={styles.imageRight} alt='szefowa' title='szefowa' width={600} height={1080} />
+        <img
+          src={BossImage1.src}
+          className={styles.imageRight}
+          alt="szefowa"
+          title="szefowa"
+          width={600}
+          height={1080}
+        />
       </div>
       <div className={styles.textBoxMobile}>
         <p>
