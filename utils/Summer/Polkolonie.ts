@@ -58,7 +58,7 @@ type PolkoloniaType = {
 
 export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
   {
-    active: true,
+    active: false,
     title: 'PÓŁKOLONIA EKSTREMALNE LATO',
     price: '850 PLN',
     localization: 'SP W BOBOWEJ',
@@ -94,7 +94,7 @@ export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
     href: '/ofertaletnia/polkolonie/nowysacz/polkolonia-1',
   },
   {
-    active: true,
+    active: false,
     title: 'PÓŁKOLONIA LETNIA MISJA',
     price: '850 PLN',
     localization: 'SP W BOBOWEJ',
