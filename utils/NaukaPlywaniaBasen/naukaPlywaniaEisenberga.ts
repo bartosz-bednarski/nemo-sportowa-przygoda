@@ -2,7 +2,7 @@ import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
 import {NAUKA_PLYWANIA} from '../NaukaPlywania/NaukaPlywania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
-import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
+import {GroupsBySkillPropsType} from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import {PoolInformationsPropsType} from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
 import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
@@ -11,19 +11,19 @@ type NaukaPlywaniaBasen = {
   zRodzicami: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
   dzieciMlodziez: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
   dorosli: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
 };
@@ -83,7 +83,7 @@ const CENNIK_DZIECI_MLODZIEZ_EISENBERGA: PriceListPropsType = [
       stripBgColor: 'basicOrange',
     },
     oneLesson: {
-      price: '160 zł',
+      price: '120 zł',
       time: 45,
     },
     tenLessons: {
@@ -151,7 +151,7 @@ const CENNIK_DOROSLI_EISENBERGA: PriceListPropsType = [
       stripBgColor: 'basicOrange',
     },
     oneLesson: {
-      price: '160 zł',
+      price: '120 zł',
       time: 45,
     },
     tenLessons: {

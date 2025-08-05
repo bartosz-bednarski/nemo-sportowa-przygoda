@@ -1,7 +1,6 @@
 import styles from '../../../page.module.scss';
 import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
-import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {
   BASEN_EISENBERGA_INFORMATIONS,
@@ -11,16 +10,17 @@ import {
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaEisenberga';
 import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';
-import NaukaPlywaniaBasen from '@/components/NaukaPlywania/NaukaPlywaniaBasen/NaukaPlywaniaBasen';
 import PoolNecessaryItems from '@/components/NaukaPlywania/Ui/PoolNecessaryItems/PoolNecessaryItems';
 import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 import PoolInformations from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
-import LessonTypeWrapBox from '@/components/NaukaPlywania/Ui/LessonTypeWrapBox/LessonTypeWrapBox';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import Schedule from '@/components/Schedule/Schedule';
 import Image1 from '@/public/assets/videos/pool-mix-2.webp';
 import Image2 from '@/public/assets/videos/pool-mix-3.webp';
 import Image3 from '@/public/assets/videos/pool-mix-4.webp';
+import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
+import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania Kraków EISENBERGA',
@@ -92,38 +92,29 @@ const NaukaPlywaniaEisenberga = () => {
         }}
       />
       <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=88837&zz=" />
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.about}
-        backgroundColor={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.backgroundColor}
-        groups={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.groups}
-        priceList={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.priceList}
-      />
+         {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
+<div style={{background:COLORS.lightBlue}}>
+<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_EISENBERGA.zRodzicami.about}/>
+<PriceList priceList={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.priceList} />
+<GroupsBySkill {...NAUKA_PLYWANIA_EISENBERGA.zRodzicami.groups} />
+</div>
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.about}
-        backgroundColor={
-          NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.backgroundColor
-        }
-        groups={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.groups}
-        priceList={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.priceList}
-      />
+       {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
+      <div style={{background:COLORS.mediumBlue}}>
+<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.about}/>
+<PriceList priceList={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.priceList} />
+<GroupsBySkill {...NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.groups} />
+</div>
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_EISENBERGA.dorosli.about}
-        backgroundColor={NAUKA_PLYWANIA_EISENBERGA.dorosli.backgroundColor}
-        groups={NAUKA_PLYWANIA_EISENBERGA.dorosli.groups}
-        priceList={NAUKA_PLYWANIA_EISENBERGA.dorosli.priceList}
-      />
+        {/* NAUKA PŁYWAANIA DOROŚLI */}
+      <div style={{background:COLORS.darkBlue}}>
+<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_EISENBERGA.dorosli.about}/>
+<PriceList priceList={NAUKA_PLYWANIA_EISENBERGA.dorosli.priceList} />
+<GroupsBySkill {...NAUKA_PLYWANIA_EISENBERGA.dorosli.groups} />
+</div>
+     
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <LessonTypeWrapBox
-        bgColor="darkBlue"
-        bgImage="lessons-types-bg.webp"
-        lessonTypes={[
-          RODZAJE_LEKCJI.grupowe,
-          RODZAJE_LEKCJI.indywidualne,
-          RODZAJE_LEKCJI.dwuosobowe,
-        ]}
-      />
+      
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />

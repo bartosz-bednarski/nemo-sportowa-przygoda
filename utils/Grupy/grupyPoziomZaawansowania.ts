@@ -1,4 +1,4 @@
-import {GroupLvlPropsType} from '@/components/NaukaPlywania/Ui/GroupLvl/GroupLvl';
+import {GroupLvlPropsType} from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupLvl/GroupLvl';
 
 export const GRUPY_POZIOM_ZAAWANSOWANIA = {
   rybkiDzieci: {

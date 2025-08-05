@@ -2,11 +2,6 @@ import styles from '../../../page.module.scss';
 import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
-import {
-  BASEN_PLYWACZEK_INFORMATIONS,
-  BASEN_PLYWACZEK_TUTORIAL,
-  NAUKA_PLYWANIA_PLYWACZEK,
-} from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaPlywaczek';
 import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';
 import PoolNecessaryItems from '@/components/NaukaPlywania/Ui/PoolNecessaryItems/PoolNecessaryItems';
@@ -19,23 +14,24 @@ import Image3 from '@/public/assets/videos/pool-mix-4.webp';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
+import { BASEN_FABRYCZNA_INFORMATIONS, BASEN_FABRYCZNA_TUTORIAL, NAUKA_PLYWANIA_FABRYCZNA } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaFabryczna';
 
 export const metadata: Metadata = {
-  title: 'Nauka pływania Kraków PŁYWACZEK',
+  title: 'Nauka pływania Basen Fabryczna Kraków',
   description:
     'Nasze zajęcia są przeznaczone dla dzieci i młodzieży od lat 3 oraz dorosłych. Zapraszamy wszystkich chętnych na basen Pływaczek w Krakowie!',
   metadataBase: new URL(
-    'https://nemosportowaprzygoda.pl/naukaplywania/krakow/plywaczek'
+    'https://nemosportowaprzygoda.pl/naukaplywania/krakow/fabryczna'
   ),
   alternates: {
-    canonical: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/plywaczek',
+    canonical: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/fabryczna',
     languages: {
       'pl-PL': '/pl-PL',
     },
   },
 };
 
-const NaukaPlywaniaPlywaczek = () => {
+const NaukaPlywaniaFabryczna = () => {
   return (
     <div className={styles.main} style={{background: COLORS['darkBlue']}}>
       <VideosSection
@@ -43,7 +39,7 @@ const NaukaPlywaniaPlywaczek = () => {
         oneStickerContent={{
           title: 'NAUKA ',
           title2: 'PŁYWANIA',
-          titleStrip: 'PŁYWACZEK',
+          titleStrip: 'FABRYCZNA',
           stripBgColor: 'mediumBlue',
           stripTextColor: 'white',
         }}
@@ -88,26 +84,33 @@ const NaukaPlywaniaPlywaczek = () => {
           },
         }}
       />
- {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
+       {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
       <div style={{background:COLORS.lightBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.groups} />
+<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_FABRYCZNA.zRodzicami.about}/>
+<PriceList priceList={NAUKA_PLYWANIA_FABRYCZNA.zRodzicami.priceList} />
+<GroupsBySkill {...NAUKA_PLYWANIA_FABRYCZNA.zRodzicami.groups} />
+</div>
+<Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
+ {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
+      <div style={{background:COLORS.mediumBlue}}>
+<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_FABRYCZNA.dzieciMlodziez.about}/>
+<PriceList priceList={NAUKA_PLYWANIA_FABRYCZNA.dzieciMlodziez.priceList} />
+<GroupsBySkill {...NAUKA_PLYWANIA_FABRYCZNA.dzieciMlodziez.groups} />
 </div>
      
-      <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
+      <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
        {/* NAUKA PŁYWAANIA DOROŚLI */}
       {/* <div style={{background:COLORS.mediumBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_PLYWACZEK.dorosli.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_PLYWACZEK.dorosli.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_PLYWACZEK.dorosli.groups} />
+<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_FABRYCZNA.dorosli.about}/>
+<PriceList priceList={NAUKA_PLYWANIA_FABRYCZNA.dorosli.priceList} />
+<GroupsBySkill {...NAUKA_PLYWANIA_FABRYCZNA.dorosli.groups} />
 </div> */}
      
-      <PoolNecessaryItems color="mediumBlue" />
-      <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-      <PoolTutorial poolTutorial={BASEN_PLYWACZEK_TUTORIAL} />
+      <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <PoolInformations poolInformation={BASEN_PLYWACZEK_INFORMATIONS} />
+      <PoolTutorial poolTutorial={BASEN_FABRYCZNA_TUTORIAL} />
+      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
+      <PoolInformations poolInformation={BASEN_FABRYCZNA_INFORMATIONS} />
       <Scrap2 position="bottom" color="darkBlue" />
       <GalleryLink
         href="/galeria"
@@ -118,4 +121,4 @@ const NaukaPlywaniaPlywaczek = () => {
     </div>
   );
 };
-export default NaukaPlywaniaPlywaczek;
+export default NaukaPlywaniaFabryczna;

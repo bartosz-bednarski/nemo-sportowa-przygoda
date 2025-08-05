@@ -68,6 +68,10 @@
   @include mixin.phone700px {
     padding: 0rem 2rem 2rem 2rem;
   }
+   @include mixin.phone500px {
+    gap: 2rem;
+    padding: 0rem 1rem 2rem 1rem;
+  }
 }
 
 .poolsBoxRow {
@@ -78,6 +82,9 @@
   justify-content: center;
   gap: 2rem;
   align-items: center;
+  @include mixin.phone500px{
+    gap: 1rem;
+  }
 }
 .cardBox {
   box-sizing: border-box;

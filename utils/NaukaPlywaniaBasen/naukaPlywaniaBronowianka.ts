@@ -2,7 +2,7 @@ import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
 import {NAUKA_PLYWANIA} from '../NaukaPlywania/NaukaPlywania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
-import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
+import {GroupsBySkillPropsType} from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import {StickerH2PropsType} from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
@@ -11,7 +11,7 @@ type NaukaPlywaniaBasen = {
   zRodzicami: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
 };
@@ -63,11 +63,11 @@ export const CENNIK_Z_RODZICAMI_BRONOWIANKA: PriceListPropsType = [
       stripBgColor: 'white',
     },
     oneLesson: {
-      price: '70 zł',
+      price: '68 zł',
       time: 45,
     },
     tenLessons: {
-      price: '700 zł',
+      price: '680 zł',
       time: '10 x 45',
     },
     button: {

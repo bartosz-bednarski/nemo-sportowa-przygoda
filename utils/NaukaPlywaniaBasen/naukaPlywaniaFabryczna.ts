@@ -5,8 +5,15 @@ import {GroupsBySkillPropsType} from '@/components/NaukaPlywania/Ui/GroupsBySkil
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import {PoolInformationsPropsType} from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
 import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
+import { NAUKA_PLYWANIA } from '../NaukaPlywania/NaukaPlywania';
 
 type NaukaPlywaniaBasen = {
+  zRodzicami: {
+    backgroundColor: customColors;
+    about: NaukaPływaniaAboutPropsType;
+    groups: GroupsBySkillPropsType;
+    priceList: PriceListPropsType;
+  };
   dzieciMlodziez: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
@@ -20,8 +27,32 @@ type NaukaPlywaniaBasen = {
   //   priceList: PriceListPropsType;
   // };
 };
+const CENNIK_Z_RODZICAMI_BRONOWIANKA: PriceListPropsType = [
+  {
+    stickerH4: {
+      title: 'LEKCJE',
+      titleStrip: 'GRUPOWE',
+      stripTextColor: 'basicOrange',
+      stripBgColor: 'white',
+    },
+    oneLesson: {
+      price: '70 zł',
+      time: 45,
+    },
+    tenLessons: {
+      price: '700 zł',
+      time: '10 x 45',
+    },
+    button: {
+      title: 'Zapisz się na zajęcia',
+      textColor: 'lightBlue',
+      bgColor: 'white',
+      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+    },
+  },
+];
 
-const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
+const CENNIK_DZIECI_MLODZIEZ_FABRYCZNA: PriceListPropsType = [
   {
     stickerH4: {
       title: 'LEKCJE',
@@ -78,7 +109,7 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
       time: 45,
     },
     tenLessons: {
-      price: '2000 zł',
+      price: '2400 zł',
       time: '10 x 45',
     },
     button: {
@@ -89,7 +120,7 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
     },
   },
 ];
-// const CENNIK_DOROSLI_PLYWACZEK: PriceListPropsType = [
+// const CENNIK_DOROSLI_FABRYCZNA: PriceListPropsType = [
 //   {
 //     stickerH4: {
 //       title: 'LEKCJE',
@@ -157,7 +188,52 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
 //     },
 //   },
 // ];
-export const NAUKA_PLYWANIA_PLYWACZEK: NaukaPlywaniaBasen = {
+export const NAUKA_PLYWANIA_FABRYCZNA: NaukaPlywaniaBasen = {
+  zRodzicami:{
+      backgroundColor: 'lightBlue',
+      about: {
+        stickerH2: {
+          title: 'NAUKA PŁYWANIA',
+          titleStrip: 'Z RODZICAMI',
+          stripTextColor: 'lightBlue',
+          stripBgColor: 'white',
+        },
+        aboutTextPoppins: {
+          titleColor: 'lightBlue',
+          title: NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.title,
+          description:
+            NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.description,
+          alignItems: 'flex-start',
+          textAlign: 'left',
+        },
+        image: {
+          src: 'lessonsTypes/zRodzicami.webp',
+          alt: 'nauka pływania niemowlaki',
+        },
+        button: {
+          title: 'Dowiedz się więcej',
+          href: '/naukaplywania#tips',
+        },
+      },
+      priceList: CENNIK_Z_RODZICAMI_BRONOWIANKA,
+  
+      groups: {
+        stripH2: {
+          title: '',
+          titleStrip: 'ZAJĘCIA',
+          stripBgColor: 'white',
+          stripTextColor: 'darkBlue',
+        },
+        groups: [
+          GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.trzyMiesiace,
+          GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.siedemMiesiecy,
+          GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.dwanascieMiesiecy,
+          GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.dwaLata,
+          GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.czteryLata,
+          GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.czteryLataBez,
+        ],
+      },
+    },
   dzieciMlodziez: {
     backgroundColor: 'lightBlue',
     about: {
@@ -180,7 +256,7 @@ export const NAUKA_PLYWANIA_PLYWACZEK: NaukaPlywaniaBasen = {
         alt: 'nauka pływania dzieci i mlodziez',
       },
     },
-    priceList: CENNIK_DZIECI_MLODZIEZ_PLYWACZEK,
+    priceList: CENNIK_DZIECI_MLODZIEZ_FABRYCZNA,
 
     groups: {
       stripH2: {
@@ -220,7 +296,7 @@ export const NAUKA_PLYWANIA_PLYWACZEK: NaukaPlywaniaBasen = {
   //       alt: 'nauka pływania dorośli',
   //     },
   //   },
-  //   priceList: CENNIK_DOROSLI_PLYWACZEK,
+  //   priceList: CENNIK_DOROSLI_FABRYCZNA,
 
   //   groups: {
   //     stripH2: {
@@ -237,7 +313,7 @@ export const NAUKA_PLYWANIA_PLYWACZEK: NaukaPlywaniaBasen = {
   // },
 };
 
-export const BASEN_PLYWACZEK_INFORMATIONS: PoolInformationsPropsType = {
+export const BASEN_FABRYCZNA_INFORMATIONS: PoolInformationsPropsType = {
   color: 'darkBlue',
   title: 'Basen Pływaczek',
   imageSrc: 'custom-pool.webp',
@@ -281,7 +357,7 @@ export const BASEN_PLYWACZEK_INFORMATIONS: PoolInformationsPropsType = {
   },
 };
 
-export const BASEN_PLYWACZEK_TUTORIAL: PoolTutorialPropsType = {
+export const BASEN_FABRYCZNA_TUTORIAL: PoolTutorialPropsType = {
   header: false,
   color: 'darkBlue',
   firstRule:

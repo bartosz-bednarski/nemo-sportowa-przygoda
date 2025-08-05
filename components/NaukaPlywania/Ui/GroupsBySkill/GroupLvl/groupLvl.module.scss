@@ -1,6 +1,6 @@
-@use '../../../../styles/mixin.scss' as mixin;
-@use '../../../../styles/colors.scss' as colors;
-@import '../../../../styles/fonts.scss';
+@use '../../../../../styles/mixin.scss' as mixin;
+@use '../../../../../styles/colors.scss' as colors;
+@import '../../../../../styles/fonts.scss';
 .container {
   box-sizing: border-box;
   display: flex;

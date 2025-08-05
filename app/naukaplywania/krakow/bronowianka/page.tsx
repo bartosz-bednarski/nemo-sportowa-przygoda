@@ -1,7 +1,6 @@
 import styles from '../../../page.module.scss';
 import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
-import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {
   BASEN_BRONOWIANKA_INFORMATIONS,
@@ -10,15 +9,16 @@ import {
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaBronowianka';
 import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';
-import NaukaPlywaniaBasen from '@/components/NaukaPlywania/NaukaPlywaniaBasen/NaukaPlywaniaBasen';
 import PoolNecessaryItems from '@/components/NaukaPlywania/Ui/PoolNecessaryItems/PoolNecessaryItems';
 import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 import PoolInformations from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
-import LessonType from '@/components/NaukaPlywania/Ui/LessonType/LessonType';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import Image1 from '@/public/assets/videos/toddler-mix-2.webp';
 import Image2 from '@/public/assets/videos/toddler-mix-3.webp';
 import Image3 from '@/public/assets/videos/toddler-mix-1.webp';
+import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
+import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania Kraków BRONOWIANKA',
@@ -88,17 +88,16 @@ const NaukaPlywaniaBronowianka = () => {
           },
         }}
       />
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.about}
-        backgroundColor={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.backgroundColor}
-        groups={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.groups}
-        priceList={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.priceList}
-      />
+      {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
+<div style={{background:COLORS.lightBlue}}>
+<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.about}/>
+<PriceList priceList={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.priceList} />
+<GroupsBySkill {...NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.groups} />
+</div>
+     
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-      <LessonType bgColor="mediumBlue" lessonType={RODZAJE_LEKCJI.grupowe} />
+      <PoolNecessaryItems color="mediumBlue" />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-      <PoolNecessaryItems color="darkBlue" />
-      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolTutorial poolTutorial={BASEN_BRONOWIANKA_TUTORIAL} />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_BRONOWIANKA_INFORMATIONS} />

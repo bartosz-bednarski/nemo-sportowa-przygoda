@@ -1,4 +1,4 @@
-import {LessonType} from '@/components/NaukaPlywania/Ui/LessonType/LessonType';
+import {LessonType} from '@/components/NaukaPlywania/Ui/LessonsByMembersAmount/LessonsByMembersAmount';
 
 type RodzajeLekcjiType = {
   indywidualne: LessonType;

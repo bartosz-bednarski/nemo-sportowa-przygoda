@@ -27,7 +27,6 @@ const TemporarylinkSwimmingPoolCover = ({
           className={styles.image}
           src={image.src}
           alt={title}
-          style={{borderTopLeftRadius: 30, borderTopRightRadius: 30}}
         />
       </div>
       <span className={styles.h4Box}>
