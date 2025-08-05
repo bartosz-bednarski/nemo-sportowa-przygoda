@@ -26,15 +26,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    font-size: 1rem;
+    font-size: .7rem;
     font-weight: 600;
-    padding: 0.5rem 2rem !important;
+    padding: 0.7rem 1rem !important;
     color: white;
     background-color: $basicOrange;
     border: 0;
     border-radius: 40px;
     gap: 1rem;
     transition: all 0.5s;
+    margin: 0 .5rem;
     &:hover {
       cursor: pointer;
       background-color: green;

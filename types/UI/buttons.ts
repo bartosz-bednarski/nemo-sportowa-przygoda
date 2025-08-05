@@ -5,4 +5,5 @@ export type signInButtonType = {
   textColor: customColors;
   title: string;
   href: string;
+  style?:any
 };
