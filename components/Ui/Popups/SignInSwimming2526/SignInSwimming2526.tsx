@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import styles from './signInSwimming2526.module.scss'
 import { hasCookie, setCookie } from 'cookies-next';
 import LocationIcon from '@/public/assets/ui/Icons/location-orange.svg'
-import SingInButton from '../../Buttons/SignInButton';
-import PopupImage from '@/public/assets/popup/popup-swimmimg.webp';
+import PopupImage from '@/public/assets/popup/kurs_jesien_zima_25_26.webp';
 import LinkButton from '../../Buttons/LinkButton';
 import Logo from '@/public/assets/logo/Logo-main-white.svg'
+import XBtn from '../../Buttons/XBtn/XBtn';
 
 const KRAKOW_POOLS = [
   {
@@ -63,13 +63,16 @@ const OTHER_POOLS = [
 ]
 
 const SignInSwimming2526 = () =>{
-const [showPopup, setShowPopup] = useState(true);
+const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     if (hasCookie('popup') === false) {
-      setCookie('popup', 0);
-      setShowPopup(true);
+        const timer = setTimeout(() => { setCookie('popup', 0);
+      setShowPopup(true);}, 2000);
+      return () => clearTimeout(timer);
     }
+     
+    
   }, [showPopup]);
 
   const closePopupHandler = () => {
@@ -77,6 +80,9 @@ const [showPopup, setShowPopup] = useState(true);
   };
     return <div  className={styles.popup} style={{display: showPopup ? 'flex' : 'none'}}>
       <div className={styles.contentBox}>
+        <span className={styles.xBtnBox}>
+          <XBtn onClick={closePopupHandler} />
+        </span>
         <img
           src={PopupImage.src}
           width={550}
@@ -93,15 +99,19 @@ const [showPopup, setShowPopup] = useState(true);
         <div className={styles.locContainer}>
  <div className={styles.locBox}>
   {KRAKOW_POOLS.map((pool,index)=> <a href={pool.url} className={styles.locItem} key={index}>
-    <img src={LocationIcon.src}/> {pool.title}
+    <img className={styles.icon} src={LocationIcon.src} width={32} height={32} alt="lokalizacja" loading='eager'/> {pool.title}
    </a>)}
-  <LinkButton style={{marginTop:'1rem',padding:'.5rem 1.3rem'}} bgColor='white' textColor='mediumBlue' title='Zapisz się' href='/'/>
+   <span className={styles.linkButtonBox}>
+  <LinkButton  bgColor='white' textColor='mediumBlue' title='Zapisz się' href='/'/>
+</span>
  </div>
  <div className={styles.locBox}>
   {OTHER_POOLS.map((pool,index)=> <a href={pool.url} className={styles.locItem} key={index}>
-    <img src={LocationIcon.src}/> {pool.title}
+    <img className={styles.icon} src={LocationIcon.src} width={32} height={32} alt="lokalizacja" loading='eager'/> {pool.title}
    </a>)}
-  <LinkButton style={{marginTop:'1rem',padding:'.5rem 1.3rem'}} bgColor='white' textColor='mediumBlue' title='Zapisz się' href='/'/>
+   <span className={styles.linkButtonBox}>
+  <LinkButton  bgColor='white' textColor='mediumBlue' title='Zapisz się' href='/'/>
+ </span>
  </div>
         </div>
       </div>

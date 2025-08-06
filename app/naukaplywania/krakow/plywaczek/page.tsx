@@ -19,11 +19,12 @@ import Image3 from '@/public/assets/videos/pool-mix-4.webp';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
+import Schedule from '@/components/Schedule/Schedule';
 
 export const metadata: Metadata = {
-  title: 'Nauka pływania Kraków PŁYWACZEK',
+  title: 'Nauka Pływania Basen Pływaczek Kraków',
   description:
-    'Nasze zajęcia są przeznaczone dla dzieci i młodzieży od lat 3 oraz dorosłych. Zapraszamy wszystkich chętnych na basen Pływaczek w Krakowie!',
+    'Zajęcia nauki pływania dla niemowlaków. Szkoła pływania Nemo Sportowa Przygoda zaprasza na basen Pływaczek przy SP 155 na Os. 2 Pułku Lotniczego w Krakowie.',
   metadataBase: new URL(
     'https://nemosportowaprzygoda.pl/naukaplywania/krakow/plywaczek'
   ),
@@ -88,6 +89,7 @@ const NaukaPlywaniaPlywaczek = () => {
           },
         }}
       />
+      <Schedule src='https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98469&zz='/>
  {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
       <div style={{background:COLORS.lightBlue}}>
 <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.about}/>
@@ -96,12 +98,7 @@ const NaukaPlywaniaPlywaczek = () => {
 </div>
      
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-       {/* NAUKA PŁYWAANIA DOROŚLI */}
-      {/* <div style={{background:COLORS.mediumBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_PLYWACZEK.dorosli.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_PLYWACZEK.dorosli.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_PLYWACZEK.dorosli.groups} />
-</div> */}
+      
      
       <PoolNecessaryItems color="mediumBlue" />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />

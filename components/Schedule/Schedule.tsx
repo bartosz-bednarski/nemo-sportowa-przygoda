@@ -15,7 +15,7 @@ const Schedule: React.FC<{src: string}> = ({src}) => {
     };
   }, [src]);
   return (
-    <div className={styles.schedule}>
+    <div className={styles.schedule} id='harmonogram'>
       <h2>HARMONOGRAM</h2>
       <div
         className={`${tableStyles} ${'activenow-table-container'} ${

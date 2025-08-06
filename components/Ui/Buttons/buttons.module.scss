@@ -9,7 +9,7 @@
   flex-direction: row;
   font-size: 0.9rem;
   font-weight: 600;
-  padding: 0.7rem 1.3rem;
+  padding: 0.5rem 2rem;
   color: white;
   border: 0;
   border-radius: 25px;
@@ -18,9 +18,12 @@
   transition: all 0.5s;
   border: 2px solid colors.$basicOrange;
   font-family: 'RobotoFlex';
+   width: fit-content;
   @include mixin.phone700px {
     font-size: 0.7rem;
     font-weight: 500;
+    padding: 0.3rem 1.5rem;
+    width: fit-content;
   }
   svg {
     width: 20px;

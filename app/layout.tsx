@@ -40,7 +40,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main className={styles.main}>
-          {/* <CookiesPopup /> */}
+          <CookiesPopup />
           <Navigation />
           {children}
           <Footer />

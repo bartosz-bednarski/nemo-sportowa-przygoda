@@ -47,7 +47,7 @@ const CENNIK_Z_RODZICAMI_BRONOWIANKA: PriceListPropsType = [
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
 ];
@@ -72,7 +72,7 @@ const CENNIK_DZIECI_MLODZIEZ_FABRYCZNA: PriceListPropsType = [
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
   {
@@ -83,18 +83,18 @@ const CENNIK_DZIECI_MLODZIEZ_FABRYCZNA: PriceListPropsType = [
       stripBgColor: 'basicOrange',
     },
     oneLesson: {
-      price: '120 zł',
+      price: '145 zł',
       time: 45,
     },
     tenLessons: {
-      price: '1200 zł',
+      price: '1450 zł',
       time: '10 x 45',
     },
     button: {
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
   {
@@ -105,18 +105,18 @@ const CENNIK_DZIECI_MLODZIEZ_FABRYCZNA: PriceListPropsType = [
       stripTextColor: 'white',
     },
     oneLesson: {
-      price: '240 zł',
+      price: '200 zł',
       time: 45,
     },
     tenLessons: {
-      price: '2400 zł',
+      price: '2000 zł',
       time: '10 x 45',
     },
     button: {
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
 ];
@@ -140,7 +140,7 @@ const CENNIK_DZIECI_MLODZIEZ_FABRYCZNA: PriceListPropsType = [
 //       title: 'Zapisz się na zajęcia',
 //       textColor: 'lightBlue',
 //       bgColor: 'white',
-//       href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+//       href: '#harmonogram',
 //     },
 //   },
 //   {
@@ -162,7 +162,7 @@ const CENNIK_DZIECI_MLODZIEZ_FABRYCZNA: PriceListPropsType = [
 //       title: 'Zapisz się na zajęcia',
 //       textColor: 'lightBlue',
 //       bgColor: 'white',
-//       href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+//       href: '#harmonogram',
 //     },
 //   },
 //   {
@@ -184,7 +184,7 @@ const CENNIK_DZIECI_MLODZIEZ_FABRYCZNA: PriceListPropsType = [
 //       title: 'Zapisz się na zajęcia',
 //       textColor: 'lightBlue',
 //       bgColor: 'white',
-//       href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+//       href: '#harmonogram',
 //     },
 //   },
 // ];
@@ -356,17 +356,41 @@ export const BASEN_FABRYCZNA_INFORMATIONS: PoolInformationsPropsType = {
     },
   },
 };
-
-export const BASEN_FABRYCZNA_TUTORIAL: PoolTutorialPropsType = {
-  header: false,
+export const BASEN_FABRYCZNA_TUTORIAL_Z_RODZICAMI: PoolTutorialPropsType = {
+  header: true,
+  stripH4: {
+    title: '',
+    titleStrip: 'ZAJĘCIA Z RODZICAMI',
+    stripBgColor: 'white',
+    stripTextColor: 'basicOrange',
+  },
   color: 'darkBlue',
   firstRule:
-    'Odzież wierzchnią oraz buty zostaw w wyznaczonym miejscu w holu - przy recepcji w hotelu.',
+    'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
   rules: [
-    'W kasie biletowej kup bilet na lekcję pływania „Nemo Sportowa Przygoda” dla swojego dziecka.',
-    'Rodzic może pomóc dziecku przebrać się w szatni. Dziecko powinno być ubrane w strój kąpielowy, czepek, okulary i klapki.',
-    'Po przebraniu, przyprowadzamy dziecko do miejsca przejścia na basen. ',
-    'W wyznaczonym miejscu (przejście między szatnią a basenem) instruktor odbiera dziecko i prowadzi je na lekcję pływania.',
-    'Po zakończonej lekcji, trwającej 45 minut, instruktor przyprowadza dzieci z powrotem w to samo miejsce, gdzie rodzic może odebrać dziecko.',
+    'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
+    'Przebierz siebie i dziecko.',
+    'Załóż dziecku wodoodporną pieluchę.',
+    'Owiń dziecko ręcznikiem.',
+    'Zabierz czepek dla siebie.',
+    'Następnie wejdź na wydzielony tor dla zajęć "Nemo Sportowa Przygoda".',
   ],
 };
+export const BASEN_FABRYCZNA_TUTORIAL_DZIECI_MLODZIEZ: PoolTutorialPropsType = {
+    header: true,
+    stripH4: {
+      title: '',
+      titleStrip: 'DZIECI I MŁODZIEŻ',
+      stripBgColor: 'white',
+      stripTextColor: 'basicOrange',
+    },
+    color: 'darkBlue',
+    firstRule:
+      'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
+    rules: [
+      'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
+      'Rodzic ma 15 minut na przebranie i przygotowanie dziecka do zajęć.',
+      'Przy wejściu na basen instruktor przejmuje dzieci i prowadzi 45-minutową lekcję.',
+      'Po zakończonej lekcji rodzic ma prawo wejść na 15 minut, aby pomóc dziecku się przebrać.',
+    ],
+  };

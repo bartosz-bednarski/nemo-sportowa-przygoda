@@ -2,7 +2,6 @@ import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import styles from './page.module.scss';
 import SwimmingSection from '@/components/HomePage/Swimming/SwimmingSection';
 import CampsSection from '@/components/HomePage/Camps/CampsSection';
-import SignInPopupSwimming from '@/components/Ui/SignInPopup/SignInPopupSwimming';
 import {Metadata} from 'next';
 import Image1 from '@/public/assets/videos/pool-mix-1.webp';
 import Image2 from '@/public/assets/videos/winter-mix-1.webp';

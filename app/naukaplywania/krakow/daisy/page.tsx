@@ -14,25 +14,25 @@ import Image3 from '@/public/assets/videos/pool-mix-4.webp';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
-import { BASEN_FABRYCZNA_INFORMATIONS, BASEN_FABRYCZNA_TUTORIAL_DZIECI_MLODZIEZ, BASEN_FABRYCZNA_TUTORIAL_Z_RODZICAMI, NAUKA_PLYWANIA_FABRYCZNA } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaFabryczna';
+import { BASEN_DAISY_INFORMATIONS, BASEN_DAISY_TUTORIAL, NAUKA_PLYWANIA_DAISY } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaDaisy';
 import Schedule from '@/components/Schedule/Schedule';
 
 export const metadata: Metadata = {
-  title: 'Nauka Pływania Basen Fabryczna Kraków',
+  title: 'Nauka Pływania Basen Daisy Kraków',
   description:
-    'Zajęcia nauki pływania dla niemowlaków, dzieci i młodzieży. Szkoła pływania Nemo Sportowa Przygoda zaprasza na basen Fabryka CIAO w Krakowie.',
+    'Zajęcia nauki pływania dla dzieci, młodzieży i dorosłych. Szkoła pływania Nemo Sportowa Przygoda zaprasza na basen Daisy przy ulicy Morelowej w Krakowie.',
   metadataBase: new URL(
-    'https://nemosportowaprzygoda.pl/naukaplywania/krakow/fabryczna'
+    'https://nemosportowaprzygoda.pl/naukaplywania/krakow/daisy'
   ),
   alternates: {
-    canonical: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/fabryczna',
+    canonical: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/daisy',
     languages: {
       'pl-PL': '/pl-PL',
     },
   },
 };
 
-const NaukaPlywaniaFabryczna = () => {
+const NaukaPlywaniaDaisy = () => {
   return (
     <div className={styles.main} style={{background: COLORS['darkBlue']}}>
       <VideosSection
@@ -40,7 +40,7 @@ const NaukaPlywaniaFabryczna = () => {
         oneStickerContent={{
           title: 'NAUKA ',
           title2: 'PŁYWANIA',
-          titleStrip: 'FABRYCZNA',
+          titleStrip: 'DAISY',
           stripBgColor: 'mediumBlue',
           stripTextColor: 'white',
         }}
@@ -85,36 +85,27 @@ const NaukaPlywaniaFabryczna = () => {
           },
         }}
       />
-      <Schedule src='https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=99162&zz='/>
-       {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
-      <div style={{background:COLORS.lightBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_FABRYCZNA.zRodzicami.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_FABRYCZNA.zRodzicami.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_FABRYCZNA.zRodzicami.groups} />
-</div>
-<Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
+     <Schedule src='https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=99161&zz='/>
  {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
-      <div style={{background:COLORS.mediumBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_FABRYCZNA.dzieciMlodziez.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_FABRYCZNA.dzieciMlodziez.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_FABRYCZNA.dzieciMlodziez.groups} />
+      <div style={{background:COLORS.lightBlue}}>
+<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_DAISY.dzieciMlodziez.about}/>
+<PriceList priceList={NAUKA_PLYWANIA_DAISY.dzieciMlodziez.priceList} />
+<GroupsBySkill {...NAUKA_PLYWANIA_DAISY.dzieciMlodziez.groups} />
 </div>
      
-      <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
+      <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
        {/* NAUKA PŁYWAANIA DOROŚLI */}
-      {/* <div style={{background:COLORS.mediumBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_FABRYCZNA.dorosli.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_FABRYCZNA.dorosli.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_FABRYCZNA.dorosli.groups} />
-</div> */}
-     
+      <div style={{background:COLORS.mediumBlue}}>
+<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_DAISY.dorosli.about}/>
+<PriceList priceList={NAUKA_PLYWANIA_DAISY.dorosli.priceList} />
+<GroupsBySkill {...NAUKA_PLYWANIA_DAISY.dorosli.groups} />
+</div>
+     <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <PoolTutorial poolTutorial={BASEN_FABRYCZNA_TUTORIAL_Z_RODZICAMI} />
+      <PoolTutorial poolTutorial={BASEN_DAISY_TUTORIAL} />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <PoolTutorial poolTutorial={BASEN_FABRYCZNA_TUTORIAL_DZIECI_MLODZIEZ} />
-      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <PoolInformations poolInformation={BASEN_FABRYCZNA_INFORMATIONS} />
+      <PoolInformations poolInformation={BASEN_DAISY_INFORMATIONS} />
       <Scrap2 position="bottom" color="darkBlue" />
       <GalleryLink
         href="/galeria"
@@ -125,4 +116,4 @@ const NaukaPlywaniaFabryczna = () => {
     </div>
   );
 };
-export default NaukaPlywaniaFabryczna;
+export default NaukaPlywaniaDaisy;

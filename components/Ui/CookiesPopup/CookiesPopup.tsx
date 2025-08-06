@@ -10,7 +10,9 @@ const CookiesPopup = () => {
 
   useEffect(() => {
     if (hasCookie('cookies-accept') === false) {
-      setShowPopup(true);
+       const timer = setTimeout(() => {
+      setShowPopup(true);}, 5000);
+      return () => clearTimeout(timer);
     }
   }, [showPopup]);
 

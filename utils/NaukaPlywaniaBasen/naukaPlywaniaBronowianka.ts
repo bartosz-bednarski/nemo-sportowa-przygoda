@@ -63,18 +63,18 @@ export const CENNIK_Z_RODZICAMI_BRONOWIANKA: PriceListPropsType = [
       stripBgColor: 'white',
     },
     oneLesson: {
-      price: '68 zł',
+      price: '70 zł',
       time: 45,
     },
     tenLessons: {
-      price: '680 zł',
+      price: '700 zł',
       time: '10 x 45',
     },
     button: {
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
 ];
@@ -172,13 +172,14 @@ export const BASEN_BRONOWIANKA_INFORMATIONS: PoolInformationsType = {
 export const BASEN_BRONOWIANKA_TUTORIAL: PoolTutorialPropsType = {
   header: false,
   color: 'darkBlue',
-  firstRule:
-    'Odzież wierzchnią oraz buty zostaw w wyznaczonym miejscu w holu - przy recepcji w hotelu.',
+ firstRule:
+    'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
   rules: [
-    'W kasie biletowej kup bilet na lekcję pływania „Nemo Sportowa Przygoda” dla swojego dziecka.',
-    'Rodzic może pomóc dziecku przebrać się w szatni. Dziecko powinno być ubrane w strój kąpielowy, czepek, okulary i klapki.',
-    'Po przebraniu, przyprowadzamy dziecko do miejsca przejścia na basen. ',
-    'W wyznaczonym miejscu (przejście między szatnią a basenem) instruktor odbiera dziecko i prowadzi je na lekcję pływania.',
-    'Po zakończonej lekcji, trwającej 45 minut, instruktor przyprowadza dzieci z powrotem w to samo miejsce, gdzie rodzic może odebrać dziecko.',
+    'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
+    'Przebierz siebie i dziecko.',
+    'Załóż dziecku wodoodporną pieluchę.',
+    'Owiń dziecko ręcznikiem.',
+    'Zabierz czepek dla siebie.',
+    'Następnie wejdź na wydzielony tor dla zajęć "Nemo Sportowa Przygoda".',
   ],
 };

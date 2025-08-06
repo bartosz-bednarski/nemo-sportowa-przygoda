@@ -19,11 +19,12 @@ import Image3 from '@/public/assets/videos/toddler-mix-1.webp';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
+import Schedule from '@/components/Schedule/Schedule';
 
 export const metadata: Metadata = {
-  title: 'Nauka pływania Kraków BRONOWIANKA',
+  title: 'Nauka Pływania Basen Bronowianka Kraków',
   description:
-    'Nasze zajęcia są przeznaczone dla dzieci od 3. miesiąca życia, które uczestniczą w nich razem z rodzicem. Zapraszamy wszystkich chętnych na basen Bronowianka w Krakowie!',
+    'Zajęcia nauki pływania dla niemowlaków. Szkoła pływania Nemo Sportowa Przygoda zaprasza na basen Bronowianka w Krakowie.',
   metadataBase: new URL(
     'https://nemosportowaprzygoda.pl/naukaplywania/krakow/bronowianka'
   ),
@@ -88,6 +89,7 @@ const NaukaPlywaniaBronowianka = () => {
           },
         }}
       />
+      <Schedule src='https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98538&zz='/>
       {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
 <div style={{background:COLORS.lightBlue}}>
 <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.about}/>

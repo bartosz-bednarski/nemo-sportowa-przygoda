@@ -6,14 +6,9 @@ import {GroupsBySkillPropsType} from '@/components/NaukaPlywania/Ui/GroupsBySkil
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import {PoolInformationsPropsType} from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
 import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
+import {PriceLessonsPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceLessons/PriceLessons';
 
 type NaukaPlywaniaBasen = {
-  zRodzicami: {
-    backgroundColor: customColors;
-    about: NaukaPływaniaAboutPropsType;
-    groups: GroupsBySkillPropsType;
-    priceList: PriceListPropsType;
-  };
   dzieciMlodziez: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
@@ -28,7 +23,10 @@ type NaukaPlywaniaBasen = {
   };
 };
 
-const CENNIK_Z_RODZICAMI_EISENBERGA: PriceListPropsType = [
+
+
+
+const CENNIK_DZIECI_MLODZIEZ_DAISY: PriceLessonsPropsType[] = [
   {
     stickerH4: {
       title: 'LEKCJE',
@@ -37,36 +35,8 @@ const CENNIK_Z_RODZICAMI_EISENBERGA: PriceListPropsType = [
       stripBgColor: 'white',
     },
     oneLesson: {
-      price: '70 zł',
-      time: 30,
-    },
-    tenLessons: {
-      price: '700 zł',
-      time: '10 x 30',
-    },
-    button: {
-      title: 'Zapisz się na zajęcia',
-      textColor: 'lightBlue',
-      bgColor: 'white',
-      href: '#harmonogram',
-    },
-  },
-];
-const CENNIK_DZIECI_MLODZIEZ_EISENBERGA: PriceListPropsType = [
-  {
-    stickerH4: {
-      title: 'LEKCJE',
-      titleStrip: 'GRUPOWE',
-      stripTextColor: 'basicOrange',
-      stripBgColor: 'white',
-    },
-    oneLesson: {
-      price: '70 zł',
+      price: '60 zł',
       time: 45,
-    },
-    tenLessons: {
-      price: '700 zł',
-      time: '10 x 45',
     },
     button: {
       title: 'Zapisz się na zajęcia',
@@ -83,12 +53,8 @@ const CENNIK_DZIECI_MLODZIEZ_EISENBERGA: PriceListPropsType = [
       stripBgColor: 'basicOrange',
     },
     oneLesson: {
-      price: '145 zł',
+      price: '120 zł',
       time: 45,
-    },
-    tenLessons: {
-      price: '1450 zł',
-      time: '10 x 45',
     },
     button: {
       title: 'Zapisz się na zajęcia',
@@ -101,16 +67,12 @@ const CENNIK_DZIECI_MLODZIEZ_EISENBERGA: PriceListPropsType = [
     stickerH4: {
       title: 'LEKCJE',
       titleStrip: '2 OSOBOWE',
-      stripBgColor: 'darkBlue',
-      stripTextColor: 'white',
+      stripBgColor: 'white',
+      stripTextColor: 'basicOrange',
     },
     oneLesson: {
-      price: '200 zł',
+      price: '190 zł',
       time: 45,
-    },
-    tenLessons: {
-      price: '2000 zł',
-      time: '10 x 45',
     },
     button: {
       title: 'Zapisz się na zajęcia',
@@ -120,7 +82,7 @@ const CENNIK_DZIECI_MLODZIEZ_EISENBERGA: PriceListPropsType = [
     },
   },
 ];
-const CENNIK_DOROSLI_EISENBERGA: PriceListPropsType = [
+const CENNIK_DOROSLI_DAISY: PriceLessonsPropsType[] = [
   {
     stickerH4: {
       title: 'LEKCJE',
@@ -129,12 +91,8 @@ const CENNIK_DOROSLI_EISENBERGA: PriceListPropsType = [
       stripBgColor: 'white',
     },
     oneLesson: {
-      price: '70 zł',
+      price: '60 zł',
       time: 45,
-    },
-    tenLessons: {
-      price: '700 zł',
-      time: '10 x 45',
     },
     button: {
       title: 'Zapisz się na zajęcia',
@@ -151,12 +109,8 @@ const CENNIK_DOROSLI_EISENBERGA: PriceListPropsType = [
       stripBgColor: 'basicOrange',
     },
     oneLesson: {
-      price: '145 zł',
+      price: '120 zł',
       time: 45,
-    },
-    tenLessons: {
-      price: '1450 zł',
-      time: '10 x 45',
     },
     button: {
       title: 'Zapisz się na zajęcia',
@@ -173,12 +127,8 @@ const CENNIK_DOROSLI_EISENBERGA: PriceListPropsType = [
       stripTextColor: 'white',
     },
     oneLesson: {
-      price: '200 zł',
+      price: '190 zł',
       time: 45,
-    },
-    tenLessons: {
-      price: '2000 zł',
-      time: '10 x 45',
     },
     button: {
       title: 'Zapisz się na zajęcia',
@@ -188,59 +138,14 @@ const CENNIK_DOROSLI_EISENBERGA: PriceListPropsType = [
     },
   },
 ];
-export const NAUKA_PLYWANIA_EISENBERGA: NaukaPlywaniaBasen = {
-  zRodzicami: {
-    backgroundColor: 'lightBlue',
-    about: {
-      stickerH2: {
-        title: 'NAUKA PŁYWANIA',
-        titleStrip: 'Z RODZICAMI',
-        stripTextColor: 'lightBlue',
-        stripBgColor: 'white',
-      },
-      aboutTextPoppins: {
-        titleColor: 'lightBlue',
-        title: NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.title,
-        description:
-          NAUKA_PLYWANIA.zRodzicami.about.aboutTextPoppins.description,
-        alignItems: 'flex-start',
-        textAlign: 'left',
-      },
-      image: {
-        src: 'lessonsTypes/zRodzicami.webp',
-        alt: 'nauka pływania z rodzicami',
-      },
-      button: {
-        title: 'Dowiedz się więcej',
-        href: '/naukaplywania#tips',
-      },
-    },
-    priceList: CENNIK_Z_RODZICAMI_EISENBERGA,
-
-    groups: {
-      stripH2: {
-        title: '',
-        titleStrip: 'GRUPY',
-        stripBgColor: 'white',
-        stripTextColor: 'darkBlue',
-      },
-      groups: [
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.trzyMiesiace,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.siedemMiesiecy,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.dwanascieMiesiecy,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.dwaLata,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.czteryLata,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.czteryLataBez,
-      ],
-    },
-  },
+export const NAUKA_PLYWANIA_DAISY: NaukaPlywaniaBasen = {
   dzieciMlodziez: {
     backgroundColor: 'mediumBlue',
     about: {
       stickerH2: {
         title: 'NAUKA PŁYWANIA',
         titleStrip: 'DZIECI I MŁODZIEŻ',
-        stripTextColor: 'lightBlue',
+        stripTextColor: 'mediumBlue',
         stripBgColor: 'white',
       },
       aboutTextPoppins: {
@@ -256,7 +161,7 @@ export const NAUKA_PLYWANIA_EISENBERGA: NaukaPlywaniaBasen = {
         alt: 'nauka pływania dzieci i mlodziez',
       },
     },
-    priceList: CENNIK_DZIECI_MLODZIEZ_EISENBERGA,
+    priceList: CENNIK_DZIECI_MLODZIEZ_DAISY,
 
     groups: {
       stripH2: {
@@ -295,7 +200,7 @@ export const NAUKA_PLYWANIA_EISENBERGA: NaukaPlywaniaBasen = {
         alt: 'nauka pływania dorośli',
       },
     },
-    priceList: CENNIK_DOROSLI_EISENBERGA,
+    priceList: CENNIK_DOROSLI_DAISY,
 
     groups: {
       stripH2: {
@@ -312,29 +217,29 @@ export const NAUKA_PLYWANIA_EISENBERGA: NaukaPlywaniaBasen = {
   },
 };
 
-export const BASEN_EISENBERGA_INFORMATIONS: PoolInformationsPropsType = {
+export const BASEN_DAISY_INFORMATIONS: PoolInformationsPropsType = {
   color: 'darkBlue',
-  title: 'Basen Eisenberga',
+  title: 'Basen GORLICE',
   imageSrc: 'custom-pool.webp',
   mapSrc:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.8758871211735!2d19.96455712691966!3d50.06988596469174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b20d70ce221%3A0x4553a84f578feaa9!2sCentrum%20Sportu%20i%20Rekreacji%20Przysta%C5%84%20na%20Eisenberga!5e0!3m2!1spl!2spl!4v1727424719893!5m2!1spl!2spl',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.959838146512!2d21.16031532690143!3d49.65505599431353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473dc68bf7396df3%3A0xfa103fb8fdb78dfe!2zUMWCeXdhbmlhICJPU2lSIg!5e0!3m2!1spl!2spl!4v1727270999281!5m2!1spl!2spl',
   stickerH2: {
     title: 'BASEN',
-    titleStrip: 'EISENBERGA',
+    titleStrip: 'GORLICE',
     stripBgColor: 'basicOrange',
     stripTextColor: 'darkBlue',
   },
   icons: {
     pool1: {
       exists: true,
-      title: 'BASEN SPORTOWY 25 X 16M, GŁĘBOKOŚĆ 1,30-1,80M',
+      title: 'BASEN SPORTOWY 25 X 12,5M, GŁĘBOKOŚĆ 1,35-1,80M',
     },
     pool2: {
       exists: true,
-      title: 'BASEN REKREACYJNY 16 X 5M, GŁĘBOKOŚĆ 0,80-1,20M',
+      title: 'BASEN REKREACYJNY 12,5 X 7M, GŁĘBOKOŚĆ 0,00-1,20M',
     },
     stand: {
-      exists: false,
+      exists: true,
       title: 'TRYBUNY NA BASENIE',
     },
     cloakroomWomen: {
@@ -351,41 +256,15 @@ export const BASEN_EISENBERGA_INFORMATIONS: PoolInformationsPropsType = {
     },
     parking: {
       exists: true,
-      title: 'DARMOWY ZA SZLABANEM',
+      title: 'PARKING BEZPŁATNY',
     },
   },
 };
-export const BASEN_EISENBERGA_TUTORIAL_Z_RODZICAMI: PoolTutorialPropsType = {
-  header: true,
-  stripH4: {
-    title: '',
-    titleStrip: 'ZAJĘCIA Z RODZICAMI',
-    stripBgColor: 'white',
-    stripTextColor: 'basicOrange',
-  },
+
+export const BASEN_DAISY_TUTORIAL: PoolTutorialPropsType = {
+  header: false,
   color: 'darkBlue',
   firstRule:
-    'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
-  rules: [
-    'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
-    'Przebierz siebie i dziecko.',
-    'Załóż dziecku wodoodporną pieluchę.',
-    'Owiń dziecko ręcznikiem.',
-    'Zabierz czepek dla siebie.',
-    'Następnie wejdź na wydzielony tor dla zajęć "Nemo Sportowa Przygoda".',
-  ],
-};
-export const BASEN_EISENBERGA_TUTORIAL_DZIECI_MLODZIEZ: PoolTutorialPropsType =
-  {
-    header: true,
-    stripH4: {
-      title: '',
-      titleStrip: 'DZIECI I MŁODZIEŻ',
-      stripBgColor: 'white',
-      stripTextColor: 'basicOrange',
-    },
-    color: 'darkBlue',
-    firstRule:
       'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
     rules: [
       'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
@@ -393,4 +272,4 @@ export const BASEN_EISENBERGA_TUTORIAL_DZIECI_MLODZIEZ: PoolTutorialPropsType =
       'Przy wejściu na basen instruktor przejmuje dzieci i prowadzi 45-minutową lekcję.',
       'Po zakończonej lekcji rodzic ma prawo wejść na 15 minut, aby pomóc dziecku się przebrać.',
     ],
-  };
+};

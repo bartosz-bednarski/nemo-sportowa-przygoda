@@ -9,8 +9,6 @@ import EisenbergaCoverImg from '@/public/assets/swimming/pools/eisenberga.webp';
 import BronowiankaCoverImg from '@/public/assets/swimming/pools/bronowianka.webp';
 import PlywaczekCoverImg from '@/public/assets/swimming/pools/plywaczek.webp';
 import ChelmiecCoverImg from '@/public/assets/swimming/pools/chelmiec.webp';
-import StrozeCoverImg from '@/public/assets/swimming/pools/stroze.webp';
-import TemporarylinkSwimmingPoolCover from '@/components/Ui/Links/TemporaryLinkSwimmingPoolCover/TemporaryLinkSwimmingPoolCover';
 import FabrycznaCoverImg from '@/public/assets/swimming/pools/fabryczna.webp'
 import CCZHutaCoverImg from '@/public/assets/swimming/pools/ccz_huta.webp'
 import CCZProkocimCoverImg from '@/public/assets/swimming/pools/ccz_prokocim.webp'
@@ -49,32 +47,32 @@ const SwimmingPools = () => {
           <LinkSwimmingPoolCover
             image={FabrycznaCoverImg}
             title="BASEN FABRYCZNA"
-            url="/naukaplywania/chelmiec"
+            url="/naukaplywania/krakow/fabryczna"
           />
            <LinkSwimmingPoolCover
             image={CCZHutaCoverImg}
             title="BASEN CCZ NOWA HUTA"
-            url="/naukaplywania/chelmiec"
+            url="/naukaplywania/krakow/ccz-nowa-huta"
           />
            <LinkSwimmingPoolCover
             image={CCZProkocimCoverImg}
             title="BASEN CCZ PROKOCIM"
-            url="/naukaplywania/chelmiec"
+            url="/naukaplywania/krakow/ccz-prokocim"
           />
            <LinkSwimmingPoolCover
             image={DaisyCoverImg}
             title="BASEN DAISY"
-            url="/naukaplywania/chelmiec"
+            url="/naukaplywania/krakow/daisy"
           />
            <LinkSwimmingPoolCover
             image={ChelmiecCoverImg}
             title="BASEN CHEŁMIEC"
             url="/naukaplywania/chelmiec"
           />
-          <TemporarylinkSwimmingPoolCover
+          {/* <TemporarylinkSwimmingPoolCover
             image={StrozeCoverImg}
             title="BASEN STRÓŻE"
-          />
+          /> */}
         </div>
         <LinkButton
           title="Dowiedz się więcej"

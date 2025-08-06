@@ -56,22 +56,22 @@ const POOLS:PoolsPropsType = {
         {
           title: 'BASEN FABRYCZNA',
           image: FabrycznaCoverImg,
-          url: '/naukaplywania/krakow/eisenberga',
+          url: '/naukaplywania/krakow/fabryczna',
         },
         {
           title: 'BASEN CCZ NOWA HUTA',
           image: CCZHutaCoverImg,
-          url: '/naukaplywania/krakow/bronowianka',
+          url: '/naukaplywania/krakow/ccz-nowa-huta',
         },
         {
           title: 'BASEN CCZ PROKOCIM',
           image: CCZProkocimCoverImg,
-          url: '/naukaplywania/krakow/plywaczek',
+          url: '/naukaplywania/krakow/ccz-prokocim',
         },
          {
           title: 'BASEN DAISY',
           image: DaisyCoverImg,
-          url: '/naukaplywania/krakow/plywaczek',
+          url: '/naukaplywania/krakow/daisy',
         },
       ],
     }

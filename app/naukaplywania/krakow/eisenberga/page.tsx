@@ -23,9 +23,9 @@ import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 
 export const metadata: Metadata = {
-  title: 'Nauka pływania Kraków EISENBERGA',
+  title: 'Nauka Pływania Basen Eisenberga Kraków',
   description:
-    'Zajęcia dla niemowlaków z rodzicami, dzieci i młodzieży od lat 3 oraz dorosłych. Zapraszamy wszystkich chętnych na basen Przystań Eisenberga w Krakowie!',
+    'Zajęcia nauki pływania dla niemowlaaków, dzieci, młodzieży i dorosłych. Szkoła pływania Nemo Sportowa Przygoda zaprasza na basen Przystań na Eisenberga w Krakowie.',
   metadataBase: new URL(
     'https://nemosportowaprzygoda.pl/naukaplywania/krakow/eisenberga'
   ),
@@ -91,7 +91,7 @@ const NaukaPlywaniaEisenberga = () => {
           },
         }}
       />
-      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=88837&zz=" />
+      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98466&zz=" />
          {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
 <div style={{background:COLORS.lightBlue}}>
 <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_EISENBERGA.zRodzicami.about}/>

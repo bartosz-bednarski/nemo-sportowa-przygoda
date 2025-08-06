@@ -37,6 +37,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/plywaczek',
     },
     {
+      url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/fabryczna',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/ccz-nowa-huta',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/ccz-prokocim',
+    },
+    {
+      url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/daisy',
+    },
+    {
       url: 'https://nemosportowaprzygoda.pl/naukaplywania/poradnikbasenowy',
     },
     {

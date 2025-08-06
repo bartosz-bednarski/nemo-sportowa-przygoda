@@ -24,6 +24,9 @@ const LinkSwimmingPoolCover = ({
           className={styles.image}
           src={image.src}
           alt={title}
+          width={350}
+          height={350}
+          loading='lazy'
         />
       </div>
       <span className={styles.h4Box}>
