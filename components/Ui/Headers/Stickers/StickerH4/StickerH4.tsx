@@ -23,7 +23,7 @@ const StickerH4 = ({
   };
   return (
     <h4 className={styles.box}>
-      <span className={styles.h4Title}>{title} </span>
+      {title !== '' && <span className={styles.h4Title}>{title} </span>}
       <span className={stripStyles}>
         <span className={styles.scrapLeft}></span>
         <span className={styles.scrapText} style={stripTextStyles}>

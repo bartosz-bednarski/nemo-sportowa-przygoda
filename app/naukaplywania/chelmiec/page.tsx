@@ -22,6 +22,7 @@ import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import Groups from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import LessonsByMembersAmount from '@/components/NaukaPlywania/Ui/LessonsByMembersAmount/LessonsByMembersAmount';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
+import Schedule from '@/components/Schedule/Schedule';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania CHEŁMIEC',
@@ -91,6 +92,7 @@ const NaukaPlywaniaChelmiec = () => {
           },
         }}
       />
+      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=99573&zz=" />
       <div style={{background: COLORS.lightBlue}}>
         <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_CHELMIEC.dzieciMlodziez.about} />
         <PriceList

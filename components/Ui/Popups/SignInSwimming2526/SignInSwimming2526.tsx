@@ -99,8 +99,8 @@ const SignInSwimming2526 = () => {
           alt="nauka plywania NEMO"
           title="nauka plywania NEMO"
           className={styles.image}
-          loading='eager'
-          fetchPriority='high'
+          loading="eager"
+          fetchPriority="high"
         />
         <img className={styles.logo} src={Logo.src} />
         <div className={styles.headerBox}>
@@ -113,11 +113,33 @@ const SignInSwimming2526 = () => {
         </div>
         <div className={styles.locContainer}>
           <div className={styles.locBoxMobile}>
-            <StickerH4 stripBgColor='basicOrange' stripTextColor='white' title='' titleStrip='BASENY KRAKÓW'/>
-         <Link href="/naukaplywania/harmonogram-krakow" className={styles.signUpButton}>Zapisz się</Link>
-         <StickerH4 stripBgColor='basicOrange' stripTextColor='white' title='' titleStrip='BASENY KRAKÓW'/>
-         <Link href="/naukaplywania/harmonogram-krakow" className={styles.signUpButton}>Zapisz się</Link>
-         <p className={styles.paragraph}>BABY SWIM | DZIECI OD 3 LAT | MŁODZIEŻ | DOROŚLI</p>
+            <StickerH4
+              stripBgColor="basicOrange"
+              stripTextColor="white"
+              title=""
+              titleStrip="BASENY KRAKÓW"
+            />
+            <Link
+              href="/naukaplywania/harmonogram-krakow"
+              className={styles.signUpButton}
+            >
+              Zapisz się
+            </Link>
+            <StickerH4
+              stripBgColor="basicOrange"
+              stripTextColor="white"
+              title=""
+              titleStrip="KORZENNA | GORLICE | WYSOWA | LIMANOWA"
+            />
+            <Link
+              href="/naukaplywania/harmonogram-krakow"
+              className={styles.signUpButton}
+            >
+              Zapisz się
+            </Link>
+            <p className={styles.paragraph}>
+              BABY SWIM | DZIECI OD 3 LAT | MŁODZIEŻ | DOROŚLI
+            </p>
           </div>
           <div className={styles.locBox}>
             {KRAKOW_POOLS.map((pool, index) => (

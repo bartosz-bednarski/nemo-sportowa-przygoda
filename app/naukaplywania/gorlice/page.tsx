@@ -24,6 +24,7 @@ import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import LessonsByMembersAmount from '@/components/NaukaPlywania/Ui/LessonsByMembersAmount/LessonsByMembersAmount';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
+import Schedule from '@/components/Schedule/Schedule';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania GORLICE',
@@ -93,7 +94,7 @@ const NaukaPlywaniaGorlice = () => {
           },
         }}
       />
-      {/* <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=74801&zz=" /> */}
+      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=74801&zz=" />
       {/* NAUKA PŁYWAANIA BOBASY */}
       <div style={{background: COLORS.lightBlue}}>
         <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_GORLICE.zRodzicami.about} />
