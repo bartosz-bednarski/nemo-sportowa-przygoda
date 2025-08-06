@@ -23,9 +23,6 @@ type NaukaPlywaniaBasen = {
   };
 };
 
-
-
-
 const CENNIK_DZIECI_MLODZIEZ_DAISY: PriceLessonsPropsType[] = [
   {
     stickerH4: {
@@ -219,27 +216,27 @@ export const NAUKA_PLYWANIA_DAISY: NaukaPlywaniaBasen = {
 
 export const BASEN_DAISY_INFORMATIONS: PoolInformationsPropsType = {
   color: 'darkBlue',
-  title: 'Basen GORLICE',
+  title: 'Basen DAISY',
   imageSrc: 'custom-pool.webp',
   mapSrc:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.959838146512!2d21.16031532690143!3d49.65505599431353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473dc68bf7396df3%3A0xfa103fb8fdb78dfe!2zUMWCeXdhbmlhICJPU2lSIg!5e0!3m2!1spl!2spl!4v1727270999281!5m2!1spl!2spl',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.7003642837167!2d19.869284799999996!3d50.0706871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bde5a1bdf05%3A0xa67c407936b2f3f2!2sBasen%20Daisy!5e1!3m2!1spl!2spl!4v1754488188563!5m2!1spl!2spl',
   stickerH2: {
     title: 'BASEN',
-    titleStrip: 'GORLICE',
+    titleStrip: 'DAISY',
     stripBgColor: 'basicOrange',
     stripTextColor: 'darkBlue',
   },
   icons: {
     pool1: {
-      exists: true,
+      exists: false,
       title: 'BASEN SPORTOWY 25 X 12,5M, GŁĘBOKOŚĆ 1,35-1,80M',
     },
     pool2: {
       exists: true,
-      title: 'BASEN REKREACYJNY 12,5 X 7M, GŁĘBOKOŚĆ 0,00-1,20M',
+      title: 'BASEN REKREACYJNY 17 X 6,5M, GŁĘBOKOŚĆ 1,10-1,40M',
     },
     stand: {
-      exists: true,
+      exists: false,
       title: 'TRYBUNY NA BASENIE',
     },
     cloakroomWomen: {
@@ -251,7 +248,7 @@ export const BASEN_DAISY_INFORMATIONS: PoolInformationsPropsType = {
       title: 'SZATNIA MĘSKA',
     },
     cloakroomFamily: {
-      exists: true,
+      exists: false,
       title: 'SZATNIA RODZINNA',
     },
     parking: {
@@ -265,11 +262,11 @@ export const BASEN_DAISY_TUTORIAL: PoolTutorialPropsType = {
   header: false,
   color: 'darkBlue',
   firstRule:
-      'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
-    rules: [
-      'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
-      'Rodzic ma 15 minut na przebranie i przygotowanie dziecka do zajęć.',
-      'Przy wejściu na basen instruktor przejmuje dzieci i prowadzi 45-minutową lekcję.',
-      'Po zakończonej lekcji rodzic ma prawo wejść na 15 minut, aby pomóc dziecku się przebrać.',
-    ],
+    'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
+  rules: [
+    'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
+    'Rodzic ma 15 minut na przebranie i przygotowanie dziecka do zajęć.',
+    'Przy wejściu na basen instruktor przejmuje dzieci i prowadzi 45-minutową lekcję.',
+    'Po zakończonej lekcji rodzic ma prawo wejść na 15 minut, aby pomóc dziecku się przebrać.',
+  ],
 };

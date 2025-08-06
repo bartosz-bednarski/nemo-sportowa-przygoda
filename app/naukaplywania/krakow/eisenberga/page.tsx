@@ -92,29 +92,33 @@ const NaukaPlywaniaEisenberga = () => {
         }}
       />
       <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98466&zz=" />
-         {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
-<div style={{background:COLORS.lightBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_EISENBERGA.zRodzicami.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_EISENBERGA.zRodzicami.groups} />
-</div>
+      {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
+      <div style={{background: COLORS.lightBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_EISENBERGA.zRodzicami.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_EISENBERGA.zRodzicami.priceList} />
+        <GroupsBySkill {...NAUKA_PLYWANIA_EISENBERGA.zRodzicami.groups} />
+      </div>
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-       {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
-      <div style={{background:COLORS.mediumBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.groups} />
-</div>
+      {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
+      <div style={{background: COLORS.mediumBlue}}>
+        <NaukaPlywaniaAbout
+          {...NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.about}
+        />
+        <PriceList
+          priceList={NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.priceList}
+        />
+        <GroupsBySkill {...NAUKA_PLYWANIA_EISENBERGA.dzieciMlodziez.groups} />
+      </div>
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-        {/* NAUKA PŁYWAANIA DOROŚLI */}
-      <div style={{background:COLORS.darkBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_EISENBERGA.dorosli.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_EISENBERGA.dorosli.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_EISENBERGA.dorosli.groups} />
-</div>
-     
+      {/* NAUKA PŁYWAANIA DOROŚLI */}
+      <div style={{background: COLORS.darkBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_EISENBERGA.dorosli.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_EISENBERGA.dorosli.priceList} />
+        <GroupsBySkill {...NAUKA_PLYWANIA_EISENBERGA.dorosli.groups} />
+      </div>
+
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      
+
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />

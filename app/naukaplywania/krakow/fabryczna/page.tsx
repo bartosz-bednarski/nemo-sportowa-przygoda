@@ -14,7 +14,12 @@ import Image3 from '@/public/assets/videos/pool-mix-4.webp';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
-import { BASEN_FABRYCZNA_INFORMATIONS, BASEN_FABRYCZNA_TUTORIAL_DZIECI_MLODZIEZ, BASEN_FABRYCZNA_TUTORIAL_Z_RODZICAMI, NAUKA_PLYWANIA_FABRYCZNA } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaFabryczna';
+import {
+  BASEN_FABRYCZNA_INFORMATIONS,
+  BASEN_FABRYCZNA_TUTORIAL_DZIECI_MLODZIEZ,
+  BASEN_FABRYCZNA_TUTORIAL_Z_RODZICAMI,
+  NAUKA_PLYWANIA_FABRYCZNA,
+} from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaFabryczna';
 import Schedule from '@/components/Schedule/Schedule';
 
 export const metadata: Metadata = {
@@ -47,7 +52,7 @@ const NaukaPlywaniaFabryczna = () => {
         scrapColor="lightBlue"
         col1={{
           video: {
-            src: 'pool-mix-2.mp4',
+            src: 'pool-mix-1.mp4',
             alt: 'nauka pływania niemowlaki',
             image: Image1,
           },
@@ -73,7 +78,7 @@ const NaukaPlywaniaFabryczna = () => {
         }}
         col3={{
           video: {
-            src: 'pool-mix-4.mp4',
+            src: 'pool-mix-5.mp4',
             alt: 'nauka pływania dorośli',
             image: Image3,
           },
@@ -85,29 +90,33 @@ const NaukaPlywaniaFabryczna = () => {
           },
         }}
       />
-      <Schedule src='https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=99162&zz='/>
-       {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
-      <div style={{background:COLORS.lightBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_FABRYCZNA.zRodzicami.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_FABRYCZNA.zRodzicami.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_FABRYCZNA.zRodzicami.groups} />
-</div>
-<Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
- {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
-      <div style={{background:COLORS.mediumBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_FABRYCZNA.dzieciMlodziez.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_FABRYCZNA.dzieciMlodziez.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_FABRYCZNA.dzieciMlodziez.groups} />
-</div>
-     
+      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=99162&zz=" />
+      {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
+      <div style={{background: COLORS.lightBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_FABRYCZNA.zRodzicami.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_FABRYCZNA.zRodzicami.priceList} />
+        <GroupsBySkill {...NAUKA_PLYWANIA_FABRYCZNA.zRodzicami.groups} />
+      </div>
+      <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
+      {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
+      <div style={{background: COLORS.mediumBlue}}>
+        <NaukaPlywaniaAbout
+          {...NAUKA_PLYWANIA_FABRYCZNA.dzieciMlodziez.about}
+        />
+        <PriceList
+          priceList={NAUKA_PLYWANIA_FABRYCZNA.dzieciMlodziez.priceList}
+        />
+        <GroupsBySkill {...NAUKA_PLYWANIA_FABRYCZNA.dzieciMlodziez.groups} />
+      </div>
+
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-       {/* NAUKA PŁYWAANIA DOROŚLI */}
+      {/* NAUKA PŁYWAANIA DOROŚLI */}
       {/* <div style={{background:COLORS.mediumBlue}}>
 <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_FABRYCZNA.dorosli.about}/>
 <PriceList priceList={NAUKA_PLYWANIA_FABRYCZNA.dorosli.priceList} />
 <GroupsBySkill {...NAUKA_PLYWANIA_FABRYCZNA.dorosli.groups} />
 </div> */}
-     
+
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolTutorial poolTutorial={BASEN_FABRYCZNA_TUTORIAL_Z_RODZICAMI} />

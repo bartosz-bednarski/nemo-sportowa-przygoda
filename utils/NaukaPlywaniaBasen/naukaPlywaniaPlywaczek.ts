@@ -285,11 +285,11 @@ export const BASEN_PLYWACZEK_TUTORIAL: PoolTutorialPropsType = {
   header: false,
   color: 'darkBlue',
   firstRule:
-      'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
-    rules: [
-      'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
-      'Rodzic ma 15 minut na przebranie i przygotowanie dziecka do zajęć.',
-      'Przy wejściu na basen instruktor przejmuje dzieci i prowadzi 45-minutową lekcję.',
-      'Po zakończonej lekcji rodzic ma prawo wejść na 15 minut, aby pomóc dziecku się przebrać.',
-    ],
+    'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
+  rules: [
+    'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
+    'Rodzic ma 15 minut na przebranie i przygotowanie dziecka do zajęć.',
+    'Przy wejściu na basen instruktor przejmuje dzieci i prowadzi 45-minutową lekcję.',
+    'Po zakończonej lekcji rodzic ma prawo wejść na 15 minut, aby pomóc dziecku się przebrać.',
+  ],
 };

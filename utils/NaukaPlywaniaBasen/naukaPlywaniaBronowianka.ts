@@ -172,7 +172,7 @@ export const BASEN_BRONOWIANKA_INFORMATIONS: PoolInformationsType = {
 export const BASEN_BRONOWIANKA_TUTORIAL: PoolTutorialPropsType = {
   header: false,
   color: 'darkBlue',
- firstRule:
+  firstRule:
     'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
   rules: [
     'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',

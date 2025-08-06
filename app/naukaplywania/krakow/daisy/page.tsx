@@ -14,7 +14,11 @@ import Image3 from '@/public/assets/videos/pool-mix-4.webp';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
-import { BASEN_DAISY_INFORMATIONS, BASEN_DAISY_TUTORIAL, NAUKA_PLYWANIA_DAISY } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaDaisy';
+import {
+  BASEN_DAISY_INFORMATIONS,
+  BASEN_DAISY_TUTORIAL,
+  NAUKA_PLYWANIA_DAISY,
+} from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaDaisy';
 import Schedule from '@/components/Schedule/Schedule';
 
 export const metadata: Metadata = {
@@ -47,7 +51,7 @@ const NaukaPlywaniaDaisy = () => {
         scrapColor="lightBlue"
         col1={{
           video: {
-            src: 'pool-mix-2.mp4',
+            src: 'pool-mix-4.mp4',
             alt: 'nauka pływania niemowlaki',
             image: Image1,
           },
@@ -73,7 +77,7 @@ const NaukaPlywaniaDaisy = () => {
         }}
         col3={{
           video: {
-            src: 'pool-mix-4.mp4',
+            src: 'pool-mix-5.mp4',
             alt: 'nauka pływania dorośli',
             image: Image3,
           },
@@ -85,22 +89,22 @@ const NaukaPlywaniaDaisy = () => {
           },
         }}
       />
-     <Schedule src='https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=99161&zz='/>
- {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
-      <div style={{background:COLORS.lightBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_DAISY.dzieciMlodziez.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_DAISY.dzieciMlodziez.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_DAISY.dzieciMlodziez.groups} />
-</div>
-     
+      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=99161&zz=" />
+      {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
+      <div style={{background: COLORS.lightBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_DAISY.dzieciMlodziez.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_DAISY.dzieciMlodziez.priceList} />
+        <GroupsBySkill {...NAUKA_PLYWANIA_DAISY.dzieciMlodziez.groups} />
+      </div>
+
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-       {/* NAUKA PŁYWAANIA DOROŚLI */}
-      <div style={{background:COLORS.mediumBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_DAISY.dorosli.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_DAISY.dorosli.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_DAISY.dorosli.groups} />
-</div>
-     <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
+      {/* NAUKA PŁYWAANIA DOROŚLI */}
+      <div style={{background: COLORS.mediumBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_DAISY.dorosli.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_DAISY.dorosli.priceList} />
+        <GroupsBySkill {...NAUKA_PLYWANIA_DAISY.dorosli.groups} />
+      </div>
+      <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolTutorial poolTutorial={BASEN_DAISY_TUTORIAL} />

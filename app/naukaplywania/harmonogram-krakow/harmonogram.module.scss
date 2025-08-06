@@ -1,0 +1,49 @@
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
+.container {
+  box-sizing: border-box;
+  padding: 8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: colors.$lightBlue;
+  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  @include mixin.phone500px {
+    padding: 8rem 0rem;
+  }
+}
+.textBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  text-align: center;
+  gap: 3rem;
+  @include mixin.phone800px {
+    width: 100%;
+  }
+  @include mixin.phone500px {
+    gap: 1rem;
+    padding: 0rem 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+    @include mixin.pc1450px {
+      font-size: 2rem;
+    }
+    @include mixin.phone500px {
+      font-size: 1.3rem;
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+    @include mixin.pc1450px {
+      font-size: 1rem;
+    }
+    @include mixin.phone500px {
+      font-size: 0.8rem;
+    }
+    color: colors.$basicOrange;
+  }
+}

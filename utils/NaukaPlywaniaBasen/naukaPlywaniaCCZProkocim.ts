@@ -23,9 +23,6 @@ type NaukaPlywaniaBasen = {
   };
 };
 
-
-
-
 const CENNIK_DZIECI_MLODZIEZ_CCZ_PROKOCIM: PriceLessonsPropsType[] = [
   {
     stickerH4: {
@@ -219,24 +216,24 @@ export const NAUKA_PLYWANIA_CCZ_PROKOCIM: NaukaPlywaniaBasen = {
 
 export const BASEN_CCZ_PROKOCIM_INFORMATIONS: PoolInformationsPropsType = {
   color: 'darkBlue',
-  title: 'Basen GORLICE',
+  title: 'Basen CCZ PROKOCIM',
   imageSrc: 'custom-pool.webp',
   mapSrc:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.959838146512!2d21.16031532690143!3d49.65505599431353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473dc68bf7396df3%3A0xfa103fb8fdb78dfe!2zUMWCeXdhbmlhICJPU2lSIg!5e0!3m2!1spl!2spl!4v1727270999281!5m2!1spl!2spl',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.5462137596974!2d20.008809199999998!3d50.0126225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47164379999b00c7%3A0xb6afe3c18216690c!2sCom-Com%20Zone%20Prokocim!5e1!3m2!1spl!2spl!4v1754488032802!5m2!1spl!2spl',
   stickerH2: {
     title: 'BASEN',
-    titleStrip: 'GORLICE',
+    titleStrip: 'CCZ PROKOCIM',
     stripBgColor: 'basicOrange',
     stripTextColor: 'darkBlue',
   },
   icons: {
     pool1: {
       exists: true,
-      title: 'BASEN SPORTOWY 25 X 12,5M, GŁĘBOKOŚĆ 1,35-1,80M',
+      title: 'BASEN SPORTOWY 25 X 12,5M, GŁĘBOKOŚĆ 1,10-1,80M',
     },
     pool2: {
       exists: true,
-      title: 'BASEN REKREACYJNY 12,5 X 7M, GŁĘBOKOŚĆ 0,00-1,20M',
+      title: 'BASEN REKREACYJNY 12,5 X 7M, GŁĘBOKOŚĆ 1,10M',
     },
     stand: {
       exists: true,
@@ -251,7 +248,7 @@ export const BASEN_CCZ_PROKOCIM_INFORMATIONS: PoolInformationsPropsType = {
       title: 'SZATNIA MĘSKA',
     },
     cloakroomFamily: {
-      exists: true,
+      exists: false,
       title: 'SZATNIA RODZINNA',
     },
     parking: {
@@ -265,11 +262,11 @@ export const BASEN_CCZ_PROKOCIM_TUTORIAL: PoolTutorialPropsType = {
   header: false,
   color: 'darkBlue',
   firstRule:
-      'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
-    rules: [
-      'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
-      'Rodzic ma 15 minut na przebranie i przygotowanie dziecka do zajęć.',
-      'Przy wejściu na basen instruktor przejmuje dzieci i prowadzi 45-minutową lekcję.',
-      'Po zakończonej lekcji rodzic ma prawo wejść na 15 minut, aby pomóc dziecku się przebrać.',
-    ],
+    'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
+  rules: [
+    'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
+    'Rodzic ma 15 minut na przebranie i przygotowanie dziecka do zajęć.',
+    'Przy wejściu na basen instruktor przejmuje dzieci i prowadzi 45-minutową lekcję.',
+    'Po zakończonej lekcji rodzic ma prawo wejść na 15 minut, aby pomóc dziecku się przebrać.',
+  ],
 };

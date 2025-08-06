@@ -7,14 +7,17 @@ import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import Image1 from '@/public/assets/videos/pool-mix-1.webp';
 import Image2 from '@/public/assets/videos/pool-mix-3.webp';
 import Image3 from '@/public/assets/videos/pool-mix-5.webp';
-import Pools, { PoolsPropsType } from '@/components/NaukaPlywania/NaukaPlywaniaPage/Pools/Pools';
-import EisenbergaCoverImg from '@/public/assets/swimming/pools/eisenberga.webp'
-import BronowiankaCoverImg from '@/public/assets/swimming/pools/bronowianka.webp'
-import PlywaczekCoverImg from '@/public/assets/swimming/pools/plywaczek.webp'
-import FabrycznaCoverImg from '@/public/assets/swimming/pools/fabryczna.webp'
-import CCZHutaCoverImg from '@/public/assets/swimming/pools/ccz_huta.webp'
-import CCZProkocimCoverImg from '@/public/assets/swimming/pools/ccz_prokocim.webp'
-import DaisyCoverImg from '@/public/assets/swimming/pools/daisy.webp'
+import Pools, {
+  PoolsPropsType,
+} from '@/components/NaukaPlywania/NaukaPlywaniaPage/Pools/Pools';
+import EisenbergaCoverImg from '@/public/assets/swimming/pools/eisenberga.webp';
+import BronowiankaCoverImg from '@/public/assets/swimming/pools/bronowianka.webp';
+import PlywaczekCoverImg from '@/public/assets/swimming/pools/plywaczek.webp';
+import FabrycznaCoverImg from '@/public/assets/swimming/pools/fabryczna.webp';
+import CCZHutaCoverImg from '@/public/assets/swimming/pools/ccz_huta.webp';
+import CCZProkocimCoverImg from '@/public/assets/swimming/pools/ccz_prokocim.webp';
+import DaisyCoverImg from '@/public/assets/swimming/pools/daisy.webp';
+import StrakowaCoverImg from '@/public/assets/swimming/pools/strakowa.webp';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania KRAKÓW',
@@ -29,52 +32,57 @@ export const metadata: Metadata = {
   },
 };
 
-const POOLS:PoolsPropsType = {
-      stripH3: {
-        title: '',
-        titleStrip: 'LOKALIZACJE',
-        stripBgColor: 'white',
-        stripTextColor: 'lightBlue',
-      },
-      backgroundText: 'LOKALIZACJE',
-      swimmingPools: [
-        {
-          title: 'BASEN EISENBERGA',
-          image: EisenbergaCoverImg,
-          url: '/naukaplywania/krakow/eisenberga',
-        },
-        {
-          title: 'BASEN BRONOWIANKA',
-          image: BronowiankaCoverImg,
-          url: '/naukaplywania/krakow/bronowianka',
-        },
-        {
-          title: 'BASEN PŁYWACZEK',
-          image: PlywaczekCoverImg,
-          url: '/naukaplywania/krakow/plywaczek',
-        },
-        {
-          title: 'BASEN FABRYCZNA',
-          image: FabrycznaCoverImg,
-          url: '/naukaplywania/krakow/fabryczna',
-        },
-        {
-          title: 'BASEN CCZ NOWA HUTA',
-          image: CCZHutaCoverImg,
-          url: '/naukaplywania/krakow/ccz-nowa-huta',
-        },
-        {
-          title: 'BASEN CCZ PROKOCIM',
-          image: CCZProkocimCoverImg,
-          url: '/naukaplywania/krakow/ccz-prokocim',
-        },
-         {
-          title: 'BASEN DAISY',
-          image: DaisyCoverImg,
-          url: '/naukaplywania/krakow/daisy',
-        },
-      ],
-    }
+const POOLS: PoolsPropsType = {
+  stripH3: {
+    title: '',
+    titleStrip: 'LOKALIZACJE',
+    stripBgColor: 'white',
+    stripTextColor: 'lightBlue',
+  },
+  backgroundText: 'LOKALIZACJE',
+  swimmingPools: [
+    {
+      title: 'BASEN EISENBERGA',
+      image: EisenbergaCoverImg,
+      url: '/naukaplywania/krakow/eisenberga',
+    },
+    {
+      title: 'BASEN BRONOWIANKA',
+      image: BronowiankaCoverImg,
+      url: '/naukaplywania/krakow/bronowianka',
+    },
+    {
+      title: 'BASEN PŁYWACZEK',
+      image: PlywaczekCoverImg,
+      url: '/naukaplywania/krakow/plywaczek',
+    },
+    {
+      title: 'BASEN FABRYCZNA',
+      image: FabrycznaCoverImg,
+      url: '/naukaplywania/krakow/fabryczna',
+    },
+    {
+      title: 'BASEN CCZ NOWA HUTA',
+      image: CCZHutaCoverImg,
+      url: '/naukaplywania/krakow/ccz-nowa-huta',
+    },
+    {
+      title: 'BASEN CCZ PROKOCIM',
+      image: CCZProkocimCoverImg,
+      url: '/naukaplywania/krakow/ccz-prokocim',
+    },
+    {
+      title: 'BASEN DAISY',
+      image: DaisyCoverImg,
+      url: '/naukaplywania/krakow/daisy',
+    },
+    {
+      title: 'BASEN STRĄKOWA',
+      image: StrakowaCoverImg,
+      url: '/naukaplywania/krakow/strakowa',
+    },
+  ],
+};
 
 const NaukaPlywaniaKrakow = () => {
   return (
@@ -132,7 +140,7 @@ const NaukaPlywaniaKrakow = () => {
           },
         }}
       />
-      <Pools {...POOLS}/>
+      <Pools {...POOLS} />
       <GalleryLink
         href="/galeria"
         img="/gallery/galleryLinks/swimming.webp"

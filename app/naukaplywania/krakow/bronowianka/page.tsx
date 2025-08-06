@@ -89,14 +89,16 @@ const NaukaPlywaniaBronowianka = () => {
           },
         }}
       />
-      <Schedule src='https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98538&zz='/>
+      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98538&zz=" />
       {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
-<div style={{background:COLORS.lightBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.groups} />
-</div>
-     
+      <div style={{background: COLORS.lightBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.about} />
+        <PriceList
+          priceList={NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.priceList}
+        />
+        <GroupsBySkill {...NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.groups} />
+      </div>
+
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
       <PoolNecessaryItems color="mediumBlue" />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />

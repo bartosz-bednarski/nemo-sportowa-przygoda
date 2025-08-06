@@ -94,19 +94,21 @@ const NaukaPlywaniaKorzenna = () => {
         }}
       />
       <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=68866&zz=" />
-{/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
-<div style={{background:COLORS.lightBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.groups} />
-</div>
+      {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
+      <div style={{background: COLORS.lightBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.about} />
+        <PriceList
+          priceList={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.priceList}
+        />
+        <GroupsBySkill {...NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.groups} />
+      </div>
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
       {/* NAUKA PŁYWAANIA DOROŚLI */}
-<div style={{background:COLORS.mediumBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_KORZENNA.dorosli.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_KORZENNA.dorosli.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_KORZENNA.dorosli.groups} />
-</div>
+      <div style={{background: COLORS.mediumBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_KORZENNA.dorosli.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_KORZENNA.dorosli.priceList} />
+        <GroupsBySkill {...NAUKA_PLYWANIA_KORZENNA.dorosli.groups} />
+      </div>
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <LessonsByMembersAmount
         bgImage="grupowe.png"

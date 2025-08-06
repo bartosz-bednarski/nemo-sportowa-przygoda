@@ -1,6 +1,5 @@
 import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
-import {NAUKA_PLYWANIA} from '../NaukaPlywania/NaukaPlywania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import {GroupsBySkillPropsType} from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
@@ -15,15 +14,9 @@ type NaukaPlywaniaBasen = {
     groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
-  dorosli: {
-    backgroundColor: customColors;
-    about: NaukaPływaniaAboutPropsType;
-    groups: GroupsBySkillPropsType;
-    priceList: PriceListPropsType;
-  };
 };
 
-const CENNIK_DZIECI_MLODZIEZ_CCZ_NOWA_HUTA: PriceLessonsPropsType[] = [
+const CENNIK_DZIECI_MLODZIEZ_STRAKOWA: PriceLessonsPropsType[] = [
   {
     stickerH4: {
       title: 'LEKCJE',
@@ -32,7 +25,7 @@ const CENNIK_DZIECI_MLODZIEZ_CCZ_NOWA_HUTA: PriceLessonsPropsType[] = [
       stripBgColor: 'white',
     },
     oneLesson: {
-      price: '55 zł',
+      price: '70 zł',
       time: 45,
     },
     button: {
@@ -50,7 +43,7 @@ const CENNIK_DZIECI_MLODZIEZ_CCZ_NOWA_HUTA: PriceLessonsPropsType[] = [
       stripBgColor: 'basicOrange',
     },
     oneLesson: {
-      price: '130 zł',
+      price: '145 zł',
       time: 45,
     },
     button: {
@@ -68,7 +61,7 @@ const CENNIK_DZIECI_MLODZIEZ_CCZ_NOWA_HUTA: PriceLessonsPropsType[] = [
       stripTextColor: 'basicOrange',
     },
     oneLesson: {
-      price: '190 zł',
+      price: '200 zł',
       time: 45,
     },
     button: {
@@ -79,63 +72,7 @@ const CENNIK_DZIECI_MLODZIEZ_CCZ_NOWA_HUTA: PriceLessonsPropsType[] = [
     },
   },
 ];
-const CENNIK_DOROSLI_CCZ_NOWA_HUTA: PriceLessonsPropsType[] = [
-  {
-    stickerH4: {
-      title: 'LEKCJE',
-      titleStrip: 'GRUPOWE',
-      stripTextColor: 'basicOrange',
-      stripBgColor: 'white',
-    },
-    oneLesson: {
-      price: '55 zł',
-      time: 45,
-    },
-    button: {
-      title: 'Zapisz się na zajęcia',
-      textColor: 'lightBlue',
-      bgColor: 'white',
-      href: '#harmonogram',
-    },
-  },
-  {
-    stickerH4: {
-      title: 'LEKCJE',
-      titleStrip: 'INDYWIDUALNE',
-      stripTextColor: 'lightBlue',
-      stripBgColor: 'basicOrange',
-    },
-    oneLesson: {
-      price: '130 zł',
-      time: 45,
-    },
-    button: {
-      title: 'Zapisz się na zajęcia',
-      textColor: 'lightBlue',
-      bgColor: 'white',
-      href: '#harmonogram',
-    },
-  },
-  {
-    stickerH4: {
-      title: 'LEKCJE',
-      titleStrip: '2 OSOBOWE',
-      stripBgColor: 'lightBlue',
-      stripTextColor: 'white',
-    },
-    oneLesson: {
-      price: '190 zł',
-      time: 45,
-    },
-    button: {
-      title: 'Zapisz się na zajęcia',
-      textColor: 'lightBlue',
-      bgColor: 'white',
-      href: '#harmonogram',
-    },
-  },
-];
-export const NAUKA_PLYWANIA_CCZ_NOWA_HUTA: NaukaPlywaniaBasen = {
+export const NAUKA_PLYWANIA_STRAKOWA: NaukaPlywaniaBasen = {
   dzieciMlodziez: {
     backgroundColor: 'mediumBlue',
     about: {
@@ -158,7 +95,7 @@ export const NAUKA_PLYWANIA_CCZ_NOWA_HUTA: NaukaPlywaniaBasen = {
         alt: 'nauka pływania dzieci i mlodziez',
       },
     },
-    priceList: CENNIK_DZIECI_MLODZIEZ_CCZ_NOWA_HUTA,
+    priceList: CENNIK_DZIECI_MLODZIEZ_STRAKOWA,
 
     groups: {
       stripH2: {
@@ -175,54 +112,17 @@ export const NAUKA_PLYWANIA_CCZ_NOWA_HUTA: NaukaPlywaniaBasen = {
       ],
     },
   },
-  dorosli: {
-    backgroundColor: 'darkBlue',
-    about: {
-      stickerH2: {
-        title: 'NAUKA PŁYWANIA',
-        titleStrip: 'DOROŚLI',
-        stripTextColor: 'darkBlue',
-        stripBgColor: 'white',
-      },
-      aboutTextPoppins: {
-        titleColor: 'darkBlue',
-        title: 'Dorośli',
-        description:
-          'Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.',
-        alignItems: 'flex-start',
-        textAlign: 'left',
-      },
-      image: {
-        src: 'lessonsTypes/dorosli.webp',
-        alt: 'nauka pływania dorośli',
-      },
-    },
-    priceList: CENNIK_DOROSLI_CCZ_NOWA_HUTA,
-
-    groups: {
-      stripH2: {
-        title: '',
-        titleStrip: 'GRUPY',
-        stripBgColor: 'white',
-        stripTextColor: 'darkBlue',
-      },
-      groups: [
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.poczatkujacaDorosli,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.kontynuacjaDorosli,
-      ],
-    },
-  },
 };
 
-export const BASEN_CCZ_NOWA_HUTA_INFORMATIONS: PoolInformationsPropsType = {
+export const BASEN_STRAKOWA_INFORMATIONS: PoolInformationsPropsType = {
   color: 'darkBlue',
-  title: 'Basen CCZ Nowa Huta',
+  title: 'Basen STRĄKOWA',
   imageSrc: 'custom-pool.webp',
   mapSrc:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.0878749519234!2d20.058449600000003!3d50.0648387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471645a8ee048f0b%3A0x38c061524acbe81c!2sCom-Com%20Zone!5e1!3m2!1spl!2spl!4v1754487583391!5m2!1spl!2spl',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.555155861344!2d19.924559!3d50.0275902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165df5004f5415%3A0x6c552e080534c0bf!2sKryta%20p%C5%82ywalnia%20przy%20Szkole%20Podstawowej%20nr%20158!5e1!3m2!1spl!2spl!4v1754488435843!5m2!1spl!2spl',
   stickerH2: {
     title: 'BASEN',
-    titleStrip: 'CCZ NOWA HUTA',
+    titleStrip: 'STRĄKOWA',
     stripBgColor: 'basicOrange',
     stripTextColor: 'darkBlue',
   },
@@ -236,8 +136,8 @@ export const BASEN_CCZ_NOWA_HUTA_INFORMATIONS: PoolInformationsPropsType = {
       title: 'BASEN REKREACYJNY 12,5 X 7M, GŁĘBOKOŚĆ 0,00-1,20M',
     },
     stand: {
-      exists: false,
-      title: 'TRYBUNY NA BASENIE',
+      exists: true,
+      title: 'BRAK MOŻLIWOŚCI OBSERWACJI ZAJĘĆ PRZEZ OPIEKUNA',
     },
     cloakroomWomen: {
       exists: true,
@@ -258,7 +158,7 @@ export const BASEN_CCZ_NOWA_HUTA_INFORMATIONS: PoolInformationsPropsType = {
   },
 };
 
-export const BASEN_CCZ_NOWA_HUTA_TUTORIAL: PoolTutorialPropsType = {
+export const BASEN_STRAKOWA_TUTORIAL: PoolTutorialPropsType = {
   header: false,
   color: 'darkBlue',
   firstRule:

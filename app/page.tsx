@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       {/* <SignInPopupSwimming /> */}
-      <SignInSwimming2526/>
+      <SignInSwimming2526 />
       <VideosSection
         oneSticker={false}
         scrapColor="mediumBlue"

@@ -94,29 +94,31 @@ const NaukaPlywaniaGorlice = () => {
         }}
       />
       {/* <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=74801&zz=" /> */}
-{/* NAUKA PŁYWAANIA BOBASY */}
-<div style={{background:COLORS.lightBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_GORLICE.zRodzicami.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_GORLICE.zRodzicami.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_GORLICE.zRodzicami.groups} />
-</div>
-     
+      {/* NAUKA PŁYWAANIA BOBASY */}
+      <div style={{background: COLORS.lightBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_GORLICE.zRodzicami.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_GORLICE.zRodzicami.priceList} />
+        <GroupsBySkill {...NAUKA_PLYWANIA_GORLICE.zRodzicami.groups} />
+      </div>
+
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
       {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
-      <div style={{background:COLORS.mediumBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.groups} />
-</div>
-     
+      <div style={{background: COLORS.mediumBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.about} />
+        <PriceList
+          priceList={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.priceList}
+        />
+        <GroupsBySkill {...NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.groups} />
+      </div>
+
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-       {/* NAUKA PŁYWAANIA DOROŚLI */}
-       <div style={{background:COLORS.darkBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_GORLICE.dorosli.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_GORLICE.dorosli.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_GORLICE.dorosli.groups} />
-</div>
-     
+      {/* NAUKA PŁYWAANIA DOROŚLI */}
+      <div style={{background: COLORS.darkBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_GORLICE.dorosli.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_GORLICE.dorosli.priceList} />
+        <GroupsBySkill {...NAUKA_PLYWANIA_GORLICE.dorosli.groups} />
+      </div>
+
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <LessonsByMembersAmount
         bgImage="grupowe.png"

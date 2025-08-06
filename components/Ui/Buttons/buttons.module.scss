@@ -18,7 +18,7 @@
   transition: all 0.5s;
   border: 2px solid colors.$basicOrange;
   font-family: 'RobotoFlex';
-   width: fit-content;
+  width: fit-content;
   @include mixin.phone700px {
     font-size: 0.7rem;
     font-weight: 500;

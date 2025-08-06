@@ -1,9 +1,13 @@
 'use client';
 import React from 'react';
 import styles from './lessonTypeWrapBox.module.scss';
-import StickerH4, { StickerH4PropsType } from '@/components/Ui/Headers/Stickers/StickerH4/StickerH4';
+import StickerH4, {
+  StickerH4PropsType,
+} from '@/components/Ui/Headers/Stickers/StickerH4/StickerH4';
 import {COLORS} from '@/utils/UI/colors';
-import AboutTextPoppins, { AboutTextPoppinsPropsType } from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
+import AboutTextPoppins, {
+  AboutTextPoppinsPropsType,
+} from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {customColors} from '@/types/UI/colors';
 

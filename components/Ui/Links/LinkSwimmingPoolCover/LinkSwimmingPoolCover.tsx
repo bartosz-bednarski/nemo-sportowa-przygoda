@@ -26,7 +26,7 @@ const LinkSwimmingPoolCover = ({
           alt={title}
           width={350}
           height={350}
-          loading='lazy'
+          loading="lazy"
         />
       </div>
       <span className={styles.h4Box}>

@@ -89,17 +89,20 @@ const NaukaPlywaniaPlywaczek = () => {
           },
         }}
       />
-      <Schedule src='https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98469&zz='/>
- {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
-      <div style={{background:COLORS.lightBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.groups} />
-</div>
-     
+      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98469&zz=" />
+      {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
+      <div style={{background: COLORS.lightBlue}}>
+        <NaukaPlywaniaAbout
+          {...NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.about}
+        />
+        <PriceList
+          priceList={NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.priceList}
+        />
+        <GroupsBySkill {...NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.groups} />
+      </div>
+
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-      
-     
+
       <PoolNecessaryItems color="mediumBlue" />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <PoolTutorial poolTutorial={BASEN_PLYWACZEK_TUTORIAL} />

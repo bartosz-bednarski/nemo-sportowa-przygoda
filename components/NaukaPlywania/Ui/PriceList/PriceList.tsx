@@ -1,9 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './priceList.module.scss';
-import PriceLessons, {
-  PriceLessonsPropsType,
-} from './PriceLessons/PriceLessons';
+import PriceLessons, {PriceLessonsPropsType} from './PriceLessons/PriceLessons';
 
 export type PriceListPropsType = PriceLessonsPropsType[];
 

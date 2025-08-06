@@ -14,7 +14,11 @@ import Image3 from '@/public/assets/videos/pool-mix-4.webp';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
-import { BASEN_CCZ_NOWA_HUTA_INFORMATIONS, BASEN_CCZ_NOWA_HUTA_TUTORIAL, NAUKA_PLYWANIA_CCZ_NOWA_HUTA } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaCCZNowaHuta';
+import {
+  BASEN_CCZ_NOWA_HUTA_INFORMATIONS,
+  BASEN_CCZ_NOWA_HUTA_TUTORIAL,
+  NAUKA_PLYWANIA_CCZ_NOWA_HUTA,
+} from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaCCZNowaHuta';
 import Schedule from '@/components/Schedule/Schedule';
 
 export const metadata: Metadata = {
@@ -25,7 +29,8 @@ export const metadata: Metadata = {
     'https://nemosportowaprzygoda.pl/naukaplywania/krakow/ccz-nowa-huta'
   ),
   alternates: {
-    canonical: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/ccz-nowa-huta',
+    canonical:
+      'https://nemosportowaprzygoda.pl/naukaplywania/krakow/ccz-nowa-huta',
     languages: {
       'pl-PL': '/pl-PL',
     },
@@ -47,7 +52,7 @@ const NaukaPlywaniaCCZNowaHutaPage = () => {
         scrapColor="lightBlue"
         col1={{
           video: {
-            src: 'pool-mix-2.mp4',
+            src: 'pool-mix-4.mp4',
             alt: 'nauka pływania niemowlaki',
             image: Image1,
           },
@@ -60,7 +65,7 @@ const NaukaPlywaniaCCZNowaHutaPage = () => {
         }}
         col2={{
           video: {
-            src: 'pool-mix-3.mp4',
+            src: 'pool-mix-2.mp4',
             alt: 'nauka pływania dzieci i mlodzież',
             image: Image2,
           },
@@ -73,7 +78,7 @@ const NaukaPlywaniaCCZNowaHutaPage = () => {
         }}
         col3={{
           video: {
-            src: 'pool-mix-4.mp4',
+            src: 'pool-mix-5.mp4',
             alt: 'nauka pływania dorośli',
             image: Image3,
           },
@@ -85,22 +90,28 @@ const NaukaPlywaniaCCZNowaHutaPage = () => {
           },
         }}
       />
-     <Schedule src='https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98470&zz='/>
- {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
-      <div style={{background:COLORS.lightBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_CCZ_NOWA_HUTA.dzieciMlodziez.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_CCZ_NOWA_HUTA.dzieciMlodziez.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_CCZ_NOWA_HUTA.dzieciMlodziez.groups} />
-</div>
-     
+      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98470&zz=" />
+      {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
+      <div style={{background: COLORS.lightBlue}}>
+        <NaukaPlywaniaAbout
+          {...NAUKA_PLYWANIA_CCZ_NOWA_HUTA.dzieciMlodziez.about}
+        />
+        <PriceList
+          priceList={NAUKA_PLYWANIA_CCZ_NOWA_HUTA.dzieciMlodziez.priceList}
+        />
+        <GroupsBySkill
+          {...NAUKA_PLYWANIA_CCZ_NOWA_HUTA.dzieciMlodziez.groups}
+        />
+      </div>
+
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-       {/* NAUKA PŁYWAANIA DOROŚLI */}
-      <div style={{background:COLORS.mediumBlue}}>
-<NaukaPlywaniaAbout {...NAUKA_PLYWANIA_CCZ_NOWA_HUTA.dorosli.about}/>
-<PriceList priceList={NAUKA_PLYWANIA_CCZ_NOWA_HUTA.dorosli.priceList} />
-<GroupsBySkill {...NAUKA_PLYWANIA_CCZ_NOWA_HUTA.dorosli.groups} />
-</div>
-     <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
+      {/* NAUKA PŁYWAANIA DOROŚLI */}
+      <div style={{background: COLORS.mediumBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_CCZ_NOWA_HUTA.dorosli.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_CCZ_NOWA_HUTA.dorosli.priceList} />
+        <GroupsBySkill {...NAUKA_PLYWANIA_CCZ_NOWA_HUTA.dorosli.groups} />
+      </div>
+      <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolTutorial poolTutorial={BASEN_CCZ_NOWA_HUTA_TUTORIAL} />

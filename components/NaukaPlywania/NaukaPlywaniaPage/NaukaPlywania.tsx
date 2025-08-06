@@ -8,7 +8,9 @@ import {customColors} from '@/types/UI/colors';
 import NaukaPlywaniaAbout, {
   NaukaPływaniaAboutPropsType,
 } from '../Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
-import GroupsBySkill, { GroupsBySkillPropsType } from '../Ui/GroupsBySkill/GroupsBySkill';
+import GroupsBySkill, {
+  GroupsBySkillPropsType,
+} from '../Ui/GroupsBySkill/GroupsBySkill';
 
 export interface NaukaPlywaniaPropsType {
   about: NaukaPływaniaAboutPropsType;

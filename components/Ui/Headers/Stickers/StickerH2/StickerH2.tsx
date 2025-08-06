@@ -10,7 +10,7 @@ export interface StickerH2PropsType {
   title: string;
   titleStrip: string;
   titleColor?: customColors;
-  stripJustifyContent?:'flex-start'|'center'|'flex-end'
+  stripJustifyContent?: 'flex-start' | 'center' | 'flex-end';
 }
 
 const StickerH2 = ({
@@ -19,7 +19,7 @@ const StickerH2 = ({
   titleStrip,
   titleColor,
   stripTextColor,
-  stripJustifyContent
+  stripJustifyContent,
 }: StickerH2PropsType) => {
   const stripStyles = `${styles.scrapBox} ${styles[`${stripBgColor}`]}`;
   const stripTextStyles = {
@@ -33,7 +33,10 @@ const StickerH2 = ({
       <span className={styles.h2Title} style={titleStyles}>
         {title}{' '}
       </span>
-      <span className={stripStyles} style={{justifyContent:stripJustifyContent}}>
+      <span
+        className={stripStyles}
+        style={{justifyContent: stripJustifyContent}}
+      >
         <span className={styles.scrapLeft}></span>
         <span className={styles.scrapText} style={stripTextStyles}>
           {' '}
