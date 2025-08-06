@@ -12,17 +12,18 @@ import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {Metadata} from 'next';
 import Schedule from '@/components/Schedule/Schedule';
 import {COLORS} from '@/utils/UI/colors';
-import NaukaPlywaniaBasen from '@/components/NaukaPlywania/NaukaPlywaniaBasen/NaukaPlywaniaBasen';
 import PoolNecessaryItems from '@/components/NaukaPlywania/Ui/PoolNecessaryItems/PoolNecessaryItems';
 import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 import PoolInformations from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
-import LessonTypeWrapBox from '@/components/NaukaPlywania/Ui/LessonTypeWrapBox/LessonTypeWrapBox';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import Image1 from '@/public/assets/videos/pool-mix-4.webp';
 import Image2 from '@/public/assets/videos/pool-mix-2.webp';
 import Image3 from '@/public/assets/videos/pool-mix-5.webp';
 import SectionAbout from '@/components/AquaFitness/SectionAbout/SectionAbout';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
+import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import LessonsByMembersAmount from '@/components/NaukaPlywania/Ui/LessonsByMembersAmount/LessonsByMembersAmount';
+import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania KORZENNA',
@@ -93,22 +94,23 @@ const NaukaPlywaniaKorzenna = () => {
         }}
       />
       <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=68866&zz=" />
-
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.about}
-        backgroundColor={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.backgroundColor}
-        groups={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.groups}
-        priceList={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.priceList}
-      />
+      {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
+      <div style={{background: COLORS.lightBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.about} />
+        <PriceList
+          priceList={NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.priceList}
+        />
+        <GroupsBySkill {...NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.groups} />
+      </div>
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_KORZENNA.dorosli.about}
-        backgroundColor={NAUKA_PLYWANIA_KORZENNA.dorosli.backgroundColor}
-        groups={NAUKA_PLYWANIA_KORZENNA.dorosli.groups}
-        priceList={NAUKA_PLYWANIA_KORZENNA.dorosli.priceList}
-      />
+      {/* NAUKA PŁYWAANIA DOROŚLI */}
+      <div style={{background: COLORS.mediumBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_KORZENNA.dorosli.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_KORZENNA.dorosli.priceList} />
+        <GroupsBySkill {...NAUKA_PLYWANIA_KORZENNA.dorosli.groups} />
+      </div>
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-      <LessonTypeWrapBox
+      <LessonsByMembersAmount
         bgImage="grupowe.png"
         bgColor="darkBlue"
         lessonTypes={[

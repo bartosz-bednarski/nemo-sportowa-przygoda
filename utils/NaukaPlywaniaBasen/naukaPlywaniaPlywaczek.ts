@@ -1,7 +1,7 @@
 import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
-import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
+import {GroupsBySkillPropsType} from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import {PoolInformationsPropsType} from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
 import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
@@ -10,15 +10,15 @@ type NaukaPlywaniaBasen = {
   dzieciMlodziez: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
-  dorosli: {
-    backgroundColor: customColors;
-    about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
-    priceList: PriceListPropsType;
-  };
+  // dorosli: {
+  //   backgroundColor: customColors;
+  //   about: NaukaPływaniaAboutPropsType;
+  //   groups: GroupsBySkillPropsType;
+  //   priceList: PriceListPropsType;
+  // };
 };
 
 const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
@@ -41,7 +41,7 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
   {
@@ -52,18 +52,18 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
       stripBgColor: 'basicOrange',
     },
     oneLesson: {
-      price: '160 zł',
+      price: '145 zł',
       time: 45,
     },
     tenLessons: {
-      price: '1200 zł',
+      price: '1450 zł',
       time: '10 x 45',
     },
     button: {
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
   {
@@ -74,7 +74,7 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
       stripTextColor: 'white',
     },
     oneLesson: {
-      price: '240 zł',
+      price: '200 zł',
       time: 45,
     },
     tenLessons: {
@@ -85,78 +85,78 @@ const CENNIK_DZIECI_MLODZIEZ_PLYWACZEK: PriceListPropsType = [
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
 ];
-const CENNIK_DOROSLI_PLYWACZEK: PriceListPropsType = [
-  {
-    stickerH4: {
-      title: 'LEKCJE',
-      titleStrip: 'GRUPOWE',
-      stripTextColor: 'basicOrange',
-      stripBgColor: 'white',
-    },
-    oneLesson: {
-      price: '70 zł',
-      time: 45,
-    },
-    tenLessons: {
-      price: '700 zł',
-      time: '10 x 45',
-    },
-    button: {
-      title: 'Zapisz się na zajęcia',
-      textColor: 'lightBlue',
-      bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
-    },
-  },
-  {
-    stickerH4: {
-      title: 'LEKCJE',
-      titleStrip: 'INDYWIDUALNE',
-      stripTextColor: 'lightBlue',
-      stripBgColor: 'basicOrange',
-    },
-    oneLesson: {
-      price: '160 zł',
-      time: 45,
-    },
-    tenLessons: {
-      price: '1200 zł',
-      time: '10 x 45',
-    },
-    button: {
-      title: 'Zapisz się na zajęcia',
-      textColor: 'lightBlue',
-      bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
-    },
-  },
-  {
-    stickerH4: {
-      title: 'LEKCJE',
-      titleStrip: '2 OSOBOWE',
-      stripBgColor: 'lightBlue',
-      stripTextColor: 'white',
-    },
-    oneLesson: {
-      price: '240 zł',
-      time: 45,
-    },
-    tenLessons: {
-      price: '2000 zł',
-      time: '10 x 45',
-    },
-    button: {
-      title: 'Zapisz się na zajęcia',
-      textColor: 'lightBlue',
-      bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
-    },
-  },
-];
+// const CENNIK_DOROSLI_PLYWACZEK: PriceListPropsType = [
+//   {
+//     stickerH4: {
+//       title: 'LEKCJE',
+//       titleStrip: 'GRUPOWE',
+//       stripTextColor: 'basicOrange',
+//       stripBgColor: 'white',
+//     },
+//     oneLesson: {
+//       price: '70 zł',
+//       time: 45,
+//     },
+//     tenLessons: {
+//       price: '700 zł',
+//       time: '10 x 45',
+//     },
+//     button: {
+//       title: 'Zapisz się na zajęcia',
+//       textColor: 'lightBlue',
+//       bgColor: 'white',
+//       href: '#harmonogram',
+//     },
+//   },
+//   {
+//     stickerH4: {
+//       title: 'LEKCJE',
+//       titleStrip: 'INDYWIDUALNE',
+//       stripTextColor: 'lightBlue',
+//       stripBgColor: 'basicOrange',
+//     },
+//     oneLesson: {
+//       price: '160 zł',
+//       time: 45,
+//     },
+//     tenLessons: {
+//       price: '1200 zł',
+//       time: '10 x 45',
+//     },
+//     button: {
+//       title: 'Zapisz się na zajęcia',
+//       textColor: 'lightBlue',
+//       bgColor: 'white',
+//       href: '#harmonogram',
+//     },
+//   },
+//   {
+//     stickerH4: {
+//       title: 'LEKCJE',
+//       titleStrip: '2 OSOBOWE',
+//       stripBgColor: 'lightBlue',
+//       stripTextColor: 'white',
+//     },
+//     oneLesson: {
+//       price: '240 zł',
+//       time: 45,
+//     },
+//     tenLessons: {
+//       price: '2000 zł',
+//       time: '10 x 45',
+//     },
+//     button: {
+//       title: 'Zapisz się na zajęcia',
+//       textColor: 'lightBlue',
+//       bgColor: 'white',
+//       href: '#harmonogram',
+//     },
+//   },
+// ];
 export const NAUKA_PLYWANIA_PLYWACZEK: NaukaPlywaniaBasen = {
   dzieciMlodziez: {
     backgroundColor: 'lightBlue',
@@ -198,43 +198,43 @@ export const NAUKA_PLYWANIA_PLYWACZEK: NaukaPlywaniaBasen = {
       ],
     },
   },
-  dorosli: {
-    backgroundColor: 'mediumBlue',
-    about: {
-      stickerH2: {
-        title: 'NAUKA PŁYWANIA',
-        titleStrip: 'DOROŚLI',
-        stripTextColor: 'mediumBlue',
-        stripBgColor: 'white',
-      },
-      aboutTextPoppins: {
-        titleColor: 'mediumBlue',
-        title: 'Dorośli',
-        description:
-          'Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.',
-        alignItems: 'flex-start',
-        textAlign: 'left',
-      },
-      image: {
-        src: 'lessonsTypes/dorosli.webp',
-        alt: 'nauka pływania dorośli',
-      },
-    },
-    priceList: CENNIK_DOROSLI_PLYWACZEK,
+  // dorosli: {
+  //   backgroundColor: 'mediumBlue',
+  //   about: {
+  //     stickerH2: {
+  //       title: 'NAUKA PŁYWANIA',
+  //       titleStrip: 'DOROŚLI',
+  //       stripTextColor: 'mediumBlue',
+  //       stripBgColor: 'white',
+  //     },
+  //     aboutTextPoppins: {
+  //       titleColor: 'mediumBlue',
+  //       title: 'Dorośli',
+  //       description:
+  //         'Mogą zarówno doskonalić swoje umiejętności, jak i rozpocząć naukę pływania od zera. Bez względu na poziom zaawansowania, zajęcia pomagają zbudować pewność siebie w wodzie, poprawić kondycję oraz nauczyć się prawidłowej techniki pod okiem doświadczonych instruktorów.',
+  //       alignItems: 'flex-start',
+  //       textAlign: 'left',
+  //     },
+  //     image: {
+  //       src: 'lessonsTypes/dorosli.webp',
+  //       alt: 'nauka pływania dorośli',
+  //     },
+  //   },
+  //   priceList: CENNIK_DOROSLI_PLYWACZEK,
 
-    groups: {
-      stripH2: {
-        title: '',
-        titleStrip: 'GRUPY',
-        stripBgColor: 'white',
-        stripTextColor: 'darkBlue',
-      },
-      groups: [
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.poczatkujacaDorosli,
-        GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.kontynuacjaDorosli,
-      ],
-    },
-  },
+  //   groups: {
+  //     stripH2: {
+  //       title: '',
+  //       titleStrip: 'GRUPY',
+  //       stripBgColor: 'white',
+  //       stripTextColor: 'darkBlue',
+  //     },
+  //     groups: [
+  //       GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.poczatkujacaDorosli,
+  //       GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS.kontynuacjaDorosli,
+  //     ],
+  //   },
+  // },
 };
 
 export const BASEN_PLYWACZEK_INFORMATIONS: PoolInformationsPropsType = {
@@ -285,12 +285,11 @@ export const BASEN_PLYWACZEK_TUTORIAL: PoolTutorialPropsType = {
   header: false,
   color: 'darkBlue',
   firstRule:
-    'Odzież wierzchnią oraz buty zostaw w wyznaczonym miejscu w holu - przy recepcji w hotelu.',
+    'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
   rules: [
-    'W kasie biletowej kup bilet na lekcję pływania „Nemo Sportowa Przygoda” dla swojego dziecka.',
-    'Rodzic może pomóc dziecku przebrać się w szatni. Dziecko powinno być ubrane w strój kąpielowy, czepek, okulary i klapki.',
-    'Po przebraniu, przyprowadzamy dziecko do miejsca przejścia na basen. ',
-    'W wyznaczonym miejscu (przejście między szatnią a basenem) instruktor odbiera dziecko i prowadzi je na lekcję pływania.',
-    'Po zakończonej lekcji, trwającej 45 minut, instruktor przyprowadza dzieci z powrotem w to samo miejsce, gdzie rodzic może odebrać dziecko.',
+    'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
+    'Rodzic ma 15 minut na przebranie i przygotowanie dziecka do zajęć.',
+    'Przy wejściu na basen instruktor przejmuje dzieci i prowadzi 45-minutową lekcję.',
+    'Po zakończonej lekcji rodzic ma prawo wejść na 15 minut, aby pomóc dziecku się przebrać.',
   ],
 };

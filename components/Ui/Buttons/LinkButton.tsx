@@ -13,12 +13,7 @@ const LinkButton: React.FC<{
   onClick?: () => void;
 }> = ({textColor, title, href, onClick}) => {
   return (
-    <Link
-      className={styles.linkButton}
-      // style={{ background: COLORS[bgColor], color: COLORS[textColor] }}
-      href={href}
-      onClick={onClick}
-    >
+    <Link className={styles.linkButton} href={href} onClick={onClick}>
       <span>{title}</span>{' '}
       <svg
         width="25"

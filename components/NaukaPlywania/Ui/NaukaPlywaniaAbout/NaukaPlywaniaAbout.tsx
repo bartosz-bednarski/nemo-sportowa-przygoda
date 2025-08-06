@@ -36,6 +36,7 @@ const NaukaPlywaniaAbout = ({
           titleStrip={stickerH2.titleStrip}
           stripTextColor={stickerH2.stripTextColor}
           stripBgColor={stickerH2.stripBgColor}
+          stripJustifyContent="flex-start"
         />
         <AboutTextPoppins
           titleColor={aboutTextPoppins.titleColor}

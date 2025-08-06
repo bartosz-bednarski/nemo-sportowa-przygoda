@@ -1,3 +1,4 @@
+@use '../../styles/mixin.scss' as mixin;
 @import '../../styles/colors.scss';
 @import '../../styles/fonts.scss';
 .activenow-table-name {
@@ -12,9 +13,17 @@
   padding: 6rem 2rem 4rem 2rem;
   gap: 3rem;
   background-color: $lightBlue;
+  // @include mixin.phone700px{
+  //      padding: 6rem 1rem 4rem 1rem;
+
+  //   }
+
   h2 {
     font-size: 3rem;
     font-family: 'poppins-700';
+    @include mixin.phone700px {
+      font-size: 2rem;
+    }
   }
   &__table {
     width: 100%;
@@ -26,33 +35,37 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 600;
-    padding: 0.5rem 2rem !important;
+    padding: 0.7rem 1rem !important;
     color: white;
     background-color: $basicOrange;
     border: 0;
     border-radius: 40px;
     gap: 1rem;
     transition: all 0.5s;
+    margin: 0 0.5rem;
     &:hover {
       cursor: pointer;
       background-color: green;
     }
   }
 }
-@media only screen and (max-width: 700px) {
-  .schedule {
-    padding: 6rem 0.5rem 4rem 0.5rem;
-    h2 {
-      font-size: 2rem;
-    }
-  }
-}
+// @media only screen and (max-width: 700px) {
+//   .schedule {
+//     padding: 6rem 0.5rem 4rem 0.5rem;
+//     h2 {
+//       font-size: 2rem;
+//     }
+//   }
+// }
 @media only screen and (max-width: 500px) {
   .schedule {
     h2 {
       font-size: 1.3rem;
+    }
+    .filters-first-row {
+      flex-direction: column !important;
     }
   }
 }

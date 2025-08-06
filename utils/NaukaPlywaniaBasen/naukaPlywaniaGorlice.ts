@@ -2,29 +2,29 @@ import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
 import {NAUKA_PLYWANIA} from '../NaukaPlywania/NaukaPlywania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
-import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
+import {GroupsBySkillPropsType} from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import {PoolInformationsPropsType} from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
 import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
-import {PriceLessonsPropsType} from '@/components/NaukaPlywania/Ui/PriceLessons/PriceLessons';
+import {PriceLessonsPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceLessons/PriceLessons';
 
 type NaukaPlywaniaBasen = {
   zRodzicami: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
   dzieciMlodziez: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
   dorosli: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
 };

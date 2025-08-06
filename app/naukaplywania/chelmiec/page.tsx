@@ -5,11 +5,9 @@ import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';
-import NaukaPlywaniaBasen from '@/components/NaukaPlywania/NaukaPlywaniaBasen/NaukaPlywaniaBasen';
 import PoolNecessaryItems from '@/components/NaukaPlywania/Ui/PoolNecessaryItems/PoolNecessaryItems';
 import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 import PoolInformations from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
-import LessonTypeWrapBox from '@/components/NaukaPlywania/Ui/LessonTypeWrapBox/LessonTypeWrapBox';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import {
   BASEN_CHELMIEC_INFORMATIONS,
@@ -19,6 +17,11 @@ import {
 import Image1 from '@/public/assets/videos/pool-mix-2.webp';
 import Image2 from '@/public/assets/videos/pool-mix-5.webp';
 import Image3 from '@/public/assets/videos/pool-mix-3.webp';
+import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
+import Groups from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
+import LessonsByMembersAmount from '@/components/NaukaPlywania/Ui/LessonsByMembersAmount/LessonsByMembersAmount';
+import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania CHEŁMIEC',
@@ -88,22 +91,22 @@ const NaukaPlywaniaChelmiec = () => {
           },
         }}
       />
-
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_CHELMIEC.dzieciMlodziez.about}
-        backgroundColor={NAUKA_PLYWANIA_CHELMIEC.dzieciMlodziez.backgroundColor}
-        groups={NAUKA_PLYWANIA_CHELMIEC.dzieciMlodziez.groups}
-        priceList={NAUKA_PLYWANIA_CHELMIEC.dzieciMlodziez.priceList}
-      />
+      <div style={{background: COLORS.lightBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_CHELMIEC.dzieciMlodziez.about} />
+        <PriceList
+          priceList={NAUKA_PLYWANIA_CHELMIEC.dzieciMlodziez.priceList}
+        />
+        <GroupsBySkill {...NAUKA_PLYWANIA_CHELMIEC.dzieciMlodziez.groups} />
+      </div>
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_CHELMIEC.dorosli.about}
-        backgroundColor={NAUKA_PLYWANIA_CHELMIEC.dorosli.backgroundColor}
-        groups={NAUKA_PLYWANIA_CHELMIEC.dorosli.groups}
-        priceList={NAUKA_PLYWANIA_CHELMIEC.dorosli.priceList}
-      />
+      <div style={{background: COLORS.mediumBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_CHELMIEC.dorosli.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_CHELMIEC.dorosli.priceList} />
+        <Groups {...NAUKA_PLYWANIA_CHELMIEC.dorosli.groups} />
+      </div>
+
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-      <LessonTypeWrapBox
+      <LessonsByMembersAmount
         bgImage="grupowe.png"
         bgColor="darkBlue"
         lessonTypes={[

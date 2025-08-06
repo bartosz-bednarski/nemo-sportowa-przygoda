@@ -1,17 +1,17 @@
 'use client';
 import React from 'react';
 import styles from './groups.module.scss';
-import GroupLvl, {GroupLvlPropsType} from '../GroupLvl/GroupLvl';
+import GroupLvl, {GroupLvlPropsType} from './GroupLvl/GroupLvl';
 import StickerH2, {
   StickerH2PropsType,
 } from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 
-export interface GroupsPropsType {
+export interface GroupsBySkillPropsType {
   stripH2: StickerH2PropsType;
   groups: GroupLvlPropsType[];
 }
 
-const Groups = ({stripH2, groups}: GroupsPropsType) => {
+const GroupsBySkill = ({stripH2, groups}: GroupsBySkillPropsType) => {
   return (
     <div className={styles.groups}>
       <StickerH2
@@ -35,4 +35,4 @@ const Groups = ({stripH2, groups}: GroupsPropsType) => {
   );
 };
 
-export default Groups;
+export default GroupsBySkill;

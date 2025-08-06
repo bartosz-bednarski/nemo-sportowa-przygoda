@@ -2,7 +2,7 @@ import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
 import {NAUKA_PLYWANIA} from '../NaukaPlywania/NaukaPlywania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
-import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
+import {GroupsBySkillPropsType} from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import {PoolInformationsPropsType} from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
 import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
@@ -11,19 +11,19 @@ type NaukaPlywaniaBasen = {
   zRodzicami: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
   dzieciMlodziez: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
   dorosli: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
 };
@@ -48,7 +48,7 @@ const CENNIK_Z_RODZICAMI_EISENBERGA: PriceListPropsType = [
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
 ];
@@ -72,7 +72,7 @@ const CENNIK_DZIECI_MLODZIEZ_EISENBERGA: PriceListPropsType = [
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
   {
@@ -83,18 +83,18 @@ const CENNIK_DZIECI_MLODZIEZ_EISENBERGA: PriceListPropsType = [
       stripBgColor: 'basicOrange',
     },
     oneLesson: {
-      price: '160 zł',
+      price: '145 zł',
       time: 45,
     },
     tenLessons: {
-      price: '1200 zł',
+      price: '1450 zł',
       time: '10 x 45',
     },
     button: {
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
   {
@@ -105,7 +105,7 @@ const CENNIK_DZIECI_MLODZIEZ_EISENBERGA: PriceListPropsType = [
       stripTextColor: 'white',
     },
     oneLesson: {
-      price: '240 zł',
+      price: '200 zł',
       time: 45,
     },
     tenLessons: {
@@ -116,7 +116,7 @@ const CENNIK_DZIECI_MLODZIEZ_EISENBERGA: PriceListPropsType = [
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
 ];
@@ -140,7 +140,7 @@ const CENNIK_DOROSLI_EISENBERGA: PriceListPropsType = [
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
   {
@@ -151,18 +151,18 @@ const CENNIK_DOROSLI_EISENBERGA: PriceListPropsType = [
       stripBgColor: 'basicOrange',
     },
     oneLesson: {
-      price: '160 zł',
+      price: '145 zł',
       time: 45,
     },
     tenLessons: {
-      price: '1200 zł',
+      price: '1450 zł',
       time: '10 x 45',
     },
     button: {
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
   {
@@ -173,7 +173,7 @@ const CENNIK_DOROSLI_EISENBERGA: PriceListPropsType = [
       stripTextColor: 'white',
     },
     oneLesson: {
-      price: '240 zł',
+      price: '200 zł',
       time: 45,
     },
     tenLessons: {
@@ -184,7 +184,7 @@ const CENNIK_DOROSLI_EISENBERGA: PriceListPropsType = [
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
 ];

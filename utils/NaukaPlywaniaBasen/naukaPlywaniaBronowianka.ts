@@ -2,7 +2,7 @@ import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
 import {NAUKA_PLYWANIA} from '../NaukaPlywania/NaukaPlywania';
 import {PriceListPropsType} from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
-import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
+import {GroupsBySkillPropsType} from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import {StickerH2PropsType} from '@/components/Ui/Headers/Stickers/StickerH2/StickerH2';
 import {PoolTutorialPropsType} from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
@@ -11,7 +11,7 @@ type NaukaPlywaniaBasen = {
   zRodzicami: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
     priceList: PriceListPropsType;
   };
 };
@@ -74,7 +74,7 @@ export const CENNIK_Z_RODZICAMI_BRONOWIANKA: PriceListPropsType = [
       title: 'Zapisz się na zajęcia',
       textColor: 'lightBlue',
       bgColor: 'white',
-      href: 'https://zapisy.activenow.pl/szkola-plywania-nemo1/',
+      href: '#harmonogram',
     },
   },
 ];
@@ -173,12 +173,13 @@ export const BASEN_BRONOWIANKA_TUTORIAL: PoolTutorialPropsType = {
   header: false,
   color: 'darkBlue',
   firstRule:
-    'Odzież wierzchnią oraz buty zostaw w wyznaczonym miejscu w holu - przy recepcji w hotelu.',
+    'Przebierz odzież wierzchnią i buty, zostawiając je w szafkach przy kasie biletowej.',
   rules: [
-    'W kasie biletowej kup bilet na lekcję pływania „Nemo Sportowa Przygoda” dla swojego dziecka.',
-    'Rodzic może pomóc dziecku przebrać się w szatni. Dziecko powinno być ubrane w strój kąpielowy, czepek, okulary i klapki.',
-    'Po przebraniu, przyprowadzamy dziecko do miejsca przejścia na basen. ',
-    'W wyznaczonym miejscu (przejście między szatnią a basenem) instruktor odbiera dziecko i prowadzi je na lekcję pływania.',
-    'Po zakończonej lekcji, trwającej 45 minut, instruktor przyprowadza dzieci z powrotem w to samo miejsce, gdzie rodzic może odebrać dziecko.',
+    'W kasie podaj imię i nazwisko dziecka oraz informację, że dziecko idzie na zajęcia "Nemo Sportowa Przygoda".',
+    'Przebierz siebie i dziecko.',
+    'Załóż dziecku wodoodporną pieluchę.',
+    'Owiń dziecko ręcznikiem.',
+    'Zabierz czepek dla siebie.',
+    'Następnie wejdź na wydzielony tor dla zajęć "Nemo Sportowa Przygoda".',
   ],
 };

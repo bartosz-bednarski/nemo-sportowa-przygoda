@@ -10,11 +10,12 @@ const SingInButton: React.FC<signInButtonType> = ({
   textColor,
   title,
   href,
+  style,
 }) => {
   return (
     <Link
       className={styles.signInButton}
-      style={{background: COLORS[bgColor], color: COLORS[textColor]}}
+      style={{background: COLORS[bgColor], color: COLORS[textColor], ...style}}
       href={href}
     >
       <span>{title}</span>

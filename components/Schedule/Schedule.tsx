@@ -2,7 +2,13 @@
 import React, {useEffect} from 'react';
 import styles from './schedule.module.scss';
 
-const Schedule: React.FC<{src: string}> = ({src}) => {
+interface SchedulePropsType {
+  src: string;
+  width?: string;
+  paddingTop?: string;
+}
+
+const Schedule = ({src, width, paddingTop}: SchedulePropsType) => {
   const tableStyles = '.activenow-table-name{font-size:0.7rem;};';
   useEffect(() => {
     const script = document.createElement('script');
@@ -15,7 +21,11 @@ const Schedule: React.FC<{src: string}> = ({src}) => {
     };
   }, [src]);
   return (
-    <div className={styles.schedule}>
+    <div
+      className={styles.schedule}
+      style={{width: width, paddingTop: paddingTop}}
+      id="harmonogram"
+    >
       <h2>HARMONOGRAM</h2>
       <div
         className={`${tableStyles} ${'activenow-table-container'} ${

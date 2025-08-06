@@ -1,7 +1,6 @@
 import styles from '../../../page.module.scss';
 import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
-import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {
   BASEN_PLYWACZEK_INFORMATIONS,
@@ -10,20 +9,22 @@ import {
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaPlywaczek';
 import {Metadata} from 'next';
 import {COLORS} from '@/utils/UI/colors';
-import NaukaPlywaniaBasen from '@/components/NaukaPlywania/NaukaPlywaniaBasen/NaukaPlywaniaBasen';
 import PoolNecessaryItems from '@/components/NaukaPlywania/Ui/PoolNecessaryItems/PoolNecessaryItems';
 import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 import PoolInformations from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
-import LessonTypeWrapBox from '@/components/NaukaPlywania/Ui/LessonTypeWrapBox/LessonTypeWrapBox';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import Image1 from '@/public/assets/videos/pool-mix-2.webp';
 import Image2 from '@/public/assets/videos/pool-mix-3.webp';
 import Image3 from '@/public/assets/videos/pool-mix-4.webp';
+import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
+import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
+import Schedule from '@/components/Schedule/Schedule';
 
 export const metadata: Metadata = {
-  title: 'Nauka pływania Kraków PŁYWACZEK',
+  title: 'Nauka Pływania Basen Pływaczek Kraków',
   description:
-    'Nasze zajęcia są przeznaczone dla dzieci i młodzieży od lat 3 oraz dorosłych. Zapraszamy wszystkich chętnych na basen Pływaczek w Krakowie!',
+    'Zajęcia nauki pływania dla niemowlaków. Szkoła pływania Nemo Sportowa Przygoda zaprasza na basen Pływaczek przy SP 155 na Os. 2 Pułku Lotniczego w Krakowie.',
   metadataBase: new URL(
     'https://nemosportowaprzygoda.pl/naukaplywania/krakow/plywaczek'
   ),
@@ -88,35 +89,22 @@ const NaukaPlywaniaPlywaczek = () => {
           },
         }}
       />
+      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98469&zz=" />
+      {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
+      <div style={{background: COLORS.lightBlue}}>
+        <NaukaPlywaniaAbout
+          {...NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.about}
+        />
+        <PriceList
+          priceList={NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.priceList}
+        />
+        <GroupsBySkill {...NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.groups} />
+      </div>
 
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.about}
-        backgroundColor={
-          NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.backgroundColor
-        }
-        groups={NAUKA_PLYWANIA_PLYWACZEK.dzieciMlodziez.groups}
-        priceList={[]}
-      />
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_PLYWACZEK.dorosli.about}
-        backgroundColor={NAUKA_PLYWANIA_PLYWACZEK.dorosli.backgroundColor}
-        groups={NAUKA_PLYWANIA_PLYWACZEK.dorosli.groups}
-        priceList={[]}
-      />
+
+      <PoolNecessaryItems color="mediumBlue" />
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-      <LessonTypeWrapBox
-        bgColor="darkBlue"
-        bgImage="lessons-types-bg.webp"
-        lessonTypes={[
-          RODZAJE_LEKCJI.grupowe,
-          RODZAJE_LEKCJI.indywidualne,
-          RODZAJE_LEKCJI.dwuosobowe,
-        ]}
-      />
-      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <PoolNecessaryItems color="darkBlue" />
-      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolTutorial poolTutorial={BASEN_PLYWACZEK_TUTORIAL} />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolInformations poolInformation={BASEN_PLYWACZEK_INFORMATIONS} />

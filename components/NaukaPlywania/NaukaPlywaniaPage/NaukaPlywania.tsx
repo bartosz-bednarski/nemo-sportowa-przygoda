@@ -4,16 +4,18 @@ import styles from './naukaPlywania.module.scss';
 import Pools from './Pools/Pools';
 import {poolsType} from '@/types/NaukaPlywania/naukaPlywania';
 import {COLORS} from '@/utils/UI/colors';
-import Groups, {GroupsPropsType} from '../Ui/Groups/Groups';
 import {customColors} from '@/types/UI/colors';
 import NaukaPlywaniaAbout, {
   NaukaPływaniaAboutPropsType,
 } from '../Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import GroupsBySkill, {
+  GroupsBySkillPropsType,
+} from '../Ui/GroupsBySkill/GroupsBySkill';
 
 export interface NaukaPlywaniaPropsType {
   about: NaukaPływaniaAboutPropsType;
   pools: poolsType;
-  groups?: GroupsPropsType;
+  groups?: GroupsBySkillPropsType;
   backgroundColor: customColors;
 }
 
@@ -175,7 +177,7 @@ const NaukaPlywania = ({
         swimmingPools={pools.swimmingPools}
       />
       {groups !== undefined && (
-        <Groups stripH2={groups.stripH2} groups={groups.groups} />
+        <GroupsBySkill stripH2={groups.stripH2} groups={groups.groups} />
       )}
     </div>
   );

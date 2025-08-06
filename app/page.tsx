@@ -2,12 +2,12 @@ import VideosSection from '@/components/Globals/VideosSection/VideosSection';
 import styles from './page.module.scss';
 import SwimmingSection from '@/components/HomePage/Swimming/SwimmingSection';
 import CampsSection from '@/components/HomePage/Camps/CampsSection';
-import SignInPopupSwimming from '@/components/Ui/SignInPopup/SignInPopupSwimming';
 import {Metadata} from 'next';
 import Image1 from '@/public/assets/videos/pool-mix-1.webp';
 import Image2 from '@/public/assets/videos/winter-mix-1.webp';
 import Image3 from '@/public/assets/videos/summer-mix-1.webp';
 import TeamSection from '@/components/HomePage/Team/TeamSection';
+import SignInSwimming2526 from '@/components/Ui/Popups/SignInSwimming2526/SignInSwimming2526';
 export const metadata: Metadata = {
   title: 'NEMO Sportowa Przygoda - Nauka pływania | Obozy i Półkolonie',
   description:
@@ -28,7 +28,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className={styles.main}>
-      <SignInPopupSwimming />
+      {/* <SignInPopupSwimming /> */}
+      <SignInSwimming2526 />
       <VideosSection
         oneSticker={false}
         scrapColor="mediumBlue"

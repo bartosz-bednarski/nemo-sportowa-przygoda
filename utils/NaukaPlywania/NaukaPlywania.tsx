@@ -1,7 +1,7 @@
 import {instructorsType, poolsType} from '@/types/NaukaPlywania/naukaPlywania';
 import {customColors} from '@/types/UI/colors';
 import {GRUPY_POZIOM_ZAAWANSOWANIA_FOR_COMPONENTS} from '../Grupy/grupyPoziomZaawansowania';
-import {GroupsPropsType} from '@/components/NaukaPlywania/Ui/Groups/Groups';
+import {GroupsBySkillPropsType} from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import {NaukaPływaniaAboutPropsType} from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import KorzennaCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
 import GorliceCoverImg from '@/public/assets/swimming/pools/gorlice.webp';
@@ -16,21 +16,21 @@ type naukaPlywania = {
     about: NaukaPływaniaAboutPropsType;
     instructors: instructorsType;
     pools: poolsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
   };
   dzieciMlodziez: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
     instructors: instructorsType;
     pools: poolsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
   };
   dorosli: {
     backgroundColor: customColors;
     about: NaukaPływaniaAboutPropsType;
     instructors: instructorsType;
     pools: poolsType;
-    groups: GroupsPropsType;
+    groups: GroupsBySkillPropsType;
   };
 };
 export const NAUKA_PLYWANIA: naukaPlywania = {

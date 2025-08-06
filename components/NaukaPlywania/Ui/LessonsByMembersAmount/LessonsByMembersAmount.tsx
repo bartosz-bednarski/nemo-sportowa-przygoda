@@ -1,23 +1,30 @@
 'use client';
 import React from 'react';
 import styles from './lessonTypeWrapBox.module.scss';
-import StickerH4 from '@/components/Ui/Headers/Stickers/StickerH4/StickerH4';
+import StickerH4, {
+  StickerH4PropsType,
+} from '@/components/Ui/Headers/Stickers/StickerH4/StickerH4';
 import {COLORS} from '@/utils/UI/colors';
-import AboutTextPoppins from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
+import AboutTextPoppins, {
+  AboutTextPoppinsPropsType,
+} from '@/components/Ui/AboutTextPoppins/AboutTextPoppins';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
-import {LessonType} from '../LessonType/LessonType';
 import {customColors} from '@/types/UI/colors';
 
-export interface LessonTypeWrapBoxPropsType {
+export interface LessonsByMembersAmountPropsType {
   bgImage: string;
   bgColor: customColors;
   lessonTypes: LessonType[];
 }
-
-const LessonTypeWrapBox = ({
+export type LessonType = {
+  img: string;
+  stickerH4: StickerH4PropsType;
+  aboutTextPoppins: AboutTextPoppinsPropsType;
+};
+const LessonsByMembersAmount = ({
   bgColor,
   lessonTypes,
-}: LessonTypeWrapBoxPropsType) => {
+}: LessonsByMembersAmountPropsType) => {
   return (
     <div className={styles.lessonType} style={{background: COLORS[bgColor]}}>
       <div
@@ -47,4 +54,4 @@ const LessonTypeWrapBox = ({
   );
 };
 
-export default LessonTypeWrapBox;
+export default LessonsByMembersAmount;

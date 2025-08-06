@@ -24,7 +24,9 @@ const LinkSwimmingPoolCover = ({
           className={styles.image}
           src={image.src}
           alt={title}
-          style={{borderTopLeftRadius: 30, borderTopRightRadius: 30}}
+          width={350}
+          height={350}
+          loading="lazy"
         />
       </div>
       <span className={styles.h4Box}>

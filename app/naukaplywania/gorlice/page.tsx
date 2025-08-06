@@ -12,17 +12,18 @@ import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {Metadata} from 'next';
 // import Schedule from '@/components/Schedule/Schedule';
 import {COLORS} from '@/utils/UI/colors';
-import NaukaPlywaniaBasen from '@/components/NaukaPlywania/NaukaPlywaniaBasen/NaukaPlywaniaBasen';
 import PoolNecessaryItems from '@/components/NaukaPlywania/Ui/PoolNecessaryItems/PoolNecessaryItems';
 import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
 import PoolInformations from '@/components/NaukaPlywania/Ui/PoolInformations/PoolInformations';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
-import LessonTypeWrapBox from '@/components/NaukaPlywania/Ui/LessonTypeWrapBox/LessonTypeWrapBox';
 import Image1 from '@/public/assets/videos/toddler-mix-1.webp';
 import Image2 from '@/public/assets/videos/toddler-mix-2.webp';
 import Image3 from '@/public/assets/videos/toddler-mix-3.webp';
 import SectionAbout from '@/components/AquaFitness/SectionAbout/SectionAbout';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
+import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
+import LessonsByMembersAmount from '@/components/NaukaPlywania/Ui/LessonsByMembersAmount/LessonsByMembersAmount';
+import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania GORLICE',
@@ -93,29 +94,33 @@ const NaukaPlywaniaGorlice = () => {
         }}
       />
       {/* <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=74801&zz=" /> */}
+      {/* NAUKA PŁYWAANIA BOBASY */}
+      <div style={{background: COLORS.lightBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_GORLICE.zRodzicami.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_GORLICE.zRodzicami.priceList} />
+        <GroupsBySkill {...NAUKA_PLYWANIA_GORLICE.zRodzicami.groups} />
+      </div>
 
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_GORLICE.zRodzicami.about}
-        backgroundColor={NAUKA_PLYWANIA_GORLICE.zRodzicami.backgroundColor}
-        groups={NAUKA_PLYWANIA_GORLICE.zRodzicami.groups}
-        priceList={NAUKA_PLYWANIA_GORLICE.zRodzicami.priceList}
-      />
       <Bubbles colorTop="lightBlue" colorBottom="mediumBlue" />
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.about}
-        backgroundColor={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.backgroundColor}
-        groups={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.groups}
-        priceList={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.priceList}
-      />
+      {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
+      <div style={{background: COLORS.mediumBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.about} />
+        <PriceList
+          priceList={NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.priceList}
+        />
+        <GroupsBySkill {...NAUKA_PLYWANIA_GORLICE.dzieciMlodziez.groups} />
+      </div>
+
       <Bubbles colorTop="mediumBlue" colorBottom="darkBlue" />
-      <NaukaPlywaniaBasen
-        about={NAUKA_PLYWANIA_GORLICE.dorosli.about}
-        backgroundColor={NAUKA_PLYWANIA_GORLICE.dorosli.backgroundColor}
-        groups={NAUKA_PLYWANIA_GORLICE.dorosli.groups}
-        priceList={NAUKA_PLYWANIA_GORLICE.dorosli.priceList}
-      />
+      {/* NAUKA PŁYWAANIA DOROŚLI */}
+      <div style={{background: COLORS.darkBlue}}>
+        <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_GORLICE.dorosli.about} />
+        <PriceList priceList={NAUKA_PLYWANIA_GORLICE.dorosli.priceList} />
+        <GroupsBySkill {...NAUKA_PLYWANIA_GORLICE.dorosli.groups} />
+      </div>
+
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <LessonTypeWrapBox
+      <LessonsByMembersAmount
         bgImage="grupowe.png"
         bgColor="darkBlue"
         lessonTypes={[

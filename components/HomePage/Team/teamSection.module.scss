@@ -177,12 +177,12 @@
 .bubble5 {
   position: absolute;
   top: 30%;
-  left: 90%;
+  left: 85%;
   background-image: url('../../../public/assets/instructors/zofia_gut.webp');
   background-size: cover;
   background-position: center;
-  width: 280px;
-  height: 280px;
+  width: 270px;
+  height: 270px;
   @include mixin.pc1250px {
     width: 220px;
     height: 220px;
