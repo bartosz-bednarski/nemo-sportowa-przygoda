@@ -22,6 +22,7 @@
   position: relative;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 1rem;
   @include mixin.pc1000px {
     width: 90%;
     padding: 1rem 1rem 2rem 1rem;
@@ -69,6 +70,30 @@
     gap: 1rem;
   }
 }
+ .signUpButton {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.3rem 1.5rem;
+  color: colors.$lightBlue;
+  border: 0;
+  border-radius: 25px;
+  gap: 0.5rem;
+  background-color: white;
+  transition: all 0.5s;
+  border: 2px solid white;
+  font-family: 'Roboto';
+  width: fit-content;
+ color: colors.$lightBlue!important;
+ &:hover{
+   font-size: 0.7rem;
+ }
+ 
+}
 .locBox {
   display: flex;
   flex-direction: column;
@@ -79,7 +104,22 @@
     justify-content: center;
   }
   @include mixin.phone500px {
-    column-gap: 5px;
+    display: none;
+  }
+}
+.paragraph{
+  font-weight: 600;
+  font-size: .7rem;
+  text-align: center;
+}
+.locBoxMobile{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  @include mixin.phone500px{
+    display: flex;
   }
 }
 .locItem {

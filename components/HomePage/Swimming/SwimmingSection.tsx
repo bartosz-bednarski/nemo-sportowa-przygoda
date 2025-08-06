@@ -5,10 +5,27 @@ import AboutTextPoppins from '../../Ui/AboutTextPoppins/AboutTextPoppins';
 import BackgroundText from '../../Ui/BackgroundText/BackgroundText';
 import SwimmingPools from './SwimmingPools';
 import StickerH3 from '@/components/Ui/Headers/Stickers/StickerH3/StickerH3';
+import Link from 'next/link';
+import StickerH4 from '@/components/Ui/Headers/Stickers/StickerH4/StickerH4';
 
 const SwimmingSection = () => {
   return (
     <section className={styles.swimmingLayout}>
+      <div className={styles.registrationContainer}>
+        <h2>Zapisz się na zajęcia nauki pływania <br/><span className={styles.accent}>w semestrze jesienno-zimowym 25/26</span></h2>
+      <div className={styles.rowBox}>
+        <div className={styles.columnBox}>
+<StickerH4 stripBgColor='basicOrange' stripTextColor='white' title='' titleStrip='BASENY KRAKÓW'/>
+<Link href="/naukaplywania/harmonogram-krakow" className={styles.signUpButton}>Zapisz się</Link>
+        </div>
+         <div className={styles.columnBox}>
+<StickerH4 stripBgColor='basicOrange' stripTextColor='white' title='' titleStrip='BASENY MAŁOPOLSKA'/>
+<Link href="/naukaplywania/harmonogram" className={styles.signUpButton}>Zapisz się</Link>
+        </div>
+        
+      </div>
+      <p className={styles.paragraph}>BABY SWIM | DZIECI OD 3 LAT | MŁODZIEŻ | DOROŚLI</p>
+      </div>
       <div className={styles.about}>
         <BackgroundText title="BOMBELKI MAŁE I DUŻE" />
         <StickerH3

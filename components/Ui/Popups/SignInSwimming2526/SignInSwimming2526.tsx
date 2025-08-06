@@ -7,6 +7,8 @@ import PopupImage from '@/public/assets/popup/kurs_jesien_zima_25_26.webp';
 import LinkButton from '../../Buttons/LinkButton';
 import Logo from '@/public/assets/logo/Logo-main-white.svg';
 import XBtn from '../../Buttons/XBtn/XBtn';
+import StickerH4 from '../../Headers/Stickers/StickerH4/StickerH4';
+import Link from 'next/link';
 
 const KRAKOW_POOLS = [
   {
@@ -97,17 +99,26 @@ const SignInSwimming2526 = () => {
           alt="nauka plywania NEMO"
           title="nauka plywania NEMO"
           className={styles.image}
+          loading='eager'
+          fetchPriority='high'
         />
         <img className={styles.logo} src={Logo.src} />
         <div className={styles.headerBox}>
           <span className={styles.header}>
-            Ruszamy z zapisami nauki pływania!
+            Zapisz się na zajęcia nauki pływania
           </span>
           <span className={`${styles.header} ${styles.accent}`}>
-            Kurs Jesienno-Zimowy 2025/2026
+            w semestrze Jesienno-Zimowym 2025/2026
           </span>
         </div>
         <div className={styles.locContainer}>
+          <div className={styles.locBoxMobile}>
+            <StickerH4 stripBgColor='basicOrange' stripTextColor='white' title='' titleStrip='BASENY KRAKÓW'/>
+         <Link href="/naukaplywania/harmonogram-krakow" className={styles.signUpButton}>Zapisz się</Link>
+         <StickerH4 stripBgColor='basicOrange' stripTextColor='white' title='' titleStrip='BASENY KRAKÓW'/>
+         <Link href="/naukaplywania/harmonogram-krakow" className={styles.signUpButton}>Zapisz się</Link>
+         <p className={styles.paragraph}>BABY SWIM | DZIECI OD 3 LAT | MŁODZIEŻ | DOROŚLI</p>
+          </div>
           <div className={styles.locBox}>
             {KRAKOW_POOLS.map((pool, index) => (
               <a href={pool.url} className={styles.locItem} key={index}>
