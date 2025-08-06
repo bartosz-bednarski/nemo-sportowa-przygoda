@@ -97,17 +97,20 @@ const VideosSection = ({
   if (isMobile) {
     return (
       <div className={styles.container}>
-        {!oneSticker && col1.stickerH2 !== undefined && (
-          <span className={styles.mobileSticker}>
-            <StickerH1
-              title="NEMO"
-              title2="SPORTOWA"
-              titleStrip="PRZYGODA"
-              stripBgColor="basicOrange"
-              stripTextColor="white"
-            />
-          </span>
-        )}
+        {!oneSticker &&
+          col1.stickerH2 !== undefined &&
+          col1.stickerH2.title !== '' &&
+          col1.stickerH2.titleStrip !== '' && (
+            <span className={styles.mobileSticker}>
+              <StickerH1
+                title="NEMO"
+                title2="SPORTOWA"
+                titleStrip="PRZYGODA"
+                stripBgColor="basicOrange"
+                stripTextColor="white"
+              />
+            </span>
+          )}
         {oneSticker && oneStickerContent !== undefined && (
           <span className={styles.oneStickerBox}>
             {' '}
@@ -136,17 +139,20 @@ const VideosSection = ({
 
   return (
     <div className={styles.container}>
-      {!oneSticker && col1.stickerH2 !== undefined && (
-        <span className={styles.mobileSticker}>
-          <StickerH1
-            title="NEMO"
-            title2="SPORTOWA"
-            titleStrip="PRZYGODA"
-            stripBgColor="basicOrange"
-            stripTextColor="white"
-          />
-        </span>
-      )}
+      {!oneSticker &&
+        col1.stickerH2 !== undefined &&
+        col1.stickerH2.title !== '' &&
+        col1.stickerH2.titleStrip !== '' && (
+          <span className={styles.mobileSticker}>
+            <StickerH1
+              title="NEMO"
+              title2="SPORTOWA"
+              titleStrip="PRZYGODA"
+              stripBgColor="basicOrange"
+              stripTextColor="white"
+            />
+          </span>
+        )}
       {oneSticker && oneStickerContent !== undefined && (
         <span className={styles.oneStickerBox}>
           {' '}

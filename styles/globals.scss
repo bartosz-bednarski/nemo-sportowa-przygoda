@@ -118,8 +118,8 @@ h4 {
   @include mixin.pc1250px {
     font-size: 1rem;
   }
-  @include mixin.phone500px{
-    font-size: .9rem;
+  @include mixin.phone500px {
+    font-size: 0.9rem;
   }
 }
 h5 {

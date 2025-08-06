@@ -8,6 +8,7 @@ import Image2 from '@/public/assets/videos/winter-mix-1.webp';
 import Image3 from '@/public/assets/videos/summer-mix-1.webp';
 import TeamSection from '@/components/HomePage/Team/TeamSection';
 import SignInSwimming2526 from '@/components/Ui/Popups/SignInSwimming2526/SignInSwimming2526';
+import SignInSliderHero from '@/components/HomePage/SignInSliderHero/SignInSliderHero';
 export const metadata: Metadata = {
   title: 'NEMO Sportowa Przygoda - Nauka pływania | Obozy i Półkolonie',
   description:
@@ -36,8 +37,8 @@ export default function Home() {
         col1={{
           video: {src: 'pool-mix-1.mp4', alt: 'nauka pływania', image: Image1},
           stickerH2: {
-            title: 'NAUKA',
-            titleStrip: 'PŁYWANIA',
+            title: '',
+            titleStrip: '',
             stripBgColor: 'mediumBlue',
             stripTextColor: 'white',
           },
@@ -49,8 +50,8 @@ export default function Home() {
             image: Image2,
           },
           stickerH2: {
-            title: 'OBOZY',
-            titleStrip: 'PÓŁKOLONIE',
+            title: '',
+            titleStrip: '',
             stripBgColor: 'basicOrange',
             stripTextColor: 'white',
           },
@@ -62,13 +63,14 @@ export default function Home() {
             image: Image3,
           },
           stickerH2: {
-            title: 'OFERTY',
-            titleStrip: 'SPECJALNE',
+            title: '',
+            titleStrip: '',
             stripBgColor: 'basicBrown',
             stripTextColor: 'white',
           },
         }}
       />
+      <SignInSliderHero />
       <SwimmingSection />
       <TeamSection />
       <CampsSection />

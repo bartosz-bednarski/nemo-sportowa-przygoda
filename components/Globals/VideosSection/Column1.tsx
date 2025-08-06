@@ -73,15 +73,16 @@ const Column1 = ({
             preload="metadata"
           ></video>
         )}
-
-        <span className={styles.stickerBox} style={{bottom: '30%'}}>
-          <StickerH2
-            title={stickerH2.title}
-            titleStrip={stickerH2.titleStrip}
-            stripBgColor={stickerH2.stripBgColor}
-            stripTextColor={stickerH2.stripTextColor}
-          />
-        </span>
+        {stickerH2.title !== '' && stickerH2.titleStrip !== '' && (
+          <span className={styles.stickerBox} style={{bottom: '30%'}}>
+            <StickerH2
+              title={stickerH2.title}
+              titleStrip={stickerH2.titleStrip}
+              stripBgColor={stickerH2.stripBgColor}
+              stripTextColor={stickerH2.stripTextColor}
+            />
+          </span>
+        )}
       </div>
     );
   }
