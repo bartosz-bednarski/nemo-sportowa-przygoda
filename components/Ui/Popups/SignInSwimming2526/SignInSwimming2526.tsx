@@ -27,19 +27,19 @@ const KRAKOW_POOLS = [
   },
   {
     title: 'BASEN CCZ NOWA HUTA',
-    url: '/naukaplywania/krakow/plywaczek',
+    url: '/naukaplywania/krakow/ccz-nowa-huta',
   },
   {
     title: 'BASEN CCZ PROKOCIM',
-    url: '/naukaplywania/krakow/plywaczek',
+    url: '/naukaplywania/krakow/ccz-prokocim',
   },
   {
     title: 'BASEN DAISY',
-    url: '/naukaplywania/krakow/plywaczek',
+    url: '/naukaplywania/krakow/daisy',
   },
   {
     title: 'BASEN STRĄKOWA',
-    url: '/naukaplywania/krakow/plywaczek',
+    url: '/naukaplywania/krakow/strakowa',
   },
 ];
 const OTHER_POOLS = [
