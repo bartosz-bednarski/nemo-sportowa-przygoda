@@ -25,8 +25,12 @@ const Harmonogram = () => {
         <h1>
           Zapisz się na zajęcia nauki pływania w semestrze Jesień-Zima 2025/2026
         </h1>
+        <h2 className={styles.accent}>
+          KORZENNA | GORLICE | CHEŁMIEC | WYSOWA ZDRÓJ | LIMANOWA
+        </h2>
         <h2>
-          Wybierz swoją lokalizację, poziom grupy oraz dogodny termin zajęć
+          Wybierz swój basen, poziom grupy, dogodny termin zajęć i{' '}
+          <span className={styles.underline}>ZAPISZ SIĘ!</span>
         </h2>
       </div>
       <Schedule

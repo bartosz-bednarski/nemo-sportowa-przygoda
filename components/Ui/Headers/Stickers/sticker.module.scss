@@ -64,6 +64,9 @@
   @include mixin.pc1250px {
     padding: 0.5rem 1rem;
   }
+  @include mixin.phone500px{
+    padding: .3rem .5rem;
+  }
 }
 .scrapLeft {
   background-size: cover;

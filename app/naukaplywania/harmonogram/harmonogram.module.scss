@@ -19,7 +19,7 @@
   flex-direction: column;
   width: 75%;
   text-align: center;
-  gap: 3rem;
+  gap: 2rem;
   @include mixin.phone800px {
     width: 100%;
   }
@@ -37,13 +37,22 @@
     }
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     @include mixin.pc1450px {
       font-size: 1rem;
     }
     @include mixin.phone500px {
       font-size: 0.8rem;
     }
-    color: colors.$basicOrange;
   }
+}
+.accent {
+  color: colors.$basicOrange;
+}
+.underline {
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: colors.$basicOrange;
+  -webkit-text-decoration-color: colors.$basicOrange;
 }

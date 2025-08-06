@@ -25,9 +25,13 @@ const HarmonogramKrakow = () => {
       <div className={styles.textBox}>
         <h1>
           Zapisz się na zajęcia nauki pływania w semestrze Jesień-Zima 2025/2026
+          <br />
+          <span className={styles.accent}>KRAKÓW</span>
         </h1>
+
         <h2>
-          Wybierz swoją lokalizację, poziom grupy oraz dogodny termin zajęć
+          Wybierz swój basen, poziom grupy, dogodny termin zajęć i{' '}
+          <span className={styles.underline}>ZAPISZ SIĘ!</span>
         </h2>
       </div>
       <Schedule
