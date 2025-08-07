@@ -132,7 +132,7 @@ const SignInSwimming2526 = () => {
               titleStrip="KORZENNA | GORLICE | WYSOWA | LIMANOWA"
             />
             <Link
-              href="/naukaplywania/harmonogram-krakow"
+              href="/naukaplywania/harmonogram"
               className={styles.signUpButton}
             >
               Zapisz się
