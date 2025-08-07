@@ -67,18 +67,17 @@
   }
   img {
     display: none;
-    @include mixin.phone800px{
+    @include mixin.phone800px {
       display: block;
-height: 300px;
-width: auto;
-    margin-bottom: 12rem;
+      height: 300px;
+      width: auto;
+      margin-bottom: 12rem;
     }
-    @include mixin.phone500px{
+    @include mixin.phone500px {
       width: 200px;
       height: auto;
       margin-bottom: 0;
     }
-    
   }
 }
 .oneStickerBox {
