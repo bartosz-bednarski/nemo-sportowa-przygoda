@@ -62,6 +62,9 @@ const PoolInformations: React.FC<{
         src={`/assets/swimming/pools/${poolInformation.imageSrc}`}
         className={styles.imageFill}
         alt={poolInformation.title}
+        width={1920}
+        height={1080}
+        loading="lazy"
       />
       <StickerH2
         title={poolInformation.stickerH2.title}
@@ -147,6 +150,7 @@ const PoolInformations: React.FC<{
           )}
         </div>
         <iframe
+          title="Mapa z lokalizacją basenu"
           src={poolInformation.mapSrc}
           width="600"
           height="450"

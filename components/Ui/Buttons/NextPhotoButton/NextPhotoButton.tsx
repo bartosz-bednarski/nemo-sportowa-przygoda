@@ -6,7 +6,12 @@ interface NextPhotoButtonPropsType {
 
 const NextPhotoButton = ({onClick}: NextPhotoButtonPropsType) => {
   return (
-    <button className={styles.nextPhotoButton} onClick={onClick}>
+    <button
+      className={styles.nextPhotoButton}
+      onClick={onClick}
+      title="Next Photo"
+      aria-label="Next Photo"
+    >
       <svg
         width="218"
         height="320"

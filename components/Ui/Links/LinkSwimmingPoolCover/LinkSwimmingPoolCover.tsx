@@ -23,7 +23,7 @@ const LinkSwimmingPoolCover = ({
         <img
           className={styles.image}
           src={image.src}
-          alt={title}
+          alt={`Nauka pływania na ${title} - Nemo Sportowa Przygoda`}
           width={350}
           height={350}
           loading="lazy"

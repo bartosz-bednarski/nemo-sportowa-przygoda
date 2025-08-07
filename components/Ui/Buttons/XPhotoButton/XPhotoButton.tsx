@@ -6,7 +6,12 @@ interface XPhotoButtonPropsType {
 
 const XPhotoButton = ({onClick}: XPhotoButtonPropsType) => {
   return (
-    <button className={styles.xPhotoButton} onClick={onClick}>
+    <button
+      className={styles.xPhotoButton}
+      onClick={onClick}
+      title="Close Photo"
+      aria-label="Close Photo"
+    >
       Zamknij{' '}
       <svg
         width="41"

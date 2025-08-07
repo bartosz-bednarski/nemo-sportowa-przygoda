@@ -74,6 +74,17 @@ const Footer: React.FC = () => {
             </Link>
           </li>
         </ul>
+        <ul className={styles.navigation}>
+          <li>
+            <b>HARMONOGRAMY</b>
+          </li>
+          <li>
+            <Link href="/naukaplywania/harmonogram-krakow">Kraków</Link>
+          </li>
+          <li>
+            <Link href="/naukaplywania/harmonogram">Małopolska</Link>
+          </li>
+        </ul>
       </div>
 
       <ul className={styles.socjal}>

@@ -54,11 +54,31 @@
 .mobileSticker {
   position: absolute;
   z-index: 3;
-  left: 10%;
-  top: 30%;
+  left: 0%;
+  top: 0%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   display: none;
   @include mixin.phone900px {
     display: flex;
+  }
+  img {
+    display: none;
+    @include mixin.phone800px{
+      display: block;
+height: 300px;
+width: auto;
+    margin-bottom: 12rem;
+    }
+    @include mixin.phone500px{
+      width: 200px;
+      height: auto;
+      margin-bottom: 0;
+    }
+    
   }
 }
 .oneStickerBox {

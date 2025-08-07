@@ -9,6 +9,7 @@ import Image3 from '@/public/assets/videos/summer-mix-1.webp';
 import TeamSection from '@/components/HomePage/Team/TeamSection';
 import SignInSwimming2526 from '@/components/Ui/Popups/SignInSwimming2526/SignInSwimming2526';
 import SignInSliderHero from '@/components/HomePage/SignInSliderHero/SignInSliderHero';
+import {headers} from 'next/headers';
 export const metadata: Metadata = {
   title: 'NEMO Sportowa Przygoda - Nauka pływania | Obozy i Półkolonie',
   description:
@@ -26,19 +27,25 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
-export default function Home() {
+export default async function Home() {
+  const headersList = await headers();
+  const userAgent = headersList.get('user-agent') || '';
+  const isMobile = /Mobile|Tablet|Mobile Safari|Mobile|Windows Phone/i.test(
+    userAgent
+  );
   return (
     <main className={styles.main}>
       {/* <SignInPopupSwimming /> */}
       <SignInSwimming2526 />
       <VideosSection
+        isMobile={isMobile}
         oneSticker={false}
         scrapColor="mediumBlue"
         col1={{
           video: {src: 'pool-mix-1.mp4', alt: 'nauka pływania', image: Image1},
           stickerH2: {
-            title: '',
-            titleStrip: '',
+            title: 'OFERTA',
+            titleStrip: 'BASENY',
             stripBgColor: 'mediumBlue',
             stripTextColor: 'white',
           },
@@ -50,8 +57,8 @@ export default function Home() {
             image: Image2,
           },
           stickerH2: {
-            title: '',
-            titleStrip: '',
+            title: 'OFERTA',
+            titleStrip: 'ZIMOWA',
             stripBgColor: 'basicOrange',
             stripTextColor: 'white',
           },
@@ -63,9 +70,9 @@ export default function Home() {
             image: Image3,
           },
           stickerH2: {
-            title: '',
-            titleStrip: '',
-            stripBgColor: 'basicBrown',
+            title: 'OFERTA',
+            titleStrip: 'LETNIA',
+            stripBgColor: 'basicGreen',
             stripTextColor: 'white',
           },
         }}

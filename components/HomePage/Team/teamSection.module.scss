@@ -80,9 +80,8 @@
   position: absolute;
   top: 0;
   left: 30%;
-  background-image: url('../../../public/assets/instructors/agata_hojol.webp');
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  object-position: center;
   width: 340px;
   height: 340px;
   @include mixin.pc1250px {
@@ -103,9 +102,8 @@
   position: absolute;
   top: 0;
   left: 80%;
-  background-image: url('../../../public/assets/instructors/kinga_kobaka.webp');
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  object-position: center;
   width: 180px;
   height: 180px;
   @include mixin.pc1250px {
@@ -125,9 +123,8 @@
   position: absolute;
   top: 50%;
   left: 15%;
-  background-image: url('../../../public/assets/instructors/wiktoria_fryczek.webp');
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  object-position: center;
   width: 340px;
   height: 340px;
   @include mixin.pc1250px {
@@ -150,9 +147,8 @@
   position: absolute;
   top: 45%;
   left: 55%;
-  background-image: url('../../../public/assets/instructors/weronika_mika.webp');
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  object-position: center;
   width: 340px;
   height: 340px;
   @include mixin.pc1250px {
@@ -178,9 +174,8 @@
   position: absolute;
   top: 30%;
   left: 85%;
-  background-image: url('../../../public/assets/instructors/zofia_gut.webp');
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  object-position: center;
   width: 270px;
   height: 270px;
   @include mixin.pc1250px {

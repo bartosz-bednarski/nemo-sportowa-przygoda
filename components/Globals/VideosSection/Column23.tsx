@@ -14,66 +14,40 @@ interface Column23PropsType {
   id: string;
 }
 
-const Column23 = ({
-  video,
-  image,
-  alt,
-  oneSticker,
-  stickerH2,
-  id,
-}: Column23PropsType) => {
+const Column23 = ({video, oneSticker, stickerH2, id}: Column23PropsType) => {
   if (oneSticker) {
     return (
       <div className={styles.imageBoxCol23}>
         <div className={styles.opacityCover}></div>
-        {video === '' && (
-          <img
-            src={image.src}
-            alt={alt}
-            loading="eager"
-            width={600}
-            height={1920}
-          />
-        )}
-        {video !== '' && (
-          <video
-            id={id}
-            src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="metadata"
-          ></video>
-        )}
+
+        <video
+          id={id}
+          src={`/assets/videos/${video}`}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+        ></video>
       </div>
     );
   }
   if (!oneSticker && stickerH2) {
-    return (
-      <div className={styles.imageBoxCol23}>
-        <div className={styles.opacityCover}></div>
-        {video === '' && (
-          <img
-            src={image.src}
-            alt={alt}
-            loading="eager"
-            width={600}
-            height={1920}
-          />
-        )}
-        {video !== '' && (
+    if (stickerH2.title !== '' && stickerH2.titleStrip !== '') {
+      return (
+        <div className={styles.imageBoxCol23}>
+          <div className={styles.opacityCover}></div>
+
           <video
             id={id}
-            src={video}
+            src={`/assets/videos/${video}`}
             autoPlay
             loop
             muted
             playsInline
             preload="metadata"
           ></video>
-        )}
-        {stickerH2.title !== '' && stickerH2.titleStrip !== '' && (
+
           <span className={styles.stickerBox} style={{bottom: '30%'}}>
             <StickerH2
               title={stickerH2.title}
@@ -82,9 +56,24 @@ const Column23 = ({
               stripTextColor={stickerH2.stripTextColor}
             />
           </span>
-        )}
-      </div>
-    );
+        </div>
+      );
+    } else {
+      return (
+        <div className={styles.imageBoxCol23}>
+          <div className={styles.opacityCover}></div>
+          <video
+            id={id}
+            src={`/assets/videos/${video}`}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+          ></video>
+        </div>
+      );
+    }
   }
 };
 

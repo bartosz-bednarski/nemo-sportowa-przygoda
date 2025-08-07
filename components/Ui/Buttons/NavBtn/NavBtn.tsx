@@ -13,6 +13,8 @@ const NavBtn: React.FC<{
       className={styles.navBtn}
       style={{background: COLORS[bgColor]}}
       onClick={onClick}
+      title="Open"
+      aria-label="Open"
     >
       {type === 'menu' ? (
         <svg

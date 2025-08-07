@@ -62,6 +62,9 @@ const NaukaPlywaniaAbout = ({
           src={`/assets/swimming/${image.src}`}
           alt={image.alt}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          width={730}
+          height={550}
+          loading="lazy"
         />
       </div>
     </div>

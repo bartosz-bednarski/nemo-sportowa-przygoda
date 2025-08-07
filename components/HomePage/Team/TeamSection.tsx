@@ -2,6 +2,11 @@
 import StickerH3 from '@/components/Ui/Headers/Stickers/StickerH3/StickerH3';
 import styles from './teamSection.module.scss';
 import LinkButton from '@/components/Ui/Buttons/LinkButton';
+import Bubble1Img from '@/public/assets/instructors/agata_hojol.webp';
+import Bubble2Img from '@/public/assets/instructors/kinga_kobaka.webp';
+import Bubble3Img from '@/public/assets/instructors/wiktoria_fryczek.webp';
+import Bubble4Img from '@/public/assets/instructors/weronika_mika.webp';
+import Bubble5Img from '@/public/assets/instructors/zofia_gut.webp';
 
 const TeamSection = () => {
   const bubble1Style = `${styles.insctructorBubble} ${styles.bubble1}`;
@@ -37,11 +42,46 @@ const TeamSection = () => {
           />
         </div>
         <div className={styles.bubblesBox}>
-          <span className={bubble1Style}></span>
-          <span className={bubble2Style}></span>
-          <span className={bubble3Style}></span>
-          <span className={bubble4Style}></span>
-          <span className={bubble5Style}></span>
+          <img
+            className={bubble1Style}
+            src={Bubble1Img.src}
+            alt="Agata Hojoł instruktorka w Szkoła Pływania Nemo Sportowa Przygoda"
+            width={270}
+            height={270}
+            loading="lazy"
+          />
+          <img
+            className={bubble2Style}
+            src={Bubble2Img.src}
+            alt="Kinga Kobaka menadżerka ds SM w Szkoła Pływania Nemo Sportowa Przygoda"
+            width={270}
+            height={270}
+            loading="lazy"
+          />
+          <img
+            className={bubble3Style}
+            src={Bubble3Img.src}
+            alt="Wiktoria Fryczek właścicielka Szkoła Pływania Nemo Sportowa Przygoda"
+            width={270}
+            height={270}
+            loading="lazy"
+          />
+          <img
+            className={bubble4Style}
+            src={Bubble4Img.src}
+            alt="Weronika Mika instruktorka w Szkoła Pływania Nemo Sportowa Przygoda"
+            width={270}
+            height={270}
+            loading="lazy"
+          />
+          <img
+            className={bubble5Style}
+            src={Bubble5Img.src}
+            alt="Zofia Gut instruktorka w Szkoła Pływania Nemo Sportowa Przygoda"
+            width={270}
+            height={270}
+            loading="lazy"
+          />
         </div>
       </div>
     </div>
