@@ -18,7 +18,7 @@ const NavigationBar = ({showMenuHandler}: NavigationBarProps) => {
   return (
     <>
       <nav className={styles.navBar}>
-        <Link href="/">
+        <Link href="/" title="Strona Główna" aria-label="Strona Główna">
           <img
             src={
               pathName.includes('ofertazimowa')

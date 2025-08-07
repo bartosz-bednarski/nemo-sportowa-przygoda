@@ -14,38 +14,21 @@ interface Column1PropsType {
   id: string;
 }
 
-const Column1 = ({
-  video,
-  image,
-  alt,
-  oneSticker,
-  stickerH2,
-  id,
-}: Column1PropsType) => {
+const Column1 = ({video, oneSticker, stickerH2, id}: Column1PropsType) => {
   if (oneSticker) {
     return (
       <div className={styles.imageBox}>
         <div className={styles.opacityCover}></div>
-        {video === '' && (
-          <img
-            src={image.src}
-            alt={alt}
-            loading="eager"
-            width={600}
-            height={1920}
-          />
-        )}
-        {video !== '' && (
-          <video
-            id={id}
-            src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="metadata"
-          ></video>
-        )}
+
+        <video
+          id={id}
+          src={`/assets/videos/${video}`}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+        ></video>
       </div>
     );
   }
@@ -53,26 +36,17 @@ const Column1 = ({
     return (
       <div className={styles.imageBox}>
         <div className={styles.opacityCover}></div>
-        {video === '' && (
-          <img
-            src={image.src}
-            alt={alt}
-            loading="eager"
-            width={600}
-            height={1920}
-          />
-        )}
-        {video !== '' && (
-          <video
-            id={id}
-            src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="metadata"
-          ></video>
-        )}
+
+        <video
+          id={id}
+          src={`/assets/videos/${video}`}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+        ></video>
+
         {stickerH2.title !== '' && stickerH2.titleStrip !== '' && (
           <span className={styles.stickerBox} style={{bottom: '30%'}}>
             <StickerH2

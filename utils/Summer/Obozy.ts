@@ -1,6 +1,5 @@
 import {AttractionsPropsType} from '@/components/OfertaLetnia/PolkolonieObozy/Attractions/Attractions';
 import {HeroPropsType} from '@/components/OfertaLetnia/PolkolonieObozy/Hero/Hero';
-import {SchedulePropsType} from '@/components/OfertaLetnia/PolkolonieObozy/Schedule/Schedule';
 import {ContactPropsType} from '@/components/OfertaLetnia/Ui/Contact/Contact';
 import {DetailsPropsType} from '@/components/OfertaLetnia/Ui/Details/Details';
 import {PriceDetailsPropsType} from '@/components/OfertaLetnia/Ui/PriceDetails/PriceDetails';

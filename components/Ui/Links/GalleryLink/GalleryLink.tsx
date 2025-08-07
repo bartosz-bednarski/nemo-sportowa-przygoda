@@ -36,6 +36,7 @@ const GalleryLink = ({href, img, bgColor}: GalleryLinkPropsType) => {
             width={20}
             height={101}
             className={styles.scrapRight}
+            loading="lazy"
           />
         </div>
       </Link>

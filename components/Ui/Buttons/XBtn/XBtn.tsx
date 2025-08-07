@@ -4,7 +4,12 @@ import styles from '../buttons.module.scss';
 
 const XBtn: React.FC<{onClick: () => void}> = ({onClick}) => {
   return (
-    <button className={styles.xBtn} onClick={() => onClick()}>
+    <button
+      className={styles.xBtn}
+      title="Close"
+      aria-label="Close"
+      onClick={() => onClick()}
+    >
       <svg
         width="41"
         height="41"

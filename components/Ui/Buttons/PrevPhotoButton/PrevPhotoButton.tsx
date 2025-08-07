@@ -6,7 +6,12 @@ interface PrevPhotoButtonPropsType {
 
 const PrevPhotoButton = ({onClick}: PrevPhotoButtonPropsType) => {
   return (
-    <button className={styles.prevPhotoButton} onClick={onClick}>
+    <button
+      className={styles.prevPhotoButton}
+      onClick={onClick}
+      title="Prev Photo"
+      aria-label="Prev Photo"
+    >
       {' '}
       <svg
         width="218"

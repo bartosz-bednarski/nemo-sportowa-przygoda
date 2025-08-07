@@ -67,7 +67,7 @@ export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
     href: '/ofertaletnia/polkolonie/bobowa/polkolonia-1',
   },
   {
-    active: true,
+    active: false,
     title: 'PÓŁKOLONIA EKSTREMALNE LATO',
     price: '850 PLN',
     localization: 'OSIR W GORLICACH',
@@ -76,7 +76,7 @@ export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
     href: '/ofertaletnia/polkolonie/gorlice/polkolonia-1',
   },
   {
-    active: true,
+    active: false,
     title: 'PÓŁKOLONIA EKSTREMALNE LATO',
     price: '850 PLN',
     localization: 'CSIR W KORZENNEJ',
@@ -85,7 +85,7 @@ export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
     href: '/ofertaletnia/polkolonie/korzenna/polkolonia-1',
   },
   {
-    active: true,
+    active: false,
     title: 'PÓŁKOLONIA EKSTREMALNE LATO',
     price: '850 PLN',
     localization: 'NOWY SĄCZ',
@@ -103,7 +103,7 @@ export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
     href: '/ofertaletnia/polkolonie/bobowa/polkolonia-2',
   },
   {
-    active: true,
+    active: false,
     title: 'PÓŁKOLONIA LETNIA MISJA',
     price: '850 PLN',
     localization: 'OSIR W GORLICACH',
@@ -112,7 +112,7 @@ export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
     href: '/ofertaletnia/polkolonie/gorlice/polkolonia-2',
   },
   {
-    active: true,
+    active: false,
     title: 'PÓŁKOLONIA LETNIA MISJA',
     price: '850 PLN',
     localization: 'CSIR W KORZENNEJ',
@@ -121,7 +121,7 @@ export const POLKOLONIE_LISTA_2025: ColonyLinkPropsType[] = [
     href: '/ofertaletnia/polkolonie/korzenna/polkolonia-2',
   },
   {
-    active: true,
+    active: false,
     title: 'PÓŁKOLONIA LETNIA MISJA',
     price: '850 PLN',
     localization: 'NOWY SĄCZ',

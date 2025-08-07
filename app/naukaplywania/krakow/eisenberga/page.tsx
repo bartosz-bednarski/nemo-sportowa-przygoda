@@ -116,9 +116,6 @@ const NaukaPlywaniaEisenberga = () => {
         <PriceList priceList={NAUKA_PLYWANIA_EISENBERGA.dorosli.priceList} />
         <GroupsBySkill {...NAUKA_PLYWANIA_EISENBERGA.dorosli.groups} />
       </div>
-
-      <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />

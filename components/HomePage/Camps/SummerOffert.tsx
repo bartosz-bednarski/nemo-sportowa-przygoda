@@ -11,8 +11,11 @@ const SummerOffert = () => {
       <img
         src={BackgroundImage.src}
         className={styles.imageFill}
-        alt="nauka pływania"
+        alt="Obozy i półkolonie letnie w Nemo Sportowa Przygoda"
         style={{objectFit: 'cover', objectPosition: 'top'}}
+        loading="lazy"
+        width={1920}
+        height={1080}
       />
       <div className={styles.content}>
         <StickerH3
