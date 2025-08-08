@@ -1,0 +1,178 @@
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
+.buttonPcContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 4;
+  gap: 1rem;
+
+  .buttonPcBox {
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    background-color: colors.$darkOrange;
+    border: 2px solid white;
+    border-radius: 50px;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    height: 79px;
+    padding-right: 85px;
+    padding-left: 15px;
+    transition: all 0.5s;
+    @include mixin.pc1000px {
+      display: none;
+    }
+    &:hover {
+      background-color: colors.$basicGreen;
+
+      .phoneBox {
+        border-color: white;
+        background-color: colors.$basicGreen;
+      }
+    }
+  }
+
+  .locationIcon {
+    width: 36px;
+    height: 36px;
+    fill: colors.$darkOrange;
+  }
+  .textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    p {
+      line-height: 1.2rem;
+      font-size: 0.7rem;
+      color: white;
+      font-family: 'Poppins-600';
+    }
+  }
+  .phoneBox {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: all 0.5s;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.phoneButtonMobile,
+.phoneButtonBox1000px,
+.phoneButtonBox500px {
+  display: none;
+  position: fixed;
+  right: 1rem;
+  z-index: 4;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: colors.$darkOrange;
+
+  &:hover {
+    cursor: pointer;
+    img {
+      width: 36px;
+      height: 36px;
+      @include mixin.phone500px {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  img {
+    transition: all 0.3s;
+    width: 32px;
+    height: 32px;
+    @include mixin.phone500px {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.phoneButtonBox1000px {
+  transition: all 0.5s;
+  &:hover {
+    background-color: colors.$basicGreen;
+  }
+  @include mixin.pc1000px {
+    display: flex;
+    bottom: 4rem;
+  }
+  @include mixin.phone500px {
+    display: none;
+  }
+}
+.phoneButtonBox500px {
+  transition: all 0.5s;
+  @include mixin.phone500px {
+    display: flex;
+    bottom: 2rem;
+  }
+}
+.locationContainerMobile {
+  box-sizing: border-box;
+  display: none;
+  @include mixin.pc1000px {
+    display: flex;
+  }
+  flex-direction: row;
+  @include mixin.phone500px {
+    flex-direction: column;
+  }
+  align-items: center;
+  justify-content: center;
+  background-color: colors.$darkOrange;
+  width: 100%;
+  left: 0;
+  bottom: -200px;
+  position: fixed;
+  padding: 0.5rem;
+  gap: 1rem;
+  @include mixin.phone500px {
+    gap: 0.3rem;
+  }
+  border-top: 2px solid white;
+  transition: all 0.5s;
+  .rowBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    @include mixin.phone500px {
+      width: 232px;
+    }
+  }
+  .columnBox {
+    display: flex;
+    flex-direction: column;
+    p {
+      line-height: 1.2rem;
+      font-size: 0.7rem;
+      color: white;
+      font-family: 'Poppins-600';
+    }
+  }
+  .phoneIcon {
+    width: 32px;
+    height: 32px;
+  }
+}

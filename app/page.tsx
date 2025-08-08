@@ -10,6 +10,7 @@ import TeamSection from '@/components/HomePage/Team/TeamSection';
 import SignInSwimming2526 from '@/components/Ui/Popups/SignInSwimming2526/SignInSwimming2526';
 import SignInSliderHero from '@/components/HomePage/SignInSliderHero/SignInSliderHero';
 import {headers} from 'next/headers';
+import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 export const metadata: Metadata = {
   title: 'NEMO Sportowa Przygoda - Nauka pływania | Obozy i Półkolonie',
   description:
@@ -36,6 +37,7 @@ export default async function Home() {
   return (
     <main className={styles.main}>
       {/* <SignInPopupSwimming /> */}
+      <FabContact />
       <SignInSwimming2526 />
       <VideosSection
         isMobile={isMobile}

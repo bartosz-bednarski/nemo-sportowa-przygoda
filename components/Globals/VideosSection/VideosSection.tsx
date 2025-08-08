@@ -68,7 +68,14 @@ const VideosSection = ({
       return (
         <div className={styles.container}>
           <span className={styles.mobileSticker}>
-            <img src={Logo.src} width={220} height={300} loading='eager' fetchPriority='high' alt='Nemo Sportowa Przygoda'/>
+            <img
+              src={Logo.src}
+              width={220}
+              height={300}
+              loading="eager"
+              fetchPriority="high"
+              alt="Nemo Sportowa Przygoda"
+            />
             {/* <StickerH1
                 title="NEMO"
                 title2="SPORTOWA"
@@ -124,7 +131,14 @@ const VideosSection = ({
       return (
         <div className={styles.container}>
           <span className={styles.mobileSticker}>
-            <img src={Logo.src} width={220} height={300} loading='eager' fetchPriority='high' alt='Nemo Sportowa Przygoda'/>
+            <img
+              src={Logo.src}
+              width={220}
+              height={300}
+              loading="eager"
+              fetchPriority="high"
+              alt="Nemo Sportowa Przygoda"
+            />
             {/* <StickerH1
               title="NEMO"
               title2="SPORTOWA"

@@ -10,7 +10,7 @@
   justify-content: space-between;
   padding: 2rem 3rem;
   background-color: colors.$darkBlue;
-  z-index: 3;
+  z-index: 6;
   @include mixin.pc1450px {
     padding: 2rem 1rem;
   }
