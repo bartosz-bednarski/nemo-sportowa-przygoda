@@ -18,6 +18,7 @@ import CCZHutaCoverImg from '@/public/assets/swimming/pools/ccz_huta.webp';
 import CCZProkocimCoverImg from '@/public/assets/swimming/pools/ccz_prokocim.webp';
 import DaisyCoverImg from '@/public/assets/swimming/pools/daisy.webp';
 import StrakowaCoverImg from '@/public/assets/swimming/pools/strakowa.webp';
+import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania KRAKÓW',
@@ -90,6 +91,7 @@ const NaukaPlywaniaKrakow = () => {
       className={styles.main}
       style={{paddingBottom: '0rem', background: COLORS['lightBlue']}}
     >
+      <FabContact contactKrakow={true} contactMalopolska={false} />
       <VideosSection
         oneSticker={true}
         scrapColor="lightBlue"

@@ -20,6 +20,7 @@ import {
   NAUKA_PLYWANIA_CCZ_NOWA_HUTA,
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaCCZNowaHuta';
 import Schedule from '@/components/Schedule/Schedule';
+import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
   title: 'Nauka Pływania Basen CCZ Nowa Huta Kraków',
@@ -40,6 +41,7 @@ export const metadata: Metadata = {
 const NaukaPlywaniaCCZNowaHutaPage = () => {
   return (
     <div className={styles.main} style={{background: COLORS['darkBlue']}}>
+      <FabContact contactKrakow={true} contactMalopolska={false} />
       <VideosSection
         oneSticker={true}
         oneStickerContent={{

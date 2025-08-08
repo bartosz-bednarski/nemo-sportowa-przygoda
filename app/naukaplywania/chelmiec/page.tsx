@@ -23,6 +23,7 @@ import Groups from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import LessonsByMembersAmount from '@/components/NaukaPlywania/Ui/LessonsByMembersAmount/LessonsByMembersAmount';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import Schedule from '@/components/Schedule/Schedule';
+import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania CHEŁMIEC',
@@ -42,6 +43,7 @@ export const metadata: Metadata = {
 const NaukaPlywaniaChelmiec = () => {
   return (
     <div className={styles.main} style={{background: COLORS['darkBlue']}}>
+      <FabContact contactKrakow={false} contactMalopolska={true} />
       <VideosSection
         oneSticker={true}
         oneStickerContent={{

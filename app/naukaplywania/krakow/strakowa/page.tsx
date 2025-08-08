@@ -20,6 +20,7 @@ import {
   BASEN_STRAKOWA_TUTORIAL,
   NAUKA_PLYWANIA_STRAKOWA,
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaStrakowa';
+import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
   title: 'Nauka Pływania Basen Strąkowa Kraków',
@@ -39,6 +40,7 @@ export const metadata: Metadata = {
 const NaukaPlywaniaStrakowaPage = () => {
   return (
     <div className={styles.main} style={{background: COLORS['darkBlue']}}>
+      <FabContact contactKrakow={true} contactMalopolska={false} />
       <VideosSection
         oneSticker={true}
         oneStickerContent={{

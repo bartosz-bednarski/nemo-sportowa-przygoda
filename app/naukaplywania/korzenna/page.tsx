@@ -24,6 +24,7 @@ import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import LessonsByMembersAmount from '@/components/NaukaPlywania/Ui/LessonsByMembersAmount/LessonsByMembersAmount';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
+import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania KORZENNA',
@@ -43,6 +44,7 @@ export const metadata: Metadata = {
 const NaukaPlywaniaKorzenna = () => {
   return (
     <div className={styles.main} style={{background: COLORS['darkBlue']}}>
+      <FabContact contactKrakow={false} contactMalopolska={true} />
       <VideosSection
         oneSticker={true}
         oneStickerContent={{

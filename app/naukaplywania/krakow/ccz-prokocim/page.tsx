@@ -20,6 +20,7 @@ import {
   NAUKA_PLYWANIA_CCZ_PROKOCIM,
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaCCZProkocim';
 import Schedule from '@/components/Schedule/Schedule';
+import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
   title: 'Nauka Pływania Basen CCZ Prokocim Kraków',
@@ -40,6 +41,7 @@ export const metadata: Metadata = {
 const NaukaPlywaniaCCZProkocim = () => {
   return (
     <div className={styles.main} style={{background: COLORS['darkBlue']}}>
+      <FabContact contactKrakow={true} contactMalopolska={false} />
       <VideosSection
         oneSticker={true}
         oneStickerContent={{
