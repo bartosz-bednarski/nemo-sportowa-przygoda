@@ -102,7 +102,11 @@ const SignInSwimming2526 = () => {
           loading="eager"
           fetchPriority="high"
         />
-        <img className={styles.logo} src={Logo.src} alt='Nemo Sportowa Przygoda'/>
+        <img
+          className={styles.logo}
+          src={Logo.src}
+          alt="Nemo Sportowa Przygoda"
+        />
         <div className={styles.headerBox}>
           <span className={styles.header}>
             Zapisz się na zajęcia nauki pływania

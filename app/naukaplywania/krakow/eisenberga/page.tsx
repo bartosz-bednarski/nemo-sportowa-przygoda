@@ -21,6 +21,7 @@ import Image3 from '@/public/assets/videos/pool-mix-4.webp';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
+import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
   title: 'Nauka Pływania Basen Eisenberga Kraków',
@@ -41,6 +42,7 @@ export const metadata: Metadata = {
 const NaukaPlywaniaEisenberga = () => {
   return (
     <div className={styles.main} style={{background: COLORS['darkBlue']}}>
+      <FabContact contactKrakow={true} contactMalopolska={false} />
       <VideosSection
         oneSticker={true}
         oneStickerContent={{

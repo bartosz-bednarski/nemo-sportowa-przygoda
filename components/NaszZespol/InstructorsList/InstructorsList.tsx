@@ -85,7 +85,11 @@ const InstructorsList: React.FC = () => {
         nie tylko efektywne, ale także przyjemne, rozwijając jednocześnie
         pewność siebie, kondycję i technikę naszych podopiecznych.
       </p>
-      <img className={styles.logo} src={NemoLogoImg.src} alt='Nemo Sportowa Przygoda'/>
+      <img
+        className={styles.logo}
+        src={NemoLogoImg.src}
+        alt="Nemo Sportowa Przygoda"
+      />
       <p>
         <b>
           Niezależnie od tego, czy zaczynasz swoją przygodę z pływaniem, czy

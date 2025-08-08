@@ -9,6 +9,7 @@ import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import Image1 from '@/public/assets/videos/pool-mix-5.webp';
 import Image2 from '@/public/assets/videos/pool-mix-3.webp';
 import Image3 from '@/public/assets/videos/pool-mix-1.webp';
+import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania - KRAKÓW|KORZENNA|GORLICE',
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
 const NaukaPlywaniaPage = () => {
   return (
     <main className={styles.main} style={{background: COLORS['darkBlue']}}>
+      <FabContact contactKrakow={true} contactMalopolska={true} />
       <VideosSection
         oneSticker={false}
         scrapColor="lightBlue"

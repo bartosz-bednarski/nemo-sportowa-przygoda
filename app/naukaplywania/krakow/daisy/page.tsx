@@ -20,6 +20,7 @@ import {
   NAUKA_PLYWANIA_DAISY,
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaDaisy';
 import Schedule from '@/components/Schedule/Schedule';
+import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
   title: 'Nauka Pływania Basen Daisy Kraków',
@@ -39,6 +40,7 @@ export const metadata: Metadata = {
 const NaukaPlywaniaDaisy = () => {
   return (
     <div className={styles.main} style={{background: COLORS['darkBlue']}}>
+      <FabContact contactKrakow={true} contactMalopolska={false} />
       <VideosSection
         oneSticker={true}
         oneStickerContent={{

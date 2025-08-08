@@ -25,6 +25,7 @@ import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout
 import LessonsByMembersAmount from '@/components/NaukaPlywania/Ui/LessonsByMembersAmount/LessonsByMembersAmount';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import Schedule from '@/components/Schedule/Schedule';
+import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania GORLICE',
@@ -44,6 +45,7 @@ export const metadata: Metadata = {
 const NaukaPlywaniaGorlice = () => {
   return (
     <div className={styles.main} style={{background: COLORS['darkBlue']}}>
+      <FabContact contactKrakow={false} contactMalopolska={true} />
       <VideosSection
         oneSticker={true}
         oneStickerContent={{

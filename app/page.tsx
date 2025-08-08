@@ -37,7 +37,7 @@ export default async function Home() {
   return (
     <main className={styles.main}>
       {/* <SignInPopupSwimming /> */}
-      <FabContact />
+      <FabContact contactKrakow={true} contactMalopolska={true} />
       <SignInSwimming2526 />
       <VideosSection
         isMobile={isMobile}

@@ -9,6 +9,11 @@ import EisenbergaCoverImg from '@/public/assets/swimming/pools/eisenberga.webp';
 import BronowiankaCoverImg from '@/public/assets/swimming/pools/bronowianka.webp';
 import PlywaczekCoverImg from '@/public/assets/swimming/pools/plywaczek.webp';
 import ChelmiecCoverImg from '@/public/assets/swimming/pools/chelmiec.webp';
+import FabrycznaCoverImg from '@/public/assets/swimming/pools/fabryczna.webp';
+import CCZHutaCoverImg from '@/public/assets/swimming/pools/ccz_huta.webp';
+import CCZProkocimCoverImg from '@/public/assets/swimming/pools/ccz_prokocim.webp';
+import DaisyCoverImg from '@/public/assets/swimming/pools/daisy.webp';
+import StrakowaCoverImg from '@/public/assets/swimming/pools/strakowa.webp';
 
 type naukaPlywania = {
   zRodzicami: {
@@ -113,9 +118,9 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
           url: '/naukaplywania/krakow/bronowianka',
         },
         {
-          title: 'BASEN PŁYWACZEK',
-          image: PlywaczekCoverImg,
-          url: '/naukaplywania/krakow/plywaczek',
+          title: 'BASEN FABRYCZNA',
+          image: FabrycznaCoverImg,
+          url: '/naukaplywania/krakow/fabryczna',
         },
       ],
     },
@@ -205,6 +210,11 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
           url: '/naukaplywania/korzenna',
         },
         {
+          title: 'BASEN GORLICE',
+          image: GorliceCoverImg,
+          url: '/naukaplywania/gorlice',
+        },
+        {
           title: 'BASEN EISENBERGA',
           image: EisenbergaCoverImg,
           url: '/naukaplywania/krakow/eisenberga',
@@ -218,6 +228,31 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
           title: 'BASEN CHEŁMIEC',
           image: ChelmiecCoverImg,
           url: '/naukaplywania/chelmiec',
+        },
+        {
+          title: 'BASEN DAISY',
+          image: DaisyCoverImg,
+          url: '/naukaplywania/krakow/daisy',
+        },
+        {
+          title: 'BASEN STRĄKOWA',
+          image: StrakowaCoverImg,
+          url: '/naukaplywania/krakow/strakowa',
+        },
+        {
+          title: 'BASEN FABRYCZNA',
+          image: FabrycznaCoverImg,
+          url: '/naukaplywania/krakow/fabryczna',
+        },
+        {
+          title: 'CCZ NOWA HUTA',
+          image: CCZHutaCoverImg,
+          url: '/naukaplywania/krakow/ccz-nowa-huta',
+        },
+        {
+          title: 'CCZ PROKOCIM',
+          image: CCZProkocimCoverImg,
+          url: '/naukaplywania/krakow/ccz-prokocim',
         },
       ],
     },
@@ -305,14 +340,29 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
           url: '/naukaplywania/korzenna',
         },
         {
+          title: 'BASEN GORLICE',
+          image: GorliceCoverImg,
+          url: '/naukaplywania/gorlice',
+        },
+        {
           title: 'BASEN EISENBERGA',
           image: EisenbergaCoverImg,
           url: '/naukaplywania/krakow/eisenberga',
         },
         {
-          title: 'BASEN PŁYWACZEK',
-          image: PlywaczekCoverImg,
-          url: '/naukaplywania/krakow/plywaczek',
+          title: 'CCZ NOWA HUTA',
+          image: CCZHutaCoverImg,
+          url: '/naukaplywania/krakow/ccz-nowa-huta',
+        },
+        {
+          title: 'CCZ PROKOCIM',
+          image: CCZProkocimCoverImg,
+          url: '/naukaplywania/krakow/ccz-prokocim',
+        },
+        {
+          title: 'BASEN DAISY',
+          image: DaisyCoverImg,
+          url: '/naukaplywania/krakow/daisy',
         },
         {
           title: 'BASEN CHEŁMIEC',

@@ -23,7 +23,6 @@ export interface PriceLessonsPropsType {
 const PriceLessons = ({
   stickerH4,
   oneLesson,
-  tenLessons,
   button,
 }: PriceLessonsPropsType) => {
   return (
@@ -39,13 +38,13 @@ const PriceLessons = ({
         <span>{oneLesson.price} </span>
         <span>{oneLesson.time} min</span>
       </div>
-      {tenLessons && (
+      {/* {tenLessons && (
         <div className={styles.contentBox}>
           <span className={styles.orange}>10 LEKCJI</span>
           <span>{tenLessons.price} </span>
           <span>{tenLessons.time} min</span>
         </div>
-      )}
+      )} */}
 
       <SingInButton
         title={button.title}
