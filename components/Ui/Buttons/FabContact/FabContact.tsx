@@ -17,7 +17,7 @@ const FabContact = () => {
           <img className={styles.locationIcon} alt='Zapisy basen Kraków' width={36} height={36} loading='eager' fetchPriority='high' src={LocationIcon.src} />
           <div className={styles.textBox}>
             <p>Zapisy Baseny Kraków</p>
-            <p>+789 246 614</p>
+            <p>+48 789 246 614</p>
           </div>
           <span className={styles.phoneBox}>
             <img alt='Skontakuj się zapisy Kraków' width={32} height={32} loading='eager' fetchPriority='high' src={PhoneIcon.src} />
