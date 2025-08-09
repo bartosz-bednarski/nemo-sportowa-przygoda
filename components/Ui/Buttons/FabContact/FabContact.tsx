@@ -85,7 +85,7 @@ const FabContact = ({contactKrakow, contactMalopolska}: FabContactProps) => {
           </button>
           <button
             onClick={toggleContactHandler}
-            style={{bottom: showContact ? '6.5rem' : '2rem'}}
+            style={{bottom: showContact ? '7.5rem' : '2rem'}}
             className={styles.phoneButtonBox500px}
           >
             <img
@@ -127,7 +127,7 @@ const FabContact = ({contactKrakow, contactMalopolska}: FabContactProps) => {
                 src={PhoneIcon.src}
               />
               <div className={styles.columnBox}>
-                <p>Zapisy Baseny Małopolska</p>
+                <p>Zapisy Baseny Korzenna | Gorlice | Limanowa | Wysowa</p>
                 <p>+48 519 625 894</p>
               </div>
             </a>
@@ -180,7 +180,7 @@ const FabContact = ({contactKrakow, contactMalopolska}: FabContactProps) => {
           </button>
           <button
             onClick={toggleContactHandler}
-            style={{bottom: showContact ? '6.5rem' : '2rem'}}
+            style={{bottom: showContact ? '4.5rem' : '2rem'}}
             className={styles.phoneButtonBox500px}
           >
             <img
@@ -260,7 +260,7 @@ const FabContact = ({contactKrakow, contactMalopolska}: FabContactProps) => {
           </button>
           <button
             onClick={toggleContactHandler}
-            style={{bottom: showContact ? '6.5rem' : '2rem'}}
+            style={{bottom: showContact ? '5.5rem' : '2rem'}}
             className={styles.phoneButtonBox500px}
           >
             <img
@@ -287,7 +287,7 @@ const FabContact = ({contactKrakow, contactMalopolska}: FabContactProps) => {
                 src={PhoneIcon.src}
               />
               <div className={styles.columnBox}>
-                <p>Zapisy Baseny Małopolska</p>
+                <p>Zapisy Baseny Korzenna | Gorlice | Limanowa | Wysowa</p>
                 <p>+48 519 625 894</p>
               </div>
             </a>
