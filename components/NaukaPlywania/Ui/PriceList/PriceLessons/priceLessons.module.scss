@@ -1,5 +1,7 @@
-@use '../../../../../styles/colors.scss' as colors;
+@use './../../../../../styles/mixin.scss' as mixin;
+@use './../../../../../styles/colors.scss' as colors;
 .priceLessons {
+  position: relative;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -21,4 +23,72 @@
 }
 .orange {
   color: colors.$basicOrange;
+}
+.bubbleButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  z-index: 4;
+  transition: all 0.5s;
+  @include mixin.phone700px {
+    // width: 32px;
+    // height: 32px;
+    right: -36px;
+  }
+  &:hover {
+    cursor: pointer;
+    background: colors.$darkOrange;
+  }
+}
+.bubbleIcon {
+  width: 24px;
+  height: 24px;
+  // @include mixin.phone700px{
+  //     width: 16px;
+  //     height: 16px;
+  //   }
+}
+.aboutContainer {
+  position: absolute;
+  max-height: 150px;
+  width: fit-content;
+  gap: 0.5rem;
+  top: -160px;
+  right: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  z-index: 10;
+  @include mixin.phone700px {
+    right: -32px;
+  }
+}
+.textBox {
+  min-width: 210px;
+  color: white;
+  background-color: colors.$darkOrange;
+  padding: 0.7rem;
+  font-size: 0.7rem;
+  line-height: 0.85rem;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  @include mixin.phone700px {
+    min-width: 240px;
+  }
+}
+.nemoIcon {
+  width: 48px;
+  height: 48px;
+  @include mixin.phone500px {
+    display: none;
+  }
 }

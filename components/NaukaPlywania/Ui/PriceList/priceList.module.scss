@@ -10,5 +10,8 @@
   gap: 4rem;
   @include mixin.phone700px {
     padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
