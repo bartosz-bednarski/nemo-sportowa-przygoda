@@ -6,7 +6,6 @@ import {
   NAUKA_PLYWANIA_GORLICE,
   PRICE_LIST_AQUA_FITNESS_GORLICE,
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaGorlice';
-import {RODZAJE_LEKCJI} from '@/utils/NaukaPlywaniaBasen/rodzajeLekcji';
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {Metadata} from 'next';
@@ -22,7 +21,6 @@ import Image3 from '@/public/assets/videos/toddler-mix-3.webp';
 import SectionAbout from '@/components/AquaFitness/SectionAbout/SectionAbout';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
-import LessonsByMembersAmount from '@/components/NaukaPlywania/Ui/LessonsByMembersAmount/LessonsByMembersAmount';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
 import Schedule from '@/components/Schedule/Schedule';
 import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
@@ -123,16 +121,6 @@ const NaukaPlywaniaGorlice = () => {
       </div>
 
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
-      <LessonsByMembersAmount
-        bgImage="grupowe.png"
-        bgColor="darkBlue"
-        lessonTypes={[
-          RODZAJE_LEKCJI.grupowe,
-          RODZAJE_LEKCJI.indywidualne,
-          RODZAJE_LEKCJI.dwuosobowe,
-          RODZAJE_LEKCJI.trzyosobowe,
-        ]}
-      />
       <PoolNecessaryItems color="darkBlue" />
       <Bubbles colorTop="darkBlue" colorBottom="darkBlue" />
       <PoolTutorial poolTutorial={BASEN_GORLICE_TUTORIAL} />
