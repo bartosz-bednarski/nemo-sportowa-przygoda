@@ -123,7 +123,8 @@ const NavigationMenu = ({
           <span className={styles.contactBox} style={{color: '#669AD7'}}>
             Skontaktuj się z nami
           </span>
-          <span className={styles.contactBox}>+48 519 625 894</span>
+          <span className={styles.contactBox}>+48 519 625 894 <span className={styles.accent}>| Zapisy Małopolska</span></span>
+          <span className={styles.contactBox}>+48 789 246 614 <span className={styles.accent}>| Zapisy Kraków</span></span>
           <span className={styles.contactBox}>
             szkolaplywanianemo1@gmail.com
           </span>
