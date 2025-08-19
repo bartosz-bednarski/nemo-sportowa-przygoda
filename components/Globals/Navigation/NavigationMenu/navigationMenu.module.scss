@@ -25,7 +25,9 @@
   overflow: visible !important;
   transition: all 0.9s !important;
 }
-
+.accent{
+  color: colors.$basicOrange;
+}
 .container {
   z-index: 12;
   width: 0px;
