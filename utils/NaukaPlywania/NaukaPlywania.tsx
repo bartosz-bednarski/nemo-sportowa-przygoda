@@ -209,11 +209,11 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
           image: KorzennaCoverImg,
           url: '/naukaplywania/korzenna',
         },
-        {
-          title: 'BASEN GORLICE',
-          image: GorliceCoverImg,
-          url: '/naukaplywania/gorlice',
-        },
+        // {
+        //   title: 'BASEN GORLICE',
+        //   image: GorliceCoverImg,
+        //   url: '/naukaplywania/gorlice',
+        // },
         {
           title: 'BASEN EISENBERGA',
           image: EisenbergaCoverImg,
@@ -339,11 +339,11 @@ export const NAUKA_PLYWANIA: naukaPlywania = {
           image: KorzennaCoverImg,
           url: '/naukaplywania/korzenna',
         },
-        {
-          title: 'BASEN GORLICE',
-          image: GorliceCoverImg,
-          url: '/naukaplywania/gorlice',
-        },
+        // {
+        //   title: 'BASEN GORLICE',
+        //   image: GorliceCoverImg,
+        //   url: '/naukaplywania/gorlice',
+        // },
         {
           title: 'BASEN EISENBERGA',
           image: EisenbergaCoverImg,
