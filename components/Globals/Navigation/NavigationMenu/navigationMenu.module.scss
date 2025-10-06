@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0;
   align-items: center;
   position: fixed;
@@ -76,7 +76,7 @@
   }
 }
 .logo {
-  height: 100px;
+  height: 75px;
   width: auto;
   @include mixin.phone700px {
     display: none !important;
@@ -86,7 +86,7 @@
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 75vh;
+  height: auto;
   opacity: 0;
   overflow: hidden;
   @include mixin.pc1520px {
@@ -107,7 +107,7 @@
       width: 100%;
     }
     li {
-      padding: 0.8rem 0;
+      padding: 0.6rem 0;
       border-bottom: 3px solid #669ad7;
       line-height: 1.2rem !important;
       a,
@@ -125,7 +125,7 @@
   }
 }
 .nav {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   padding: 0.3rem;
   font-weight: 600;
