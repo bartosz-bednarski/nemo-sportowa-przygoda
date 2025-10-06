@@ -4,9 +4,9 @@ import styles from './navigationMenu.module.scss';
 import XBtn from '@/components/Ui/Buttons/XBtn/XBtn';
 import Link from 'next/link';
 import LogoMainWhiteImg from '@/public/assets/logo/Logo-main-white.svg';
-import InstagramImg from '@/public/assets/ui/Icons/social/instagram.svg';
-import FacebookImg from '@/public/assets/ui/Icons/social/facebook.svg';
-import TiktokImg from '@/public/assets/ui/Icons/social/tiktok.svg';
+// import InstagramImg from '@/public/assets/ui/Icons/social/instagram.svg';
+// import FacebookImg from '@/public/assets/ui/Icons/social/facebook.svg';
+// import TiktokImg from '@/public/assets/ui/Icons/social/tiktok.svg';
 
 interface LinkItemType {
   url: string;
@@ -85,7 +85,7 @@ const NavigationMenu = ({
   const waveStyles = `${styles.wave} ${showMenu && styles.waveActive}`;
   const headerStyles = `${styles.header} ${showMenu && styles.active}`;
   const menuBoxStyles = `${styles.menuBox} ${showMenu && styles.active}`;
-  const contactContainerStyles = `${styles.contactContainer} ${showMenu && styles.active}`;
+  // const contactContainerStyles = `${styles.contactContainer} ${showMenu && styles.active}`;
 
   return (
     <>
@@ -119,7 +119,7 @@ const NavigationMenu = ({
             ))}
           </ul>
         </div>
-        <div className={contactContainerStyles}>
+        {/* <div className={contactContainerStyles}>
           <span className={styles.contactBox} style={{color: '#669AD7'}}>
             Skontaktuj się z nami
           </span>
@@ -164,7 +164,7 @@ const NavigationMenu = ({
               />
             </Link>
           </span>
-        </div>
+        </div> */}
       </div>
     </>
   );
