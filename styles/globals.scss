@@ -134,3 +134,78 @@ h5 {
     font-size: 0.9rem;
   }
 }
+.activenow-form-client-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include mixin.phone700px {
+    flex-direction: column;
+  }
+}
+.activenow-form-field {
+  width: 48% !important;
+  @include mixin.phone700px {
+    width: 100% !important;
+  }
+}
+.js-activenow-parent-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include mixin.phone700px {
+    flex-direction: column;
+  }
+}
+.activenow-form-client-details button#active-now-submit {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.7rem 3rem !important;
+  color: white;
+  background-color: $darkBlue;
+  border: 0;
+  border-radius: 40px;
+  gap: 1rem;
+  transition: all 0.5s;
+  margin: 1rem auto;
+  justify-self: center;
+  &:hover {
+    cursor: pointer;
+    background-color: green;
+  }
+  @include mixin.phone700px {
+    width: 100%;
+  }
+}
+.activenow-form-field input {
+  box-sizing: border-box !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  gap: 1px;
+  padding: 0.6rem 1rem !important;
+  background-color: #becdeb !important;
+  border-radius: 20px !important;
+  border: 1px solid #493a2d !important;
+  color: #053490 !important;
+}
+.activenow-main-selector {
+  box-sizing: border-box !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  gap: 1px;
+  padding: 0.6rem 1rem !important;
+  background-color: #becdeb !important;
+  border-radius: 20px !important;
+  border: 1px solid #493a2d !important;
+  color: #053490 !important;
+}

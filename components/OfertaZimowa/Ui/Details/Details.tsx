@@ -22,23 +22,33 @@ export interface DetailsPropsType {
 const Details: React.FC<{details: DetailsPropsType}> = ({details}) => {
   return (
     <div className={styles.details}>
-      <div className={styles.rowBox}>
-        <DetailsBox promo={false} label="MIEJSCE" content={details.location} />
-        <DetailsBox promo={false} label="TERMIN" content={details.dateRange} />
-        {details.ageRange !== undefined && (
-          <DetailsBox promo={false} label="WIEK" content={details.ageRange} />
-        )}
-        {details.rally !== undefined && (
-          <DetailsBox promo={false} label="ZBIÓRKA" content={details.rally} />
-        )}
-        <DetailsBox
-          promo={details.promotion}
-          label="CENA"
-          content={details.price}
-          promoPrice={details.promotionPrice}
-          promoInfo={details.promotionInfo}
-        />
-      </div>
+      {details.dateRange !== '' && (
+        <div className={styles.rowBox}>
+          <DetailsBox
+            promo={false}
+            label="MIEJSCE"
+            content={details.location}
+          />
+          <DetailsBox
+            promo={false}
+            label="TERMIN"
+            content={details.dateRange}
+          />
+          {details.ageRange !== undefined && (
+            <DetailsBox promo={false} label="WIEK" content={details.ageRange} />
+          )}
+          {details.rally !== undefined && (
+            <DetailsBox promo={false} label="ZBIÓRKA" content={details.rally} />
+          )}
+          <DetailsBox
+            promo={details.promotion}
+            label="CENA"
+            content={details.price}
+            promoPrice={details.promotionPrice}
+            promoInfo={details.promotionInfo}
+          />
+        </div>
+      )}
       <div className={styles.infoBox}>
         <h3 className={styles.header}>{details.aboutTitle}</h3>
         <p className={styles.text}>{details.aboutDescription}</p>

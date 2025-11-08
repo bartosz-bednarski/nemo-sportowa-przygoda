@@ -6,7 +6,7 @@ import SignInCamps from '@/components/Globals/SignInCamps/SignInCamps';
 import CollabWinter from '@/components/Winter/CollabWinter';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {Metadata} from 'next';
-import {POLKOLONIE_LISTA_2025} from '@/utils/Winter/Polkolonie';
+import {POLKOLONIE_LISTA_2026} from '@/utils/Winter/Polkolonie';
 import {OBOZY_LISTA_2025} from '@/utils/Winter/Obozy';
 import {WEEKEND_NA_STOKU_LISTA_2025} from '@/utils/Winter/WeekendoweNarty';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
@@ -100,7 +100,7 @@ const OfertaZimowaPage = () => {
         theme="winter"
         waiting={false}
         waitingTitle="ZAPISY PRZEZ TELEFON"
-        activeCampsCoversList={POLKOLONIE_LISTA_2025}
+        activeCampsCoversList={POLKOLONIE_LISTA_2026}
       />
       <ScrapWinter bgColor="white" />
       <AboutCamps
@@ -119,8 +119,8 @@ const OfertaZimowaPage = () => {
 
       <SignInCamps
         theme="winter"
-        waiting={false}
-        waitingTitle="ZAPISY PRZEZ TELEFON"
+        waiting={true}
+        waitingTitle="ZAPISY WKRÓTCE"
         activeCampsCoversList={OBOZY_LISTA_2025}
       />
       <CollabWinter />
@@ -139,8 +139,8 @@ const OfertaZimowaPage = () => {
 
       <SignInCamps
         theme="winter"
-        waiting={false}
-        waitingTitle="ZAPISY PRZEZ TELEFON"
+        waiting={true}
+        waitingTitle="ZAPISY WKRÓTCE"
         activeCampsCoversList={WEEKEND_NA_STOKU_LISTA_2025}
       />
       <GalleryLink

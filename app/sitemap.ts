@@ -94,34 +94,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: 'https://nemosportowaprzygoda.pl/ofertazimowa/',
     },
     {
-      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/obozy/narciarskie/muszyna/',
+      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/polkolonia-zimowa-fabryka-pomyslow/',
     },
     {
-      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/polkolonie/aktywnazima/bobowa/',
-    },
-    {
-      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/polkolonie/aktywnazima/luzna/',
-    },
-    {
-      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/polkolonie/aktywnazima/korzenna/',
-    },
-    {
-      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/polkolonie/bialeszalenstwo/bobowa/',
-    },
-    {
-      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/polkolonie/bialeszalenstwo/korzenna/',
-    },
-    {
-      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-1/',
-    },
-    {
-      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-2/',
-    },
-    {
-      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-3/',
-    },
-    {
-      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/weekend-na-stoku/termin-4/',
+      url: 'https://nemosportowaprzygoda.pl/ofertazimowa/polkolonia-zimowa-pracownia-marzen/',
     },
     {
       url: 'https://nemosportowaprzygoda.pl/naszzespol/',

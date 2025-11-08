@@ -72,13 +72,16 @@
 .header {
   color: rgba(15, 72, 183, 0.6);
   font-size: 2.5rem;
+  line-height: 3rem;
   font-family: 'poppins-700';
   margin: 0;
   @include mixin.pc1000px {
     font-size: 1.7rem;
+    line-height: 2rem;
   }
   @include mixin.phone700px {
     font-size: 1.2rem;
+    line-height: 1.5rem;
     text-align: center;
   }
 }

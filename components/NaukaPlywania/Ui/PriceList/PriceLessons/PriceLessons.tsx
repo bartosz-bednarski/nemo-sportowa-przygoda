@@ -75,7 +75,11 @@ const PriceLessons = ({
         >
           <img
             src={showAboutContainer ? CloseIcon.src : BubbleIcon.src}
-            className={styles.bubbleIcon} alt='Dowiedz się więcej' loading='eager' width={40} height={40}
+            className={styles.bubbleIcon}
+            alt="Dowiedz się więcej"
+            loading="eager"
+            width={40}
+            height={40}
           />
         </button>
       )}
@@ -83,7 +87,14 @@ const PriceLessons = ({
         className={styles.aboutContainer}
         style={{display: showAboutContainer ? 'flex' : 'none'}}
       >
-        <img src={NemoIcon.src} className={styles.nemoIcon} alt='Nemo Sportowa Przygoda' width={48} height={48} loading='lazy'/>
+        <img
+          src={NemoIcon.src}
+          className={styles.nemoIcon}
+          alt="Nemo Sportowa Przygoda"
+          width={48}
+          height={48}
+          loading="lazy"
+        />
         <p className={styles.textBox}>
           {
             GROUP_DESCRIPTION[

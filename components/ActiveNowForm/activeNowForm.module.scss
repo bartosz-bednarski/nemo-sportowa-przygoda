@@ -1,0 +1,76 @@
+@use '../../styles/mixin.scss' as mixin;
+@import '../../styles/colors.scss';
+@import '../../styles/fonts.scss';
+.activenow-table-name {
+  font-size: 0.7rem;
+}
+.activenowFormContainer {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 3rem;
+  background-color: $white;
+  // @include mixin.phone700px{
+  //      padding: 6rem 1rem 4rem 1rem;
+
+  //   }
+
+  h2 {
+    font-size: 3rem;
+    font-family: 'poppins-700';
+    color: $darkBlue;
+    @include mixin.phone700px {
+      font-size: 2rem;
+    }
+  }
+  .formBox {
+    display: flex;
+    justify-content: center;
+
+    form {
+      width: 70%;
+    }
+  }
+
+  button {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.7rem 1rem !important;
+    color: white;
+    background-color: $darkBlue;
+    border: 0;
+    border-radius: 40px;
+    gap: 1rem;
+    transition: all 0.5s;
+    margin: 0 0.5rem;
+    &:hover {
+      cursor: pointer;
+      background-color: green;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .formBox {
+    form {
+      width: 100% !important;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .activenowFormContainer {
+    h2 {
+      font-size: 1.3rem;
+    }
+    .filters-first-row {
+      flex-direction: column !important;
+    }
+  }
+}

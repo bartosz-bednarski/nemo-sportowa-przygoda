@@ -1,41 +1,60 @@
 // /** @type {import('next').NextConfig} */
 //STATIC EXPORT
 const nextConfig = {
-  // distDir: 'out',
-  // output: 'export',
-  // reactStrictMode: true,
-  // swcMinify: true, // Ustawienie na true
+  async redirects() {
+    return [
+      {
+        source: '/ofertazimowa/obozy/narciarskie/muszyna',
+        destination: '/ofertazimowa',
+        permanent: true,
+      },
+      {
+        source: '/ofertazimowa/polkolonie/aktywnazima/bobowa',
+        destination: '/ofertazimowa',
+        permanent: true,
+      },
+      {
+        source: '/ofertazimowa/polkolonie/aktywnazima/korzenna',
+        destination: '/ofertazimowa',
+        permanent: true,
+      },
+      {
+        source: '/ofertazimowa/polkolonie/aktywnazima/luzna',
+        destination: '/ofertazimowa',
+        permanent: true,
+      },
+      {
+        source: '/ofertazimowa/polkolonie/bialeszalenstwo/bobowa',
+        destination: '/ofertazimowa',
+        permanent: true,
+      },
+      {
+        source: '/ofertazimowa/polkolonie/bialeszalenstwo/korzenna',
+        destination: '/ofertazimowa',
+        permanent: true,
+      },
+      {
+        source: '/ofertazimowa/weekend-na-stoku/termin-1',
+        destination: '/ofertazimowa',
+        permanent: true,
+      },
+      {
+        source: '/ofertazimowa/weekend-na-stoku/termin-2',
+        destination: '/ofertazimowa',
+        permanent: true,
+      },
+      {
+        source: '/ofertazimowa/weekend-na-stoku/termin-3',
+        destination: '/ofertazimowa',
+        permanent: true,
+      },
+      {
+        source: '/ofertazimowa/weekend-na-stoku/termin-4',
+        destination: '/ofertazimowa',
+        permanent: true,
+      },
+    ];
+  },
 };
-
-// DYNAMIC EXPORT
-// import path from 'path';
-// import {fileURLToPath} from 'url';
-// const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
-// const __dirname = path.dirname(__filename); // get the name of the directory
-// const nextConfig = {
-//   // output: "export",
-//   reactStrictMode: true,
-//   swcMinify: true, // Ustawienie na true
-
-//   sassOptions: {
-//     includePaths: [path.join(__dirname, 'styles')],
-//   },
-//   typescript: {
-//     ignoreBuildErrors: true,
-//   },
-//   webpack: (config, {isServer}) => {
-//     config.resolve.alias['@'] = path.resolve(__dirname);
-
-//     if (!isServer) {
-//       config.optimization.splitChunks = {
-//         cacheGroups: {
-//           default: false,
-//         },
-//       };
-//     }
-
-//     return config;
-//   },
-// };
 
 export default nextConfig;
