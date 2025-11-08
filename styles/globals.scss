@@ -196,6 +196,13 @@ h5 {
   border: 1px solid #493a2d !important;
   color: #053490 !important;
 }
+.activenow-form-field input#client_birthdate{
+  margin-left: 24px;
+}
+.activenow-form-field .soft-d-none{
+  display: block!important;
+  visibility: hidden;
+}
 .activenow-main-selector {
   box-sizing: border-box !important;
   display: flex !important;
@@ -208,4 +215,5 @@ h5 {
   border-radius: 20px !important;
   border: 1px solid #493a2d !important;
   color: #053490 !important;
+  margin-left: 24px!important;
 }
