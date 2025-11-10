@@ -20,7 +20,7 @@ import Image3 from '@/public/assets/videos/toddler-mix-3.webp';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
-import Schedule from '@/components/Schedule/Schedule';
+// import Schedule from '@/components/Schedule/Schedule';
 import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
@@ -92,7 +92,7 @@ const NaukaPlywaniaGorlice = () => {
           },
         }}
       />
-      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=74801&zz=" />
+      {/* <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=74801&zz=" /> */}
       {/* NAUKA PŁYWAANIA BOBASY */}
       <div style={{background: COLORS.lightBlue}}>
         <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_GORLICE.zRodzicami.about} />

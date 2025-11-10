@@ -10,6 +10,7 @@ import topScrapbasicBrown from '@/public/assets/ui/Scraps/scrapBottomBasicBrown.
 import topScrapbasicGreen from '@/public/assets/ui/Scraps/scrapBottomBasicGreen.svg';
 import topScrapwhite from '@/public/assets/ui/Scraps/scrapBottomWhite.svg';
 import topScrapwinterIce from '@/public/assets/ui/Scraps/scrapBottomWinterIce.svg';
+import topScrapwinter from '@/public/assets/ui/Scraps/scrapBottomWinter.svg';
 
 import bottomScraplightBlue from '@/public/assets/ui/Scraps/scrapTopLightBlue.svg';
 import bottomScrapmediumBlue from '@/public/assets/ui/Scraps/scrapTopMediumBlue.svg';
@@ -19,6 +20,7 @@ import bottomScrapbasicBrown from '@/public/assets/ui/Scraps/scrapTopBasicBrown.
 import bottomScrapbasicGreen from '@/public/assets/ui/Scraps/scrapTopBasicGreen.svg';
 import bottomScrapwhite from '@/public/assets/ui/Scraps/scrapTopWhite.svg';
 import bottomScrapwinterIce from '@/public/assets/ui/Scraps/scrapTopWinterIce.svg';
+import bottomScrapwinter from '@/public/assets/ui/Scraps/scrapTopWinter.svg';
 
 export interface Scrap2PropsType {
   position: 'top' | 'bottom';
@@ -34,6 +36,7 @@ const Scraps = {
   bottomScrapbasicGreen,
   bottomScrapwhite,
   bottomScrapwinterIce,
+   bottomScrapwinter,
 
   topScraplightBlue,
   topScrapmediumBlue,
@@ -43,6 +46,7 @@ const Scraps = {
   topScrapbasicGreen,
   topScrapwhite,
   topScrapwinterIce,
+   topScrapwinter,
 };
 const Scrap2 = ({position, color}: Scrap2PropsType) => {
   const key = `${position}Scrap${color}` as keyof typeof Scraps;

@@ -7,7 +7,7 @@ import Image1 from '@/public/assets/videos/pool-mix-1.webp';
 import Image2 from '@/public/assets/videos/winter-mix-1.webp';
 import Image3 from '@/public/assets/videos/summer-mix-1.webp';
 import TeamSection from '@/components/HomePage/Team/TeamSection';
-import SignInSwimming2526 from '@/components/Ui/Popups/SignInSwimming2526/SignInSwimming2526';
+// import SignInSwimming2526 from '@/components/Ui/Popups/SignInSwimming2526/SignInSwimming2526';
 import SignInSliderHero from '@/components/HomePage/SignInSliderHero/SignInSliderHero';
 import {headers} from 'next/headers';
 import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
@@ -38,7 +38,7 @@ export default async function Home() {
     <main className={styles.main}>
       {/* <SignInPopupSwimming /> */}
       <FabContact contactKrakow={true} contactMalopolska={true} />
-      <SignInSwimming2526 />
+      {/* <SignInSwimming2526 /> */}
       <VideosSection
         isMobile={isMobile}
         oneSticker={false}

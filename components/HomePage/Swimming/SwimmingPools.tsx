@@ -5,15 +5,15 @@ import LinkButton from '@/components/Ui/Buttons/LinkButton';
 import LinkSwimmingPoolCover from '@/components/Ui/Links/LinkSwimmingPoolCover/LinkSwimmingPoolCover';
 import KorzennaCoverImg from '@/public/assets/swimming/pools/korzenna.webp';
 import GorliceCoverImg from '@/public/assets/swimming/pools/gorlice.webp';
-import EisenbergaCoverImg from '@/public/assets/swimming/pools/eisenberga.webp';
+// import EisenbergaCoverImg from '@/public/assets/swimming/pools/eisenberga.webp';
 import BronowiankaCoverImg from '@/public/assets/swimming/pools/bronowianka.webp';
 import PlywaczekCoverImg from '@/public/assets/swimming/pools/plywaczek.webp';
-import ChelmiecCoverImg from '@/public/assets/swimming/pools/chelmiec.webp';
-import FabrycznaCoverImg from '@/public/assets/swimming/pools/fabryczna.webp';
-import CCZHutaCoverImg from '@/public/assets/swimming/pools/ccz_huta.webp';
-import CCZProkocimCoverImg from '@/public/assets/swimming/pools/ccz_prokocim.webp';
+// import ChelmiecCoverImg from '@/public/assets/swimming/pools/chelmiec.webp';
+// import FabrycznaCoverImg from '@/public/assets/swimming/pools/fabryczna.webp';
+// import CCZHutaCoverImg from '@/public/assets/swimming/pools/ccz_huta.webp';
+// import CCZProkocimCoverImg from '@/public/assets/swimming/pools/ccz_prokocim.webp';
 import DaisyCoverImg from '@/public/assets/swimming/pools/daisy.webp';
-import StrakowaCoverImg from '@/public/assets/swimming/pools/strakowa.webp';
+// import StrakowaCoverImg from '@/public/assets/swimming/pools/strakowa.webp';
 
 const SwimmingPools = () => {
   return (
@@ -30,11 +30,11 @@ const SwimmingPools = () => {
             title="BASEN GORLICE"
             url="/naukaplywania/gorlice"
           />
-          <LinkSwimmingPoolCover
+          {/* <LinkSwimmingPoolCover
             image={EisenbergaCoverImg}
             title="BASEN EISENBERGA"
             url="/naukaplywania/krakow/eisenberga"
-          />
+          /> */}
           <LinkSwimmingPoolCover
             image={BronowiankaCoverImg}
             title="BASEN BRONOWIANKA"
@@ -45,36 +45,36 @@ const SwimmingPools = () => {
             title="BASEN PŁYWACZEK"
             url="/naukaplywania/krakow/plywaczek"
           />
-          <LinkSwimmingPoolCover
+          {/* <LinkSwimmingPoolCover
             image={FabrycznaCoverImg}
             title="BASEN FABRYCZNA"
             url="/naukaplywania/krakow/fabryczna"
-          />
-          <LinkSwimmingPoolCover
+          /> */}
+          {/* <LinkSwimmingPoolCover
             image={CCZHutaCoverImg}
             title="BASEN CCZ NOWA HUTA"
             url="/naukaplywania/krakow/ccz-nowa-huta"
-          />
-          <LinkSwimmingPoolCover
+          /> */}
+          {/* <LinkSwimmingPoolCover
             image={CCZProkocimCoverImg}
             title="BASEN CCZ PROKOCIM"
             url="/naukaplywania/krakow/ccz-prokocim"
-          />
+          /> */}
           <LinkSwimmingPoolCover
             image={DaisyCoverImg}
             title="BASEN DAISY"
             url="/naukaplywania/krakow/daisy"
           />
-          <LinkSwimmingPoolCover
+          {/* <LinkSwimmingPoolCover
             image={StrakowaCoverImg}
             title="BASEN STRĄKOWA"
             url="/naukaplywania/krakow/strakowa"
-          />
-          <LinkSwimmingPoolCover
+          /> */}
+          {/* <LinkSwimmingPoolCover
             image={ChelmiecCoverImg}
             title="BASEN CHEŁMIEC"
             url="/naukaplywania/chelmiec"
-          />
+          /> */}
           {/* <TemporarylinkSwimmingPoolCover
             image={StrozeCoverImg}
             title="BASEN STRÓŻE"

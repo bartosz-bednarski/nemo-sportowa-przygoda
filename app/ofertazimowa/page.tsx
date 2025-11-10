@@ -3,19 +3,20 @@ import styles from '../page.module.scss';
 import AboutCamps from '@/components/Globals/AboutCamps/AboutCamps';
 import ScrapWinter from '@/components/Ui/Scrap/ScrapWinter';
 import SignInCamps from '@/components/Globals/SignInCamps/SignInCamps';
-import CollabWinter from '@/components/Winter/CollabWinter';
+// import CollabWinter from '@/components/Winter/CollabWinter';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {Metadata} from 'next';
 import {POLKOLONIE_LISTA_2026} from '@/utils/Winter/Polkolonie';
 import {OBOZY_LISTA_2025} from '@/utils/Winter/Obozy';
-import {WEEKEND_NA_STOKU_LISTA_2025} from '@/utils/Winter/WeekendoweNarty';
+// import {WEEKEND_NA_STOKU_LISTA_2025} from '@/utils/Winter/WeekendoweNarty';
 import GalleryLink from '@/components/Ui/Links/GalleryLink/GalleryLink';
 import Image1 from '@/public/assets/videos/winter-mix-1.webp';
 import Image2 from '@/public/assets/videos/winter-mix-2.webp';
 import Image3 from '@/public/assets/videos/winter-mix-3.webp';
 import AboutCampsImage1 from '@/public/assets/winter/winter-bg-1.webp';
-import AboutCampsImage2 from '@/public/assets/winter/winter-bg-1.webp';
-import AboutCampsImage3 from '@/public/assets/winter/winter-bg-3.webp';
+import AboutCampsImage2 from '@/public/assets/winter/winter-bg-2.webp';
+// import BackgroundImage from '@/public/assets/winter/winter_background.webp';
+// import AboutCampsImage3 from '@/public/assets/winter/winter-bg-3.webp';
 
 export const metadata: Metadata = {
   title: 'Oferta ZIMOWA',
@@ -32,10 +33,10 @@ export const metadata: Metadata = {
 
 const OfertaZimowaPage = () => {
   return (
-    <main className={styles.main} style={{background: 'white'}}>
+    <main className={styles.main} style={{backgroundImage:'url("/assets/winter/winter_background.webp")'}}>
       <VideosSection
-        oneSticker={false}
-        scrapColor="white"
+        oneSticker={true}
+        scrapColor="winter"
         oneStickerContent={{
           title: 'OFERTA',
           title2: '',
@@ -86,9 +87,11 @@ const OfertaZimowaPage = () => {
       <AboutCamps
         h2="PÓŁKOLONIE ZIMOWE"
         section1About={[
-          'Udowadniamy, że zima to doskonały czas na aktywność! Dzieci poznają różnorodne sporty zimowe, takie jak łyżwiarstwo, narty czy zabawy na śniegu, a także uczą się, jak kreatywnie i zdrowo spędzać czas w chłodniejsze dni.',
-          'Codziennie dzieci mają również zapewnione zdrowe i pożywne posiłki, które dodają im energii do kolejnych aktywności. Półkolonie to idealna okazja do spędzenia wakacji w sposób pełen przygód, zabawy i rozwoju, pod opieką doświadczonych wychowawców.',
-          'Nasze półkolonie to nie tylko sport, ale również mnóstwo zabawy i przygód w zimowej scenerii!',
+          '5 dni pełnych atrakcji! Od poniedziałku do piątku, w godzinach 8:00–16:00, zapraszamy dzieci w wieku 5–13 lat na niezapomnianą zimową przygodę z NEMO!',
+          'Udowadniamy, że zima to idealny czas na aktywność i zabawę! Podczas naszych półkolonii dzieci poznają uroki sportów zimowych, biorą udział w kreatywnych warsztatach i aktywnie spędzają czas na świeżym powietrzu.',
+          'Każdy turnus obejmuje trzy wyjątkowe wycieczki, które dostarczą dzieciom mnóstwo emocji, radości i niezapomnianych wrażeń.',
+          'Codziennie zapewniamy zdrowe i pożywne posiłki, które dodają energii do kolejnych atrakcji. Nasze półkolonie to doskonała okazja, by rozwijać pasje, zawierać nowe przyjaźnie i odkrywać zimowy świat pod opieką doświadczonych wychowawców.',
+          'Zimowa Fabryka Pomysłów i Zimowa Przygoda to niezapomniane turnusy pełne ruchu, śmiechu i twórczej energii — w Bobowej, Korzennej i Gorlicach!'
         ]}
         section2About={[]}
         theme="winter"
@@ -123,7 +126,7 @@ const OfertaZimowaPage = () => {
         waitingTitle="ZAPISY WKRÓTCE"
         activeCampsCoversList={OBOZY_LISTA_2025}
       />
-      <CollabWinter />
+      {/* <CollabWinter />
       <AboutCamps
         h2="WEEKENDOWE NARTY"
         section1About={[
@@ -142,12 +145,12 @@ const OfertaZimowaPage = () => {
         waiting={true}
         waitingTitle="ZAPISY WKRÓTCE"
         activeCampsCoversList={WEEKEND_NA_STOKU_LISTA_2025}
-      />
+      /> */}
       <GalleryLink
         href="/galeria"
         img="/gallery/galleryLinks/winter.webp"
         textColor="darkBlue"
-        bgColor="white"
+        bgColor="winter"
       />
       <Scrap2 position="bottom" color="darkBlue" />
     </main>

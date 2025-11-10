@@ -1,10 +1,10 @@
 'use client';
 import {customColors} from '@/types/UI/colors';
-import {COLORS} from '@/utils/UI/colors';
+// import {COLORS} from '@/utils/UI/colors';
 import React from 'react';
 import styles from './scrap.module.scss';
 
-const ScrapWinter: React.FC<{bgColor: customColors}> = ({bgColor}) => {
+const ScrapWinter: React.FC<{bgColor: customColors}> = ({}) => {
   return (
     <svg
       width="1920"
@@ -12,7 +12,7 @@ const ScrapWinter: React.FC<{bgColor: customColors}> = ({bgColor}) => {
       viewBox="0 0 1920 238"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{width: '100%', background: COLORS[bgColor]}}
+      style={{width: '100%', background: 'transparent'}}
       className={styles.scrapWinter}
     >
       <path

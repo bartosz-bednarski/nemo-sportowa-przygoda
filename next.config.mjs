@@ -53,6 +53,36 @@ const nextConfig = {
         destination: '/ofertazimowa',
         permanent: true,
       },
+      {
+        source: '/naukaplywania/chelmiec',
+        destination: '/naukaplywania',
+        permanent: true,
+      },
+      {
+        source: '/naukaplywania/krakow/ccz-nowa-huta',
+        destination: '/naukaplywania',
+        permanent: true,
+      },
+       {
+        source: '/naukaplywania/krakow/ccz-prokocim',
+        destination: '/naukaplywania',
+        permanent: true,
+      },
+       {
+        source: '/naukaplywania/krakow/eisenberga',
+        destination: '/naukaplywania',
+        permanent: true,
+      },
+       {
+        source: '/naukaplywania/krakow/fabryczna',
+        destination: '/naukaplywania',
+        permanent: true,
+      },
+       {
+        source: '/naukaplywania/krakow/strakowa',
+        destination: '/naukaplywania',
+        permanent: true,
+      },
     ];
   },
 };

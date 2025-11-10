@@ -6,4 +6,5 @@ export type customColors =
   | 'basicBrown'
   | 'basicGreen'
   | 'white'
-  | 'winterIce';
+  | 'winterIce'|
+  'winter';

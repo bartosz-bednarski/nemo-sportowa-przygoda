@@ -19,7 +19,7 @@ import {
   BASEN_DAISY_TUTORIAL,
   NAUKA_PLYWANIA_DAISY,
 } from '@/utils/NaukaPlywaniaBasen/naukaPlywaniaDaisy';
-import Schedule from '@/components/Schedule/Schedule';
+// import Schedule from '@/components/Schedule/Schedule';
 import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
@@ -91,7 +91,7 @@ const NaukaPlywaniaDaisy = () => {
           },
         }}
       />
-      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=99161&zz=" />
+      {/* <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=99161&zz=" /> */}
       {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
       <div style={{background: COLORS.lightBlue}}>
         <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_DAISY.dzieciMlodziez.about} />

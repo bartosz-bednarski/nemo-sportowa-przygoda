@@ -217,3 +217,55 @@ h5 {
   color: #053490 !important;
   margin-left: 24px!important;
 }
+.activenow-form-container .activenow-form-field label{
+  align-self: center!important;
+  color: $darkBlue;
+}
+.activenow-form-field#activenow-venue-selector{
+  padding-left: 24px;
+  box-sizing: border-box!important;
+  @include mixin.pc1000px{
+width: 100%!important;
+  }
+  // box-sizing: border-box;
+}
+.activenow-form-field#activenow-eventable-selector{
+  
+ @include mixin.pc1000px{
+width: 100%!important;
+  }
+}
+.activenow-form-field select#venue{
+box-sizing: border-box !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  gap: 1px;
+  padding: 0.6rem 1rem !important;
+  background-color: #becdeb !important;
+  border: 1px solid #493a2d !important;
+  color: #053490 !important;
+}
+.activenow-main-selector#eventable_id{
+ border-radius: 5px!important;
+ margin-left: 0px!important;
+  box-sizing: border-box!important;
+   width: 100%!important;
+   max-width: 100%!important;
+}
+.activenow-form-client-details div#activenow-form-eventable-description-holder{
+  box-sizing: border-box;
+  padding-left: 24px;
+    display: flex;
+    width: 100%;
+}
+.activenow-form-class-description{
+  background-color: #becdeb !important;
+  border: 1px solid #493a2d !important;
+  color: #053490 !important;
+  border-radius: 5px !important;
+}
+.activenow-form h3{
+  color: $darkBlue!important;
+}

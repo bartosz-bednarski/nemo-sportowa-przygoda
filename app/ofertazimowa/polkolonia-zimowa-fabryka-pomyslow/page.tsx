@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 };
 const PolkoloniaZimowa = () => {
   return (
-    <main className={styles.main} style={{background: 'white'}}>
+    <main className={styles.main} style={{backgroundImage:'url("/assets/winter/winter_background.webp")'}}>
       <Hero hero={POLKOLONIA_ZIMOWA_FABRYKA_POMYSLOW.hero} />
 
       <Details details={POLKOLONIA_ZIMOWA_FABRYKA_POMYSLOW.details} />

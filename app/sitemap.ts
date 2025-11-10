@@ -31,31 +31,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: 'https://nemosportowaprzygoda.pl/naukaplywania/gorlice/',
     },
     {
-      url: 'https://nemosportowaprzygoda.pl/naukaplywania/chelmiec/',
-    },
-    {
-      url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/eisenberga/',
-    },
-    {
       url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/bronowianka/',
     },
     {
       url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/plywaczek/',
     },
     {
-      url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/fabryczna/',
-    },
-    {
-      url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/ccz-nowa-huta/',
-    },
-    {
-      url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/ccz-prokocim/',
-    },
-    {
       url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/daisy/',
-    },
-    {
-      url: 'https://nemosportowaprzygoda.pl/naukaplywania/krakow/strakowa/',
     },
     {
       url: 'https://nemosportowaprzygoda.pl/naukaplywania/poradnikbasenowy/',

@@ -6,7 +6,14 @@ import {SchedulePropsType} from '@/components/OfertaZimowa/Ui/Schedule/Schedule'
 import {FoodPropsType} from '@/components/OfertaZimowa/Ui/Food/Food';
 import {PriceDetailsPropsType} from '@/components/OfertaZimowa/Ui/PriceDetails/PriceDetails';
 import {ColonyLinkPropsType} from '@/components/Ui/Links/ColonyLink/Winter/ColonyLinkWinter';
-import ColonyCoverImage from '@/public/assets/winter/polkolonie/polkolonie_winter.webp';
+// import ColonyCoverImage from '@/public/assets/winter/polkolonie/polkolonie_winter.webp';
+import ColonyCoverImage1 from '@/public/assets/winter/polkolonie/polkolonie_winter_1.webp';
+import ColonyCoverImage2 from '@/public/assets/winter/polkolonie/polkolonie_winter_2.webp';
+import ColonyCoverImage3 from '@/public/assets/winter/polkolonie/polkolonie_winter_3.webp';
+import ColonyCoverImage4 from '@/public/assets/winter/polkolonie/polkolonie_winter_4.webp';
+import ColonyCoverImage5 from '@/public/assets/winter/polkolonie/polkolonie_winter_5.webp';
+import ColonyCoverImage6 from '@/public/assets/winter/polkolonie/polkolonie_winter_6.webp';
+import ColonyCoverImage7 from '@/public/assets/winter/polkolonie/polkolonie_winter_7.webp';
 
 export type PolkoloniaType = {
   title: string;
@@ -25,7 +32,7 @@ export const POLKOLONIE_LISTA_2026: ColonyLinkPropsType[] = [
     price: '850 PLN',
     localization: 'SP W BOBOWEJ',
     date: '02.02-06.02.2026',
-    coverImage: ColonyCoverImage,
+    coverImage: ColonyCoverImage1,
     href: '/ofertazimowa/polkolonia-zimowa-fabryka-pomyslow',
   },
   {
@@ -34,7 +41,7 @@ export const POLKOLONIE_LISTA_2026: ColonyLinkPropsType[] = [
     price: '850 PLN',
     localization: 'CK W KORZENNEJ',
     date: '02.02-06.02.2026',
-    coverImage: ColonyCoverImage,
+    coverImage: ColonyCoverImage2,
     href: '/ofertazimowa/polkolonia-zimowa-fabryka-pomyslow',
   },
   {
@@ -43,7 +50,7 @@ export const POLKOLONIE_LISTA_2026: ColonyLinkPropsType[] = [
     price: '850 PLN',
     localization: 'MDK W GORLICACH',
     date: '02.02-06.02.2026',
-    coverImage: ColonyCoverImage,
+    coverImage: ColonyCoverImage3,
     href: '/ofertazimowa/polkolonia-zimowa-fabryka-pomyslow',
   },
   {
@@ -52,7 +59,7 @@ export const POLKOLONIE_LISTA_2026: ColonyLinkPropsType[] = [
     price: '850 PLN',
     localization: 'SP W BOBOWEJ',
     date: '09.02-13.02.2026',
-    coverImage: ColonyCoverImage,
+    coverImage: ColonyCoverImage4,
     href: '/ofertazimowa/polkolonia-zimowa-pracownia-marzen',
   },
   {
@@ -61,7 +68,7 @@ export const POLKOLONIE_LISTA_2026: ColonyLinkPropsType[] = [
     price: '850 PLN',
     localization: 'CK W KORZENNEJ',
     date: '09.02-13.02.2026',
-    coverImage: ColonyCoverImage,
+    coverImage: ColonyCoverImage5,
     href: '/ofertazimowa/polkolonia-zimowa-pracownia-marzen',
   },
   {
@@ -70,7 +77,7 @@ export const POLKOLONIE_LISTA_2026: ColonyLinkPropsType[] = [
     price: '850 PLN',
     localization: 'MDK W GORLICACH',
     date: '09.02-13.02.2026',
-    coverImage: ColonyCoverImage,
+    coverImage: ColonyCoverImage6,
     href: '/ofertazimowa/polkolonia-zimowa-pracownia-marzen',
   },
 ];

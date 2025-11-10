@@ -25,7 +25,7 @@ const Hero: React.FC<{hero: HeroPropsType}> = ({hero}) => {
         height={2208}
         alt="aktywna zima bobowa"
       />
-      <Scrap2 position="bottom" color="white" />
+      <Scrap2 position="bottom" color="winter" />
     </div>
   );
 };

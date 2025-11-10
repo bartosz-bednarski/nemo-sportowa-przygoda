@@ -29,6 +29,14 @@ const ActiveNowForm = ({src}: ActiveNowFormPropsType) => {
   return (
     <div className={styles.activenowFormContainer} id="harmonogram">
       <h2>Formularz zapisów</h2>
+      <div className={styles.instruction}>
+ <h4>WYPEŁNIJ FORMULARZ PONIŻEJ:</h4>
+      <p>1. Poczekaj na mailowe potwierdzenie rezerwacji.</p>
+      <p>2. Nie później niż 48h po przesłaniu do nas formularza wyślemy pełen pakiet dokumentów niezbędnych do zawarcia umowy.
+</p>
+<p>3. Opłać przedpłatę w wysokości 300 zł korzystając z linku do systemu bezpiecznych płatności TPay, który wyślemy w kolejnej wiadomości.</p>
+     
+      </div>
       <div
         className={`${styles.formBox} activenow-form-container activenow-form-90766-container`}
       >

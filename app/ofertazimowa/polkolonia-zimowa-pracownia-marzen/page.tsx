@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 };
 const PolkoloniaZimowa = () => {
   return (
-    <main className={styles.main} style={{background: 'white'}}>
+    <main className={styles.main} style={{backgroundImage:'url("/assets/winter/winter_background.webp")'}}>
       <Hero hero={POLKOLONIA_ZIMOWA_PRACOWNIA_MARZEN.hero} />
       <Details details={POLKOLONIA_ZIMOWA_PRACOWNIA_MARZEN.details} />
       <ActiveNowForm src="https://app.activenow.io/external/signup_form/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_form_id=90766&venue_id=&zz=" />

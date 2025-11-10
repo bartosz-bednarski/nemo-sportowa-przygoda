@@ -25,7 +25,7 @@ const Contact: React.FC<{contact: ContactPropsType}> = ({contact}) => {
           </a>
         )}
 
-        <span className={styles.text}>
+        <span className={`${styles.text} ${styles.phone}`}>
           <img src={PhoneIcon.src} alt="phoneIcon" />
 
           {contact.phone}

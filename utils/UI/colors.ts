@@ -7,4 +7,5 @@ export const COLORS = {
   basicGreen: '#25924f',
   white: 'white',
   winterIce: 'rgba(15, 72, 183, 0.27)',
+  winter:'#E7F2FA'
 };
