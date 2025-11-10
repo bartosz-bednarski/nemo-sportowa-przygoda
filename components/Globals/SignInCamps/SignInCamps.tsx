@@ -67,7 +67,7 @@ const SignInCamps = ({
       <div
         className={styles.signInCamps}
         style={{
-          background: COLORS['white'],
+          background: 'transparent',
         }}
       >
         <div className={styles.headerBox}>

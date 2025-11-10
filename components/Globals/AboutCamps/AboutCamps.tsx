@@ -32,7 +32,7 @@ const AboutCamps = ({
     <div
       className={styles.container}
       style={{
-        background: theme === 'summer' ? COLORS.basicGreen : COLORS.white,
+        background: theme === 'summer' ? COLORS.basicGreen : 'transparent',
       }}
     >
       <h2 className={h2Styles}>{h2}</h2>

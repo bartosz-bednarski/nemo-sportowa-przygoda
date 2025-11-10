@@ -134,3 +134,138 @@ h5 {
     font-size: 0.9rem;
   }
 }
+.activenow-form-client-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include mixin.phone700px {
+    flex-direction: column;
+  }
+}
+.activenow-form-field {
+  width: 48% !important;
+  @include mixin.phone700px {
+    width: 100% !important;
+  }
+}
+.js-activenow-parent-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include mixin.phone700px {
+    flex-direction: column;
+  }
+}
+.activenow-form-client-details button#active-now-submit {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.7rem 3rem !important;
+  color: white;
+  background-color: $darkBlue;
+  border: 0;
+  border-radius: 40px;
+  gap: 1rem;
+  transition: all 0.5s;
+  margin: 1rem auto;
+  justify-self: center;
+  &:hover {
+    cursor: pointer;
+    background-color: green;
+  }
+  @include mixin.phone700px {
+    width: 100%;
+  }
+}
+.activenow-form-field input {
+  box-sizing: border-box !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  gap: 1px;
+  padding: 0.6rem 1rem !important;
+  background-color: #becdeb !important;
+  border-radius: 20px !important;
+  border: 1px solid #493a2d !important;
+  color: #053490 !important;
+}
+.activenow-form-field input#client_birthdate{
+  margin-left: 24px;
+}
+.activenow-form-field .soft-d-none{
+  display: block!important;
+  visibility: hidden;
+}
+.activenow-main-selector {
+  box-sizing: border-box !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  gap: 1px;
+  padding: 0.6rem 1rem !important;
+  background-color: #becdeb !important;
+  border-radius: 20px !important;
+  border: 1px solid #493a2d !important;
+  color: #053490 !important;
+  margin-left: 24px!important;
+}
+.activenow-form-container .activenow-form-field label{
+  align-self: center!important;
+  color: $darkBlue;
+}
+.activenow-form-field#activenow-venue-selector{
+  padding-left: 24px;
+  box-sizing: border-box!important;
+  @include mixin.pc1000px{
+width: 100%!important;
+  }
+  // box-sizing: border-box;
+}
+.activenow-form-field#activenow-eventable-selector{
+  
+ @include mixin.pc1000px{
+width: 100%!important;
+  }
+}
+.activenow-form-field select#venue{
+box-sizing: border-box !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  gap: 1px;
+  padding: 0.6rem 1rem !important;
+  background-color: #becdeb !important;
+  border: 1px solid #493a2d !important;
+  color: #053490 !important;
+}
+.activenow-main-selector#eventable_id{
+ border-radius: 5px!important;
+ margin-left: 0px!important;
+  box-sizing: border-box!important;
+   width: 100%!important;
+   max-width: 100%!important;
+}
+.activenow-form-client-details div#activenow-form-eventable-description-holder{
+  box-sizing: border-box;
+  padding-left: 24px;
+    display: flex;
+    width: 100%;
+}
+.activenow-form-class-description{
+  background-color: #becdeb !important;
+  border: 1px solid #493a2d !important;
+  color: #053490 !important;
+  border-radius: 5px !important;
+}
+.activenow-form h3{
+  color: $darkBlue!important;
+}

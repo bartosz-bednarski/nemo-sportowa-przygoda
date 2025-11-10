@@ -26,6 +26,14 @@
     padding: 1rem;
     width: 100%;
   }
+  .phone{
+    @include mixin.phone700px {
+      font-size: 1rem!important;
+    }
+    @include mixin.phone420px {
+      font-size: 1rem!important;
+    }
+  }
   .text,
   a {
     display: flex;

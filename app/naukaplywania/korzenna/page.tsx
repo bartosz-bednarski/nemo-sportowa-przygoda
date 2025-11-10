@@ -9,7 +9,7 @@ import {
 import Bubbles from '@/components/Ui/Bubbles/Bubbles';
 import Scrap2 from '@/components/Ui/Scrap/Scrap2';
 import {Metadata} from 'next';
-import Schedule from '@/components/Schedule/Schedule';
+// import Schedule from '@/components/Schedule/Schedule';
 import {COLORS} from '@/utils/UI/colors';
 import PoolNecessaryItems from '@/components/NaukaPlywania/Ui/PoolNecessaryItems/PoolNecessaryItems';
 import PoolTutorial from '@/components/NaukaPlywania/Ui/PoolTutorial/PoolTutorial';
@@ -93,7 +93,7 @@ const NaukaPlywaniaKorzenna = () => {
           },
         }}
       />
-      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=68866&zz=" />
+      {/* <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=wdiOmW2rUoDYznOz&proficiency_id=&school_id=10290&signup_table_id=3906&venue_id=68866&zz=" /> */}
       {/* NAUKA PŁYWAANIA DZIECI I MŁODZIEŻ */}
       <div style={{background: COLORS.lightBlue}}>
         <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_KORZENNA.dzieciMlodziez.about} />

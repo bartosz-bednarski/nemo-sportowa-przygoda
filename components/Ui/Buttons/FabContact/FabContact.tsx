@@ -56,7 +56,7 @@ const FabContact = ({contactKrakow, contactMalopolska}: FabContactProps) => {
               src={LocationIcon.src}
             />
             <div className={styles.textBox}>
-              <p>Zapisy Baseny Małopolska</p>
+              <p>Zapisy Baseny Korzenna |<br/> Gorlice | Limanowa | Wysowa</p>
               <p>+48 519 625 894</p>
             </div>
             <span className={styles.phoneBox}>

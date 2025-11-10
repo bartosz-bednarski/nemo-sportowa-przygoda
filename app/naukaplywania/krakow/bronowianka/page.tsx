@@ -19,7 +19,7 @@ import Image3 from '@/public/assets/videos/toddler-mix-1.webp';
 import NaukaPlywaniaAbout from '@/components/NaukaPlywania/Ui/NaukaPlywaniaAbout/NaukaPlywaniaAbout';
 import PriceList from '@/components/NaukaPlywania/Ui/PriceList/PriceList';
 import GroupsBySkill from '@/components/NaukaPlywania/Ui/GroupsBySkill/GroupsBySkill';
-import Schedule from '@/components/Schedule/Schedule';
+// import Schedule from '@/components/Schedule/Schedule';
 import FabContact from '@/components/Ui/Buttons/FabContact/FabContact';
 
 export const metadata: Metadata = {
@@ -91,7 +91,7 @@ const NaukaPlywaniaBronowianka = () => {
           },
         }}
       />
-      <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98538&zz=" />
+      {/* <Schedule src="https://app.activenow.io/external/signup_table/load_by_js?city_id=&code=FGdlZsihY3izeZNC&proficiency_id=&school_id=15974&signup_table_id=14598&venue_id=98538&zz=" /> */}
       {/* NAUKA PŁYWAANIA NIEMOWLAKI */}
       <div style={{background: COLORS.lightBlue}}>
         <NaukaPlywaniaAbout {...NAUKA_PLYWANIA_BRONOWIANKA.zRodzicami.about} />
